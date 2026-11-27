@@ -36,8 +36,8 @@ or body. The six unresolved late octets are outside this field.
 
 A fresh three-minute **6140 kHz** IQ recording is available in full. The
 frozen receiver recovered 35 complete groups. At the first unseen counter,
-43904973, it received all 60 slots and recovered 10,560 directly transmitted
-clear bits. The clear values of 5,280 masked bits remain open.
+43904973, it received all 60 slots. Its conservative projection marked
+10,560 bits as directly received and left the other 5,280 unresolved.
 [Download the IQ and reproduce all 35 groups](examples/nov27/validation/rf-iterations/README.md)
 
 ## November 27 dual-frequency recording
@@ -408,6 +408,15 @@ CRC checks their received masked payload. A one-step change of counter changes a
 128 known bits on average; that does not identify AES-CTR, establish cipher
 strength, or locate a secret in receiver hardware. Byte-identical payloads across
 two transmitters support a common upstream masked stream.
+
+The November 25 recording contains the same complete, CRC-checked bulletin
+record at two different counters. An identically aligned 48-byte passage
+spans the three phases of counters 43679914 and 43680560. All 16 published
+mask-prefix bytes differ between those counters. In each copy all 16 bytes
+also change at the next counter, while the same 92-byte record body is still
+being sent. The bulletin text and its alignment alone cannot determine the
+prefix. Changes can occur within a record.
+[Replay this comparison from the archived broadcast](examples/nov27/validation/hq-class/check_bulletin_repeat.py)
 
 **Opaque trailer.** This layout immediately before the text tail matched all **2,310** complete
 groups checked across the March, June, November 24, and November 25 samples:

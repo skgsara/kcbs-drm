@@ -167,7 +167,7 @@
     "full_clear_words": 0,
     "word_erasures": 60
   },
-  "primary_masked_bits": 5280,
+  "primary_unresolved_bits_in_projection": 5280,
   "primary_hq_predictions": 0,
   "hq_cases": [
     {
