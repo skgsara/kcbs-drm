@@ -55,6 +55,8 @@ def main():
     ap.add_argument('--seconds', type=float, default=240)
     ap.add_argument('--sample-rate', type=int, help='raw CS8 complex samples per second')
     ap.add_argument('--offset-hz', type=float, default=0., help='CS8 channel minus center, Hz')
+    ap.add_argument('--mlc-iterations', type=int, choices=range(5),
+                    help='Dream multi-level channel decoder iterations (0–4); omit to use its configuration')
     args = ap.parse_args()
     if args.start < 0 or not 0 < args.seconds <= 600:
         ap.error('start must be nonnegative; seconds must be in (0, 600]')
@@ -79,6 +81,8 @@ def main():
                             'Dump record index is NOT a source timestamp.',
                 status='running')
     manifest = out / 'manifest.json'
+    if args.mlc_iterations is not None:
+        meta['mlc_iterations'] = args.mlc_iterations
     manifest.write_text(json.dumps(meta, indent=2), encoding='utf-8')
     wav = out / 'iq48.wav'
     try:
@@ -100,6 +104,8 @@ def main():
         command = ['env', 'QT_QPA_PLATFORM=offscreen', 'KCBS_DUMP_MSC=' + linux(dump),
                    'DREAM_FILE_OFFLINE=1', 'timeout', str(seconds), binary,
                    '-c', '6', '--sigsrate', '48000', '-m', '1', '-f', linux(wav)]
+        if args.mlc_iterations is not None:
+            command.extend(['--mlciter', str(args.mlc_iterations)])
         if os.name == 'nt' and binary == WSL_LEGACY_DREAM:
             # Older WSL builds find their configuration relative to this directory.
             command = linux_command('bash', '-lc', 'cd /root/kcbs/dream-src && ' +
