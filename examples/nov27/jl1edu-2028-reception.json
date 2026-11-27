@@ -1,0 +1,394 @@
+{
+  "station": "JL1EDU, Yokohama, Japan",
+  "public_receiver_origin": "https://ubersdr.jl1edu.freeddns.org",
+  "date_utc": "2026-11-27",
+  "acquisition": "Public UberSDR iq48, 48000 complex pairs/s, little-endian stereo PCM16",
+  "upstream_pcm_decoder_revision": "8134b1fa5d989de776999ae80145c9a0b8d46e2e",
+  "signalling_receiver_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "three_minute_3205": {
+    "frequency_hz": 3205000,
+    "capture": {
+      "nominal_start_utc_from_receiver_timestamp": "2026-11-27T20:28:40.772Z",
+      "sample_rate_hz": 48000,
+      "complex_sample_pairs": 8640360,
+      "sample_seconds": 180.0075,
+      "wav_sha256": "aa51e5a38d28305a587faf74062a7acfa0583f490d3ce305f7757655b671101e",
+      "pcm_iq_sha256": "def4ded292af4f293e8e7a56aefcd06e0cc98a137033ca177e7b0e71ec2199cf",
+      "timestamped_packets": 26998,
+      "packets": 27001,
+      "observed_timestamp_jumps_over_one_sample": 0
+    },
+    "baseline": {
+      "control": {
+        "FAC": {
+          "observed": 448,
+          "crc_passed": 437,
+          "crc_failed": 11
+        },
+        "SDC": {
+          "observed": 150,
+          "crc_passed": 68,
+          "crc_failed": 82
+        }
+      },
+      "service_id_counts": {
+        "A00002": 437
+      },
+      "label_counts": {
+        "조선중앙제2라지오방송": 68
+      },
+      "msc_sha256": "937ab307a2d855aad6d1b7504baba35fbb01353f1ade02ad0546c525bc324b50",
+      "msc_rows": 445,
+      "physical_packet_crc_passes": 50,
+      "whole_du_crc_passes": 3,
+      "coordinate_packets": 7,
+      "coordinate_complete_dus": 1,
+      "complete_groups": 0,
+      "positions": {
+        "1": {
+          "received_mode_octets": 10,
+          "families": {
+            "ACELP": 9,
+            "GSC": 1
+          },
+          "mode_and_complete_payload": 9
+        },
+        "2": {
+          "received_mode_octets": 9,
+          "families": {
+            "ACELP": 9
+          },
+          "mode_and_complete_payload": 8
+        },
+        "3": {
+          "received_mode_octets": 8,
+          "families": {
+            "ACELP": 8
+          },
+          "mode_and_complete_payload": 8
+        },
+        "4": {
+          "received_mode_octets": 9,
+          "families": {
+            "ACELP": 8,
+            "GSC": 1
+          },
+          "mode_and_complete_payload": 9
+        }
+      }
+    }
+  },
+  "simultaneous_three_minute_6140": {
+    "frequency_hz": 6140000,
+    "capture": {
+      "nominal_start_utc_from_receiver_timestamp": "2026-11-27T20:37:14.552Z",
+      "sample_rate_hz": 48000,
+      "sample_pairs": 8640000,
+      "sample_seconds": 180.0,
+      "timestamped_packets": 26991,
+      "timestamp_jumps_over_one_sample": 0,
+      "iq_pcm_sha256": "ece9a3394a63907d142b9e5cd28d0c3ec29eee68b0b07f9183005d8aa2c0bbdf",
+      "wav_sha256": "a8a8aa0d6da1bc6ac4d0c6a2730079e8428bbc2a64bf15dfc9586628c6b4688f"
+    },
+    "baseline": {
+      "fac_observed": 247,
+      "fac_crc_passed": 47,
+      "fac_passing_service_id_counts": {
+        "5747B8": 1,
+        "A00002": 46
+      },
+      "sdc_observed": 106,
+      "sdc_crc_passed": 0,
+      "msc_dump_bytes": 0
+    },
+    "matching_on_air_packet_coordinates_across_frequencies": 0
+  },
+  "sample_from_three_minute_3205": {
+    "file": "jl1edu-43897469-p0-msc.bin",
+    "sha256": "70d2045a57b508b5b54cbf073b480172e85ae03bbe2b4bb58c7b26c617536ffe",
+    "bytes": 732,
+    "source_msc_sha256": "937ab307a2d855aad6d1b7504baba35fbb01353f1ade02ad0546c525bc324b50",
+    "source_msc_row_zero_based": 51,
+    "counter": 43897469,
+    "phase": 0,
+    "packet_crc16_hex": [
+      "6e66",
+      "bc96",
+      "0c3a",
+      "105d"
+    ],
+    "data_unit_sha256": "e4c99c0d559ad6a7f0e5fd97900b45586aa0dec41f22bf58fae021a35605df6a",
+    "data_unit_crc16_hex": "bc39"
+  },
+  "sample_from_longer_3205": {
+    "counter": 43897717,
+    "fixture_file": "jl1edu-3205-43897717-iq12.wav",
+    "fixture_rate": 12000,
+    "fixture_complex_samples": 288000,
+    "fixture_sha256": "6b8c4c9e62fdab34da385232c4c9155cfd1c64a70379e44d10ba4781287b5383",
+    "fixture_iq_pcm_sha256": "35e9b95e7239f1f733a8a27a2faf31f8da69dcaf902eab04b5f1e231fc49ce40",
+    "source_start_sample": 5760000,
+    "source_stop_sample_exclusive": 6912000,
+    "source_interval_seconds": [
+      120,
+      144
+    ],
+    "reference_file": "jl1edu-3205-43897717.msc.bin",
+    "reference_msc_sha256": "bd12e292ca9d2cd1a36206faae2388339b69ffc76d59502743ff65146f1a3e7e",
+    "consecutive_full_record_bytes_matched": 2196,
+    "phases": [
+      {
+        "phase": 0,
+        "framed_row_sha256": "dca7a170eb5faac62ccfb3043873cc5d581adcfc9375eaf59dfbefbf9a155128",
+        "du_sha256": "2fb6ea5c2375c578ceb062145c4a924288f7c46829a7183691d2fec30dbf780a",
+        "du_crc16": "7C8E",
+        "four_packet_crc16": [
+          "EE88",
+          "459E",
+          "A800",
+          "44F8"
+        ]
+      },
+      {
+        "phase": 1,
+        "framed_row_sha256": "e4255549c43765f7f69de06a4b2e5526d228e80e6be0d6c3ddf4b1fe873d828e",
+        "du_sha256": "c9f4ebbd08ff2b604a82a3391c005acc54e03240fd6f6ebe65455fa71273f07d",
+        "du_crc16": "E610",
+        "four_packet_crc16": [
+          "EE29",
+          "C572",
+          "51D4",
+          "0384"
+        ]
+      },
+      {
+        "phase": 2,
+        "framed_row_sha256": "aefbaa9410c74c0be9e30b0cec78263be65e41b7ffdccf47de7d7bb765825546",
+        "du_sha256": "091d76221073435c2498bd92b7dfc0cdb3b480542943f8a9712b2db92808c015",
+        "du_crc16": "13BC",
+        "four_packet_crc16": [
+          "7E3D",
+          "D0AD",
+          "B176",
+          "7A4C"
+        ]
+      }
+    ],
+    "source_segment": 1,
+    "source_rate_hz": 48000,
+    "source_prefix_seconds": 300,
+    "source_prefix_sha256": "d75239219afe2dea1e0274385e087e498fbf222b9a46b411520c5fa75b751e53",
+    "resampling_filter": "atrim=start_sample=5760000:end_sample=6912000,aresample=12000",
+    "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "stock_replay": {
+      "msc_bytes": 36600,
+      "msc_sha256": "a826c74f255f829461bcd93b872080164cee897c2e7cfd0d99bd567dc4b3ccfd",
+      "group_rows_zero_based": [
+        32,
+        33,
+        34
+      ],
+      "target_byte_offset": 23424
+    },
+    "following_phase0_counter": 43897718,
+    "clear_mode_octets": {
+      "TCX20": 60
+    },
+    "independent_clear_EVS_comparison": "Awaiting an independently sourced export for this counter.",
+    "receiver_input_cursor_utc_approximate": [
+      "2026-11-27T20:34:01.079Z",
+      "2026-11-27T20:34:01.453Z",
+      "2026-11-27T20:34:01.826Z"
+    ],
+    "alignment_note": "UTC values are the input-read cursor at each default Dream MSC callback in the full 300-second prefix. An independent receiver can locate the group by counter and phase."
+  },
+  "counting_note": "A complete on-air group has three CRC-valid 716-byte data units. Each data unit holds twenty 20 ms EVS words under the 13.2 kbit/s interpretation. The clear mode octets can be inspected directly. Masked payload octets require separate evidence.",
+  "twenty_minute_3205": {
+    "frequency_hz": 3205000,
+    "requested_seconds": 1200,
+    "recorded_sample_seconds": 1200.0,
+    "gap_between_segments": {
+      "gap_seconds": 8.62000338,
+      "last_segment_1_sample_end_utc_ns_exclusive": 1795812450792671279,
+      "first_segment_2_sample_utc_ns": 1795812459412674659,
+      "method": "subtract segment 1 final packet exclusive sample end from segment 2 first nonzero receiver timestamp corrected for the leading sample-pair offset; 48 kHz source clock",
+      "stitched": false
+    },
+    "unique_complete_groups_across_segments": 126,
+    "duplicate_complete_groups_across_segments": 0,
+    "segments": [
+      {
+        "segment": "segment-1",
+        "capture": {
+          "nominal_start_utc_from_receiver_timestamp": "2026-11-27T20:31:44.252Z",
+          "sample_rate_hz": 48000,
+          "complex_sample_pairs": 45433920,
+          "sample_seconds": 946.54,
+          "wav_sha256": "1bc6986133b221873cfeb5aea9e8d21fc0aa85111b25abb2f5f87d53c7e128e9",
+          "pcm_iq_sha256": "910bde2e498ac590c94fa545c760d16ef9fe538e91384639bed25207b8ca2b03",
+          "timestamped_packets": 141975,
+          "packets": 141981,
+          "observed_timestamp_jumps_over_one_sample": 0
+        },
+        "baseline": {
+          "msc_sha256": "6a1c05b32dcf9fe9b1913f70705575166cae2902e63ca2fe37d0d6be7ff0fcbc",
+          "control": {
+            "FAC": {
+              "observed": 2363,
+              "crc_passed": 2311,
+              "crc_failed": 52
+            },
+            "SDC": {
+              "observed": 790,
+              "crc_passed": 372,
+              "crc_failed": 418
+            }
+          },
+          "service_id_counts": {
+            "A00002": 2311
+          },
+          "label_counts": {
+            "조선중앙제2라지오방송": 372
+          },
+          "msc_records": 2256,
+          "physical_packet_crc_passes": 1982,
+          "physical_complete_du_crc_passes": 400,
+          "coordinate_packets": 1565,
+          "coordinate_complete_dus": 370,
+          "complete_groups": 105
+        },
+        "combined_offline_passes": {
+          "receiver_runs": 18,
+          "method": "Unshifted baseline and full linear-interpolation pass, plus two receiver profiles on 120-second windows with 12 seconds of pre-roll and 4 seconds of post-roll wherever available. Merge by counter, phase and packet number after CRC checks.",
+          "coordinate_packets": 1645,
+          "coordinate_complete_dus": 390,
+          "groups_seen": 157,
+          "complete_groups": 111,
+          "conflicting_dus": [],
+          "reassembly_crc_failures": 0,
+          "complete_groups_with_all_15_position_2_TCX20": 36,
+          "positions": {
+            "1": {
+              "received_mode_octets": 2105,
+              "families": {
+                "TCX20": 1405,
+                "HQ": 665,
+                "ACELP": 35
+              },
+              "mode_and_complete_payload": 2062
+            },
+            "2": {
+              "received_mode_octets": 2066,
+              "families": {
+                "TCX20": 1381,
+                "HQ": 648,
+                "ACELP": 37
+              },
+              "mode_and_complete_payload": 2041
+            },
+            "3": {
+              "received_mode_octets": 2041,
+              "families": {
+                "TCX20": 1361,
+                "HQ": 645,
+                "ACELP": 35
+              },
+              "mode_and_complete_payload": 2039
+            },
+            "4": {
+              "received_mode_octets": 2061,
+              "families": {
+                "TCX20": 1381,
+                "HQ": 646,
+                "ACELP": 34
+              },
+              "mode_and_complete_payload": 2061
+            }
+          }
+        }
+      },
+      {
+        "segment": "segment-2",
+        "capture": {
+          "nominal_start_utc_from_receiver_timestamp": "2026-11-27T20:47:39.412Z",
+          "sample_rate_hz": 48000,
+          "complex_sample_pairs": 12166080,
+          "sample_seconds": 253.46,
+          "wav_sha256": "749ab0d8186942041301537272406c004a85c910017b9d7f7a6d3c2bf3b30389",
+          "pcm_iq_sha256": "1a53acef11b3f9b5e17dddfc667c2b277373d1b02f6e5611370d7870467be4ff",
+          "timestamped_packets": 38016,
+          "packets": 38019,
+          "observed_timestamp_jumps_over_one_sample": 0
+        },
+        "baseline": {
+          "msc_sha256": "e390f95c76a50dfa72421b64d94a51bfad83b9b02c56e7b2e8ac754e3fd27019",
+          "control": {
+            "FAC": {
+              "observed": 630,
+              "crc_passed": 603,
+              "crc_failed": 27
+            },
+            "SDC": {
+              "observed": 212,
+              "crc_passed": 77,
+              "crc_failed": 135
+            }
+          },
+          "service_id_counts": {
+            "A00002": 603
+          },
+          "label_counts": {
+            "조선중앙제2라지오방송": 77
+          },
+          "msc_records": 625,
+          "physical_packet_crc_passes": 231,
+          "physical_complete_du_crc_passes": 50,
+          "coordinate_packets": 195,
+          "coordinate_complete_dus": 48,
+          "complete_groups": 15
+        },
+        "combined_offline_passes": {
+          "receiver_runs": 8,
+          "method": "Unshifted baseline and full linear-interpolation pass, plus two receiver profiles on 120-second windows with 12 seconds of pre-roll and 4 seconds of post-roll wherever available. Merge by counter, phase and packet number after CRC checks.",
+          "coordinate_packets": 195,
+          "coordinate_complete_dus": 48,
+          "groups_seen": 17,
+          "complete_groups": 15,
+          "conflicting_dus": [],
+          "reassembly_crc_failures": 0,
+          "complete_groups_with_all_15_position_2_TCX20": 0,
+          "positions": {
+            "1": {
+              "received_mode_octets": 245,
+              "families": {
+                "GSC": 245
+              },
+              "mode_and_complete_payload": 244
+            },
+            "2": {
+              "received_mode_octets": 244,
+              "families": {
+                "GSC": 244
+              },
+              "mode_and_complete_payload": 243
+            },
+            "3": {
+              "received_mode_octets": 243,
+              "families": {
+                "GSC": 243
+              },
+              "mode_and_complete_payload": 243
+            },
+            "4": {
+              "received_mode_octets": 244,
+              "families": {
+                "GSC": 244
+              },
+              "mode_and_complete_payload": 244
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -156,6 +156,50 @@ packets, and writes `text/kcbs2_text.txt` and experimental audio:
 python scripts/kcbs_decode_audio.py captures/mycapture_iq.wav --out work/mycapture
 ```
 
+On 2026-11-27 at 20:28 UTC, JL1EDU in Yokohama supplied live IQ at
+**3205 kHz**. The public UberSDR endpoint granted `iq48` through
+`/connection`. We recorded its version 4 WebSocket stream and used the
+upstream PCM decoder to write 48 kHz stereo PCM16 WAV, with I and Q as the
+two channels. The WAV goes into the same decoder command above.
+[JL1EDU receiver](https://ubersdr.jl1edu.freeddns.org/) ·
+[UberSDR IQ protocol](https://github.com/madpsy/ka9q_ubersdr/blob/8134b1fa5d989de776999ae80145c9a0b8d46e2e/clients/iq-recorder/main.go) ·
+[PCM decoder](https://github.com/madpsy/ka9q_ubersdr/blob/8134b1fa5d989de776999ae80145c9a0b8d46e2e/clients/python/pcm_v4.py)
+
+To record a new WAV, install `websockets>=15` and point the recorder at a local
+checkout of the linked UberSDR source. The command prints a JSON receipt with
+the actual sample duration, wall time and receiver timestamp checks. An early
+disconnect leaves the samples received in the WAV and returns a nonzero exit status.
+
+```bash
+python scripts/record_ubersdr_iq.py https://ubersdr.jl1edu.freeddns.org \
+    --frequency-hz 3205000 --seconds 180 --ubersdr-source ./ka9q_ubersdr \
+    --out jl1edu-3205.wav
+```
+
+The first three minutes identified service `A00002` (**조선중앙제2라지오방송**)
+and yielded one complete data unit with a verified counter. The next 20 minutes
+of IQ span two files with an 8.620-second reception gap. The baseline recovered
+120 complete groups. Combining CRC-checked packets from additional receiver
+passes raised that to 126 distinct groups. A simultaneous three-minute 6140 kHz
+recording confirmed the same service ID and yielded no MSC payload.
+
+Group `43897717` arrived near 20:34 UTC. All 60 received mode octets indicate
+TCX20. An independently sourced EVS export at this counter would allow a
+bit-for-bit check of the clear audio payloads.
+[Reception counts and SHA-256 hashes](examples/nov27/jl1edu-2028-reception.json)
+
+To reproduce that group, demodulate the included 24-second sample with the
+[patched Dream receiver](build/README.md). In the reference run, records
+32–34 of the resulting `msc.bin` (counting from zero) matched the three
+published records byte for byte. All 12 packet CRCs and all three data-unit
+CRCs passed. [IQ sample](examples/nov27/jl1edu-3205-43897717-iq12.wav) ·
+[Three received MSC records](examples/nov27/jl1edu-3205-43897717.msc.bin)
+
+```bash
+python scripts/demod_iq_window.py examples/nov27/jl1edu-3205-43897717-iq12.wav \
+    work/jl1edu-43897717 --seconds 24
+```
+
 The pipeline can resume in the same output directory. It checks the selected
 MSC dumps and decode options before reusing their combined result. When the
 input set changes, earlier products are retained under `previous-runs/` and

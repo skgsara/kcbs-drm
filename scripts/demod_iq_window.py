@@ -42,8 +42,8 @@ def input_info(src, sample_rate):
             raise ValueError('raw CS8 requires a positive --sample-rate (complex samples/s)')
         return sample_rate, cs8_frames(src)
     info = sf.info(src)
-    if info.channels != 2 or abs(info.samplerate - 12000) > 3:
-        raise ValueError(f'expected two-channel approximately 12 kHz IQ: {src}')
+    if info.channels != 2 or (abs(info.samplerate - 12000) > 3 and info.samplerate != 48000):
+        raise ValueError(f'expected two-channel IQ at approximately 12 kHz or at 48 kHz: {src}')
     return info.samplerate, info.frames
 
 
