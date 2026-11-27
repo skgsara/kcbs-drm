@@ -17,7 +17,8 @@ from tail_fill_audit import crc
 FIELDS = ("slot", "counter", "phase", "cycle", "position", "receipt", "direct_bits", "octets")
 
 
-def read_phases(path, counter):
+def checked_units(path):
+    """Yield unique (counter, phase, bytes) rows after validating the DU and its coordinates."""
     archive = np.load(path, allow_pickle=False)
     if not isinstance(archive, np.lib.npyio.NpzFile):
         raise ValueError("expected data_units.npz")
@@ -31,7 +32,6 @@ def read_phases(path, counter):
             or phases.dtype.kind not in "iu" or units.dtype != np.uint8 or units.shape != (len(counters), 716)):
         raise ValueError("expected one counter, phase, and 716-byte data unit per row")
     seen = set()
-    selected = {}
     for count, phase, row in zip(counters, phases, units, strict=True):
         count, phase = int(count), int(phase)
         if not 0 <= count <= 0xffffffff or phase not in (0, 1, 2):
@@ -44,9 +44,11 @@ def read_phases(path, counter):
             raise ValueError(f"data-unit CRC failed at {count}/{phase}")
         if unit[1] >> 4 != phase or (phase == 0 and int.from_bytes(unit[664:668], "big") != count):
             raise ValueError(f"data-unit header disagrees with coordinates {count}/{phase}")
-        if count == counter:
-            selected[phase] = unit
-    return selected
+        yield count, phase, unit
+
+
+def read_phases(path, counter):
+    return {phase: unit for count, phase, unit in checked_units(path) if count == counter}
 
 
 def project_group(path, counter):
