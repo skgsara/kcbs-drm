@@ -28,6 +28,29 @@ python examples/nov27/replay.py --stream text-supported --out work/nov27-replay/
 
 Each WAV contains 480,000 mono samples at 16 kHz. The script verifies the compressed stream, G.192 data, raw PCM and WAV against their SHA-256 digests. To use an existing reference decoder build, pass its executable path with `--decoder`. [Programme bitstream](../examples/nov27/programme.192.gz) · [Text-supported comparison bitstream](../examples/nov27/text-supported.192.gz) · [Expected hashes](../examples/nov27/replay.json)
 
+## Seven additional November 27 recordings
+
+The listening group supplied seven more recordings from 6140 and 3205 kHz, totalling 30 minutes 53 seconds. All seven carried DRM Mode B and service `A00002`, labelled **조선중앙제2라지오방송**. Six yielded complete scrolling-text records. The 276 records contained 76 distinct bodies, including a marine weather forecast and science news. The audio programmes in these seven recordings remain unidentified.
+
+| Capture time (UTC) | kHz | Data units passing CRC | Text records passing CRC | Frames supported by local text CRCs | Extra frames from repeated text | 20 ms slots |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Around 07:56 (HDSDR recording) | 6140 | 1,178 | 116 | 4,063 | 57 | 24,020 |
+| Around 10:59 (from broadcast counters) | 6140 | 21 | 0 | 0 | 32 | 4,940 |
+| 11:58:16 | 6140 | 285 | 20 | 718 | 34 | 5,980 |
+| 12:00:34 | 6140 | 498 | 48 | 1,680 | 25 | 9,960 |
+| 12:09:09 | 3205 | 243 | 15 | 521 | 24 | 6,360 |
+| 12:11:22 | 3205 | 365 | 21 | 730 | 299 | 9,300 |
+| 12:15:02 | 3205 | 932 | 56 | 1,872 | 922 | 30,360 |
+| **Total** | | **3,522** | **276** | **9,584** | **1,393** | **90,920** |
+
+The receiver checked the CRC on each accepted packet and again on each complete data unit. To recover an audio frame, it also needed the mask bytes shared with the text channel. For 9,584 frames, the decoded text passed a CRC transmitted in that same recording. For another 1,393 frames, two or more received text blocks agreed with a checked passage repeated in another recording. This second method supplied all 32 frames from the weakest capture. Across the seven timelines, the decoder received **10,977 complete frames (12.1%)** and used loss concealment for the remaining 79,943 slots. Each timeline runs from the first accepted data unit to the last and includes the gaps between them.
+
+**A test on a recording received later.** The eight-minute HDSDR file arrived after the other six had been analysed. Its mono 48 kHz WAV carried a real intermediate-frequency signal 6 kHz above the receiver's 6134 kHz tuning. Its header clock read 07:55:48.790. The broadcast counters put the start around 07:55:55–07:55:59 UTC, in an interval preceding the other six. Using only bulletin templates saved before this file arrived, the decoder recovered **105 records** that passed the new recording's own CRCs. Analysis of the new file added 11 more. Four deliberately shifted template alignments yielded zero matches across 534 complete candidate spans in the final check.
+
+**A check on frame reconstruction.** A short final text record and its adjacent fill block could exchange positions and still pass the text CRC. The metadata following the record established their order. With that order, the EVS reference decoder raised zero syntax flags on the 10,977 supplied frames. Four control runs shuffled the eleven restored bytes together between frames of the same codec mode, preserving the clear bytes and erasure positions. Those runs raised 656–681 flags. This checks the recovered frame structure. Identifying the programmes would also require matching the audio to an independent recording.
+
+For holders of the local verification bundle, extract `KCBS-2026-11-27-listening-and-verification.zip` and run `python verify.py` in its top-level directory with NumPy installed. The verifier rechecks the packet, data-unit and text CRCs and rebuilds every supplied frame and erasure in the included G.192 streams. Its `README.md` links the listening files and per-capture evidence.
+
 ## November 19 comparison
 
 Two earlier broadcasts on 6140 kHz matched other performances. The 17:09:40 recording contained the Moranbong Band duet **그리움은 나의 행복 (*Longing Is My Happiness*)**, and the 17:31:39 recording contained Ryu Jina’s **어머니의 목소리 (*Mother’s Voice*)** with the same band. Their extended receiver excerpts supplied 750 of 1,620 frames in 32.4 seconds and 2,583 of 5,160 frames in 103.2 seconds, respectively. The weaker 17:00:52 excerpt remains unidentified. Times in this paragraph are the November 19 recording labels. [Duet performance](https://archive.org/details/moranbong-band-longing-is-my-happiness) · [Solo performance](https://archive.org/details/moranbong-band-mothers-voice)

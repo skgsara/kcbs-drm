@@ -52,6 +52,8 @@ mask table. It writes `programme.192` (G.192 binary EVS frames), `programme.wav`
 and `coverage.json`. The expected SHA-256 of the G.192 file is
 `2ae4c7d6f186558db6f96cfc9c4c613e4d9702175f3980c855784fb3b4b32738`.
 
+Seven later November 27 recordings on 6140 and 3205 kHz yielded 276 checksummed Korean text records and 10,977 complete EVS frames across 90,920 slots. In an eight-minute recording received last, previously saved bulletin templates recovered 105 records that passed the new recording's own checksums. [Per-recording results and verification](docs/november-2026.md#seven-additional-november-27-recordings)
+
 ## November 19 recordings on 6140 kHz
 
 Both recordings identify service `A00002`, 조선중앙제2라지오방송. Separate
