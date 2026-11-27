@@ -1,12 +1,82 @@
 # KCBS-2 DRM decoder
 
-Tools for analysing the **KCBS-2** Digital Radio Mondiale shortwave broadcast from
-raw KiwiSDR IQ recordings. The repo parses the DRM container, recovers some
-side-channel text, and renders experimental audio through a candidate codec.
-The March role-0 EVS output reproduces a specific spectral feature of the RF
-capture, but a complete programme/audio match is not verified. The November
-contribution adds variable-length records and greatly improves usable text-tail
-coverage.
+Tools for decoding the **KCBS-2** Digital Radio Mondiale shortwave broadcast
+from KiwiSDR IQ WAV and signed 8-bit IQ recordings. The receiver extracts
+DRM service information, checks received data packets, recovers Korean
+scrolling text and decodes supported audio frames using the 3GPP EVS reference
+decoder. Recovery varies with radio reception and the available text evidence.
+
+This work builds on KoryoFront’s KCBS-2 receiver and Martyn’s independent
+KCBS DRM analysis. KoryoFront documented the transport layout and shared
+the March recordings in collaboration with Martyn. Martyn (martynw) contributed the variable-length text
+record parser, November data and a March satellite-audio check of the EVS
+framing. Amateur operators contributed the November 19 and November 27
+recordings used below. [KoryoFront’s original decoder](https://github.com/KoryoFront/kcbs2-drm-decode) ·
+[Martyn’s KCBSDRM](https://github.com/martynw/KCBSDRM) · [Credits](docs/CREDITS.md)
+
+## November 27 dual-frequency recording
+
+**행복한 내 나라 (*My Happy Country*)**, performed by the Wangjaesan Light Music
+Band, aired on KCBS-2 at **06:17:22 UTC** (14:17:22 Beijing, 15:17:22 Pyongyang).
+Amateur receivers on **6140 and 3205 kHz** captured the same 30 seconds.
+Each reproduced all 264 packets in the contributor’s demodulated file. The
+two frequencies agreed byte for byte on all 292 packets received on both.
+Together they yielded 300 distinct packets and 75 consecutive data units.
+[1991 CD, track 1](https://archive.org/details/wangjaesangyongumaktan-che1chip) · [November results and identification](docs/november-2026.md)
+
+**Listen to the radio capture.** Of 1,500 EVS frames, 355 used mask bytes
+supported by received text checksums and another 795 used experimentally
+inferred mask bytes. The stock decoder concealed the remaining 350.
+It played 603 consecutive frames without concealment from **5.16 to 17.22 s**.
+The short WAV covers 600 of those frames. Separately archived FM and CD
+recordings supplied comparison audio during the analysis. The listening
+files contain only the decoded radio stream and the decoder’s concealment.
+[Full 30-second MP3](examples/nov27/radio.mp3) ·
+[12 seconds with every frame supplied](examples/nov27/fully-supplied-12s.wav) ·
+[Frame-by-frame evidence](examples/nov27/frames.csv) · [Mask validation](docs/nov27-mask-validation.md)
+
+To reproduce the 16 kHz mono WAV from the included receiver data, install the
+Python requirements and build the EVS reference decoder as described in the
+[March quickstart](#play-or-render-the-bundled-1906-recording). Run this command from the
+repository root.
+
+```bash
+python scripts/render_measured_evs.py examples/nov27/receiver \
+    --masks dumps/nov27-measured-masks.json --received-span --out work/nov27-replay
+```
+
+The renderer checks the recorded data-unit hashes against the capture-specific
+mask table. It writes `programme.192` (G.192 binary EVS frames), `programme.wav`
+and `coverage.json`. The expected SHA-256 of the G.192 file is
+`2ae4c7d6f186558db6f96cfc9c4c613e4d9702175f3980c855784fb3b4b32738`.
+
+## November 19 recordings on 6140 kHz
+
+Both recordings identify service `A00002`, 조선중앙제2라지오방송. Separate
+passages matched the released performances at the times predicted from the
+first match. The excerpts preserve the original time gaps and use standard
+EVS concealment for missing frames.
+
+| Capture filename time (likely UTC+8) | Song and performance | Radio excerpt | Frames supplied |
+| --- | --- | --- | ---: |
+| 17:09:40 | **그리움은 나의 행복** (*Longing Is My Happiness*), Jo Kuk Hyang and Kim Yu Kyong with the Moranbong Band | [32.4 s MP3](examples/nov19/longing-is-my-happiness.mp3) | 750 / 1,620 |
+| 17:31:39 | **어머니의 목소리** (*Mother’s Voice*), Ryu Jina with the Moranbong Band | [103.2 s MP3](examples/nov19/mothers-voice.mp3) | 2,583 / 5,160 |
+
+For an uninterrupted comparison, the short solo WAV supplies all 420
+consecutive frames. [8.4-second radio WAV](examples/nov19/mothers-voice-fully-supplied-8s4.wav) ·
+[Duet reference](https://archive.org/details/moranbong-band-longing-is-my-happiness) ·
+[Solo reference](https://archive.org/details/moranbong-band-mothers-voice) ·
+[November 19 mask table](dumps/nov19-measured-masks.json)
+
+For two synchronized 16 kHz mono PCM16
+reconstructions beginning on a fully recovered frame, this command combines
+the received-frame and listening renders and interpolates the spectrum between
+neighboring received frames. All output samples are derived from the radio
+inputs. Sections silent in both input files remain silent.
+
+```bash
+python scripts/interpolate_evs_audio.py role0-excerpt.wav listening-excerpt.wav rf-interpolated.wav
+```
 
 ## Play or render the bundled 19:06 recording
 
@@ -16,8 +86,8 @@ Daegu 3205 kHz captures from March 16, 2026, not a verified broadcast decode.
 
 To reproduce it from the bundled MSC dumps without rebuilding the DRM demodulator:
 
-1. Install Python 3.10+, `pip install -r requirements.txt`, and WSL2 with Ubuntu.
-   The Python codec wrappers invoke the Linux binary through WSL.
+1. On Linux or Windows with WSL2 Ubuntu, install Python 3.10+ and run
+   `pip install -r requirements.txt`.
 2. Obtain the 3GPP TS 26.443 EVS floating-point reference source (not bundled)
    and place it at `work/ref/evs/src/c-code`. Build with:
 
@@ -77,10 +147,38 @@ packets, and writes `text/kcbs2_text.txt` and experimental audio:
 python scripts/kcbs_decode_audio.py captures/mycapture_iq.wav --out work/mycapture
 ```
 
+The pipeline can resume in the same output directory. It checks the selected
+MSC dumps and decode options before reusing their combined result. When the
+input set changes, earlier products are retained under `previous-runs/` and
+the receiver processes the new set.
+
 The text output distinguishes CRC-supported records from heuristic candidates.
 `--allow-candidate-keys` explicitly permits heuristic keys only when no full
 CRC-supported prefixes are available. The `--montage` timeline respects the
 same rule and labels heuristic audio `HANGUL_CANDIDATE`, never `CRC_PREFIX`.
+
+The same pipeline accepts headerless signed 8-bit IQ directly. For the two
+0.912 Msps captures, run this from the repository root with their local paths.
+Set `KCBS_DREAM` to select a specific KCBS-patched receiver. Otherwise the
+Linux pipeline checks `work/dream-build/dream` for a prebuilt receiver,
+then uses the receiver built at `build/dream-src/dream`. The EVS binary belongs
+at `work/evs_gcc_independent/EVS_dec`. Windows uses the WSL receiver.
+
+```bash
+python scripts/kcbs_decode_audio.py capture1.cs8 capture2.cs8 --sample-rate 912000 --phrase-keys --montage --out work/cs8
+```
+
+`--phrase-keys` tries eight-character fragments from the contributed November
+bulletins. Each group gets one mask proposal before the decoder checks the
+received text CRC, header and padding or fill. A mask column occurring only in
+padding or fill is supported by that structure. Existing CRC-supported prefixes
+remain available. This helps on short weather recordings where the text does
+not complete a carousel repetition.
+
+`--offset-hz` selects a channel away from the recording center (station minus
+center, in Hz). The receiver checks the fixed idle message and its CRC when it
+is present. To export just the 48 kHz stereo I/Q for Dream, use
+`python scripts/resample_iq.py capture.cs8 capture48.wav --sample-rate 912000`.
 
 To combine simultaneous length-prefixed MSC dumps without re-demodulating:
 
@@ -168,14 +266,27 @@ python scripts/audit_capture_layout.py work/mycapture/salvage/groups.npz
 - Each data unit has 20 nominal 20 ms frames. The four 32-byte payloads in cycle
   `c` start at `7`, `40`, `73`, and `106` plus `131*c`, for `c=0..4`. The
   first mode byte is at `du[2+c]`; the others immediately precede their payload.
-- Payload bytes 0, 3, 6, …, 30 are XOR-masked. For `role = frame_index % 4`,
-  `plain[3*j] = cipher[3*j] XOR ks[11*role+j]`, for `j=0..10`. The 44-byte
-  mask is reused within the group. The 21 other bytes per frame are unmasked.
+- The nominal mask positions in each frame are payload bytes 0, 3, 6, …, 30.
+  For a masked position the receiver applies
+  `plain[3*j] = cipher[3*j] XOR ks[11*role+j]`, where
+  `role = frame_index % 4`. Each 1.2 s group repeats the same mask across
+  fifteen cycles. The 21 intervening bytes are received in the clear.
+- In the fourth frame, payload byte 30 behaves as an additional clear byte.
+  Its data-unit offsets are 136, 267, 398, 529 and 660. A model trained on
+  verified first-position plaintext chose a zero mask for this byte across
+  819 held-out groups, with a similar distribution of ranks for naturally
+  clear first-position controls. Checks on other dates, frequencies and EVS
+  coding modes independently support this interpretation. The 131-byte cycle
+  contains 43 complete triplets and a two-byte remainder. The observed byte
+  lies at the start of that remainder. The transmitter implementation is unknown.
 
 The text tail `du[698:714]` shares `ks[0..15]` with the audio layout. This covers
-all 11 role-0 mask bytes and five of role 1’s 11. The other six role-1 bytes and
-all 22 role-2/3 bytes have not been recovered. Similarity checks between roles do
-not establish independence. A one-step change of counter changes about 64 of the
+all 11 role-0 mask bytes and five of role 1’s 11. Counting the fourth-position
+terminal byte as clear leaves **27 unknown mask bytes per group** in the current
+transport model: six in role 1, eleven in role 2 and ten in role 3. The earlier
+44-position model counted 28. The programme-reference experiments produce
+additional inferred role-1 frames in selected November 19 groups. The packet
+CRC checks their received masked payload. A one-step change of counter changes about 64 of the
 128 known bits on average; that does not identify AES-CTR, establish cipher
 strength, or locate a secret in receiver hardware. Byte-identical payloads across
 two transmitters support a common upstream masked stream.
@@ -239,7 +350,7 @@ compares body, sequence, final flag and position without requiring the toggle.
   shuffles. Modes, clear bytes, frame positions and erasures were unchanged.
   So uniform wrong-key statistics do not explain the separation in these tests.
   Flags are not a universal check: some shuffles of known EVS controls also had
-  zero flags. The broadcast codec and audio correspondence remain unverified.
+  zero flags. Independent song matches for the two November 19 captures are documented above.
 - The candidate did not beat wrong-key controls against the simultaneously
   recorded November comparison stream. Its programme identity was not established
   by the channel label alone. At the selected lag, held-out correlation was
@@ -256,10 +367,13 @@ compares body, sequence, final flag and position without requiring the toggle.
   was not checked. The RF mode edge is counter **25464052**, phase 0, zero-based
   slot 1 (82.82 s from the longest capture’s first group, 322.82 s in the merge).
   `scripts/audit_march_contribution.py` reproduces the RF-only test.
-- The role-1 continuity pilot substituted a constant plaintext byte across
-  different frames. It did not apply a shared XOR mask to those frames and does
-  not establish that the six bytes are impossible to recover. Substitutes and
-  decoder concealment can sound unnatural or speech-like without matching speech.
+- The original role-1 continuity pilot inserted a constant plaintext byte across
+  different frames. The corrected `scripts/role1_key_search.py --pilot` plants
+  one shared XOR mask and starts a fresh EVS decoder for every candidate. In
+  a synthetic encode of a 1.2 s excerpt from *Longing Is My Happiness*, the
+  true mask ranked first at four of six individually hidden positions. The
+  other two ranked seventh and 104th. Every candidate passed the decoder's
+  flag checks. The other five byte values were supplied in each trial.
 
 ## Playback controls
 
@@ -267,7 +381,7 @@ The replay method improved held-out eSTOI from **0.437 to 0.520** on four genuin
 EVS speech excerpts with the March loss pattern. The metric compares against the
 full EVS encode, not the broadcast. Three synthetic instrumental controls showed
 no meaningful gain in spectral similarity. Music in the listening copy remains
-rough. These results neither identify the broadcast codec nor verify speech.
+rough on these controls. The November 19 music comparisons above use independent recordings of the recovered performances.
 
 To benchmark your own local speech material after building the codec, install
 FFmpeg and `pystoi`, then run:
@@ -298,9 +412,7 @@ scripts. The reported operating hours remain **05:00–23:00 KST**.
 ## Tests and licensing
 
 ```bash
-for t in test_key_recovery test_november_recovery test_speech_reconstruction test_aio_pipeline test_march_playback test_text_records test_capture_layout test_supplied_records; do
-    python scripts/$t.py || exit 1
-done
+python -m unittest discover -s scripts -p 'test_*.py'
 ```
 
 The tests use synthetic inputs to check CRC and salvage, key evidence, alignment,

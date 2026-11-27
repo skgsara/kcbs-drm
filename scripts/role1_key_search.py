@@ -11,20 +11,18 @@ known: every other unknown byte is set to its true value and all 256 values of o
 position are ranked. A true value ranked 1 means that position is identifiable; a
 poor rank means this oracle cannot recover it and no search over it is justified.
 
-Candidates are batched into a single bitstream per decoder call. Decoder state
-carries across concatenated segments, which biases all candidates equally and is
-acceptable for ranking, but it is not a clean per-candidate decode.
+The pilot plants a shared XOR byte across 15 independently varying encoded
+frames. Each candidate starts a fresh decoder at the same group boundary.
 """
 import argparse
 import json
 from pathlib import Path
 import re
 import subprocess
-import sys
 import tempfile
 
 import numpy as np
-from build_evs_gcc_independent import linux
+from build_evs_gcc_independent import linux, linux_command
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT/'work/ref/evs/src/c-code'
@@ -55,7 +53,7 @@ def build_traced(log):
     args += [linux(copy)] + [linux(p) for p in files] + ['-lm', '-o', linux(TRACED)]
     rsp = tmp/'traced.rsp'
     rsp.write_text('\n'.join('"' + x + '"' for x in args), encoding='utf-8')
-    p = subprocess.run(['wsl', '-d', 'Ubuntu', '--', 'gcc', '@' + linux(rsp)],
+    p = subprocess.run(linux_command('gcc', '@' + linux(rsp)),
                        capture_output=True, timeout=1800)
     log.append(dict(step='build traced decoder', returncode=p.returncode))
     if p.returncode:
@@ -63,9 +61,9 @@ def build_traced(log):
     return TRACED
 
 
-def decode_batch(tmp, label, frames, keep, log):
-    """Decode one concatenated stream; return per-frame (bfi, ber) and PCM."""
-    stream, raw = tmp/(label + '.192'), tmp/(label + '.raw')
+def decode_group(tmp, frames, keep):
+    """Start a fresh process and return this group's (BFI, BER) flags and PCM."""
+    stream, raw = tmp/'candidate.192', tmp/'candidate.raw'
     with stream.open('wb') as f:
         for b, good in zip(np.unpackbits(frames, axis=1), keep):
             if good:
@@ -73,10 +71,8 @@ def decode_batch(tmp, label, frames, keep, log):
                 f.write(np.where(b, 0x81, 0x7f).astype('<u2').tobytes())
             else:
                 f.write(np.array([0x6b20, 0], '<u2').tobytes())
-    argv = ['wsl', '-d', 'Ubuntu', '--', linux(TRACED), '-q', '-no_delay_cmp', '16',
-            linux(stream), linux(raw)]
+    argv = linux_command(TRACED, '-q', '-no_delay_cmp', 16, stream, raw)
     p = subprocess.run(argv, capture_output=True, timeout=1800)
-    log.append(dict(step=label, returncode=p.returncode, frames=int(len(frames))))
     if p.returncode:
         raise RuntimeError(p.stderr.decode(errors='replace')[-1500:])
     rows = np.array([list(map(int, m.split(','))) for m in
@@ -124,62 +120,74 @@ def roughness(pcm, span, role1_rows):
     return out
 
 
-def genuine_group(tmp, offset, log):
+def genuine_group(tmp, offset, reference, log):
     """One 60-frame block of genuine encoded speech, with its true bytes."""
     source = tmp/('g' + str(offset) + '.raw')
     encoded = tmp/('g' + str(offset) + '.192')
     subprocess.run(['ffmpeg', '-nostdin', '-y', '-v', 'error', '-ss', str(offset),
-                    '-i', str(ROOT/'work/live/session_20261125T054037Z/ref_20261125T054037Z.ts'),
+                    '-i', str(reference),
                     '-map', '0:a:0', '-af', 'aresample=' + str(RATE) + ',atrim=end_sample=' + str(int(1.6*RATE)),
                     '-t', '3', '-ac', '1', '-ar', str(RATE), '-f', 's16le', str(source)],
                    check=True, capture_output=True, timeout=120)
-    argv = ['wsl', '-d', 'Ubuntu', '--', linux(ROOT/'work/evs_gcc_independent/EVS_cod'),
-            '-q', '-no_delay_cmp', '-max_band', 'SWB', '13200', '16', linux(source), linux(encoded)]
+    argv = linux_command(ROOT/'work/evs_gcc_independent/EVS_cod',
+                         '-q', '-no_delay_cmp', '-max_band', 'SWB', 13200, 16, source, encoded)
     p = subprocess.run(argv, capture_output=True, timeout=300)
     log.append(dict(step='encode genuine at ' + str(offset), returncode=p.returncode))
     if p.returncode:
         raise RuntimeError(p.stderr.decode(errors='replace')[-800:])
     words = np.fromfile(encoded, '<u2').reshape(-1, 266)
     frames = np.packbits(words[:, 2:] == 0x81, axis=1)
+    if len(frames) < 60:
+        raise ValueError(f'{reference} has fewer than 60 EVS frames after {offset} seconds')
     return frames[:60]
+
+
+def mask_trials(plaintext, planted_mask):
+    """Create all 256 candidate decodes of a varying, synthetically masked byte."""
+    ciphertext = np.bitwise_xor(plaintext, np.uint8(planted_mask))
+    return ciphertext[None, :] ^ np.arange(256, dtype=np.uint8)[:, None]
 
 
 def pilot(args):
     log, results = [], []
+    rng = np.random.default_rng(args.seed)
     build_traced(log)
     with tempfile.TemporaryDirectory(prefix='pilot_', dir=(ROOT/args.out)) as td:
         tmp = Path(td)
         for i in range(args.groups):
-            offset = 150 + i*90
-            truth = genuine_group(tmp, offset, log)
+            offset = args.offset + i*90
+            truth = genuine_group(tmp, offset, args.reference, log)
             span = len(truth)
             slot = np.arange(span) % 4
             role1 = np.flatnonzero(slot == 1)
             keep = np.isin(slot, (0, 1))          # roles 2/3 erased, as in the real case
             for position in ROLE1_UNKNOWN:
-                batch = np.repeat(truth[None, :, :], 256, axis=0)
-                batch[:, role1, position] = np.arange(256, dtype=np.uint8)[:, None]
-                stacked = batch.reshape(-1, 33)
-                flags, pcm = decode_batch(tmp, 'pilot_' + str(i) + '_' + str(position),
-                                          stacked, np.tile(keep, 256), log)
-                flagged = np.array([int(((flags[s*span:(s+1)*span][role1]) != 0).any(axis=1).sum())
-                                    for s in range(256)])
-                rough = roughness(pcm, span, role1)
+                true_value = int(rng.integers(0, 256))
+                guesses = mask_trials(truth[role1, position], true_value)
+                frames = truth.copy()
+                flagged = np.zeros(256, dtype=int)
+                rough = np.empty(256)
+                for candidate, byte_values in enumerate(guesses):
+                    frames[role1, position] = byte_values
+                    flags, pcm = decode_group(tmp, frames, keep)
+                    flagged[candidate] = np.any(flags[role1] != 0, axis=1).sum()
+                    rough[candidate] = roughness(pcm, span, role1)[0]
                 order = np.lexsort((rough, flagged))
-                true_value = int(truth[role1[0], position])
-                assert len(set(truth[role1, position].tolist())) >= 1
-                rank = int(np.flatnonzero(order == true_value)[0]) + 1
-                row = dict(excerpt='ref_' + str(offset) + 's', byte_position=int(position),
-                           true_value=true_value, true_rank=rank,
+                true_flags, true_cost = flagged[true_value], rough[true_value]
+                better = (flagged < true_flags) | ((flagged == true_flags) & (rough < true_cost))
+                tied = np.sum((flagged == true_flags) & (rough == true_cost))
+                rank = 1 + int(better.sum())
+                row = dict(reference=str(args.reference), offset_seconds=offset, byte_position=int(position),
+                           true_value=true_value, true_rank=rank, tied_candidates=int(tied),
                            true_flagged=int(flagged[true_value]),
                            candidates_with_zero_flags=int((flagged == 0).sum()),
-                           best_rival_value=int(order[0]),
+                           best_rival_value=int(order[order != true_value][0]),
                            true_roughness=round(float(rough[true_value]), 5),
                            best_roughness=round(float(rough[order[0]]), 5))
                 results.append(row)
                 print(json.dumps(row), flush=True)
-    identifiable = [r for r in results if r['true_rank'] == 1]
-    summary = dict(tested=len(results), exact_rank1=len(identifiable),
+    identifiable = [r for r in results if r['true_rank'] == 1 and r['tied_candidates'] == 1]
+    summary = dict(seed=args.seed, independent_decoder_processes=256*len(results), tested=len(results), exact_rank1=len(identifiable),
                    median_rank=float(np.median([r['true_rank'] for r in results])),
                    mean_zero_flag_candidates=round(float(np.mean(
                        [r['candidates_with_zero_flags'] for r in results])), 1),
@@ -199,7 +207,14 @@ def main():
     ap.add_argument('--out', required=True)
     ap.add_argument('--pilot', action='store_true')
     ap.add_argument('--groups', type=int, default=2)
+    ap.add_argument('--reference', type=Path, default=ROOT/'work/live/session_20261125T054037Z/ref_20261125T054037Z.ts')
+    ap.add_argument('--offset', type=float, default=150, help='First excerpt start in seconds')
+    ap.add_argument('--seed', type=int, default=6140, help='Seed for synthetic mask values')
     a = ap.parse_args()
+    if a.groups < 1 or a.offset < 0:
+        ap.error('groups must be positive and offset must be nonnegative')
+    if not a.reference.is_file():
+        ap.error('provide an existing local audio file with --reference')
     (ROOT/a.out).mkdir(parents=True, exist_ok=False)
     if not a.pilot:
         raise SystemExit('run --pilot first: a search is only justified if bytes are identifiable')

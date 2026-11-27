@@ -1,0 +1,51 @@
+{
+  "codec": "3GPP TS 26.443 floating-point reference EVS, November 2021, V12.14.0 / V13.10.0 / V14.6.0 / V15.4.0 / V16.3.0",
+  "format": "Little-endian ITU-T G.192, one 20 ms frame per slot, with explicit erasures",
+  "duration_seconds": 30.0,
+  "sample_rate_hz": 16000,
+  "pcm_bits": 16,
+  "channels": 1,
+  "samples": 480000,
+  "frame_slots": 1500,
+  "frames_csv_sha256": "fef5176e472eb830ed9c1686476a7ec5b0bc47d578ff83e33bfe35c574209e5a",
+  "streams": {
+    "programme": {
+      "file": "programme.192.gz",
+      "compressed_sha256": "e707cb157345d5638920a1ca37c27f4b8b8c6b309864166f70914af15daffbc9",
+      "g192_sha256": "2ae4c7d6f186558db6f96cfc9c4c613e4d9702175f3980c855784fb3b4b32738",
+      "pcm_sha256": "fd777a6aab598bbeedcb226078a551e46a2b065ecdb4f290a5a79455a9e96194",
+      "wav_sha256": "c7a72f9c774a2e29718818ef95918487857929ff57140fd8b30fc934ba7fd5b7",
+      "text_supported_frames": 355,
+      "inferred_frames": 795,
+      "erased_frames": 350
+    },
+    "text-supported": {
+      "file": "text-supported.192.gz",
+      "compressed_sha256": "cdf3249dface379d6790e10701735a62dbd0f177f0847c5e28efd582804c713f",
+      "g192_sha256": "a4ef3f71d7df1825bee95031a0dc5533ab1c31395bd9165d71699ecd80ae4fd1",
+      "pcm_sha256": "360aa9e4f922a2d7e4c7240ec319bfeedcecb79a7c415c7dfb9c505197668132",
+      "wav_sha256": "bae9e9e21318dcc50e844b260e248a0da610b6c7cf4e681eded6ed928ebaa0d8",
+      "text_supported_frames": 355,
+      "inferred_frames": 0,
+      "erased_frames": 1145
+    }
+  },
+  "programme_supplied_frames_by_position": [
+    375,
+    285,
+    265,
+    225
+  ],
+  "fully_supplied_group_count": 14,
+  "longest_continuous_supplied_run": {
+    "start_seconds": 5.16,
+    "end_seconds": 17.22,
+    "frames": 603,
+    "seconds": 12.06
+  },
+  "fully_supplied_excerpt": {
+    "start_seconds": 5.2,
+    "duration_seconds": 12.0,
+    "wav_sha256": "e0e60f6b4cb9f24a214e94c1c47fd0602d4fff86a6a6f73f3733d3e85c1754c0"
+  }
+}

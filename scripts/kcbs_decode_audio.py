@@ -1,7 +1,7 @@
-"""End to end: KiwiSDR IQ .wav -> KCBS-2 side-channel text keys -> decoded audio.
+"""End to end: signed .cs8 or KiwiSDR IQ .wav -> KCBS-2 side-channel text keys -> decoded audio.
 
 Stages, each resumable and logged:
-  1 demod    IQ .wav -> DRM MSC dumps (patched Dream in WSL, bounded windows)
+  1 demod    IQ -> DRM MSC dumps (patched Dream, bounded windows)
   2 salvage  packet/DU CRC checked groups and data units, deduplicated by counter
   3 keys     fill cribs + repeated-text XOR propagation, kept only when a full
              112-byte segment passes its header, fill and CRC checks
@@ -10,21 +10,25 @@ Stages, each resumable and logged:
   5 audio    role 0 (11 keyed bytes known) and role 1 (5 of 11 known) frames decoded
              as EVS 13.2 at 20 ms spacing; roles 2 and 3 stay explicit losses
 
-What the output is NOT: role 1's remaining 6 keyed bytes are substitutes chosen by a
-strategy validated on genuine speech, not recovered key material, and roles 2/3 are
-concealed by the decoder. The EVS reading is a hypothesis supported by decoder syntax
-checks, not a confirmed codec identification, so the audio is UNVERIFIED.
+The six remaining masked bytes in each role-1 frame are estimated. EVS conceals
+other losses. The November 19 project recordings yielded two independently
+matched music performances. File names label new reconstructions as unverified
+until they have their own reference match.
 
-Requires: WSL Ubuntu with the patched Dream at /root/kcbs/dream-src, and the EVS
-build from scripts/build_evs_gcc_independent.py.
+Requires patched Dream and the EVS build from scripts/build_evs_gcc_independent.py.
+Linux uses work/dream-build/dream (or KCBS_DREAM). Windows uses Dream in WSL Ubuntu.
 
 Usage:
   python scripts/kcbs_decode_audio.py capture_iq.wav --out work/my_decode
+  python scripts/kcbs_decode_audio.py capture.cs8 --sample-rate 912000 --out work/cs8
   python scripts/kcbs_decode_audio.py a_iq.wav b_iq.wav --out work/my_decode --seconds 600
 """
 import argparse
+from contextlib import contextmanager
+import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -33,13 +37,13 @@ import time
 import wave
 
 import numpy as np
-import soundfile as sf
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
 
-from build_evs_gcc_independent import linux
+from build_evs_gcc_independent import linux_command
+from demod_iq_window import dream_binary, input_info
 from salvage_msc_packets import salvage
 from repeated_text_keys import recover
 import role1_key_search as rks
@@ -65,21 +69,86 @@ def check_tools():
     if not EVS_DECODER.exists():
         missing.append('EVS build missing: run scripts/build_evs_gcc_independent.py '
                        '--out work/evs_gcc_independent')
-    probe = subprocess.run(['wsl', '-d', 'Ubuntu', '--', 'test', '-x',
-                            '/root/kcbs/dream-src/dream'], capture_output=True)
+    binary = dream_binary()
+    probe = subprocess.run(linux_command('test', '-x', binary), capture_output=True)
     if probe.returncode:
-        missing.append('patched Dream not executable at /root/kcbs/dream-src/dream in WSL Ubuntu')
+        missing.append(f'patched Dream not executable at {binary}')
     return missing
 
 
-def stage_demod(inputs, out, seconds, start, log):
+@contextmanager
+def output_lock(directory):
+    """One writer owns the demod windows and their aggregate during a run."""
+    with (directory/'.pipeline.lock').open('a+b') as lock:
+        try:
+            if os.name == 'nt':
+                import msvcrt
+                lock.seek(0)
+                msvcrt.locking(lock.fileno(), msvcrt.LK_NBLCK, 1)
+            else:
+                import fcntl
+                fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError as error:
+            raise SystemExit(f'cannot lock output directory {directory}: {error}') from error
+        yield
+
+
+def preserve_previous(out, paths):
+    """Move superseded pipeline products aside, including pre-manifest runs."""
+    existing = [p for p in paths if p.exists() or p.is_symlink()]
+    if existing:
+        history = out/'previous-runs'
+        history.mkdir(exist_ok=True)
+        backup = Path(tempfile.mkdtemp(prefix='run-', dir=history))
+        for path in existing:
+            destination = backup/path.relative_to(out)
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            path.rename(destination)
+        print(f'  preserved previous output in {backup}', flush=True)
+
+
+def file_digest(path):
+    digest = hashlib.sha256()
+    with path.open('rb') as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b''):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def prepare_aggregate(out, dumps, args):
+    """Only trust completed salvage/key results from this exact set of dumps."""
+    keys = 'keys-phrases' if args.phrase_keys else 'keys'
+    signature = dict(version=1, inputs=[str(Path(p).resolve()) for p in args.inputs],
+                     dumps=[dict(path=str(p.relative_to(out)), sha256=file_digest(p)) for p in dumps],
+                     options={k: v for k, v in vars(args).items() if k not in ('inputs', 'out')})
+    if args.phrase_keys:
+        corpus = ROOT/'contrib/kcbsdrm/reference'
+        signature['bulletins'] = {p.name: file_digest(p) for p in sorted(corpus.glob('items_*.json'))}
+    manifest = out/'manifest.json'
+    prior = {}
+    if manifest.is_file():
+        try:
+            prior = json.loads(manifest.read_text(encoding='utf-8'))
+        except (ValueError, UnicodeError):
+            pass
+    required = [out/'salvage'/name for name in ('groups.npz', 'data_units.npz', 'report.json', 'provenance.json')]
+    required += [out/keys/name for name in ('keys.npz', 'report.json', 'segments.json', 'crc_supported_text.json')]
+    if (not isinstance(prior, dict) or prior.get('aggregate_inputs') != signature
+            or not all(p.is_file() for p in required)):
+        preserve_previous(out, [out/name for name in
+                                ('manifest.json', 'calls.json', 'salvage', 'keys', 'keys-phrases', 'text', 'audio')])
+    return signature
+
+
+def stage_demod(inputs, out, seconds, start, log, sample_rate=None, offset_hz=0.):
     """IQ -> MSC dumps in bounded windows, preserving source sample offsets."""
     dumps = []
     for number, path in enumerate(inputs):
-        info = sf.info(path)
-        if info.channels != 2 or abs(info.samplerate - 12000) > 3:
-            raise SystemExit('expected two-channel ~12 kHz IQ: ' + str(path))
-        total = min(seconds, info.duration - start) if seconds else info.duration - start
+        rate, frames = input_info(path, sample_rate)
+        raw = path.suffix.lower() == '.cs8'
+        tuning = offset_hz if raw else 0.
+        duration = frames / rate
+        total = min(seconds, duration - start) if seconds else duration - start
         if total <= 0:
             raise SystemExit('requested window is past the end of ' + str(path))
         window, overlap = 600.0, 30.0
@@ -89,18 +158,30 @@ def stage_demod(inputs, out, seconds, start, log):
             directory = out/('demod/source%02d_window%03d' % (number, index))
             marker = directory/'manifest.json'
             cached = None
-            if marker.exists():
-                cached = json.loads(marker.read_text(encoding='utf-8'))
-                # A 'running' manifest is from an interrupted run, not a result.
-                if cached.get('status') == 'running':
-                    import shutil
-                    shutil.rmtree(directory, ignore_errors=True)
+            if marker.is_file():
+                try:
+                    cached = json.loads(marker.read_text(encoding='utf-8'))
+                except (ValueError, UnicodeError):
+                    cached = None
+            if cached is not None:
+                expected = dict(source=str(path), source_bytes=path.stat().st_size,
+                                source_sample_rate=rate, start_sample=round(offset * rate),
+                                sample_count=min(round(length*rate), frames-round(offset*rate)))
+                dump = directory/'msc.bin'
+                if (not isinstance(cached, dict) or any(cached.get(k) != v for k, v in expected.items())
+                        or cached.get('channel_offset_hz', 0.) != tuning
+                        or cached.get('status') not in ('finished', 'no_msc_output')
+                        or path.stat().st_mtime_ns > marker.stat().st_mtime_ns
+                        or cached.get('dump_bytes') != (dump.stat().st_size if dump.is_file() else 0)):
                     cached = None
             if cached is not None:
                 state = cached
             else:
+                preserve_previous(out, [directory])
                 command = [sys.executable, str(HERE/'demod_iq_window.py'), str(path), str(directory),
                            '--start', str(offset), '--seconds', str(length)]
+                if raw:
+                    command.extend(['--sample-rate', str(sample_rate), '--offset-hz', str(offset_hz)])
                 began = time.monotonic()
                 proc = subprocess.run(command, capture_output=True, text=True,
                                       encoding='utf-8', errors='replace')
@@ -110,6 +191,8 @@ def stage_demod(inputs, out, seconds, start, log):
                     raise RuntimeError('demod produced no manifest: ' + (proc.stderr or '')[-800:])
                 state = json.loads(marker.read_text(encoding='utf-8'))
             dump = directory/'msc.bin'
+            if state.get('status') == 'failed':
+                raise RuntimeError(f'demodulation failed; see {marker}')
             if state.get('dump_bytes', 0) > 0 and dump.exists():
                 dumps.append(dump)
             print('  demod %s window %d: %s (%d bytes)'
@@ -159,11 +242,11 @@ def stage_text(keys_dir, salvage_dir, out, log):
               if not (r.get('header_ok') and r.get('fill_ok') and r.get('crc_ok'))]
     lines = ['KCBS-2 side-channel text (DRM text-message channel)',
              '',
-             'Segments are 112 bytes: header, 46 UTF-16LE characters, CRC-16, then 0xBB fill.',
+             'Scrolling records contain a header, UTF-16LE text and a transmitted CRC-16.',
              'A counter is one 1.2 s group, so counter differences give elapsed time.',
-             'The CRC-valid section below passed header, fill and CRC checks with no CRC',
-             'fitting or language-model guessing. The candidate section did not pass and may',
-             'contain wrong characters. A line break inside a segment is shown as " / ".',
+             'The CRC-valid section contains records that passed the transmitted checksum.',
+             'Phrase proposals, when enabled, are selected before the CRC check.',
+             'Unverified candidates may contain wrong characters. A line break is shown as " / ".',
              '',
              'CRC-VALID SEGMENTS (%d)' % len(verified),
              '=' * 72]
@@ -293,6 +376,8 @@ def stage_audio(groups_npz, keys_npz, out, rate, fill, log, allow_candidates=Fal
         keep_rows = d['counters'][index] == counters
         index, counters, keys = index[keep_rows], counters[keep_rows], keys[keep_rows]
         du = d['du'][index].copy()
+    if not len(counters):
+        return [], dict(audio_key_groups=0, crc_verified_key_groups=0, key_source='none')
     runs = np.split(np.arange(len(counters)), np.flatnonzero(np.diff(counters) != 1) + 1)
     write_runs = len(runs) <= 12 or not montage
     rendered = []
@@ -315,8 +400,8 @@ def stage_audio(groups_npz, keys_npz, out, rate, fill, log, allow_candidates=Fal
             base = k*60
             rows0 = base + np.flatnonzero(slot[base:base+60] == 0)
             rows1 = base + np.flatnonzero(slot[base:base+60] == 1)
-            flat[np.ix_(rows0, KEYED)] ^= keys[k, :11]
-            flat[np.ix_(rows1, KEYED[:5])] ^= keys[k, 11:16]
+            flat[np.ix_(rows0, KEYED)] ^= keys[g, :11]
+            flat[np.ix_(rows1, KEYED[:5])] ^= keys[g, 11:16]
         frames[:, 1:] = flat
         if fill == 'role1_smooth' and len(counters) > 60:
             # Per-group byte search costs 6 decoder passes per group; on long runs
@@ -331,7 +416,7 @@ def stage_audio(groups_npz, keys_npz, out, rate, fill, log, allow_candidates=Fal
             with tempfile.TemporaryDirectory(prefix='smooth_', dir=out) as smooth_tmp:
                 rks.build_traced(log)
                 for k, g in enumerate(ids):
-                    part, part_keep, _ = smooth_fill(Path(smooth_tmp), 'g%d' % counters[k],
+                    part, part_keep, _ = smooth_fill(Path(smooth_tmp), 'g%d' % counters[g],
                                                      frames[k*60:(k+1)*60], log, rng)
                     blocks.append(part)
                     flags_keep.append(part_keep)
@@ -352,8 +437,7 @@ def stage_audio(groups_npz, keys_npz, out, rate, fill, log, allow_candidates=Fal
                     f.write(np.where(bits, 0x81, 0x7f).astype('<u2').tobytes())
                 else:
                     f.write(np.array([0x6b20, 0], '<u2').tobytes())
-        command = ['wsl', '-d', 'Ubuntu', '--', linux(EVS_DECODER), '-q', '-no_delay_cmp',
-                   str(rate//1000), linux(stream), linux(raw)]
+        command = linux_command(EVS_DECODER, '-q', '-no_delay_cmp', rate//1000, stream, raw)
         proc = subprocess.run(command, capture_output=True, timeout=1800)
         log.append(dict(stage='audio', command=command, returncode=proc.returncode))
         if proc.returncode:
@@ -447,7 +531,7 @@ def stage_montage(groups_npz, keys_npz, out, rate, merge_gap, allow_candidates):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('inputs', nargs='+', help='KiwiSDR IQ .wav captures of the DRM signal')
+    ap.add_argument('inputs', nargs='+', help='KiwiSDR IQ .wav or interleaved signed .cs8 captures')
     ap.add_argument('--out', required=True, help='output directory (created)')
     ap.add_argument('--seconds', type=float, default=0, help='limit per input, 0 = whole file')
     ap.add_argument('--start', type=float, default=0, help='skip this many seconds of each input')
@@ -457,13 +541,24 @@ def main():
                          'call; larger values give longer stretches but more concealment')
     ap.add_argument('--montage', action='store_true',
                     help='write one counter-aligned timeline instead of separate runs')
+    ap.add_argument('--phrase-keys', action='store_true',
+                    help='propose text masks from the bundled earlier bulletins and accept records passing their transmitted CRC')
     ap.add_argument('--allow-candidate-keys', action='store_true',
                     help='if no key is CRC-verified, decode audio with fill-crib candidate '
                          'keys instead; output is labelled CANDIDATEKEYS and is weaker evidence')
     ap.add_argument('--fill', choices=pfq.STRATEGIES + ['role1_smooth'], default='role1_smooth',
                     help='role-1 substitute strategy for separate-run output; '
                          'montage always uses the adjacent role-0 donor')
+    ap.add_argument('--sample-rate', type=int, help='raw CS8 complex samples per second')
+    ap.add_argument('--offset-hz', type=float, default=0., help='CS8 channel minus center, Hz')
     a = ap.parse_args()
+    raw_inputs = [p for p in a.inputs if Path(p).suffix.lower() == '.cs8']
+    if raw_inputs and (a.sample_rate is None or a.sample_rate <= 0):
+        ap.error('raw CS8 requires a positive --sample-rate (for 0.912 Msps use 912000)')
+    if not raw_inputs and (a.sample_rate is not None or a.offset_hz):
+        ap.error('--sample-rate and --offset-hz apply to raw CS8')
+    if a.start < 0 or a.seconds < 0:
+        ap.error('--start and --seconds must be nonnegative')
     if a.merge_gap < 0:
         ap.error('--merge-gap must be nonnegative')
     missing = check_tools()
@@ -471,9 +566,16 @@ def main():
         raise SystemExit('missing prerequisites:\n  ' + '\n  '.join(missing))
     out = Path(a.out).resolve()
     out.mkdir(parents=True, exist_ok=True)
+    with output_lock(out):
+        run_pipeline(a, out)
+
+
+def run_pipeline(a, out):
     log = []
     print('[1/5] demodulating IQ', flush=True)
-    dumps = stage_demod([Path(p).resolve() for p in a.inputs], out, a.seconds, a.start, log)
+    dumps = stage_demod([Path(p).resolve() for p in a.inputs], out, a.seconds, a.start, log,
+                        a.sample_rate, a.offset_hz)
+    signature = prepare_aggregate(out, dumps, a)
     if not dumps:
         raise SystemExit('no DRM data decoded from these captures (check the signal was on air)')
     print('[2/5] salvaging CRC-good packets from %d dump(s)' % len(dumps), flush=True)
@@ -482,9 +584,9 @@ def main():
         salvage(dumps, salvage_dir)
     salvage_report = json.loads((salvage_dir/'report.json').read_text(encoding='utf-8'))
     print('[3/5] recovering side-channel text keys', flush=True)
-    keys_dir = out/'keys'
+    keys_dir = out/('keys-phrases' if a.phrase_keys else 'keys')
     if not (keys_dir/'keys.npz').exists():
-        recover(salvage_dir/'groups.npz', salvage_dir/'data_units.npz', keys_dir)
+        recover(salvage_dir/'groups.npz', salvage_dir/'data_units.npz', keys_dir, phrase_keys=a.phrase_keys)
     keys_report = json.loads((keys_dir/'report.json').read_text(encoding='utf-8'))
     print('[4/5] writing decoded text', flush=True)
     text_report = stage_text(keys_dir, salvage_dir, out, log)
@@ -498,10 +600,13 @@ def main():
                                              out, a.rate, a.fill, log, a.allow_candidate_keys,
                                              False)
     manifest = dict(
+        aggregate_inputs=signature,
         inputs=[str(Path(p).resolve()) for p in a.inputs],
         complete_groups=salvage_report['salvaged_complete_groups'],
         crc_good_data_units=salvage_report['crc_good_data_units'],
         crc_verified_key_bytes=keys_report['crc_supported_key_bytes'],
+        idle_crc_groups=keys_report.get('idle_crc_groups', 0),
+        phrase_crc_records=keys_report.get('phrase_crc_records', 0),
         **text_report,
         **audio_report,
         fill_strategy='role1_donor' if a.montage else a.fill, sample_rate=a.rate, audio=rendered,
@@ -517,8 +622,10 @@ def main():
                  'EVS 13.2 is an unconfirmed codec hypothesis.',
                  'Separate runs are different times; do not treat them as continuous audio.',
                  'Hangul candidate audio is heuristic, not CRC-supported.'])
-    (out/'manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
     (out/'calls.json').write_text(json.dumps(log, indent=2), encoding='utf-8')
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=out, delete=False) as done:
+        json.dump(manifest, done, indent=2)
+    Path(done.name).replace(out/'manifest.json')
     print(json.dumps({k: manifest[k] for k in
                       ('complete_groups', 'key_source', 'audio_key_groups',
                        'korean_validated_text_groups', 'crc_verified_key_groups',

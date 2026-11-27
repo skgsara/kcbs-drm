@@ -1,0 +1,447 @@
+{
+  "schema": 1,
+  "weather_records": [
+    {
+      "counter": 43854887,
+      "phase": 1,
+      "kind": "ordinary",
+      "blocks": 7,
+      "checksum": "5701"
+    },
+    {
+      "counter": 43854889,
+      "phase": 2,
+      "kind": "ordinary",
+      "blocks": 7,
+      "checksum": "ea16"
+    },
+    {
+      "counter": 43854892,
+      "phase": 0,
+      "kind": "ordinary",
+      "blocks": 7,
+      "checksum": "7358"
+    },
+    {
+      "counter": 43854894,
+      "phase": 1,
+      "kind": "ordinary",
+      "blocks": 7,
+      "checksum": "50b5"
+    },
+    {
+      "counter": 43854896,
+      "phase": 2,
+      "kind": "ordinary",
+      "blocks": 7,
+      "checksum": "71c2"
+    },
+    {
+      "counter": 43854899,
+      "phase": 0,
+      "kind": "ordinary",
+      "blocks": 6,
+      "checksum": "693b"
+    },
+    {
+      "counter": 43854901,
+      "phase": 1,
+      "kind": "weather_title",
+      "blocks": 6,
+      "checksum": "032b"
+    },
+    {
+      "counter": 43854903,
+      "phase": 2,
+      "kind": "ordinary",
+      "blocks": 7,
+      "checksum": "bd29"
+    },
+    {
+      "counter": 43854906,
+      "phase": 0,
+      "kind": "ordinary",
+      "blocks": 7,
+      "checksum": "3a82"
+    },
+    {
+      "counter": 43854908,
+      "phase": 1,
+      "kind": "ordinary",
+      "blocks": 7,
+      "checksum": "c73d"
+    }
+  ],
+  "inferred_counter_positions": {
+    "partial_weather_and_audio": [
+      [
+        43854885,
+        1
+      ],
+      [
+        43854885,
+        2
+      ],
+      [
+        43854886,
+        1
+      ],
+      [
+        43854886,
+        2
+      ]
+    ],
+    "tcx_and_hq": [
+      [
+        43854886,
+        3
+      ],
+      [
+        43854886,
+        4
+      ],
+      [
+        43854887,
+        3
+      ],
+      [
+        43854887,
+        4
+      ],
+      [
+        43854889,
+        3
+      ],
+      [
+        43854890,
+        3
+      ],
+      [
+        43854892,
+        3
+      ],
+      [
+        43854892,
+        4
+      ],
+      [
+        43854895,
+        3
+      ],
+      [
+        43854895,
+        4
+      ],
+      [
+        43854896,
+        3
+      ],
+      [
+        43854896,
+        4
+      ],
+      [
+        43854897,
+        3
+      ],
+      [
+        43854897,
+        4
+      ],
+      [
+        43854899,
+        3
+      ],
+      [
+        43854899,
+        4
+      ],
+      [
+        43854900,
+        3
+      ],
+      [
+        43854903,
+        3
+      ],
+      [
+        43854903,
+        4
+      ],
+      [
+        43854907,
+        3
+      ],
+      [
+        43854908,
+        3
+      ],
+      [
+        43854908,
+        4
+      ]
+    ],
+    "position_two_signs": [
+      [
+        43854887,
+        2
+      ],
+      [
+        43854890,
+        2
+      ],
+      [
+        43854891,
+        2
+      ],
+      [
+        43854892,
+        2
+      ],
+      [
+        43854893,
+        2
+      ],
+      [
+        43854894,
+        2
+      ],
+      [
+        43854895,
+        2
+      ],
+      [
+        43854896,
+        2
+      ],
+      [
+        43854897,
+        2
+      ],
+      [
+        43854898,
+        2
+      ],
+      [
+        43854899,
+        2
+      ],
+      [
+        43854901,
+        2
+      ],
+      [
+        43854903,
+        2
+      ],
+      [
+        43854906,
+        2
+      ],
+      [
+        43854907,
+        2
+      ],
+      [
+        43854908,
+        2
+      ],
+      [
+        43854909,
+        2
+      ],
+      [
+        43854910,
+        2
+      ]
+    ],
+    "tcx_and_hq_guarded": [
+      [
+        43854889,
+        4
+      ]
+    ],
+    "tcx_only": [
+      [
+        43854890,
+        4
+      ],
+      [
+        43854891,
+        3
+      ],
+      [
+        43854891,
+        4
+      ],
+      [
+        43854893,
+        3
+      ],
+      [
+        43854893,
+        4
+      ],
+      [
+        43854894,
+        3
+      ],
+      [
+        43854894,
+        4
+      ]
+    ],
+    "early_sign_tcx_and_hq": [
+      [
+        43854898,
+        3
+      ],
+      [
+        43854898,
+        4
+      ]
+    ],
+    "partial_final_group": [
+      [
+        43854910,
+        3
+      ]
+    ]
+  },
+  "tcx_only_example": {
+    "counter": 43854891,
+    "position": 3,
+    "mask": "d3abfddfe62b7219acac8d",
+    "measurement_order": [
+      "matches",
+      "observations",
+      "matches_at_740ms_shift"
+    ],
+    "sources": {
+      "FM": {
+        "clear": [
+          257,
+          259,
+          127
+        ],
+        "tail": [
+          93,
+          95,
+          48
+        ]
+      },
+      "CD": {
+        "clear": [
+          256,
+          259,
+          123
+        ],
+        "tail": [
+          93,
+          95,
+          48
+        ]
+      }
+    },
+    "min_per_tail_bit_across_splits": 3
+  },
+  "tcx_only_survey": {
+    "group_positions_tested": 15,
+    "byte12_shortlist_size": 8,
+    "blinded_first_position_controls": [
+      {
+        "counter": 43854893,
+        "result": "exact"
+      },
+      {
+        "counter": 43854890,
+        "result": "exact"
+      },
+      {
+        "counter": 43854891,
+        "result": "exact"
+      },
+      {
+        "counter": 43854894,
+        "result": "exact"
+      },
+      {
+        "counter": 43854904,
+        "result": "abstained"
+      },
+      {
+        "counter": 43854905,
+        "result": "abstained"
+      },
+      {
+        "counter": 43854906,
+        "result": "abstained"
+      }
+    ],
+    "stock_decoder_matching_sign_addresses": 2377
+  },
+  "alternate_tcx_only_survey": {
+    "results": [
+      {
+        "counter": 43854904,
+        "position": 3,
+        "byte12_branches": 8,
+        "width64_finalists": 40,
+        "native_legal_finalists": 0
+      },
+      {
+        "counter": 43854904,
+        "position": 4,
+        "byte12_branches": 8,
+        "width64_finalists": 46,
+        "native_legal_finalists": 0
+      },
+      {
+        "counter": 43854905,
+        "position": 3,
+        "byte12_branches": 8,
+        "width64_finalists": 40,
+        "native_legal_finalists": 0
+      },
+      {
+        "counter": 43854905,
+        "position": 4,
+        "byte12_branches": 8,
+        "width64_finalists": 40,
+        "native_legal_finalists": 0
+      },
+      {
+        "counter": 43854906,
+        "position": 4,
+        "byte12_branches": 8,
+        "width64_finalists": 40,
+        "native_legal_finalists": 0
+      },
+      {
+        "counter": 43854909,
+        "position": 4,
+        "byte12_branches": 8,
+        "width64_finalists": 40,
+        "native_legal_finalists": 0
+      }
+    ],
+    "blinded_first_position_controls": [
+      {
+        "counter": 43854891,
+        "result": "exact"
+      },
+      {
+        "counter": 43854894,
+        "result": "exact"
+      },
+      {
+        "counter": 43854904,
+        "result": "abstained"
+      },
+      {
+        "counter": 43854906,
+        "result": "abstained"
+      }
+    ]
+  }
+}

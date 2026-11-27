@@ -1,0 +1,75 @@
+{
+  "sources": [
+    "Pyongyang FM Nov 19 archive",
+    "1991 CD Wangjaesan Light Music Band Vol. 1, track 1"
+  ],
+  "stream_sha256": "2ae4c7d6f186558db6f96cfc9c4c613e4d9702175f3980c855784fb3b4b32738",
+  "waveform_measurement": "Mean signed normalized cosine over 75\u20133500 Hz in 20 ms windows, aligned to the earlier reference clocks. Windows lacking signal or reference support were excluded.",
+  "newly_supplied_windows": {
+    "total": 795,
+    "scoreable": 785
+  },
+  "all_time_windows": {
+    "total": 1500,
+    "scoreable": 1479
+  },
+  "radio_vs_reference": {
+    "text": {
+      "supplied_words": 355,
+      "all_comparable_time": {
+        "fm": 0.383515,
+        "cd": 0.380888
+      },
+      "at_newly_supplied_windows": {
+        "fm": 0.24517,
+        "cd": 0.24172
+      }
+    },
+    "published": {
+      "supplied_words": 1150,
+      "all_comparable_time": {
+        "fm": 0.804227,
+        "cd": 0.80029
+      },
+      "at_newly_supplied_windows": {
+        "fm": 0.930152,
+        "cd": 0.926437
+      }
+    },
+    "same-mode-shuffle-added": {
+      "supplied_words": 1150,
+      "all_comparable_time": {
+        "fm": 0.238586,
+        "cd": 0.238123
+      },
+      "at_newly_supplied_windows": {
+        "fm": 0.035432,
+        "cd": 0.034065
+      }
+    },
+    "flip-added": {
+      "supplied_words": 1150,
+      "all_comparable_time": {
+        "fm": 0.240951,
+        "cd": 0.239984
+      },
+      "at_newly_supplied_windows": {
+        "fm": 0.045439,
+        "cd": 0.04501
+      }
+    }
+  },
+  "published_740ms_displaced_reference_at_newly_supplied_windows": {
+    "fm": -0.015579,
+    "cd": -0.016007
+  },
+  "baseline_stability": {
+    "text_to_final_dropped": 0,
+    "text_to_final_changed": 0,
+    "g192_vs_ledger_disagreements": 0,
+    "duplicate_timeline_coordinates": 0,
+    "control_swaps_assigned": 792,
+    "control_swaps_unavailable": 3,
+    "corruption_changed": 795
+  }
+}

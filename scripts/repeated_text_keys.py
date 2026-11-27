@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 
 import numpy as np
-from tail_fill_audit import crc
+from tail_fill_audit import crc, idle_prefixes
 
 
 class XorUF:
@@ -70,7 +70,7 @@ def segment(start, tails):
     return dict(start=start, cipher=cipher, present=present, groups=groups, features=features)
 
 
-def recover(group_path, units_path, out, require_fill=False):
+def recover(group_path, units_path, out, require_fill=False, phrase_keys=False):
     g, units = np.load(group_path), np.load(units_path)
     tails = {3*int(c)+int(p): du[698:714]
              for c,p,du in zip(units['counters'], units['phases'], units['du'])}
@@ -153,7 +153,33 @@ def recover(group_path, units_path, out, require_fill=False):
             valid.append(row)
             for j in range(96):
                 crc_supported[index[int(s['groups'][j])], j % 16] = True
+    # Complete groups may carry the fixed idle message in place of scrolling
+    # records. Both its exact bytes and its transmitted CRC check the prefix.
+    complete = [int(c) for c in g['counters'] if all(3*int(c)+p in tails for p in range(3))]
+    full_tails = np.array([[tails[3*c+p] for p in range(3)] for c in complete],
+                          dtype=np.uint8).reshape(-1, 3, 16)
+    idle, idle_ok = idle_prefixes(full_tails)
+    for pos in np.flatnonzero(idle_ok):
+        row = index[complete[pos]]
+        if np.any(crc_supported[row] & (keys[row] != idle[pos])):
+            raise ValueError(f'conflicting CRC-supported prefixes for group {complete[pos]}')
+        keys[row] = idle[pos]
+        candidate[row] = crc_supported[row] = True
+    phrase_records = []
+    if phrase_keys:
+        from phrase_text_keys import recover_records
+        phrase_records, confirmed = recover_records(tails, counters, keys, crc_supported)
+        existing = {r['start'] for r in valid}
+        for record in phrase_records:
+            if record['start'] not in existing:
+                valid.append(record)
+        for c, key in confirmed.items():
+            row = index[c]
+            keys[row] = key
+            candidate[row] = crc_supported[row] = True
     report = dict(acceptance=('crc + fill trailer' if require_fill else 'crc only'),
+                  phrase_crc_records=len(phrase_records),
+                  idle_crc_groups=int(idle_ok.sum()),
                   segment_hypotheses=len(segments), invariant_pair_comparisons=comparisons,
                   matched_pairs=matches, conflicting_pairs=rejected,
                   fully_keyed_complete_segments_tested=len(checked), crc_supported_segments=len(valid),

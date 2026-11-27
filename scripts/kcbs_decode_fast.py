@@ -30,15 +30,12 @@ import time
 import wave
 
 import numpy as np
-from build_evs_gcc_independent import linux
+from build_evs_gcc_independent import linux_command
 
-from tail_fill_audit import audit, crc
+from tail_fill_audit import audit, idle_prefixes
 import render_continuous as rc
 
 ROOT = Path(__file__).resolve().parents[1]
-
-KNOWN = b'\x68\xf0TextMessage is sending...'
-
 
 def find_dumps(source):
     """Existing dumps for this capture, so demodulation is not repeated."""
@@ -55,10 +52,7 @@ def idle_keys(groups_npz):
         tails = d['tails']
         counters = d['counters'].astype(np.int64)
         du = d['du']
-    keys = tails[:, 0] ^ 0xFF
-    message = np.concatenate((tails[:, 1] ^ keys, tails[:, 2] ^ keys), axis=1)
-    ok = np.array([bytes(m[:27]) == KNOWN and
-                   crc(m[:27]) == int.from_bytes(bytes(m[27:29]), 'big') for m in message], dtype=bool)
+    keys, ok = idle_prefixes(tails)
     return counters[ok], keys[ok], du[ok], int(ok.sum()), len(counters)
 
 
@@ -117,8 +111,8 @@ def decode_evs(part, keep, rate, temporary):
                 f.write(np.where(bits, 0x81, 0x7f).astype('<u2').tobytes())
             else:
                 f.write(np.array([0x6b20, 0], '<u2').tobytes())
-    command = ['wsl', '-d', 'Ubuntu', '--', linux(ROOT/'work/evs_gcc_independent/EVS_dec'),
-               '-q', '-no_delay_cmp', str(rate//1000), linux(stream), linux(raw)]
+    command = linux_command(ROOT/'work/evs_gcc_independent/EVS_dec',
+                            '-q', '-no_delay_cmp', rate//1000, stream, raw)
     proc = subprocess.run(command, capture_output=True, timeout=7200)
     if proc.returncode:
         raise SystemExit(proc.stderr.decode(errors='replace')[-2000:])

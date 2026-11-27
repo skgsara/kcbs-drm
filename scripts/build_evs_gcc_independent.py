@@ -2,13 +2,23 @@
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 
 
 def linux(path):
-    s=str(Path(path).resolve()).replace('\\','/')
-    return '/mnt/'+s[0].lower()+s[2:]
+    """Return a path suitable for the Linux compiler or decoder."""
+    path = Path(path).resolve()
+    if os.name != 'nt':
+        return str(path)
+    return '/mnt/' + path.drive[0].lower() + path.as_posix()[2:]
+
+
+def linux_command(*args):
+    """Run a Linux tool directly on POSIX, or in Ubuntu WSL on Windows."""
+    prefix = ['wsl', '-d', 'Ubuntu', '--'] if os.name == 'nt' else []
+    return prefix + [linux(x) if isinstance(x, Path) else str(x) for x in args]
 
 
 def main():
@@ -27,7 +37,7 @@ def main():
         arguments += [linux(p) for p in files]+['-lm','-o',linux(binary)]
         rsp=out/(mode+'.rsp')
         rsp.write_text('\n'.join('"'+s.replace('"','\\"')+'"' for s in arguments),encoding='utf-8')
-        command=['wsl','-d','Ubuntu','--','gcc','@'+linux(rsp)]
+        command=linux_command('gcc', '@'+linux(rsp))
         result=subprocess.run(command,capture_output=True,timeout=600)
         (out/(mode+'.log')).write_bytes(result.stdout+b'\n'+result.stderr)
         row=dict(mode=mode,source_files=len(files),command=command,returncode=result.returncode,

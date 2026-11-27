@@ -1,0 +1,88 @@
+--- a/src/sound/audiofilein.h
++++ b/src/sound/audiofilein.h
+@@ -34,6 +34,8 @@
+ #include "../resample/caudioresample.h"
+ 
+ /* Classes ********************************************************************/
++struct OfflineInputEnd { bool failed; };
++
+ class CAudioFileIn : public CSoundInInterface
+ {
+ public:
+--- a/src/sound/audiofilein.cpp
++++ b/src/sound/audiofilein.cpp
+@@ -39,6 +39,17 @@
+ #include <string.h>
+ 
+ using namespace std;
++
++static bool offlineWaveInput()
++{
++#if defined(QT_CORE_LIB) || !defined(HAVE_LIBSNDFILE)
++    // The single-pass EOF handler belongs to the native console receiver.
++    return false;
++#else
++    const char* setting = std::getenv("DREAM_FILE_OFFLINE");
++    return setting && std::strcmp(setting, "1") == 0;
++#endif
++}
+ 
+ CAudioFileIn::CAudioFileIn(): CSoundInInterface(), eFmt(fmt_other),
+     pFileReceiver(nullptr), iSampleRate(0), iRequestedSampleRate(0), iBufferSize(0),
+@@ -179,7 +190,7 @@
+         delete pacer;
+         pacer = nullptr;
+     }
+-    if (bNewBlocking)
++    if (bNewBlocking && (eFmt == fmt_txt || !offlineWaveInput()))
+     {
+         double interval = double(iNewBufferSize/2) / double(iNewSampleRate);
+         pacer = new CPacer(uint64_t(1e9*interval));
+@@ -277,6 +288,16 @@
+         sf_count_t c = sf_readf_short((SNDFILE*)pFileReceiver, &buffer[iReadFrame * iFileChannels], iRemainingFrame);
+ 	    if (c != sf_count_t(iRemainingFrame))
+ 	    {
++            if (offlineWaveInput()) {
++                const bool failed = sf_error((SNDFILE*)pFileReceiver) != 0;
++                if (failed || c <= 0)
++                    throw OfflineInputEnd{failed};
++                // Retain the last partial block. The next read reports EOF.
++                const int remainder = iRemainingFrame - int(c);
++                std::memset(&buffer[(iReadFrame + c) * iFileChannels], 0,
++                            remainder * iFileChannels * sizeof(*buffer));
++                break;
++            }
+             /* rewind */
+             if (sf_error((SNDFILE*)pFileReceiver) || sf_seek((SNDFILE*)pFileReceiver, 0, SEEK_SET) == -1)
+             {
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -37,6 +37,7 @@
+ #endif
+ #include "GlobalDefinitions.h"
+ #include "DrmReceiver.h"
++#include "sound/audiofilein.h"
+ #include "DrmTransmitter.h"
+ #include "DrmSimulation.h"
+ #include "util/Settings.h"
+@@ -82,7 +83,19 @@
+                     do
+                     {
+                         DRMReceiver.updatePosition();
+-                        DRMReceiver.process();
++                        try {
++                            DRMReceiver.process();
++                        } catch (const OfflineInputEnd& end) {
++                            DRMReceiver.CloseSoundInterfaces();
++#ifdef USE_CONSOLEIO
++                            CConsoleIO::Leave();
++#endif
++                            if (end.failed)
++                                cerr << "Error reading offline input." << endl;
++                            else
++                                cerr << "Reached end of input in offline mode." << endl;
++                            return end.failed ? 1 : 0;
++                        }
+ #ifdef USE_CONSOLEIO
+                         eRunState = CConsoleIO::Update();
+ #endif

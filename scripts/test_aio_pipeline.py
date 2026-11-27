@@ -1,8 +1,10 @@
 """Synthetic checks for the end-to-end pipeline's frame assembly and fills."""
 import importlib.util
+import json
 import sys
 import tempfile
 import unittest
+from types import SimpleNamespace
 from unittest.mock import patch
 from pathlib import Path
 
@@ -14,9 +16,79 @@ spec = importlib.util.spec_from_file_location('pfq', HERE/'partial_frame_quality
 pfq = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pfq)
 import kcbs_decode_audio as aio
+import demod_iq_window as demod
 
 
 class PipelineTests(unittest.TestCase):
+    def test_aggregate_cache_tracks_all_dumps_and_run_options(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            demod = root/'demod'
+            demod.mkdir()
+            first, second = demod/'a.bin', demod/'b.bin'
+            first.write_bytes(b'one')
+            second.write_bytes(b'two')
+            args = SimpleNamespace(inputs=['a.wav'], phrase_keys=False, rate=16000)
+
+            def complete(signature):
+                (root/'manifest.json').write_text(json.dumps({'aggregate_inputs': signature}))
+                for folder, names in {
+                    'salvage': ('groups.npz', 'data_units.npz', 'report.json', 'provenance.json'),
+                    'keys': ('keys.npz', 'report.json', 'segments.json', 'crc_supported_text.json'),
+                    'audio': ('prior.wav',),
+                }.items():
+                    directory = root/folder
+                    directory.mkdir(exist_ok=True)
+                    for name in names:
+                        (directory/name).touch()
+
+            # A legacy, unsigned aggregate cannot certify which windows it used.
+            complete(None)
+            single = aio.prepare_aggregate(root, [first], args)
+            self.assertFalse((root/'salvage').exists())
+            self.assertEqual(len(list((root/'previous-runs').glob('*/audio/prior.wav'))), 1)
+            complete(single)
+            self.assertEqual(aio.prepare_aggregate(root, [first], args), single)
+            self.assertTrue((root/'salvage/groups.npz').exists())
+
+            args.inputs.append('b.wav')
+            pair = aio.prepare_aggregate(root, [first, second], args)
+            self.assertFalse((root/'keys').exists())
+            self.assertFalse((root/'audio').exists())
+            self.assertTrue(second.exists())
+            complete(pair)
+            second.write_bytes(b'new')  # same path and number of bytes
+            changed = aio.prepare_aggregate(root, [first, second], args)
+            self.assertNotEqual(pair, changed)
+            self.assertFalse((root/'manifest.json').exists())
+            complete(changed)
+            args.rate = 32000
+            self.assertNotEqual(aio.prepare_aggregate(root, [first, second], args), changed)
+            self.assertFalse((root/'audio/prior.wav').exists())
+
+    def test_dream_discovery_and_wsl_override(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td).resolve()
+            source_build = root/'build/dream-src/dream'
+            source_build.parent.mkdir(parents=True)
+            source_build.touch()
+            with patch.object(demod, '__file__', str(root/'scripts/demod_iq_window.py')), \
+                 patch.object(demod, 'os') as host, \
+                 patch.object(demod, 'linux', side_effect=str):
+                host.name, host.environ = 'posix', {}
+                self.assertEqual(demod.dream_binary(), str(source_build))
+                prebuilt = root/'work/dream-build/dream'
+                prebuilt.parent.mkdir(parents=True)
+                prebuilt.touch()
+                self.assertEqual(demod.dream_binary(), str(prebuilt))
+                host.name, host.environ = 'nt', {'KCBS_DREAM': '/home/radio/special/dream'}
+                self.assertEqual(demod.dream_binary(), '/home/radio/special/dream')
+                host.environ = {}
+                self.assertEqual(demod.dream_binary(), str(prebuilt))
+                prebuilt.unlink()
+                source_build.unlink()
+                self.assertEqual(demod.dream_binary(), demod.WSL_LEGACY_DREAM)
+
     def test_packet_and_mode_positions_match_container(self):
         self.assertEqual(aio.PACKET_STARTS[:4], [7, 40, 73, 106])
         self.assertEqual(aio.MODE_POSITIONS[:4], [2, 39, 72, 105])
@@ -57,6 +129,33 @@ class PipelineTests(unittest.TestCase):
         np.testing.assert_array_equal(built, frames)
         self.assertEqual(int(keep.sum()), 20)
 
+
+    def test_discontinuous_runs_use_their_own_prefix(self):
+        counters = np.array([10, 12], dtype=np.uint32)
+        keys = np.tile(np.array([[17], [51]], dtype=np.uint8), (1, 16))
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            groups, archive = root/'groups.npz', root/'keys.npz'
+            np.savez(groups, counters=counters, du=np.zeros((2, 3, 716), dtype=np.uint8))
+            np.savez(archive, counters=counters, ks=keys, crc_supported=np.ones_like(keys, bool))
+            streams = []
+
+            def inspect(frames, *args):
+                streams.append(frames.copy())
+                return pfq.apply_strategy(frames, *args)
+
+            def fake_decoder(*args, **kwargs):
+                counter = counters[len(streams)-1]
+                raw = root/'audio'/f'run_{counter}-{counter}.raw'
+                np.zeros(60 * 320, dtype='<i2').tofile(raw)
+                return aio.subprocess.CompletedProcess(args, 0)
+
+            with patch.object(aio.pfq, 'apply_strategy', side_effect=inspect), \
+                    patch.object(aio.subprocess, 'run', side_effect=fake_decoder):
+                aio.stage_audio(groups, archive, root, 16000, 'erase_all', [])
+            for frames, key in zip(streams, keys):
+                np.testing.assert_array_equal(frames[0, 1 + aio.KEYED], key[:11])
+                np.testing.assert_array_equal(frames[1, 1 + aio.KEYED[:5]], key[11:16])
 
     def test_text_stage_separates_verified_from_candidates(self):
         import json, tempfile

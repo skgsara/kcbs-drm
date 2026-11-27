@@ -1,4 +1,4 @@
-﻿$out = "C:\Users\culli\OneDrive\Documents\Claude\KCBS\KCBSDRM\build\wsl_install.log"
+﻿$out = Join-Path $PSScriptRoot "wsl_install.log"
 "=== elevated: $(Get-Date) ===" | Out-File $out
 foreach ($f in @("Microsoft-Windows-Subsystem-Linux","VirtualMachinePlatform")) {
   $s = (Get-WindowsOptionalFeature -Online -FeatureName $f).State

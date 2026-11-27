@@ -19,6 +19,17 @@ def crc(data):
     return binascii.crc_hqx(bytes(data), 0xffff) ^ 0xffff
 
 
+def idle_prefixes(tails):
+    """Derive a prefix from phase 0 and check the exact idle message and its CRC."""
+    idle = tails[:, 0] ^ 255
+    msg = np.concatenate((tails[:, 1] ^ idle, tails[:, 2] ^ idle), axis=1)
+    known = b'\x68\xf0TextMessage is sending...'
+    idle_ok = np.array([bytes(m[:27]) == known and
+                        crc(m[:27]) == int.from_bytes(bytes(m[27:29]), 'big')
+                        for m in msg], dtype=bool)
+    return idle, idle_ok
+
+
 def read_groups(paths):
     groups, origins, conflicts, stats = {}, {}, set(), []
     for path in paths:
@@ -124,13 +135,7 @@ def audit(paths, out):
                              header_checked=cand['header_checked'],
                              text_good=cand['text_good'], text_total=cand['text_total'],
                              plaintext_hex=cand['plain'].tobytes().hex()))
-    # An idle hypothesis is validated separately by an exact known payload AND CRC.
-    idle = tails[:, 0] ^ 255
-    msg = np.concatenate((tails[:, 1] ^ idle, tails[:, 2] ^ idle), axis=1)
-    known = b'\x68\xf0TextMessage is sending...'
-    idle_ok = np.array([bytes(m[:27]) == known and
-                        crc(m[:27]) == int.from_bytes(bytes(m[27:29]), 'big')
-                        for m in msg], dtype=bool)
+    idle, idle_ok = idle_prefixes(tails)
     counts = dict(files=stats, groups=len(counters), conflicts=len(conflicts),
                   counter_min=int(counters.min()) if len(counters) else None,
                   counter_max=int(counters.max()) if len(counters) else None,

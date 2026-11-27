@@ -7,3 +7,7 @@ __pycache__/
 # generated demodulator output, except the dumps shipped with the bundled recording
 *.msc.bin
 !dumps/*.msc.bin
+
+# Local receiver builds and setup logs
+/build/dream-src/
+/build/wsl_install.log

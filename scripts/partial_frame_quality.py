@@ -19,7 +19,7 @@ import wave
 
 import numpy as np
 
-from build_evs_gcc_independent import linux
+from build_evs_gcc_independent import linux_command
 
 ROOT = Path(__file__).resolve().parents[1]
 RATE = 16000
@@ -37,8 +37,7 @@ def run(argv, log, timeout=300):
 
 
 def gcc(tool, args, log):
-    run(['wsl', '-d', 'Ubuntu', '--', linux(ROOT/'work/evs_gcc_independent'/tool)] +
-        [linux(x) if isinstance(x, Path) else x for x in args], log)
+    run(linux_command(ROOT/'work/evs_gcc_independent'/tool, *args), log)
 
 
 def decode(tmp, label, frames, keep, log, rate=RATE):
