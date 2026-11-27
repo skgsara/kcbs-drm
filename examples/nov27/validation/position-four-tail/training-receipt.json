@@ -1,0 +1,47 @@
+{
+  "archived_sources": {
+    "march-194943": {
+      "file": "hl5ntr.ddns.net_2026-03-16T19_49_43Z_3205.000_iq.wav",
+      "sha256": "68477aaba22732c2f7c6cdfc6bf9ea11d2815efaab9401e7dc2a6798f5f43d35",
+      "sample_rate": 12000,
+      "sample_pairs": 1047040,
+      "complete_groups": 69
+    },
+    "march-195114": {
+      "file": "hl5ntr.ddns.net_2026-03-16T19_51_14Z_3205.000_iq.wav",
+      "sha256": "b6743c6b985029761231e9987d13b29c56fd0fc0549165f6bb311015ba231f1b",
+      "sample_rate": 12000,
+      "sample_pairs": 1340928,
+      "complete_groups": 88
+    },
+    "march-195342": {
+      "file": "hl5ntr.ddns.net_2026-03-16T19_53_42Z_3205.000_iq.wav",
+      "sha256": "11b057d569cfc2e803d6bf1799c99f12693f56aa36cf7bb47d09a47267633beb",
+      "sample_rate": 12000,
+      "sample_pairs": 10921472,
+      "complete_groups": 707
+    },
+    "nov27-2258": {
+      "file": "7l4iou-6140-20261127T2258Z-iq48.flac",
+      "sha256": "7df95534e146e793a98e90285cfebac93a50f60b9d52b64298fa738ad9709304",
+      "sample_rate": 48000,
+      "sample_pairs": 8640000,
+      "complete_groups": 35
+    }
+  },
+  "digest_definition": "Ordered, unique big-endian uint32 counter immediately followed by three original 716-byte units in phase order.",
+  "pooled": {
+    "crc_good_du": 2788,
+    "complete_groups": 899,
+    "counter_range": [
+      25463783,
+      43905051
+    ],
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "text_candidates_evaluated": false,
+    "sorted_counter_be32_plus_3x716_sha256": "1e50a8456becb1e0dffe719d13cc341acada0e5e1b14d5187a3b87c67f50fb2d",
+    "groups_npz_sha256": "3795038720a26a7e357f3ba041e4b577c598adbd76f93d2fb6e0d79d9921e443",
+    "data_units_npz_sha256": "3ba9b75cbb97e76dd0f4d5e5b194e5447fdb029d7a26ddb92eae54593758f567"
+  }
+}

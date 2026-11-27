@@ -396,7 +396,11 @@ python scripts/audit_capture_layout.py work/mycapture/salvage/groups.npz
   clear first-position controls. Checks on other dates, frequencies and EVS
   coding modes independently support this interpretation. The 131-byte cycle
   contains 43 complete triplets and a two-byte remainder. The observed byte
-  lies at the start of that remainder. The transmitter implementation is unknown.
+  lies at the start of that remainder. In a cross-date check, the fourth-position
+  byte matched a text-supported first-position comparison with the same local
+  codec fields in 438 of 1,665 cases, versus 58 in a shifted control. Of the
+  438 matches, 402 came from one GSC mode. The transmitter implementation is
+  unknown. [Fourth-position byte tests](examples/nov27/validation/position-four-tail/README.md)
 
 The text tail `du[698:714]` shares `ks[0..15]` with the audio layout. This covers
 all 11 role-0 mask bytes and five of role 1’s 11. Counting the fourth-position

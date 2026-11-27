@@ -1,0 +1,187 @@
+{
+  "script": "archive_control.py",
+  "full_output_sha256": "f42f241b435d1667ea4d27d564b1504bfb1233ce59d7390e6ceb7573de9de9c0",
+  "input_transport_sha256": {
+    "2026-11-25_0448KST_3205_hik": "5d1630fdeb585b343f1d7e6a7134741f39deef3f96ebc714777c348390740be0",
+    "2026-11-25_0457KST_3205_hik": "c0ff7cfb023c45e065ec3745d90a3accac35aa873f1fa5244906409da36a811e",
+    "2026-11-25_1246KST_6140_merged": "d25689296e129309890bd6e19518a30a5b3d25599d903c0470d9a38862ebd321",
+    "2026-11-25_2242KST_3205_hl5ntr": "983cee212789269f9634328d10bd91e2ebe51ae7a27904ce74f4552b75cb0682",
+    "2026-11-26_0500KST_3205_hl5ntr": "4eaa8c8e2119dd817cad676273f5b5c2eb1a66067c4447b550c85f6a248ca6a0",
+    "2026-11-26_0642KST_merged": "c037c2723e887808cb2167bff876b44869035c47d939123d221858a6acc9cc7a",
+    "2026-11-26_1008KST_merged": "203db4bc7a892b499f9dc3f45840b0a62174a900fa42d4aeded6307667871e56"
+  },
+  "strict_comparison": {
+    "aligned_payload_offsets": [
+      28,
+      29,
+      31
+    ],
+    "totals": {
+      "P4_raw": {
+        "matched": {
+          "matches": 438,
+          "compared": 1665,
+          "percent": 26.306
+        },
+        "shuffled": {
+          "matches": 58,
+          "compared": 1665,
+          "percent": 3.483
+        }
+      },
+      "P2_raw": {
+        "matched": {
+          "matches": 5,
+          "compared": 1761,
+          "percent": 0.284
+        },
+        "shuffled": {
+          "matches": 6,
+          "compared": 1761,
+          "percent": 0.341
+        }
+      },
+      "P3_raw": {
+        "matched": {
+          "matches": 11,
+          "compared": 1700,
+          "percent": 0.647
+        },
+        "shuffled": {
+          "matches": 8,
+          "compared": 1700,
+          "percent": 0.471
+        }
+      },
+      "P1_supported": {
+        "matched": {
+          "matches": 307,
+          "compared": 1189,
+          "percent": 25.82
+        },
+        "shuffled": {
+          "matches": 45,
+          "compared": 1189,
+          "percent": 3.785
+        }
+      },
+      "P1_raw": {
+        "matched": {
+          "matches": 8,
+          "compared": 1189,
+          "percent": 0.673
+        },
+        "shuffled": {
+          "matches": 9,
+          "compared": 1189,
+          "percent": 0.757
+        }
+      }
+    },
+    "both_date_folds": {
+      "P4_raw/2026-11-25": {
+        "matched": {
+          "matches": 218,
+          "compared": 816,
+          "percent": 26.716
+        },
+        "shuffled": {
+          "matches": 23,
+          "compared": 816,
+          "percent": 2.819
+        }
+      },
+      "P4_raw/2026-11-26": {
+        "matched": {
+          "matches": 220,
+          "compared": 849,
+          "percent": 25.913
+        },
+        "shuffled": {
+          "matches": 35,
+          "compared": 849,
+          "percent": 4.122
+        }
+      }
+    },
+    "mode_76": {
+      "P2_raw/76": {
+        "matched": {
+          "matches": 4,
+          "compared": 1353,
+          "percent": 0.296
+        },
+        "shuffled": {
+          "matches": 5,
+          "compared": 1353,
+          "percent": 0.37
+        }
+      },
+      "P3_raw/76": {
+        "matched": {
+          "matches": 9,
+          "compared": 1289,
+          "percent": 0.698
+        },
+        "shuffled": {
+          "matches": 5,
+          "compared": 1289,
+          "percent": 0.388
+        }
+      },
+      "P4_raw/76": {
+        "matched": {
+          "matches": 402,
+          "compared": 1271,
+          "percent": 31.629
+        },
+        "shuffled": {
+          "matches": 53,
+          "compared": 1271,
+          "percent": 4.17
+        }
+      },
+      "P1_supported/76": {
+        "matched": {
+          "matches": 294,
+          "compared": 899,
+          "percent": 32.703
+        },
+        "shuffled": {
+          "matches": 41,
+          "compared": 899,
+          "percent": 4.561
+        }
+      },
+      "P1_raw/76": {
+        "matched": {
+          "matches": 6,
+          "compared": 899,
+          "percent": 0.667
+        },
+        "shuffled": {
+          "matches": 9,
+          "compared": 899,
+          "percent": 1.001
+        }
+      }
+    },
+    "p4_block_resampling": {
+      "target_counters": 934,
+      "donor_counters": 680,
+      "target_64_counter_blocks": 74,
+      "donor_64_counter_blocks": 68,
+      "matched_minus_shuffled_percentage_points": 22.823,
+      "descriptive_block_interval_2p5_97p5": [
+        18.381,
+        27.284
+      ]
+    },
+    "p4_all_direct_matches": {
+      "matched": {
+        "compared": 0,
+        "matches": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "case": "tcx-p4-history",
+  "stimulus": "Fourth-position TCX20 on a 1 kHz sine wave with a single sample perturbation",
+  "base_frequency_hz": 1000,
+  "base_amplitude_int16": 4096,
+  "sample_rate_hz": 32000,
+  "samples_per_input": 76800,
+  "words_per_input": 120,
+  "encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "inputs": [
+    {
+      "pulse_level_int16": 4,
+      "pcm_sha256": "96ceb21c2e01716be9ac6ef85224001d005c0d87e19b90cda18f98b7ee671192",
+      "g192_sha256": "c6aee503f548107f83d99f09dfe0e247f0113e86e5d7c8c18fbbc8e4ff2a6e38"
+    },
+    {
+      "pulse_level_int16": -4,
+      "pcm_sha256": "2699661b06c8699813c975a2fa4330c6532cac9e77c10bcb9a91bcde623c03e9",
+      "g192_sha256": "03bab9099f991aa6d9e38c38e8767d6d536ff743c7c362b34b22f752e17e2b48"
+    }
+  ],
+  "global_slot_zero_based": 67,
+  "group_zero_based": 1,
+  "slot_within_group_zero_based": 7,
+  "position_one_based": 4,
+  "native_words_hex": [
+    "feab3c963f3832ce7e6e2913a188c115f681baba7a074acb196200987091d41b4a",
+    "feab3c963f3832ce7e6e2913a188c115f681baba7a074acb196200987091d41e4a"
+  ],
+  "mode_octet_hex": "fe",
+  "omitted_zero_based_payload_offsets": [
+    15,
+    18,
+    21,
+    24,
+    27,
+    30
+  ],
+  "identical_27_byte_projection_hex": "feab3c963f3832ce7e6e2913a188c11581ba7a07cb19009891d44a",
+  "differing_word_bits_msb_first": [
+    253,
+    255
+  ],
+  "differing_payload_offset": 30,
+  "differing_octets_hex": [
+    "1b",
+    "1e"
+  ],
+  "full_word_history": {
+    "first_difference_slot": 67,
+    "identical_from_start_before_target": 67,
+    "consecutive_matches_immediately_before_target": 67,
+    "earlier_matching_slots": 67,
+    "earlier_slots": 67,
+    "other_matching_slots_in_group": 36,
+    "other_slots_in_group": 59,
+    "first_later_difference_slot": 68,
+    "later_differing_slots": 23
+  },
+  "visible_projection_history": {
+    "first_difference_slot": 68,
+    "identical_from_start_before_target": 67,
+    "consecutive_matches_immediately_before_target": 67,
+    "earlier_matching_slots": 67,
+    "earlier_slots": 67,
+    "other_matching_slots_in_group": 37,
+    "other_slots_in_group": 59,
+    "first_later_difference_slot": 68,
+    "later_differing_slots": 22
+  },
+  "context": {
+    "single_pulse_sample_zero_based": 41759,
+    "identical_prior_words_from_reset": 67,
+    "prior_packed_words_sha256": "f09d0a061ce1470bad94a95e43e543404a874cbf63c5de13f590c5d5f00cc535",
+    "identical_current_bits_out_of_264": 262,
+    "immediate_following_full_word_identical": false
+  }
+}

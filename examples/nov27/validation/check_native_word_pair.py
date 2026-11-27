@@ -1,4 +1,4 @@
-"""Reproduce two standard EVS words differing in one withheld bit at the same slot."""
+"""Reproduce pairs of standard EVS words differing only in payload octet 30 at the same slot."""
 import argparse
 from dataclasses import dataclass
 from hashlib import sha256
@@ -24,19 +24,22 @@ class Case:
     pulse_levels: tuple[int, int]
     slot: int
     mode: int
-    differing_bit: int
+    differing_bits: tuple[int, ...]
     differing_octets: tuple[int, int]
     single_pulse_sample: int | None = None
 
 
 CASES = {
     "gsc": Case("SWB GSC INACTIVE on digital silence with sparse pulses",
-                0, 0, (+1, +2), 85, 0x74, 255, (0x16, 0x17)),
+                0, 0, (+1, +2), 85, 0x74, (255,), (0x16, 0x17)),
     "tcx": Case("TCX20 on a 1 kHz sine wave with sparse pulses",
-                1000, 4096, (+8, -16), 25, 0xFE, 253, (0x59, 0x5D)),
+                1000, 4096, (+8, -16), 25, 0xFE, (253,), (0x59, 0x5D)),
     "tcx-neighbors": Case("TCX20 on a 1 kHz sine wave with a single sample perturbation",
-                          1000, 4096, (-4, +4), 97, 0xFE, 255, (0x1C, 0x1D),
+                          1000, 4096, (-4, +4), 97, 0xFE, (255,), (0x1C, 0x1D),
                           single_pulse_sample=66 * 640 + 159),
+    "tcx-p4-history": Case("Fourth-position TCX20 on a 1 kHz sine wave with a single sample perturbation",
+                           1000, 4096, (+4, -4), 67, 0xFE, (253, 255), (0x1B, 0x1E),
+                           single_pulse_sample=65 * 640 + 159),
 }
 OMITTED_PAYLOAD_OFFSETS = (15, 18, 21, 24, 27, 30)
 VISIBLE = tuple(i for i in range(33) if i - 1 not in OMITTED_PAYLOAD_OFFSETS)
@@ -90,10 +93,10 @@ def run(encoder, case_name="gsc"):
     full_differences = [i for i, (u, v) in enumerate(pairs) if u != v]
     visible_differences = [i for i, (u, v) in enumerate(pairs) if any(u[j] != v[j] for j in VISIBLE)]
     changed_bits = [bit for bit in range(264) if (a[bit // 8] ^ b[bit // 8]) & (0x80 >> (bit % 8))]
-    j = case.differing_bit // 8
-    if (slot in visible_differences or changed_bits != [case.differing_bit] or
+    j = 31  # Zero-based payload octet 30 follows the mode octet.
+    if (slot in visible_differences or tuple(changed_bits) != case.differing_bits or
             a[0] != case.mode or (a[j], b[j]) != case.differing_octets):
-        raise ValueError(f"The native {case_name} one-bit specimen did not reproduce")
+        raise ValueError(f"The differing bits of the native {case_name} pair did not reproduce")
     result = {"case": case_name, "stimulus": case.description, "base_frequency_hz": case.frequency_hz,
             "base_amplitude_int16": case.amplitude,
             "sample_rate_hz": 32000, "samples_per_input": 76800, "words_per_input": len(pairs),
@@ -125,6 +128,16 @@ def run(encoder, case_name="gsc"):
             "other_p2_matching_full_words": len(peers.difference(full_differences)),
             "other_p2_matching_visible_projections": len(peers.difference(visible_differences)),
         }
+    elif case_name == "tcx-p4-history":
+        if slot != 67 or left[:67] != right[:67]:
+            raise ValueError("Expected identical complete native words at all 67 earlier slots")
+        result["context"] = {
+            "single_pulse_sample_zero_based": case.single_pulse_sample,
+            "identical_prior_words_from_reset": slot,
+            "prior_packed_words_sha256": sha256(b"".join(left[:slot])).hexdigest(),
+            "identical_current_bits_out_of_264": 264 - len(changed_bits),
+            "immediate_following_full_word_identical": left[slot + 1] == right[slot + 1],
+        }
     return result
 
 
@@ -132,6 +145,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--encoder", type=Path, default=ROOT / "work/evs_gcc_independent/EVS_cod")
     parser.add_argument("--case", choices=CASES, default="gsc",
-                        help="gsc uses silence, tcx uses a pulsed tone, and tcx-neighbors changes one tone sample")
+                        help="gsc uses silence; the tcx cases use a tone with sparse or single-sample pulses")
     args = parser.parse_args()
     print(json.dumps(run(args.encoder.resolve(), args.case), indent=2))
