@@ -16,6 +16,11 @@ recordings used below. [KoryoFront’s original decoder](https://github.com/Kory
 
 Planned receiver integrations are listed in the [KiwiSDR, Dream and DecDRM roadmap](docs/roadmap.md).
 
+The current blind receiver milestone is to reproduce all 60 EVS words of
+an unseen, CRC-good counter. The November 15 test fixes the target and
+describes how independent receiver outputs will be compared.
+[Four-position milestone and target receipt](examples/nov15/validation/README.md)
+
 ## November 27 dual-frequency recording
 
 **행복한 내 나라 (*My Happy Country*)**, performed by the Wangjaesan Light Music

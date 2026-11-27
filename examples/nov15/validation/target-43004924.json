@@ -1,0 +1,66 @@
+{
+  "format": "opaque-drm-transport-target-v1",
+  "source": {
+    "filename": "web888.web-sdr.net_2026-11-15T10_58_00Z_3205.00_iq.wav",
+    "sha256": "39d8c862b82af3797531f4df53c374c220f89e6d95e8c1746000c445633959f0",
+    "bytes": 9633836,
+    "iq_sample_rate_hz": 12000,
+    "recording_complex_sample_range_half_open": [
+      0,
+      2398720
+    ]
+  },
+  "target": {
+    "counter": 43004924,
+    "phase_range_inclusive": [
+      0,
+      2
+    ],
+    "tick_range_inclusive": [
+      129014772,
+      129014774
+    ],
+    "cycles_per_phase": 5,
+    "positions_per_cycle": 4,
+    "duration_ms": 1200
+  },
+  "du_bytes_including_transmitted_crc16": 716,
+  "du_phases": [
+    {
+      "phase": 0,
+      "tick": 129014772,
+      "du_sha256": "6e73d2d532447e70c4a8eafc6c739fdf6b6cf2bce9439a64690e7c9e5b35367b",
+      "du_crc16": "F8A4",
+      "packet_crc16_q0_q1_q2_q3": [
+        "BF29",
+        "6B40",
+        "D0F4",
+        "A2FB"
+      ]
+    },
+    {
+      "phase": 1,
+      "tick": 129014773,
+      "du_sha256": "463ae41721fe1d1fdf048e554ca670c6def72087cea837a94939317ec637a4db",
+      "du_crc16": "9CDB",
+      "packet_crc16_q0_q1_q2_q3": [
+        "A780",
+        "7AE9",
+        "6A93",
+        "F97D"
+      ]
+    },
+    {
+      "phase": 2,
+      "tick": 129014774,
+      "du_sha256": "c9cd23a29a3ac11878bb0ae25bfbd1ecae5bd51d1ba6045e598344081216928e",
+      "du_crc16": "9C4F",
+      "packet_crc16_q0_q1_q2_q3": [
+        "94A3",
+        "39D2",
+        "6870",
+        "9CEF"
+      ]
+    }
+  ]
+}
