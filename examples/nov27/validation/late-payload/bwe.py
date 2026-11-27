@@ -83,7 +83,6 @@ def score(path):
                 counts["eligible"] += 1
                 generic = mode >> 3 != 12
                 counts["generic" if generic else "transition"] += 1
-                n = len(row["excluded_p27"])
                 counts[row["outcome"]] += 1
                 witnesses.append({"slot": 20 * phase + i, "position": 1 + i % 4,
                                   "mode": f"{mode:02X}", **row})
