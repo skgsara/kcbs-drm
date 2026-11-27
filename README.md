@@ -201,6 +201,31 @@ python scripts/demod_iq_window.py examples/nov27/jl1edu-3205-43897717-iq12.wav \
     work/jl1edu-43897717 --seconds 24
 ```
 
+To see which EVS bytes are directly available at a counter, use the
+CRC-checked data units from the same receiver pass. The example below
+starts from the 24-second recording demodulated above.
+
+```bash
+python scripts/salvage_msc_packets.py work/jl1edu-43897717/msc.bin --transport-only \
+    --out work/jl1edu-43897717/units
+python scripts/project_evs_group.py work/jl1edu-43897717/units/data_units.npz \
+    --counter 43897717 --format tsv
+```
+
+The output keeps all 60 slots in phase, cycle and position order. Each
+row contains the mode octet followed by 32 payload octets. Hex values
+are directly transmitted bytes, `??` marks a received octet whose clear
+value is unknown, and `--` marks a phase without a verified data unit.
+The JSON output also counts those slots and the total number of directly
+available bits. A fully received group exposes 10,560 of 15,840 bits
+under this layout. Two RF receivers can independently compare those
+10,560 bits.
+
+On a later 3205 kHz transmission, two receivers in Yokohama and Tokyo
+independently reproduced all 10,560 directly comparable bits at counter
+`43900392`. The original IQ excerpts and replay commands are available
+for both receivers. [Paired IQ test](examples/nov27/validation/paired-43900392/)
+
 The published November 19 and 27 mask tables and the November 27 text
 archive contain no entry for `43897717`. With all 60 slots physically
 received, replay using this evidence supplied zero complete EVS words

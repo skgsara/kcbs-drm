@@ -91,6 +91,26 @@ reference decoder reported a normal frame with no bit-error or bad-frame
 indication in every case. Those flags could not distinguish the original
 bit in any of these four trials.
 
+We tested whether a fixed padding bit could constrain the remaining six
+second-position bytes in GSC. In 15 locally encoded 13.2 kb/s
+super-wideband GSC AUDIO words at position two, each of the 48 bits in
+payload bytes 15, 18, 21, 24, 27 and 30 took both values. All 15 words
+used bandwidth-extension class 2. This rules out an unconditional fixed
+bit at those offsets for that mode. In 120 second-position GSC INACTIVE
+words from the same synthetic stream the first 40 bits also varied. Byte
+30 repeated, but the input intervals were digitally silent and this byte
+carries spectral-envelope indices. Its observed value on silence gives
+no fixed-byte rule for the other programme material.
+
+The same six-offset test on 279 super-wideband HQ and 75 super-wideband
+TCX20 second-position words gave both values for every bit within each
+class. These two families occur in the new [paired IQ test](../../nov27/validation/paired-43900392/).
+Their mode labels alone therefore leave every one of the 48 individual
+bits unresolved. This test allows for constraints involving combinations
+of bits or narrower coding modes. With the stock EVS encoder built, run
+`python examples/nov27/validation/check_p2_codec_bits.py` to regenerate
+the synthetic stream and repeat the count.
+
 ## Comparing with a clear export when one is available
 
 1. Record the receiver version or commit, input IQ SHA-256, the data used to

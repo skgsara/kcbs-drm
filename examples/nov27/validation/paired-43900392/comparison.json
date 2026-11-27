@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "counter": 43900392,
+  "frequency_hz": 3205000,
+  "selection_rule": "smallest complete counter at primary",
+  "all_primary_complete": [
+    43900392,
+    43900393,
+    43900394,
+    43900395,
+    43900413,
+    43900414,
+    43900415,
+    43900416,
+    43900417,
+    43900418,
+    43900487
+  ],
+  "protocol_sha256": "41b72b0d87b72e6092459d2f9699d72ed14c2bd0b4c0f7951710babd1200470a",
+  "receiver_freeze_sha256": "2b872bfacf7f7329ebbef192bd547d492c2c379d6be446d9e8386fb03889b7d5",
+  "projector_sha256": "ac38bcd820301558ccce1f66b2aa7abced97444f655256e82e79d3475539f1b2",
+  "receiver_frozen_utc": "2026-11-27T21:28:21Z",
+  "iq_digests_recorded_utc": "2026-11-27T21:29:39Z",
+  "prediction_frozen_utc": "2026-11-27T21:30:10Z",
+  "sites": {
+    "primary": {
+      "receiver": "JL1EDU Yokohama",
+      "iq_pairs": 8640000,
+      "sample_rate": 48000,
+      "first_sample_utc": "2026-11-27T21:26:31.672+00:00",
+      "stop_utc_exclusive": "2026-11-27T21:29:31.672+00:00",
+      "timestamp_jumps_over_one_sample": 0,
+      "wav_sha256": "ec2e54504d26f9e1cc98abef11c52be7263ff2a1cf8457efe3ca38451c5007e3",
+      "iq_pcm_sha256": "cab530c1e50b6e67dbc8a2c82cc168fe3af07cbf09c601b8a8c919c041f94431",
+      "service_ids": [
+        "A00002"
+      ],
+      "control_blocks": {
+        "FAC": {
+          "observed": 444,
+          "crc_passed": 440,
+          "crc_failed": 4
+        },
+        "SDC": {
+          "observed": 150,
+          "crc_passed": 117,
+          "crc_failed": 33
+        }
+      },
+      "service_names": [
+        "조선중앙제2라지오방송"
+      ],
+      "complete_counters": 11,
+      "verified_dus": 44,
+      "target_du_sha256": [
+        "f6a654399be25312ea963adda6cfc37b26a1ac86235029f623048f29eb953c79",
+        "6a14eefd02e02be4fa82ca84556f6ac8cc52e0bede36e45c0abac5d29b641fd9",
+        "843c9fa4df7235b513c0edef9cf00f7f3157fa783cc48d4474f2c1c917cf084a"
+      ],
+      "projection_sha256": "5070d33e922265638c9279169988c963c713c75d3ecf5ad7ddcaaf8fce80b54a"
+    },
+    "secondary": {
+      "receiver": "7L4IOU Edogawa, Tokyo",
+      "iq_pairs": 8640000,
+      "sample_rate": 48000,
+      "first_sample_utc": "2026-11-27T21:26:29.522+00:00",
+      "stop_utc_exclusive": "2026-11-27T21:29:29.522+00:00",
+      "timestamp_jumps_over_one_sample": 0,
+      "wav_sha256": "d96c3f22638c45ef1ef966a022f03afb29032b0fbb70d9e116783b415d40c8d0",
+      "iq_pcm_sha256": "dc95365977875bd5dc3170b0d14655162d3df746f2c96a17bb47dff3f99a693b",
+      "service_ids": [
+        "A00002"
+      ],
+      "control_blocks": {
+        "FAC": {
+          "observed": 447,
+          "crc_passed": 447,
+          "crc_failed": 0
+        },
+        "SDC": {
+          "observed": 150,
+          "crc_passed": 149,
+          "crc_failed": 1
+        }
+      },
+      "service_names": [
+        "조선중앙제2라지오방송"
+      ],
+      "complete_counters": 74,
+      "verified_dus": 277,
+      "target_du_sha256": [
+        "f6a654399be25312ea963adda6cfc37b26a1ac86235029f623048f29eb953c79",
+        "6a14eefd02e02be4fa82ca84556f6ac8cc52e0bede36e45c0abac5d29b641fd9",
+        "843c9fa4df7235b513c0edef9cf00f7f3157fa783cc48d4474f2c1c917cf084a"
+      ],
+      "projection_sha256": "5070d33e922265638c9279169988c963c713c75d3ecf5ad7ddcaaf8fce80b54a"
+    }
+  },
+  "by_position": {
+    "1": {
+      "direct_bytes_checked": 330,
+      "direct_bytes_equal": 330,
+      "different_bits": 0,
+      "unscored_masked_bytes": 165,
+      "missing_witness_bytes": 0
+    },
+    "2": {
+      "direct_bytes_checked": 330,
+      "direct_bytes_equal": 330,
+      "different_bits": 0,
+      "unscored_masked_bytes": 165,
+      "missing_witness_bytes": 0
+    },
+    "3": {
+      "direct_bytes_checked": 330,
+      "direct_bytes_equal": 330,
+      "different_bits": 0,
+      "unscored_masked_bytes": 165,
+      "missing_witness_bytes": 0
+    },
+    "4": {
+      "direct_bytes_checked": 330,
+      "direct_bytes_equal": 330,
+      "different_bits": 0,
+      "unscored_masked_bytes": 165,
+      "missing_witness_bytes": 0
+    }
+  },
+  "verified_direct_bits": 10560,
+  "unscored_masked_bits": 5280,
+  "full_clear_words_supplied": 0,
+  "native_plaintext_comparison": null,
+  "scope": "Each RF receiver measured the same masked broadcast. Equal data-unit hashes verify reception, phase and byte order. The 22-octet projection in each word covers the mode and 21 directly transmitted payload octets under the published layout."
+}

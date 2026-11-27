@@ -45,7 +45,7 @@ def records(path):
             index += 1
 
 
-def salvage(paths, out):
+def salvage(paths, out, *, transport_only=False):
     payloads = defaultdict(set)
     provenance = defaultdict(list)
     baseline = set()
@@ -110,12 +110,13 @@ def salvage(paths, out):
     keys = np.zeros((len(counters), 16), np.uint8)
     mask = np.zeros_like(keys, bool)
     offsets = np.full(len(counters), -1, dtype=np.int16)
-    for i in range(len(counters)):
-        candidates = fill_candidates(tails[i])
-        if len(candidates) == 1:
-            keys[i] = candidates[0]['key']
-            mask[i] = True
-            offsets[i] = candidates[0]['offset']
+    if not transport_only:
+        for i in range(len(counters)):
+            candidates = fill_candidates(tails[i])
+            if len(candidates) == 1:
+                keys[i] = candidates[0]['key']
+                mask[i] = True
+                offsets[i] = candidates[0]['offset']
     report = dict(files=len(paths), assigned_record_observations=assignments,
                   original_complete_groups=len(baseline), salvaged_complete_groups=len(counters),
                   extra_groups=len(set(map(int, counters)) - baseline),
@@ -125,6 +126,8 @@ def salvage(paths, out):
                   candidate_key_groups=int(mask.all(axis=1).sum()),
                   verified_text_key_groups=0,
                   note='Packet/DU CRCs verify container integrity, not text or codec keys.')
+    if transport_only:
+        report['text_candidates_evaluated'] = False
     out = Path(out)
     out.mkdir(parents=True, exist_ok=False)
     np.savez_compressed(out/'groups.npz', counters=counters, du=du, tails=tails,
@@ -145,5 +148,6 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('inputs', nargs='+')
     ap.add_argument('--out', required=True)
+    ap.add_argument('--transport-only', action='store_true', help='assemble received data units and skip text candidates')
     a = ap.parse_args()
-    salvage(a.inputs, a.out)
+    salvage(a.inputs, a.out, transport_only=a.transport_only)
