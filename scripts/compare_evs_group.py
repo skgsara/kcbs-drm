@@ -55,18 +55,19 @@ def read_words(path):
                 if len(header) != 4:
                     raise ValueError(f"{path}: truncated header at slot {slot}")
                 sync, length = struct.unpack("<HH", header)
-                if (sync, length) == (0x6b20, 0):
+                if sync not in (0x6b20, 0x6b21) or length not in (0, 264):
+                    raise ValueError(f"{path}: unexpected sync 0x{sync:04x} or length {length} at slot {slot}")
+                payload = stream.read(2 * length)
+                if len(payload) != 2 * length:
+                    raise ValueError(f"{path}: truncated payload at slot {slot}")
+                if sync == 0x6b20 or length == 0:
+                    # A bad-frame indicator can carry a full set of unreliable serial bits.
                     yield b""
-                elif (sync, length) == (0x6b21, 264):
-                    payload = stream.read(2 * length)
-                    if len(payload) != 2 * length:
-                        raise ValueError(f"{path}: truncated payload at slot {slot}")
+                else:
                     bits = np.frombuffer(payload, dtype="<u2")
                     if ((bits != 0x7f) & (bits != 0x81)).any():
                         raise ValueError(f"{path}: invalid bit symbol at slot {slot}")
                     yield np.packbits(bits == 0x81).tobytes()
-                else:
-                    raise ValueError(f"{path}: unexpected sync 0x{sync:04x} or length {length} at slot {slot}")
                 slot += 1
                 header = stream.read(4)
     except (gzip.BadGzipFile, EOFError, zlib.error) as error:

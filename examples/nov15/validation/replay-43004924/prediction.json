@@ -1,0 +1,50 @@
+{
+  "counter": 43004924,
+  "received_phases": 3,
+  "received_packet_coordinates": 12,
+  "physically_complete_slots": 60,
+  "predictions": 0,
+  "erasures": 60,
+  "by_position": {
+    "1": {
+      "physically_complete": 15,
+      "predictions": 0,
+      "erasures": 15
+    },
+    "2": {
+      "physically_complete": 15,
+      "predictions": 0,
+      "erasures": 15
+    },
+    "3": {
+      "physically_complete": 15,
+      "predictions": 0,
+      "erasures": 15
+    },
+    "4": {
+      "physically_complete": 15,
+      "predictions": 0,
+      "erasures": 15
+    }
+  },
+  "established": 0,
+  "inferred": 0,
+  "native_pcm_samples": 0,
+  "timeline_pcm_samples": 19200,
+  "timeline_seconds": 1.2,
+  "pcm_source": "silence_all_slots_erased",
+  "pcm_is_all_zero": true,
+  "bitstream_bytes": 240,
+  "bitstream_sha256": "f5bb4cafef3196a32c512a37155487581eb50e7e0019bd2381d618ce38e17bf7",
+  "decisions_sha256": "bc0e72ce1d1b18803fe44d67edc8fd249b15370e5db825f5d44c42ce700d7ee4",
+  "independent_reference_supplied": false,
+  "independent_words_scored": 0,
+  "exact_matches": null,
+  "accuracy": null,
+  "freeze_sha256": "3093b40448c5716165f58c821d5b974794982161b924794dbb6fed619017eab9",
+  "selected_inputs_sha256": "2f520ac7a30acb9d5e4888779ac74262a24b025f11927cbcde4b81d75d223f74",
+  "receiver_exit": 0,
+  "provenance": "The isolated process received only the predeclared historical tables and selected received group.",
+  "input_file_trace_sha256": "00f4ed197a44c13ba55613ed53b6ec2c50eddb25e6b475af576b570e2172990b",
+  "completed_utc": "2026-11-27T21:06:51.109041+00:00"
+}

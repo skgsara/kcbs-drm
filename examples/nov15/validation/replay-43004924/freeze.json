@@ -1,0 +1,130 @@
+{
+  "protocol": "fixed historical published mask-table replay; one counter; no new evidence or independent score",
+  "created_utc": "2026-11-27T21:06:23.620646+00:00",
+  "git_commit": "792a8082bae4a1b9de70ac24ddd90fe1f5c420f0",
+  "allowed_receiver_files_from_commit": {
+    "scripts/render_measured_evs.py": {
+      "local": "replay-input/scripts/render_measured_evs.py",
+      "sha256": "f562ed4d54138c384d92922286f0d2f58cdf26f2273227e3164d549995aae0ca"
+    },
+    "scripts/render_continuous.py": {
+      "local": "replay-input/scripts/render_continuous.py",
+      "sha256": "9ab4de1d77b7af04dc78441ed1f855d768b8842bae98b0d7a5cc7ed3feae514d"
+    },
+    "scripts/speech_presence_test.py": {
+      "local": "replay-input/scripts/speech_presence_test.py",
+      "sha256": "a729ec64e416fc4d23cb6c1af7e9ca07dcc041969f4f4fd759ebb6b232fde79f"
+    },
+    "scripts/build_evs_gcc_independent.py": {
+      "local": "replay-input/scripts/build_evs_gcc_independent.py",
+      "sha256": "d69cf9e3b5eaa514bac5edb3925227502d7b17a3ab59b940635fef781281d308"
+    },
+    "scripts/tail_fill_audit.py": {
+      "local": "replay-input/scripts/tail_fill_audit.py",
+      "sha256": "e488d2448c484e082c2ee1a06d6a1a79cd7aa38abac3db7ee45da9ebf7b09123"
+    },
+    "dumps/nov27-measured-masks.json": {
+      "local": "replay-input/nov27-measured-masks.json",
+      "sha256": "e7b96f90bcb622f130288f9fb8be69710a30e1e53ca20e111c417c6dfaa376db"
+    },
+    "examples/nov27/receiver/keys.npz": {
+      "local": "replay-input/group/keys.npz",
+      "sha256": "593b5e248cd9d84970dca3d3b08e452df5eae57e80f9fb651d8d825b71b28330"
+    }
+  },
+  "target_receipt": {
+    "git_path": "examples/nov15/validation/target-43004924.json",
+    "path": "published-target.json",
+    "sha256": "7e262bf2a40352d1d96be9ca899715b513c612f6dbdcda53a1a74631de840fd7",
+    "phase_fingerprints": [
+      {
+        "phase": 0,
+        "tick": 129014772,
+        "du_sha256": "6e73d2d532447e70c4a8eafc6c739fdf6b6cf2bce9439a64690e7c9e5b35367b",
+        "du_crc16": "F8A4",
+        "packet_crc16_q0_q1_q2_q3": [
+          "BF29",
+          "6B40",
+          "D0F4",
+          "A2FB"
+        ]
+      },
+      {
+        "phase": 1,
+        "tick": 129014773,
+        "du_sha256": "463ae41721fe1d1fdf048e554ca670c6def72087cea837a94939317ec637a4db",
+        "du_crc16": "9CDB",
+        "packet_crc16_q0_q1_q2_q3": [
+          "A780",
+          "7AE9",
+          "6A93",
+          "F97D"
+        ]
+      },
+      {
+        "phase": 2,
+        "tick": 129014774,
+        "du_sha256": "c9cd23a29a3ac11878bb0ae25bfbd1ecae5bd51d1ba6045e598344081216928e",
+        "du_crc16": "9C4F",
+        "packet_crc16_q0_q1_q2_q3": [
+          "94A3",
+          "39D2",
+          "6870",
+          "9CEF"
+        ]
+      }
+    ]
+  },
+  "assigned_transport": {
+    "absolute_path": "/workspace/dprk-drm/work/rf-followup/nov15-blind-transport/reception/full/packets.npz",
+    "sha256": "f75c96db92174e70a0ce0c6d9af8bab65725db56f4b5fdd9250e8d1a98ed3e73",
+    "coordinate_selector": {
+      "counter": 43004924,
+      "ticks": [
+        129014772,
+        129014773,
+        129014774
+      ],
+      "physical_packets_per_phase": 4
+    }
+  },
+  "allowed_application_evidence": [
+    "nov27-measured-masks.json",
+    "group/keys.npz"
+  ],
+  "unused_historical_comparison_table": {
+    "git_path": "dumps/nov19-measured-masks.json",
+    "sha256": "b60187b8df35a04eaa5db393ba509a30012d7845adbe09aa4433feb2c2efea3c",
+    "passed_to_renderer": false
+  },
+  "decoder": {
+    "origin": "/workspace/dprk-drm/work/evs_gcc_independent/EVS_dec",
+    "local": "replay-input/EVS_dec",
+    "sha256": "e07384175dad995379fb738a79e949cd2d25b002f65ad0fa6bda6b8f7a1f0184"
+  },
+  "script_digests": {
+    "export_target.py": "e0db93d7b5468788fb2e958140960e769bc4a61d5054e673ff6a3cb5261531df",
+    "check_outputs.py": "b7a3b4dd05f60ac4c134d3a9584cbe859d3781e21538f77ddd75585a7cbad3b3"
+  },
+  "python_path": "/workspace/.venv/bin/python",
+  "python_binary_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+  "logging": "raw assigned application bytes and key bytes are never logged",
+  "cwd": "replay-input",
+  "argv": [
+    "/workspace/.venv/bin/python",
+    "-B",
+    "scripts/render_measured_evs.py",
+    "group",
+    "--masks",
+    "nov27-measured-masks.json",
+    "--out",
+    "../output",
+    "--decoder",
+    "/workspace/dprk-drm/work/blind-43897717/holdout-43004924/replay-input/EVS_dec",
+    "--received-span",
+    "--excerpt",
+    "43004924",
+    "43004924"
+  ],
+  "comparison": "Every in-range G.192 position counted; abstentions preserved. No reference requested, acquired, or scored."
+}

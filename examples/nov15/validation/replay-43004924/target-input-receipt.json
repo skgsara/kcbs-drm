@@ -1,0 +1,12 @@
+{
+  "verified_ticks": [
+    129014772,
+    129014773,
+    129014774
+  ],
+  "physical_crc16_exact": 12,
+  "DU_CRC16_and_SHA256_exact": 3,
+  "selected_packet_archive_sha256": "5382acc6ffbac5b680ba2d24a3b2828238914512faba1fcfa715203ba769d199",
+  "freeze_sha256": "3093b40448c5716165f58c821d5b974794982161b924794dbb6fed619017eab9",
+  "verified_before_renderer_utc": "2026-11-27T21:06:50.880473+00:00"
+}

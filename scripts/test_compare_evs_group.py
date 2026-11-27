@@ -93,11 +93,27 @@ class CompareGroupTests(unittest.TestCase):
             self.assertEqual(row["both_erased"], 15)
             self.assertEqual(row["match"], 0)
 
+    def test_full_bad_frame_and_zero_length_no_data_each_keep_one_slot(self):
+        words = self.words.copy()
+        words[1] = struct.pack("<HH", 0x6b20, 264) + self.words[1][4:]
+        words[26] = struct.pack("<HH", 0x6b20, 264) + bytes(528)
+        words[59] = struct.pack("<HH", 0x6b21, 0)
+        self.reference.write_bytes(gzip.compress(b"".join(words)))
+        result = self.compare()
+        self.assertFalse(result["group_exact"])
+        for position, row in result["by_position"].items():
+            unavailable = int(position in ("2", "3", "4"))
+            self.assertEqual(row["match"], 15 - unavailable)
+            self.assertEqual(row["candidate_only"], unavailable)
+            self.assertEqual(row["outside_extent"], 0)
+
     def test_rejects_truncated_or_malformed_frame(self):
         cases = {"partial_header": b"\x21\x6b", "short_payload": self.words[0][:-2],
                  "odd_byte_count": self.words[0][:-1],
                  "bad_symbol": self.words[0][:-2] + struct.pack("<H", 0x80),
-                 "bad_length": struct.pack("<HH", 0x6b21, 0)}
+                 "bad_length": struct.pack("<HH", 0x6b21, 8),
+                 "bad_sync": struct.pack("<HH", 0, 0),
+                 "short_bad_frame": struct.pack("<HH", 0x6b20, 264) + bytes(526)}
         for kind, frame in cases.items():
             with self.subTest(kind=kind):
                 self.reference.write_bytes(gzip.compress(frame))

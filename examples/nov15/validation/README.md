@@ -24,6 +24,23 @@ including its transmitted checksum. Times for individual frames follow
 the received group counter and phase. [Target receipt](target-43004924.json)
 · [All 109 complete counters](complete-counters.csv)
 
+## Historical mask replay on the held-out counter
+
+We froze receiver commit `792a808`, the published November 27 mask table,
+and its text evidence before running the receiver on `43004924`. It read
+only the three selected phases from the recording. Their 12 packet CRCs and
+three DU hashes matched the preselected target. At each position the receiver
+had all 15 slots, supplied zero complete EVS words, and recorded 15 erasures.
+[Frozen inputs](replay-43004924/freeze.json) ·
+[Transport verification](replay-43004924/target-input-receipt.json)
+
+Neither allowed evidence table contained this counter. The decoder emitted
+zero native PCM samples. The renderer supplied 1.2 seconds of silence to
+preserve time. The run yielded no word predictions to score. An independent
+EVS export for this counter is still outstanding.
+[Prediction receipt](replay-43004924/prediction.json) ·
+[All 60 slot decisions](replay-43004924/decisions.csv)
+
 ## What the historical counter matches establish
 
 The November 25–26 contribution contains six sets of counters. Each has
@@ -66,8 +83,11 @@ python scripts/compare_evs_group.py prediction.192 independent-reference.192 \
 ```
 
 The tool accepts little-endian G.192 or mono EVS storage at 13.2 kbit/s,
-including gzip-compressed files. It reports matches, mismatches, erasures
-and coordinates outside a file's extent. Exit status 0 requires all 60
+including gzip-compressed files. A G.192 bad-frame header consumes its
+declared payload and counts as one erasure, even if it carries all 264
+serial bits. A zero-length frame also occupies one slot. The report counts
+matches, mismatches, erasures and coordinates outside a file's extent.
+Exit status 0 requires all 60
 words to agree, 1 means a difference or incomplete coverage, and 2 means
 invalid input. [Comparison tool](../../../scripts/compare_evs_group.py)
 
