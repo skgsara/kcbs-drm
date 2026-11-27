@@ -1,0 +1,275 @@
+{
+  "capture": {
+    "origin": "https://7l4iou.tunnel.ubersdr.org",
+    "frequency_hz": 6140000,
+    "mode": "iq48",
+    "sample_rate_hz": 48000,
+    "started_utc": "2026-11-27T22:58:47.247541+00:00",
+    "requested_seconds": 180,
+    "sample_pairs": 8640000,
+    "packets": 27000,
+    "timestamped_packets": 26997,
+    "timestamp_jumps_over_one_sample": 1,
+    "max_abs_timestamp_jump_ns": 23218,
+    "first_timestamp_sample_and_unix_ns": [
+      960,
+      1795820329562683747
+    ],
+    "last_timestamp_sample_and_unix_ns": [
+      8639760,
+      1795820509537722309
+    ],
+    "iq_pcm_sha256": "d5bf86e2e33271ad46a898f8d5a04a9ede6abefec863661c61367faa73e50ed0",
+    "wall_seconds": 183.595,
+    "sample_seconds": 180.0,
+    "sample_target_reached": true
+  },
+  "frozen_protocol_sha256": "e4be95b3a218dc024baa68cc24165d7f51ed71fb8c890ba6119f6e3188fcab64",
+  "original_wav_sha256": "2d21ccf3f92fce5fa34b915057c8a41cc754e50516c87014af1eac254ca53c84",
+  "iq_file": "7l4iou-6140-20261127T2258Z-iq48.flac",
+  "flac_bytes": 26925947,
+  "flac_sha256": "7df95534e146e793a98e90285cfebac93a50f60b9d52b64298fa738ad9709304",
+  "demodulator_outputs": {
+    "1": {
+      "msc_sha256": "84862d5eee4297065a5124216ca5918f17b5ed4de953869945c8f7d7b83e94a2",
+      "physical": {
+        "physical_row_lengths": {
+          "728": 443
+        },
+        "packet_crc_by_ordinal": [
+          253,
+          222,
+          215,
+          195
+        ],
+        "packet_crc_and_header_by_ordinal": [
+          253,
+          222,
+          215,
+          195
+        ],
+        "intact_du_crc": 162,
+        "intact_bad_du_crc": 0,
+        "strict_packet_count": 885
+      }
+    },
+    "4": {
+      "msc_sha256": "79a2e7d2873fec90de6eb1f653ec105b5ddf67c6459e504fdb65b7e0047fb79d",
+      "physical": {
+        "physical_row_lengths": {
+          "728": 443
+        },
+        "packet_crc_by_ordinal": [
+          254,
+          222,
+          215,
+          195
+        ],
+        "packet_crc_and_header_by_ordinal": [
+          254,
+          222,
+          215,
+          195
+        ],
+        "intact_du_crc": 162,
+        "intact_bad_du_crc": 0,
+        "strict_packet_count": 886
+      }
+    }
+  },
+  "signals": {
+    "FAC": {
+      "observed": 446,
+      "crc_passed": 435,
+      "crc_failed": 11
+    },
+    "SDC": {
+      "observed": 150,
+      "crc_passed": 116,
+      "crc_failed": 34
+    }
+  },
+  "anchored": {
+    "one": {
+      "packets": 657,
+      "units": 143,
+      "groups": 35
+    },
+    "four": {
+      "packets": 657,
+      "units": 143,
+      "groups": 35
+    },
+    "both": {
+      "packets": 657,
+      "units": 143,
+      "groups": 35
+    }
+  },
+  "pooled_data_units_npz_sha256": "743ed1e0a50c029975b215b860013a8e0eb0838cfedbf21db8e7f75caaa7b449",
+  "complete_counters": [
+    43904973,
+    43904974,
+    43904976,
+    43904982,
+    43904983,
+    43904984,
+    43904986,
+    43904987,
+    43904988,
+    43904989,
+    43904994,
+    43904995,
+    43904996,
+    43904997,
+    43904998,
+    43905003,
+    43905004,
+    43905006,
+    43905007,
+    43905008,
+    43905009,
+    43905010,
+    43905011,
+    43905012,
+    43905013,
+    43905014,
+    43905015,
+    43905022,
+    43905023,
+    43905024,
+    43905026,
+    43905027,
+    43905028,
+    43905049,
+    43905051
+  ],
+  "slots_by_position": {
+    "1": 525,
+    "2": 525,
+    "3": 525,
+    "4": 525
+  },
+  "primary_counter": 43904973,
+  "primary_phase_sha256": {
+    "0": "d98a58d57d4f166a6ce37adc0da86fe7bd29b559ab6cc978f08e73feb0958069",
+    "1": "c7bbf849e8036e45c91d941d2de31653d1a46098aa30b40fb75840be75892e45",
+    "2": "ad788fe3d2a7232dc839b414e4e7310e7718c3e59be55bae6d618b0432064ffe"
+  },
+  "primary_projection": {
+    "received_du_phases": [
+      0,
+      1,
+      2
+    ],
+    "physically_complete_slots": 60,
+    "confirmed_direct_bits": 10560,
+    "full_clear_words": 0,
+    "word_erasures": 60
+  },
+  "primary_masked_bits": 5280,
+  "primary_hq_predictions": 0,
+  "hq_cases": [
+    {
+      "counter": 43904982,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "slot": 1,
+      "mode": "F9",
+      "mode_du_offset": 39,
+      "mode_packet_ordinal": 0,
+      "conditional_allowed_b8_b9": [
+        "00",
+        "01"
+      ],
+      "conditional_excluded_b8_b9": [
+        "10",
+        "11"
+      ],
+      "b8_conditional": "0",
+      "observed_b8_or_b9": null
+    },
+    {
+      "counter": 43904987,
+      "phase": 2,
+      "cycle": 4,
+      "position": 2,
+      "slot": 57,
+      "mode": "F9",
+      "mode_du_offset": 563,
+      "mode_packet_ordinal": 3,
+      "conditional_allowed_b8_b9": [
+        "00",
+        "01"
+      ],
+      "conditional_excluded_b8_b9": [
+        "10",
+        "11"
+      ],
+      "b8_conditional": "0",
+      "observed_b8_or_b9": null
+    },
+    {
+      "counter": 43905008,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "slot": 8,
+      "mode": "FA",
+      "mode_du_offset": 4,
+      "mode_packet_ordinal": 0,
+      "conditional_allowed_b8_b9": [
+        "00",
+        "01",
+        "10"
+      ],
+      "conditional_excluded_b8_b9": [
+        "11"
+      ],
+      "b8_conditional": null,
+      "observed_b8_or_b9": null
+    },
+    {
+      "counter": 43905024,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "slot": 3,
+      "mode": "FA",
+      "mode_du_offset": 105,
+      "mode_packet_ordinal": 0,
+      "conditional_allowed_b8_b9": [
+        "00",
+        "01",
+        "10"
+      ],
+      "conditional_excluded_b8_b9": [
+        "11"
+      ],
+      "b8_conditional": null,
+      "observed_b8_or_b9": null
+    },
+    {
+      "counter": 43905026,
+      "phase": 1,
+      "cycle": 1,
+      "position": 4,
+      "slot": 27,
+      "mode": "FA",
+      "mode_du_offset": 236,
+      "mode_packet_ordinal": 1,
+      "conditional_allowed_b8_b9": [
+        "00",
+        "01",
+        "10"
+      ],
+      "conditional_excluded_b8_b9": [
+        "11"
+      ],
+      "b8_conditional": null,
+      "observed_b8_or_b9": null
+    }
+  ],
+  "independent_absolute_hq_comparisons": 0
+}

@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-11-27T22:58:47.175337+00:00",
+  "receiver": "7L4IOU Edogawa Tokyo at https://7l4iou.tunnel.ubersdr.org",
+  "frequency_hz": 6140000,
+  "duration_seconds": 180,
+  "sample_rate": 48000,
+  "sessions": 1,
+  "no_fallback": true,
+  "rf_recipe_git": "b9c369ea1c04c3dce1b515fc9d29c8ce63df59ec",
+  "class_git": "ef053027febb81d6fe53e211611953792f492925",
+  "rf_rule": "All original acquired samples once with stock defaults except specified MLC iterations [1,4]; crc-checked standalone & pooled transport, distinct physical packet CRCs at nominal four offsets, DU CRC, original packet flags, no search. First chronological complete three-phase union counter regardless of mode, separate total. No complete group => retain empty primary. Do not use partial/incomplete capture as substitute. Optional excerpt around same primary only; no retuning or fallback station.",
+  "hq_rule": "report conditional F9,FA,FB from directly received modes in primary and every complete group; do not inspect masked data. No absolute class truth supplied on this new recording.",
+  "pinned_files": {
+    "/workspace/kcbs-milestone-public/scripts/record_ubersdr_iq.py": "916784ae35223fecbd2c7bf03b0b8c8ff98536440f5a8493b84b7d68ff337aa7",
+    "/workspace/kcbs-milestone-public/scripts/demod_iq_window.py": "0da42f86fad33f15f8d8b30af3f54d97712b43bb0578474d021261259ee0fd20",
+    "/workspace/kcbs-milestone-public/scripts/salvage_msc_packets.py": "a9f86d51294a2b61064f8886993881df523eee3a807854a48a511d39f54bc8d4",
+    "/workspace/kcbs-milestone-public/examples/nov27/validation/hq-class/observe.py": "504f14187ab95b605f0dd53d5eb3a860019f2eb0cd1967ce861dafa6625706e0",
+    "/workspace/kcbs-milestone-public/examples/nov27/validation/hq-class/protocol.md": "f0ebb723987cd935a978bc16f281ab54e905ac041cc875457a2e74d1b8511814",
+    "/workspace/kcbs-milestone-public/examples/nov27/validation/rf-iterations/protocol.md": "63a088f7a61dc45a23703f8e48a9f120cf7c1ca13f35b207d9268dd2b0c6537d",
+    "/workspace/dprk-drm/work/drm-signalling/build-check/dream": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+    "/workspace/dprk-drm/scripts/inspect_drm_signalling.py": "4eb63cf7dcf62a911574e93edd216d2d4c212f5aef7f51fbb15ded1cab0f874d"
+  }
+}

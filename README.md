@@ -34,6 +34,12 @@ words whose supporting text record covered the relevant byte in its header
 or body. The six unresolved late octets are outside this field.
 [Mode bits, archive comparisons and IQ replay](examples/nov27/validation/hq-class/README.md)
 
+A fresh three-minute **6140 kHz** IQ recording is available in full. The
+frozen receiver recovered 35 complete groups. At the first unseen counter,
+43904973, it received all 60 slots and recovered 10,560 directly transmitted
+clear bits. The clear values of 5,280 masked bits remain open.
+[Download the IQ and reproduce all 35 groups](examples/nov27/validation/rf-iterations/README.md)
+
 ## November 27 dual-frequency recording
 
 **행복한 내 나라 (*My Happy Country*)**, performed by the Wangjaesan Light Music

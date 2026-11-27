@@ -22,6 +22,13 @@ from resample_iq import cs8_frames, convert_cs8
 
 WSL_LEGACY_DREAM = '/root/kcbs/dream-src/dream'
 
+# Dream channel estimators for repeatable passes over the same IQ.
+RECEPTION_PROFILES = {
+    'wiener': dict(freqint=2, timeint=1, modmetric=0),
+    'linear-time': dict(freqint=2, timeint=0, modmetric=0),
+    'linear-time-modmetric': dict(freqint=2, timeint=0, modmetric=1),
+}
+
 
 def dream_binary():
     override = os.environ.get('KCBS_DREAM')
@@ -57,6 +64,8 @@ def main():
     ap.add_argument('--offset-hz', type=float, default=0., help='CS8 channel minus center, Hz')
     ap.add_argument('--mlc-iterations', type=int, choices=range(5),
                     help='Dream multi-level channel decoder iterations (0–4); omit to use its configuration')
+    ap.add_argument('--reception-profile', choices=RECEPTION_PROFILES,
+                    help='select a fixed Dream channel estimator for this pass')
     args = ap.parse_args()
     if args.start < 0 or not 0 < args.seconds <= 600:
         ap.error('start must be nonnegative; seconds must be in (0, 600]')
@@ -83,6 +92,12 @@ def main():
     manifest = out / 'manifest.json'
     if args.mlc_iterations is not None:
         meta['mlc_iterations'] = args.mlc_iterations
+    if args.reception_profile is not None:
+        settings = dict(RECEPTION_PROFILES[args.reception_profile],
+                        mlciter=args.mlc_iterations if args.mlc_iterations is not None else 1)
+        ini = '[Receiver]\n' + ''.join(f'{name}={value}\n' for name, value in settings.items())
+        (out / 'Dream.ini').write_text(ini, encoding='ascii')
+        meta.update(reception_profile=args.reception_profile, receiver_settings=settings)
     manifest.write_text(json.dumps(meta, indent=2), encoding='utf-8')
     wav = out / 'iq48.wav'
     try:
@@ -106,9 +121,10 @@ def main():
                    '-c', '6', '--sigsrate', '48000', '-m', '1', '-f', linux(wav)]
         if args.mlc_iterations is not None:
             command.extend(['--mlciter', str(args.mlc_iterations)])
-        if os.name == 'nt' and binary == WSL_LEGACY_DREAM:
-            # Older WSL builds find their configuration relative to this directory.
-            command = linux_command('bash', '-lc', 'cd /root/kcbs/dream-src && ' +
+        if os.name == 'nt' and (binary == WSL_LEGACY_DREAM or args.reception_profile is not None):
+            # The legacy build normally reads its settings from the build directory.
+            config_dir = linux(out) if args.reception_profile is not None else '/root/kcbs/dream-src'
+            command = linux_command('bash', '-lc', 'cd ' + shlex.quote(config_dir) + ' && ' +
                                     shlex.join(command))
         else:
             command = linux_command(*command)
