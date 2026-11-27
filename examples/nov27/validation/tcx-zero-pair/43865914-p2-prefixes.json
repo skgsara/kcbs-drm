@@ -1,0 +1,62 @@
+[
+  {
+    "slot": 1,
+    "prefix_hex": "ff8d600ae6d25e2e681ca5c9621b25a7"
+  },
+  {
+    "slot": 5,
+    "prefix_hex": "fe9d904184d45e3664cd403259a1ec1d"
+  },
+  {
+    "slot": 9,
+    "prefix_hex": "fe8aeceb99565e4c6a4831ff270aa49e"
+  },
+  {
+    "slot": 13,
+    "prefix_hex": "fe82572b17da5e2f2a8b9767271b614b"
+  },
+  {
+    "slot": 17,
+    "prefix_hex": "ff9bb5c1805b5e525d7f4c64b1b32693"
+  },
+  {
+    "slot": 21,
+    "prefix_hex": "fe96356ad4db5e24565e86b64a17e742"
+  },
+  {
+    "slot": 25,
+    "prefix_hex": "ff9fa8cb3c5942a212cd79246726be52"
+  },
+  {
+    "slot": 29,
+    "prefix_hex": "ff8a7182bb5b5e3c462055d64f3940c0"
+  },
+  {
+    "slot": 33,
+    "prefix_hex": "ff941891b8d95e2c4248edf248e326c3"
+  },
+  {
+    "slot": 37,
+    "prefix_hex": "ff8e295279da5e3e497b97692d759131"
+  },
+  {
+    "slot": 41,
+    "prefix_hex": "ff80d1149d5a573c52a3e27271ceb7d5"
+  },
+  {
+    "slot": 45,
+    "prefix_hex": "ff9dcb4b3f5951ea5603f8922f5948a5"
+  },
+  {
+    "slot": 49,
+    "prefix_hex": "fe8f3122cb59573c58d9e48db24aeb3b"
+  },
+  {
+    "slot": 53,
+    "prefix_hex": "ffa5375377db574e518cc4e4b7debe81"
+  },
+  {
+    "slot": 57,
+    "prefix_hex": "fe9ca25cd05957364faf2405923f7812"
+  }
+]

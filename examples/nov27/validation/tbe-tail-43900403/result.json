@@ -1,0 +1,509 @@
+{
+  "freeze": "06d4956b1d5003f0ac1d0b1ee0e958f07c0aa468",
+  "received_du_crc16": [
+    "7B26",
+    "1EC3",
+    "1FCB"
+  ],
+  "raw_iq_sha256": "d96c3f22638c45ef1ef966a022f03afb29032b0fbb70d9e116783b415d40c8d0",
+  "direct_bits": 10560,
+  "complete_clear_words": 0,
+  "target": {
+    "counter": 43900403,
+    "slots": 60,
+    "eligible": 0,
+    "excluded_value_contexts": 0,
+    "p1_eligible": 0,
+    "p2_eligible": 0,
+    "p3_eligible": 0,
+    "p4_eligible": 0
+  },
+  "all_slot_checks": {
+    "counter": 43900403,
+    "status_counts": {
+      "outside_mode": 60
+    },
+    "slots": [
+      {
+        "counter": 43900403,
+        "slot": 0,
+        "phase": 0,
+        "cycle": 0,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 1,
+        "phase": 0,
+        "cycle": 0,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 2,
+        "phase": 0,
+        "cycle": 0,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 3,
+        "phase": 0,
+        "cycle": 0,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 4,
+        "phase": 0,
+        "cycle": 1,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 5,
+        "phase": 0,
+        "cycle": 1,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 6,
+        "phase": 0,
+        "cycle": 1,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 7,
+        "phase": 0,
+        "cycle": 1,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 8,
+        "phase": 0,
+        "cycle": 2,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 9,
+        "phase": 0,
+        "cycle": 2,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 10,
+        "phase": 0,
+        "cycle": 2,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 11,
+        "phase": 0,
+        "cycle": 2,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 12,
+        "phase": 0,
+        "cycle": 3,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 13,
+        "phase": 0,
+        "cycle": 3,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 14,
+        "phase": 0,
+        "cycle": 3,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 15,
+        "phase": 0,
+        "cycle": 3,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 16,
+        "phase": 0,
+        "cycle": 4,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 17,
+        "phase": 0,
+        "cycle": 4,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 18,
+        "phase": 0,
+        "cycle": 4,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 19,
+        "phase": 0,
+        "cycle": 4,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 20,
+        "phase": 1,
+        "cycle": 0,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 21,
+        "phase": 1,
+        "cycle": 0,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 22,
+        "phase": 1,
+        "cycle": 0,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 23,
+        "phase": 1,
+        "cycle": 0,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 24,
+        "phase": 1,
+        "cycle": 1,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 25,
+        "phase": 1,
+        "cycle": 1,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 26,
+        "phase": 1,
+        "cycle": 1,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 27,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 28,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 29,
+        "phase": 1,
+        "cycle": 2,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 30,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 31,
+        "phase": 1,
+        "cycle": 2,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 32,
+        "phase": 1,
+        "cycle": 3,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 33,
+        "phase": 1,
+        "cycle": 3,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 34,
+        "phase": 1,
+        "cycle": 3,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 35,
+        "phase": 1,
+        "cycle": 3,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 36,
+        "phase": 1,
+        "cycle": 4,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 37,
+        "phase": 1,
+        "cycle": 4,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 38,
+        "phase": 1,
+        "cycle": 4,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 39,
+        "phase": 1,
+        "cycle": 4,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 40,
+        "phase": 2,
+        "cycle": 0,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 41,
+        "phase": 2,
+        "cycle": 0,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 42,
+        "phase": 2,
+        "cycle": 0,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 43,
+        "phase": 2,
+        "cycle": 0,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 44,
+        "phase": 2,
+        "cycle": 1,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 45,
+        "phase": 2,
+        "cycle": 1,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 46,
+        "phase": 2,
+        "cycle": 1,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 47,
+        "phase": 2,
+        "cycle": 1,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 48,
+        "phase": 2,
+        "cycle": 2,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 49,
+        "phase": 2,
+        "cycle": 2,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 50,
+        "phase": 2,
+        "cycle": 2,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 51,
+        "phase": 2,
+        "cycle": 2,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 52,
+        "phase": 2,
+        "cycle": 3,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 53,
+        "phase": 2,
+        "cycle": 3,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 54,
+        "phase": 2,
+        "cycle": 3,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 55,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 56,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 57,
+        "phase": 2,
+        "cycle": 4,
+        "position": 2,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 58,
+        "phase": 2,
+        "cycle": 4,
+        "position": 3,
+        "status": "outside_mode"
+      },
+      {
+        "counter": 43900403,
+        "slot": 59,
+        "phase": 2,
+        "cycle": 4,
+        "position": 4,
+        "status": "outside_mode"
+      }
+    ]
+  }
+}

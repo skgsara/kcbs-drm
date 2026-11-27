@@ -1,0 +1,133 @@
+{
+  "preselection_sha256": "fa49f0b6d6446a5832b1242bb8985fe1fb3d15af77da1745d368b37c3e5c761d",
+  "captures": {
+    "nov15": {
+      "input_du_archive_sha256": "15c3aecaae5b8e669968a2351db1bb651fbb0a5824e99d9950aeedd1d155eae6",
+      "complete_groups": 109,
+      "word_slots": 6540,
+      "by_position": {
+        "1": {
+          "abstain": 1140,
+          "incompatible": 495
+        },
+        "2": {
+          "abstain": 1139,
+          "incompatible": 496
+        },
+        "3": {
+          "abstain": 1142,
+          "incompatible": 493
+        },
+        "4": {
+          "abstain": 1136,
+          "incompatible": 499
+        }
+      },
+      "totals": {
+        "abstain": 4557,
+        "incompatible": 1983
+      },
+      "compatible": [],
+      "selected_groups": {}
+    },
+    "edogawa": {
+      "input_du_archive_sha256": "bdd369fba7ecf9e6770fdcca15ff429a250500f86e800ece25897c2787426bd0",
+      "complete_groups": 74,
+      "word_slots": 4440,
+      "by_position": {
+        "1": {
+          "incompatible": 578,
+          "abstain": 532
+        },
+        "2": {
+          "incompatible": 572,
+          "abstain": 538
+        },
+        "3": {
+          "incompatible": 576,
+          "abstain": 534
+        },
+        "4": {
+          "incompatible": 582,
+          "abstain": 528
+        }
+      },
+      "totals": {
+        "incompatible": 2308,
+        "abstain": 2132
+      },
+      "compatible": [],
+      "selected_groups": {
+        "43900403": {
+          "abstain": 56,
+          "incompatible": 4
+        }
+      }
+    },
+    "supplement1744": {
+      "input_du_archive_sha256": "b7ffeea6b21b24236d012c9bae8b14924a98d855bd0e1eb58b319a310edb6181",
+      "complete_groups": 295,
+      "word_slots": 17700,
+      "by_position": {
+        "1": {
+          "incompatible": 1033,
+          "abstain": 3392
+        },
+        "2": {
+          "incompatible": 1025,
+          "abstain": 3400
+        },
+        "3": {
+          "incompatible": 1023,
+          "abstain": 3402
+        },
+        "4": {
+          "incompatible": 1025,
+          "abstain": 3400
+        }
+      },
+      "totals": {
+        "incompatible": 4106,
+        "abstain": 13594
+      },
+      "compatible": [],
+      "selected_groups": {}
+    },
+    "supplement1756": {
+      "input_du_archive_sha256": "56609749653511d9548fc13cef77de25509c8541ea0ddf07c75a90756290a775",
+      "complete_groups": 644,
+      "word_slots": 38640,
+      "by_position": {
+        "1": {
+          "abstain": 8423,
+          "incompatible": 1237
+        },
+        "2": {
+          "abstain": 8421,
+          "incompatible": 1239
+        },
+        "3": {
+          "abstain": 8418,
+          "incompatible": 1242
+        },
+        "4": {
+          "abstain": 8419,
+          "incompatible": 1241
+        }
+      },
+      "totals": {
+        "abstain": 33681,
+        "incompatible": 4959
+      },
+      "compatible": [],
+      "selected_groups": {
+        "43865914": {
+          "incompatible": 60
+        }
+      }
+    }
+  },
+  "selection": "Use all complete three-phase CRC-passing groups in both 1744+1756 supplement files, the Nov15 199.89s Wiener replay (109 groups), and the 7L4IOU Edogawa replay (all 74 including the earlier paired target). Report per input and position. Check group 43865914 as a known prefix negative and 43900403 as an additional retrospective screen. No substitute target. Positive findings remain conditional pending bounded prefix. Publish any limits and zero results.",
+  "rule": "For 13.2 kb/s ordinary TCX20 with a known 128-bit prefix and the one zero-pair rule, bits [136,152) and [160,164) must all be zero. Any one rejects this particular explanation. Twenty zeros are a candidate only, never prove the pair count or p15/p18. Exclude other modes.",
+  "disjoint_complete_counters": 1122
+}

@@ -1,0 +1,25 @@
+{
+  "slots": 900,
+  "reasons": {
+    "not_primary_tcx20": 553,
+    "more_than_one_pair": 6,
+    "prefix_bound_or_native_abstention": 292,
+    "one_zero_pair": 49
+  },
+  "positives_by_position": {
+    "1": 12,
+    "2": 13,
+    "3": 12,
+    "4": 12
+  },
+  "counts": {
+    "all_fill_bits": 4612,
+    "beyond_prefix_bits": 1764,
+    "all_fill_mismatches": 0,
+    "beyond_prefix_mismatches": 0,
+    "tested_payload_octets": 98,
+    "payload_octet_mismatches": 0
+  },
+  "input_pcm_sha256": "6f2c7e35413894352caadb2080a8cf62e1c722d175d552e6682d48b500c51220",
+  "stock_g192_sha256": "5a190260c38a01024ca0fb4091d5725b711709ad3c97d474a352649961dfb256"
+}

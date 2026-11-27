@@ -117,6 +117,19 @@ of bits or narrower coding modes. With the stock EVS encoder built, run
 `python examples/nov27/validation/check_p2_codec_bits.py` to regenerate
 the synthetic stream and repeat the count.
 
+Two stock TCX20 words at the same second-position slot differ in exactly
+one bit at payload offset 30. Another pair does the same in GSC. A
+field check spanning this byte in the SWB TBE speech modes admitted
+all 256 values on all 275 eligible words in a 73-group IQ test.
+[Native word pairs and held-out byte-30 check](../../nov27/validation/tbe-tail-43900403/)
+
+A single zero-valued TCX20 coefficient pair can establish payload bytes
+15 and 18 from a verified 128-bit prefix. Both were zero in all 49
+qualifying words of an independent 900-word sender control. In four
+recordings, directly transmitted bits excluded this case for all
+13,356 received TCX20 words screened.
+[The prefix rule, its IQ-only screen, and the 43865914 handoff](../../nov27/validation/tcx-zero-pair/)
+
 ### Can the exact mode octet predict a second-position byte?
 
 We used all 2,400 original frames from the 48-second synthetic encode to
