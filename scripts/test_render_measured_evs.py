@@ -89,6 +89,46 @@ class MeasuredReplayTest(unittest.TestCase):
         self.assertEqual(coverage(kinds)["established"], 0)
         self.assertFalse(kinds[20:].any())
 
+    def test_empty_native_output_for_all_erased_input_preserves_the_group_clock(self):
+        self.flags[:] = False
+        self.replay({})
+        manifest = self.root / "manifest.json"
+        manifest.write_text('{"groups": {}}')
+
+        def decode(args, **kwargs):
+            self.assertEqual(Path(args[-2]).read_bytes(), bytes.fromhex("206b0000") * 60)
+            Path(args[-1]).write_bytes(b"")
+
+        with patch("render_measured_evs.linux_command", side_effect=lambda *args: args), \
+                patch("render_measured_evs.subprocess.run", side_effect=decode) as run:
+            report = render(self.root, manifest, self.root, "decoder", (self.counter, self.counter))
+        run.assert_called_once()
+        self.assertEqual((self.root / "programme.192").read_bytes(), bytes.fromhex("206b0000") * 60)
+        for scope in (report, report["excerpt"]):
+            self.assertEqual((scope["erased"], scope["established"], scope["inferred"]), (60, 0, 0))
+            self.assertEqual((scope["pcm_source"], scope["native_pcm_samples"]), ("silence_all_slots_erased", 0))
+            self.assertEqual((scope["timeline_samples"], scope["timeline_seconds"]), (19200, 1.2))
+        silence = bytes(19200 * 2)
+        self.assertEqual(report["pcm_sha256"], sha256(silence).hexdigest())
+        for name in ("programme.wav", "excerpt.wav"):
+            with wave.open(str(self.root / name), "rb") as stream:
+                self.assertEqual((stream.getnframes(), stream.getframerate()), (19200, 16000))
+                self.assertEqual(stream.readframes(19200), silence)
+
+    def test_unexpected_native_pcm_length_cannot_create_timeline_silence(self):
+        manifest = self.root / "manifest.json"
+        manifest.write_text('{"groups": {}}')
+        for received, pcm in ((True, b""), (False, bytes(2))):
+            with self.subTest(received=received):
+                self.flags[:] = received
+                self.replay({})
+                with patch("render_measured_evs.linux_command", side_effect=lambda *args: args), \
+                        patch("render_measured_evs.subprocess.run",
+                              side_effect=lambda args, **kwargs: Path(args[-1]).write_bytes(pcm)):
+                    with self.assertRaisesRegex(ValueError, "320 signed 16-bit samples"):
+                        render(self.root, manifest, self.root, "decoder")
+                self.assertFalse((self.root / "programme.wav").exists())
+
     def test_received_span_keeps_interior_gap_and_crops_counter_excerpt(self):
         # Two received phases with an unreceived phase between them.
         ticks = 3 * self.counter + np.array([2, 4])
@@ -106,6 +146,9 @@ class MeasuredReplayTest(unittest.TestCase):
             report = render(self.root, manifest, self.root, "decoder", (self.counter + 1, self.counter + 1), True)
         self.assertEqual((report["total_slots"], report["established"], report["erased"]), (60, 5, 55))
         self.assertEqual(report["excerpt"]["total_slots"], 40)
+        for scope, expected in ((report, 19200), (report["excerpt"], 12800)):
+            self.assertEqual(scope["pcm_source"], "evs_decoder")
+            self.assertEqual((scope["native_pcm_samples"], scope["timeline_samples"]), (expected, expected))
         with wave.open(str(self.root / "excerpt.wav"), "rb") as stream:
             self.assertEqual(stream.readframes(stream.getnframes()), pcms[20 * 320:].tobytes())
 

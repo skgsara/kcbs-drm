@@ -144,6 +144,12 @@ def coverage(kinds):
             "inferred_first_position": int(count[INFERRED_FIRST])}
 
 
+def pcm_coverage(native, rendered, source):
+    timeline_samples = len(rendered) // 2
+    return dict(pcm_source=source, native_pcm_samples=len(native) // 2,
+                timeline_samples=timeline_samples, timeline_seconds=timeline_samples / 16000)
+
+
 def write_wave(path, pcm):
     with wave.open(str(path), "wb") as out:
         out.setparams((1, 2, 16000, 0, "NONE", "not compressed"))
@@ -171,18 +177,27 @@ def render(directory, manifest, out, decoder, excerpt=None, received_span=False)
         raw = stage / "decoded.pcm"
         subprocess.run(linux_command(decoder, "-q", "-no_delay_cmp", "16", stream, raw),
                        check=True, stdout=subprocess.DEVNULL)
-        pcm = raw.read_bytes()
-        if len(pcm) != len(kinds) * SAMPLES_PER_FRAME * 2:
+        native = raw.read_bytes()
+        expected_bytes = len(kinds) * SAMPLES_PER_FRAME * 2
+        if len(native) == expected_bytes:
+            pcm, source = native, "evs_decoder"
+        elif not native and not kinds.any():
+            # The stock decoder exits successfully with empty PCM on an entirely erased input.
+            pcm, source = bytes(expected_bytes), "silence_all_slots_erased"
+        else:
             raise ValueError("EVS decoder did not produce 320 signed 16-bit samples per slot")
         write_wave(stage / "programme.wav", pcm)
-        report.update(bitstream_sha256=sha256(stream.read_bytes()).hexdigest(),
+        report.update(pcm_coverage(native, pcm, source), bitstream_sha256=sha256(stream.read_bytes()).hexdigest(),
                       pcm_sha256=sha256(pcm).hexdigest())
         outputs = ["programme.192", "programme.wav"]
         if excerpt:
             lo = max(0, SLOTS_PER_GROUP * (excerpt[0] - first) - first_slot)
             hi = min(len(kinds), SLOTS_PER_GROUP * (excerpt[1] + 1 - first) - first_slot)
-            write_wave(stage / "excerpt.wav", pcm[2 * SAMPLES_PER_FRAME * lo:2 * SAMPLES_PER_FRAME * hi])
-            report["excerpt"] = {"first_counter": excerpt[0], "last_counter": excerpt[1], **coverage(kinds[lo:hi])}
+            portion = slice(2 * SAMPLES_PER_FRAME * lo, 2 * SAMPLES_PER_FRAME * hi)
+            excerpt_pcm = pcm[portion]
+            write_wave(stage / "excerpt.wav", excerpt_pcm)
+            report["excerpt"] = {"first_counter": excerpt[0], "last_counter": excerpt[1], **coverage(kinds[lo:hi]),
+                                 **pcm_coverage(memoryview(native)[portion], excerpt_pcm, source)}
             outputs.append("excerpt.wav")
         (stage / "coverage.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
         for name in [*outputs, "coverage.json"]:

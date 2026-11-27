@@ -200,6 +200,27 @@ python scripts/demod_iq_window.py examples/nov27/jl1edu-3205-43897717-iq12.wav \
     work/jl1edu-43897717 --seconds 24
 ```
 
+The published November 19 and 27 mask tables and the November 27 text
+archive contain no entry for `43897717`. With all 60 slots physically
+received, replay using this evidence supplied zero complete EVS words
+at each of the four positions. The G.192 stream contains 60 erasures.
+The stock EVS decoder returned zero PCM samples. The renderer marked the
+elapsed 1.2 seconds with silence and recorded its source in the
+[coverage report](examples/nov27/validation/jl1edu-43897717/coverage.json).
+To reproduce the report from the 12 received packets, run from the
+repository root after building the EVS decoder.
+
+```bash
+case_dir=examples/nov27/validation/jl1edu-43897717
+run_dir=work/jl1edu-43897717-replay
+mkdir -p "$run_dir"
+cp "$case_dir/packets.npz" examples/nov27/receiver/keys.npz "$run_dir/"
+python scripts/render_measured_evs.py "$run_dir" --masks dumps/nov27-measured-masks.json \
+    --received-span --excerpt 43897717 43897717 --decoder work/evs_gcc_independent/EVS_dec \
+    --out "$run_dir/render"
+cmp "$case_dir/coverage.json" "$run_dir/render/coverage.json"
+```
+
 The pipeline can resume in the same output directory. It checks the selected
 MSC dumps and decode options before reusing their combined result. When the
 input set changes, earlier products are retained under `previous-runs/` and

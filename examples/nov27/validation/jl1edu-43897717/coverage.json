@@ -1,0 +1,47 @@
+{
+  "first_counter": 43897717,
+  "last_counter": 43897717,
+  "first_tick": 131693151,
+  "last_tick": 131693153,
+  "applied_group_positions": {},
+  "skipped_in_range_groups": {},
+  "manifest_groups_outside_capture": 22,
+  "total_slots": 60,
+  "established": 0,
+  "inferred": 0,
+  "erased": 60,
+  "frames_by_position": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "inferred_first_position": 0,
+  "manifest_sha256": "e7b96f90bcb622f130288f9fb8be69710a30e1e53ca20e111c417c6dfaa376db",
+  "sample_rate_hz": 16000,
+  "pcm_source": "silence_all_slots_erased",
+  "native_pcm_samples": 0,
+  "timeline_samples": 19200,
+  "timeline_seconds": 1.2,
+  "bitstream_sha256": "f5bb4cafef3196a32c512a37155487581eb50e7e0019bd2381d618ce38e17bf7",
+  "pcm_sha256": "5c9b37300155c1f3338bc88f17d69c51fb248b0de0155630962ca6504d789bba",
+  "excerpt": {
+    "first_counter": 43897717,
+    "last_counter": 43897717,
+    "total_slots": 60,
+    "established": 0,
+    "inferred": 0,
+    "erased": 60,
+    "frames_by_position": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "inferred_first_position": 0,
+    "pcm_source": "silence_all_slots_erased",
+    "native_pcm_samples": 0,
+    "timeline_samples": 19200,
+    "timeline_seconds": 1.2
+  }
+}
