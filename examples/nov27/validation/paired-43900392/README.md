@@ -17,6 +17,14 @@ The result contains zero complete clear EVS words. The second position's
 15 received mode octets indicate eight HQ and seven TCX20 frames.
 [Input hashes, timing and comparison](comparison.json)
 
+We also checked whether EVS advertised a redundant copy of an earlier
+frame. At 13.2 kb/s the EVS reference decoder reads the first five bits
+of the mode octet. Values 21 through 28 signal channel-aware mode.
+All 60 slots at this counter had value 31. Across the full three-minute
+recordings, none of the 5,800 distinct headers from CRC-checked data
+units signalled channel-aware mode. Yokohama supplied 880 headers and
+Tokyo supplied 5,540, including 620 received at both stations.
+
 ## Reproduce from IQ
 
 The two 24-second stereo IQ excerpts were resampled to 12 kHz. Both

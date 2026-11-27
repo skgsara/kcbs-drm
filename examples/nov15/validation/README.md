@@ -111,6 +111,44 @@ of bits or narrower coding modes. With the stock EVS encoder built, run
 `python examples/nov27/validation/check_p2_codec_bits.py` to regenerate
 the synthetic stream and repeat the count.
 
+### Can the exact mode octet predict a second-position byte?
+
+We used all 2,400 original frames from the 48-second synthetic encode to
+learn the most frequent clear byte at each of the six offsets for each
+exact mode octet. We broke ties toward the smallest byte and abstained on
+unseen modes. We froze the rule before encoding two unrelated recordings.
+For the historical comparison we froze the guesses using only the received
+mode octets before scoring against the published FM/CD-assisted reconstruction.
+The hashes and freeze times were recorded locally. The two new encoder
+outputs provide known original bytes. The historical scores measure
+agreement with a reconstruction that was already public.
+
+| Position-two test | Eligible bytes | Exact bytes / attempted | Offsets correct for all 15 frames / eligible group-offset pairs |
+| --- | ---: | ---: | ---: |
+| New encoder output, 48 s music | 3,600 | 14 / 3,564 | 0 / 240 |
+| New encoder output, 14.84 s speech | 1,080 | 1 / 228 | 0 / 72 |
+| Published `position_two_signs` reconstruction | 1,590 | 8 / 1,590 | 0 / 102 |
+| Its 12 s music excerpt | 900 | 3 / 900 | 0 / 60 |
+
+The speech test excludes its trailing 22 slots, which end mid-group. The
+12-second excerpt is included in the 30-second result. A stricter rule
+required at least 15 training frames with the same mode and a unanimous
+byte value. It abstained on all new music and speech and missed all 24
+bytes it predicted on the published reconstruction. These results leave
+the six second-position mask bytes unresolved.
+[Per-offset scores, input hashes and zero-byte baseline](../../nov27/validation/p2-mode-transfer-results.json)
+
+To reproduce the new encoder outputs, run the command below with the
+two source OGG files. The music is Kevin MacLeod's *Vibe Ace*. The
+speech is Garth Comira reading Marion Bryce's *The Ashiel Mystery* in
+LibriSpeech. [Music source](https://librosa.org/data/audio/Kevin_MacLeod_-_Vibe_Ace.hq.ogg)
+· [Speech source](https://librosa.org/data/audio/5703-47212-0000.hq.ogg)
+
+```sh
+python examples/nov27/validation/check_p2_mode_transfer.py \
+    --music Kevin_MacLeod_-_Vibe_Ace.hq.ogg --speech 5703-47212-0000.hq.ogg
+```
+
 ## Comparing with a clear export when one is available
 
 1. Record the receiver version or commit, input IQ SHA-256, the data used to
