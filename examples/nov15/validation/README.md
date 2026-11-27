@@ -24,6 +24,18 @@ including its transmitted checksum. Times for individual frames follow
 the received group counter and phase. [Target receipt](target-43004924.json)
 · [All 109 complete counters](complete-counters.csv)
 
+## What the historical counter matches establish
+
+The November 25–26 contribution contains six sets of counters. Each has
+an original prefix archive and an export. Comparing the twelve files by
+counter reproduces **4,412 identical prefix rows**. All 4,412 matches
+are between an archive and its own export. The support flags agree on every
+row. Of those rows, 3,517 mark all 16 bytes as supported and 895 mark none. Across the
+15 pairs of different capture sets there are **zero shared counters**.
+These matches verify the export process. They leave open whether a
+receiver can obtain the mask for a fresh counter from the counter alone.
+[Contributed archive formats and capture list](../../../contrib/kcbsdrm/README.md)
+
 ## What to record before opening a reference
 
 1. Record the receiver version or commit, input IQ SHA-256, the data used to
