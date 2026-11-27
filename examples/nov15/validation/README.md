@@ -4,8 +4,10 @@ The goal is to obtain all four KCBS-2 masks for a previously unseen counter
 from broadcast data alone and reproduce its 60 clear EVS words. The first
 test target is **43004924**, the earliest complete counter in a single pass
 over the November 15, 2026, 10:58 UTC recording on 3205 kHz. We chose it
-using packet coordinates and checksums alone. Its four masks and an
-independent clear EVS export are still outstanding.
+using packet coordinates and checksums alone. Its four masks remain
+unresolved. The receiver must work from recorded IQ, including any stated
+acquisition history. A clear EVS export is optional for development and
+would allow an additional bit-for-bit comparison.
 
 ## Identify the recording and group
 
@@ -53,7 +55,43 @@ These matches verify the export process. They leave open whether a
 receiver can obtain the mask for a fresh counter from the counter alone.
 [Contributed archive formats and capture list](../../../contrib/kcbsdrm/README.md)
 
-## What to record before opening a reference
+## Testing a prediction from IQ alone
+
+Freeze the receiver version and declare its input recordings before the
+test. Exclude any mask table indexed by the test counter. For a check that
+uses repeated text, identify the records used to propose the bytes and the
+record held back to test them. Record their counter, phase, and which
+predicted bytes enter the checked portion. A second reception of the same
+transmitted packet verifies the on-air bits. A different text record can
+test a proposed byte when that byte changes the record's CRC result.
+
+Report the number of complete words supplied in each position, unresolved
+bits, and erasures. State which alternatives the held-back checks rejected
+and which remain possible. A transmitted packet CRC covers the transmitted
+bytes. An EVS syntax or audio check only distinguishes candidates that
+produce different outcomes under that check. Record bit-for-bit agreement
+separately wherever independently known words are available.
+
+Two published counters, `43854889` and `43854896`, each contribute text to
+two different weather records. In each record we tested the 11 text-tail
+bytes that share mask bytes with the first audio position. We flipped
+one bit at a time with the record boundaries and all other bytes held
+fixed. Each record's CRC rejected 88 of 88 such
+errors. The pair together imposed 16 independent binary constraints on
+those bits, the same number as either CRC alone. Further evidence is
+needed to distinguish values that obey those constraints.
+[Reproduce the CRC check](../../nov27/validation/check_text_crc_coverage.py)
+
+We also checked what a successful EVS decode can establish. In known
+13.2 kb/s encoder output we selected one super-wideband generic ACELP
+word and one wideband GSC word. For each we flipped the low bit of
+payload byte 24 or 27 in separate runs (offsets start at zero after the
+mode octet). All four changed words altered the decoded samples. The
+reference decoder reported a normal frame with no bit-error or bad-frame
+indication in every case. Those flags could not distinguish the original
+bit in any of these four trials.
+
+## Comparing with a clear export when one is available
 
 1. Record the receiver version or commit, input IQ SHA-256, the data used to
    initialize its state, and the three target DU hashes. Describe any required
@@ -70,7 +108,7 @@ receiver can obtain the mask for a fresh counter from the counter alone.
    supply such an export. The file comparator checks equality at the stated
    coordinates. Provenance and the order of disclosure are separate checks.
 
-A complete pass requires **15 exact 264-bit words at each position**, 60
+A complete reference match requires **15 exact 264-bit words at each position**, 60
 out of 60. The following command assumes both files start at the first slot
 of the target. For a continuous stream, pass its actual starting counter,
 phase (0–2), cycle (0–4) and position (1–4). Matching AM or music can
@@ -176,6 +214,6 @@ For contributors, the outstanding question is which of the six suffix bytes,
 if any, were fixed using receiver inputs before the FM/CD recordings were
 consulted. An author-provided field trace from a published group or a
 documented receiver or transmitter test vector with known inputs and outputs
-would let us check that distinction. A new public SDR IQ capture is most
-useful when it can be paired with a simultaneous independent clear EVS
-export, or when a documented acquisition requirement calls for more history.
+would let us check that distinction. Longer public SDR IQ recordings can
+also supply additional counters and separate occurrences of broadcast text
+for a receiver to test against a withheld record.

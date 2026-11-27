@@ -16,9 +16,10 @@ recordings used below. [KoryoFront’s original decoder](https://github.com/Kory
 
 Planned receiver integrations are listed in the [KiwiSDR, Dream and DecDRM roadmap](docs/roadmap.md).
 
-The current blind receiver milestone is to reproduce all 60 EVS words of
-an unseen, CRC-good counter. The November 15 test fixes the target and
-describes how independent receiver outputs will be compared.
+The current blind receiver milestone uses raw IQ as its only input and aims
+to recover all 60 EVS words of an unseen, CRC-good counter. The November 15
+test fixes the target. Its protocol covers checks against evidence held
+back from the same broadcast and an optional comparison with a clear export.
 [Four-position milestone and target receipt](examples/nov15/validation/README.md)
 
 ## November 27 dual-frequency recording
