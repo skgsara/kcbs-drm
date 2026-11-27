@@ -1,0 +1,31 @@
+{
+  "input_pcm_sha256": "8947b94fd0a024031a1554fa2f63c637f7bd4bdb8eeefc35c747504e3ac39932",
+  "WB": {
+    "hq_words": 1101,
+    "reports": 978,
+    "updates": 1101,
+    "observed_pairs": {"00": 16, "10": 163, "11": 799},
+    "report_starts_min_max": [39, 86],
+    "reports_from_immediately_previous_slot": 938,
+    "p3_reports_of_immediate_p2": 238,
+    "p3_reports_of_immediate_p2_both_direct": 173,
+    "report_both_bits_inside_first_128": 978,
+    "directly_visible_bits_0_1_2": [227, 61, 690],
+    "g192_sha256": "79957836fdf1be62fd6d28ee1dc47a9f3936695c225fba3b784b137b7b5a7631",
+    "pcm_sha256": "872291048c7dbeb53b48fcd387902069a8b0d07228699af8a23866157be1fa3d"
+  },
+  "SWB": {
+    "hq_words": 1136,
+    "reports": 0,
+    "updates": 0,
+    "observed_pairs": {},
+    "report_starts_min_max": [],
+    "reports_from_immediately_previous_slot": 0,
+    "p3_reports_of_immediate_p2": 0,
+    "p3_reports_of_immediate_p2_both_direct": 0,
+    "report_both_bits_inside_first_128": 0,
+    "directly_visible_bits_0_1_2": [0, 0, 0],
+    "g192_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+    "pcm_sha256": "fde3841e93a62b08e637e0c5818e25bf3b3451445a8ca9b6eef97b0b1b532539"
+  }
+}

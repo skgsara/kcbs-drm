@@ -1,0 +1,259 @@
+{
+  "counter": 43903388,
+  "selection": "First complete CRC-verified counter in the 180-second 7L4IOU capture. All 52 complete counters in the full capture form the coverage cohort.",
+  "credit": "Received by 7L4IOU (RX888 with UHV10 vertical), Edogawa, Tokyo, Japan, via its public UberSDR.",
+  "station_metadata": {
+    "origin_description_url": "https://7l4iou.tunnel.ubersdr.org/api/description",
+    "observed_utc": "2026-11-27T22:32:08.242118+00:00",
+    "receiver": {
+      "name": "RX888 with UHV10 vertical",
+      "location": "Edogawa, Tokyo, Japan",
+      "callsign": "7L4IOU",
+      "public_url": "https://7l4iou.tunnel.ubersdr.org/",
+      "timezone": "Asia/Tokyo",
+      "antenna": "UHV-10 3.5-50MHz multi band vertical"
+    }
+  },
+  "first_restrictive_group_in_same_clip": {
+    "counter": 43903395,
+    "zero_based_msc_records": [29, 30, 31],
+    "identical_to_full_capture_in_both_builds": true,
+    "crc_valid_packet_count": 12,
+    "crc_valid_du_count": 3,
+    "du_sha256_in_phase_order": [
+      "f7d6eb9c2dc16de3532fc0a259ec2761b6ef5812b2d743da1c142a11ffd87da6",
+      "a7f65b036949614a347eb41291cac77a5d533b45ebca5bf2cf3513ef6eb99850",
+      "c085a7abdfc84cf2ae8d96fad259e8fbb07d442784c1810cebc6cf9cddf6399c"
+    ]
+  },
+  "frequency_hz": 3205000,
+  "recording": {
+    "mode": "iq48",
+    "client_started_utc": "2026-11-27T22:27:17.775416+00:00",
+    "nominal_acquisition_utc_half_open": [
+      "2026-11-27T22:27:20.022569020Z",
+      "2026-11-27T22:30:20.022569020Z"
+    ],
+    "first_timestamp_iq_index_unix_ns": [
+      1920,
+      1795818440062569020
+    ],
+    "last_timestamp_iq_index_unix_ns": [
+      8639760,
+      1795818620017641279
+    ],
+    "sample_rate_hz": 48000,
+    "duration_seconds": 180,
+    "sample_pairs": 8640000,
+    "packets": 27000,
+    "timestamped_packets": 26994,
+    "max_abs_timestamp_jump_ns": 18874,
+    "observed_jumps_over_one_sample": 0,
+    "wav_sha256": "53eda43cb49e07def22055348431af75ab7ca4c578f59b1a0cb30ee23905a47e",
+    "stereo_iq_pcm_sha256": "3d5f9f457cc7c8fe215ea59e3be34b4e50c3e1128cfbd3cc785dff76d64c01ab",
+    "raw_default_msc_sha256": "2e518aa1bbbb396b9cf712ed37d3d610bd6c75b9b70914d6463fecf841fd07c4",
+    "raw_default_msc_records_for_target": [
+      8,
+      9,
+      10
+    ],
+    "complete_groups": 52,
+    "crc_good_data_units": 200,
+    "full_data_units_npz_sha256": "7381e771cc4cb5e85c44c5c26a4075268b198ac143c5c808f923bb454d44b9af",
+    "complete_counter_ranges_inclusive": [
+      [
+        43903388,
+        43903388
+      ],
+      [
+        43903390,
+        43903395
+      ],
+      [
+        43903399,
+        43903400
+      ],
+      [
+        43903408,
+        43903408
+      ],
+      [
+        43903425,
+        43903431
+      ],
+      [
+        43903435,
+        43903437
+      ],
+      [
+        43903440,
+        43903441
+      ],
+      [
+        43903443,
+        43903444
+      ],
+      [
+        43903453,
+        43903457
+      ],
+      [
+        43903460,
+        43903460
+      ],
+      [
+        43903481,
+        43903482
+      ],
+      [
+        43903484,
+        43903485
+      ],
+      [
+        43903502,
+        43903503
+      ],
+      [
+        43903516,
+        43903523
+      ],
+      [
+        43903525,
+        43903532
+      ]
+    ]
+  },
+  "clip": {
+    "filename": "7l4iou-3205-43903388-iq12.wav",
+    "sha256": "3aa64f7a3084906c0144d7fc04f4525b038c9a7ef2c9bbfd6a33af871ad306a1",
+    "bytes": 768044,
+    "pcm_sha256": "95d637772075a3481b0b137a688e36327aeca6cad3ff309f9546fd4679af4ec0",
+    "encoding": "stereo signed 16-bit little-endian PCM (I,Q)",
+    "sample_rate_hz": 12000,
+    "sample_pairs": 192000,
+    "duration_seconds": 16,
+    "original_48khz_sample_range_zero_based_half_open": [
+      0,
+      768000
+    ],
+    "nominal_receiver_utc_half_open": [
+      "2026-11-27T22:27:20.022569020Z",
+      "2026-11-27T22:27:36.022569020Z"
+    ],
+    "timing": "UTC endpoints use the first receiver packet timestamp and nominal sample rate. They locate the IQ interval. Exact transmission and per-DU callback times were not measured.",
+    "crop_attempts": 1,
+    "recipe": [
+      "ffmpeg",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-n",
+      "-i",
+      "FULL_IQ_48K.wav",
+      "-af",
+      "atrim=start_sample=0:end_sample=768000,aresample=12000",
+      "-c:a",
+      "pcm_s16le",
+      "-ar",
+      "12000",
+      "-ac",
+      "2",
+      "-map_metadata",
+      "-1",
+      "-fflags",
+      "+bitexact",
+      "7l4iou-3205-43903388-iq12.wav"
+    ]
+  },
+  "replay": {
+    "settings": "Set KCBS_DREAM to a finite-file Dream build with KCBS_DUMP_MSC enabled. Default channel estimation; exit 0. Output directories must be new.",
+    "commands": [
+      [
+        "python",
+        "scripts/demod_iq_window.py",
+        "examples/nov27/validation/acelp-class-history/7l4iou-3205-43903388-iq12.wav",
+        "replay/demod",
+        "--seconds",
+        "16"
+      ],
+      [
+        "python",
+        "scripts/salvage_msc_packets.py",
+        "replay/demod/msc.bin",
+        "--transport-only",
+        "--out",
+        "replay/du"
+      ]
+    ],
+    "tools_sha256": {
+      "demod_iq_window.py": "022420cc8c6fa9c636020d814b70fa05f05ffe990d803e4621172a4525e263d3",
+      "resample_iq.py": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+      "salvage_msc_packets.py": "a9f86d51294a2b61064f8886993881df523eee3a807854a48a511d39f54bc8d4"
+    },
+    "observations": {
+      "offline": {
+        "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+        "msc_sha256": "392799586494569544a7355e37dc48a2d636bab0d7d857263aacb5e1309d6e98",
+        "msc_records": 33,
+        "target_msc_record_indices_zero_based": [
+          8,
+          9,
+          10
+        ],
+        "same_target_du_bytes_as_full_iq": true,
+        "same_all_three_framed_msc_records_as_full_iq": true
+      },
+      "full-build": {
+        "dream_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+        "msc_sha256": "392799586494569544a7355e37dc48a2d636bab0d7d857263aacb5e1309d6e98",
+        "msc_records": 33,
+        "target_msc_record_indices_zero_based": [
+          8,
+          9,
+          10
+        ],
+        "same_target_du_bytes_as_full_iq": true,
+        "same_all_three_framed_msc_records_as_full_iq": true
+      }
+    },
+    "matching_length_prefixed_bytes": 2196,
+    "target_phases": [
+      {
+        "phase": 0,
+        "du_sha256": "82ff7d65c1edf1c0a2bd49fda6d05601a2a4901cb9681990bb07ff4f26942cf0",
+        "transmitted_packet_crc16_hex": [
+          "e977",
+          "f842",
+          "0580",
+          "d88f"
+        ],
+        "transmitted_du_crc16_hex": "c85a",
+        "length_prefixed_msc_record_sha256": "9395928f36256185c34ab13c8e4b6369b96ebeb980e1005747c95c3938f22608"
+      },
+      {
+        "phase": 1,
+        "du_sha256": "41f59077641b43bc7c834964ac6171c33a162fe327daddd2db044bbd28647a1a",
+        "transmitted_packet_crc16_hex": [
+          "08b5",
+          "7398",
+          "2224",
+          "bef9"
+        ],
+        "transmitted_du_crc16_hex": "ebd1",
+        "length_prefixed_msc_record_sha256": "2cd1be5ebd13aa5ddcd0af6611f0810ede2e05e7ff3bb26c8f027049888c1e59"
+      },
+      {
+        "phase": 2,
+        "du_sha256": "8529752860978b5f1f83a3ab33d3277bad928049fed7684fc65d02753c551e34",
+        "transmitted_packet_crc16_hex": [
+          "e7e3",
+          "41df",
+          "dd01",
+          "5698"
+        ],
+        "transmitted_du_crc16_hex": "5de5",
+        "length_prefixed_msc_record_sha256": "3b4d7010ec71438b63bf96cda835987f3472c69a54530781d2fc46701f4424eb"
+      }
+    ]
+  }
+}

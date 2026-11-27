@@ -1,0 +1,88 @@
+{
+  "case": "tcx-neighbors",
+  "stimulus": "TCX20 on a 1 kHz sine wave with a single sample perturbation",
+  "base_frequency_hz": 1000,
+  "base_amplitude_int16": 4096,
+  "sample_rate_hz": 32000,
+  "samples_per_input": 76800,
+  "words_per_input": 120,
+  "encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "inputs": [
+    {
+      "pulse_level_int16": -4,
+      "pcm_sha256": "702b529671318ba3a6cd3c48479458793c93977f48211c0f27659c85a1263060",
+      "g192_sha256": "989cfeda8911d47f2b355d9f28cf94ea992b4fa62e2746a13f2026e85e2082cb"
+    },
+    {
+      "pulse_level_int16": 4,
+      "pcm_sha256": "2713205cd90510cda88e05f9a2833a294a2810080dc3ebf38d4b6c1bc334e209",
+      "g192_sha256": "29338ed532854faa82608a62d7b2fa1e34b2cbb2ad9a990d86ed4e9fcb7f3102"
+    }
+  ],
+  "global_slot_zero_based": 97,
+  "group_zero_based": 1,
+  "slot_within_group_zero_based": 37,
+  "position_one_based": 2,
+  "native_words_hex": [
+    "fe95d3ae17b452ce7e6e2913a188bee8164de5f20dd985edf05fee3987091c1c9a",
+    "fe95d3ae17b452ce7e6e2913a188bee8164de5f20dd985edf05fee3987091c1d9a"
+  ],
+  "mode_octet_hex": "fe",
+  "omitted_zero_based_payload_offsets": [
+    15,
+    18,
+    21,
+    24,
+    27,
+    30
+  ],
+  "identical_27_byte_projection_hex": "fe95d3ae17b452ce7e6e2913a188bee84de50dd9edf0ee39091c9a",
+  "differing_word_bits_msb_first": [
+    255
+  ],
+  "differing_payload_offset": 30,
+  "differing_octets_hex": [
+    "1c",
+    "1d"
+  ],
+  "full_word_history": {
+    "first_difference_slot": 73,
+    "identical_from_start_before_target": 73,
+    "consecutive_matches_immediately_before_target": 1,
+    "earlier_matching_slots": 84,
+    "earlier_slots": 97,
+    "other_matching_slots_in_group": 40,
+    "other_slots_in_group": 59,
+    "first_later_difference_slot": 99,
+    "later_differing_slots": 6
+  },
+  "visible_projection_history": {
+    "first_difference_slot": 73,
+    "identical_from_start_before_target": 73,
+    "consecutive_matches_immediately_before_target": 1,
+    "earlier_matching_slots": 84,
+    "earlier_slots": 97,
+    "other_matching_slots_in_group": 40,
+    "other_slots_in_group": 59,
+    "first_later_difference_slot": 99,
+    "later_differing_slots": 6
+  },
+  "context": {
+    "single_pulse_sample_zero_based": 42399,
+    "identical_full_neighbors": [
+      {
+        "slot": 96,
+        "native_word_hex": "fe8f91ade63532ce7e6e2913a16f05bc493ad7cff7f0c740c554a9c70e12281d8d"
+      },
+      {
+        "slot": 98,
+        "native_word_hex": "fe8f90ede63352ce7e6e2913a18f05bc493f4de957d8a2f0922ac71c3848e858bf"
+      }
+    ],
+    "nearest_earlier_visible_difference": 95,
+    "nearest_later_visible_difference": 99,
+    "other_p2_slots_in_group": 14,
+    "other_p2_matching_full_words": 8,
+    "other_p2_matching_visible_projections": 8
+  }
+}

@@ -21,6 +21,8 @@ are distinguishable. These specimens leave open methods that use
 other frames or broadcast data outside the word.
 [Reproduce both native examples](../check_native_word_pair.py)
 
+A further stock TCX20 example preserves both immediate neighbors. Change one input PCM sample of a 1 kHz tone by −4 or +4, then compare the two encoder outputs at the same second-position slot, 97. The two 264-bit words differ only at bit 255, giving payload octet 30 values `1C` and `1D`. Slots 96 and 98 match in full. Slots 95 and 99 distinguish the two streams on directly available coordinates. Run the linked reproducer with `--case tcx-neighbors` and the path to the stock encoder via `--encoder`. [Expected words, neighboring frames and hashes](../native-tcx-neighbors.json)
+
 ## Testing a field that spans the hidden octet
 
 For SWB GENERIC and VOICED ACELP with time-domain bandwidth extension

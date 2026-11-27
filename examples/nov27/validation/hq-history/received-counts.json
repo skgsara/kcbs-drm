@@ -1,0 +1,76 @@
+{
+  "preselection_sha256": "fa49f0b6d6446a5832b1242bb8985fe1fb3d15af77da1745d368b37c3e5c761d",
+  "screen_sha256": "4f4e34e7b81590f603de1c628b7effcb9273481b9f529416cbcdd196fe7bf506",
+  "scope": "All complete, CRC-accepted three-phase groups from the four declared archives; their complete counter sets are disjoint. Only clear mode octets are interpreted.",
+  "inputs": {
+    "nov15": {
+      "archive_sha256": "15c3aecaae5b8e669968a2351db1bb651fbb0a5824e99d9950aeedd1d155eae6",
+      "complete_groups": 109,
+      "words": 6540,
+      "hq_by_bandwidth": {
+        "NB": 0,
+        "WB": 0,
+        "SWB": 417
+      },
+      "nb_wb_updates": 0,
+      "unswitched_transient": 0,
+      "switched_transient_class_unknown": 0,
+      "unswitched_nontransient_reports": 0,
+      "reports_with_observed_previous_update": 0,
+      "immediately_adjacent_pairs": 0,
+      "immediately_adjacent_p2_to_p3_pairs": 0
+    },
+    "edogawa": {
+      "archive_sha256": "bdd369fba7ecf9e6770fdcca15ff429a250500f86e800ece25897c2787426bd0",
+      "complete_groups": 74,
+      "words": 4440,
+      "hq_by_bandwidth": {
+        "NB": 0,
+        "WB": 0,
+        "SWB": 1833
+      },
+      "nb_wb_updates": 0,
+      "unswitched_transient": 0,
+      "switched_transient_class_unknown": 0,
+      "unswitched_nontransient_reports": 0,
+      "reports_with_observed_previous_update": 0,
+      "immediately_adjacent_pairs": 0,
+      "immediately_adjacent_p2_to_p3_pairs": 0
+    },
+    "supplement1744": {
+      "archive_sha256": "b7ffeea6b21b24236d012c9bae8b14924a98d855bd0e1eb58b319a310edb6181",
+      "complete_groups": 295,
+      "words": 17700,
+      "hq_by_bandwidth": {
+        "NB": 0,
+        "WB": 0,
+        "SWB": 9632
+      },
+      "nb_wb_updates": 0,
+      "unswitched_transient": 0,
+      "switched_transient_class_unknown": 0,
+      "unswitched_nontransient_reports": 0,
+      "reports_with_observed_previous_update": 0,
+      "immediately_adjacent_pairs": 0,
+      "immediately_adjacent_p2_to_p3_pairs": 0
+    },
+    "supplement1756": {
+      "archive_sha256": "56609749653511d9548fc13cef77de25509c8541ea0ddf07c75a90756290a775",
+      "complete_groups": 644,
+      "words": 38640,
+      "hq_by_bandwidth": {
+        "NB": 0,
+        "WB": 0,
+        "SWB": 476
+      },
+      "nb_wb_updates": 0,
+      "unswitched_transient": 0,
+      "switched_transient_class_unknown": 0,
+      "unswitched_nontransient_reports": 0,
+      "reports_with_observed_previous_update": 0,
+      "immediately_adjacent_pairs": 0,
+      "immediately_adjacent_p2_to_p3_pairs": 0
+    }
+  },
+  "unique_complete_counters": 1122
+}

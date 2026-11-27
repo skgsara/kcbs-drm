@@ -22,6 +22,12 @@ test fixes the target. Its protocol covers checks against evidence held
 back from the same broadcast and an optional comparison with a clear export.
 [Four-position milestone and target receipt](examples/nov15/validation/README.md)
 
+In a fresh three-minute 3205 kHz recording from 7L4IOU Edogawa, a following
+ACELP frame narrowed the speech class of its predecessor four times. All four
+agreed with the withheld, directly received bits. At the preselected counter
+43903388 the check abstained and all 60 complete-word values remain unresolved.
+[IQ-only check, capture and replay](examples/nov27/validation/acelp-class-history/README.md)
+
 ## November 27 dual-frequency recording
 
 **행복한 내 나라 (*My Happy Country*)**, performed by the Wangjaesan Light Music

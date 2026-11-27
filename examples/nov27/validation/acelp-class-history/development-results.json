@@ -1,0 +1,189 @@
+{
+  "nov15": {
+    "data_units_sha256": "15c3aecaae5b8e669968a2351db1bb651fbb0a5824e99d9950aeedd1d155eae6",
+    "complete_groups": 109,
+    "counts": {
+      "eligible_pairs": 1021,
+      "restrictive_pairs": 304,
+      "contradictions": 0,
+      "predict_prior_msb_zero": 156,
+      "wrong_msb": 0
+    },
+    "by_position": {
+      "1": {
+        "eligible_pairs": 264,
+        "restrictive_pairs": 86,
+        "contradictions": 0
+      },
+      "2": {
+        "eligible_pairs": 259,
+        "restrictive_pairs": 72,
+        "contradictions": 0
+      },
+      "3": {
+        "eligible_pairs": 262,
+        "restrictive_pairs": 79,
+        "contradictions": 0
+      },
+      "4": {
+        "eligible_pairs": 236,
+        "restrictive_pairs": 67,
+        "contradictions": 0
+      }
+    },
+    "observed_class_pairs": {
+      "00": 610,
+      "01": 8,
+      "03": 147,
+      "10": 17,
+      "11": 6,
+      "12": 4,
+      "13": 9,
+      "20": 66,
+      "21": 7,
+      "22": 84,
+      "30": 2,
+      "31": 1,
+      "32": 60
+    }
+  },
+  "edogawa": {
+    "data_units_sha256": "bdd369fba7ecf9e6770fdcca15ff429a250500f86e800ece25897c2787426bd0",
+    "complete_groups": 74,
+    "counts": {
+      "eligible_pairs": 83,
+      "restrictive_pairs": 28,
+      "contradictions": 0,
+      "predict_prior_msb_zero": 9,
+      "wrong_msb": 0
+    },
+    "by_position": {
+      "1": {
+        "eligible_pairs": 19,
+        "restrictive_pairs": 4,
+        "contradictions": 0
+      },
+      "2": {
+        "eligible_pairs": 22,
+        "restrictive_pairs": 8,
+        "contradictions": 0
+      },
+      "3": {
+        "eligible_pairs": 23,
+        "restrictive_pairs": 10,
+        "contradictions": 0
+      },
+      "4": {
+        "eligible_pairs": 19,
+        "restrictive_pairs": 6,
+        "contradictions": 0
+      }
+    },
+    "observed_class_pairs": {
+      "00": 46,
+      "03": 9,
+      "10": 4,
+      "11": 1,
+      "20": 2,
+      "21": 1,
+      "22": 13,
+      "30": 1,
+      "32": 6
+    }
+  },
+  "supplement1744": {
+    "data_units_sha256": "b7ffeea6b21b24236d012c9bae8b14924a98d855bd0e1eb58b319a310edb6181",
+    "complete_groups": 295,
+    "counts": {
+      "eligible_pairs": 1069,
+      "restrictive_pairs": 295,
+      "contradictions": 0,
+      "predict_prior_msb_zero": 162,
+      "wrong_msb": 0
+    },
+    "by_position": {
+      "1": {
+        "eligible_pairs": 268,
+        "restrictive_pairs": 84,
+        "contradictions": 0
+      },
+      "2": {
+        "eligible_pairs": 272,
+        "restrictive_pairs": 76,
+        "contradictions": 0
+      },
+      "3": {
+        "eligible_pairs": 283,
+        "restrictive_pairs": 72,
+        "contradictions": 0
+      },
+      "4": {
+        "eligible_pairs": 246,
+        "restrictive_pairs": 63,
+        "contradictions": 0
+      }
+    },
+    "observed_class_pairs": {
+      "00": 616,
+      "01": 6,
+      "03": 155,
+      "10": 23,
+      "11": 4,
+      "12": 4,
+      "13": 7,
+      "20": 110,
+      "21": 5,
+      "22": 121,
+      "30": 10,
+      "32": 8
+    }
+  },
+  "supplement1756": {
+    "data_units_sha256": "56609749653511d9548fc13cef77de25509c8541ea0ddf07c75a90756290a775",
+    "complete_groups": 644,
+    "counts": {
+      "eligible_pairs": 10488,
+      "restrictive_pairs": 2958,
+      "contradictions": 0,
+      "predict_prior_msb_zero": 1461,
+      "wrong_msb": 0
+    },
+    "by_position": {
+      "1": {
+        "eligible_pairs": 2701,
+        "restrictive_pairs": 772,
+        "contradictions": 0
+      },
+      "2": {
+        "eligible_pairs": 2673,
+        "restrictive_pairs": 747,
+        "contradictions": 0
+      },
+      "3": {
+        "eligible_pairs": 2621,
+        "restrictive_pairs": 747,
+        "contradictions": 0
+      },
+      "4": {
+        "eligible_pairs": 2493,
+        "restrictive_pairs": 692,
+        "contradictions": 0
+      }
+    },
+    "observed_class_pairs": {
+      "00": 6466,
+      "01": 59,
+      "03": 1403,
+      "10": 126,
+      "11": 14,
+      "12": 14,
+      "13": 58,
+      "20": 779,
+      "21": 31,
+      "22": 635,
+      "30": 54,
+      "31": 1,
+      "32": 848
+    }
+  }
+}

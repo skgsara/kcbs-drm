@@ -1,0 +1,184 @@
+{
+  "selected_counter": 43903388,
+  "source_iq_sha256": "53eda43cb49e07def22055348431af75ab7ca4c578f59b1a0cb30ee23905a47e",
+  "data_units_sha256": "7381e771cc4cb5e85c44c5c26a4075268b198ac143c5c808f923bb454d44b9af",
+  "primary": {
+    "counter": 43903388,
+    "counts": {
+      "eligible_pairs": 0,
+      "restrictive_pairs": 0,
+      "contradictions": 0,
+      "predict_prior_msb_zero": 0,
+      "wrong_msb": 0
+    },
+    "checks": []
+  },
+  "primary_coverage": {
+    "received_du_phases": [
+      0,
+      1,
+      2
+    ],
+    "total_slots": 60,
+    "physically_complete_slots": 60,
+    "confirmed_direct_bits": 10560,
+    "full_clear_words": 0,
+    "word_erasures": 60,
+    "direct_word_octets": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      11,
+      12,
+      14,
+      15,
+      17,
+      18,
+      20,
+      21,
+      23,
+      24,
+      26,
+      27,
+      29,
+      30,
+      32
+    ],
+    "masked_payload_octets": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30
+    ],
+    "by_position": {
+      "1": {
+        "slots": 15,
+        "direct_bits": 2640,
+        "unresolved_masked_bits": 1320,
+        "full_words": 0
+      },
+      "2": {
+        "slots": 15,
+        "direct_bits": 2640,
+        "unresolved_masked_bits": 1320,
+        "full_words": 0
+      },
+      "3": {
+        "slots": 15,
+        "direct_bits": 2640,
+        "unresolved_masked_bits": 1320,
+        "full_words": 0
+      },
+      "4": {
+        "slots": 15,
+        "direct_bits": 2640,
+        "unresolved_masked_bits": 1320,
+        "full_words": 0
+      }
+    }
+  },
+  "all_fresh_groups": {
+    "complete_groups": 52,
+    "counts": {
+      "eligible_pairs": 57,
+      "restrictive_pairs": 4,
+      "contradictions": 0,
+      "predict_prior_msb_zero": 3,
+      "wrong_msb": 0
+    },
+    "by_position": {
+      "1": {
+        "eligible_pairs": 16,
+        "restrictive_pairs": 0,
+        "contradictions": 0
+      },
+      "2": {
+        "eligible_pairs": 16,
+        "restrictive_pairs": 2,
+        "contradictions": 0
+      },
+      "3": {
+        "eligible_pairs": 13,
+        "restrictive_pairs": 2,
+        "contradictions": 0
+      },
+      "4": {
+        "eligible_pairs": 12,
+        "restrictive_pairs": 0,
+        "contradictions": 0
+      }
+    },
+    "observed_class_pairs": {
+      "00": 48,
+      "01": 2,
+      "03": 3,
+      "10": 2,
+      "30": 1,
+      "32": 1
+    }
+  },
+  "restrictive_fresh_checks": [
+    {
+      "counter": 43903395,
+      "slot": 41,
+      "position": 2,
+      "word_bit_start": 48,
+      "successor_class": 2,
+      "excluded": [
+        0
+      ],
+      "held_back_class": 3,
+      "contradicted": false
+    },
+    {
+      "counter": 43903516,
+      "slot": 2,
+      "position": 3,
+      "word_bit_start": 48,
+      "successor_class": 3,
+      "excluded": [
+        2,
+        3
+      ],
+      "held_back_class": 0,
+      "contradicted": false
+    },
+    {
+      "counter": 43903516,
+      "slot": 5,
+      "position": 2,
+      "word_bit_start": 48,
+      "successor_class": 3,
+      "excluded": [
+        2,
+        3
+      ],
+      "held_back_class": 0,
+      "contradicted": false
+    },
+    {
+      "counter": 43903527,
+      "slot": 22,
+      "position": 3,
+      "word_bit_start": 48,
+      "successor_class": 3,
+      "excluded": [
+        2,
+        3
+      ],
+      "held_back_class": 0,
+      "contradicted": false
+    }
+  ]
+}
