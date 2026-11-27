@@ -1,0 +1,77 @@
+{
+  "receiver_freeze": "d2bc3d3c31c3b47ef83494731778d3009324de22",
+  "counter": 43005013,
+  "raw_iq_sha256": "39d8c862b82af3797531f4df53c374c220f89e6d95e8c1746000c445633959f0",
+  "msc_sha256": "20c95c2ca9e58f127f6e7fa88dc38bafa9e06b16272ba2e9a7ed7a088f392b45",
+  "three_dus_npz_sha256": "67c05409a942b0b38a67747217c8a2acdec36c727a580f881cd08123ce9ba857",
+  "projection_with_fields_sha256": "d22063205ab95a1cc446d4863528d5c26a8c6b5f1eb5b3d90926f33f17d08603",
+  "received_modes_hex": {
+    "51": 5,
+    "62": 1,
+    "f8": 53,
+    "fa": 1
+  },
+  "physically_complete_slots": 60,
+  "direct_bits": 10560,
+  "unscored_masked_bits": 5280,
+  "full_clear_words": 0,
+  "core_history": {
+    "slots": 60,
+    "abstain": 7,
+    "hq_match": 53,
+    "hq_mismatch": 0,
+    "tcx_conditional": 0
+  },
+  "core_history_by_position": {
+    "1": {
+      "slots": 15,
+      "abstain": 3,
+      "hq_match": 12,
+      "hq_mismatch": 0,
+      "tcx_conditional": 0
+    },
+    "2": {
+      "slots": 15,
+      "abstain": 2,
+      "hq_match": 13,
+      "hq_mismatch": 0,
+      "tcx_conditional": 0
+    },
+    "3": {
+      "slots": 15,
+      "abstain": 1,
+      "hq_match": 14,
+      "hq_mismatch": 0,
+      "tcx_conditional": 0
+    },
+    "4": {
+      "slots": 15,
+      "abstain": 1,
+      "hq_match": 14,
+      "hq_mismatch": 0,
+      "tcx_conditional": 0
+    }
+  },
+  "intra_word": {
+    "swb_hq_class": {
+      "conditional": 0,
+      "pass": 0,
+      "reject": 0,
+      "unavailable": 0
+    },
+    "wb_gsc_audio": {
+      "conditional": 0,
+      "pass": 0,
+      "reject": 0,
+      "unavailable": 0
+    },
+    "swb_gsc_inactive": {
+      "conditional": 0,
+      "pass": 0,
+      "reject": 0,
+      "unavailable": 0
+    }
+  },
+  "hq_correct_zero": 52,
+  "hq_correct_one": 1
+}

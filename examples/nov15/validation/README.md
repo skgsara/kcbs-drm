@@ -57,6 +57,12 @@ receiver can obtain the mask for a fresh counter from the counter alone.
 
 ## Testing a prediction from IQ alone
 
+The next preselected counter, `43005013`, tests individual EVS fields
+from the received mode and nearby frames. All 53 observable HQ switch
+flags matched. Other broadcast groups contain 15 within-group
+counterexamples to using the standard TCX20 history rule as a confirmed
+payload bit. [Held-out field test, counterexamples and reproduction](field-check-43005013/)
+
 Freeze the receiver version and declare its input recordings before the
 test. Exclude any mask table indexed by the test counter. For a check that
 uses repeated text, identify the records used to propose the bytes and the

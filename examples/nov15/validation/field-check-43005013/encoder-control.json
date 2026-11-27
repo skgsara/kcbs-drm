@@ -1,0 +1,121 @@
+{
+  "stimulus": "synthetic_pcm reversed in time, negated in int32, clipped to int16",
+  "sample_rate_hz": 32000,
+  "pcm_samples": 1536000,
+  "pcm_sha256": "424c23291b3368e1dd12142d13723116bb0ba7f59cc1641480677672173703e9",
+  "native_g192_sha256": "31232971397881738d122a05f564af0129d0784b877f644554d896e84ae81b7a",
+  "encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "words": 2400,
+  "skipped_group_starts": 40,
+  "post_boundary_slots": 2360,
+  "fields": {
+    "hq_bit6": {
+      "total": {
+        "eligible": 1012,
+        "abstained": 0,
+        "predicted": 1012,
+        "predicted_0": 975,
+        "predicted_1": 37,
+        "errors": 0,
+        "inverted_target_errors": 1012
+      },
+      "by_position": {
+        "1": {
+          "eligible": 244,
+          "abstained": 0,
+          "predicted": 244,
+          "predicted_0": 233,
+          "predicted_1": 11,
+          "errors": 0,
+          "inverted_target_errors": 244
+        },
+        "2": {
+          "eligible": 255,
+          "abstained": 0,
+          "predicted": 255,
+          "predicted_0": 246,
+          "predicted_1": 9,
+          "errors": 0,
+          "inverted_target_errors": 255
+        },
+        "3": {
+          "eligible": 260,
+          "abstained": 0,
+          "predicted": 260,
+          "predicted_0": 248,
+          "predicted_1": 12,
+          "errors": 0,
+          "inverted_target_errors": 260
+        },
+        "4": {
+          "eligible": 253,
+          "abstained": 0,
+          "predicted": 253,
+          "predicted_0": 248,
+          "predicted_1": 5,
+          "errors": 0,
+          "inverted_target_errors": 253
+        }
+      }
+    },
+    "tcx_bit8": {
+      "total": {
+        "eligible": 190,
+        "abstained": 0,
+        "predicted": 190,
+        "predicted_0": 3,
+        "predicted_1": 187,
+        "errors": 0,
+        "inverted_target_errors": 190
+      },
+      "by_position": {
+        "1": {
+          "eligible": 49,
+          "abstained": 0,
+          "predicted": 49,
+          "predicted_0": 2,
+          "predicted_1": 47,
+          "errors": 0,
+          "inverted_target_errors": 49
+        },
+        "2": {
+          "eligible": 46,
+          "abstained": 0,
+          "predicted": 46,
+          "predicted_0": 1,
+          "predicted_1": 45,
+          "errors": 0,
+          "inverted_target_errors": 46
+        },
+        "3": {
+          "eligible": 43,
+          "abstained": 0,
+          "predicted": 43,
+          "predicted_0": 0,
+          "predicted_1": 43,
+          "errors": 0,
+          "inverted_target_errors": 43
+        },
+        "4": {
+          "eligible": 52,
+          "abstained": 0,
+          "predicted": 52,
+          "predicted_0": 0,
+          "predicted_1": 52,
+          "errors": 0,
+          "inverted_target_errors": 52
+        }
+      }
+    }
+  },
+  "intra_word_all_slots": {
+    "swb_hq_class": {},
+    "wb_gsc_audio": {},
+    "swb_gsc_inactive": {
+      "eligible": 498,
+      "native_pass": 498,
+      "inside_pass": 498,
+      "outside_reject": 498
+    }
+  }
+}
