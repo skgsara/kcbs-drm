@@ -90,9 +90,18 @@ def main():
     parser.add_argument("--counter", type=int, required=True)
     parser.add_argument("--format", choices=("json", "tsv"), default="json",
                         help="JSON with group totals or TSV with one line per slot")
+    parser.add_argument("--field-checks", action="store_true",
+                        help="add within-word and adjacent-mode EVS field checks to JSON")
     args = parser.parse_args()
+    if args.field_checks and args.format != "json":
+        parser.error("--field-checks requires JSON output")
     try:
         result = project_group(args.data_units, args.counter)
+        if args.field_checks:
+            from evs_core_history import core_history
+            from evs_intra_word import intra_word
+            result["core_history"] = core_history(result["slots"])
+            result["intra_word"] = intra_word(result["slots"])
     except (OSError, ValueError, EOFError, BadZipFile) as error:
         parser.exit(2, f"{parser.prog}: {error}\n")
     if args.format == "json":
