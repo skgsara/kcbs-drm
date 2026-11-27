@@ -1,0 +1,665 @@
+{
+  "frozen_revision": "2c1f9e832af613996c34de20dc8fc34a18039b09",
+  "flac": "7l4iou-6140-20261127T2318Z-iq48.flac",
+  "flac_sha256": "0d9ef2517adebceec871c592fe4fb1bb1689a4b47c3a06817a46526f0f66f39c",
+  "source_wav_sha256": "695079395c866393ebe9b827021a9fb0afe8c9493bf775f7f16af1f36463ce82",
+  "capture": {
+    "origin": "https://7l4iou.tunnel.ubersdr.org",
+    "frequency_hz": 6140000,
+    "mode": "iq48",
+    "sample_rate_hz": 48000,
+    "started_utc": "2026-11-27T23:18:41.899830+00:00",
+    "requested_seconds": 240,
+    "sample_pairs": 11520000,
+    "packets": 36000,
+    "timestamped_packets": 35997,
+    "timestamp_jumps_over_one_sample": 0,
+    "max_abs_timestamp_jump_ns": 17453,
+    "first_timestamp_sample_and_unix_ns": [
+      960,
+      1795821524022839477
+    ],
+    "last_timestamp_sample_and_unix_ns": [
+      11519760,
+      1795821763997844715
+    ],
+    "iq_pcm_sha256": "a3d5b25a627e6b9596bee83895308c55f6af7a7e227a15762e89981f8c8cb65f",
+    "wall_seconds": 243.409,
+    "sample_seconds": 240.0,
+    "sample_target_reached": true
+  },
+  "archived_du_sha256": "88768b42ebcdbdaa8d70e8b0ab967f9bcc0879a2a0056518f1b363318a7b7562",
+  "msc_sha256": {
+    "1": "83934c18e3fa6e56498a4245162d2d7945c40136955ea77ba6432474eb738a58",
+    "4": "84316ed38d32a72e5237e5714d3177d02f1ec1435e75bcd3f517f36d9bf7adb1"
+  },
+  "physical": {
+    "per_pass": {
+      "1": {
+        "callbacks": 594,
+        "crc_good_correct_header_observations": 2173,
+        "crc_good_wrong_header_observations": 0,
+        "crc_good_correct_header_unassigned_observations": 282,
+        "assigned_rows": 487,
+        "ambiguous_assignment_rows": []
+      },
+      "4": {
+        "callbacks": 594,
+        "crc_good_correct_header_observations": 2173,
+        "crc_good_wrong_header_observations": 0,
+        "crc_good_correct_header_unassigned_observations": 282,
+        "assigned_rows": 487,
+        "ambiguous_assignment_rows": []
+      }
+    },
+    "union_distinct_packet_coordinates": 1891,
+    "union_crc_good_conflicting_packet_coordinates": [],
+    "good_packet_count_by_partial_du": {
+      "4": 442,
+      "3": 36,
+      "2": 6,
+      "1": 3
+    },
+    "strict_complete_crc_dus": 442,
+    "distinction": "Callback/packet counts are per demodulation of the same single IQ. Union counts are by unique counter, phase, packet ordinal. All public provenance was independently matched to original callback rows."
+  },
+  "complete_counters": [
+    43905954,
+    43905955,
+    43905956,
+    43905957,
+    43905958,
+    43905962,
+    43905963,
+    43905964,
+    43905966,
+    43905967,
+    43905973,
+    43905974,
+    43905976,
+    43905978,
+    43905979,
+    43905980,
+    43905982,
+    43905983,
+    43905984,
+    43905985,
+    43905986,
+    43905987,
+    43905988,
+    43905989,
+    43905990,
+    43905991,
+    43905992,
+    43905993,
+    43905994,
+    43905996,
+    43905997,
+    43905998,
+    43905999,
+    43906000,
+    43906001,
+    43906002,
+    43906003,
+    43906004,
+    43906005,
+    43906006,
+    43906014,
+    43906015,
+    43906016,
+    43906017,
+    43906018,
+    43906019,
+    43906021,
+    43906022,
+    43906023,
+    43906025,
+    43906026,
+    43906027,
+    43906028,
+    43906030,
+    43906035,
+    43906039,
+    43906041,
+    43906042,
+    43906047,
+    43906049,
+    43906051,
+    43906052,
+    43906053,
+    43906054,
+    43906055,
+    43906056,
+    43906058,
+    43906059,
+    43906060,
+    43906061,
+    43906070,
+    43906071,
+    43906073,
+    43906074,
+    43906075,
+    43906076,
+    43906077,
+    43906078,
+    43906080,
+    43906081,
+    43906084,
+    43906086,
+    43906087,
+    43906088,
+    43906089,
+    43906090,
+    43906091,
+    43906092,
+    43906093,
+    43906095,
+    43906096,
+    43906097,
+    43906101,
+    43906102,
+    43906103,
+    43906107,
+    43906108,
+    43906110,
+    43906111,
+    43906112,
+    43906113,
+    43906114,
+    43906116,
+    43906117,
+    43906118,
+    43906119,
+    43906122,
+    43906123,
+    43906125,
+    43906126,
+    43906127,
+    43906130,
+    43906134,
+    43906136,
+    43906137,
+    43906138,
+    43906139,
+    43906140,
+    43906141,
+    43906143,
+    43906144,
+    43906146,
+    43906147,
+    43906148,
+    43906151
+  ],
+  "primary_counter": 43905954,
+  "primary_du": {
+    "0": {
+      "sha256": "fef37f22f12d12dafe03a06234627102d5aad719dd7fa94395dcbf24aed25b44",
+      "du_crc16": "e579",
+      "packets": {
+        "0": [
+          {
+            "profile": "iter-1",
+            "record": 0,
+            "physical_crc16": "5dc8"
+          },
+          {
+            "profile": "iter-4",
+            "record": 0,
+            "physical_crc16": "5dc8"
+          }
+        ],
+        "1": [
+          {
+            "profile": "iter-1",
+            "record": 0,
+            "physical_crc16": "59bf"
+          },
+          {
+            "profile": "iter-4",
+            "record": 0,
+            "physical_crc16": "59bf"
+          }
+        ],
+        "2": [
+          {
+            "profile": "iter-1",
+            "record": 0,
+            "physical_crc16": "40b0"
+          },
+          {
+            "profile": "iter-4",
+            "record": 0,
+            "physical_crc16": "40b0"
+          }
+        ],
+        "3": [
+          {
+            "profile": "iter-1",
+            "record": 0,
+            "physical_crc16": "4f72"
+          },
+          {
+            "profile": "iter-4",
+            "record": 0,
+            "physical_crc16": "4f72"
+          }
+        ]
+      }
+    },
+    "1": {
+      "sha256": "41795220c34348b5e52302c3d92bb093345cde87ffa5361340c266cc618148a4",
+      "du_crc16": "14cf",
+      "packets": {
+        "0": [
+          {
+            "profile": "iter-1",
+            "record": 1,
+            "physical_crc16": "4ce9"
+          },
+          {
+            "profile": "iter-4",
+            "record": 1,
+            "physical_crc16": "4ce9"
+          }
+        ],
+        "1": [
+          {
+            "profile": "iter-1",
+            "record": 1,
+            "physical_crc16": "e3e6"
+          },
+          {
+            "profile": "iter-4",
+            "record": 1,
+            "physical_crc16": "e3e6"
+          }
+        ],
+        "2": [
+          {
+            "profile": "iter-1",
+            "record": 1,
+            "physical_crc16": "a89e"
+          },
+          {
+            "profile": "iter-4",
+            "record": 1,
+            "physical_crc16": "a89e"
+          }
+        ],
+        "3": [
+          {
+            "profile": "iter-1",
+            "record": 1,
+            "physical_crc16": "4db7"
+          },
+          {
+            "profile": "iter-4",
+            "record": 1,
+            "physical_crc16": "4db7"
+          }
+        ]
+      }
+    },
+    "2": {
+      "sha256": "3aaa8a946242f4ffc1cf0953a517c435a664ab44c7c70a456fc42c37c8b56dff",
+      "du_crc16": "ac2d",
+      "packets": {
+        "0": [
+          {
+            "profile": "iter-1",
+            "record": 2,
+            "physical_crc16": "e21f"
+          },
+          {
+            "profile": "iter-4",
+            "record": 2,
+            "physical_crc16": "e21f"
+          }
+        ],
+        "1": [
+          {
+            "profile": "iter-1",
+            "record": 2,
+            "physical_crc16": "69a7"
+          },
+          {
+            "profile": "iter-4",
+            "record": 2,
+            "physical_crc16": "69a7"
+          }
+        ],
+        "2": [
+          {
+            "profile": "iter-1",
+            "record": 2,
+            "physical_crc16": "a4c3"
+          },
+          {
+            "profile": "iter-4",
+            "record": 2,
+            "physical_crc16": "a4c3"
+          }
+        ],
+        "3": [
+          {
+            "profile": "iter-1",
+            "record": 2,
+            "physical_crc16": "0b88"
+          },
+          {
+            "profile": "iter-4",
+            "record": 2,
+            "physical_crc16": "0b88"
+          }
+        ]
+      }
+    }
+  },
+  "primary_projection": {
+    "physically_complete_slots": 60,
+    "confirmed_direct_bits": 10560,
+    "full_clear_words": 0,
+    "word_erasures": 60
+  },
+  "p4_mode_counts": {
+    "fd": 58,
+    "ff": 654,
+    "fe": 89,
+    "f8": 1016,
+    "fa": 3,
+    "5a": 1,
+    "53": 1,
+    "51": 16,
+    "50": 9,
+    "63": 1,
+    "99": 1,
+    "76": 17,
+    "52": 1,
+    "60": 2,
+    "f9": 6
+  },
+  "models": {
+    "full": {
+      "table_sha256": "d82f84274bb1d232d504d17f7bf15a09035d0d311c3e5bac381694eaa6549160",
+      "prediction_sha256": "9a2e2ecc40766b7fee5ef645b3a19484c4efefa79f79d733a771f1576f8ed854",
+      "scored_sha256": "10294af4288de0a9efaf3306841d3901a10486588fecd47bcce024d67f91a620",
+      "primary_p4": {
+        "abstained": 15,
+        "attempted": 0,
+        "correct": 0,
+        "correct_on_shift_comparable": 0,
+        "distinct_attempted_counters": 0,
+        "eligible": 15,
+        "mode_correct": 0,
+        "shift_comparable": 0,
+        "shifted_correct": 0
+      },
+      "by_position": {
+        "1": {
+          "abstained": 1871,
+          "attempted": 4,
+          "correct": 0,
+          "correct_on_shift_comparable": 0,
+          "distinct_attempted_counters": 2,
+          "eligible": 1875,
+          "mode_correct": 0,
+          "shift_comparable": 3,
+          "shifted_correct": 0
+        },
+        "2": {
+          "abstained": 1872,
+          "attempted": 3,
+          "correct": 0,
+          "correct_on_shift_comparable": 0,
+          "distinct_attempted_counters": 2,
+          "eligible": 1875,
+          "mode_correct": 0,
+          "shift_comparable": 3,
+          "shifted_correct": 0
+        },
+        "3": {
+          "abstained": 1873,
+          "attempted": 2,
+          "correct": 0,
+          "correct_on_shift_comparable": 0,
+          "distinct_attempted_counters": 2,
+          "eligible": 1875,
+          "mode_correct": 0,
+          "shift_comparable": 0,
+          "shifted_correct": 0
+        },
+        "4": {
+          "abstained": 1873,
+          "attempted": 2,
+          "correct": 0,
+          "correct_on_shift_comparable": 0,
+          "distinct_attempted_counters": 1,
+          "eligible": 1875,
+          "mode_correct": 0,
+          "shift_comparable": 2,
+          "shifted_correct": 0
+        }
+      },
+      "primary_slot_checks": [],
+      "p4_correct_by_mode": {},
+      "p4_attempts_by_mode": {
+        "76": 2
+      }
+    },
+    "last": {
+      "table_sha256": "33a733c550b7d0d837e2bc271a8a6bb045ac3d93eeec6146069990c14883ff07",
+      "prediction_sha256": "911898eaffe6aef1d864aefe5737ba56d72979b4e39514a2b7303da026cf983e",
+      "scored_sha256": "ee81579334c4616aabf57b2e81b33cca87fd8f0ff2e1c67f537fef04071594e3",
+      "primary_p4": {
+        "abstained": 5,
+        "attempted": 10,
+        "correct": 1,
+        "correct_on_shift_comparable": 1,
+        "distinct_attempted_counters": 1,
+        "eligible": 15,
+        "mode_correct": 0,
+        "shift_comparable": 10,
+        "shifted_correct": 0
+      },
+      "by_position": {
+        "1": {
+          "abstained": 96,
+          "attempted": 1779,
+          "correct": 9,
+          "correct_on_shift_comparable": 9,
+          "distinct_attempted_counters": 125,
+          "eligible": 1875,
+          "mode_correct": 6,
+          "shift_comparable": 1776,
+          "shifted_correct": 6
+        },
+        "2": {
+          "abstained": 88,
+          "attempted": 1787,
+          "correct": 5,
+          "correct_on_shift_comparable": 5,
+          "distinct_attempted_counters": 125,
+          "eligible": 1875,
+          "mode_correct": 7,
+          "shift_comparable": 1784,
+          "shifted_correct": 8
+        },
+        "3": {
+          "abstained": 98,
+          "attempted": 1777,
+          "correct": 7,
+          "correct_on_shift_comparable": 7,
+          "distinct_attempted_counters": 125,
+          "eligible": 1875,
+          "mode_correct": 6,
+          "shift_comparable": 1774,
+          "shifted_correct": 6
+        },
+        "4": {
+          "abstained": 98,
+          "attempted": 1777,
+          "correct": 33,
+          "correct_on_shift_comparable": 33,
+          "distinct_attempted_counters": 125,
+          "eligible": 1875,
+          "mode_correct": 20,
+          "shift_comparable": 1774,
+          "shifted_correct": 19
+        }
+      },
+      "primary_slot_checks": [
+        {
+          "context": "ffe104ce",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 57,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 102,
+          "shifted_correct": false,
+          "slot": 7
+        },
+        {
+          "context": "fff88eb2",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 41,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 154,
+          "shifted_correct": false,
+          "slot": 11
+        },
+        {
+          "context": "ff7e72a8",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 5,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 107,
+          "shifted_correct": false,
+          "slot": 23
+        },
+        {
+          "context": "ff9c41f4",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 0,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 105,
+          "shifted_correct": false,
+          "slot": 31
+        },
+        {
+          "context": "ffcadc3c",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 16,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 24,
+          "shifted_correct": false,
+          "slot": 35
+        },
+        {
+          "context": "ff12aa44",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 134,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 12,
+          "shifted_correct": false,
+          "slot": 39
+        },
+        {
+          "context": "ffdd0f4a",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 17,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 142,
+          "shifted_correct": false,
+          "slot": 43
+        },
+        {
+          "context": "ffcab4bd",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 21,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 87,
+          "shifted_correct": false,
+          "slot": 47
+        },
+        {
+          "context": "ff7ccc00",
+          "correct": true,
+          "counter": 43905954,
+          "guess": 168,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 168,
+          "shifted_correct": false,
+          "slot": 51
+        },
+        {
+          "context": "ff5d4ae6",
+          "correct": false,
+          "counter": 43905954,
+          "guess": 48,
+          "mode": "ff",
+          "mode_baseline": 32,
+          "mode_correct": false,
+          "position": 4,
+          "received": 172,
+          "shifted_correct": false,
+          "slot": 55
+        }
+      ],
+      "p4_correct_by_mode": {
+        "ff": 4,
+        "f8": 26,
+        "51": 3
+      },
+      "p4_attempts_by_mode": {
+        "ff": 651,
+        "fd": 14,
+        "fe": 89,
+        "f8": 975,
+        "5a": 1,
+        "53": 1,
+        "51": 16,
+        "50": 9,
+        "76": 14,
+        "52": 1,
+        "60": 2,
+        "f9": 4
+      }
+    }
+  },
+  "per_slot_clear_alternatives": "All 256 possible clear values of payload octet 30 remain open under these statistical checks, including on exact receipt matches.",
+  "independently_checked_p4_clear_bits": 0
+}
