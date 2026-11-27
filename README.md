@@ -22,6 +22,12 @@ test fixes the target. Its protocol covers checks against evidence held
 back from the same broadcast and an optional comparison with a clear export.
 [Four-position milestone and target receipt](examples/nov15/validation/README.md)
 
+On a held-back minute of 6140 kHz IQ, two directly received EVS fields each
+singled out the published frame order from 96 alternatives across 42 complete
+groups. The first group alone left two orders possible. Its 60 slots were
+present and all 60 complete clear words remain unresolved.
+[Frame-order test and replay data](examples/nov27/validation/frame-order/README.md)
+
 In a fresh three-minute 3205 kHz recording from 7L4IOU Edogawa, a following
 ACELP frame narrowed the speech class of its predecessor four times. All four
 agreed with the withheld, directly received bits. At the preselected counter

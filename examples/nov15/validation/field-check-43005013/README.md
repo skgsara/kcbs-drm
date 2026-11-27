@@ -44,6 +44,14 @@ a verified masked bit on this service. The comparison file also lists
 the two group-initial slots the receiver skips.
 [Historical counterexamples and source digests](historical-disagreements.json)
 
+The disputed first-payload MSB maps to text-body offsets 48, 64 and 80 in
+the corresponding copy at each target. Flipping that shared bit in all
+three places, while holding the rest of the observed record fixed,
+changes its calculated CRC from `B81A` to `4691`. Four distinct
+transmissions carried the same 112-byte decoded record. Only one record
+intersects each target, so the repeated text strengthens the CRC check
+without supplying an independent clear EVS word.
+
 ## Test against original encoder output
 
 A fresh 2,400-word stock encoder run after the freeze supplied 1,012 HQ

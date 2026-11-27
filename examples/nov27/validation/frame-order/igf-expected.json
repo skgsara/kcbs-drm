@@ -1,0 +1,292 @@
+{
+  "counter": 43865914,
+  "prefix_sha256": "2d735ba5018a85721c071b6136ca43c05432565de53bd53f081827a951dd2e8d",
+  "source_tree_sha256": "f8b915e8f53029629dd1bbdfd2da128fa850430459993feccce41c2b65c91acd",
+  "words": 15,
+  "whitening_codes": {
+    "100": 15
+  },
+  "whitening_bits_by_lane": {
+    "direct": 42,
+    "supported_prefix": 3
+  },
+  "legal_whitening_codes_after_first_tile_OFF": [
+    "100",
+    "1010",
+    "10111"
+  ],
+  "first_unresolved_bit": 128,
+  "unresolved_suffix_bits_checked": 0,
+  "rows": [
+    {
+      "slot": 1,
+      "igf_start": 64,
+      "whitening_start": 89,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 103,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 93
+    },
+    {
+      "slot": 5,
+      "igf_start": 64,
+      "whitening_start": 91,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 105,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 95
+    },
+    {
+      "slot": 9,
+      "igf_start": 64,
+      "whitening_start": 95,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 109,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 99
+    },
+    {
+      "slot": 13,
+      "igf_start": 69,
+      "whitening_start": 95,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 109,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 99
+    },
+    {
+      "slot": 17,
+      "igf_start": 64,
+      "whitening_start": 90,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 104,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 94
+    },
+    {
+      "slot": 21,
+      "igf_start": 64,
+      "whitening_start": 94,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 108,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 98
+    },
+    {
+      "slot": 25,
+      "igf_start": 53,
+      "whitening_start": 84,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "supported_prefix",
+        "supported_prefix",
+        "supported_prefix"
+      ],
+      "pre_whitening_read_end_exclusive": 98,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 88
+    },
+    {
+      "slot": 29,
+      "igf_start": 64,
+      "whitening_start": 94,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 108,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 98
+    },
+    {
+      "slot": 33,
+      "igf_start": 64,
+      "whitening_start": 91,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 105,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 95
+    },
+    {
+      "slot": 37,
+      "igf_start": 64,
+      "whitening_start": 92,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 106,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 96
+    },
+    {
+      "slot": 41,
+      "igf_start": 64,
+      "whitening_start": 91,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 105,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 95
+    },
+    {
+      "slot": 45,
+      "igf_start": 64,
+      "whitening_start": 88,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 102,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 92
+    },
+    {
+      "slot": 49,
+      "igf_start": 64,
+      "whitening_start": 99,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 113,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 103
+    },
+    {
+      "slot": 53,
+      "igf_start": 64,
+      "whitening_start": 90,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 104,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 94
+    },
+    {
+      "slot": 57,
+      "igf_start": 64,
+      "whitening_start": 96,
+      "whitening_code": "100",
+      "levels": [
+        "OFF",
+        "OFF"
+      ],
+      "whitening_bit_lanes": [
+        "direct",
+        "direct",
+        "direct"
+      ],
+      "pre_whitening_read_end_exclusive": 110,
+      "flattening_bit": 1,
+      "igf_end_exclusive": 100
+    }
+  ]
+}

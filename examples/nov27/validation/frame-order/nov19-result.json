@@ -1,0 +1,629 @@
+{
+  "source": {
+    "filename": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+    "nominal_center_hz": 6140000,
+    "format": "signed 8-bit interleaved complex IQ",
+    "sample_rate_hz": 912000,
+    "range_seconds_half_open": [
+      180,
+      240
+    ],
+    "range_samples_half_open": [
+      164160000,
+      218880000
+    ],
+    "range_bytes_half_open": [
+      328320000,
+      437760000
+    ],
+    "range_bytes": 109440000,
+    "range_sha256": "0b69b7de7b744fb73ca2ed8834fca6e1346839be7dabdafef0ebdf1d5bc07047"
+  },
+  "preregistration": {
+    "commit": "36c76d98817b5b968b50242f231fc1b09ff864bd",
+    "protocol_sha256": "4293e28a82fc0d6cd13c15592c603be280adee430bc9961d822f3af577cad9ac",
+    "scorer_sha256": "0ae22499239ba338130ed55486f087e40c5a78abe451e54cf5df29325f8a5677",
+    "previous_counter_inventory_sha256": "7f09de6d50ffc3d549fc4c1684b949c586f28d9b2182739f4889552cb76fbf1a",
+    "new_counter_ids": 46,
+    "known_counter_overlap": [],
+    "out_of_band": [],
+    "primary_selection": "First chronological complete counter after checking all new counter IDs against the earlier inventory."
+  },
+  "receiver": {
+    "passes": 1,
+    "mlc_iterations": 1,
+    "profile": "Wiener",
+    "center_offset_hz": 0,
+    "dream_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+    "msc_sha256": "1560397536e007f73d7c5f3a54d2502d16157e0f894daaf481975b76f7505ae3",
+    "crc_good_assigned_data_units": 132,
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "complete_groups": 42,
+    "incomplete_counters": 4,
+    "data_units_sha256": "ea6fbedb2a0873f7eb877f92fa570aceeef7518d356d1908f9fb5593d13436b2",
+    "full_score_sha256": "9614090acc37d7ac273c53354df8e830373bd2c5750b94018eddc81d6505b273",
+    "primary_projection_sha256": "b601d336bf9019934dfbce399ba433f58f6ec9c0506a1e12d49813ede5d05454"
+  },
+  "conventions": {
+    "chronological": "cycle-asc-1234",
+    "layout_count": 96,
+    "layout_labels": "cycle or role major, asc or desc for cycles 0..14, then the permutation of positions 1..4",
+    "field_numbers": "Slots 0..59. Word bit 0 is the mode MSB. ACELP checks use the class in directly carried payload octet 5 (word octet 6). HQ observes the later word bit 6.",
+    "survivor": "Zero contradictions in the specified population, including abstention when no pair qualifies.",
+    "by_position": "ACELP counts belong to the earlier word. HQ counts belong to the later word.",
+    "checked_information": "These field checks compare previously received clear bits. Each received 264-bit word still has 88 unresolved bits."
+  },
+  "primary": {
+    "counter": 43288755,
+    "within_edges_per_layout": 59,
+    "chronological": {
+      "hq_eligible": 0,
+      "hq_predicted_switch": 0,
+      "hq_contradictions": 0,
+      "acelp_eligible": 34,
+      "acelp_restrictive": 14,
+      "acelp_previous_high_bit_predicted_zero": 5,
+      "acelp_contradictions": 0
+    },
+    "survivor_counts": {
+      "hq": 96,
+      "acelp": 2,
+      "joint": 2
+    },
+    "joint_survivors": [
+      "cycle-asc-1234",
+      "cycle-asc-2134"
+    ],
+    "hq_survivors": "all_96",
+    "acelp_survivors": [
+      "cycle-asc-1234",
+      "cycle-asc-2134"
+    ],
+    "per_position": [
+      {
+        "position": 1,
+        "earlier_slots_scoreable_for_speech": 8,
+        "restrictive_speech_checks": 4,
+        "earlier_high_bit_zero_checks": 1,
+        "earlier_word_direct_bits": 2640,
+        "complete_words": 0,
+        "erased_words": 15
+      },
+      {
+        "position": 2,
+        "earlier_slots_scoreable_for_speech": 6,
+        "restrictive_speech_checks": 2,
+        "earlier_high_bit_zero_checks": 1,
+        "earlier_word_direct_bits": 2640,
+        "complete_words": 0,
+        "erased_words": 15
+      },
+      {
+        "position": 3,
+        "earlier_slots_scoreable_for_speech": 9,
+        "restrictive_speech_checks": 2,
+        "earlier_high_bit_zero_checks": 1,
+        "earlier_word_direct_bits": 2640,
+        "complete_words": 0,
+        "erased_words": 15
+      },
+      {
+        "position": 4,
+        "earlier_slots_scoreable_for_speech": 11,
+        "restrictive_speech_checks": 6,
+        "earlier_high_bit_zero_checks": 2,
+        "earlier_word_direct_bits": 2640,
+        "complete_words": 0,
+        "erased_words": 15
+      }
+    ],
+    "restrictive_cases": [
+      {
+        "earlier_slot": 3,
+        "earlier_position": 4,
+        "successor_slot": 4,
+        "earlier_mode": "51",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 2,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "52",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      },
+      {
+        "earlier_slot": 4,
+        "earlier_position": 1,
+        "successor_slot": 5,
+        "earlier_mode": "52",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 2,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "52",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      },
+      {
+        "earlier_slot": 10,
+        "earlier_position": 3,
+        "successor_slot": 11,
+        "earlier_mode": "53",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 0,
+        "earlier_excluded_classes": [
+          2,
+          3
+        ],
+        "successor_mode": "53",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 3
+      },
+      {
+        "earlier_slot": 23,
+        "earlier_position": 4,
+        "successor_slot": 24,
+        "earlier_mode": "51",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 0,
+        "earlier_excluded_classes": [
+          2,
+          3
+        ],
+        "successor_mode": "50",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 3
+      },
+      {
+        "earlier_slot": 26,
+        "earlier_position": 3,
+        "successor_slot": 27,
+        "earlier_mode": "50",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 2,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "53",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      },
+      {
+        "earlier_slot": 27,
+        "earlier_position": 4,
+        "successor_slot": 28,
+        "earlier_mode": "53",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 2,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "51",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      },
+      {
+        "earlier_slot": 28,
+        "earlier_position": 1,
+        "successor_slot": 29,
+        "earlier_mode": "51",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 2,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "51",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      },
+      {
+        "earlier_slot": 29,
+        "earlier_position": 2,
+        "successor_slot": 30,
+        "earlier_mode": "51",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 2,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "51",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      },
+      {
+        "earlier_slot": 31,
+        "earlier_position": 4,
+        "successor_slot": 32,
+        "earlier_mode": "52",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 0,
+        "earlier_excluded_classes": [
+          2,
+          3
+        ],
+        "successor_mode": "50",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 3
+      },
+      {
+        "earlier_slot": 36,
+        "earlier_position": 1,
+        "successor_slot": 37,
+        "earlier_mode": "50",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 0,
+        "earlier_excluded_classes": [
+          2,
+          3
+        ],
+        "successor_mode": "53",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 3
+      },
+      {
+        "earlier_slot": 45,
+        "earlier_position": 2,
+        "successor_slot": 46,
+        "earlier_mode": "52",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 0,
+        "earlier_excluded_classes": [
+          2,
+          3
+        ],
+        "successor_mode": "52",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 3
+      },
+      {
+        "earlier_slot": 51,
+        "earlier_position": 4,
+        "successor_slot": 52,
+        "earlier_mode": "53",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 2,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "51",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      },
+      {
+        "earlier_slot": 55,
+        "earlier_position": 4,
+        "successor_slot": 56,
+        "earlier_mode": "51",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 1,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "53",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      },
+      {
+        "earlier_slot": 56,
+        "earlier_position": 1,
+        "successor_slot": 57,
+        "earlier_mode": "53",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 2,
+        "earlier_excluded_classes": [
+          0
+        ],
+        "successor_mode": "50",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 2
+      }
+    ]
+  },
+  "all_complete_groups": {
+    "complete_groups": 42,
+    "received_words": 2520,
+    "within_edges_per_layout": 2478,
+    "chronological": {
+      "hq_eligible": 89,
+      "hq_predicted_switch": 13,
+      "hq_contradictions": 0,
+      "acelp_eligible": 894,
+      "acelp_restrictive": 370,
+      "acelp_previous_high_bit_predicted_zero": 104,
+      "acelp_contradictions": 0
+    },
+    "survivor_counts": {
+      "hq": 1,
+      "acelp": 1,
+      "joint": 1
+    },
+    "joint_survivors": [
+      "cycle-asc-1234"
+    ],
+    "canonical_by_position": {
+      "1": {
+        "acelp_eligible": 240,
+        "acelp_restrictive": 102,
+        "acelp_earlier_high_bit_zero": 29,
+        "acelp_contradictions": 0,
+        "hq_eligible": 22,
+        "hq_predicted_switch": 5,
+        "hq_contradictions": 0
+      },
+      "2": {
+        "hq_eligible": 23,
+        "hq_predicted_switch": 4,
+        "hq_contradictions": 0,
+        "acelp_eligible": 217,
+        "acelp_restrictive": 95,
+        "acelp_earlier_high_bit_zero": 24,
+        "acelp_contradictions": 0
+      },
+      "3": {
+        "hq_eligible": 22,
+        "hq_predicted_switch": 1,
+        "hq_contradictions": 0,
+        "acelp_eligible": 220,
+        "acelp_restrictive": 84,
+        "acelp_earlier_high_bit_zero": 22,
+        "acelp_contradictions": 0
+      },
+      "4": {
+        "hq_eligible": 22,
+        "hq_predicted_switch": 3,
+        "hq_contradictions": 0,
+        "acelp_eligible": 217,
+        "acelp_restrictive": 89,
+        "acelp_earlier_high_bit_zero": 29,
+        "acelp_contradictions": 0
+      }
+    }
+  },
+  "consecutive_boundaries_only": {
+    "edges_per_layout": 38,
+    "chronological": {
+      "hq_eligible": 2,
+      "hq_predicted_switch": 1,
+      "hq_contradictions": 0,
+      "acelp_eligible": 16,
+      "acelp_restrictive": 5,
+      "acelp_previous_high_bit_predicted_zero": 1,
+      "acelp_contradictions": 0
+    },
+    "survivor_counts": {
+      "hq": 12,
+      "acelp": 24,
+      "joint": 8
+    },
+    "joint_survivors": [
+      "cycle-asc-1234",
+      "cycle-asc-1243",
+      "cycle-asc-1324",
+      "cycle-asc-1423",
+      "role-asc-1234",
+      "role-asc-1243",
+      "role-asc-1324",
+      "role-asc-1423"
+    ],
+    "first": {
+      "from_counter": 43288755,
+      "from_slot": 59,
+      "to_counter": 43288756,
+      "to_slot": 0,
+      "chronological": {
+        "hq_eligible": 0,
+        "hq_predicted_switch": 0,
+        "hq_contradictions": 0,
+        "acelp_eligible": 1,
+        "acelp_restrictive": 0,
+        "acelp_previous_high_bit_predicted_zero": 0,
+        "acelp_contradictions": 0
+      },
+      "survivor_counts": {
+        "hq": 96,
+        "acelp": 96,
+        "joint": 96
+      },
+      "joint_survivors": [
+        "cycle-asc-1234",
+        "cycle-asc-1243",
+        "cycle-asc-1324",
+        "cycle-asc-1342",
+        "cycle-asc-1423",
+        "cycle-asc-1432",
+        "cycle-asc-2134",
+        "cycle-asc-2143",
+        "cycle-asc-2314",
+        "cycle-asc-2341",
+        "cycle-asc-2413",
+        "cycle-asc-2431",
+        "cycle-asc-3124",
+        "cycle-asc-3142",
+        "cycle-asc-3214",
+        "cycle-asc-3241",
+        "cycle-asc-3412",
+        "cycle-asc-3421",
+        "cycle-asc-4123",
+        "cycle-asc-4132",
+        "cycle-asc-4213",
+        "cycle-asc-4231",
+        "cycle-asc-4312",
+        "cycle-asc-4321",
+        "cycle-desc-1234",
+        "cycle-desc-1243",
+        "cycle-desc-1324",
+        "cycle-desc-1342",
+        "cycle-desc-1423",
+        "cycle-desc-1432",
+        "cycle-desc-2134",
+        "cycle-desc-2143",
+        "cycle-desc-2314",
+        "cycle-desc-2341",
+        "cycle-desc-2413",
+        "cycle-desc-2431",
+        "cycle-desc-3124",
+        "cycle-desc-3142",
+        "cycle-desc-3214",
+        "cycle-desc-3241",
+        "cycle-desc-3412",
+        "cycle-desc-3421",
+        "cycle-desc-4123",
+        "cycle-desc-4132",
+        "cycle-desc-4213",
+        "cycle-desc-4231",
+        "cycle-desc-4312",
+        "cycle-desc-4321",
+        "role-asc-1234",
+        "role-asc-1243",
+        "role-asc-1324",
+        "role-asc-1342",
+        "role-asc-1423",
+        "role-asc-1432",
+        "role-asc-2134",
+        "role-asc-2143",
+        "role-asc-2314",
+        "role-asc-2341",
+        "role-asc-2413",
+        "role-asc-2431",
+        "role-asc-3124",
+        "role-asc-3142",
+        "role-asc-3214",
+        "role-asc-3241",
+        "role-asc-3412",
+        "role-asc-3421",
+        "role-asc-4123",
+        "role-asc-4132",
+        "role-asc-4213",
+        "role-asc-4231",
+        "role-asc-4312",
+        "role-asc-4321",
+        "role-desc-1234",
+        "role-desc-1243",
+        "role-desc-1324",
+        "role-desc-1342",
+        "role-desc-1423",
+        "role-desc-1432",
+        "role-desc-2134",
+        "role-desc-2143",
+        "role-desc-2314",
+        "role-desc-2341",
+        "role-desc-2413",
+        "role-desc-2431",
+        "role-desc-3124",
+        "role-desc-3142",
+        "role-desc-3214",
+        "role-desc-3241",
+        "role-desc-3412",
+        "role-desc-3421",
+        "role-desc-4123",
+        "role-desc-4132",
+        "role-desc-4213",
+        "role-desc-4231",
+        "role-desc-4312",
+        "role-desc-4321"
+      ],
+      "chronological_pair": {
+        "earlier_mode": "53",
+        "earlier_word_bits": [
+          48,
+          49
+        ],
+        "earlier_observed_class": 0,
+        "earlier_excluded_classes": [],
+        "successor_mode": "50",
+        "successor_word_bits": [
+          48,
+          49
+        ],
+        "successor_observed_class": 0
+      }
+    }
+  }
+}
