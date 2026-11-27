@@ -1,0 +1,106 @@
+{
+  "frozen_score_sha256": "9441fb8dcff43d04ad04a7bdcace63a2a22715232390fb5816c1d33175885349",
+  "full_audit_sha256": "e478d836dcd06f2e8d68525829fca04ffda9e829586fc1c2637046ff4f648053",
+  "distinct_counters": {
+    "scored": 160,
+    "header_or_body": 153,
+    "stored_checksum_octet": 0,
+    "padding_or_fill_only": 7,
+    "fixed_checksum_failure_80": 153,
+    "all_column_occurrences_failure_80": 153,
+    "fixed_checksum_failure_40": 153,
+    "all_column_occurrences_failure_40": 153,
+    "fixed_checksum_failure_c0": 153,
+    "all_column_occurrences_failure_c0": 153
+  },
+  "by_mode": {
+    "F9": {
+      "words": {
+        "scored": 188,
+        "header_or_body": 175,
+        "stored_checksum_octet": 0,
+        "padding_or_fill_only": 13,
+        "fixed_checksum_failure_80": 175,
+        "all_column_occurrences_failure_80": 175,
+        "fixed_checksum_failure_40": 175,
+        "all_column_occurrences_failure_40": 175,
+        "fixed_checksum_failure_c0": 175,
+        "all_column_occurrences_failure_c0": 175
+      },
+      "distinct_counters": {
+        "scored": 92,
+        "header_or_body": 88,
+        "stored_checksum_octet": 0,
+        "padding_or_fill_only": 4,
+        "fixed_checksum_failure_80": 88,
+        "all_column_occurrences_failure_80": 88,
+        "fixed_checksum_failure_40": 88,
+        "all_column_occurrences_failure_40": 88,
+        "fixed_checksum_failure_c0": 88,
+        "all_column_occurrences_failure_c0": 88
+      },
+      "header_or_body_high_two_bits": {
+        "01": 167,
+        "00": 8
+      }
+    },
+    "FA": {
+      "words": {
+        "scored": 76,
+        "header_or_body": 72,
+        "stored_checksum_octet": 0,
+        "padding_or_fill_only": 4,
+        "fixed_checksum_failure_80": 72,
+        "all_column_occurrences_failure_80": 72,
+        "fixed_checksum_failure_40": 72,
+        "all_column_occurrences_failure_40": 72,
+        "fixed_checksum_failure_c0": 72,
+        "all_column_occurrences_failure_c0": 72
+      },
+      "distinct_counters": {
+        "scored": 69,
+        "header_or_body": 66,
+        "stored_checksum_octet": 0,
+        "padding_or_fill_only": 3,
+        "fixed_checksum_failure_80": 66,
+        "all_column_occurrences_failure_80": 66,
+        "fixed_checksum_failure_40": 66,
+        "all_column_occurrences_failure_40": 66,
+        "fixed_checksum_failure_c0": 66,
+        "all_column_occurrences_failure_c0": 66
+      },
+      "header_or_body_high_two_bits": {
+        "00": 71,
+        "10": 1
+      }
+    },
+    "FB": {
+      "words": {
+        "scored": 0,
+        "header_or_body": 0,
+        "stored_checksum_octet": 0,
+        "padding_or_fill_only": 0,
+        "fixed_checksum_failure_80": 0,
+        "all_column_occurrences_failure_80": 0,
+        "fixed_checksum_failure_40": 0,
+        "all_column_occurrences_failure_40": 0,
+        "fixed_checksum_failure_c0": 0,
+        "all_column_occurrences_failure_c0": 0
+      },
+      "distinct_counters": {
+        "scored": 0,
+        "header_or_body": 0,
+        "stored_checksum_octet": 0,
+        "padding_or_fill_only": 0,
+        "fixed_checksum_failure_80": 0,
+        "all_column_occurrences_failure_80": 0,
+        "fixed_checksum_failure_40": 0,
+        "all_column_occurrences_failure_40": 0,
+        "fixed_checksum_failure_c0": 0,
+        "all_column_occurrences_failure_c0": 0
+      },
+      "header_or_body_high_two_bits": {}
+    }
+  },
+  "control": "Each predetermined XOR change applies to text-tail column zero of one counter within one fixed-boundary ordinary record. A word is counted when at least one witnessed record meets the condition."
+}

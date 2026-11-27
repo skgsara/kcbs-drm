@@ -1,0 +1,426 @@
+{
+  "archive_sha256": "7381e771cc4cb5e85c44c5c26a4075268b198ac143c5c808f923bb454d44b9af",
+  "purpose": "retrospective application to all complete 22:27 Edogawa groups",
+  "complete_groups": 52,
+  "first_complete_counter": 43903388,
+  "other_incomplete_counters": 36,
+  "slots": 3120,
+  "conditional_words": 39,
+  "by_position": {
+    "1": {
+      "F9": 7,
+      "FA": 2
+    },
+    "2": {
+      "FA": 1,
+      "F9": 6
+    },
+    "3": {
+      "F9": 8,
+      "FA": 1
+    },
+    "4": {
+      "FA": 3,
+      "F9": 11
+    }
+  },
+  "cases": [
+    {
+      "counter": 43903393,
+      "slot": 45,
+      "position": 2,
+      "mode": "FA",
+      "allowed_high_two_bits": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "counter": 43903395,
+      "slot": 43,
+      "position": 4,
+      "mode": "FA",
+      "allowed_high_two_bits": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "counter": 43903426,
+      "slot": 58,
+      "position": 3,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903426,
+      "slot": 59,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903427,
+      "slot": 0,
+      "position": 1,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903437,
+      "slot": 37,
+      "position": 2,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903437,
+      "slot": 38,
+      "position": 3,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903440,
+      "slot": 15,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903440,
+      "slot": 16,
+      "position": 1,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903440,
+      "slot": 17,
+      "position": 2,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903440,
+      "slot": 18,
+      "position": 3,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903440,
+      "slot": 19,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903440,
+      "slot": 20,
+      "position": 1,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903441,
+      "slot": 31,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903441,
+      "slot": 35,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903443,
+      "slot": 14,
+      "position": 3,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903443,
+      "slot": 15,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903454,
+      "slot": 55,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903454,
+      "slot": 58,
+      "position": 3,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903454,
+      "slot": 59,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 0,
+      "position": 1,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 1,
+      "position": 2,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 2,
+      "position": 3,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 3,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 4,
+      "position": 1,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 5,
+      "position": 2,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 6,
+      "position": 3,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 7,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 8,
+      "position": 1,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 9,
+      "position": 2,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 10,
+      "position": 3,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903455,
+      "slot": 11,
+      "position": 4,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903482,
+      "slot": 33,
+      "position": 2,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903503,
+      "slot": 0,
+      "position": 1,
+      "mode": "F9",
+      "allowed_high_two_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "counter": 43903516,
+      "slot": 7,
+      "position": 4,
+      "mode": "FA",
+      "allowed_high_two_bits": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "counter": 43903519,
+      "slot": 40,
+      "position": 1,
+      "mode": "FA",
+      "allowed_high_two_bits": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "counter": 43903519,
+      "slot": 55,
+      "position": 4,
+      "mode": "FA",
+      "allowed_high_two_bits": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "counter": 43903525,
+      "slot": 50,
+      "position": 3,
+      "mode": "FA",
+      "allowed_high_two_bits": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "counter": 43903527,
+      "slot": 24,
+      "position": 1,
+      "mode": "FA",
+      "allowed_high_two_bits": [
+        0,
+        1,
+        2
+      ]
+    }
+  ]
+}

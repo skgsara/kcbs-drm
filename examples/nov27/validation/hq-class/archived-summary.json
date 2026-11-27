@@ -1,0 +1,400 @@
+{
+  "protocol_sha256": "f0ebb723987cd935a978bc16f281ab54e905ac041cc875457a2e74d1b8511814",
+  "predictions_sha256": "455d5d07feddb747fe6bff4e522e07170505134a601476a265bfc8baede5802c",
+  "full_score_sha256": "9441fb8dcff43d04ad04a7bdcace63a2a22715232390fb5816c1d33175885349",
+  "complete_dus": 13592,
+  "transport": {
+    "assigned_du_coordinates": 13750,
+    "partial_dus": 158,
+    "conflicting_dus": 0,
+    "reassembled_crc_failures": 0,
+    "per_source_complete_dus": 13592,
+    "joint_only_reassemblies_excluded": 0
+  },
+  "complete_p1_words": 67960,
+  "predictions": 371,
+  "exclusions": {
+    "contributor_p0_unsupported": 88,
+    "counter_without_label": 10,
+    "contributor_p0_without_ordinary_crc_review": 9
+  },
+  "inputs": {
+    "2026-11-25_0448KST_3205_hik": {
+      "source_sha256": "5d1630fdeb585b343f1d7e6a7134741f39deef3f96ebc714777c348390740be0",
+      "label_tag": "2026-11-25",
+      "partial_dus": 5,
+      "eligible_from_modes": {
+        "FA": 10
+      },
+      "exclusions": {
+        "contributor_p0_unsupported": 3
+      },
+      "contributor_p0": {
+        "eligible": 7,
+        "counters": 7,
+        "tested": {
+          "F9": 0,
+          "FA": 7,
+          "FB": 0
+        },
+        "violations": 0
+      },
+      "reviewed_full_p1": {
+        "eligible": 7,
+        "counters": 7,
+        "tested": {
+          "F9": 0,
+          "FA": 7,
+          "FB": 0
+        },
+        "violations": 0
+      }
+    },
+    "2026-11-25_0457KST_3205_hik": {
+      "source_sha256": "c0ff7cfb023c45e065ec3745d90a3accac35aa873f1fa5244906409da36a811e",
+      "label_tag": "2026-11-25",
+      "partial_dus": 25,
+      "eligible_from_modes": {
+        "FA": 24,
+        "F9": 106
+      },
+      "exclusions": {
+        "counter_without_label": 3,
+        "contributor_p0_unsupported": 23,
+        "contributor_p0_without_ordinary_crc_review": 1
+      },
+      "contributor_p0": {
+        "eligible": 104,
+        "counters": 52,
+        "tested": {
+          "F9": 86,
+          "FA": 18,
+          "FB": 0
+        },
+        "violations": 0
+      },
+      "reviewed_full_p1": {
+        "eligible": 103,
+        "counters": 51,
+        "tested": {
+          "F9": 85,
+          "FA": 18,
+          "FB": 0
+        },
+        "violations": 0
+      }
+    },
+    "2026-11-25_1246KST_6140_merged": {
+      "source_sha256": "d25689296e129309890bd6e19518a30a5b3d25599d903c0470d9a38862ebd321",
+      "label_tag": "2026-11-25_1246KST_merged",
+      "partial_dus": 0,
+      "eligible_from_modes": {
+        "FA": 28,
+        "F9": 31
+      },
+      "exclusions": {
+        "contributor_p0_without_ordinary_crc_review": 2,
+        "contributor_p0_unsupported": 4
+      },
+      "contributor_p0": {
+        "eligible": 55,
+        "counters": 44,
+        "tested": {
+          "F9": 29,
+          "FA": 26,
+          "FB": 0
+        },
+        "violations": 0
+      },
+      "reviewed_full_p1": {
+        "eligible": 53,
+        "counters": 42,
+        "tested": {
+          "F9": 27,
+          "FA": 26,
+          "FB": 0
+        },
+        "violations": 0
+      }
+    },
+    "2026-11-25_2242KST_3205_hl5ntr": {
+      "source_sha256": "983cee212789269f9634328d10bd91e2ebe51ae7a27904ce74f4552b75cb0682",
+      "label_tag": "2026-11-25_2242KST_3205_hl5ntr",
+      "partial_dus": 31,
+      "eligible_from_modes": {
+        "FA": 16,
+        "F9": 74
+      },
+      "exclusions": {
+        "contributor_p0_unsupported": 19,
+        "counter_without_label": 4,
+        "contributor_p0_without_ordinary_crc_review": 2
+      },
+      "contributor_p0": {
+        "eligible": 67,
+        "counters": 29,
+        "tested": {
+          "F9": 56,
+          "FA": 11,
+          "FB": 0
+        },
+        "violations": 0
+      },
+      "reviewed_full_p1": {
+        "eligible": 65,
+        "counters": 28,
+        "tested": {
+          "F9": 54,
+          "FA": 11,
+          "FB": 0
+        },
+        "violations": 0
+      }
+    },
+    "2026-11-26_0500KST_3205_hl5ntr": {
+      "source_sha256": "4eaa8c8e2119dd817cad676273f5b5c2eb1a66067c4447b550c85f6a248ca6a0",
+      "label_tag": "2026-11-26_0500KST_3205_hl5ntr",
+      "partial_dus": 70,
+      "eligible_from_modes": {
+        "F9": 35,
+        "FA": 13
+      },
+      "exclusions": {
+        "contributor_p0_unsupported": 25,
+        "contributor_p0_without_ordinary_crc_review": 2,
+        "counter_without_label": 2
+      },
+      "contributor_p0": {
+        "eligible": 21,
+        "counters": 20,
+        "tested": {
+          "F9": 11,
+          "FA": 10,
+          "FB": 0
+        },
+        "violations": 0
+      },
+      "reviewed_full_p1": {
+        "eligible": 19,
+        "counters": 18,
+        "tested": {
+          "F9": 11,
+          "FA": 8,
+          "FB": 0
+        },
+        "violations": 0
+      }
+    },
+    "2026-11-26_0642KST_merged": {
+      "source_sha256": "c037c2723e887808cb2167bff876b44869035c47d939123d221858a6acc9cc7a",
+      "label_tag": "2026-11-26_0642KST_merged",
+      "partial_dus": 22,
+      "eligible_from_modes": {
+        "FA": 7,
+        "F9": 25
+      },
+      "exclusions": {
+        "counter_without_label": 1,
+        "contributor_p0_unsupported": 13,
+        "contributor_p0_without_ordinary_crc_review": 2
+      },
+      "contributor_p0": {
+        "eligible": 18,
+        "counters": 15,
+        "tested": {
+          "F9": 13,
+          "FA": 5,
+          "FB": 0
+        },
+        "violations": 0
+      },
+      "reviewed_full_p1": {
+        "eligible": 16,
+        "counters": 13,
+        "tested": {
+          "F9": 11,
+          "FA": 5,
+          "FB": 0
+        },
+        "violations": 0
+      }
+    },
+    "2026-11-26_1008KST_merged": {
+      "source_sha256": "203db4bc7a892b499f9dc3f45840b0a62174a900fa42d4aeded6307667871e56",
+      "label_tag": "2026-11-26_1008KST_merged",
+      "partial_dus": 5,
+      "eligible_from_modes": {
+        "FA": 2
+      },
+      "exclusions": {
+        "contributor_p0_unsupported": 1
+      },
+      "contributor_p0": {
+        "eligible": 1,
+        "counters": 1,
+        "tested": {
+          "F9": 0,
+          "FA": 1,
+          "FB": 0
+        },
+        "violations": 0
+      },
+      "reviewed_full_p1": {
+        "eligible": 1,
+        "counters": 1,
+        "tested": {
+          "F9": 0,
+          "FA": 1,
+          "FB": 0
+        },
+        "violations": 0
+      }
+    }
+  },
+  "label_archives": {
+    "2026-11-25": {
+      "label_sha256": "4f09ba2ddf55c9b03a39a5f634bcbbf2d415fcf257e2fcb350724fad38afece8",
+      "contributor_counters": 1316,
+      "received_crc_checked_ordinary_records": 424,
+      "contributor_full_p1_counters": 1114,
+      "reviewed_full_p1_counters": 1038
+    },
+    "2026-11-25_1246KST_merged": {
+      "label_sha256": "719f10b1570a56b4b32f588adade78e0be32d204e17eeea6ecec0e7f29d6cbe6",
+      "contributor_counters": 679,
+      "received_crc_checked_ordinary_records": 217,
+      "contributor_full_p1_counters": 586,
+      "reviewed_full_p1_counters": 529
+    },
+    "2026-11-25_2242KST_3205_hl5ntr": {
+      "label_sha256": "3e17c8488351081f0d3e456d8050047e6da2f0d4c32fa729cde5febce02f9f3e",
+      "contributor_counters": 760,
+      "received_crc_checked_ordinary_records": 217,
+      "contributor_full_p1_counters": 599,
+      "reviewed_full_p1_counters": 539
+    },
+    "2026-11-26_0500KST_3205_hl5ntr": {
+      "label_sha256": "f1d9407e5865696ccd1cc31b6259d6021ab42026e2bf32ed5ebc416018e59da8",
+      "contributor_counters": 379,
+      "received_crc_checked_ordinary_records": 79,
+      "contributor_full_p1_counters": 221,
+      "reviewed_full_p1_counters": 203
+    },
+    "2026-11-26_0642KST_merged": {
+      "label_sha256": "1b137eefcedd87fc3ce21abfaf985db8c291a0d7cafd6e9bf97cf19a9af59052",
+      "contributor_counters": 518,
+      "received_crc_checked_ordinary_records": 143,
+      "contributor_full_p1_counters": 387,
+      "reviewed_full_p1_counters": 352
+    },
+    "2026-11-26_1008KST_merged": {
+      "label_sha256": "1720a49b23a09e5e9617899fbc569859fd78cdf48a087702f8acad7a3b86c440",
+      "contributor_counters": 760,
+      "received_crc_checked_ordinary_records": 244,
+      "contributor_full_p1_counters": 610,
+      "reviewed_full_p1_counters": 588
+    }
+  },
+  "totals": {
+    "contributor_p0": {
+      "all_supported_p1_words": 52755,
+      "eligible_words": 273,
+      "eligible_counters": 168,
+      "by_mode": {
+        "F9": {
+          "tested": 195,
+          "passed": 195,
+          "violations": 0
+        },
+        "FA": {
+          "tested": 78,
+          "passed": 78,
+          "violations": 0
+        },
+        "FB": {
+          "tested": 0,
+          "passed": 0,
+          "violations": 0
+        }
+      }
+    },
+    "contributor_full_p1": {
+      "all_supported_p1_words": 52755,
+      "eligible_words": 273,
+      "eligible_counters": 168,
+      "by_mode": {
+        "F9": {
+          "tested": 195,
+          "passed": 195,
+          "violations": 0
+        },
+        "FA": {
+          "tested": 78,
+          "passed": 78,
+          "violations": 0
+        },
+        "FB": {
+          "tested": 0,
+          "passed": 0,
+          "violations": 0
+        }
+      }
+    },
+    "reviewed_p0": {
+      "all_supported_p1_words": 48735,
+      "eligible_words": 264,
+      "eligible_counters": 160,
+      "by_mode": {
+        "F9": {
+          "tested": 188,
+          "passed": 188,
+          "violations": 0
+        },
+        "FA": {
+          "tested": 76,
+          "passed": 76,
+          "violations": 0
+        },
+        "FB": {
+          "tested": 0,
+          "passed": 0,
+          "violations": 0
+        }
+      }
+    },
+    "reviewed_full_p1": {
+      "all_supported_p1_words": 48735,
+      "eligible_words": 264,
+      "eligible_counters": 160,
+      "by_mode": {
+        "F9": {
+          "tested": 188,
+          "passed": 188,
+          "violations": 0
+        },
+        "FA": {
+          "tested": 76,
+          "passed": 76,
+          "violations": 0
+        },
+        "FB": {
+          "tested": 0,
+          "passed": 0,
+          "violations": 0
+        }
+      }
+    }
+  },
+  "reviewed_observed_high_two_bits": {
+    "F9": {
+      "01": 177,
+      "00": 11
+    },
+    "FA": {
+      "00": 75,
+      "10": 1
+    },
+    "FB": {}
+  },
+  "raw_iq_in_contribution": false
+}

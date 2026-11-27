@@ -1,0 +1,183 @@
+{
+  "archival_jl1edu": {
+    "iq_sha256": "0391a2d324f706fed9d7738e4a0f90e1c96040ba108e67f14f7a2c415c10d942",
+    "first_complete_counter": null,
+    "complete_groups": 0,
+    "crc_good_dus": 0,
+    "receiver_profiles": {
+      "default/msc.bin": {
+        "records": 280,
+        "record_lengths": {
+          "728": 280
+        },
+        "good_packets_per_728_record": {
+          "0": 280
+        },
+        "physical_good_packets_by_quarter": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "du_crc_good_without_assignment": 0,
+        "four_packets_and_du_crc_good_without_assignment": 0,
+        "sha256": "20cde4038c4a615c84b036439b34f6bbcdb27f4990709f56041df122199aa74d"
+      },
+      "diversity/linear-time/msc.bin": {
+        "records": 283,
+        "record_lengths": {
+          "728": 283
+        },
+        "good_packets_per_728_record": {
+          "0": 283
+        },
+        "physical_good_packets_by_quarter": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "du_crc_good_without_assignment": 0,
+        "four_packets_and_du_crc_good_without_assignment": 0,
+        "sha256": "843fe3a426f15f04eb3b700b6fa9086f344493e269909dea8a5858fdc340698a"
+      },
+      "diversity/linear-time-modmetric/msc.bin": {
+        "records": 283,
+        "record_lengths": {
+          "728": 283
+        },
+        "good_packets_per_728_record": {
+          "0": 283
+        },
+        "physical_good_packets_by_quarter": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "du_crc_good_without_assignment": 0,
+        "four_packets_and_du_crc_good_without_assignment": 0,
+        "sha256": "a31e669bf4b241ebeb962c06aaaac2d41c8c2064ef9d21c490a73c63ecb532cb"
+      },
+      "diversity/wiener/msc.bin": {
+        "records": 280,
+        "record_lengths": {
+          "728": 280
+        },
+        "good_packets_per_728_record": {
+          "0": 280
+        },
+        "physical_good_packets_by_quarter": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "du_crc_good_without_assignment": 0,
+        "four_packets_and_du_crc_good_without_assignment": 0,
+        "sha256": "20cde4038c4a615c84b036439b34f6bbcdb27f4990709f56041df122199aa74d"
+      }
+    },
+    "selection_sha256": "dbf5e63aeef321ca9966272ef44dbd7b13b31556540f2b3d4e0a21a3b79e26a0",
+    "fac_crc": [
+      277,
+      297
+    ],
+    "sdc_crc": [
+      12,
+      101
+    ],
+    "duration_seconds": 120,
+    "first_iq_utc": "2026-11-27T20:49:52.872674659Z",
+    "service_id": "A00002",
+    "source_iq_sha256": "749ab0d8186942041301537272406c004a85c910017b9d7f7a6d3c2bf3b30389",
+    "source_sample_range": [
+      6406080,
+      12166080
+    ]
+  },
+  "prospective_edogawa": {
+    "iq_sha256": "397586e95502ad1f87a10a19ee37f187b63d4e9084a5890bfa4c610f0e9f6ae4",
+    "first_complete_counter": null,
+    "complete_groups": 0,
+    "crc_good_dus": 0,
+    "receiver_profiles": {
+      "default/msc.bin": {
+        "sha256": "42fe1faa241eb78ef2d8d3c33b67df80ff09e11988f74520dc29d3c343e2d458",
+        "records": {
+          "728": 323
+        },
+        "packet_crc_good_by_quarter": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "good_packets_per_728_record_histogram": {
+          "0": 323
+        },
+        "all_du_crc_good_including_unassigned": 0
+      },
+      "diversity/linear-time/msc.bin": {
+        "sha256": "9af173c4384bee2f9017e1c5d927bb82ce339dab514fb0b58a7dc59eeb1f63b8",
+        "records": {
+          "728": 324
+        },
+        "packet_crc_good_by_quarter": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "good_packets_per_728_record_histogram": {
+          "0": 324
+        },
+        "all_du_crc_good_including_unassigned": 0
+      },
+      "diversity/linear-time-modmetric/msc.bin": {
+        "sha256": "cd7e738361f9b05d86d7d7b22875cfceb32408d722aa7c9920b217d042ef12c5",
+        "records": {
+          "728": 228
+        },
+        "packet_crc_good_by_quarter": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "good_packets_per_728_record_histogram": {
+          "0": 228
+        },
+        "all_du_crc_good_including_unassigned": 0
+      },
+      "diversity/wiener/msc.bin": {
+        "sha256": "42fe1faa241eb78ef2d8d3c33b67df80ff09e11988f74520dc29d3c343e2d458",
+        "records": {
+          "728": 323
+        },
+        "packet_crc_good_by_quarter": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "good_packets_per_728_record_histogram": {
+          "0": 323
+        },
+        "all_du_crc_good_including_unassigned": 0
+      }
+    },
+    "selection_sha256": "20a212bf084dac167ec4b6b6486f11ad2f4e9222ac20c470a32075e216f7cf70",
+    "fac_crc": [
+      424,
+      444
+    ],
+    "sdc_crc": [
+      57,
+      149
+    ],
+    "duration_seconds": 180,
+    "first_iq_utc": "2026-11-27T22:41:07.782661708Z",
+    "service_id": "A00002"
+  }
+}

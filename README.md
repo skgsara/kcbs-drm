@@ -28,6 +28,12 @@ agreed with the withheld, directly received bits. At the preselected counter
 43903388 the check abstained and all 60 complete-word values remain unresolved.
 [IQ-only check, capture and replay](examples/nov27/validation/acelp-class-history/README.md)
 
+For SWB HQ mode `F9`, the clear mode octet predicts one bit of masked
+payload octet 0. It agreed with 175 first-position and 17 second-position
+words whose supporting text record covered the relevant byte in its header
+or body. The six unresolved late octets are outside this field.
+[Mode bits, archive comparisons and IQ replay](examples/nov27/validation/hq-class/README.md)
+
 ## November 27 dual-frequency recording
 
 **행복한 내 나라 (*My Happy Country*)**, performed by the Wangjaesan Light Music

@@ -1,0 +1,74 @@
+{
+  "synthetic_pcm": {
+    "words": 2400,
+    "pcm_sha256": "8947b94fd0a024031a1554fa2f63c637f7bd4bdb8eeefc35c747504e3ac39932",
+    "g192_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+    "payload_high_two_by_mode": {
+      "F8": {
+        "10": 36,
+        "00": 559,
+        "01": 499,
+        "11": 6
+      },
+      "F9": {},
+      "FA": {
+        "01": 2,
+        "00": 34
+      },
+      "FB": {}
+    },
+    "swb_hq_classes": {
+      "1": 44,
+      "0": 1092
+    },
+    "conditional_words": 36,
+    "violations": 0
+  },
+  "tcx_zero_pair": {
+    "words": 900,
+    "pcm_sha256": "6f2c7e35413894352caadb2080a8cf62e1c722d175d552e6682d48b500c51220",
+    "g192_sha256": "5a190260c38a01024ca0fb4091d5725b711709ad3c97d474a352649961dfb256",
+    "payload_high_two_by_mode": {
+      "F8": {
+        "01": 18,
+        "00": 135
+      },
+      "F9": {},
+      "FA": {},
+      "FB": {}
+    },
+    "swb_hq_classes": {
+      "0": 153
+    },
+    "conditional_words": 0,
+    "violations": 0
+  },
+  "tonal_bank": {
+    "words": 1800,
+    "pcm_sha256": "39f64b23520a3627e8ef5573360ce5a813c711efc6203fc98323aa380f7ae0cb",
+    "g192_sha256": "9b57f161b64acdcb86bc3061fdcb803c6b576c03189fec0fb455ae520103c345",
+    "payload_high_two_by_mode": {
+      "F8": {
+        "00": 51,
+        "10": 22,
+        "01": 129
+      },
+      "F9": {
+        "00": 80,
+        "01": 36
+      },
+      "FA": {
+        "00": 18,
+        "01": 8
+      },
+      "FB": {}
+    },
+    "swb_hq_classes": {
+      "0": 198,
+      "2": 116,
+      "1": 30
+    },
+    "conditional_words": 142,
+    "violations": 0
+  }
+}
