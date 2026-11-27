@@ -1,0 +1,9 @@
+# Prospective IQ-only ACELP class test
+
+Request 180 seconds of 3205 kHz raw IQ from 7L4IOU Edogawa on November 27. The first counter in reception order with three CRC-valid data units is the primary target. Score all complete groups from the same recording as a secondary series. If reception yields no complete group, request one recording from JL1EDU Yokohama using the same rule. Preserve discontinuities and abstain at gaps. The pre-capture recording plan has SHA-256 `d4513066cd7b9efab7f8be9447939edbf649745ce57b15444b2a47a093731eb1`.
+
+Use only the captured IQ and the existing CRC-checked packet/DU receiver. Within each 60-slot group, test each immediately consecutive pair in transport order once. The predictor takes the earlier mode octet, the successor mode octet and successor payload octet 5. Restrict both words to ordinary primary 13.2 kb/s ACELP with a two-bit class whose location is determined entirely by the mode and falls within payload octet 5. The scorer alone reads the earlier class after prediction. An earlier word with class 0 is excluded by successor 2. Earlier classes 2 and 3 are excluded by successor 3. All four values remain possible for successor 0 or 1.
+
+Report competing values excluded, matches and contradictions on the withheld directly received field. A contradiction rejects the rule as an exact receiver check under these assumptions. Zero eligible pairs means abstention. For every slot the 11 masked payload octets stay erased. Keep both negative outcomes and the original target. Never tune the field locations, time order or selection using this recording. A separate retrospective check will cover the four complete-group development archives already named in the TCX20 filler study.
+
+The frozen predictor and scorer `check.py` have SHA-256 `0a12991f16937d18fd79b99ebbb1a9f053bd22d84d9d07726b9d6362ee168d5c`. This test uses the group projector from repository revision `6e6ddc8`.
