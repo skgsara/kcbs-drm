@@ -1,0 +1,11 @@
+{
+  "format": "kcbs-evs-origin-v1",
+  "counter": 43004924,
+  "target_sha256": "7e262bf2a40352d1d96be9ca899715b513c612f6dbdcda53a1a74631de840fd7",
+  "position_sha256": [
+    "3807c7ad6a476a084f0d259f0a0eea21aec5b960c61ea204b840222c526fc517",
+    "96de3f5896b6cd9243d1686afd0eaefe070dc99516ba7bfeeb8d12a4191f34f3",
+    "cb27627c00ebf141647c01353e54c55ac9448c97e5f71a4dc829b082124bc265",
+    "fac4fe121a1a21fc2e2c68f06ea6c328869a8da3bc93aa9a99eb6233662be7e2"
+  ]
+}

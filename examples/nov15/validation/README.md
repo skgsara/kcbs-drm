@@ -59,6 +59,54 @@ and coordinates outside a file's extent. Exit status 0 requires all 60
 words to agree, 1 means a difference or incomplete coverage, and 2 means
 invalid input. [Comparison tool](../../../scripts/compare_evs_group.py)
 
+## Check the origin of an independent export
+
+After the prediction is frozen, an operator with the original decoder input
+can check the export against the published fingerprints. This check needs
+only the export and two small JSON files. Each position is identified by the
+mode byte and 21 directly transmitted payload bytes of each of its 15 words.
+The four fingerprints cover 1,320 received bytes. The full-word comparison
+above checks the remaining 660 bytes as well.
+
+```sh
+case_dir=examples/nov15/validation
+python scripts/check_evs_origin.py "$case_dir/origin-43004924.json" independent-reference.192 \
+    --target "$case_dir/target-43004924.json" --start 43004924 0 0 1
+```
+
+Use the externally recorded origin of the first slot if the file starts
+earlier. The tool counts erasures and slots outside the file separately.
+In a control with the published November 27 stream, all four positions of
+counter 43854890 matched their received fingerprints. Displacing the
+declared origin by one four-frame cycle made all four fail. The
+text-supported stream matched only position one. This makes a wrong
+origin detectable when the directly transmitted bytes differ. The recording
+chain and the full 264-bit comparison still require independent evidence.
+
+Anyone with the three 716-byte target DUs can regenerate the fingerprint
+file. Concatenate them, including their transmitted CRCs, in phase order
+0, 1, 2 and run the commands below. The full-file pass and the earlier
+40-second pass over the same IQ produced identical fingerprints.
+
+```sh
+python "$case_dir/build_origin_receipt.py" three-dus.bin > rebuilt-origin.json
+cmp "$case_dir/origin-43004924.json" rebuilt-origin.json
+```
+
+### Programme reference leads
+
+Koryo Front lists a public KCBS-2 listening stream. A listening report
+published on November 15 describes comparing a recording of that stream
+with a partial 3205 kHz decode. It gives no UTC start or file hash tying
+the comparison to the 10:58 capture. The original 60-word EVS export for
+this target is still sought. [Koryo Front radio](https://koryofront.org/radio)
+· [November 15 monitoring report](https://mediumwave.info/2026/11/15/north-korea-12/)
+
+For a fresh joint capture, the useful pairing is a time-stamped SDR IQ file
+and a separate service receiver's original EVS input with frame order and
+counter. Record through the same interval on both devices. Preserve any
+erasures and the method used to establish the first counter and phase.
+
 ## Evidence from the November 27 captures
 
 The 12-second excerpt has 150 second-position words labelled
