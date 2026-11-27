@@ -14,6 +14,8 @@ framing. Amateur operators contributed the November 19 and November 27
 recordings used below. [KoryoFront’s original decoder](https://github.com/KoryoFront/kcbs2-drm-decode) ·
 [Martyn’s KCBSDRM](https://github.com/martynw/KCBSDRM) · [Credits](docs/CREDITS.md)
 
+Planned receiver integrations are listed in the [KiwiSDR, Dream and DecDRM roadmap](docs/roadmap.md).
+
 ## November 27 dual-frequency recording
 
 **행복한 내 나라 (*My Happy Country*)**, performed by the Wangjaesan Light Music
@@ -417,6 +419,10 @@ python -m unittest discover -s scripts -p 'test_*.py'
 
 The tests use synthetic inputs to check CRC and salvage, key evidence, alignment,
 frame placement, donor-byte coordinates, gap length, and fades. The bundled March and November
-commands are end-to-end checks. Dream is GPL; see [docs/NOTICE.md](docs/NOTICE.md)
-and [docs/COPYING.FAAD2](docs/COPYING.FAAD2) for third-party notices. The 3GPP EVS
-reference codec is not redistributed here.
+commands are end-to-end checks.
+
+The project's original code is licensed under the [GNU General Public License,
+version 3](LICENSE) (`GPL-3.0-only`). For the Dream and FAAD2 sources, see the
+[third-party notices](docs/NOTICE.md) and [upstream license](docs/COPYING.FAAD2).
+The [KCBSDRM contribution](contrib/kcbsdrm/README.md) carries its own license notice.
+The 3GPP EVS reference codec is not redistributed here.
