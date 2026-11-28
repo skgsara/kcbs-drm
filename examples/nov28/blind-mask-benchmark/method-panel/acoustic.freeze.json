@@ -1,0 +1,405 @@
+{
+ "method": "acoustic-continuity",
+ "script": "scripts/mask_method_acoustic.py",
+ "script_sha256": "c54a1289cd0b9bf86f6c65881bf68205a358f50cb8e93eafd07d81f551495d92",
+ "git_head": "a1e0bfc97e60518ef64c926143120c67e348e7f6",
+ "git_note": "script is an untracked new file on top of git_head (not committed)",
+ "decoder": "work/evs_candidate/evs_candidate_decoder (CandidateDecoder rate 32000, jobs 2)",
+ "decoder_sha256": "085cae3062658f97409829ae0384b322e8747f3c2f482b14fd7a28683b2a7a6e",
+ "parameters": {
+  "T1": {
+   "config": {
+    "extra": false,
+    "refine": 3,
+    "keep_other": false
+   },
+   "lam": 10.0,
+   "n_weights": 82,
+   "stages": [
+    "default",
+    "fwd",
+    "ref"
+   ]
+  },
+  "TH": {
+   "config": {
+    "extra": false,
+    "refine": 1,
+    "keep_other": false
+   },
+   "lam": 30.0,
+   "n_weights": 82,
+   "stages": [
+    "default",
+    "fwd",
+    "ref"
+   ]
+  },
+  "T0": {
+   "config": {
+    "extra": false,
+    "refine": 1,
+    "keep_other": false
+   },
+   "lam": 10.0,
+   "n_weights": 82,
+   "stages": [
+    "default",
+    "fwd",
+    "ref"
+   ]
+  },
+  "default": {
+   "config": {
+    "extra": false,
+    "refine": 3,
+    "keep_other": false
+   },
+   "lam": 10.0,
+   "n_weights": 82,
+   "stages": [
+    "default",
+    "fwd",
+    "ref"
+   ]
+  }
+ },
+ "model_sources": {
+  "T1": {
+   "model_file": "model_T1.json",
+   "sha256": "8d18ab2720fa4cedaba9fecb4c2c724ea34c1ab29626ca41637debe489fa8caa",
+   "training": {
+    "fwd": {
+     "n": 200,
+     "groups": 40,
+     "sources": [
+      "fwd=devT1_m0_s11_n40.npz:/home/user/kcbs-drm/work/benchmark/tasks/dev.T1.truth.npz@fwd",
+      "ref=devT1_m0_s11_n40.npz:/home/user/kcbs-drm/work/benchmark/tasks/dev.T1.truth.npz@ref"
+     ]
+    },
+    "ref": {
+     "n": 200,
+     "groups": 40,
+     "sources": [
+      "fwd=devT1_m0_s11_n40.npz:/home/user/kcbs-drm/work/benchmark/tasks/dev.T1.truth.npz@fwd",
+      "ref=devT1_m0_s11_n40.npz:/home/user/kcbs-drm/work/benchmark/tasks/dev.T1.truth.npz@ref"
+     ]
+    }
+   }
+  },
+  "TH": {
+   "model_file": "model_TH.json",
+   "sha256": "99d83bb1fa16740d85612c80f853dda2dec7740a45558425890bf7594369b995",
+   "training": {
+    "fwd": {
+     "n": 270,
+     "groups": 10,
+     "sources": [
+      "fwd=synTH_m0_s21_n10.withtruth.npz@fwd",
+      "ref=synTH_m0_s21_n10.withtruth.npz@ref"
+     ]
+    },
+    "ref": {
+     "n": 270,
+     "groups": 10,
+     "sources": [
+      "fwd=synTH_m0_s21_n10.withtruth.npz@fwd",
+      "ref=synTH_m0_s21_n10.withtruth.npz@ref"
+     ]
+    }
+   }
+  },
+  "T0": {
+   "model_file": "model_T0.json",
+   "sha256": "91cca3603d4752d4ef22cd2c42a58d7f56457294842890bf4c136d81c4aca5cc",
+   "training": {
+    "fwd": {
+     "n": 200,
+     "groups": 40,
+     "sources": [
+      "fwd=devT1_m0_s11_n40.npz:/home/user/kcbs-drm/work/benchmark/tasks/dev.T1.truth.npz@fwd",
+      "ref=devT1_m0_s11_n40.npz:/home/user/kcbs-drm/work/benchmark/tasks/dev.T1.truth.npz@ref"
+     ]
+    },
+    "ref": {
+     "n": 200,
+     "groups": 40,
+     "sources": [
+      "fwd=devT1_m0_s11_n40.npz:/home/user/kcbs-drm/work/benchmark/tasks/dev.T1.truth.npz@fwd",
+      "ref=devT1_m0_s11_n40.npz:/home/user/kcbs-drm/work/benchmark/tasks/dev.T1.truth.npz@ref"
+     ]
+    }
+   }
+  }
+ },
+ "notes": "",
+ "training": {
+  "T1": "fwd/ref weights (82 each, conditional logit, L2 lambda=10) fitted on 40 dev.T1 groups (seed 11; realistic sequential+1-refine run driven by bootstrap model M0); M0 itself fitted on dev.T1 60 groups (seed 1, isolated per-byte features) + syn-dev prefix-oracle (24 groups, seed 7) + syn-dev full-oracle (10 groups, seed 3). All 99 dev groups touched in training are listed in work/methods/acoustic/train_groups_dev.txt and excluded from DEV evaluation.",
+  "TH": "fwd/ref weights (lambda=30) fitted on 10 syn-dev.TH groups (seed 21; realistic run driven by M0, refine=1). 43 syn-dev groups touched in any training (train_groups_syn.txt) are excluded from syn-dev evaluation.",
+  "T0": "T1 weights with refine=1 (no T0-specific training).",
+  "prior_product_weight": "tempered product weight wp=0.1 on ModePrior logp chosen on the 40 dev.T1 training groups (seed 11) before the final runs; plain product wp=1 also reported."
+ },
+ "evaluation_runs": {
+  "dev.T1": {
+   "cmd": "python3 scripts/mask_method_acoustic.py --inputs work/benchmark/tasks/dev.T1.inputs.npz --groups 100 --seed 101 --exclude work/methods/acoustic/train_groups_dev.txt --out work/methods/acoustic/dev.T1.pred.npz",
+   "method": {
+    "items": 500,
+    "groups": 100,
+    "top1": 0.168,
+    "mean_rank": 66.996,
+    "bits_per_group_98": 2.52,
+    "bits_per_group_995": 0.34,
+    "threshold_98": 0.9678877722360634,
+    "threshold_995": 0.9978712821810856
+   },
+   "mode_prior": {
+    "items": 500,
+    "groups": 100,
+    "top1": 0.024,
+    "mean_rank": 84.16,
+    "bits_per_group_98": 2.39,
+    "bits_per_group_995": 2.28,
+    "threshold_98": 0.9999998271490069,
+    "threshold_995": 0.9999999880998909
+   },
+   "product": {
+    "items": 500,
+    "groups": 100,
+    "top1": 0.156,
+    "mean_rank": 58.512,
+    "bits_per_group_98": 2.72,
+    "bits_per_group_995": 2.48,
+    "threshold_98": 0.9999998431076551,
+    "threshold_995": 0.9999999934828874
+   },
+   "product_wp0_1": {
+    "items": 500,
+    "groups": 100,
+    "top1": 0.188,
+    "mean_rank": 61.162,
+    "bits_per_group_98": 7.5,
+    "bits_per_group_995": 5.88,
+    "threshold_98": 0.8679450121476555,
+    "threshold_995": 0.9209297589922311
+   },
+   "derange_control": {
+    "items": 500,
+    "groups": 100,
+    "top1": 0.004,
+    "mean_rank": 131.645,
+    "bits_per_group_98": 0.01,
+    "bits_per_group_995": 0.01,
+    "threshold_98": 0.9999328001967668,
+    "threshold_995": 0.9999328001967668
+   }
+  },
+  "syn-dev.TH": {
+   "cmd": "... --inputs work/benchmark/tasks/syn-dev.TH.inputs.npz --groups 16 --seed 202 --exclude work/methods/acoustic/train_groups_syn.txt",
+   "method": {
+    "items": 432,
+    "groups": 16,
+    "top1": 0.034722,
+    "mean_rank": 101.08,
+    "bits_per_group_98": 0.1875,
+    "bits_per_group_995": 0.1875,
+    "threshold_98": 0.979727505963455,
+    "threshold_995": 0.979727505963455
+   },
+   "mode_prior": {
+    "items": 432,
+    "groups": 16,
+    "top1": 0.00463,
+    "mean_rank": 98.256,
+    "bits_per_group_98": 5.375,
+    "bits_per_group_995": 5.3125,
+    "threshold_98": 0.9999999680328014,
+    "threshold_995": 0.9999999756000376
+   },
+   "product": {
+    "items": 432,
+    "groups": 16,
+    "top1": 0.018519,
+    "mean_rank": 91.315,
+    "bits_per_group_98": 5.3125,
+    "bits_per_group_995": 5.125,
+    "threshold_98": 0.9999999710115361,
+    "threshold_995": 0.9999999969487564
+   },
+   "product_wp0_1": {
+    "items": 432,
+    "groups": 16,
+    "top1": 0.039352,
+    "mean_rank": 95.289,
+    "bits_per_group_98": 4.625,
+    "bits_per_group_995": 4.25,
+    "threshold_98": 0.9463385628772123,
+    "threshold_995": 0.9834278636436128
+   },
+   "derange_control": {
+    "items": 432,
+    "groups": 16,
+    "top1": 0.002315,
+    "mean_rank": 128.222,
+    "bits_per_group_98": 0.0,
+    "bits_per_group_995": 0.0,
+    "threshold_98": null,
+    "threshold_995": null
+   }
+  },
+  "syn-dev.T1": {
+   "cmd": "... --inputs work/benchmark/tasks/syn-dev.T1.inputs.npz --groups 30 --seed 303 --exclude work/methods/acoustic/train_groups_syn.txt",
+   "method": {
+    "items": 150,
+    "groups": 30,
+    "top1": 0.073333,
+    "mean_rank": 67.517,
+    "bits_per_group_98": 4.2333,
+    "bits_per_group_995": 1.7333,
+    "threshold_98": 0.8692508358892805,
+    "threshold_995": 0.9686554403549446
+   },
+   "mode_prior": {
+    "items": 150,
+    "groups": 30,
+    "top1": 0.02,
+    "mean_rank": 84.113,
+    "bits_per_group_98": 2.3,
+    "bits_per_group_995": 2.2,
+    "threshold_98": 0.9999994207640535,
+    "threshold_995": 0.9999997080236159
+   },
+   "product": {
+    "items": 150,
+    "groups": 30,
+    "top1": 0.06,
+    "mean_rank": 67.147,
+    "bits_per_group_98": 2.4333,
+    "bits_per_group_995": 2.4,
+    "threshold_98": 0.999999635250389,
+    "threshold_995": 0.9999997084438701
+   },
+   "product_wp0_1": {
+    "items": 150,
+    "groups": 30,
+    "top1": 0.08,
+    "mean_rank": 63.02,
+    "bits_per_group_98": 5.1,
+    "bits_per_group_995": 3.2667,
+    "threshold_98": 0.8791568309911642,
+    "threshold_995": 0.9698851323698237
+   },
+   "derange_control": {
+    "items": 150,
+    "groups": 30,
+    "top1": 0.013333,
+    "mean_rank": 133.397,
+    "bits_per_group_98": 0.0667,
+    "bits_per_group_995": 0.0667,
+    "threshold_98": 0.9995578427529791,
+    "threshold_995": 0.9995578427529791
+   }
+  },
+  "dev.T0": {
+   "cmd": "... --inputs work/benchmark/tasks/dev.T0.inputs.npz --groups 20 --seed 404 --exclude work/methods/acoustic/train_groups_dev.txt",
+   "method": {
+    "items": 220,
+    "groups": 20,
+    "top1": 0.004865,
+    "mean_rank": 129.809,
+    "bits_per_group_98": 0.05,
+    "bits_per_group_995": 0.05,
+    "threshold_98": 0.9991190533845786,
+    "threshold_995": 0.9991190533845786
+   },
+   "mode_prior": {
+    "items": 220,
+    "groups": 20,
+    "top1": 0.018182,
+    "mean_rank": 91.13,
+    "bits_per_group_98": 5.5,
+    "bits_per_group_995": 4.5,
+    "threshold_98": 0.997861472257947,
+    "threshold_995": 0.9995555374238221
+   },
+   "product": {
+    "items": 220,
+    "groups": 20,
+    "top1": 0.022727,
+    "mean_rank": 94.889,
+    "bits_per_group_98": 4.7,
+    "bits_per_group_995": 4.25,
+    "threshold_98": 0.9992858790454346,
+    "threshold_995": 0.9998955064197756
+   },
+   "derange_control": {
+    "items": 220,
+    "groups": 20,
+    "top1": 0.013956,
+    "mean_rank": 126.945,
+    "bits_per_group_98": 0.0,
+    "bits_per_group_995": 0.0,
+    "threshold_98": null,
+    "threshold_995": null
+   }
+  },
+  "nov27-dev.TH (INFERRED truth, development only)": {
+   "cmd": "... --inputs work/benchmark/tasks/nov27-dev.TH.inputs.npz --groups 10 --seed 505",
+   "method": {
+    "items": 186,
+    "groups": 10,
+    "top1": 0.016129,
+    "mean_rank": 103.817,
+    "bits_per_group_98": 1.1,
+    "bits_per_group_995": 1.1,
+    "threshold_98": 0.8798690955870611,
+    "threshold_995": 0.8798690955870611
+   },
+   "mode_prior": {
+    "items": 186,
+    "groups": 10,
+    "top1": 0.016129,
+    "mean_rank": 104.763,
+    "bits_per_group_98": 5.6,
+    "bits_per_group_995": 4.8,
+    "threshold_98": 0.9941670720857025,
+    "threshold_995": 0.9990393660985603
+   },
+   "product": {
+    "items": 186,
+    "groups": 10,
+    "top1": 0.016129,
+    "mean_rank": 96.597,
+    "bits_per_group_98": 5.4,
+    "bits_per_group_995": 5.1,
+    "threshold_98": 0.9972799908134558,
+    "threshold_995": 0.9979966263408802
+   },
+   "product_wp0_1": {
+    "items": 186,
+    "groups": 10,
+    "top1": 0.037634,
+    "mean_rank": 99.731,
+    "bits_per_group_98": 5.7,
+    "bits_per_group_995": 3.7,
+    "threshold_98": 0.771296956636414,
+    "threshold_995": 0.8597763683758833
+   }
+  },
+  "dev.T1 wrong-key decoded control": {
+   "cmd": "... --inputs work/benchmark/tasks/dev.T1.inputs.npz --groups 20 --seed 606 --exclude work/methods/acoustic/train_groups_dev.txt --control wrong-key",
+   "method": {
+    "items": 100,
+    "groups": 20,
+    "top1": 0.02,
+    "mean_rank": 111.65,
+    "bits_per_group_98": 0.1,
+    "bits_per_group_995": 0.1,
+    "threshold_98": 0.9975853461934997,
+    "threshold_995": 0.9975853461934997
+   }
+  }
+ },
+ "determinism_check": "frozen script (embedded models, no --model) reproduced dev.T1.pred.npz for 2 groups (10 items) and syn-dev.TH.pred.npz for 1 group (27 items) bit-identically (max |dlogp| = 0); final runs used --model work/methods/acoustic/model_{T1,TH,T0}.json with the same weights.",
+ "sealed_sets_touched": "none (test, syn-test, transfer neither read nor scored)",
+ "frozen_thresholds_for_sealed_runs": "use --frozen-thresholds work/methods/acoustic/dev.T1.metrics.json (method block) for T1; syn-dev.TH.metrics.json for TH"
+}

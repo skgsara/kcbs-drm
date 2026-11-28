@@ -1,0 +1,739 @@
+{
+ "method": "learned-disc",
+ "frozen": "2026-11-28T11:14:22+00:00",
+ "git_head": "a1e0bfc97e60518ef64c926143120c67e348e7f6",
+ "git_status_untracked": [
+  "?? scripts/mask_method_acoustic.py",
+  "?? scripts/mask_method_learned_disc.py",
+  "?? scripts/mask_method_params.py",
+  "?? scripts/test_mask_method_acoustic.py",
+  "?? scripts/test_mask_method_learned_disc.py",
+  "?? scripts/test_mask_method_params.py"
+ ],
+ "script": {
+  "path": "scripts/mask_method_learned_disc.py",
+  "sha256": "ac2c1e717f05c8c173fbe4da68d654e2ab479dfa67c3ee15a81f7c7ab5456b1b"
+ },
+ "test": {
+  "path": "scripts/test_mask_method_learned_disc.py",
+  "sha256": "0d1e3477d8657d75ed230293215529d1cafc924b02a0f033b602efad441e83b8"
+ },
+ "dependencies": {
+  "scripts/evs_candidates.py": "1a9d83e747a531c13a23121de23aa5a524ecdcf20e447f42bad574b32a0c6e1d",
+  "scripts/eval_mask_predictions.py": "2ed97232f2a8e3cadb7ff0c32de380a24ea732c039ce20a5bfb0bc0e2af955cb",
+  "work/evs_candidate/evs_candidate_decoder": "085cae3062658f97409829ae0384b322e8747f3c2f482b14fd7a28683b2a7a6e"
+ },
+ "primary_model": "work/methods/learned-disc/models/full_final.npz",
+ "models": {
+  "work/methods/learned-disc/models/full_final.npz": {
+   "sha256": "363957cf140c2df7a50216e2246b0d83f9713da686596ddba82200e66f372a41",
+   "variant": "full",
+   "hyper": {
+    "hidden": 32,
+    "epochs": 20,
+    "batch": 64,
+    "lr": 0.003,
+    "l2": 0.001,
+    "calib_fraction": 0.15,
+    "real_weight": 1.0,
+    "dec_weight": 1.0,
+    "dec_mode": "jgroup_linear"
+   },
+   "data": [
+    "dev.T1",
+    "dev.T0",
+    "syn-dev.TH",
+    "syn-dev.T1",
+    "syn-dev.T0"
+   ],
+   "dec_features": [
+    {
+     "path": "feat/dev.T1.n500.s1.npz",
+     "sha256": "bbb37b1c8e8ae7c5aff63cb041678a1a995e4f9e8a3e197d44e1b04ba85a810a"
+    },
+    {
+     "path": "feat/pilot_dev.T1.npz",
+     "sha256": "fbd5f1621ccd781d4c9d113036b891b01c1937c60bcdbf8aeba7cda888b1608f"
+    },
+    {
+     "path": "feat/syn-dev.TH.n120.s1.npz",
+     "sha256": "58a3ecaa55c31618da66b3feb4e494abff0ddb182da00f35e7b87135411e70bf"
+    },
+    {
+     "path": "feat/pilot_syn-dev.TH.npz",
+     "sha256": "eb258e215d07e60c2754bb7b4e6f7f9b605c9e4f50ad54f0fef2e08e6988a60f"
+    },
+    {
+     "path": "feat/syn-dev.T1.n120.s1.npz",
+     "sha256": "1ebf3ee9fcdc06bb2c0f61ab198a29ee8851ddcd614960b07ffe591e218ddd3f"
+    },
+    {
+     "path": "feat/pilot_syn-dev.T1.npz",
+     "sha256": "e2fda43f26cdbd34d92aa77462462aeca287f150d52da5bfb06a3d3a90046f13"
+    },
+    {
+     "path": "feat/dev.T0.n80.s1.npz",
+     "sha256": "d562ef0503071a3c41bcb16489a831c2707bf7693606ad23845aaa37238fc6f4"
+    }
+   ],
+   "units": {
+    "nov25-0448+0457-3205-hik": 17664,
+    "nov25-1246-6140-merged": 9312,
+    "syn-dev:fold0": 7783,
+    "syn-dev:fold1": 8600,
+    "syn-dev:fold2": 7568
+   },
+   "names": [
+    "bfi|ACELP",
+    "bfi|TCX",
+    "bfi|HQ",
+    "ber|ACELP",
+    "ber|TCX",
+    "ber|HQ",
+    "mis|ACELP",
+    "mis|TCX",
+    "mis|HQ",
+    "surplus|ACELP",
+    "surplus|TCX",
+    "surplus|HQ",
+    "abs_surplus|ACELP",
+    "abs_surplus|TCX",
+    "abs_surplus|HQ",
+    "clip|ACELP",
+    "clip|TCX",
+    "clip|HQ",
+    "logpeak|ACELP",
+    "logpeak|TCX",
+    "logpeak|HQ",
+    "dev_core|ACELP",
+    "dev_core|TCX",
+    "dev_core|HQ",
+    "dev_clas|ACELP",
+    "dev_clas|TCX",
+    "dev_clas|HQ",
+    "dev_hq|ACELP",
+    "dev_hq|TCX",
+    "dev_hq|HQ",
+    "clas_prev|ACELP",
+    "clas_prev|TCX",
+    "clas_prev|HQ",
+    "E|ACELP",
+    "E|TCX",
+    "E|HQ",
+    "dE_prev|ACELP",
+    "dE_prev|TCX",
+    "dE_prev|HQ",
+    "adE_prev|ACELP",
+    "adE_prev|TCX",
+    "adE_prev|HQ",
+    "adE_next|ACELP",
+    "adE_next|TCX",
+    "adE_next|HQ",
+    "SD_prev|ACELP",
+    "SD_prev|TCX",
+    "SD_prev|HQ",
+    "SD_next|ACELP",
+    "SD_next|TCX",
+    "SD_next|HQ",
+    "click_in|ACELP",
+    "click_in|TCX",
+    "click_in|HQ",
+    "click_out|ACELP",
+    "click_out|TCX",
+    "click_out|HQ",
+    "flat|ACELP",
+    "flat|TCX",
+    "flat|HQ",
+    "hf|ACELP",
+    "hf|TCX",
+    "hf|HQ",
+    "dE_clear|ACELP",
+    "dE_clear|TCX",
+    "dE_clear|HQ",
+    "adE_clear|ACELP",
+    "adE_clear|TCX",
+    "adE_clear|HQ",
+    "devE_nc|ACELP",
+    "devE_nc|TCX",
+    "devE_nc|HQ",
+    "adevE_nc|ACELP",
+    "adevE_nc|TCX",
+    "adevE_nc|HQ",
+    "devB_nc|ACELP",
+    "devB_nc|TCX",
+    "devB_nc|HQ",
+    "click_nc|ACELP",
+    "click_nc|TCX",
+    "click_nc|HQ",
+    "SD_pc|ACELP",
+    "SD_pc|TCX",
+    "SD_pc|HQ",
+    "max|click_in",
+    "max|click_out",
+    "max|SD_prev",
+    "max|SD_next",
+    "max|adE_prev",
+    "max|clip",
+    "max|devB_nc",
+    "max|abs_surplus",
+    "status_bad",
+    "mode_prior",
+    "ctx_L2",
+    "ctx_L4",
+    "ctx_L6",
+    "ctx_L8",
+    "ctx_R4",
+    "ctx_R6",
+    "sctx_L4",
+    "sctx_L6",
+    "sctx_R4",
+    "ifP_real",
+    "ifN_real",
+    "ifP_syn",
+    "ifN_syn"
+   ],
+   "prior_sources": [
+    {
+     "unit": "nov25-0448+0457-3205-hik",
+     "source": "work/benchmark/real/nov25-0448+0457-3205-hik.npz",
+     "groups": 1357
+    },
+    {
+     "unit": "nov25-1246-6140-merged",
+     "source": "work/benchmark/real/nov25-1246-6140-merged.npz",
+     "groups": 682
+    },
+    {
+     "unit": "syn-dev:fold0",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 181
+    },
+    {
+     "unit": "syn-dev:fold1",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 200
+    },
+    {
+     "unit": "syn-dev:fold2",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 176
+    }
+   ],
+   "trained_with_script_sha256": "ac2c1e717f05c8c173fbe4da68d654e2ab479dfa67c3ee15a81f7c7ab5456b1b"
+  },
+  "work/methods/learned-disc/models/ctx_final.npz": {
+   "sha256": "3d3ba648941d18fbbbb11bf35d9a23ab530e2225827056b43ca380eefe9bfb6e",
+   "variant": "ctx",
+   "hyper": {
+    "hidden": 32,
+    "epochs": 20,
+    "batch": 64,
+    "lr": 0.003,
+    "l2": 0.001,
+    "calib_fraction": 0.15,
+    "real_weight": 1.0,
+    "dec_weight": 1.0,
+    "dec_mode": "jgroup_linear"
+   },
+   "data": [
+    "dev.T1",
+    "dev.T0",
+    "syn-dev.TH",
+    "syn-dev.T1",
+    "syn-dev.T0"
+   ],
+   "dec_features": [],
+   "units": {
+    "nov25-0448+0457-3205-hik": 17664,
+    "nov25-1246-6140-merged": 9312,
+    "syn-dev:fold0": 7783,
+    "syn-dev:fold1": 8600,
+    "syn-dev:fold2": 7568
+   },
+   "names": [
+    "mode_prior",
+    "ctx_L2",
+    "ctx_L4",
+    "ctx_L6",
+    "ctx_L8",
+    "ctx_R4",
+    "ctx_R6",
+    "sctx_L4",
+    "sctx_L6",
+    "sctx_R4",
+    "ifP_real",
+    "ifN_real",
+    "ifP_syn",
+    "ifN_syn"
+   ],
+   "prior_sources": [
+    {
+     "unit": "nov25-0448+0457-3205-hik",
+     "source": "work/benchmark/real/nov25-0448+0457-3205-hik.npz",
+     "groups": 1357
+    },
+    {
+     "unit": "nov25-1246-6140-merged",
+     "source": "work/benchmark/real/nov25-1246-6140-merged.npz",
+     "groups": 682
+    },
+    {
+     "unit": "syn-dev:fold0",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 181
+    },
+    {
+     "unit": "syn-dev:fold1",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 200
+    },
+    {
+     "unit": "syn-dev:fold2",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 176
+    }
+   ],
+   "trained_with_script_sha256": "ac2c1e717f05c8c173fbe4da68d654e2ab479dfa67c3ee15a81f7c7ab5456b1b"
+  },
+  "work/methods/learned-disc/models/dec_final.npz": {
+   "sha256": "95ffc6fbe94483f7423d0384a118b6d9a4c05c1a30168244452f9974c75d5023",
+   "variant": "dec",
+   "hyper": {
+    "hidden": 32,
+    "epochs": 20,
+    "batch": 64,
+    "lr": 0.003,
+    "l2": 0.001,
+    "calib_fraction": 0.15,
+    "real_weight": 1.0,
+    "dec_weight": 1.0,
+    "dec_mode": "jgroup_linear"
+   },
+   "data": [
+    "dev.T1",
+    "dev.T0",
+    "syn-dev.TH",
+    "syn-dev.T1"
+   ],
+   "dec_features": [
+    {
+     "path": "feat/dev.T1.n500.s1.npz",
+     "sha256": "bbb37b1c8e8ae7c5aff63cb041678a1a995e4f9e8a3e197d44e1b04ba85a810a"
+    },
+    {
+     "path": "feat/pilot_dev.T1.npz",
+     "sha256": "fbd5f1621ccd781d4c9d113036b891b01c1937c60bcdbf8aeba7cda888b1608f"
+    },
+    {
+     "path": "feat/syn-dev.TH.n120.s1.npz",
+     "sha256": "58a3ecaa55c31618da66b3feb4e494abff0ddb182da00f35e7b87135411e70bf"
+    },
+    {
+     "path": "feat/pilot_syn-dev.TH.npz",
+     "sha256": "eb258e215d07e60c2754bb7b4e6f7f9b605c9e4f50ad54f0fef2e08e6988a60f"
+    },
+    {
+     "path": "feat/syn-dev.T1.n120.s1.npz",
+     "sha256": "1ebf3ee9fcdc06bb2c0f61ab198a29ee8851ddcd614960b07ffe591e218ddd3f"
+    },
+    {
+     "path": "feat/pilot_syn-dev.T1.npz",
+     "sha256": "e2fda43f26cdbd34d92aa77462462aeca287f150d52da5bfb06a3d3a90046f13"
+    },
+    {
+     "path": "feat/dev.T0.n80.s1.npz",
+     "sha256": "d562ef0503071a3c41bcb16489a831c2707bf7693606ad23845aaa37238fc6f4"
+    }
+   ],
+   "units": {
+    "nov25-0448+0457-3205-hik": 2283,
+    "nov25-1246-6140-merged": 1222,
+    "syn-dev:fold0": 1664,
+    "syn-dev:fold1": 1440,
+    "syn-dev:fold2": 1344
+   },
+   "names": [
+    "bfi|ACELP",
+    "bfi|TCX",
+    "bfi|HQ",
+    "ber|ACELP",
+    "ber|TCX",
+    "ber|HQ",
+    "mis|ACELP",
+    "mis|TCX",
+    "mis|HQ",
+    "surplus|ACELP",
+    "surplus|TCX",
+    "surplus|HQ",
+    "abs_surplus|ACELP",
+    "abs_surplus|TCX",
+    "abs_surplus|HQ",
+    "clip|ACELP",
+    "clip|TCX",
+    "clip|HQ",
+    "logpeak|ACELP",
+    "logpeak|TCX",
+    "logpeak|HQ",
+    "dev_core|ACELP",
+    "dev_core|TCX",
+    "dev_core|HQ",
+    "dev_clas|ACELP",
+    "dev_clas|TCX",
+    "dev_clas|HQ",
+    "dev_hq|ACELP",
+    "dev_hq|TCX",
+    "dev_hq|HQ",
+    "clas_prev|ACELP",
+    "clas_prev|TCX",
+    "clas_prev|HQ",
+    "E|ACELP",
+    "E|TCX",
+    "E|HQ",
+    "dE_prev|ACELP",
+    "dE_prev|TCX",
+    "dE_prev|HQ",
+    "adE_prev|ACELP",
+    "adE_prev|TCX",
+    "adE_prev|HQ",
+    "adE_next|ACELP",
+    "adE_next|TCX",
+    "adE_next|HQ",
+    "SD_prev|ACELP",
+    "SD_prev|TCX",
+    "SD_prev|HQ",
+    "SD_next|ACELP",
+    "SD_next|TCX",
+    "SD_next|HQ",
+    "click_in|ACELP",
+    "click_in|TCX",
+    "click_in|HQ",
+    "click_out|ACELP",
+    "click_out|TCX",
+    "click_out|HQ",
+    "flat|ACELP",
+    "flat|TCX",
+    "flat|HQ",
+    "hf|ACELP",
+    "hf|TCX",
+    "hf|HQ",
+    "dE_clear|ACELP",
+    "dE_clear|TCX",
+    "dE_clear|HQ",
+    "adE_clear|ACELP",
+    "adE_clear|TCX",
+    "adE_clear|HQ",
+    "devE_nc|ACELP",
+    "devE_nc|TCX",
+    "devE_nc|HQ",
+    "adevE_nc|ACELP",
+    "adevE_nc|TCX",
+    "adevE_nc|HQ",
+    "devB_nc|ACELP",
+    "devB_nc|TCX",
+    "devB_nc|HQ",
+    "click_nc|ACELP",
+    "click_nc|TCX",
+    "click_nc|HQ",
+    "SD_pc|ACELP",
+    "SD_pc|TCX",
+    "SD_pc|HQ",
+    "max|click_in",
+    "max|click_out",
+    "max|SD_prev",
+    "max|SD_next",
+    "max|adE_prev",
+    "max|clip",
+    "max|devB_nc",
+    "max|abs_surplus",
+    "status_bad",
+    "prior_logp"
+   ],
+   "prior_sources": [
+    {
+     "unit": "nov25-0448+0457-3205-hik",
+     "source": "work/benchmark/real/nov25-0448+0457-3205-hik.npz",
+     "groups": 1357
+    },
+    {
+     "unit": "nov25-1246-6140-merged",
+     "source": "work/benchmark/real/nov25-1246-6140-merged.npz",
+     "groups": 682
+    },
+    {
+     "unit": "syn-dev:fold0",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 181
+    },
+    {
+     "unit": "syn-dev:fold1",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 200
+    },
+    {
+     "unit": "syn-dev:fold2",
+     "source": "syn-dev truth (T0, T1, TH)",
+     "groups": 176
+    }
+   ],
+   "trained_with_script_sha256": "ac2c1e717f05c8c173fbe4da68d654e2ab479dfa67c3ee15a81f7c7ab5456b1b"
+  }
+ },
+ "parameters": {
+  "rate": 16000,
+  "warm_groups": 2,
+  "feature_version": 3,
+  "ctx_configs": [
+   [
+    "L",
+    2
+   ],
+   [
+    "L",
+    4
+   ],
+   [
+    "L",
+    6
+   ],
+   [
+    "L",
+    8
+   ],
+   [
+    "R",
+    4
+   ],
+   [
+    "R",
+    6
+   ]
+  ],
+  "syn_ctx_configs": [
+   [
+    "L",
+    4
+   ],
+   [
+    "L",
+    6
+   ],
+   [
+    "R",
+    4
+   ]
+  ],
+  "if_distances": [
+   1,
+   2,
+   3
+  ],
+  "ctx_alpha": 2.0,
+  "ctx_beta": 2.0,
+  "syn_folds": {
+   "librivox-en-spc160-anticipation": 0,
+   "librivox-en-spc160-duringmusic": 0,
+   "librivox-en-spc160-withaflower": 0,
+   "librosa-brahms": 0,
+   "nov27-programme": 0,
+   "librivox-ko-hyun-01": 1,
+   "librosa-fishin": 1,
+   "wangjaesan-02-seashore": 2,
+   "librosa-vibeace": 2
+  },
+  "hyper_defaults": {
+   "hidden": 32,
+   "epochs": 20,
+   "batch": 64,
+   "lr": 0.003,
+   "l2": 0.001,
+   "calib_fraction": 0.15,
+   "real_weight": 1.0,
+   "dec_weight": 1.0,
+   "dec_mode": "jgroup_linear"
+  }
+ },
+ "training_and_tuning_data": {
+  "truth_read_for_training": [
+   "work/benchmark/tasks/{dev,syn-dev}.{T0,T1,TH}.truth.npz (only those listed in each model data)"
+  ],
+  "prior_tables": [
+   "DEV label files work/benchmark/real/nov25-*.npz (role 0, role-1 j=0..4), leave-capture-out for DEV items",
+   "syn-dev truth T0+T1+TH (all 43 bytes), leave-source-fold-out for syn-dev items"
+  ],
+  "sealed_untouched": [
+   "test",
+   "syn-test",
+   "transfer"
+  ],
+  "tuning": "no hyper-parameter search; feature design was developed on DEV/syn-dev pilots (dev.T1 40 groups seed 101, syn-dev.TH 20 groups seed 101, syn-dev.T1 20 groups seed 101)"
+ },
+ "dev_frozen_thresholds": {
+  "work/methods/learned-disc/metrics/dev.T1.full.json": {
+   "split": "dev",
+   "task": "T1",
+   "items": 2500,
+   "groups": 500,
+   "bytes": {
+    "0.98": 0.9600167746309598,
+    "0.995": 0.9600167746309598
+   },
+   "bits": {
+    "0.98": 0.8622383525490547,
+    "0.995": 0.9350610469813628
+   }
+  },
+  "work/methods/learned-disc/metrics/dev.T0.full.json": {
+   "split": "dev",
+   "task": "T0",
+   "items": 880,
+   "groups": 80,
+   "bytes": {
+    "0.98": 0.7911747737330733,
+    "0.995": 0.7911747737330733
+   },
+   "bits": {
+    "0.98": 0.9188591664982912,
+    "0.995": 0.9997340775932028
+   }
+  },
+  "work/methods/learned-disc/metrics/syn-dev.TH.full.json": {
+   "split": "syn-dev",
+   "task": "TH",
+   "items": 3240,
+   "groups": 120,
+   "bytes": {
+    "0.98": 0.9735058988656289,
+    "0.995": 0.9735058988656289
+   },
+   "bits": {
+    "0.98": 0.9555141534131621,
+    "0.995": 0.9988800025967115
+   }
+  },
+  "work/methods/learned-disc/metrics/syn-dev.T1.full.json": {
+   "split": "syn-dev",
+   "task": "T1",
+   "items": 600,
+   "groups": 120,
+   "bytes": {
+    "0.98": 0.8660833169210016,
+    "0.995": 0.8660833169210016
+   },
+   "bits": {
+    "0.98": 0.9172433402721655,
+    "0.995": 0.9708454861910063
+   }
+  },
+  "work/methods/learned-disc/metrics/nov27-dev.TH.full.json": {
+   "split": "nov27-dev",
+   "task": "TH",
+   "items": 468,
+   "groups": 22,
+   "bytes": {
+    "0.98": 0.7020026811291882,
+    "0.995": 0.7020026811291882
+   },
+   "bits": {
+    "0.98": 0.8233977052687033,
+    "0.995": 0.9590747925021087
+   }
+  },
+  "work/methods/learned-disc/metrics/dev.T1.ctx.json": {
+   "split": "dev",
+   "task": "T1",
+   "items": 8430,
+   "groups": 1686,
+   "bytes": {
+    "0.98": 0.8608747460027704,
+    "0.995": 0.8764216409585723
+   },
+   "bits": {
+    "0.98": 0.8983613297570978,
+    "0.995": 0.9657287666961536
+   }
+  },
+  "work/methods/learned-disc/metrics/dev.T0.ctx.json": {
+   "split": "dev",
+   "task": "T0",
+   "items": 18546,
+   "groups": 1686,
+   "bytes": {
+    "0.98": 0.8900362954000507,
+    "0.995": 0.9579088654383704
+   },
+   "bits": {
+    "0.98": 0.937307446914562,
+    "0.995": 0.9997137734726433
+   }
+  },
+  "work/methods/learned-disc/metrics/syn-dev.TH.ctx.json": {
+   "split": "syn-dev",
+   "task": "TH",
+   "items": 15039,
+   "groups": 557,
+   "bytes": {
+    "0.98": 0.9793627470671085,
+    "0.995": 0.9793627470671085
+   },
+   "bits": {
+    "0.98": 0.9447347473652943,
+    "0.995": 0.997748958829304
+   }
+  },
+  "work/methods/learned-disc/metrics/syn-dev.T1.ctx.json": {
+   "split": "syn-dev",
+   "task": "T1",
+   "items": 2785,
+   "groups": 557,
+   "bytes": {
+    "0.98": 0.9388799870374341,
+    "0.995": 0.9388799870374341
+   },
+   "bits": {
+    "0.98": 0.9215252160625512,
+    "0.995": 0.9941275050210705
+   }
+  },
+  "work/methods/learned-disc/metrics/nov27-dev.TH.ctx.json": {
+   "split": "nov27-dev",
+   "task": "TH",
+   "items": 468,
+   "groups": 22,
+   "bytes": {
+    "0.98": 0.6945980543278786,
+    "0.995": 0.6945980543278786
+   },
+   "bits": {
+    "0.98": 0.9141624304952998,
+    "0.995": 0.9674887199567241
+   }
+  }
+ },
+ "default_model_copy": {
+  "path": "work/methods/learned-disc/model.npz",
+  "sha256": "363957cf140c2df7a50216e2246b0d83f9713da686596ddba82200e66f372a41",
+  "note": "byte copy of models/full_final.npz; the CLI default --model"
+ },
+ "design_choices_made_on_dev": [
+  "bitstream prior families (intra-frame L/R context, inter-frame P/N) chosen after dev.T1/dev.T0 truth-rank experiments (tools/ctx_prior_exp.py, tools/interframe_exp.py)",
+  "dec_mode 'jgroup_linear' chosen over 'shared'/'jgroup' on dev.T1-only cross-capture OOF (2625 items with decoder features)",
+  "reduced dev.T0 decoder subsample to 80 groups and syn-dev.TH wrong-group control to 15 groups for compute"
+ ],
+ "decoder_feature_runs": {
+  "dev.T0.n80.s1.npz": "d562ef0503071a3c41bcb16489a831c2707bf7693606ad23845aaa37238fc6f4",
+  "dev.T1.n100.s2.wrong-group.npz": "c79a52f09117babbfef60e3ab4bbc7db1140062132f3372c9d2da9142c88712b",
+  "dev.T1.n500.s1.npz": "bbb37b1c8e8ae7c5aff63cb041678a1a995e4f9e8a3e197d44e1b04ba85a810a",
+  "nov27-dev.TH.nNone.s0.npz": "472eef18bb1b5becf1e08bfbc07c22e3939b8cc4f4ae05b785cdf1ff9baa8439",
+  "pilot_dev.T1.npz": "fbd5f1621ccd781d4c9d113036b891b01c1937c60bcdbf8aeba7cda888b1608f",
+  "pilot_syn-dev.T1.npz": "e2fda43f26cdbd34d92aa77462462aeca287f150d52da5bfb06a3d3a90046f13",
+  "pilot_syn-dev.TH.npz": "eb258e215d07e60c2754bb7b4e6f7f9b605c9e4f50ad54f0fef2e08e6988a60f",
+  "syn-dev.T1.n120.s1.npz": "1ebf3ee9fcdc06bb2c0f61ab198a29ee8851ddcd614960b07ffe591e218ddd3f",
+  "syn-dev.TH.n120.s1.npz": "58a3ecaa55c31618da66b3feb4e494abff0ddb182da00f35e7b87135411e70bf",
+  "syn-dev.TH.n15.s2.wrong-group.npz": "f54a5f968e0beccd0a67b38ec9b629560e0f2ae83eab0ada2139dc2b223dae5a"
+ },
+ "commands": {
+  "predict": "python3 scripts/mask_method_learned_disc.py --inputs work/benchmark/tasks/<split>.<task>.inputs.npz --out P.npz [--groups N --seed S] [--features cache.npz] [--model work/methods/learned-disc/models/ctx_final.npz for the no-decoding variant]",
+  "score": "python3 scripts/eval_mask_predictions.py --truth work/benchmark/tasks/<split>.<task>.truth.npz --predictions P.npz --out M.json",
+  "sealed_run_note": "not run: test / syn-test / transfer untouched; use --frozen-thresholds with the DEV metrics JSON of the same variant"
+ }
+}
