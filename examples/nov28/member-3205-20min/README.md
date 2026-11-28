@@ -70,6 +70,18 @@ With the original contributor note, run the following from the repository root.
 python examples/nov28/member-3205-20min/check_member_handoff.py skgsara-crosscheck-20261128.md
 ```
 
+### Contributor's corrected playback counts and deduplicated text
+
+The contributor subsequently traced the audio render to the 397 candidates in their original group archive. They report that step 6 read that archive directly and that the mapping returned by the text-record checks in step 5 never reached the renderer. On their 1,093-group timeline, 397 × 15 first-position words account for **5,955 supplied slots out of 65,580 (9.08%)**, with **59,625 erasures**. The two reported counter sets overlap at 296 counters, leaving 390 exclusive to the 686-counter text set and 101 exclusive to the 397-counter render set. A shared counter ID alone gives no comparison between the two candidate values there. The handoff includes no per-slot input stream for verifying the reported render. Its revised EVS mode-byte and payload-start tables agree with all 20 slot coordinates in the public receiver. [Receiver layout](../../../scripts/render_continuous.py) · [Earlier six-row check](decoder-input-check.json)
+
+The bilingual text handoff contains **86 distinct Korean fragments** in first-occurrence order. Five fragments occur once, 13 twice, 23 three times, 39 four times and six five times, accounting for the 286 reported occurrences. Each of the 86 beginnings has a received data unit in the 3205 kHz archive. The shorter independent 6140 kHz archive covers nine of those beginnings. These checks establish the starting coordinates. The handoff supplies counts without coordinates for the other 200 occurrences. Only the first three fragments also have full record bytes in the earlier handoff. Their recomputed CRCs are `730B`, `7BE3` and `2612`. The Korean display agrees after the documented line-ending conversion. The other 83 distinct fragments lack record bytes and transmitted CRCs here. [3205 kHz data units](member-dus.npz) · [6140 kHz data units](../../nov27/validation/swb-gsc/edogawa-data-units.npz)
+
+To reproduce the fragment counts and check each starting coordinate with your copy of the bilingual handoff, run from the repository root.
+
+```sh
+python examples/nov28/member-3205-20min/check_member_fragments.py KCBS-3205-text-deduplicated-ko-zh-20261128.md
+```
+
 ### Comparing the handoff with the earlier blind predictions
 
 Before this handoff arrived, the IQ-only receiver had published predictions for counter 43907925, the first complete group in the member recording. The counter was absent from its frozen inventory. Replaying the three archived DUs reproduces the published per-slot evidence SHA-256 `433b76398e950d2dc4a329e1c09cbc88e8fad5b6d50bf7e73ef964de7198711d`. We compared **every conditional field at P1 and P2** with the value computed using the contributor's single submitted candidate and the published word layout. All nine fields target the first payload octet. The text record with CRC `730B` supports the submitted comparison data. [Original IQ result](primary.json) · [Comparison values for all eligible fields](candidate-43907925-early-fields.csv)
