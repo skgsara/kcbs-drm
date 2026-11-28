@@ -39,3 +39,34 @@ python "$case_dir/phase_anchors.py" NATIVE.msc.bin --out /tmp/new-phase-study
 ```
 
 The last command accepts a single ordinary little-endian, length-prefixed MSC dump. It writes packet and data-unit archives under `stock/` and `extended/`. Its JSON report lists proposed row coordinates, original CRC-valid packet ordinals, stock and extended coverage, and additions quarantined before updating the extended snapshot.
+
+## Held-out 3205 kHz broadcast
+
+The fixed single-receiver rule placed **23 additional CRC-valid packets** in a locally held-out minute, providing **113 additional frame slots with all transmitted octets**. The input was the last full minute starting at 540 seconds in the November 27 12:15:02 UTC recording. Its contributor had already reported whole-recording aggregates. Reception used one cold IQ pass. The 29 assigned counters had zero overlap with the frozen local registry of 15,095 IDs. The test assumes the receiver callbacks preserve transmission order. This recording supplied no independent receiver to verify the new coordinates. [Input and selection protocol](field-protocol.md) · [Lossless IQ and source bounds](field/input.json) · [Dream receipt](field/reception.json)
+
+| In this minute | Stock receiver | With CRC-checked phase placement |
+| --- | ---: | ---: |
+| Assigned packet coordinates | 213 | 236 |
+| Complete CRC-valid data units | 50 | 55 |
+| Complete three-phase groups | 10 | 10 |
+| Complete transmitted word slots | 1,064 | 1,177 |
+| Directly readable bits with assigned coordinates | 187,800 | 207,968 |
+| Complete clear EVS words | 0 | 0 |
+
+The first complete group in native row order was **43873223**, starting at row 8. Each of its four positions had 15 complete transmitted slots. The projector reported 10,560 directly readable bits and 5,280 bits with unresolved clear values. All 28 checks against readable fields matched, covering 112 distinct direct bits. In slots 9 and 20 the existing transition-tag rule conditionally excludes `01` from clear word bits 8–9; `00`, `10` and `11` remain allowed. Those two bits have no independent clear observation at either slot. [Sealed selections and per-row anchors](field/seal.json) · [Full machine-readable results for both receivers](field/score.json.gz)
+
+The incomplete control was **43873230**. The new rule placed native row 31 at phase 2 and increased complete physical slots from 20 to 40, ten per position. At slot 52, a newly available field condition allows `00` and `01` for word bits 8–9. This prediction leaves bit 8 conditionally zero and supplies no measured clear value there. [Accepted packet ordinals](field/placements.json)
+
+From the repository root the frozen data and scripts reproduce the field report. Use a new output directory for the receiver.
+
+```sh
+case_dir=examples/receiver-control/phase-anchors
+field_dir="$case_dir/field"
+work_dir=$(mktemp -d)
+python "$case_dir/phase_anchors.py" "$field_dir/native.msc.bin" --out "$work_dir/receiver" > "$work_dir/placements.json"
+python "$case_dir/score_air.py" seal "$field_dir/native.msc.bin" "$work_dir/receiver" > "$work_dir/seal.json"
+cmp "$work_dir/seal.json" "$field_dir/seal.json"
+python "$case_dir/score_air.py" score "$work_dir/seal.json" "$work_dir/receiver" \
+  9b58bb342cf18706bf9e18045398db13f671825075d25b9a6fcac8cee24b78d1 > "$work_dir/score.json"
+gzip -dc "$field_dir/score.json.gz" | cmp - "$work_dir/score.json"
+```
