@@ -10,6 +10,8 @@ Download the **23 original radio recordings** individually from the November 28 
 The JSON index gives each recording’s original name, size, SHA-256 and direct download URL.
 [Sample release](https://github.com/skgsara/kcbs-drm/releases/tag/samples-2026-11-28) · [Recording index](https://github.com/skgsara/kcbs-drm/releases/download/samples-2026-11-28/samples.json)
 
+For the simultaneous 06:17 UTC recordings on 3205 and 6140 kHz, the contributor also supplied the capture settings and CRC-checked MSC packets. [Download the capture companions](https://github.com/skgsara/kcbs-drm/releases/download/samples-2026-11-28/KCBS2_20261127T061722Z_companions.zip)
+
 This work builds on KoryoFront’s KCBS-2 receiver and Martyn’s independent
 KCBS DRM analysis. KoryoFront documented the transport layout and shared
 the March recordings in collaboration with Martyn. Martyn (martynw) contributed the variable-length text
