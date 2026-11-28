@@ -29,6 +29,19 @@ The received mode bytes comprise 34 super-wideband generic, 16 voiced and 10 tra
 
 The three alternatives excluded by a `00` prediction are `01`, `10` and `11`. For a `01` prediction the other alternatives are `00`, `10` and `11`. The table uses zero-based slot numbers. All four positions retained 15 full-word erasures.
 
+## Historical evidence for the four second-position predictions
+
+The published November 27 data contain 231 second-position frames for which this rule selected a single two-bit value and a text-supported label was available. The other 79 labelled frames admitted multiple values. The prediction `00` matched 141 of 142 labels across 119 counters, 101 text-record occurrences and 58 distinct body fragments. The prediction `01` matched all 89 labels across 74 counters, 64 occurrences and 42 fragments. The two sets share 34 body fragments. Altogether the 231 frames draw on 66 distinct fragments. A single bulletin can span several fragments. The public support script counts distinct bodies only when the lower bound from length and header-neutral CRC equals the upper bound from distinct full-record digests. We also checked these counts against the body bytes in the three original record ledgers. [Published label rows](../swb-transition/p2/fixture.csv) · [Record checksums](../swb-transition/p2/witnesses.json)
+
+| P2 slot at 43288730 | Received mode and final octet (hex) | Predicted word bits 8–9 | Historical matches with the same mode and trailing-zero count | Historical matches with both octets identical |
+| ---: | --- | --- | ---: | ---: |
+| 17 | `61 6C` | `01` | 81/81 | 8/8 |
+| 29 | `60 B6` | `00` | 132/133 | 6/6 |
+| 53 | `60 3A` | `00` | 132/133 | No labelled frame |
+| 57 | `61 4C` | `01` | 81/81 | 4/4 |
+
+The two rows with 132/133 refer to the same 133 historical frames. Their exception was counter 43877110, slot 41. Like slots 29 and 53, it had mode `60` and one trailing zero, but the text-supported label was `10`. The historical frequencies leave all four target labels open. To reproduce the historical counts, run `python examples/nov28/airspy-150-gap/p2_support.py`. [Support script](p2_support.py) · [Disputed record and replay](../swb-transition/p2/43877110-source.json)
+
 ## Reproduce the result
 
 The compact [isolated IQ file](isolated-iq48.flac) contains the losslessly stored 48 kHz stereo PCM input to Dream after conversion. It includes the zero flanks. A fresh replay of this file with the pinned receiver produced the exact 11,712-byte native stream from the isolated run. The [IQ and dump hashes](iq-replay.json) cover this distribution copy.
