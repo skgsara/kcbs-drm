@@ -1,0 +1,13 @@
+{
+  "revision": "901d23e091c13c8b350dbee41024303ac0995ec8",
+  "distinct_ids": 14747,
+  "json_sha256": "a4a694178af6f2e6c7aa97cf2ffb8e7d23b2a4e25aece4df8402c9d437b1ad25",
+  "gzip_sha256": "f224ec3c7e79778de7a4322637c488c472470a5a3750531dedb7972547ae6097",
+  "scope": "Union of the eight committed historical inventories, later published assigned counters (including partials), available coordinate arrays in the named public transport snapshots, and the Nov 15 complete-counter list. Earlier inventory inclusions retain their original provenance. Not a survey of private or unpublished captures. No trial files, masks, plaintext or application labels are used.",
+  "frozen_utc": "2026-11-28T12:30:18.096190270Z",
+  "attestation": "Frozen after recording initiation and before this reviewer viewed any new recording, transport output or result. The only data inputs were committed files at the pinned pre-trial revision.",
+  "builder_sha256": "4b5025fc8d02bb9b3108f1d04f106c40ff851e48555849486c5cc1777a4ca0a1",
+  "source_ledger_sha256": "4e7c7cb18bc2304aed839f53538b91fe73e1796dae785e4c18b71c0ba1c5677b",
+  "source_count": 40,
+  "reproduce": "python build.py /path/to/kcbs-drm /fresh/output"
+}

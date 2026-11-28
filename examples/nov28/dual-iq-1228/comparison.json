@@ -1,0 +1,27 @@
+{
+  "official_source_sha256": "daaa4b72cd237956af0349068d358d614ff199c516da1a250ce762c448a0054a",
+  "stations": {
+    "yokohama": "1c90d60a56d3f00ed8112f3d333004bc0aa2ba776d8252adb3d788d683c9ffb1",
+    "edogawa": "0e0fc3e63e0d6d86d288965a035d9411f533057b9207779f5355c667e83a3df2"
+  },
+  "primary": null,
+  "primary_peer_receipt": null,
+  "comparison_packets": {
+    "left_only": 0,
+    "right_only": 688,
+    "union": 688,
+    "intersection": 0,
+    "exact_matches": 0,
+    "conflicting_coordinates": []
+  },
+  "comparison_whole_dus": {
+    "left_only": 0,
+    "right_only": 167,
+    "union": 167,
+    "intersection": 0,
+    "exact_matches": 0,
+    "conflicting_coordinates": []
+  },
+  "direct_complete_group_ids_both": [],
+  "union_direct_complete_group_count": 52
+}

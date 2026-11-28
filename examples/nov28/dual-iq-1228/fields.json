@@ -1,0 +1,292 @@
+{
+  "all_assigned_source": {
+    "by_position": {
+      "1": {
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      },
+      "2": {
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      },
+      "3": {
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      },
+      "4": {
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      }
+    },
+    "by_rule": {
+      "audio_noisy": {
+        "by_position": {
+          "1": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "2": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "3": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "4": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          }
+        },
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      },
+      "inactive_nibble": {
+        "by_position": {
+          "1": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "2": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "3": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "4": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          }
+        },
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      }
+    },
+    "counters": 0,
+    "nominal_slots": 0,
+    "received_modes": 0,
+    "total": {
+      "checked": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "no_peer": 0,
+      "predicted": 0
+    }
+  },
+  "digest_basis": "Compact JSON of ordered [counter, slot, mode, rule, expected] rows, without a newline.",
+  "mismatches": [],
+  "peer_assigned_counters": 64,
+  "peer_packets_sha256": "99c6a15310c00a1beaeb535ca05843ace641045627c45ea2a32511257134cf16",
+  "predictor_sha256": "204b9b920134255a2507bdc656364283c1587db34a218a6ef5d8d92b54ad84e9",
+  "primary": {
+    "by_position": {
+      "1": {
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      },
+      "2": {
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      },
+      "3": {
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      },
+      "4": {
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      }
+    },
+    "by_rule": {
+      "audio_noisy": {
+        "by_position": {
+          "1": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "2": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "3": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "4": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          }
+        },
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      },
+      "inactive_nibble": {
+        "by_position": {
+          "1": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "2": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "3": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          },
+          "4": {
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0,
+            "predicted": 0
+          }
+        },
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "predicted": 0
+      }
+    },
+    "cases": [],
+    "counter": null,
+    "counters": 0,
+    "nominal_slots": 0,
+    "received_modes": 0,
+    "source_assigned": false,
+    "total": {
+      "checked": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "no_peer": 0,
+      "predicted": 0
+    }
+  },
+  "protocol_sha256": "433ac5487264516e337cf2833125cf0cc53b44b742ba69755a6a347c73504cb8",
+  "rules": {
+    "audio_noisy": {
+      "basis": "Stock encoder's ordinary AUDIO bandwidth-extension choice.",
+      "excluded_given_prediction": {
+        "0": [
+          1
+        ],
+        "1": [
+          0
+        ]
+      },
+      "word_bits": [
+        40,
+        41
+      ]
+    },
+    "inactive_nibble": {
+      "basis": "Empirical INACTIVE/BWE pattern from the labelled broadcast archive.",
+      "excluded_given_prediction": {
+        "12": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ]
+      },
+      "word_bits": [
+        40,
+        44
+      ]
+    }
+  },
+  "source_decisions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "source_packets_sha256": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d"
+}

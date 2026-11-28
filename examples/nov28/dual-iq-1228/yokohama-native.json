@@ -1,0 +1,60 @@
+{
+  "msc_sha256": "cca14f30c076e44e6f4639945abe68e0a58f18a78a70dbf501390a5b15208d4c",
+  "msc_rows": 288,
+  "rows_728": 288,
+  "packet_crc_checks": 1152,
+  "physical_packets_crc": 0,
+  "physical_packets_crc_and_header": 0,
+  "native_complete_dus": 0,
+  "coord_packets": 0,
+  "coord_dus": 0,
+  "assigned_counters": [],
+  "direct_complete_groups": [],
+  "archived_complete_groups": [],
+  "missing_counter_ids_within_span": [],
+  "archive_sha256": {
+    "packets.npz": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+    "data_units.npz": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+    "report.json": "2ffcd029bad6ef140556e57cab7276d02e23e8fddfcdd8d85eac9c1fa0bea365",
+    "provenance.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "manifest": {
+    "source": "/workspace/shared/dual-iq-20261128-122x/yokohama/original.wav",
+    "source_bytes": 23040044,
+    "source_sample_rate": 48000,
+    "source_frames": 5760000,
+    "start_sample": 0,
+    "sample_count": 5760000,
+    "start_seconds": 0.0,
+    "duration_seconds": 120.0,
+    "channel_offset_hz": 0.0,
+    "timing_note": "Nominal sample rate used; physical clock calibration unknown. Dump record index is NOT a source timestamp.",
+    "status": "finished",
+    "mlc_iterations": 1,
+    "reception_profile": "wiener",
+    "receiver_settings": {
+      "freqint": 2,
+      "timeint": 1,
+      "modmetric": 0,
+      "mlciter": 1
+    },
+    "wall_seconds": 1.4681692449958064,
+    "returncode": 0,
+    "dump_bytes": 210816
+  },
+  "reported_transport": {
+    "files": 1,
+    "assigned_record_observations": 0,
+    "original_complete_groups": 0,
+    "salvaged_complete_groups": 0,
+    "extra_groups": 0,
+    "missing_baseline_groups": [],
+    "crc_good_data_units": 0,
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "candidate_key_groups": 0,
+    "verified_text_key_groups": 0,
+    "note": "Packet/DU CRCs verify container integrity, not text or codec keys.",
+    "text_candidates_evaluated": false
+  }
+}
