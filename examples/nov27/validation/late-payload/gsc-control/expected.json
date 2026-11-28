@@ -1,0 +1,75 @@
+{
+  "wb_artificial_same_stimulus": {
+    "pcm_sha256": "8947b94fd0a024031a1554fa2f63c637f7bd4bdb8eeefc35c747504e3ac39932",
+    "rate_khz": 32,
+    "frames": 2400,
+    "g192_sha256": "79957836fdf1be62fd6d28ee1dc47a9f3936695c225fba3b784b137b7b5a7631",
+    "decoder_pcm_sha256": "872291048c7dbeb53b48fcd387902069a8b0d07228699af8a23866157be1fa3d",
+    "prefix_p27_slots": [
+      193,
+      793,
+      1787,
+      1796,
+      1962,
+      2161
+    ],
+    "prefix_p24_indices": 95,
+    "prefix_p27_indices": 425,
+    "selected_128bit_prefixes_sha256": "dea848941edcf3f0e8c408a64c1220d09a0f9e8f504edd638d3bec4b6905b9da",
+    "prefix_sha256_by_slot": {
+      "193": "a953a5bf705d9ca9732485f553e657833835eeee4fa73d040b7b8ac937063bcc",
+      "793": "e7fcbe0a9bdc85e26cf59183aebaf9152b68c27edcb1ef35d3fa2760f156d674",
+      "1787": "330c7abdd344301fa8404085d070a6181c1eaca6fad60add1c57d1aaa146fc01",
+      "1796": "e5d83dd5fcd90906a73c24c3155c6c8e361c5301cb41d32cfa032d4535491cb8",
+      "1962": "e414846a2463b1e228a7fe6c662120c9680c209328fbb54a083148e1468f5231",
+      "2161": "850a1bb3e21f04d3eb4c03fda0559d8d94aa63b7a465c81330b1d64659c40fa1"
+    },
+    "expected_true_10bit_residuals": [
+      22,
+      155,
+      171,
+      204,
+      121,
+      104
+    ],
+    "expected_pair": 0,
+    "native_range_errors_by_pair_00_01_10_11": [
+      0,
+      6,
+      6,
+      6
+    ]
+  },
+  "wb_separate_encoder_480s": {
+    "pcm_sha256": "08c6f87ff3d0c152e97165888a706c161a7b836e888944ade1ff9d1bf7b98a12",
+    "rate_khz": 16,
+    "frames": 24000,
+    "g192_sha256": "6f3e06afddb1231c601ccfcb45f54d003a2bf0cacbd42950a903c8fd9ac4c829",
+    "decoder_pcm_sha256": "fbf983c51ed420907c52a87f8edbe34145a5a3c2275d9245945ecb0e23225108",
+    "prefix_p27_slots": [
+      745,
+      8584,
+      19740
+    ],
+    "prefix_p24_indices": 0,
+    "prefix_p27_indices": 5712,
+    "selected_128bit_prefixes_sha256": "bcee0a36f8c07d4005ddeefecc1176812783f51b28da12190a01ba5155c4b8b9",
+    "prefix_sha256_by_slot": {
+      "745": "db16fa6cfab42e4e212c37b1f9d08970b45176bb340784e73952d40ac366bc2d",
+      "8584": "53d8cdaff7c194e2faa5f3c28b9e7d269b62c76412e3eff9a04702f6a5247ad8",
+      "19740": "e6a58ebf8b457c84d4f556461edc30780313a881ab32d2ea9147a6137d04f313"
+    },
+    "expected_true_10bit_residuals": [
+      133,
+      125,
+      124
+    ],
+    "expected_pair": 0,
+    "native_range_errors_by_pair_00_01_10_11": [
+      0,
+      3,
+      3,
+      3
+    ]
+  }
+}

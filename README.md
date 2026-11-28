@@ -22,6 +22,12 @@ test fixes the target. Its protocol covers checks against evidence held
 back from the same broadcast and an optional comparison with a clear export.
 [Four-position milestone and target receipt](examples/nov15/validation/README.md)
 
+Stock ACELP examples reproduce the exact one-bit ambiguities at payload
+bytes 24 and 27. In a narrower wideband GSC case, the first 128 bits
+correctly predicted two bits of byte 27 in nine stock words. Neither
+of the two eligible archived P1 prefixes selected that case.
+[Late payload checks, original encoder outputs and fresh 6140 kHz IQ](examples/nov27/validation/late-payload/README.md)
+
 On a held-back minute of 6140 kHz IQ, two directly received EVS fields each
 singled out the published frame order from 96 alternatives across 42 complete
 groups. The first group alone left two orders possible. Its 60 slots were

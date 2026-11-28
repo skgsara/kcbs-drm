@@ -1,0 +1,42 @@
+{
+  "counter": 43703439,
+  "source": "two preselected extant P1 text-supported WB GSC words",
+  "state": "cold separate process, stopped after bounded allocation walk and before ordinary PVQ decoding",
+  "suffix": "the entire suffix withheld; zero and one dummy suffixes returned identical bounded events",
+  "answers_opened": false,
+  "words": [
+    {
+      "slot": 0,
+      "prefix_sha256": "8e4b04995fbe8628110a423a204412084b5af930c3b6c30996fcd72f66ee36d5",
+      "bounded_events": [
+        "P,0,98,98",
+        "N,0,2736,15,4,252",
+        "N,0,142544,61,10,241",
+        "N,0,142544,64,10,230"
+      ],
+      "predict_p27_low_pair": null,
+      "prefix_hex": "4e57d3ddc2c1a3c993642bba045bea7c"
+    },
+    {
+      "slot": 4,
+      "prefix_sha256": "32dfb3f7fd8e2d913652ec51c949e5b362e79debd1b9cb1b63ad6fd84b88bb46",
+      "bounded_events": [
+        "P,0,74,74",
+        "N,0,142544,72,10,246",
+        "N,0,142544,72,10,235",
+        "N,0,774912,36,12,222",
+        "N,0,3644272,29,14,207",
+        "N,0,3644272,124,14,192",
+        "N,0,1787527680,71,23,168"
+      ],
+      "predict_p27_low_pair": null,
+      "prefix_hex": "4efe416f48c04877622612666b2fa0cc"
+    }
+  ],
+  "broadcast": "November 25 12:46 KST 6140 kHz merged packet dump",
+  "mode": "4E",
+  "source_sf_sha256": "d25689296e129309890bd6e19518a30a5b3d25599d903c0470d9a38862ebd321",
+  "source_published_label_sha256": "719f10b1570a56b4b32f588adade78e0be32d204e17eeea6ecec0e7f29d6cbe6",
+  "prefix_pair_sha256": "6a13a36625907dea7ce2c5a9fee87b08479ef5a26043dc6f1140d70818fabbbf",
+  "sealed_p27_salted_commitment": "7abfb79cc02d5d2079fdb56c831bcccb09474b309ea3880bd27b8fced1a922a7"
+}

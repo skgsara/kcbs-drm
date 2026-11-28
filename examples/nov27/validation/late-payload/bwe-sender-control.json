@@ -1,0 +1,372 @@
+{
+  "stock_encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "results": {
+    "synthetic": {
+      "words": 2400,
+      "pcm_sha256": "8947b94fd0a024031a1554fa2f63c637f7bd4bdb8eeefc35c747504e3ac39932",
+      "stock_g192_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+      "all_swb_bwe_classes": {
+        "2": 483,
+        "0": 78
+      },
+      "target_rows": [
+        {
+          "sender_slot": 50,
+          "tag": "001",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 204,
+          "tag": "001",
+          "fec": 2,
+          "bwe": 2,
+          "clas": 3,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 804,
+          "tag": "001",
+          "fec": 2,
+          "bwe": 2,
+          "clas": 3,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 850,
+          "tag": "001",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 1850,
+          "tag": "001",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 2004,
+          "tag": "001",
+          "fec": 2,
+          "bwe": 2,
+          "clas": 3,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 2050,
+          "tag": "001",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        }
+      ]
+    },
+    "speech": {
+      "words": 742,
+      "pcm_sha256": "13508d78391e27c163b9b9c7b2936133fbb7f1903f776fa2f971db0093ba1f13",
+      "stock_g192_sha256": "fb188fe607646bc31774b428ec5652fa210a0b4ecca7bbfd47f2bfd4cc1a1b3d",
+      "all_swb_bwe_classes": {
+        "2": 2
+      },
+      "target_rows": []
+    },
+    "music": {
+      "words": 2400,
+      "pcm_sha256": "d538d45b558588dbe918e3a82faf5c93671c6a7687d8bb97a2eca1d54b73fb92",
+      "stock_g192_sha256": "302a44f00ee12d2110315f9dd6c404c276df734790572089e7283e6f5220df5b",
+      "all_swb_bwe_classes": {},
+      "target_rows": []
+    },
+    "transient_bank": {
+      "words": 12000,
+      "pcm_sha256": "40ddbd6226ffb2cb5d0791d3da63e041955fbd67c884cfc03c69e3c8a18f1e1a",
+      "stock_g192_sha256": "e5f138d84d2209574ca07f1bd822c162e01366559b318a1811b9897967bd0e7a",
+      "all_swb_bwe_classes": {
+        "2": 1694
+      },
+      "target_rows": [
+        {
+          "sender_slot": 100,
+          "tag": "0101",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 4,
+          "explicit_padding": 1,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 3046,
+          "tag": "1",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 1,
+          "explicit_padding": 0,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 4220,
+          "tag": "001",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 4300,
+          "tag": "0101",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 4,
+          "explicit_padding": 1,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 4971,
+          "tag": "0101",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 4,
+          "explicit_padding": 1,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 5721,
+          "tag": "0101",
+          "fec": 1,
+          "bwe": 2,
+          "clas": 1,
+          "tag_width": 4,
+          "explicit_padding": 1,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 6710,
+          "tag": "001",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 7048,
+          "tag": "0101",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 4,
+          "explicit_padding": 1,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 7720,
+          "tag": "001",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 8461,
+          "tag": "0101",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 4,
+          "explicit_padding": 1,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 9115,
+          "tag": "001",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 9800,
+          "tag": "0101",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 4,
+          "explicit_padding": 1,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 10614,
+          "tag": "0101",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 4,
+          "explicit_padding": 1,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 10759,
+          "tag": "1",
+          "fec": 0,
+          "bwe": 2,
+          "clas": 0,
+          "tag_width": 1,
+          "explicit_padding": 0,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": false,
+          "entirely_p27": false
+        },
+        {
+          "sender_slot": 11220,
+          "tag": "001",
+          "fec": 2,
+          "bwe": 2,
+          "clas": 3,
+          "tag_width": 3,
+          "explicit_padding": 2,
+          "fec_location_ok": true,
+          "bwe_location_ok": true,
+          "pad_location_ok": true,
+          "overlaps_p27": true,
+          "entirely_p27": false
+        }
+      ]
+    }
+  },
+  "summary": {
+    "target": 22,
+    "f23": 4,
+    "violations": 0,
+    "eligible_overlaps": 4,
+    "eligible_entire": 0,
+    "pair_histogram": {
+      "0,2": 17,
+      "2,2": 4,
+      "1,2": 1
+    },
+    "subframe_tags": {
+      "001": 12,
+      "0101": 8,
+      "1": 2
+    },
+    "geometry_mismatches": {
+      "fec_location_ok": 0,
+      "bwe_location_ok": 0,
+      "pad_location_ok": 0
+    }
+  }
+}

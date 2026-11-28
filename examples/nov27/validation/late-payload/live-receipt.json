@@ -1,0 +1,288 @@
+{
+  "iq_flac": "7l4iou-6140-20261127T2344Z-iq48.flac",
+  "iq_flac_sha256": "9e53441d5b86725b09302c34805aece6cf6eab9b6c3d08fe74b2a3bb81f928ca",
+  "capture": {
+    "sealed_utc": "2026-11-27T23:47:46.882454+00:00",
+    "wav_sha256": "f2c89afd4dae32c32a9c8b89d10ffcec49cc421aba8f1b712980ed17f89937a6",
+    "complex_IQ_pcm_sha256": "3f86bf10631a7928dfe5cbd131fd1b64c62aaa2ce997998a035566662711aff7",
+    "wav_bytes": 34560044,
+    "station": "7L4IOU Edogawa, Tokyo",
+    "frequency_hz": 6140000,
+    "rate_hz": 48000,
+    "duration_seconds": 180.0,
+    "complex_pair_half_open_range": [
+      0,
+      8640000
+    ],
+    "source_clock_first_sample_estimate_utc": "2026-11-27T23:44:41.583013+00:00",
+    "sample_target_reached": true,
+    "timestamp_jumps_over_one_sample": 0,
+    "max_abs_timestamp_jump_ns": 15191,
+    "recording_receipt_sha256": "be41d2bb2118f95d66245c44f3685188493958fecd82a0831431eeb149485782",
+    "novelty_inventory_sha256": "7f7cb6ea0d6b47b174faf9d2488691125e1408b7e4d97c800cc822b5639e8838",
+    "capture_plan_sha256": "4e5746eae1d35834b6e5bb4bdf286770b096dca0a0f25b0f988b0133045d7ff3",
+    "offline_files_sha256": {
+      "receiver": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+      "demod": "34e424af40907f63bc1791fd2d5effa7431cce3237fea13a0bb04bf0e61d4e98",
+      "salvage": "a9f86d51294a2b61064f8886993881df523eee3a807854a48a511d39f54bc8d4",
+      "resample": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+      "crc_implementation": "e488d2448c484e082c2ee1a06d6a1a79cd7aa38abac3db7ee45da9ebf7b09123"
+    },
+    "runner_sha256": "48cb45f3a71a7596683a20d0b1f37a5002b8f65a190922269c08c6d1d086d256"
+  },
+  "rule_freeze_before_demod": {
+    "pinned_commit": "d53f5402d99f87c0893e5afca02b08af445d9f22",
+    "checked_utc": "2026-11-27T23:52:33.552585+00:00",
+    "files": {
+      "bwe.py": "b1f450196f9874952def97aa85db988a66d307411f4642d1432280668e21c9d1",
+      "protocol.md": "a638617d234e2752b199d04da763d13f9d72a14fbd6d5b0a41f896210faa37eb"
+    },
+    "contingency": "Check actual frozen executable first. In case of KeyError excluded_p27, delete only preidentified unused local lookup. No change to codec prediction, branch or aggregation. Known before demodulation.",
+    "contingency_sha256": "937868b45769c392457dc9cab9f4a19588a7b4c1a693c3a99b6f712131e47826"
+  },
+  "corrected_release_before_result_inspection": {
+    "approved_commit": "b0f51235e2a65b48948714b55347254b107876e3",
+    "accepted_utc": "2026-11-27T23:53:22.335835+00:00",
+    "results_opened_before_corrected_freeze": false,
+    "protocol.md_sha256": "b1892b00ee287af426bdf66bb4d326d6dd3345b5753f8ecf198a0054f90dc971",
+    "bwe.py_sha256": "937868b45769c392457dc9cab9f4a19588a7b4c1a693c3a99b6f712131e47826"
+  },
+  "novelty_historical_exclusions": 12642,
+  "assigned_counter_count": 123,
+  "assigned_counter_range": [
+    43907253,
+    43907399
+  ],
+  "previous_counter_overlap": [],
+  "MSC_records": 443,
+  "by_phase": {
+    "0": {
+      "accepted_DUs_including_incomplete_counters": 112,
+      "complete_group_slots_tested": 1620,
+      "complete_group_bwe_eligible": 0,
+      "mode_octet_counts_in_complete_groups": {
+        "F8": 553,
+        "FF": 23,
+        "F9": 4,
+        "59": 70,
+        "FA": 11,
+        "61": 21,
+        "51": 352,
+        "FE": 83,
+        "62": 9,
+        "5B": 3,
+        "63": 37,
+        "5A": 13,
+        "53": 211,
+        "58": 52,
+        "50": 68,
+        "60": 9,
+        "52": 23,
+        "68": 27,
+        "6A": 29,
+        "69": 22
+      }
+    },
+    "1": {
+      "accepted_DUs_including_incomplete_counters": 91,
+      "complete_group_slots_tested": 1620,
+      "complete_group_bwe_eligible": 0,
+      "mode_octet_counts_in_complete_groups": {
+        "F8": 619,
+        "FD": 3,
+        "59": 76,
+        "58": 60,
+        "5A": 18,
+        "FA": 13,
+        "FF": 19,
+        "FE": 42,
+        "63": 26,
+        "53": 177,
+        "50": 66,
+        "51": 359,
+        "60": 14,
+        "61": 11,
+        "5B": 5,
+        "F9": 11,
+        "52": 15,
+        "62": 9,
+        "69": 26,
+        "68": 27,
+        "6A": 24
+      }
+    },
+    "2": {
+      "accepted_DUs_including_incomplete_counters": 91,
+      "complete_group_slots_tested": 1620,
+      "complete_group_bwe_eligible": 0,
+      "mode_octet_counts_in_complete_groups": {
+        "F8": 572,
+        "FD": 1,
+        "FE": 59,
+        "FF": 13,
+        "59": 78,
+        "51": 348,
+        "FA": 11,
+        "5A": 22,
+        "58": 60,
+        "62": 9,
+        "63": 25,
+        "53": 171,
+        "F9": 10,
+        "60": 6,
+        "52": 20,
+        "61": 28,
+        "50": 66,
+        "5B": 2,
+        "6A": 35,
+        "69": 33,
+        "68": 51
+      }
+    }
+  },
+  "accepted_DU_counters": 120,
+  "packet_only_counters": [
+    43907276,
+    43907379,
+    43907399
+  ],
+  "all_complete_groups": 81,
+  "complete_group_first_last": [
+    43907255,
+    43907397
+  ],
+  "primary_counter": 43907255,
+  "primary_DU_provenance": {
+    "0": {
+      "phase": 0,
+      "physical_row_sets_for_four_packets": [
+        [
+          8
+        ],
+        [
+          8
+        ],
+        [
+          8
+        ],
+        [
+          8
+        ]
+      ],
+      "packet_crc16": [
+        "703b",
+        "a2bf",
+        "7202",
+        "6cf1"
+      ],
+      "du_crc16": "561c",
+      "du_sha256": "6cd781999f170427bde90704d01c2fcafeef49910bc8a10f19c3a43db8e292ad"
+    },
+    "1": {
+      "phase": 1,
+      "physical_row_sets_for_four_packets": [
+        [
+          9
+        ],
+        [
+          9
+        ],
+        [
+          9
+        ],
+        [
+          9
+        ]
+      ],
+      "packet_crc16": [
+        "e2b6",
+        "c4e3",
+        "e145",
+        "8eb1"
+      ],
+      "du_crc16": "8203",
+      "du_sha256": "d191c3e4b91dffcf2dd8dc755454225a4f35af87747d0cd21e3b51452f14ae41"
+    },
+    "2": {
+      "phase": 2,
+      "physical_row_sets_for_four_packets": [
+        [
+          10
+        ],
+        [
+          10
+        ],
+        [
+          10
+        ],
+        [
+          10
+        ]
+      ],
+      "packet_crc16": [
+        "af91",
+        "dad6",
+        "7ef4",
+        "5577"
+      ],
+      "du_crc16": "9c5a",
+      "du_sha256": "06575a766c832529430092a0a9f747c37b2a5acfbbc145c7aac083a1d66af1ac"
+    }
+  },
+  "primary_mode_octets": {
+    "F8": 57,
+    "FD": 3
+  },
+  "all_complete_mode_octets": {
+    "F8": 1744,
+    "FD": 4,
+    "FF": 55,
+    "FE": 184,
+    "F9": 25,
+    "59": 224,
+    "FA": 35,
+    "61": 60,
+    "51": 1059,
+    "62": 27,
+    "5B": 10,
+    "58": 172,
+    "5A": 53,
+    "63": 88,
+    "53": 559,
+    "50": 200,
+    "60": 29,
+    "52": 58,
+    "68": 105,
+    "6A": 88,
+    "69": 81
+  },
+  "packet_occurrences_raw_CRC_header_body_verified": 1176,
+  "accepted_DUs_CRC_valid": 294,
+  "primary_field_results": {},
+  "aggregate_field_results": {},
+  "primary_abstained": 60,
+  "all_abstained": 4860,
+  "identical_for_each_position_1_to_4": {
+    "primary": {
+      "received_complete_transport_slots": 15,
+      "direct_bits": 2640,
+      "unresolved_clear_bits": 1320,
+      "complete_clear_words": 0
+    },
+    "all_complete_groups": {
+      "received_complete_transport_slots": 1215,
+      "direct_bits": 213840,
+      "unresolved_clear_bits": 106920,
+      "complete_clear_words": 0
+    }
+  },
+  "digest_sha256": {
+    "received/receiver/msc.bin": "629b172bc64fcebadc4fbdd13d3ad470031c8145c8e0fa8f49123504ed566e94",
+    "received/transport/data_units.npz": "15a3da86a9feca1fb6465cbeb7de442575363da7ef433c80e459cd77c148f8fb",
+    "received/transport/groups.npz": "5fd6efb2739f64f16be7cdf18c59beb88c86d7493ebe2f716ebcdd895c836df2",
+    "field-score.json": "259a4f5d8563c8cbff9337691b2dfed88a96fbb454cc84d4cd7a1e21abbdc346",
+    "received/novelty-receipt.json": "f24fca8b3d3a8aa712c0411744ef5922975b1e012bc6ffa96579a32ddcffe5c2",
+    "sealed-receipt.json": "9b906fde670c3bdabc78b48d67956d4f2a11972fa962a8833cb4fab12920fdb8",
+    "flac-receipt.json": "983bccc0b84d063a77fc17c3961f7e9a51e50999c9e7ea33ee1243115f2b79bb"
+  }
+}

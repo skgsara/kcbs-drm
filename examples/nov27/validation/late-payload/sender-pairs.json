@@ -1,0 +1,155 @@
+{
+  "encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "source": "synthetic PCM at 32000 Hz, mono signed little-endian 16 bit",
+  "stock_options": [
+    "-q",
+    "-no_delay_cmp",
+    "-max_band",
+    "SWB",
+    "13200",
+    "32"
+  ],
+  "omitted_payload_offsets": [
+    15,
+    18,
+    21,
+    24,
+    27,
+    30
+  ],
+  "matching_word_octets_per_projection": 27,
+  "cases": {
+    "acelp_p24": {
+      "slot_zero_based": 1,
+      "position": 2,
+      "total_words_per_input": 3,
+      "mode_hex": "61",
+      "payload_offset": 24,
+      "differing_word_bit_msb_first": 207,
+      "differing_octets_hex": [
+        "BC",
+        "BD"
+      ],
+      "full_words_hex": [
+        "6149930999df44272a9f415f66145652a73b8a09f4597b5516bc1501a97a975848",
+        "6149930999df44272a9f415f66145652a73b8a09f4597b5516bd1501a97a975848"
+      ],
+      "matching_projection_hex": "6149930999df44272a9f415f661456523b8af459551615017a9748",
+      "input_stream_hashes": [
+        {
+          "g192_sha256": "37adef208f1d140d15f29d754e6c537aaa7ac46e60d60826e293fd255d1424aa",
+          "mime_sha256": "ad9ae59b9ec430314aa61fc0681a3cde71a3e5fb985b49d29bcbe4ac155f9fc0",
+          "input_pcm_sha256": "d646a5a499b494dc6cdb2eba3473f05c97d43c6fccd291e43769cf05bbf4ca5c"
+        },
+        {
+          "g192_sha256": "f80fb892841218d95eec24610f1e3d7cc59e6debdc306575d916d18003486951",
+          "mime_sha256": "a40146517493a3de827d13e650209e499c1c53a31447aad40ee093a22c30007e",
+          "input_pcm_sha256": "ae7382f8cc836910af30ab39a73d48b3cd1e813cd180b76ac6d36990b6b5c5ed"
+        }
+      ],
+      "changed_pcm_samples": 82,
+      "first_changed_pcm_sample": 803,
+      "last_changed_pcm_sample": 963,
+      "identical_preceding_run": 1,
+      "identical_following_run": 0,
+      "adjacent_word_sha256": {
+        "slot_0": [
+          "32c0964ab60a525d2249740df1a89ce806df0ef127c2a341f076057779a1b4f9",
+          "32c0964ab60a525d2249740df1a89ce806df0ef127c2a341f076057779a1b4f9"
+        ],
+        "slot_2": [
+          "18afe39b2059dc30eb8a50f50569bfab92f13e57272837ee4302679a95324eca",
+          "f517ba78bc5188819fb6a1d5abd4370e1beec92a26a1e2b4b97b2e28efde8568"
+        ]
+      }
+    },
+    "acelp_p27": {
+      "slot_zero_based": 1,
+      "position": 2,
+      "total_words_per_input": 3,
+      "mode_hex": "5A",
+      "payload_offset": 27,
+      "differing_word_bit_msb_first": 231,
+      "differing_octets_hex": [
+        "D2",
+        "D3"
+      ],
+      "full_words_hex": [
+        "5a89f2bb093a159808e3543e3364ecb73a37beaf3bccf8383240e87cd2f96b1894",
+        "5a89f2bb093a159808e3543e3364ecb73a37beaf3bccf8383240e87cd3f96b1894"
+      ],
+      "matching_projection_hex": "5a89f2bb093a159808e3543e3364ecb737be3bcc3832e87cf96b94",
+      "input_stream_hashes": [
+        {
+          "g192_sha256": "68fda9e7777713ebb2fa612970cbc1a5d3017a5fb716a7cef07a2a2e92dabf1f",
+          "mime_sha256": "15a77ddf8e5772e916ec703ef36f8d8c05fd7c659214a7c0d3b089554e0d6958",
+          "input_pcm_sha256": "ab1e36f6fbbd34a6a4f0f69457fd6a5de2678195e41e0eb9afb9fd3b4322d760"
+        },
+        {
+          "g192_sha256": "6fc63ca47a81cfa8456ad6e9b3a01181bc60486b64c97677769d56ec1cc907d4",
+          "mime_sha256": "d6f0ab074d94e5cd8f3d56da9151969c838052d9c69555088f97677f34235666",
+          "input_pcm_sha256": "5b89ac68a75fcf8cad46eb3dea4506a89c638f88119c9bd8bb9dedd4049e9bd6"
+        }
+      ],
+      "changed_pcm_samples": 46,
+      "first_changed_pcm_sample": 890,
+      "last_changed_pcm_sample": 961,
+      "identical_preceding_run": 1,
+      "identical_following_run": 0,
+      "adjacent_word_sha256": {
+        "slot_0": [
+          "3ba315c90bc0637717bea00af6abca71c3a55b7517f4482e16a16b161215ddb3",
+          "3ba315c90bc0637717bea00af6abca71c3a55b7517f4482e16a16b161215ddb3"
+        ],
+        "slot_2": [
+          "4fec5ad6a0e41a598b9e32d7f0030cac56707251a20f8f2c1003787cec46675f",
+          "2fa4d4408b8edcb86cac7ff661c370039d69e80fadc7948aa2b82a23d04f44e9"
+        ]
+      }
+    },
+    "tcx20_p27": {
+      "slot_zero_based": 9,
+      "position": 2,
+      "total_words_per_input": 84,
+      "mode_hex": "FE",
+      "payload_offset": 27,
+      "differing_word_bit_msb_first": 229,
+      "differing_octets_hex": [
+        "FF",
+        "FB"
+      ],
+      "full_words_hex": [
+        "fe9f91d6cb4a1a1c7ebdfdba3692d86013000271a473e013c60169aaffbccc8787",
+        "fe9f91d6cb4a1a1c7ebdfdba3692d86013000271a473e013c60169aafbbccc8787"
+      ],
+      "matching_projection_hex": "fe9f91d6cb4a1a1c7ebdfdba3692d8600002a47313c669aabccc87",
+      "input_stream_hashes": [
+        {
+          "g192_sha256": "a94d686a5cd56e26616eb3b3c3fd88fa4c86f29456f2ef7d68e1d4f9d687f5f9",
+          "mime_sha256": "8bebd5f2bd4f0580074f1b2d23c88d968ea4d5f16c8a0734fe7173b9d3bc24d6",
+          "input_pcm_sha256": "1b41463baa8a5478a6da2e0792ff2fc41a36c631060bb78d2907c48197e0266d"
+        },
+        {
+          "g192_sha256": "c0e3934517166ef97b3d948968802036c43cf592fc838a30a6396540e54eafd5",
+          "mime_sha256": "5c7400108724567e05be238185c877f4da0984aeb7e25d6d387585b95d5e8b60",
+          "input_pcm_sha256": "6ab36f87801e0d4f84c08ef779ca7d879c87832f16d443b2838266926918e2d2"
+        }
+      ],
+      "changed_pcm_samples": 1,
+      "first_changed_pcm_sample": 5626,
+      "last_changed_pcm_sample": 5626,
+      "identical_preceding_run": 9,
+      "identical_following_run": 2,
+      "adjacent_word_sha256": {
+        "slot_8": [
+          "a23bb0b625dc88f4b3a43432d9edcd038b18311fdba0447d465e2c0bfeacb2c7",
+          "a23bb0b625dc88f4b3a43432d9edcd038b18311fdba0447d465e2c0bfeacb2c7"
+        ],
+        "slot_10": [
+          "1323527172dfcf274e47d63a6d915adc934764feaa6ccca64ead8bf35b0d7dbe",
+          "1323527172dfcf274e47d63a6d915adc934764feaa6ccca64ead8bf35b0d7dbe"
+        ]
+      }
+    }
+  }
+}
