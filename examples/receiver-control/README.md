@@ -52,3 +52,7 @@ cmp "$field/coverage.json" /tmp/clear-drm-coverage.json
 ## Damaged packets in on-air recordings
 
 Two channel estimates from the same IQ recovered three physical packets in the 6140 kHz development recording. A second station recorded all three packets byte-for-byte. A further 3205 kHz trial used the frozen receiver on a locally unopened interval and checked its one complete packet proposal against a third demodulation. The reports include the four-position EVS results, the costs of accepting individual bytes from failed packets, and a synthetic case where a unique CRC solution still contains errors. [Independent station comparison](disagreement/README.md) · [Frozen field test](agreed-bytes/README.md)
+
+## What an audio match verifies
+
+Fixed-point and floating-point 3GPP senders produced different complete words at 33 aligned slots where their original PCM inputs and the receiver's 22 observed octets agreed. Four substitutions using those official words produced exactly the same 55.2 seconds of decoded output, individually and in every combination. A single-bit positive control on a synthetic impulse produced a 9.03 dB change in the target frame's RMS level. [Word comparisons, playback results and source files](reference-ambiguity/README.md)
