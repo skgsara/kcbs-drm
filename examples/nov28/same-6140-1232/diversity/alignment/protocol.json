@@ -1,0 +1,8 @@
+{
+  "source": "Previously reported November 28 12:32 UTC 6140 kHz, Edogawa and Yokohama only",
+  "coordinate": "Old native MSC dump record number, starting at zero. Positive delta = Yokohama record number minus Edogawa record number.",
+  "strong_pair": "An identical 182-byte physical packet at the same ordinal passes the expected local wire header and its CRC in both original dumps, and occurs in only one row in each dump. Its row pair must be one-to-one, obey all other direct witnesses, and agree with both old station coordinate ledgers where available.",
+  "eligibility": "Direct row pairs only. Do not interpolate or extrapolate. Already matching source packets are alignment witnesses and are not newly recovered. Only count verified output not already accepted at either site toward a net gain.",
+  "split": "Using only original Edogawa native record numbers: calibration [0,72), guard [72,84), evaluation [84,EOF). The guard is 12 records or nominal 4.8 s, ensuring disjoint three-phase groups. No evaluation for rows without an independent same-slot match. Do not select or change these ranges based on new symbol, decoder, or CRC outcomes.",
+  "time_basis": "These ranges are index bounds in original observed receiver output. No claim of continuous RF time over missing records."
+}

@@ -1,0 +1,51 @@
+{
+  "protocol_sha256": "df1202c8721b69536db941f761086b13aa6e2b5e3718c2f738d4dd923eef645d",
+  "row_map_sha256": "31605d50dea3f9a89ef9fef1b351eedfbb882a234b93038473e23331d8e30207",
+  "stations": {
+    "edogawa": {
+      "msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+      "packets_sha256": "8eb521c769f27344fb0b5b813de2d298e1b53ef03588a41540602daf775ff9be",
+      "native_rows": 218,
+      "assigned_packets": 288
+    },
+    "yokohama": {
+      "msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+      "packets_sha256": "ee0eb383de5fcf07121583752894e6226dba58dd5340bd37de983827fa7c39fd",
+      "native_rows": 220,
+      "assigned_packets": 806
+    }
+  },
+  "shared_assigned_packet_coordinates": 277,
+  "distinct_matching_wires": 444,
+  "ambiguous_matching_wires": 0,
+  "witnessed_row_count": 135,
+  "row_offset_counts": {
+    "3": 135
+  },
+  "cohorts": {
+    "calibration": {
+      "rows": 55,
+      "quarters": 220,
+      "raw_joint": 169,
+      "raw_edogawa_only": 0,
+      "raw_yokohama_only": 51,
+      "raw_neither": 0
+    },
+    "guard": {
+      "rows": 7,
+      "quarters": 28,
+      "raw_joint": 20,
+      "raw_edogawa_only": 0,
+      "raw_yokohama_only": 8,
+      "raw_neither": 0
+    },
+    "evaluation": {
+      "rows": 73,
+      "quarters": 292,
+      "raw_joint": 255,
+      "raw_edogawa_only": 6,
+      "raw_yokohama_only": 29,
+      "raw_neither": 2
+    }
+  }
+}
