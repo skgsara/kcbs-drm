@@ -1,0 +1,11 @@
+{
+  "format": "mode-ledger-seal-v1",
+  "sealed_utc": "2026-11-28T14:34:35.108518+00:00",
+  "protocol_commit": "6dd120ec964b8d10438c73f9db1cd1351be74126",
+  "source_receipt_sha256": "05ca35de653a43b75282958baef9d0384ecdcd341e7d935abb8ab4eccab28f87",
+  "msc_sha256": "000ed3e7333cf04b9b5ea733d8acf25fa567486e3e45a19d9ba70a64edf7cbc6",
+  "check_py_sha256": "725e435d6a9ac3bafa179dd0112c9fa038d35069dea0aa04325c5c148ab904a1",
+  "forecasts_sha256": "f4b7fcafab4a050ee236c69029533e0f4a793140c0aaed0554a4da811bd59017",
+  "selection": "First complete directly received three-phase group in native callback order, regardless of inventory overlap.",
+  "source_of_predictions": "The existing published mode_predictions via score_fields.forecasts, applied only to available mode octets. This ledger digest was communicated before the target fields were opened."
+}

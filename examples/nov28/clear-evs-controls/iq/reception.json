@@ -1,0 +1,78 @@
+{
+  "source": "10min-2026-11-27T12_15_02Z_3205.00_iq.wav",
+  "source_sha256": "8ba5576dc9ab560c14a1de3b7def1a176c2f3e95010dfabe890ab002f40bb624",
+  "source_bytes": 29360172,
+  "source_sample_pairs": 7330304,
+  "source_declared_wave_chunks": [
+    "fmt ",
+    "data"
+  ],
+  "station_timestamps": false,
+  "complex_rate_hz": 12000,
+  "pcm": "signed 16-bit little-endian I and Q",
+  "sample_range_half_open": [
+    2880000,
+    4320000
+  ],
+  "source_seconds_half_open": [
+    240,
+    360
+  ],
+  "source_data_file_bytes_half_open": [
+    11520044,
+    17280044
+  ],
+  "sample_pairs": 1440000,
+  "recording_label": "2026-11-27T12:15:02Z, 3205 kHz from filename",
+  "nominal_utc_from_label": [
+    "2026-11-27T12:19:02Z",
+    "2026-11-27T12:21:02Z"
+  ],
+  "clock_limit": "No UTC timeline is embedded in the declared WAV. These UTC bounds assume nominal 12 kHz and the filename start. Sample indices specify the receiver input.",
+  "flac": "3205kHz-240-360s-iq12.flac",
+  "flac_sha256": "c5c1409123ac201218f5047a13cefee9fc3a638bb7d7fec52b91ab0638c84620",
+  "pcm_sha256": "06f28fc2d2dffa909d984534abc8d3c9771b7f5232a0f992481dc91c40d8839a",
+  "protocol_revision": "6dd120ec964b8d10438c73f9db1cd1351be74126",
+  "published_receiver_revision": "ec2a623d6a5a5a90d0aec80bdf1c3e8871e0fa79",
+  "receiver": {
+    "native_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+    "command": [
+      "python",
+      "scripts/demod_iq_window.py",
+      "ORIGINAL.wav",
+      "NEW_DIRECTORY",
+      "--start",
+      "240",
+      "--seconds",
+      "120",
+      "--reception-profile",
+      "wiener",
+      "--mlc-iterations",
+      "1"
+    ],
+    "receiver_settings": {
+      "freqint": 2,
+      "timeint": 1,
+      "modmetric": 0,
+      "mlciter": 1
+    },
+    "nominal_offset_hz": 0.0,
+    "cold_passes": 1,
+    "returncode": 0,
+    "native_physical_eof": true
+  },
+  "receiver_input_dtype": "float32 stereo from signed PCM16; scipy.signal.resample_poly from 12 to 48 kHz before Dream",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "soundfile": "0.14.0",
+    "libsndfile": "1.2.2"
+  },
+  "msc": "native.msc.bin",
+  "msc_sha256": "000ed3e7333cf04b9b5ea733d8acf25fa567486e3e45a19d9ba70a64edf7cbc6",
+  "msc_bytes": 215940,
+  "history_sha256": "2a58d5882998ff422e684295664b328f7c443c03d3be728016a64509c765f363",
+  "history_count": 14958,
+  "prior_use": "Two local receiver passes covered the opening 120 s. The contributor had already reported 932 CRC-good data units and 30,360 slots from this recording. The present sample range was held out from the local field test."
+}

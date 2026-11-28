@@ -1,0 +1,42 @@
+{
+  "decoder_sha256": "df0e37ad8f34e4571c2aa232f818eb786b8cf00184819ba0645881ab6b0a8f07",
+  "total_pcm_samples": 4659200,
+  "reference_pcm_exact": {
+    "testvec/testv/bitstreams/nb/stv8c_13200_8kHz.COD": {
+      "pcm_samples": 441600,
+      "pcm_sha256": "297b3b1938193937b6de8b657d64e57127eb1bf1f7a851a55412b1642e18dd01"
+    },
+    "testvec/testv/bitstreams/swb/stv32c_13200_32kHz.COD": {
+      "pcm_samples": 1766400,
+      "pcm_sha256": "e35a3695b004cab9116d6deee830a441d97b1ab0a78fb7de95ce24fe1a5bbc02"
+    },
+    "testvec/testv/bitstreams/wb/stv16c_13200_16kHz.COD": {
+      "pcm_samples": 883200,
+      "pcm_sha256": "73e27ba2790f85cde1dcfdba976b73987af598dd3fb3069f8cf5c55a0e491bf3"
+    },
+    "testvec/testv/bitstreams/nb/stv8n1_13200_8kHz.COD": {
+      "pcm_samples": 112000,
+      "pcm_sha256": "4ef74b3750d99a6f486724afc17418100f254a48db4a5d842a616c4f513f05e4"
+    },
+    "testvec/testv/bitstreams/nb/stv8n2_13200_8kHz.COD": {
+      "pcm_samples": 112000,
+      "pcm_sha256": "d5e3392fdffcbe2bf86b068d841edc6b9f0c4a8c7f4596cf9606a3045d6b14d3"
+    },
+    "testvec/testv/bitstreams/swb/stv32n1_13200_32kHz.COD": {
+      "pcm_samples": 448000,
+      "pcm_sha256": "869d9696a7b7e1a348cc32d8eef00f397a016f6af3974e873765f226a1a907c2"
+    },
+    "testvec/testv/bitstreams/swb/stv32n2_13200_32kHz.COD": {
+      "pcm_samples": 448000,
+      "pcm_sha256": "ac354ded6582c89f36b2afc161679e2abacd4d5d1a658a51f0865c17eca695d5"
+    },
+    "testvec/testv/bitstreams/wb/stv16n1_13200_16kHz.COD": {
+      "pcm_samples": 224000,
+      "pcm_sha256": "3b9dfcaa4c1bb2856a6154365bfdfec2dc1898508f96748eae792d4134a9f369"
+    },
+    "testvec/testv/bitstreams/wb/stv16n2_13200_16kHz.COD": {
+      "pcm_samples": 224000,
+      "pcm_sha256": "9b8c4367b513e5171bd1f18ace8d607e56166b014cd66ba85db652aebd428762"
+    }
+  }
+}
