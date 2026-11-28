@@ -1,0 +1,261 @@
+{
+  "format": "stock-evs-repeated-programme-v1",
+  "encoder_options": [
+    "-q",
+    "-no_delay_cmp",
+    "-max_band",
+    "SWB",
+    "13200",
+    "32"
+  ],
+  "pcm_rate_hz": 32000,
+  "samples_per_20ms_word": 640,
+  "programme_slots": 300,
+  "direct_physical_word_octets": [
+    0,
+    2,
+    3,
+    5,
+    6,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    17,
+    18,
+    20,
+    21,
+    23,
+    24,
+    26,
+    27,
+    29,
+    30,
+    32
+  ],
+  "encoder_executable_sha256": "a69deeb448bb3e5f9303e8f3a4a558d47776ec403bbd268b416993f08a436ff2",
+  "source_encodes": {
+    "original": {
+      "pcm_samples": 192000,
+      "input_pcm_sha256": "1b7ba2a94dd8dced2345ccb43c0d1277b0c87a7c1b44749c46a530cc50f850a2",
+      "g192_sha256": "3bdc82760c3a8ce58b66d134589962be34c18bfbb65e7b84a7ed72788cb61e77",
+      "encoded_words": 300
+    },
+    "exact_replay": {
+      "pcm_samples": 192000,
+      "input_pcm_sha256": "1b7ba2a94dd8dced2345ccb43c0d1277b0c87a7c1b44749c46a530cc50f850a2",
+      "g192_sha256": "3bdc82760c3a8ce58b66d134589962be34c18bfbb65e7b84a7ed72788cb61e77",
+      "encoded_words": 300
+    },
+    "grid_plus_1ms": {
+      "pcm_samples": 192000,
+      "input_pcm_sha256": "745e6f13d2d695e4dc0cb208707702637c803d03c4341c95328c467c4e019dc9",
+      "g192_sha256": "64e4860670a6f36856358cc6e30f45cabd959187434b8d50ef9a330e8367ccf9",
+      "encoded_words": 300
+    },
+    "grid_plus_10ms": {
+      "pcm_samples": 192000,
+      "input_pcm_sha256": "022d6845d8a242923b02722a4809ef6ca0ae6a548e4b21be2bfb684e19a0def3",
+      "g192_sha256": "9321961c76ea3adccb2e502c958e096ce3ff4f868e263522939c7a33e3f6c2a3",
+      "encoded_words": 300
+    },
+    "half_amplitude": {
+      "pcm_samples": 192000,
+      "input_pcm_sha256": "ebb6fedd7338d3f308add8463867564c15cb782e0170947a9a105e5f6b38c4d2",
+      "g192_sha256": "3eebad2c5d1e3b3bb6a9955429f686def5e4d398fd4c4dce0336b348001fa694",
+      "encoded_words": 300
+    },
+    "zero_history": {
+      "pcm_samples": 224000,
+      "input_pcm_sha256": "305418caa52aa8248861fcfa5790812a47bb627548d44b985e41b245445e87bf",
+      "g192_sha256": "236e08f7ab5b323faa548fb08321fd2a64fefd6bd2ea59673506caee6c2397a3",
+      "encoded_words": 350
+    },
+    "melody_history": {
+      "pcm_samples": 224000,
+      "input_pcm_sha256": "f123b9fef21268d913021d316e59c8941e9f92f809ee5bc2ea14710781cf49de",
+      "g192_sha256": "da7ff737b47de2a0b29dc71543b8f5b496a20a00a409a987ce5edf78ee9d4b81",
+      "encoded_words": 350
+    }
+  },
+  "comparison_basis": "All pairs use the same programme-relative slot ordinal, fixed without inspecting words. A +32/+320 sample origin shifts every 20 ms encoder input window; those clocks have no coincident boundary. The PCM overlap compares identical original sample coordinates. At +320 samples, equal ordinals select the earlier of two equidistant reference boundaries. The history comparison omits the first 50 encoded preamble words on both sides.",
+  "comparisons": {
+    "exact_replay": {
+      "reference_stream": "original",
+      "tested_stream": "exact_replay",
+      "reference_first_programme_slot": 0,
+      "tested_first_programme_slot": 0,
+      "tested_pcm_origin_minus_reference_samples": 0,
+      "aligned_pcm_overlap_samples": 192000,
+      "aligned_overlap_pcm_exact": true,
+      "full": {
+        "slots_half_open": [
+          0,
+          300
+        ],
+        "compared": 300,
+        "equal_local_pcm_windows": 300,
+        "equal_modes": 300,
+        "equal_22_direct_octet_views": 300,
+        "equal_full_33_octet_words": 300,
+        "first_different_full_word": null,
+        "last_different_full_word": null
+      },
+      "interior": {
+        "slots_half_open": [
+          50,
+          250
+        ],
+        "compared": 200,
+        "equal_local_pcm_windows": 200,
+        "equal_modes": 200,
+        "equal_22_direct_octet_views": 200,
+        "equal_full_33_octet_words": 200,
+        "first_different_full_word": null,
+        "last_different_full_word": null
+      }
+    },
+    "grid_plus_1ms": {
+      "reference_stream": "original",
+      "tested_stream": "grid_plus_1ms",
+      "reference_first_programme_slot": 0,
+      "tested_first_programme_slot": 0,
+      "tested_pcm_origin_minus_reference_samples": 32,
+      "aligned_pcm_overlap_samples": 191968,
+      "aligned_overlap_pcm_exact": true,
+      "full": {
+        "slots_half_open": [
+          0,
+          300
+        ],
+        "compared": 300,
+        "equal_local_pcm_windows": 0,
+        "equal_modes": 292,
+        "equal_22_direct_octet_views": 0,
+        "equal_full_33_octet_words": 0,
+        "first_different_full_word": 0,
+        "last_different_full_word": 299
+      },
+      "interior": {
+        "slots_half_open": [
+          50,
+          250
+        ],
+        "compared": 200,
+        "equal_local_pcm_windows": 0,
+        "equal_modes": 196,
+        "equal_22_direct_octet_views": 0,
+        "equal_full_33_octet_words": 0,
+        "first_different_full_word": 50,
+        "last_different_full_word": 249
+      }
+    },
+    "grid_plus_10ms": {
+      "reference_stream": "original",
+      "tested_stream": "grid_plus_10ms",
+      "reference_first_programme_slot": 0,
+      "tested_first_programme_slot": 0,
+      "tested_pcm_origin_minus_reference_samples": 320,
+      "aligned_pcm_overlap_samples": 191680,
+      "aligned_overlap_pcm_exact": true,
+      "full": {
+        "slots_half_open": [
+          0,
+          300
+        ],
+        "compared": 300,
+        "equal_local_pcm_windows": 0,
+        "equal_modes": 270,
+        "equal_22_direct_octet_views": 0,
+        "equal_full_33_octet_words": 0,
+        "first_different_full_word": 0,
+        "last_different_full_word": 299
+      },
+      "interior": {
+        "slots_half_open": [
+          50,
+          250
+        ],
+        "compared": 200,
+        "equal_local_pcm_windows": 0,
+        "equal_modes": 184,
+        "equal_22_direct_octet_views": 0,
+        "equal_full_33_octet_words": 0,
+        "first_different_full_word": 50,
+        "last_different_full_word": 249
+      }
+    },
+    "half_amplitude": {
+      "reference_stream": "original",
+      "tested_stream": "half_amplitude",
+      "reference_first_programme_slot": 0,
+      "tested_first_programme_slot": 0,
+      "tested_pcm_origin_minus_reference_samples": 0,
+      "aligned_pcm_overlap_samples": 192000,
+      "aligned_overlap_pcm_exact": false,
+      "full": {
+        "slots_half_open": [
+          0,
+          300
+        ],
+        "compared": 300,
+        "equal_local_pcm_windows": 0,
+        "equal_modes": 299,
+        "equal_22_direct_octet_views": 0,
+        "equal_full_33_octet_words": 0,
+        "first_different_full_word": 0,
+        "last_different_full_word": 299
+      },
+      "interior": {
+        "slots_half_open": [
+          50,
+          250
+        ],
+        "compared": 200,
+        "equal_local_pcm_windows": 0,
+        "equal_modes": 200,
+        "equal_22_direct_octet_views": 0,
+        "equal_full_33_octet_words": 0,
+        "first_different_full_word": 50,
+        "last_different_full_word": 249
+      }
+    },
+    "melody_history": {
+      "reference_stream": "zero_history",
+      "tested_stream": "melody_history",
+      "reference_first_programme_slot": 50,
+      "tested_first_programme_slot": 50,
+      "tested_pcm_origin_minus_reference_samples": 0,
+      "aligned_pcm_overlap_samples": 192000,
+      "aligned_overlap_pcm_exact": true,
+      "full": {
+        "slots_half_open": [
+          0,
+          300
+        ],
+        "compared": 300,
+        "equal_local_pcm_windows": 300,
+        "equal_modes": 294,
+        "equal_22_direct_octet_views": 245,
+        "equal_full_33_octet_words": 245,
+        "first_different_full_word": 0,
+        "last_different_full_word": 161
+      },
+      "interior": {
+        "slots_half_open": [
+          50,
+          250
+        ],
+        "compared": 200,
+        "equal_local_pcm_windows": 200,
+        "equal_modes": 200,
+        "equal_22_direct_octet_views": 171,
+        "equal_full_33_octet_words": 171,
+        "first_different_full_word": 79,
+        "last_different_full_word": 161
+      }
+    }
+  }
+}

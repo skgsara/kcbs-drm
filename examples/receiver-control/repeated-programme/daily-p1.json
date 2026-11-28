@@ -1,0 +1,98 @@
+{
+  "scope": "All CRC-valid, complete DUs in these files, including portions outside the common time of day. Only first-position mode and the 21 directly readable payload octets are compared. Multi-frame strings use consecutive first positions within a single DU. Exact equality is tested without fixing a daily start offset. No concealed audio contributes.",
+  "morning_captures": {
+    "left": [
+      {
+        "file": "contrib/kcbsdrm/reference/sf_2026-11-25_0448KST_3205_hik.bin",
+        "sha256": "5d1630fdeb585b343f1d7e6a7134741f39deef3f96ebc714777c348390740be0",
+        "accepted_complete_dus": 1709
+      },
+      {
+        "file": "contrib/kcbsdrm/reference/sf_2026-11-25_0457KST_3205_hik.bin",
+        "sha256": "c0ff7cfb023c45e065ec3745d90a3accac35aa873f1fa5244906409da36a811e",
+        "accepted_complete_dus": 3021
+      }
+    ],
+    "right": [
+      {
+        "file": "contrib/kcbsdrm/reference/sf_2026-11-26_0500KST_3205_hl5ntr.bin",
+        "sha256": "4eaa8c8e2119dd817cad676273f5b5c2eb1a66067c4447b550c85f6a248ca6a0",
+        "accepted_complete_dus": 1674
+      }
+    ],
+    "comparisons": [
+      {
+        "first_position_frames": 1,
+        "bytes_per_comparison": 22,
+        "left_observations": 23650,
+        "right_observations": 8370,
+        "left_distinct": 20190,
+        "right_distinct": 7185,
+        "identical_distinct_strings": 0
+      },
+      {
+        "first_position_frames": 2,
+        "bytes_per_comparison": 44,
+        "left_observations": 18920,
+        "right_observations": 6696,
+        "left_distinct": 16152,
+        "right_distinct": 5748,
+        "identical_distinct_strings": 0
+      },
+      {
+        "first_position_frames": 5,
+        "bytes_per_comparison": 110,
+        "left_observations": 4730,
+        "right_observations": 1674,
+        "left_distinct": 4038,
+        "right_distinct": 1437,
+        "identical_distinct_strings": 0
+      }
+    ]
+  },
+  "same_transmission_control": {
+    "left": [
+      {
+        "file": "examples/nov28/same-6140-1232/edogawa-msc.bin",
+        "sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+        "accepted_complete_dus": 82
+      }
+    ],
+    "right": [
+      {
+        "file": "examples/nov28/same-6140-1232/yokohama-msc.bin",
+        "sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+        "accepted_complete_dus": 206
+      }
+    ],
+    "comparisons": [
+      {
+        "first_position_frames": 1,
+        "bytes_per_comparison": 22,
+        "left_observations": 410,
+        "right_observations": 1030,
+        "left_distinct": 410,
+        "right_distinct": 1030,
+        "identical_distinct_strings": 400
+      },
+      {
+        "first_position_frames": 2,
+        "bytes_per_comparison": 44,
+        "left_observations": 328,
+        "right_observations": 824,
+        "left_distinct": 328,
+        "right_distinct": 824,
+        "identical_distinct_strings": 320
+      },
+      {
+        "first_position_frames": 5,
+        "bytes_per_comparison": 110,
+        "left_observations": 82,
+        "right_observations": 206,
+        "left_distinct": 82,
+        "right_distinct": 206,
+        "identical_distinct_strings": 80
+      }
+    ]
+  }
+}
