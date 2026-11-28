@@ -1,0 +1,781 @@
+{
+  "source_offsets_seconds": [
+    2559,
+    2548
+  ],
+  "mono_8khz_pcm_sha256": [
+    "b6a4e3293edd29f12a781174051cae64a089d88f1c78006040421e5009c8222a",
+    "31410f3d121e6ab1ba51f79e3152caababf823b393a55a1a77cc2daa046a05b7"
+  ],
+  "seconds": 300,
+  "spectral_bands": 18,
+  "low_high_hz": [
+    180,
+    3400
+  ],
+  "grid_seconds": 0.05,
+  "calibration_seconds": [
+    60,
+    120
+  ],
+  "convention": "Within the nominal 05:00 excerpts, Nov20 time equals Nov19 time plus the fitted lag.",
+  "scope": "Signed waveform observations on this archive pair preceded this independent feature check. Thresholds are descriptive. Each score covers active frames of the indicated 10 s bin.",
+  "feature": "Bandwise Pearson correlations of 200 ms differences in log-Hann spectral power. Average active bands. Fit one constant lag on 05:01:00\u201305:02:00; keep it fixed on all other bins.",
+  "qualifies": "At least 0.30 and 0.10 above every available forced wrong-time score.",
+  "cross_day": {
+    "lag_seconds": 10.45,
+    "fit": 0.7616,
+    "separated_calibration_peaks": [
+      [
+        10.45,
+        0.7616
+      ],
+      [
+        -32.2,
+        0.5191
+      ],
+      [
+        -51.95,
+        0.4557
+      ],
+      [
+        -9.3,
+        0.3197
+      ],
+      [
+        53.4,
+        0.2894
+      ]
+    ],
+    "wrong_time_lag_deltas_seconds": [
+      -30,
+      -10,
+      -2,
+      2,
+      10,
+      30
+    ],
+    "qualifying_held_out_bin_starts": [
+      30,
+      40,
+      50,
+      120,
+      130,
+      140
+    ],
+    "unavailable_held_out_bin_starts": [
+      0,
+      10,
+      20,
+      280,
+      290
+    ],
+    "bins": [
+      {
+        "start": 0,
+        "fit_window": false,
+        "score": null,
+        "wrong_time": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 10,
+        "fit_window": false,
+        "score": null,
+        "wrong_time": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 20,
+        "fit_window": false,
+        "score": null,
+        "wrong_time": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 30,
+        "fit_window": false,
+        "score": 0.6857,
+        "wrong_time": [
+          null,
+          null,
+          -0.1122,
+          -0.0612,
+          0.1344,
+          -0.0803
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 40,
+        "fit_window": false,
+        "score": 0.6838,
+        "wrong_time": [
+          null,
+          0.2205,
+          -0.1232,
+          -0.0878,
+          -0.1015,
+          -0.0577
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 50,
+        "fit_window": false,
+        "score": 0.7063,
+        "wrong_time": [
+          null,
+          -0.0934,
+          -0.1083,
+          -0.053,
+          0.0942,
+          -0.0294
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 60,
+        "fit_window": true,
+        "score": 0.7223,
+        "wrong_time": [
+          -0.0716,
+          0.1394,
+          -0.1159,
+          -0.2017,
+          -0.0218,
+          0.1055
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 70,
+        "fit_window": true,
+        "score": 0.7733,
+        "wrong_time": [
+          0.0054,
+          0.006,
+          -0.2059,
+          -0.0355,
+          0.116,
+          -0.0587
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 80,
+        "fit_window": true,
+        "score": 0.7292,
+        "wrong_time": [
+          -0.0321,
+          0.1663,
+          -0.1525,
+          -0.1133,
+          -0.1036,
+          0.0148
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 90,
+        "fit_window": true,
+        "score": 0.6804,
+        "wrong_time": [
+          0.1209,
+          -0.0927,
+          -0.1086,
+          -0.0581,
+          0.1327,
+          0.0228
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 100,
+        "fit_window": true,
+        "score": 0.6833,
+        "wrong_time": [
+          -0.0526,
+          0.2303,
+          -0.125,
+          -0.0854,
+          0.0584,
+          -0.0478
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 110,
+        "fit_window": true,
+        "score": 0.8265,
+        "wrong_time": [
+          -0.0248,
+          0.0859,
+          -0.0513,
+          -0.0538,
+          0.0667,
+          0.0344
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 120,
+        "fit_window": false,
+        "score": 0.6616,
+        "wrong_time": [
+          0.1041,
+          0.1556,
+          -0.0887,
+          -0.0601,
+          0.0079,
+          0.0035
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 130,
+        "fit_window": false,
+        "score": 0.4604,
+        "wrong_time": [
+          0.0372,
+          0.1539,
+          -0.0856,
+          null,
+          null,
+          -0.0146
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 140,
+        "fit_window": false,
+        "score": 0.4531,
+        "wrong_time": [
+          0.0916,
+          null,
+          null,
+          0.0509,
+          -0.0228,
+          0.0255
+        ],
+        "qualifies": true
+      },
+      {
+        "start": 150,
+        "fit_window": false,
+        "score": 0.0114,
+        "wrong_time": [
+          0.0217,
+          0.0684,
+          0.0126,
+          -0.0453,
+          -0.0021,
+          0.04
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 160,
+        "fit_window": false,
+        "score": -0.0675,
+        "wrong_time": [
+          -0.0003,
+          0.0215,
+          -0.0276,
+          -0.0167,
+          0.0038,
+          -0.0633
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 170,
+        "fit_window": false,
+        "score": -0.0382,
+        "wrong_time": [
+          0.0012,
+          -0.0285,
+          0.0172,
+          -0.0218,
+          -0.0043,
+          0.0103
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 180,
+        "fit_window": false,
+        "score": -0.0604,
+        "wrong_time": [
+          -0.0269,
+          0.0084,
+          -0.0551,
+          0.012,
+          -0.0412,
+          0.0663
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 190,
+        "fit_window": false,
+        "score": -0.025,
+        "wrong_time": [
+          0.034,
+          -0.0005,
+          -0.0481,
+          0.029,
+          -0.0371,
+          -0.0301
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 200,
+        "fit_window": false,
+        "score": -0.0781,
+        "wrong_time": [
+          -0.0299,
+          0.014,
+          -0.0007,
+          -0.0258,
+          0.0408,
+          -0.0594
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 210,
+        "fit_window": false,
+        "score": -0.0391,
+        "wrong_time": [
+          0.0291,
+          0.03,
+          -0.0989,
+          -0.0511,
+          0.0075,
+          0.0174
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 220,
+        "fit_window": false,
+        "score": -0.0622,
+        "wrong_time": [
+          -0.0566,
+          0.0183,
+          -0.0089,
+          0.0024,
+          -0.0205,
+          -0.0031
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 230,
+        "fit_window": false,
+        "score": -0.0832,
+        "wrong_time": [
+          -0.0296,
+          0.0256,
+          -0.0207,
+          -0.0249,
+          -0.0222,
+          -0.0033
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 240,
+        "fit_window": false,
+        "score": 0.1175,
+        "wrong_time": [
+          -0.0161,
+          0.0103,
+          -0.0893,
+          -0.0699,
+          0.0552,
+          0.1312
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 250,
+        "fit_window": false,
+        "score": 0.0574,
+        "wrong_time": [
+          0.0106,
+          -0.0597,
+          -0.015,
+          -0.1001,
+          -0.0495,
+          null
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 260,
+        "fit_window": false,
+        "score": -0.0361,
+        "wrong_time": [
+          -0.0512,
+          0.0467,
+          0.0086,
+          0.0006,
+          0.0931,
+          null
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 270,
+        "fit_window": false,
+        "score": 0.1398,
+        "wrong_time": [
+          0.0568,
+          0.0559,
+          -0.0448,
+          null,
+          null,
+          null
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 280,
+        "fit_window": false,
+        "score": null,
+        "wrong_time": [
+          -0.0732,
+          -0.0664,
+          0.1215,
+          null,
+          null,
+          null
+        ],
+        "qualifies": false
+      },
+      {
+        "start": 290,
+        "fit_window": false,
+        "score": null,
+        "wrong_time": [
+          0.1028,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "qualifies": false
+      }
+    ]
+  },
+  "repeated_passage_diagnostic": {
+    "waveform_lag_on_feature_grid_seconds": -9.3,
+    "feature_lag_difference_seconds": 19.75,
+    "calibration_cross_at_waveform_lag": 0.3197,
+    "row_fields": [
+      "start",
+      "cross_at_waveform_lag",
+      "Nov19_vs_itself_at_lag_difference",
+      "Nov20_vs_itself_at_lag_difference"
+    ],
+    "rows": [
+      [
+        0,
+        null,
+        null,
+        null
+      ],
+      [
+        10,
+        null,
+        null,
+        null
+      ],
+      [
+        20,
+        null,
+        null,
+        null
+      ],
+      [
+        30,
+        null,
+        0.8409,
+        null
+      ],
+      [
+        40,
+        null,
+        0.8348,
+        0.8658
+      ],
+      [
+        50,
+        0.7409,
+        -0.0069,
+        0.7411
+      ],
+      [
+        60,
+        0.6047,
+        -0.0173,
+        0.0062
+      ],
+      [
+        70,
+        0.0507,
+        0.7225,
+        -0.0265
+      ],
+      [
+        80,
+        -0.0361,
+        0.8359,
+        0.6443
+      ],
+      [
+        90,
+        0.637,
+        0.0293,
+        0.7987
+      ],
+      [
+        100,
+        0.7419,
+        -0.0851,
+        0.0153
+      ],
+      [
+        110,
+        0.004,
+        null,
+        -0.0196
+      ],
+      [
+        120,
+        -0.0627,
+        -0.0082,
+        -0.0467
+      ],
+      [
+        130,
+        null,
+        0.0804,
+        -0.075
+      ],
+      [
+        140,
+        -0.0272,
+        -0.0092,
+        0.0142
+      ],
+      [
+        150,
+        0.0591,
+        -0.0149,
+        -0.0358
+      ],
+      [
+        160,
+        0.034,
+        -0.0148,
+        -0.0248
+      ],
+      [
+        170,
+        -0.009,
+        -0.0096,
+        -0.0098
+      ],
+      [
+        180,
+        -0.0203,
+        0.0125,
+        -0.0021
+      ],
+      [
+        190,
+        0.0121,
+        -0.0294,
+        0.0226
+      ],
+      [
+        200,
+        -0.0132,
+        -0.0471,
+        -0.0391
+      ],
+      [
+        210,
+        0.0158,
+        0.0223,
+        -0.0451
+      ],
+      [
+        220,
+        0.0007,
+        0.0037,
+        0.0333
+      ],
+      [
+        230,
+        -0.0533,
+        -0.0017,
+        -0.0037
+      ],
+      [
+        240,
+        -0.0156,
+        0.0072,
+        -0.0031
+      ],
+      [
+        250,
+        -0.0131,
+        0.0153,
+        0.0457
+      ],
+      [
+        260,
+        -0.0891,
+        -0.0042,
+        -0.1417
+      ],
+      [
+        270,
+        0.0122,
+        -0.0246,
+        -0.0545
+      ],
+      [
+        280,
+        -0.0472,
+        null,
+        null
+      ],
+      [
+        290,
+        -0.2233,
+        null,
+        null
+      ]
+    ]
+  },
+  "controls": {
+    "filtered_and_delayed_same_file": {
+      "lag_seconds": 3.25,
+      "fit": 0.9942,
+      "separated_calibration_peaks": [
+        [
+          3.25,
+          0.9942
+        ],
+        [
+          -39.4,
+          0.6636
+        ],
+        [
+          -59.15,
+          0.5688
+        ],
+        [
+          -16.5,
+          0.3697
+        ],
+        [
+          23.0,
+          0.2633
+        ]
+      ],
+      "qualifying_held_out_bin_starts": [
+        30,
+        40,
+        50,
+        120,
+        130,
+        140,
+        150,
+        160,
+        170,
+        180,
+        190,
+        200,
+        210,
+        220,
+        230,
+        240,
+        250,
+        260,
+        270,
+        280
+      ],
+      "unavailable_held_out_bin_starts": [
+        0,
+        10,
+        20,
+        290
+      ],
+      "evaluable_held_out_bins": 20
+    },
+    "reordered_five_second_fragments": {
+      "lag_seconds": 10.0,
+      "fit": 0.1242,
+      "separated_calibration_peaks": [
+        [
+          10.0,
+          0.1242
+        ],
+        [
+          32.35,
+          0.0956
+        ],
+        [
+          13.25,
+          0.0912
+        ],
+        [
+          23.0,
+          0.0878
+        ],
+        [
+          5.0,
+          0.0861
+        ]
+      ],
+      "qualifying_held_out_bin_starts": [],
+      "unavailable_held_out_bin_starts": [
+        0,
+        10,
+        20,
+        170,
+        290
+      ],
+      "evaluable_held_out_bins": 19
+    }
+  }
+}
