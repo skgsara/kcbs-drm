@@ -1,5 +1,7 @@
 """Record a granted UberSDR iq48 stream to a new stereo I/Q WAV; print its receipt."""
 import argparse
+from contextlib import ExitStack
+import csv
 from datetime import datetime, timezone
 from hashlib import sha256
 import importlib.util
@@ -53,7 +55,7 @@ def grant(origin, session, tls):
         raise ValueError("receiver did not grant iq48")
 
 
-def copy_packets(ws, decoder, out, target, receipt):
+def copy_packets(ws, decoder, out, target, receipt, timing=None):
     deadline = time.monotonic() + target / RATE + 15
     idle_deadline = time.monotonic() + 15
     pcm_hash = sha256()
@@ -88,8 +90,11 @@ def copy_packets(ws, decoder, out, target, receipt):
             chunk = data[:4 * (target - offset)]
             out.writeframes(chunk)  # Keep the WAV size fields current during recording.
             pcm_hash.update(chunk)
-            receipt["sample_pairs"] += len(chunk) // 4
+            written_pairs = len(chunk) // 4
+            receipt["sample_pairs"] += written_pairs
             receipt["packets"] += 1
+            if timing is not None:
+                timing.writerow((offset, written_pairs, header.timestamp_nanos or ""))
             idle_deadline = time.monotonic() + 15
     finally:
         receipt["iq_pcm_sha256"] = pcm_hash.hexdigest()
@@ -106,7 +111,7 @@ def open_stream(origin, frequency_hz):
                    close_timeout=2, compression=None, user_agent_header=AGENT)
 
 
-def record(origin, frequency_hz, seconds, output, decoder):
+def record(origin, frequency_hz, seconds, output, decoder, packet_timing=False):
     target = seconds * RATE
     receipt = dict(origin=origin, frequency_hz=frequency_hz, mode="iq48", sample_rate_hz=RATE,
                    started_utc=datetime.now(timezone.utc).isoformat(), requested_seconds=seconds,
@@ -114,12 +119,23 @@ def record(origin, frequency_hz, seconds, output, decoder):
                    max_abs_timestamp_jump_ns=0, first_timestamp_sample_and_unix_ns=None,
                    last_timestamp_sample_and_unix_ns=None, iq_pcm_sha256=sha256(b"").hexdigest())
     started = time.monotonic()
-    with output.open("xb") as file, wave.open(file, "wb") as out:
+    timing_path = output.with_name(output.name + ".timing.csv")
+    if packet_timing and timing_path.exists():
+        raise FileExistsError(f"Packet timing file already exists: {timing_path}")
+    with ExitStack() as files:
+        file = files.enter_context(output.open("xb"))
+        out = files.enter_context(wave.open(file, "wb"))
         out.setparams((2, 2, RATE, 0, "NONE", "not compressed"))
         out.writeframes(b"")
+        timing = None
+        if packet_timing:
+            timing_file = files.enter_context(timing_path.open("x", newline="", encoding="ascii"))
+            timing = csv.writer(timing_file, lineterminator="\n")
+            timing.writerow(("sample_offset", "sample_pairs", "receiver_unix_ns"))
+            receipt["packet_timing_file"] = timing_path.name
         try:
             with open_stream(origin, frequency_hz) as ws:
-                copy_packets(ws, decoder, out, target, receipt)
+                copy_packets(ws, decoder, out, target, receipt, timing)
         except (Exception, KeyboardInterrupt) as error:
             receipt["error"] = f"{type(error).__name__}: {error}"
     receipt["wall_seconds"] = round(time.monotonic() - started, 3)
@@ -135,12 +151,14 @@ def main(argv=None):
     parser.add_argument("--seconds", type=int, required=True, help="requested sample duration in whole seconds")
     parser.add_argument("--ubersdr-source", required=True, type=Path, help="local ka9q_ubersdr checkout")
     parser.add_argument("--out", required=True, type=Path, help="new WAV file")
+    parser.add_argument("--packet-timing", action="store_true",
+                        help="write packet sample ranges and station timestamps to <WAV>.timing.csv")
     args = parser.parse_args(argv)
     if args.seconds <= 0 or args.seconds * RATE * 4 > 0xffffffff - 36 or args.frequency_hz <= 0:
         parser.error("positive Hz and duration fitting a standard RIFF WAV are required")
     try:
         result = record(https_origin(args.origin), args.frequency_hz, args.seconds, args.out,
-                        upstream_decoder(args.ubersdr_source))
+                        upstream_decoder(args.ubersdr_source), args.packet_timing)
     except (OSError, ValueError, ImportError) as error:
         print(json.dumps({"error": str(error)}), file=sys.stderr)
         return 2

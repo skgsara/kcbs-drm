@@ -1,0 +1,80 @@
+{
+  "frozen_utc": "2026-11-28T14:15:32.782009+00:00",
+  "source_repository": "https://github.com/skgsara/dprk-drm",
+  "revision": "7dbe1d56fd44927e0495d6aac681654eeee56f1d",
+  "base_membership_sha256": "33d4925c8e8f0a3f0520aeea11a37df9eaeecd67e0a54deb9004f3ada8213ab4",
+  "base_count": 14955,
+  "count": 14958,
+  "inventory_sha256": "2a58d5882998ff422e684295664b328f7c443c03d3be728016a64509c765f363",
+  "gzip_sha256": "42985e72a35104e6590acc6a2f5a6e006b723cbcb3558d9ea99d5f41ffe82587",
+  "serialization": "Compact JSON object with ascending distinct counter_ids and trailing LF; gzip mtime zero.",
+  "physically_assigned_count": 14955,
+  "other_previously_discussed_ids": [
+    43916890,
+    43917329,
+    43945651
+  ],
+  "membership_checks": {
+    "43916890": true,
+    "43917329": true,
+    "43945687": true,
+    "43945691": true,
+    "43949404": true
+  },
+  "selection_scope": "Counter-level prior exposure, including partial observations and unverified reports. The unnamed groups in the member report have no distinct IDs to add. Repeated reception or newly located phase bytes at an already exposed ID do not create an unseen counter. Independently assigned and fused data need separate provenance and separate scoring when the same site contributes to both.",
+  "no_new_iq_used": true,
+  "sources": [
+    {
+      "path": "examples/nov28/edogawa-audio-branch/history-origins.json",
+      "sha256": "2e699c76cb024eec5069fe74f68eb3083ebd41e109f57b609461e00965526506"
+    },
+    {
+      "path": "examples/nov28/edogawa-audio-branch/history.json.gz",
+      "sha256": "3f644107e087d0299f20eb23a2d9c7d5fe6d05a9399157673be5faf3c2dd279b"
+    },
+    {
+      "path": "examples/nov28/edogawa-audio-branch/results/edogawa/transport-inventory.json",
+      "sha256": "84dfae35e26d3a1bee77e11400141e10e0a0afd9b07224300274d4cd3d162e9d",
+      "field": "assigned_counter_ids",
+      "classification": "physically assigned counter including incomplete DUs",
+      "ids": [
+        43949404
+      ],
+      "new": [
+        43949404
+      ]
+    },
+    {
+      "path": "examples/nov28/edogawa-audio-branch/results/yokohama/peer-transport.json",
+      "sha256": "8d006f1a43c02e82cff3dc353b51bd9643ea1e0147bbd3dd1562608b62db0046",
+      "field": "assigned_counters",
+      "classification": "physically assigned counter including incomplete DUs",
+      "ids": [],
+      "new": []
+    },
+    {
+      "path": "examples/nov28/member-text-leads.md",
+      "sha256": "403477a6a390219a01b3738238124a591b7bc52402ec52151c837ebde90b0e6d",
+      "field": "named counter IDs in first paragraph",
+      "classification": "member-reported prior exposure; no independent RF coordinate or clear-field truth",
+      "ids": [
+        43916890,
+        43917329
+      ],
+      "new": [
+        43916890,
+        43917329
+      ]
+    },
+    {
+      "path": "examples/nov28/same-6140-1232/diversity/coordinates/README.md",
+      "sha256": "f91ee0a82f88052787382742e2e389f0a707f90da3d9c15f7805399d733fb1b9",
+      "classification": "existing previously exposed development counters located using two-receiver data",
+      "ids": [
+        43945687,
+        43945691
+      ],
+      "new": []
+    }
+  ]
+}

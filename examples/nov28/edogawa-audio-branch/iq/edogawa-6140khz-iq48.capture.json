@@ -1,0 +1,27 @@
+{
+  "origin": "https://7l4iou.tunnel.ubersdr.org",
+  "frequency_hz": 6140000,
+  "mode": "iq48",
+  "sample_rate_hz": 48000,
+  "started_utc": "2026-11-28T13:47:30.060216+00:00",
+  "requested_seconds": 120,
+  "sample_pairs": 4206480,
+  "packets": 13145,
+  "timestamped_packets": 13145,
+  "timestamp_jumps_over_one_sample": 0,
+  "max_abs_timestamp_jump_ns": 10339,
+  "first_timestamp_sample_and_unix_ns": [
+    0,
+    1795873652226972235
+  ],
+  "last_timestamp_sample_and_unix_ns": [
+    4206120,
+    1795873739854484234
+  ],
+  "iq_pcm_sha256": "4da0c3678ffd41f308b9f157ea740c8e9e2612da6fd5ddb931d59313e313519d",
+  "packet_timing_file": "original.wav.timing.csv",
+  "error": "ConnectionClosedError: no close frame received or sent",
+  "wall_seconds": 100.474,
+  "sample_seconds": 87.635,
+  "sample_target_reached": false
+}

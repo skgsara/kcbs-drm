@@ -4,14 +4,12 @@ Motivation: decoding many 1.2 s islands leaves the codec starting cold every tim
 which sounds far worse than a continuous stream. Three tiers of evidence are mixed
 in one pass and recorded per group so the output cannot be mistaken for a full decode:
 
-  A keyed       - role 0 exact, role 1 five of eleven keyed bytes known; the six
-                  unknown role-1 bytes and roles 2/3 are filled from a nearby group
+  A keyed       - role 0 and the first five keyed bytes of role 1 use the supplied
+                  candidate. For playback, the other six role-1 bytes are copied
+                  from the preceding role-0 frame. Roles 2 and 3 are erased.
   B unkeyed     - no key at all: the 21 unencrypted bytes per frame are real, all
                   eleven keyed bytes are filled from a nearby keyed group
   (groups absent from the capture are genuine gaps and are erased)
-
-Filling beat erasing on held-out genuine controls (eSTOI 0.335 vs 0.299 for tier B
-style frames, 0.393 for tier A), so nothing is erased that has any real content.
 
 Usage: python scripts/render_continuous.py <salvage dir> <keys.npz> --out <dir> [--rate 32000]
 """
@@ -30,7 +28,6 @@ MODE_POSITIONS = [(2 + c) if r == 0 else
                   ((39 if r == 1 else 72 if r == 2 else 105) + 131*c)
                   for c in range(5) for r in range(4)]
 KEYED = np.arange(0, 32, 3)
-ROLE1_UNKNOWN = np.array([16, 19, 22, 25, 28, 31])   # frame byte offsets (mode byte is 0)
 
 
 def group_frames(du_row, key):
@@ -46,6 +43,12 @@ def group_frames(du_row, key):
         flat[np.ix_(np.flatnonzero(slot == 0), KEYED)] ^= key[:11]
         flat[np.ix_(np.flatnonzero(slot == 1), KEYED[:5])] ^= key[11:16]
     return modes, flat
+
+
+def fill_p2_for_playback(payload):
+    """Copy six substitute octets from each preceding P1 into a P2 payload."""
+    unknown = KEYED[5:]
+    payload[1::4, unknown] = payload[0::4, unknown]
 
 
 def main():
@@ -90,18 +93,10 @@ def main():
         if g not in idx:
             tier[g-first] = 0            # not received: leave erased
             continue
-        donor = min(keyed_sorted, key=lambda x: (abs(x - g), x))
-        dflat = plains[donor][1]
         if g in keys:
-            # Role 0 is exact; role 1 has five of eleven keyed bytes. The other six
-            # are still ciphertext, so they are replaced from a neighbour rather than
-            # fed to the codec as parameters. Roles 2 and 3 stay erased: with eleven
-            # of eleven bytes unknown they tested worse than an honest erasure.
-            modes, flat = plains[g]
-            rows1 = np.flatnonzero(np.arange(60) % 4 == 1)
-            # ROLE1_UNKNOWN counts the mode byte as frame byte 0; flat holds payload bytes only.
-            unknown_payload = ROLE1_UNKNOWN - 1
-            flat[np.ix_(rows1, unknown_payload)] = dflat[np.ix_(rows1, unknown_payload)]
+            modes, original = plains[g]
+            flat = original.copy()  # Other groups can still use the original donor.
+            fill_p2_for_playback(flat)
             tier[g-first] = 1
             supplied[base:base+60] = np.arange(60) % 4 < 2
         elif a.no_fill:
@@ -110,6 +105,8 @@ def main():
         else:
             # Tier B: the 21 unencrypted bytes are real; all eleven keyed bytes come
             # from the nearest keyed group.
+            donor = min(keyed_sorted, key=lambda x: (abs(x - g), x))
+            dflat = plains[donor][1]
             modes, flat = group_frames(du[idx[g]], None)
             flat[:, KEYED] = dflat[:, KEYED]
             tier[g-first] = 2
@@ -182,8 +179,9 @@ def main():
                   supplied_frames=int(supplied.sum()), total_frames=int(len(frames)),
                   decoder_calls=n_slices, clipped_fraction=round(float(np.mean(np.abs(pcm) >= 32767)), 5),
                   rms=round(float(np.sqrt(np.mean((pcm.astype(float)/32768)**2))), 4),
-                  note='Tier 1 groups have verified keys; tier 2 groups keep their real clear '
-                       'bytes with keyed bytes filled from a neighbour; missing groups erased.')
+                  note='Tier 1 uses the supplied candidate for P1 and five P2 octets. '
+                       'Six P2 octets per frame are playback substitutes copied from P1. '
+                       'Tier 2 takes eleven payload octets from a donor for playback.')
     (out/'report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
     print(json.dumps(report, indent=2), flush=True)
 

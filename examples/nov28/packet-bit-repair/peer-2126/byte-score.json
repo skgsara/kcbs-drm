@@ -1,0 +1,246 @@
+{
+  "format": "native-evs-p4-byte-score-v1",
+  "source_msc_sha256": "b1c5bcb0d4c8bbf22841e75c1dea491a93f7ead03a402d04c82698a84ec9b9f9",
+  "prediction_sha256": "5e73325a197f68d0326075f8b743ac93141f77f52fbec79608ca984bb587294f",
+  "native_transport": {
+    "msc_rows": 434,
+    "packet_crc_checks": 1736,
+    "physical_packets_crc": 374,
+    "physical_packets_crc_and_header": 374,
+    "native_complete_dus": 59
+  },
+  "native_groups": 11,
+  "mode": 116,
+  "fitted_byte": 193,
+  "baseline_byte": 192,
+  "development_counter_overlap": [],
+  "primary": 43900392,
+  "primary_scores": {
+    "total": {
+      "slots": 60,
+      "eligible": 0,
+      "abstentions": 60,
+      "fitted": {
+        "exact_bytes": 0,
+        "wrong_bytes": 0,
+        "high_nibbles": 0,
+        "low_nibbles": 0,
+        "exact_bits": 0,
+        "bits_compared": 0
+      },
+      "baseline": {
+        "exact_bytes": 0,
+        "wrong_bytes": 0,
+        "high_nibbles": 0,
+        "low_nibbles": 0,
+        "exact_bits": 0,
+        "bits_compared": 0
+      }
+    },
+    "by_position": {
+      "1": {
+        "slots": 15,
+        "eligible": 0,
+        "abstentions": 15,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "2": {
+        "slots": 15,
+        "eligible": 0,
+        "abstentions": 15,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "3": {
+        "slots": 15,
+        "eligible": 0,
+        "abstentions": 15,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "4": {
+        "slots": 15,
+        "eligible": 0,
+        "abstentions": 15,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      }
+    }
+  },
+  "all_groups": {
+    "total": {
+      "slots": 660,
+      "eligible": 0,
+      "abstentions": 660,
+      "fitted": {
+        "exact_bytes": 0,
+        "wrong_bytes": 0,
+        "high_nibbles": 0,
+        "low_nibbles": 0,
+        "exact_bits": 0,
+        "bits_compared": 0
+      },
+      "baseline": {
+        "exact_bytes": 0,
+        "wrong_bytes": 0,
+        "high_nibbles": 0,
+        "low_nibbles": 0,
+        "exact_bits": 0,
+        "bits_compared": 0
+      }
+    },
+    "by_position": {
+      "1": {
+        "slots": 165,
+        "eligible": 0,
+        "abstentions": 165,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "2": {
+        "slots": 165,
+        "eligible": 0,
+        "abstentions": 165,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "3": {
+        "slots": 165,
+        "eligible": 0,
+        "abstentions": 165,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "4": {
+        "slots": 165,
+        "eligible": 0,
+        "abstentions": 165,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      }
+    }
+  },
+  "row_fields": [
+    "counter",
+    "phase",
+    "slot",
+    "position",
+    "fitted_byte",
+    "baseline_byte",
+    "received_byte"
+  ],
+  "comparisons": []
+}

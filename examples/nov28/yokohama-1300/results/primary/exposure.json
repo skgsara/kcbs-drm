@@ -1,0 +1,50 @@
+{
+  "score_sha256": "b1a69b61f1e23ec744eba198540c027557a8541891c5c96a363739259a9e6bc9",
+  "frozen_inventory_sha256": "0b116969b6f496804d22ca48103046f0436da9a40470ab320398af83debbcbc7",
+  "exposure_inventory": {
+    "revision": "b2fc5e307bf2c9a4dc4312101985e41f238490bc",
+    "sources": [
+      {
+        "path": "same-6140-1232/history.json.gz",
+        "sha256": "b6332065393163515d80a606959f85df101102daeaf182917dc94fda4f4ea06f",
+        "count": 14811,
+        "new_to_union": 14811
+      },
+      {
+        "path": "same-6140-1232/edogawa-native.json",
+        "sha256": "84b6c70b2a1ca2635263e4ef9d174ec85ca3f37bcbd8167279b214cfac948eed",
+        "count": 34,
+        "new_to_union": 34
+      },
+      {
+        "path": "same-6140-1232/yokohama-native.json",
+        "sha256": "abf60a7169082b9be8fd0fc1c37a115a03e903c2c4ebd5a8827c401eb5ae4e38",
+        "count": 70,
+        "new_to_union": 37
+      }
+    ],
+    "counter_count": 14882,
+    "sha256": "b8809bc9412da1b18b78a8b4f302efd873a00cd71baa3ec04b9c27e457ec480b",
+    "serialization": "compact JSON with a sorted counter_ids array and a trailing LF"
+  },
+  "result": {
+    "packet_snapshot_sha256": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+    "assigned_count": 0,
+    "frozen_overlap": [],
+    "extended_overlap_count": 0,
+    "extended_overlap": [],
+    "additional_prior_exposure": [],
+    "absent_from_extended_count": 0,
+    "primary": {
+      "counter": null,
+      "previously_observed": null,
+      "status": "no_eligible_group"
+    },
+    "first_partial": {
+      "counter": null,
+      "previously_observed": null,
+      "status": "no_eligible_group"
+    }
+  },
+  "scope": "All assigned counters reported by the frozen scorer, including any subsequently quarantined coordinates. A score JSON alone cannot authenticate the RF input, timing, receiver settings, or physical row order."
+}

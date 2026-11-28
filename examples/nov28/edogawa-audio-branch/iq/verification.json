@@ -1,0 +1,73 @@
+{
+  "encoding": "FLAC PCM16 stereo 48000 Hz, original I/Q channel and sample order",
+  "tool": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "verification": "Matched sealed WAV, timing and capture receipts; parsed both original RIFF chunk tables; decoded FLAC to PCM and compared all samples and both complete reconstructed WAVs byte-for-byte. Both WAVs consist of a 16-byte fmt chunk and one data chunk. All timing rows preserve their original sample offset/length and timestamp or blank. No file has been padded.",
+  "stations": {
+    "edogawa": {
+      "station": "edogawa",
+      "format": "48000 IQ sample pairs/s; channel 1 I, channel 2 Q; signed 16-bit little-endian",
+      "wav_bytes": 16825964,
+      "wav_sha256": "0a96abeef758b1464ae6f39cc6d32989508038baedd63cb5af0f21c5e48a925d",
+      "restored_wav_sha256": "0a96abeef758b1464ae6f39cc6d32989508038baedd63cb5af0f21c5e48a925d",
+      "pcm_bytes": 16825920,
+      "sample_pairs": 4206480,
+      "pcm_sha256": "4da0c3678ffd41f308b9f157ea740c8e9e2612da6fd5ddb931d59313e313519d",
+      "flac": "edogawa-6140khz-iq48.flac",
+      "flac_bytes": 13357091,
+      "flac_sha256": "5ab669aa1a7653d010a22a03ef5494b0d025e94d60e1fa3e51f54cb36a07fac3",
+      "wav_chunks": [
+        {
+          "fourcc": "fmt ",
+          "bytes": 16
+        },
+        {
+          "fourcc": "data",
+          "bytes": 16825920
+        }
+      ],
+      "packet_timing": "edogawa-6140khz-iq48.timing.csv",
+      "packet_timing_sha256": "178874e30cf6f6235363354a71394c487945b0435d9faad567506c56cfe44be5",
+      "packet_rows": 13145,
+      "blank_station_timestamps": 0,
+      "capture_receipt": "edogawa-6140khz-iq48.capture.json",
+      "capture_sha256": "47daa91c609e335cdc7ca896c76f295d9e3673f49693aa60c09218b3030f7d2e",
+      "duration_seconds": 87.635,
+      "source_seal_sha256": "f5b4ef1a362addfdb14fa02db93924f091708948cd4a26e6b9b0c99778b2362a",
+      "original_request_completed": false,
+      "timing_source": "Original station packet sidecar, with empty timestamps preserved"
+    },
+    "yokohama": {
+      "station": "yokohama",
+      "format": "48000 IQ sample pairs/s; channel 1 I, channel 2 Q; signed 16-bit little-endian",
+      "wav_bytes": 23040044,
+      "wav_sha256": "b9045c689885e2e8a27fef0fe080a1212038c612d8709e92367b291eb10a0b3f",
+      "restored_wav_sha256": "b9045c689885e2e8a27fef0fe080a1212038c612d8709e92367b291eb10a0b3f",
+      "pcm_bytes": 23040000,
+      "sample_pairs": 5760000,
+      "pcm_sha256": "15f49a5e95174af5f414af70ce4865d99f81c2c38f711f6a56fa57d12904c294",
+      "flac": "yokohama-6140khz-iq48.flac",
+      "flac_bytes": 18188683,
+      "flac_sha256": "db78552310410656434f3436b1d6d277c1e20f07c14829d01082470319e018c7",
+      "wav_chunks": [
+        {
+          "fourcc": "fmt ",
+          "bytes": 16
+        },
+        {
+          "fourcc": "data",
+          "bytes": 23040000
+        }
+      ],
+      "packet_timing": "yokohama-6140khz-iq48.timing.csv",
+      "packet_timing_sha256": "9e7d7a649b08e037f7aa68839eb8ca189224408be0532a19dfac3151c4204714",
+      "packet_rows": 18000,
+      "blank_station_timestamps": 6,
+      "capture_receipt": "yokohama-6140khz-iq48.capture.json",
+      "capture_sha256": "84058d10c0a77d3c7bd7d00d647a09a4457b5460abcf5d0b5bca6cc033d36a94",
+      "duration_seconds": 120.0,
+      "source_seal_sha256": "e7f86cd5497bed6fd77b8b2de8e4f0a0742949330cd637928093cfd76c52978f",
+      "original_request_completed": true,
+      "timing_source": "Original station packet sidecar, with empty timestamps preserved"
+    }
+  }
+}

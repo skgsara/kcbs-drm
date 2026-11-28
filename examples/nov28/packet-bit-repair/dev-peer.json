@@ -1,0 +1,100 @@
+{
+  "format": "packet-repair-peer-v1",
+  "original_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "corrected_sha256": "4a598ce9248bc740118d846ad0b7cf07873672dca034ac731c2500a54beee264",
+  "peer_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+  "row_map_sha256": "31605d50dea3f9a89ef9fef1b351eedfbb882a234b93038473e23331d8e30207",
+  "paired_rows": 135,
+  "unique_full_wire_witnesses": 444,
+  "rejected_pairs": [],
+  "convention": "Zero-based row, ordinal and MSB-first wire bit. Coordinate is [counter, phase] when present in the pre-repair map. EVS word octet zero is the mode. Non-direct octets report physical bit locations only.",
+  "changed_packets": 2,
+  "checked_packets": 2,
+  "outcomes": {
+    "exact_182_bytes": 0,
+    "different_182_bytes": 2,
+    "no_peer_valid_packet": 0,
+    "no_witnessed_peer_row": 0
+  },
+  "corrected_header_crc_valid": 2,
+  "matched_packets_in_jointly_valid_equal_dus": 0,
+  "changed_bits_by_field": {
+    "evs_non_direct": {
+      "changed": 2,
+      "peer_checked": 2,
+      "peer_agrees": 0
+    }
+  },
+  "packets": [
+    {
+      "edogawa_row": 153,
+      "yokohama_row": 156,
+      "ordinal": 0,
+      "coordinate": [
+        43945703,
+        1
+      ],
+      "witness_ordinals": [
+        1,
+        2,
+        3
+      ],
+      "result": "different_182_bytes",
+      "corrected_header_crc_valid": true,
+      "corrected_du_crc_valid": true,
+      "peer_du_crc_valid": true,
+      "original_wire_sha256": "7cb8870ef2eb3519b68670f956588dc34307ca2ef84613fb4e33c6a0c8b25ed1",
+      "corrected_wire_sha256": "3249741bbd29438bb82ddf7f7a194786cee246db94c479ed3914f8bc343b3d08",
+      "peer_wire_sha256": "e0ec709e8ef51d4760babd8566edd35baea15df6bb33f33da13a4cd881443363",
+      "original_distance_to_peer_bits": 9,
+      "corrected_distance_to_peer_bits": 10,
+      "changed_bits": [
+        {
+          "du_byte": 73,
+          "field": "evs_non_direct",
+          "cycle": 0,
+          "position": 3,
+          "word_octet": 1,
+          "slot": 22,
+          "wire_bit": 595,
+          "peer_bit_agrees": false
+        }
+      ]
+    },
+    {
+      "edogawa_row": 156,
+      "yokohama_row": 159,
+      "ordinal": 0,
+      "coordinate": [
+        43945704,
+        1
+      ],
+      "witness_ordinals": [
+        1,
+        2,
+        3
+      ],
+      "result": "different_182_bytes",
+      "corrected_header_crc_valid": true,
+      "corrected_du_crc_valid": true,
+      "peer_du_crc_valid": true,
+      "original_wire_sha256": "fa65d4ed9adebf23868945f63c4ff76d0dee8c9f041f5b33cf1ce7458379e2eb",
+      "corrected_wire_sha256": "1431e9daf43673918f601c020844d3fb59d9cd891d1953b6dd059945fc731bd0",
+      "peer_wire_sha256": "d5293d429041204ab4bb270f22728df9024ee490da2f5479899fc44334a62026",
+      "original_distance_to_peer_bits": 5,
+      "corrected_distance_to_peer_bits": 6,
+      "changed_bits": [
+        {
+          "du_byte": 153,
+          "field": "evs_non_direct",
+          "cycle": 1,
+          "position": 1,
+          "word_octet": 16,
+          "slot": 24,
+          "wire_bit": 1233,
+          "peer_bit_agrees": false
+        }
+      ]
+    }
+  ]
+}

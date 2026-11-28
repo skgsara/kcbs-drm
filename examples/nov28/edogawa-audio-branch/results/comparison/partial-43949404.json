@@ -1,0 +1,1543 @@
+{
+  "format": "kcbs-evs-bit-evidence-v1",
+  "counter": 43949404,
+  "total": {
+    "direct_bits": 2568,
+    "carried_unknown_bits": 1280,
+    "no_receipt_bits": 11992,
+    "slots": 60,
+    "word_erasures": 60,
+    "rule_events": 13,
+    "direct_check_events": 0,
+    "conditional_events": 13,
+    "slots_with_rule_events": 13,
+    "events_by_outcome": {
+      "match": 0,
+      "mismatch": 0,
+      "unavailable": 0,
+      "restricted": 13,
+      "unrestricted": 0,
+      "contradiction": 0
+    },
+    "unique_target_bits": 13,
+    "unique_direct_checked_bits": 0,
+    "unique_conditional_fixed_bits": 13,
+    "unique_conflicting_conditional_bits": 0
+  },
+  "by_position": {
+    "1": {
+      "direct_bits": 680,
+      "carried_unknown_bits": 336,
+      "no_receipt_bits": 2944,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 2,
+      "direct_check_events": 0,
+      "conditional_events": 2,
+      "slots_with_rule_events": 2,
+      "events_by_outcome": {
+        "match": 0,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 2,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 2,
+      "unique_direct_checked_bits": 0,
+      "unique_conditional_fixed_bits": 2,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "2": {
+      "direct_bits": 704,
+      "carried_unknown_bits": 352,
+      "no_receipt_bits": 2904,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 4,
+      "direct_check_events": 0,
+      "conditional_events": 4,
+      "slots_with_rule_events": 4,
+      "events_by_outcome": {
+        "match": 0,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 4,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 4,
+      "unique_direct_checked_bits": 0,
+      "unique_conditional_fixed_bits": 4,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "3": {
+      "direct_bits": 656,
+      "carried_unknown_bits": 328,
+      "no_receipt_bits": 2976,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 4,
+      "direct_check_events": 0,
+      "conditional_events": 4,
+      "slots_with_rule_events": 4,
+      "events_by_outcome": {
+        "match": 0,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 4,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 4,
+      "unique_direct_checked_bits": 0,
+      "unique_conditional_fixed_bits": 4,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "4": {
+      "direct_bits": 528,
+      "carried_unknown_bits": 264,
+      "no_receipt_bits": 3168,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 3,
+      "direct_check_events": 0,
+      "conditional_events": 3,
+      "slots_with_rule_events": 3,
+      "events_by_outcome": {
+        "match": 0,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 3,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 3,
+      "unique_direct_checked_bits": 0,
+      "unique_conditional_fixed_bits": 3,
+      "unique_conflicting_conditional_bits": 0
+    }
+  },
+  "slots": [
+    {
+      "slot": 0,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "ff ?? 9f 15 ?? 62 40 ?? 8a 5a ?? 24 50 ?? 41 e5 ?? 65 d8 ?? aa 20 ?? d7 b1 ?? 77 09 ?? 14 b3 ?? d8",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "no_adjacent_predecessor"
+    },
+    {
+      "slot": 1,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_packets",
+      "octets": "ff ?? a4 e0 ?? e3 4e ?? af be ?? 57 0c ?? d0 94 ?? 18 81 ?? 36 dc ?? d9 de ?? 68 1e ?? f1 4a ?? 02",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 0,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 1,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_packets",
+      "octets": "ff ?? 28 14 ?? e2 40 ?? 5b 82 ?? e4 a1 ?? 92 eb ?? 83 18 ?? 97 c0 ?? c8 05 ?? cf 1b ?? a4 25 ?? e0",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 1,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 2,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_packets",
+      "octets": "ff ?? 1b 48 ?? e3 40 ?? d9 17 ?? 24 d6 ?? da 70 ?? 41 40 ?? 80 7c ?? 29 fe ?? e3 fa ?? f0 c4 ?? 26",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 2,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 3,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "ff ?? e3 d6 ?? e4 5d ?? df 11 ?? 64 5a ?? 4a 10 ?? 9a 71 ?? cd bd ?? 07 05 ?? 88 44 ?? 1c c1 ?? 90",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 3,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 4,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_packets",
+      "octets": "ff ?? 82 ce ?? 61 5d ?? 15 ea ?? 48 1f ?? 23 91 ?? 90 e2 ?? fe 19 ?? f4 d9 ?? b8 b4 ?? d4 c5 ?? 40",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 4,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 5,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_packets",
+      "octets": "fe ?? 71 cf ?? 63 5d ?? 0e 09 ?? f5 1b ?? 93 22 ?? bc f7 ?? c0 35 ?? a5 52 ?? 43 5a ?? a4 01 ?? 09",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 5,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 6,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_packets",
+      "octets": "fe ?? 0b 40 ?? 5e 7d ?? 15 d2 ?? c3 88 ?? 8e 1a ?? a5 d1 ?? d6 e0 ?? db 1e ?? d2 ef ?? c3 d9 ?? ee",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 6,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 7,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "ff ?? 62 05 ?? 66 5d ?? 15 a9 ?? 3b 6c ?? af c6 ?? 7e fc ?? ce 9c ?? 3a dc ?? 4a 51 ?? 5a 75 ?? 66",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 7,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 8,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_packets",
+      "octets": "ff ?? 8f 8a ?? 62 40 ?? 9d ba ?? 93 b2 ?? d3 72 ?? e1 48 ?? bc ae ?? 5b 02 ?? 59 ff ?? 40 89 ?? dd",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 8,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 9,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_packets",
+      "octets": "ff ?? ea 66 ?? e4 5d ?? 78 ad ?? 9c 7f ?? 5f c2 ?? 27 01 ?? d5 e0 ?? b2 -- -- -- -- -- -- -- -- --",
+      "direct_bits": 128,
+      "carried_unknown_bits": 64,
+      "no_receipt_bits": 72,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 9,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 10,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 12,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "ff -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 8,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 256,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "previous_mode_unavailable"
+    },
+    {
+      "slot": 13,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 14,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 15,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 16,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "ff -- -- -- -- -- -- ?? 0d fa ?? 2c 26 ?? 46 3b ?? d3 b6 ?? 89 bb ?? ad 19 ?? 7f d3 ?? e2 1c ?? d0",
+      "direct_bits": 144,
+      "carried_unknown_bits": 72,
+      "no_receipt_bits": 48,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "previous_mode_unavailable"
+    },
+    {
+      "slot": 17,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_packets",
+      "octets": "ff ?? 93 ea ?? 65 40 ?? 3f e3 ?? d4 9d ?? b3 28 ?? e0 3f ?? e8 a0 ?? 64 b3 ?? 83 ff ?? 38 50 ?? 23",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 16,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 17,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 18,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_packets",
+      "octets": "ff ?? dd 94 ?? e3 40 ?? 4e b6 ?? 9d 91 ?? ff 67 ?? ef b9 ?? d5 cf ?? d6 dc ?? b5 4d ?? 50 74 ?? 47",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 17,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 18,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 19,
+      "counter": 43949404,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_packets",
+      "octets": "ff ?? 39 cd ?? e4 60 ?? 9f 44 ?? 1e 18 ?? c7 ba ?? 30 ed ?? 80 eb ?? c3 24 ?? 68 fa ?? 34 62 ?? 53",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 18,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 19,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 20,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 21,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 22,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 23,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 24,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 25,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 26,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 27,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 28,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 29,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 30,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 31,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 32,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 33,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 34,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 35,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 36,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 37,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 38,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 39,
+      "counter": 43949404,
+      "phase": 1,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 40,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 41,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 42,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 43,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 44,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 45,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 46,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 47,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 48,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 49,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 50,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 51,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 52,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 53,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 54,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 55,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 56,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 57,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 58,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 59,
+      "counter": 43949404,
+      "phase": 2,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    }
+  ]
+}

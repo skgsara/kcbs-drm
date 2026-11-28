@@ -1,0 +1,116 @@
+{
+  "format": "peer-evs-p4-full-byte-v1",
+  "primary_msc_sha256": "b1c5bcb0d4c8bbf22841e75c1dea491a93f7ead03a402d04c82698a84ec9b9f9",
+  "peer_msc_sha256": "c36d4f0763a02d87b28d4afb033140fae970666bcc73c8dfb50df1e1a107e7fc",
+  "forecast_sha256": "5e73325a197f68d0326075f8b743ac93141f77f52fbec79608ca984bb587294f",
+  "scope": "Independently CRC-checked contiguous 0/1/2 native groups at the same transmitted counter. Each target is word octet 5. Every peer byte at an eligible coordinate counts, including a disagreement in the peer mode or payload.",
+  "source_native_groups": 11,
+  "peer_native_groups": 64,
+  "shared_native_groups": 7,
+  "primary": 43900392,
+  "primary_checked": {
+    "primary_slots": 60,
+    "eligible": 0,
+    "rule_abstentions": 60,
+    "peer_checked": 0,
+    "no_peer_native_group": 0,
+    "peer_mode_disagrees": 0,
+    "peer_target_hex_counts": {},
+    "fitted": {
+      "exact": 0,
+      "wrong": 0
+    },
+    "baseline": {
+      "exact": 0,
+      "wrong": 0
+    }
+  },
+  "total": {
+    "primary_slots": 660,
+    "eligible": 0,
+    "rule_abstentions": 660,
+    "peer_checked": 0,
+    "no_peer_native_group": 0,
+    "peer_mode_disagrees": 0,
+    "peer_target_hex_counts": {},
+    "fitted": {
+      "exact": 0,
+      "wrong": 0
+    },
+    "baseline": {
+      "exact": 0,
+      "wrong": 0
+    }
+  },
+  "by_position": {
+    "1": {
+      "primary_slots": 165,
+      "eligible": 0,
+      "rule_abstentions": 165,
+      "peer_checked": 0,
+      "no_peer_native_group": 0,
+      "peer_mode_disagrees": 0,
+      "peer_target_hex_counts": {},
+      "fitted": {
+        "exact": 0,
+        "wrong": 0
+      },
+      "baseline": {
+        "exact": 0,
+        "wrong": 0
+      }
+    },
+    "2": {
+      "primary_slots": 165,
+      "eligible": 0,
+      "rule_abstentions": 165,
+      "peer_checked": 0,
+      "no_peer_native_group": 0,
+      "peer_mode_disagrees": 0,
+      "peer_target_hex_counts": {},
+      "fitted": {
+        "exact": 0,
+        "wrong": 0
+      },
+      "baseline": {
+        "exact": 0,
+        "wrong": 0
+      }
+    },
+    "3": {
+      "primary_slots": 165,
+      "eligible": 0,
+      "rule_abstentions": 165,
+      "peer_checked": 0,
+      "no_peer_native_group": 0,
+      "peer_mode_disagrees": 0,
+      "peer_target_hex_counts": {},
+      "fitted": {
+        "exact": 0,
+        "wrong": 0
+      },
+      "baseline": {
+        "exact": 0,
+        "wrong": 0
+      }
+    },
+    "4": {
+      "primary_slots": 165,
+      "eligible": 0,
+      "rule_abstentions": 165,
+      "peer_checked": 0,
+      "no_peer_native_group": 0,
+      "peer_mode_disagrees": 0,
+      "peer_target_hex_counts": {},
+      "fitted": {
+        "exact": 0,
+        "wrong": 0
+      },
+      "baseline": {
+        "exact": 0,
+        "wrong": 0
+      }
+    }
+  },
+  "rows": []
+}

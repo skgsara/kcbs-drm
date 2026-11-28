@@ -1,0 +1,80 @@
+{
+  "source_sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+  "crc_checked_dus": 3335,
+  "result": {
+    "complete_groups": 1102,
+    "unique_mode_sequences": 1023,
+    "repeated_mode_sequences": 4,
+    "repeated_sequences_with_distinct_trailers": 4,
+    "transitions": {
+      "all_consecutive": {
+        "pairs": 1081,
+        "different_trailers": 1081,
+        "different_bytes": 103381,
+        "first_example": {
+          "counters": [
+            43907925,
+            43907926
+          ],
+          "boundary_modes_hex": [
+            "f8",
+            "f8"
+          ],
+          "different_mode_slots": 49,
+          "changed_trailer_bytes": 96
+        }
+      },
+      "same_mode_at_boundary": {
+        "pairs": 723,
+        "different_trailers": 723,
+        "different_bytes": 69144,
+        "first_example": {
+          "counters": [
+            43907925,
+            43907926
+          ],
+          "boundary_modes_hex": [
+            "f8",
+            "f8"
+          ],
+          "different_mode_slots": 49,
+          "changed_trailer_bytes": 96
+        }
+      },
+      "same_60_slot_sequence": {
+        "pairs": 37,
+        "different_trailers": 37,
+        "different_bytes": 3538,
+        "first_example": {
+          "counters": [
+            43908424,
+            43908425
+          ],
+          "boundary_modes_hex": [
+            "f8",
+            "f8"
+          ],
+          "different_mode_slots": 0,
+          "changed_trailer_bytes": 96
+        }
+      },
+      "one_constant_mode_across_120_slots": {
+        "pairs": 37,
+        "different_trailers": 37,
+        "different_bytes": 3538,
+        "first_example": {
+          "counters": [
+            43908424,
+            43908425
+          ],
+          "boundary_modes_hex": [
+            "f8",
+            "f8"
+          ],
+          "different_mode_slots": 0,
+          "changed_trailer_bytes": 96
+        }
+      }
+    }
+  }
+}

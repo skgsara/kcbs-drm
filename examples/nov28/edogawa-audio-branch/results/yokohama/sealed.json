@@ -1,0 +1,34 @@
+{
+  "sealed_utc": "2026-11-28T13:49:33.710745+00:00",
+  "expected_pairs": 5760000,
+  "sample_pairs": 5760000,
+  "wall_request_start_utc": "2026-11-28T13:47:30.063888+00:00",
+  "estimated_station_utc_half_open": [
+    "2026-11-28T13:47:31.499306252Z",
+    "2026-11-28T13:49:31.499289416Z"
+  ],
+  "station_range_method": "extrapolate from nearest timestamp to beginning and exclusive end using 48 kHz",
+  "first_and_last_direct_anchors": [
+    [
+      1920,
+      1795873651539306252
+    ],
+    [
+      5759760,
+      1795873771494289416
+    ]
+  ],
+  "timestamped_packets": 17994,
+  "timing_rows": 18000,
+  "untimestamped_packets": 6,
+  "jumps_larger_than_one_sample": [],
+  "maximum_clock_deviation_ns": 7168,
+  "recorder_completed": true,
+  "recorder_error_present": false,
+  "wav_size": 23040044,
+  "wav_sha256": "b9045c689885e2e8a27fef0fe080a1212038c612d8709e92367b291eb10a0b3f",
+  "pcm_sha256": "15f49a5e95174af5f414af70ce4865d99f81c2c38f711f6a56fa57d12904c294",
+  "timing_sha256": "9e7d7a649b08e037f7aa68839eb8ca189224408be0532a19dfac3151c4204714",
+  "receipt_sha256": "84058d10c0a77d3c7bd7d00d647a09a4457b5460abcf5d0b5bca6cc033d36a94",
+  "checked_wav_geometry_and_all_timing_ranges": true
+}

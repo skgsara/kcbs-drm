@@ -1,0 +1,765 @@
+{
+  "primary": {
+    "totals": {
+      "clear_words": 8280,
+      "words_with_applicable_checks": 604,
+      "words_with_restrictive_checks": 560,
+      "words_outside_any_check": 0,
+      "checks": {
+        "wb_gsc_audio": {
+          "eligible": 133,
+          "outside_allowed": 0,
+          "informative_allowed": 133,
+          "unrestricted": 0
+        },
+        "swb_gsc_inactive": {
+          "eligible": 358,
+          "outside_allowed": 0,
+          "informative_allowed": 358,
+          "unrestricted": 0
+        },
+        "audio_noisy": {
+          "eligible": 0,
+          "outside_allowed": 0,
+          "informative_allowed": 0,
+          "unrestricted": 0
+        },
+        "inactive_nibble": {
+          "eligible": 358,
+          "outside_allowed": 0,
+          "informative_allowed": 358,
+          "unrestricted": 0
+        },
+        "noisy_pitch_fill": {
+          "eligible": 0,
+          "outside_allowed": 0,
+          "informative_allowed": 0,
+          "unrestricted": 0
+        },
+        "swb_transition_pair": {
+          "eligible": 113,
+          "outside_allowed": 0,
+          "informative_allowed": 69,
+          "unrestricted": 44
+        }
+      }
+    },
+    "files": {
+      "testvec/testv/bitstreams/nb/stv8c_13200_8kHz.COD": {
+        "sha256": "78a5c3ef2c1dc172e203c560744dd386138808c6be51863b6ad9e54b453407bb",
+        "slots": 2760,
+        "clear_words": 2760,
+        "erasures": 0,
+        "words_with_applicable_checks": 0,
+        "words_with_restrictive_checks": 0,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "0": 516,
+          "1": 354,
+          "2": 72,
+          "4": 407,
+          "15": 49,
+          "29": 1362
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          }
+        }
+      },
+      "testvec/testv/bitstreams/swb/stv32c_13200_32kHz.COD": {
+        "sha256": "2a188443823b70c5c15f0464ddc47e9356e6cd79a96f157986de6fce5844244b",
+        "slots": 2760,
+        "clear_words": 2760,
+        "erasures": 0,
+        "words_with_applicable_checks": 471,
+        "words_with_restrictive_checks": 427,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "10": 519,
+          "11": 360,
+          "12": 113,
+          "14": 358,
+          "19": 52,
+          "31": 1358
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 358,
+            "outside_allowed": 0,
+            "informative_allowed": 358,
+            "unrestricted": 0,
+            "observed": {
+              "10": 32,
+              "1": 89,
+              "8": 14,
+              "0": 120,
+              "6": 40,
+              "4": 11,
+              "9": 19,
+              "3": 6,
+              "5": 20,
+              "7": 4,
+              "2": 3
+            },
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 358,
+            "outside_allowed": 0,
+            "informative_allowed": 358,
+            "unrestricted": 0,
+            "observed": {
+              "12": 358
+            },
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 113,
+            "outside_allowed": 0,
+            "informative_allowed": 69,
+            "unrestricted": 44,
+            "observed": {
+              "0": 57,
+              "2": 6,
+              "1": 31,
+              "3": 19
+            },
+            "first_outside": null
+          }
+        }
+      },
+      "testvec/testv/bitstreams/wb/stv16c_13200_16kHz.COD": {
+        "sha256": "7ddfb00606f7d45991a8f921a4345f88adb428d75b4d04e6118ada64eb61ba91",
+        "slots": 2760,
+        "clear_words": 2760,
+        "erasures": 0,
+        "words_with_applicable_checks": 133,
+        "words_with_restrictive_checks": 133,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "5": 536,
+          "6": 360,
+          "7": 119,
+          "8": 133,
+          "9": 347,
+          "17": 55,
+          "30": 1210
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 133,
+            "outside_allowed": 0,
+            "informative_allowed": 133,
+            "unrestricted": 0,
+            "observed": {
+              "0": 133
+            },
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          }
+        }
+      }
+    }
+  },
+  "replication": {
+    "totals": {
+      "clear_words": 4200,
+      "words_with_applicable_checks": 569,
+      "words_with_restrictive_checks": 538,
+      "words_outside_any_check": 0,
+      "checks": {
+        "wb_gsc_audio": {
+          "eligible": 0,
+          "outside_allowed": 0,
+          "informative_allowed": 0,
+          "unrestricted": 0
+        },
+        "swb_gsc_inactive": {
+          "eligible": 334,
+          "outside_allowed": 0,
+          "informative_allowed": 334,
+          "unrestricted": 0
+        },
+        "audio_noisy": {
+          "eligible": 145,
+          "outside_allowed": 0,
+          "informative_allowed": 145,
+          "unrestricted": 0
+        },
+        "inactive_nibble": {
+          "eligible": 334,
+          "outside_allowed": 0,
+          "informative_allowed": 334,
+          "unrestricted": 0
+        },
+        "noisy_pitch_fill": {
+          "eligible": 145,
+          "outside_allowed": 0,
+          "informative_allowed": 145,
+          "unrestricted": 0
+        },
+        "swb_transition_pair": {
+          "eligible": 90,
+          "outside_allowed": 0,
+          "informative_allowed": 59,
+          "unrestricted": 31
+        }
+      }
+    },
+    "files": {
+      "testvec/testv/bitstreams/nb/stv8n1_13200_8kHz.COD": {
+        "sha256": "eed40d26528df7de1e94d30882c855bee8b5ad283945e52793033238b4f69586",
+        "slots": 700,
+        "clear_words": 700,
+        "erasures": 0,
+        "words_with_applicable_checks": 0,
+        "words_with_restrictive_checks": 0,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "0": 214,
+          "1": 115,
+          "2": 29,
+          "4": 261,
+          "15": 64,
+          "29": 17
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          }
+        }
+      },
+      "testvec/testv/bitstreams/nb/stv8n2_13200_8kHz.COD": {
+        "sha256": "52c13876304cdafa399bad0c94af70c3101eecf36b65a31f27919412706aa30e",
+        "slots": 700,
+        "clear_words": 700,
+        "erasures": 0,
+        "words_with_applicable_checks": 0,
+        "words_with_restrictive_checks": 0,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "0": 303,
+          "1": 153,
+          "2": 36,
+          "4": 109,
+          "15": 99
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          }
+        }
+      },
+      "testvec/testv/bitstreams/swb/stv32n1_13200_32kHz.COD": {
+        "sha256": "028e37f20a6213396e77bb314faf550cfd86089887df253cfede2a476800ba1c",
+        "slots": 700,
+        "clear_words": 700,
+        "erasures": 0,
+        "words_with_applicable_checks": 333,
+        "words_with_restrictive_checks": 319,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "10": 200,
+          "11": 130,
+          "12": 39,
+          "13": 40,
+          "14": 254,
+          "19": 17,
+          "31": 20
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 254,
+            "outside_allowed": 0,
+            "informative_allowed": 254,
+            "unrestricted": 0,
+            "observed": {
+              "0": 129,
+              "8": 9,
+              "10": 18,
+              "1": 79,
+              "2": 4,
+              "4": 1,
+              "9": 2,
+              "7": 6,
+              "6": 3,
+              "3": 2,
+              "5": 1
+            },
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 40,
+            "outside_allowed": 0,
+            "informative_allowed": 40,
+            "unrestricted": 0,
+            "observed": {
+              "1": 40
+            },
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 254,
+            "outside_allowed": 0,
+            "informative_allowed": 254,
+            "unrestricted": 0,
+            "observed": {
+              "12": 254
+            },
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 40,
+            "outside_allowed": 0,
+            "informative_allowed": 40,
+            "unrestricted": 0,
+            "observed": {
+              "0": 40
+            },
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 39,
+            "outside_allowed": 0,
+            "informative_allowed": 25,
+            "unrestricted": 14,
+            "observed": {
+              "0": 21,
+              "2": 2,
+              "1": 15,
+              "3": 1
+            },
+            "first_outside": null
+          }
+        }
+      },
+      "testvec/testv/bitstreams/swb/stv32n2_13200_32kHz.COD": {
+        "sha256": "4edeb69a8bbd8779a5167a75d9904fbe28258ad4f55bd61e0e3d4f49d596bf13",
+        "slots": 700,
+        "clear_words": 700,
+        "erasures": 0,
+        "words_with_applicable_checks": 236,
+        "words_with_restrictive_checks": 219,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "10": 225,
+          "11": 160,
+          "12": 51,
+          "13": 105,
+          "14": 80,
+          "19": 59,
+          "31": 20
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 80,
+            "outside_allowed": 0,
+            "informative_allowed": 80,
+            "unrestricted": 0,
+            "observed": {
+              "0": 64,
+              "1": 8,
+              "3": 4,
+              "2": 2,
+              "8": 1,
+              "4": 1
+            },
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 105,
+            "outside_allowed": 0,
+            "informative_allowed": 105,
+            "unrestricted": 0,
+            "observed": {
+              "1": 105
+            },
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 80,
+            "outside_allowed": 0,
+            "informative_allowed": 80,
+            "unrestricted": 0,
+            "observed": {
+              "12": 80
+            },
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 105,
+            "outside_allowed": 0,
+            "informative_allowed": 105,
+            "unrestricted": 0,
+            "observed": {
+              "0": 105
+            },
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 51,
+            "outside_allowed": 0,
+            "informative_allowed": 34,
+            "unrestricted": 17,
+            "observed": {
+              "0": 18,
+              "2": 5,
+              "1": 14,
+              "3": 14
+            },
+            "first_outside": null
+          }
+        }
+      },
+      "testvec/testv/bitstreams/wb/stv16n1_13200_16kHz.COD": {
+        "sha256": "b8cbe3b149b80875891f79b24ffbf7ea341f80ed43da8c6e11f64eef9c8f5f9e",
+        "slots": 700,
+        "clear_words": 700,
+        "erasures": 0,
+        "words_with_applicable_checks": 0,
+        "words_with_restrictive_checks": 0,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "5": 241,
+          "6": 129,
+          "7": 40,
+          "9": 253,
+          "17": 21,
+          "30": 16
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          }
+        }
+      },
+      "testvec/testv/bitstreams/wb/stv16n2_13200_16kHz.COD": {
+        "sha256": "6350629fbb70a809159c655efcb58a964f806c012bf283b31ed12efb6e4979a7",
+        "slots": 700,
+        "clear_words": 700,
+        "erasures": 0,
+        "words_with_applicable_checks": 0,
+        "words_with_restrictive_checks": 0,
+        "words_outside_any_check": 0,
+        "mode_index_counts": {
+          "5": 322,
+          "6": 158,
+          "7": 51,
+          "9": 82,
+          "17": 70,
+          "30": 17
+        },
+        "checks": {
+          "wb_gsc_audio": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_gsc_inactive": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "audio_noisy": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "inactive_nibble": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "noisy_pitch_fill": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          },
+          "swb_transition_pair": {
+            "eligible": 0,
+            "outside_allowed": 0,
+            "informative_allowed": 0,
+            "unrestricted": 0,
+            "observed": {},
+            "first_outside": null
+          }
+        }
+      }
+    }
+  }
+}

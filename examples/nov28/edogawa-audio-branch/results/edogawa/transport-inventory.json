@@ -1,0 +1,68 @@
+{
+  "native_dump": "rf/msc.bin",
+  "native_dump_sha256": "3d42c8038a506c8ee6aaee4dfb08e3229d166a46671dc1a1ca8f0d31aa28c69f",
+  "native_transport": {
+    "msc_callbacks": 111,
+    "record_lengths": {
+      "728": 111
+    },
+    "native_packet_crc_checks": 444,
+    "packets_passing_crc": 26,
+    "packets_with_expected_header": 95,
+    "packets_passing_crc_and_header": 26,
+    "native_du_crc_checks": 111,
+    "dus_passing_own_crc": 4,
+    "rows_passing_all_packet_checks": 4,
+    "crc_good_whole_native_dus": 4,
+    "crc_good_whole_native_dus_by_phase": {
+      "1": 2,
+      "2": 2
+    }
+  },
+  "accepted_packet_count": 3,
+  "accepted_complete_du_count": 0,
+  "complete_du_ticks_sorted": [],
+  "assigned_counter_ids": [
+    43949404
+  ],
+  "assigned_counter_inclusive_ranges": [
+    [
+      43949404,
+      43949404
+    ]
+  ],
+  "archived_complete_counters": [],
+  "archived_complete_counter_inclusive_ranges": [],
+  "directly_received_complete_groups": [],
+  "direct_complete_counter_inclusive_ranges": [],
+  "salvage": {
+    "files": 1,
+    "assigned_record_observations": 1,
+    "original_complete_groups": 0,
+    "salvaged_complete_groups": 0,
+    "extra_groups": 0,
+    "missing_baseline_groups": [],
+    "crc_good_data_units": 0,
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "candidate_key_groups": 0,
+    "verified_text_key_groups": 0,
+    "note": "Packet/DU CRCs verify container integrity, not text or codec keys.",
+    "text_candidates_evaluated": false
+  },
+  "archives_sha256": {
+    "data_units.npz": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+    "groups.npz": "8ef8ac0eb064f4ad7689a4b8529716667cb3811493627d81072836b2e072c545",
+    "packets.npz": "5f92594e648a8f1cc214abd91c6d5bc22051911dd4fb0a305298c54967ef5dd1",
+    "provenance.json": "95f68ae963915aaaff50932c716f680886fed5637839ed90ff8ec947033257ae",
+    "report.json": "97c6dba051b261f7a60169257e65f942f25e1ee6fb0c7026a56f88f27c33f153"
+  },
+  "plan_sha256": "4ffc0a7e51eda3f4a7618cc2c9eef89acde1a912244f5a2045effe83bbcb1bf8",
+  "source_seal_sha256": "f5b4ef1a362addfdb14fa02db93924f091708948cd4a26e6b9b0c99778b2362a",
+  "dream_log_sha256": "382a2153b7d840549037619242557cdd8e51c1133346cb6df4143ac2e6dba49d",
+  "physical_eof": true,
+  "demod_wrapper_returncode": 0,
+  "transport_returncode": 0,
+  "verification_tool_sha256": "4704a03afa4f5bed6b31e7a9c4f127d7a6a610bd5ec9153300799b7e628fa2ab",
+  "earliest_native_group": null
+}

@@ -1,0 +1,84 @@
+{
+  "original_msc_sha256": "6cdc6f61239c3bfbad2a0e16da314ab89f8bacc017fc89f74fbb3d599358a879",
+  "predictions_sha256": "3c7e28e14c64cbb08dca541c23373e5e68448c0e46704b91622be104fd9eb307",
+  "complete_groups": 25,
+  "all_groups": {
+    "total": {
+      "opportunities": 450,
+      "physically_possible": 25,
+      "issued": 0,
+      "exact": 0,
+      "miss": 0
+    },
+    "by_position": {
+      "1": {
+        "opportunities": 125,
+        "physically_possible": 25,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      },
+      "2": {
+        "opportunities": 100,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      },
+      "3": {
+        "opportunities": 100,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      },
+      "4": {
+        "opportunities": 125,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      }
+    }
+  },
+  "primary_counter": 43872873,
+  "primary": {
+    "total": {
+      "opportunities": 18,
+      "physically_possible": 1,
+      "issued": 0,
+      "exact": 0,
+      "miss": 0
+    },
+    "by_position": {
+      "1": {
+        "opportunities": 5,
+        "physically_possible": 1,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      },
+      "2": {
+        "opportunities": 4,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      },
+      "3": {
+        "opportunities": 4,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      },
+      "4": {
+        "opportunities": 5,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schema": "dual-6140-original-iq-receipts-v1",
+  "sites": {
+    "edogawa": {
+      "site": "edogawa",
+      "files": {
+        "capture.json": {
+          "path": "edogawa/capture.json",
+          "bytes": 747,
+          "sha256": "970a5464e71d58fd7595ef0ddd9e234ec530854ae88b97a06f2171152b420f71"
+        },
+        "process.json": {
+          "path": "edogawa/process.json",
+          "bytes": 155,
+          "sha256": "d884dc470a5a1265aa870cfe6754ecfd8bb3607677b8b1aad0ab0bab3f5ba84a"
+        },
+        "original.wav": {
+          "path": "edogawa/original.wav",
+          "bytes": 17280044,
+          "sha256": "a078a94acee9c5198c4611e9b3caeab7f9fb56f03a763982cf68e2e65a31c837"
+        },
+        "original.wav.timing.csv": {
+          "path": "edogawa/original.wav.timing.csv",
+          "bytes": 428511,
+          "sha256": "eaef73c411103ea4165ea7bcdeb5b9422b1302acd66ff14eae0eb58a5c2da09d"
+        }
+      },
+      "rate_hz": 48000,
+      "frames": 4320000,
+      "pcm_bytes": 17280000,
+      "pcm_sha256": "542cfd75830a67a96f8870cb7a479b4825bafbd666dcedc8db0ce8d0a7a00a77",
+      "seconds": 90.0,
+      "missing_from_90s_pairs": 0,
+      "missing_from_90s_seconds": 0.0,
+      "reached_target": true,
+      "process_returncode": 0,
+      "external_timeout": false,
+      "recorder_reported_error": false,
+      "packets": 13500,
+      "timestamped_packets": 13497,
+      "first_anchor_sample_and_unix_ns": [
+        960,
+        1795875721647513270
+      ],
+      "last_anchor_sample_and_unix_ns": [
+        4319760,
+        1795875811622480120
+      ],
+      "untimestamped_packets": 3,
+      "untimestamped_pairs": 960,
+      "largest_abs_clock_step_ns": 14599,
+      "steps_over_one_sample": [],
+      "directly_timed_runs": [
+        {
+          "sample_start": 960,
+          "sample_end_exclusive": 4320000,
+          "packet_count": 13497,
+          "start_ns": 1795875721647513270,
+          "end_exclusive_ns": 1795875811627480120,
+          "start_utc": "2026-11-28T14:22:01.647513270Z",
+          "end_exclusive_utc": "2026-11-28T14:23:31.627480120Z"
+        }
+      ],
+      "untimestamped_runs": [
+        {
+          "sample_start": 0,
+          "sample_end_exclusive": 960,
+          "packet_count": 3,
+          "placement": "nominal_backward_from_first_anchor",
+          "start_ns": 1795875721627513270,
+          "end_exclusive_ns": 1795875721647513270,
+          "start_utc": "2026-11-28T14:22:01.627513270Z",
+          "end_exclusive_utc": "2026-11-28T14:22:01.647513270Z"
+        }
+      ]
+    },
+    "yokohama": {
+      "site": "yokohama",
+      "files": {
+        "capture.json": {
+          "path": "yokohama/capture.json",
+          "bytes": 749,
+          "sha256": "af4e9f6d72eecc8646c1d5e7f6ec2d15c3e2c8e463ff5d59e431ed3b08cf3976"
+        },
+        "process.json": {
+          "path": "yokohama/process.json",
+          "bytes": 155,
+          "sha256": "8662d01c7f8e1f4837a5ceecf3444f6b88343e4098382705e851a1ce685d3624"
+        },
+        "original.wav": {
+          "path": "yokohama/original.wav",
+          "bytes": 17280044,
+          "sha256": "f64d398e74df5b4856c08c094c50f1c22847e414d2d779741e640fcf0f768df0"
+        },
+        "original.wav.timing.csv": {
+          "path": "yokohama/original.wav.timing.csv",
+          "bytes": 428454,
+          "sha256": "5cf73f599404a7db3262a4abc325ffd8123a570dcdc3a15a6dcb117ad561ffc3"
+        }
+      },
+      "rate_hz": 48000,
+      "frames": 4320000,
+      "pcm_bytes": 17280000,
+      "pcm_sha256": "6a87b441be20df4df6b85d6b830da3540560736673e575c9db29d53e4210194d",
+      "seconds": 90.0,
+      "missing_from_90s_pairs": 0,
+      "missing_from_90s_seconds": 0.0,
+      "reached_target": true,
+      "process_returncode": 0,
+      "external_timeout": false,
+      "recorder_reported_error": false,
+      "packets": 13500,
+      "timestamped_packets": 13494,
+      "first_anchor_sample_and_unix_ns": [
+        1920,
+        1795875722479188168
+      ],
+      "last_anchor_sample_and_unix_ns": [
+        4319760,
+        1795875812434170168
+      ],
+      "untimestamped_packets": 6,
+      "untimestamped_pairs": 1920,
+      "largest_abs_clock_step_ns": 14102,
+      "steps_over_one_sample": [],
+      "directly_timed_runs": [
+        {
+          "sample_start": 1920,
+          "sample_end_exclusive": 4320000,
+          "packet_count": 13494,
+          "start_ns": 1795875722479188168,
+          "end_exclusive_ns": 1795875812439170168,
+          "start_utc": "2026-11-28T14:22:02.479188168Z",
+          "end_exclusive_utc": "2026-11-28T14:23:32.439170168Z"
+        }
+      ],
+      "untimestamped_runs": [
+        {
+          "sample_start": 0,
+          "sample_end_exclusive": 1920,
+          "packet_count": 6,
+          "placement": "nominal_backward_from_first_anchor",
+          "start_ns": 1795875722439188168,
+          "end_exclusive_ns": 1795875722479188168,
+          "start_utc": "2026-11-28T14:22:02.439188168Z",
+          "end_exclusive_utc": "2026-11-28T14:22:02.479188168Z"
+        }
+      ]
+    }
+  },
+  "interval_basis": "Station-reported packet start clocks, with last packet duration at 48 kHz. Consecutive timestamped packets form one run when their timing difference is within one sample. Clock steps and untimestamped runs stay explicit. Overlap counts the union of station time ranges once. It measures nominal receiver time.",
+  "confirmed_overlap": {
+    "intervals": [
+      {
+        "start_ns": 1795875722479188168,
+        "end_exclusive_ns": 1795875811627480120,
+        "start_utc": "2026-11-28T14:22:02.479188168Z",
+        "end_exclusive_utc": "2026-11-28T14:23:31.627480120Z"
+      }
+    ],
+    "seconds": 89.148291952
+  },
+  "overlap_including_nominal_untimed_estimates": {
+    "intervals": [
+      {
+        "start_ns": 1795875722439188168,
+        "end_exclusive_ns": 1795875811627480120,
+        "start_utc": "2026-11-28T14:22:02.439188168Z",
+        "end_exclusive_utc": "2026-11-28T14:23:31.627480120Z"
+      }
+    ],
+    "seconds": 89.188291952
+  }
+}

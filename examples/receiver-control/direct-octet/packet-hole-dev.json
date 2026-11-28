@@ -1,0 +1,77 @@
+{
+  "source": "member-dus.npz",
+  "source_sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+  "complete_groups": 1102,
+  "centers": [
+    4,
+    7,
+    10,
+    13,
+    16,
+    19,
+    22,
+    25,
+    28,
+    31,
+    34,
+    37,
+    40,
+    43,
+    46,
+    49,
+    52,
+    55
+  ],
+  "physically_possible_centers": [
+    28
+  ],
+  "scores": {
+    "total": {
+      "opportunities": 19836,
+      "physically_possible": 1102,
+      "issued": 61,
+      "exact": 32,
+      "miss": 29
+    },
+    "by_position": {
+      "1": {
+        "opportunities": 5510,
+        "physically_possible": 1102,
+        "issued": 61,
+        "exact": 32,
+        "miss": 29
+      },
+      "2": {
+        "opportunities": 4408,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      },
+      "3": {
+        "opportunities": 4408,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      },
+      "4": {
+        "opportunities": 5510,
+        "physically_possible": 0,
+        "issued": 0,
+        "exact": 0,
+        "miss": 0
+      }
+    }
+  },
+  "synthetic_controls": {
+    "guarded_five_octets": true,
+    "different_modes_abstain": true,
+    "different_donors_abstain": true,
+    "two_original_labels_same_forecast": true,
+    "exact_scores": [
+      0,
+      1
+    ]
+  }
+}

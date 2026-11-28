@@ -1,0 +1,16 @@
+{
+  "prepared_utc": "2026-11-28T13:45:26.253991+00:00",
+  "origin": "https://ubersdr.jl1edu.freeddns.org",
+  "frequency_hz": 6140000,
+  "seconds": 120,
+  "rate_hz": 48000,
+  "mode": "iq48",
+  "packet_timing": true,
+  "sha256": {
+    "record_ubersdr_iq.py": "fb2c2a542b6be2de5bd3fa054202a7ab394ef58220a0828d4230462903f9091d",
+    "pcm_v4.py": "85a3442476172d36a086c09712a01c2e8bdb5da954f9629dc4e7c25d7ca1effd",
+    "pcm_v4_native.so": "839ff170ee2a0405f4438ae3631bc7c06a5c09956ae8b9bf3b3464e694150b6f"
+  },
+  "recorder_revision": "8c9a9edde9eeb1b69dd55cbcc946cb1e84ce6a90",
+  "pcm_revision": "8134b1fa5d989de776999ae80145c9a0b8d46e2e"
+}

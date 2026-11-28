@@ -1,0 +1,79 @@
+{
+  "format": "nov27-3205-360-420-iq-receipt-v1",
+  "recording": "10min-2026-11-27T12_15_02Z_3205.00_iq.wav",
+  "recording_bytes": 29360172,
+  "recording_sha256": "8ba5576dc9ab560c14a1de3b7def1a176c2f3e95010dfabe890ab002f40bb624",
+  "recording_sample_pairs": 7330304,
+  "sample_rate_hz": 12000,
+  "sample_format": "stereo signed 16-bit little-endian I and Q",
+  "sample_seconds_half_open": [
+    360,
+    420
+  ],
+  "source_sample_pairs_half_open": [
+    4320000,
+    5040000
+  ],
+  "source_file_octets_half_open": [
+    17280044,
+    20160044
+  ],
+  "excerpt_sample_pairs": 720000,
+  "pcm_sha256": "ec5869c354d8b7782e75308fee467620b997366ab931a2f68f4c611c43d5e65a",
+  "flac": "3205kHz-360-420s-iq12.flac",
+  "flac_bytes": 2475895,
+  "flac_sha256": "e2c0ad1d6a214f8da14c5c9c4da2159e32b5a035fc6d2f61d3fb8bfdbe0c586d",
+  "extraction": "Original WAV PCM slice was encoded using SoundFile FLAC PCM_16, then read back and compared byte-for-byte with that slice.",
+  "nominal_filename_clock_utc": [
+    "2026-11-27T12:21:02Z",
+    "2026-11-27T12:22:02Z"
+  ],
+  "has_station_timestamps": false,
+  "prior_use": "Locally held-out interval in a contributor recording with published whole-capture aggregate counts. Earlier local passes used [0,120) and [240,360).",
+  "freeze_revision": "f39233d6fbd9e1a0962acf157e03205fc3fd580c",
+  "receiver_revision": "201475d3d3483e8e4b9462627e4fb22ed6751dac",
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "demodulator_script_sha256": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+  "forecast_script_sha256": "725e435d6a9ac3bafa179dd0112c9fa038d35069dea0aa04325c5c148ab904a1",
+  "forecasts": "forecasts.json",
+  "forecasts_sha256": "7de2fbe6418376526be48c23834ea7278fe706a19db4dc45f94ed5e9c8e0102e",
+  "forecast_source": "Mode-only ledger sealed from MLC4 before MLC1 and before direct target scoring.",
+  "passes": [
+    {
+      "role": "primary",
+      "mlc_iterations": 4,
+      "settings": {
+        "freqint": 2,
+        "timeint": 1,
+        "modmetric": 0,
+        "mlciter": 4
+      },
+      "returncode": 0,
+      "start_sample_in_excerpt": 0,
+      "sample_pairs": 720000,
+      "reception_profile": "wiener",
+      "msc": "mlc4-msc.bin",
+      "msc_bytes": 105408,
+      "msc_sha256": "e3d44c7da7d4c8e4001933aeb613e7aee3b6a98d70cadb311b221a56e064664f",
+      "command": "python scripts/demod_iq_window.py 3205kHz-360-420s-iq12.flac NEW_DIRECTORY --start 0 --seconds 60 --reception-profile wiener --mlc-iterations 4"
+    },
+    {
+      "role": "same-IQ diagnostic",
+      "mlc_iterations": 1,
+      "settings": {
+        "freqint": 2,
+        "timeint": 1,
+        "modmetric": 0,
+        "mlciter": 1
+      },
+      "returncode": 0,
+      "start_sample_in_excerpt": 0,
+      "sample_pairs": 720000,
+      "reception_profile": "wiener",
+      "msc": "mlc1-msc.bin",
+      "msc_bytes": 105408,
+      "msc_sha256": "67200f39f7a03e580c311910b29124ed4cccb19e6e90ef0af34cd8c9d4a6c2ed",
+      "command": "python scripts/demod_iq_window.py 3205kHz-360-420s-iq12.flac NEW_DIRECTORY --start 0 --seconds 60 --reception-profile wiener --mlc-iterations 1"
+    }
+  ]
+}

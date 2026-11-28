@@ -1,0 +1,391 @@
+{
+  "edogawa_mlc1_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "edogawa_mlc4_sha256": "08ff30e342446c25dd7b47d6009fb0ede1f6424df3888353b30aee2d393a1746",
+  "complete_groups_before": 17,
+  "complete_groups_after": 18,
+  "groups_gained": [
+    43945704
+  ],
+  "groups_lost": [],
+  "packet_gains": [
+    {
+      "coordinate": [
+        43945704,
+        1,
+        0
+      ],
+      "native_comparisons": [
+        {
+          "mlc1_row": 156,
+          "mlc4_row": 156,
+          "other_matching_ordinals": [
+            1,
+            2,
+            3
+          ],
+          "peer_native_rows": [
+            159
+          ],
+          "previous_wire_sha256": "fa65d4ed9adebf23868945f63c4ff76d0dee8c9f041f5b33cf1ce7458379e2eb",
+          "mlc4_wire_sha256": "d5293d429041204ab4bb270f22728df9024ee490da2f5479899fc44334a62026",
+          "previous_valid": false,
+          "previous_crc_computed": "99e8",
+          "mlc4_crc_computed": "14a1",
+          "previous_crc_field": "14a1",
+          "mlc4_crc_field": "14a1",
+          "changes": [
+            {
+              "wire_offset": 105,
+              "mlc1": "19",
+              "mlc4": "1f",
+              "peer": "1f",
+              "du_offset": 104,
+              "slot": 22,
+              "cycle": 0,
+              "position": 3,
+              "field": "payload p31",
+              "direct_field": true,
+              "changed_word_bits": [
+                261,
+                262
+              ]
+            },
+            {
+              "wire_offset": 106,
+              "mlc1": "88",
+              "mlc4": "f8",
+              "peer": "f8",
+              "du_offset": 105,
+              "slot": 23,
+              "cycle": 0,
+              "position": 4,
+              "field": "mode",
+              "direct_field": true,
+              "changed_word_bits": [
+                1,
+                2,
+                3
+              ]
+            }
+          ],
+          "changed_bits": 5
+        }
+      ]
+    },
+    {
+      "coordinate": [
+        43945704,
+        1,
+        1
+      ],
+      "native_comparisons": [
+        {
+          "mlc1_row": 156,
+          "mlc4_row": 156,
+          "other_matching_ordinals": [
+            2,
+            3
+          ],
+          "peer_native_rows": [
+            159
+          ],
+          "previous_wire_sha256": "a4ca6733c3db46ed4cc8ed070e46dc03d6a5d6b18fd8987c7fe51b4e248ce31f",
+          "mlc4_wire_sha256": "a4ca6733c3db46ed4cc8ed070e46dc03d6a5d6b18fd8987c7fe51b4e248ce31f",
+          "previous_valid": true,
+          "previous_crc_computed": "da54",
+          "mlc4_crc_computed": "da54",
+          "previous_crc_field": "da54",
+          "mlc4_crc_field": "da54",
+          "changes": [],
+          "changed_bits": 0
+        }
+      ]
+    },
+    {
+      "coordinate": [
+        43945704,
+        1,
+        2
+      ],
+      "native_comparisons": [
+        {
+          "mlc1_row": 156,
+          "mlc4_row": 156,
+          "other_matching_ordinals": [
+            1,
+            3
+          ],
+          "peer_native_rows": [
+            159
+          ],
+          "previous_wire_sha256": "65081d18e6e39d3c364e682519cba13c0d09b1a58124c23ca7f732775df81fc4",
+          "mlc4_wire_sha256": "65081d18e6e39d3c364e682519cba13c0d09b1a58124c23ca7f732775df81fc4",
+          "previous_valid": true,
+          "previous_crc_computed": "24bf",
+          "mlc4_crc_computed": "24bf",
+          "previous_crc_field": "24bf",
+          "mlc4_crc_field": "24bf",
+          "changes": [],
+          "changed_bits": 0
+        }
+      ]
+    },
+    {
+      "coordinate": [
+        43945704,
+        1,
+        3
+      ],
+      "native_comparisons": [
+        {
+          "mlc1_row": 156,
+          "mlc4_row": 156,
+          "other_matching_ordinals": [
+            1,
+            2
+          ],
+          "peer_native_rows": [
+            159
+          ],
+          "previous_wire_sha256": "db6888836177c5beb6ab56b5ec99d63a068cd8235e997760bdc1b54571f9c4e6",
+          "mlc4_wire_sha256": "db6888836177c5beb6ab56b5ec99d63a068cd8235e997760bdc1b54571f9c4e6",
+          "previous_valid": true,
+          "previous_crc_computed": "d77e",
+          "mlc4_crc_computed": "d77e",
+          "previous_crc_field": "d77e",
+          "mlc4_crc_field": "d77e",
+          "changes": [],
+          "changed_bits": 0
+        }
+      ]
+    },
+    {
+      "coordinate": [
+        43945704,
+        2,
+        0
+      ],
+      "native_comparisons": [
+        {
+          "mlc1_row": 157,
+          "mlc4_row": 157,
+          "other_matching_ordinals": [
+            1,
+            2,
+            3
+          ],
+          "peer_native_rows": [
+            160
+          ],
+          "previous_wire_sha256": "84ad808bc22037d3271c327e583bb53371aa3e43c1fa6e2d09aed829425c5e1b",
+          "mlc4_wire_sha256": "84ad808bc22037d3271c327e583bb53371aa3e43c1fa6e2d09aed829425c5e1b",
+          "previous_valid": true,
+          "previous_crc_computed": "9b54",
+          "mlc4_crc_computed": "9b54",
+          "previous_crc_field": "9b54",
+          "mlc4_crc_field": "9b54",
+          "changes": [],
+          "changed_bits": 0
+        }
+      ]
+    },
+    {
+      "coordinate": [
+        43945704,
+        2,
+        1
+      ],
+      "native_comparisons": [
+        {
+          "mlc1_row": 157,
+          "mlc4_row": 157,
+          "other_matching_ordinals": [
+            0,
+            2,
+            3
+          ],
+          "peer_native_rows": [
+            160
+          ],
+          "previous_wire_sha256": "2f74d9cc05c46f257f04cfb6796858cf4cedde11d310789f5a4fa083905bd5ba",
+          "mlc4_wire_sha256": "2f74d9cc05c46f257f04cfb6796858cf4cedde11d310789f5a4fa083905bd5ba",
+          "previous_valid": true,
+          "previous_crc_computed": "185d",
+          "mlc4_crc_computed": "185d",
+          "previous_crc_field": "185d",
+          "mlc4_crc_field": "185d",
+          "changes": [],
+          "changed_bits": 0
+        }
+      ]
+    },
+    {
+      "coordinate": [
+        43945704,
+        2,
+        2
+      ],
+      "native_comparisons": [
+        {
+          "mlc1_row": 157,
+          "mlc4_row": 157,
+          "other_matching_ordinals": [
+            0,
+            1,
+            3
+          ],
+          "peer_native_rows": [
+            160
+          ],
+          "previous_wire_sha256": "f671d76df4e7e0bbfdd995277d3905ef6a7d8c802c84e83b34e4b44777546b4f",
+          "mlc4_wire_sha256": "f671d76df4e7e0bbfdd995277d3905ef6a7d8c802c84e83b34e4b44777546b4f",
+          "previous_valid": true,
+          "previous_crc_computed": "7b81",
+          "mlc4_crc_computed": "7b81",
+          "previous_crc_field": "7b81",
+          "mlc4_crc_field": "7b81",
+          "changes": [],
+          "changed_bits": 0
+        }
+      ]
+    },
+    {
+      "coordinate": [
+        43945704,
+        2,
+        3
+      ],
+      "native_comparisons": [
+        {
+          "mlc1_row": 157,
+          "mlc4_row": 157,
+          "other_matching_ordinals": [
+            0,
+            1,
+            2
+          ],
+          "peer_native_rows": [
+            160
+          ],
+          "previous_wire_sha256": "dda7b85a38e1e7a54afdaff06bfebc8ce111dbc245e679165f89102f4f41f353",
+          "mlc4_wire_sha256": "dda7b85a38e1e7a54afdaff06bfebc8ce111dbc245e679165f89102f4f41f353",
+          "previous_valid": true,
+          "previous_crc_computed": "44c2",
+          "mlc4_crc_computed": "44c2",
+          "previous_crc_field": "44c2",
+          "mlc4_crc_field": "44c2",
+          "changes": [],
+          "changed_bits": 0
+        }
+      ]
+    }
+  ],
+  "group_projections": [
+    {
+      "counter": 43945704,
+      "mlc1": [
+        {
+          "position": 1,
+          "received_slots": 5,
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "complete_clear_words": 0
+        },
+        {
+          "position": 2,
+          "received_slots": 5,
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "complete_clear_words": 0
+        },
+        {
+          "position": 3,
+          "received_slots": 5,
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "complete_clear_words": 0
+        },
+        {
+          "position": 4,
+          "received_slots": 5,
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "complete_clear_words": 0
+        }
+      ],
+      "mlc4": [
+        {
+          "position": 1,
+          "received_slots": 15,
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "complete_clear_words": 0
+        },
+        {
+          "position": 2,
+          "received_slots": 15,
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "complete_clear_words": 0
+        },
+        {
+          "position": 3,
+          "received_slots": 15,
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "complete_clear_words": 0
+        },
+        {
+          "position": 4,
+          "received_slots": 15,
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "complete_clear_words": 0
+        }
+      ],
+      "peer_witnesses": [
+        {
+          "phase": 0,
+          "mlc1_packets": 4,
+          "mlc4_packets": 4,
+          "peer_packets": 4,
+          "exact_shared_wires": 4,
+          "conflicting_wires": 0,
+          "du_peer_equal": true,
+          "du_crc": "600b",
+          "peer_du_crc": "600b"
+        },
+        {
+          "phase": 1,
+          "mlc1_packets": 0,
+          "mlc4_packets": 4,
+          "peer_packets": 4,
+          "exact_shared_wires": 4,
+          "conflicting_wires": 0,
+          "du_peer_equal": true,
+          "du_crc": "867e",
+          "peer_du_crc": "867e"
+        },
+        {
+          "phase": 2,
+          "mlc1_packets": 0,
+          "mlc4_packets": 4,
+          "peer_packets": 4,
+          "exact_shared_wires": 4,
+          "conflicting_wires": 0,
+          "du_peer_equal": true,
+          "du_crc": "2952",
+          "peer_du_crc": "2952"
+        }
+      ]
+    }
+  ]
+}

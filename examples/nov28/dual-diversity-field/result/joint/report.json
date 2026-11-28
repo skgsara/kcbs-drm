@@ -1,0 +1,69 @@
+{
+  "format": "drm-witnessed-diversity-v1",
+  "status": "no_witnessed_pairs",
+  "sources": {
+    "left": {
+      "msc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "cells_sha256": "975d7b53dcc668353846295130185bb611ed95dc144e15d1a432d9f497e76c5b",
+      "native_rows": 0,
+      "row_sizes": {},
+      "observer_blocks": 5,
+      "accepted_native_packets": 0,
+      "complete_native_dus": 0,
+      "rejected_native_rows": {},
+      "uniquely_bound_blocks": 0
+    },
+    "right": {
+      "msc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "cells_sha256": "64da892034f8a56825acfb5b72a72a394ed0cc6d6a05ed4ece79c59f766a646e",
+      "native_rows": 0,
+      "row_sizes": {},
+      "observer_blocks": 2,
+      "accepted_native_packets": 0,
+      "complete_native_dus": 0,
+      "rejected_native_rows": {},
+      "uniquely_bound_blocks": 0
+    }
+  },
+  "decoder_sha256": "8a154e21481152856e3cd6e0adc5b29e68da1ed3c5db939272c474c64e67f581",
+  "alignment": {
+    "left": {
+      "native_rows": 0,
+      "unsupported_rows": 0,
+      "valid_packets": 0
+    },
+    "right": {
+      "native_rows": 0,
+      "unsupported_rows": 0,
+      "valid_packets": 0
+    },
+    "shared_distinct_wires": 0,
+    "nonunique_shared_wires": 0,
+    "candidate_pairs": 0,
+    "accepted_pairs": 0,
+    "accepted_witnesses": 0,
+    "rejected_pairs": 0,
+    "rejection_reasons": {},
+    "rejections": []
+  },
+  "coverage": {
+    "witnessed_pairs": 0,
+    "soft_decoded_rows": 0,
+    "changed_rows": 0,
+    "peer_added_packets": 0,
+    "soft_added_packets": 0,
+    "soft_observed_packets": 0,
+    "soft_conflicting_packets": 0,
+    "soft_observed_complete_dus": 0,
+    "new_complete_dus_from_hard_pool": 0,
+    "new_complete_dus_from_soft": 0,
+    "preserved_left_packets": 0,
+    "output_accepted_packets": 0,
+    "output_complete_dus": 0
+  },
+  "soft_skip_reasons": {},
+  "output_native_rows": 0,
+  "output_msc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "rows": [],
+  "scope": "All output ordinals follow the left MSC file. Unwitnessed rows are copied unchanged. The file preserves received wire bytes, including existing invalid quarters. Absolute counter/phase assignment requires the ordinary transport parser."
+}

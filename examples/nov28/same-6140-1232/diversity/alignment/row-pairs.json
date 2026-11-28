@@ -1,0 +1,3805 @@
+[
+  {
+    "edogawa_row": 0,
+    "yokohama_row": 3,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945652,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      3
+    ],
+    "raw_joint": [
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 4,
+    "yokohama_row": 7,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945653,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2
+    ],
+    "raw_joint": [
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 5,
+    "yokohama_row": 8,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945654,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2
+    ],
+    "raw_joint": [
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 6,
+    "yokohama_row": 9,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945654,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      3
+    ],
+    "raw_joint": [
+      0,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 7,
+    "yokohama_row": 10,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945654,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      3
+    ],
+    "raw_joint": [
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 8,
+    "yokohama_row": 11,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945655,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2
+    ],
+    "raw_joint": [
+      1,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 11,
+    "yokohama_row": 14,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945656,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      3
+    ],
+    "raw_joint": [
+      0,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 12,
+    "yokohama_row": 15,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945656,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      3
+    ],
+    "raw_joint": [
+      0,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 13,
+    "yokohama_row": 16,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945656,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2
+    ],
+    "raw_joint": [
+      0,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 17,
+    "yokohama_row": 20,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945658,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 18,
+    "yokohama_row": 21,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945658,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 19,
+    "yokohama_row": 22,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945658,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 20,
+    "yokohama_row": 23,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945659,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 21,
+    "yokohama_row": 24,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945659,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 22,
+    "yokohama_row": 25,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945659,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 23,
+    "yokohama_row": 26,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945660,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 24,
+    "yokohama_row": 27,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945660,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 25,
+    "yokohama_row": 28,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945660,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 26,
+    "yokohama_row": 29,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945661,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 27,
+    "yokohama_row": 30,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945661,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 28,
+    "yokohama_row": 31,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945661,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 29,
+    "yokohama_row": 32,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945662,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 30,
+    "yokohama_row": 33,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945662,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 31,
+    "yokohama_row": 34,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945662,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 32,
+    "yokohama_row": 35,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945663,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      3
+    ],
+    "raw_joint": [
+      1,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 33,
+    "yokohama_row": 36,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945663,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 34,
+    "yokohama_row": 37,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945663,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 35,
+    "yokohama_row": 38,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945664,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 36,
+    "yokohama_row": 39,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945664,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 37,
+    "yokohama_row": 40,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945664,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 38,
+    "yokohama_row": 41,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945665,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 39,
+    "yokohama_row": 42,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945665,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 40,
+    "yokohama_row": 43,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945665,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 41,
+    "yokohama_row": 44,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945666,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 42,
+    "yokohama_row": 45,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945666,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 43,
+    "yokohama_row": 46,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945666,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1
+    ],
+    "raw_joint": [
+      1
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      2,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 45,
+    "yokohama_row": 48,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945667,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2
+    ],
+    "raw_joint": [
+      1,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 46,
+    "yokohama_row": 49,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945667,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 47,
+    "yokohama_row": 50,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945668,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 48,
+    "yokohama_row": 51,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945668,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 49,
+    "yokohama_row": 52,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945668,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 50,
+    "yokohama_row": 53,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945669,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 51,
+    "yokohama_row": 54,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945669,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 52,
+    "yokohama_row": 55,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945669,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 53,
+    "yokohama_row": 56,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945670,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 54,
+    "yokohama_row": 57,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945670,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 55,
+    "yokohama_row": 58,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945670,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 56,
+    "yokohama_row": 59,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945671,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 57,
+    "yokohama_row": 60,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945671,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 58,
+    "yokohama_row": 61,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945671,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 59,
+    "yokohama_row": 62,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945672,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 60,
+    "yokohama_row": 63,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945672,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      3
+    ],
+    "raw_joint": [
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 68,
+    "yokohama_row": 71,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945675,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2
+    ],
+    "raw_joint": [
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 69,
+    "yokohama_row": 72,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945675,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2,
+      3
+    ],
+    "raw_joint": [
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 71,
+    "yokohama_row": 74,
+    "delta": 3,
+    "cohort": "calibration",
+    "known_coordinate": [
+      43945676,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 72,
+    "yokohama_row": 75,
+    "delta": 3,
+    "cohort": "guard",
+    "known_coordinate": [
+      43945676,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 73,
+    "yokohama_row": 76,
+    "delta": 3,
+    "cohort": "guard",
+    "known_coordinate": [
+      43945676,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 74,
+    "yokohama_row": 77,
+    "delta": 3,
+    "cohort": "guard",
+    "known_coordinate": [
+      43945677,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2
+    ],
+    "raw_joint": [
+      1,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 75,
+    "yokohama_row": 78,
+    "delta": 3,
+    "cohort": "guard",
+    "known_coordinate": [
+      43945677,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 76,
+    "yokohama_row": 79,
+    "delta": 3,
+    "cohort": "guard",
+    "known_coordinate": [
+      43945677,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      3
+    ],
+    "raw_joint": [
+      0,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 77,
+    "yokohama_row": 80,
+    "delta": 3,
+    "cohort": "guard",
+    "known_coordinate": [
+      43945678,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2,
+      3
+    ],
+    "raw_joint": [
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 78,
+    "yokohama_row": 81,
+    "delta": 3,
+    "cohort": "guard",
+    "known_coordinate": [
+      43945678,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 90,
+    "yokohama_row": 93,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945682,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2,
+      3
+    ],
+    "raw_joint": [
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 91,
+    "yokohama_row": 94,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945682,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 92,
+    "yokohama_row": 95,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945683,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 93,
+    "yokohama_row": 96,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945683,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 94,
+    "yokohama_row": 97,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945683,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 95,
+    "yokohama_row": 98,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945684,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 104,
+    "yokohama_row": 107,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945687,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2
+    ],
+    "raw_joint": [
+      0,
+      2
+    ],
+    "raw_edogawa_only": [
+      1
+    ],
+    "raw_yokohama_only": [
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 106,
+    "yokohama_row": 109,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": null,
+    "old_ledger_sites": [],
+    "witness_ordinals": [
+      2
+    ],
+    "raw_joint": [
+      2
+    ],
+    "raw_edogawa_only": [
+      1,
+      3
+    ],
+    "raw_yokohama_only": [],
+    "raw_neither": [
+      0
+    ]
+  },
+  {
+    "edogawa_row": 107,
+    "yokohama_row": 110,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945688,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [
+      0
+    ],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 108,
+    "yokohama_row": 111,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945688,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa"
+    ],
+    "witness_ordinals": [
+      2,
+      3
+    ],
+    "raw_joint": [
+      2,
+      3
+    ],
+    "raw_edogawa_only": [
+      0,
+      1
+    ],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 109,
+    "yokohama_row": 112,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945688,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa"
+    ],
+    "witness_ordinals": [
+      0,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 110,
+    "yokohama_row": 113,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945689,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 111,
+    "yokohama_row": 114,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945689,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2
+    ],
+    "raw_joint": [
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 117,
+    "yokohama_row": 120,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": null,
+    "old_ledger_sites": [],
+    "witness_ordinals": [
+      3
+    ],
+    "raw_joint": [
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1,
+      2
+    ],
+    "raw_neither": [
+      0
+    ]
+  },
+  {
+    "edogawa_row": 119,
+    "yokohama_row": 122,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945692,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 120,
+    "yokohama_row": 123,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945692,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 121,
+    "yokohama_row": 124,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945692,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 122,
+    "yokohama_row": 125,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945693,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 123,
+    "yokohama_row": 126,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945693,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 124,
+    "yokohama_row": 127,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945693,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 125,
+    "yokohama_row": 128,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945694,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 126,
+    "yokohama_row": 129,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945694,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 127,
+    "yokohama_row": 130,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945694,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 128,
+    "yokohama_row": 131,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945695,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 129,
+    "yokohama_row": 132,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945695,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2,
+      3
+    ],
+    "raw_joint": [
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 130,
+    "yokohama_row": 133,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945695,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      3
+    ],
+    "raw_joint": [
+      0,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 145,
+    "yokohama_row": 148,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945700,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 146,
+    "yokohama_row": 149,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945701,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 147,
+    "yokohama_row": 150,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945701,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 148,
+    "yokohama_row": 151,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945701,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      3
+    ],
+    "raw_joint": [
+      1,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      2
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 149,
+    "yokohama_row": 152,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945702,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 150,
+    "yokohama_row": 153,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945702,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 151,
+    "yokohama_row": 154,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945702,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2,
+      3
+    ],
+    "raw_joint": [
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 152,
+    "yokohama_row": 155,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945703,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 153,
+    "yokohama_row": 156,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945703,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 154,
+    "yokohama_row": 157,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945703,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 155,
+    "yokohama_row": 158,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945704,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 156,
+    "yokohama_row": 159,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945704,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 157,
+    "yokohama_row": 160,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945704,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 158,
+    "yokohama_row": 161,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945705,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 159,
+    "yokohama_row": 162,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945705,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 160,
+    "yokohama_row": 163,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945705,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 161,
+    "yokohama_row": 164,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945706,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 162,
+    "yokohama_row": 165,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945706,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 163,
+    "yokohama_row": 166,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945706,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 164,
+    "yokohama_row": 167,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945707,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 165,
+    "yokohama_row": 168,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945707,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 166,
+    "yokohama_row": 169,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945707,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 167,
+    "yokohama_row": 170,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945708,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 168,
+    "yokohama_row": 171,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945708,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 169,
+    "yokohama_row": 172,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945708,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 170,
+    "yokohama_row": 173,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945709,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 171,
+    "yokohama_row": 174,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945709,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 172,
+    "yokohama_row": 175,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945709,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 173,
+    "yokohama_row": 176,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945710,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 174,
+    "yokohama_row": 177,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945710,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 175,
+    "yokohama_row": 178,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945710,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 176,
+    "yokohama_row": 179,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945711,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 177,
+    "yokohama_row": 180,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945711,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 178,
+    "yokohama_row": 181,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945711,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 179,
+    "yokohama_row": 182,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945712,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 180,
+    "yokohama_row": 183,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945712,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 181,
+    "yokohama_row": 184,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945712,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 182,
+    "yokohama_row": 185,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945713,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 183,
+    "yokohama_row": 186,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945713,
+      1
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 184,
+    "yokohama_row": 187,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945713,
+      2
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 191,
+    "yokohama_row": 194,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945716,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      2
+    ],
+    "raw_joint": [
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      1,
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 192,
+    "yokohama_row": 195,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945716,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 193,
+    "yokohama_row": 196,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945716,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      1
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 194,
+    "yokohama_row": 197,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945717,
+      0
+    ],
+    "old_ledger_sites": [
+      "edogawa",
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 195,
+    "yokohama_row": 198,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945717,
+      1
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      3
+    ],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 196,
+    "yokohama_row": 199,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945717,
+      2
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_joint": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [],
+    "raw_neither": []
+  },
+  {
+    "edogawa_row": 197,
+    "yokohama_row": 200,
+    "delta": 3,
+    "cohort": "evaluation",
+    "known_coordinate": [
+      43945718,
+      0
+    ],
+    "old_ledger_sites": [
+      "yokohama"
+    ],
+    "witness_ordinals": [
+      1,
+      3
+    ],
+    "raw_joint": [
+      1,
+      3
+    ],
+    "raw_edogawa_only": [],
+    "raw_yokohama_only": [
+      0,
+      2
+    ],
+    "raw_neither": []
+  }
+]

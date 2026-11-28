@@ -1,0 +1,94 @@
+{
+  "scope": "Nine sequential, complete known clear files, fresh decoder process per file. Three timed CLI invocations, no deliberate cache flush; a separate fourth call labels decoder subprocess elapsed time. Receiver and field checks are outside this measurement.",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/kcbs-claude-review/examples/nov28/clear-evs-controls/decode_reference.py",
+    "/tmp/evs-26444-remote-member",
+    "/tmp/etsi-evs-ordinary-vectors/fixed-release19/c-code/EVS_dec"
+  ],
+  "script_sha256": "20f5f95fcb30ee703890dc928a73a4d3a3df5fbcfe68ddb1a8cbee1091dc5954",
+  "decoder_sha256": "df0e37ad8f34e4571c2aa232f818eb786b8cf00184819ba0645881ab6b0a8f07",
+  "python": "3.12.14",
+  "architecture": "x86_64",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "affinity_cpus": 5,
+  "cpu_quota": "400000 100000",
+  "native_flags": "no optional flags; default delay compensation, default frame-counter behavior; native rates 8,16,32 kHz",
+  "input_words": 12480,
+  "total_media_seconds": 249.6,
+  "total_reference_pcm_samples": 4659200,
+  "trials": [
+    {
+      "wall_seconds": 6.892837856998085,
+      "child_user_seconds": 6.784286,
+      "child_system_seconds": 0.08891299999999999,
+      "exact_reference_pcm": true
+    },
+    {
+      "wall_seconds": 6.786657511998783,
+      "child_user_seconds": 6.682353999999999,
+      "child_system_seconds": 0.091243,
+      "exact_reference_pcm": true
+    },
+    {
+      "wall_seconds": 6.493862093993812,
+      "child_user_seconds": 6.417436,
+      "child_system_seconds": 0.06259399999999998,
+      "exact_reference_pcm": true
+    }
+  ],
+  "median_wall_seconds": 6.786657511998783,
+  "instrumented_separate_call": {
+    "wall_seconds": 6.618130034010392,
+    "subprocess_wall_seconds": 6.583488857024349,
+    "remainder_seconds": 0.03464117698604241,
+    "native_processes": [
+      {
+        "cod": "stv8c_13200_8kHz.COD",
+        "output_rate_khz": 8,
+        "wall_seconds": 1.0428330849972554
+      },
+      {
+        "cod": "stv32c_13200_32kHz.COD",
+        "output_rate_khz": 32,
+        "wall_seconds": 1.8165882840112317
+      },
+      {
+        "cod": "stv16c_13200_16kHz.COD",
+        "output_rate_khz": 16,
+        "wall_seconds": 1.3328616860089824
+      },
+      {
+        "cod": "stv8n1_13200_8kHz.COD",
+        "output_rate_khz": 8,
+        "wall_seconds": 0.3377746080077486
+      },
+      {
+        "cod": "stv8n2_13200_8kHz.COD",
+        "output_rate_khz": 8,
+        "wall_seconds": 0.30103542300639674
+      },
+      {
+        "cod": "stv32n1_13200_32kHz.COD",
+        "output_rate_khz": 32,
+        "wall_seconds": 0.5382939349947264
+      },
+      {
+        "cod": "stv32n2_13200_32kHz.COD",
+        "output_rate_khz": 32,
+        "wall_seconds": 0.5201346940011717
+      },
+      {
+        "cod": "stv16n1_13200_16kHz.COD",
+        "output_rate_khz": 16,
+        "wall_seconds": 0.3778652780019911
+      },
+      {
+        "cod": "stv16n2_13200_16kHz.COD",
+        "output_rate_khz": 16,
+        "wall_seconds": 0.3161018639948452
+      }
+    ]
+  }
+}

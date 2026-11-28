@@ -1,0 +1,110 @@
+{
+  "source": "primary-window.wav",
+  "source_sha256": "c7c6d89051d18ebce3477781518894fe05100947e105d2aea3c6e38c6f90df7c",
+  "receiver_script_sha256": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+  "observer_binary_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "inspector_sha256": "4eb63cf7dcf62a911574e93edd216d2d4c212f5aef7f51fbb15ded1cab0f874d",
+  "profile": "wiener",
+  "mlc_iterations": 1,
+  "start_sample": 0,
+  "sample_count": 28800000,
+  "duration_seconds": 600.0,
+  "raw_callback_file_sha256": "5468ead6c8202840b254bcf4a0a1681f1760367fb2d44a8492c5ee0426365975",
+  "observed_crc": {
+    "FAC": {
+      "observed": 1422,
+      "crc_passed": 1109,
+      "crc_failed": 313
+    },
+    "SDC": {
+      "observed": 479,
+      "crc_passed": 7,
+      "crc_failed": 472
+    }
+  },
+  "fac_services": [
+    {
+      "service_id": "A00002",
+      "short_id": 0,
+      "audio_ca": 0,
+      "language_code": 0,
+      "service": "data",
+      "service_descriptor": 0,
+      "data_ca": 0,
+      "count": 1107
+    },
+    {
+      "service_id": "A67BAF",
+      "short_id": 2,
+      "audio_ca": 0,
+      "language_code": 0,
+      "service": "data",
+      "service_descriptor": 0,
+      "data_ca": 0,
+      "count": 1
+    },
+    {
+      "service_id": "7DD19C",
+      "short_id": 3,
+      "audio_ca": 0,
+      "language_code": 2,
+      "service": "data",
+      "service_descriptor": 21,
+      "data_ca": 0,
+      "count": 1
+    }
+  ],
+  "framing_errors": {},
+  "sdc_entities": [
+    {
+      "type": 0,
+      "version_flag": 0,
+      "raw_hex": "06010002d8",
+      "count": 7,
+      "protection_level_a": 0,
+      "protection_level_b": 1,
+      "streams": [
+        {
+          "stream_id": 0,
+          "part_a_bytes": 0,
+          "part_b_bytes": 728
+        }
+      ]
+    },
+    {
+      "type": 5,
+      "version_flag": 0,
+      "raw_hex": "0850c1b30000",
+      "count": 7,
+      "short_id": 0,
+      "stream_id": 0,
+      "packet_mode": true,
+      "enhancement_flag": 0,
+      "application_domain": 1,
+      "data_unit_indicator": 1,
+      "packet_id": 0,
+      "packet_data_bytes": 179,
+      "dab_user_application_type": 0
+    },
+    {
+      "type": 12,
+      "version_flag": 0,
+      "raw_hex": "0ac02d2d2d6b70",
+      "count": 7,
+      "short_id": 0,
+      "language": "---",
+      "country": "kp"
+    },
+    {
+      "type": 1,
+      "version_flag": 0,
+      "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+      "count": 7,
+      "short_id": 0,
+      "label": "조선중앙제2라지오방송"
+    }
+  ],
+  "msc_bytes": 549000,
+  "msc_sha256": "38aa5357ece964443790366fe50fd3b705f5cf18ce033a1033454c3c3e7710de",
+  "msc_equal_to_baseline": true
+}

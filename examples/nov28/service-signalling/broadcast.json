@@ -1,0 +1,374 @@
+{
+  "scope": "Counts are receiver callback occurrences across the specified files. Repeated broadcasts and simultaneous stations can represent the same transmitted block. FAC states use the 72-bit RM=0 format. SDC presence requires both a valid block CRC and complete envelope framing. Other SDC blocks and unevaluated times have no type-2 decision.",
+  "fac_bits_zero_based_msb_first": {
+    "audio_ca": 46,
+    "data_ca": 57
+  },
+  "standard": "ETSI ES 201 980 V4.3.1, sections 6.3.4 and 6.4.3.3, Tables 23 and 24",
+  "total": {
+    "fac_callbacks": 4513,
+    "fac_crc_valid": 3832,
+    "fac_crc_failed": 681,
+    "fac_unsupported_rm": 0,
+    "fac_both_zero": 3832,
+    "fac_audio_set": 0,
+    "fac_data_set": 0,
+    "fac_both_set": 0,
+    "fac_nonstandard_toggle_or_rfu": 1,
+    "sdc_callbacks": 1526,
+    "sdc_crc_valid": 364,
+    "sdc_crc_failed": 1162,
+    "sdc_framing_errors": 0,
+    "sdc_parseable_with_type2": 0,
+    "sdc_parseable_without_type2": 364,
+    "sdc_type2_entities": 0
+  },
+  "files": [
+    {
+      "file": "examples/nov28/standard-service-audit/nov27-3205-360-420.bits",
+      "sha256": "6f1e8ebc4d6e2a9ce212c1f10b5fa31c938fcab5ba69fa3d377fbb2fc269471e",
+      "counts": {
+        "fac_callbacks": 146,
+        "fac_crc_valid": 146,
+        "fac_crc_failed": 0,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 146,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 51,
+        "sdc_crc_valid": 48,
+        "sdc_crc_failed": 3,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 48,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 146
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/standard-service-audit/1228-yokohama.bits",
+      "sha256": "ef02d8715657a049d2c4f745eb9a45afa49cba51f054b82514baaccb8e81d834",
+      "counts": {
+        "fac_callbacks": 298,
+        "fac_crc_valid": 295,
+        "fac_crc_failed": 3,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 295,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 100,
+        "sdc_crc_valid": 35,
+        "sdc_crc_failed": 65,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 35,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 295
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/standard-service-audit/1228-edogawa.bits",
+      "sha256": "e0a2ab8bfeab7617f4c744d88b2b7d4c1b09f1398113ffa6083e6cfd25e23697",
+      "counts": {
+        "fac_callbacks": 296,
+        "fac_crc_valid": 292,
+        "fac_crc_failed": 4,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 292,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 100,
+        "sdc_crc_valid": 86,
+        "sdc_crc_failed": 14,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 86,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 292
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/standard-service-audit/1232-yokohama.bits",
+      "sha256": "6e6eb33659c97752d38fc4c93c63966b9271169b7cb516c74e80dfe80a8dbb88",
+      "counts": {
+        "fac_callbacks": 222,
+        "fac_crc_valid": 222,
+        "fac_crc_failed": 0,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 222,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 76,
+        "sdc_crc_valid": 74,
+        "sdc_crc_failed": 2,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 74,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 222
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/standard-service-audit/1232-edogawa.bits",
+      "sha256": "7c2c8dafca0c3509d9a14c064e2d3089be4f30aad508cf613a86315a98332db6",
+      "counts": {
+        "fac_callbacks": 221,
+        "fac_crc_valid": 219,
+        "fac_crc_failed": 2,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 219,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 76,
+        "sdc_crc_valid": 64,
+        "sdc_crc_failed": 12,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 64,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 219
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/yokohama-1300/results/primary/signalling.bits",
+      "sha256": "5468ead6c8202840b254bcf4a0a1681f1760367fb2d44a8492c5ee0426365975",
+      "counts": {
+        "fac_callbacks": 1422,
+        "fac_crc_valid": 1109,
+        "fac_crc_failed": 313,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 1109,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 1,
+        "sdc_callbacks": 479,
+        "sdc_crc_valid": 7,
+        "sdc_crc_failed": 472,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 7,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "7DD19C",
+          "short_id": 3,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 1
+        },
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 1107
+        },
+        {
+          "id": "A67BAF",
+          "short_id": 2,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 1
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/yokohama-1300/results/later/chunk-000.bits",
+      "sha256": "465bf936a85f29fd3e58f4915e8a96dc083a04fe66f6e3f5a2b65d6bad307a73",
+      "counts": {
+        "fac_callbacks": 1284,
+        "fac_crc_valid": 1102,
+        "fac_crc_failed": 182,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 1102,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 430,
+        "sdc_crc_valid": 32,
+        "sdc_crc_failed": 398,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 32,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 1102
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/yokohama-1300/results/later/chunk-001.bits",
+      "sha256": "01d5ad075e57e319dd22805ac761366ea196bc946685a558d4bd0a0a9f3dc839",
+      "counts": {
+        "fac_callbacks": 134,
+        "fac_crc_valid": 133,
+        "fac_crc_failed": 1,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 133,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 46,
+        "sdc_crc_valid": 8,
+        "sdc_crc_failed": 38,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 8,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 133
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/edogawa-audio-branch/signalling/edogawa.bits",
+      "sha256": "79505241d680e5f60b5deffcab709a44c686fc90e3eebe3d912bd535bca863e2",
+      "counts": {
+        "fac_callbacks": 207,
+        "fac_crc_valid": 141,
+        "fac_crc_failed": 66,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 141,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 71,
+        "sdc_crc_valid": 7,
+        "sdc_crc_failed": 64,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 7,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 141
+        }
+      ],
+      "sdc_type2_scopes": []
+    },
+    {
+      "file": "examples/nov28/edogawa-audio-branch/signalling/yokohama.bits",
+      "sha256": "33e7981b1f6a4590fd1377f291637ef118952b8189a8d41cc6874327bfb54fc9",
+      "counts": {
+        "fac_callbacks": 283,
+        "fac_crc_valid": 173,
+        "fac_crc_failed": 110,
+        "fac_unsupported_rm": 0,
+        "fac_both_zero": 173,
+        "fac_audio_set": 0,
+        "fac_data_set": 0,
+        "fac_both_set": 0,
+        "fac_nonstandard_toggle_or_rfu": 0,
+        "sdc_callbacks": 97,
+        "sdc_crc_valid": 3,
+        "sdc_crc_failed": 94,
+        "sdc_framing_errors": 0,
+        "sdc_parseable_with_type2": 0,
+        "sdc_parseable_without_type2": 3,
+        "sdc_type2_entities": 0
+      },
+      "fac_states": [
+        {
+          "id": "A00002",
+          "short_id": 0,
+          "service": "data",
+          "audio_ca": 0,
+          "data_ca": 0,
+          "count": 173
+        }
+      ],
+      "sdc_type2_scopes": []
+    }
+  ]
+}

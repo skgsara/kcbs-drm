@@ -1,0 +1,403 @@
+{
+  "rules": {
+    "audio_noisy": {
+      "word_bits": [
+        40,
+        41
+      ],
+      "basis": "Stock encoder's ordinary AUDIO bandwidth-extension choice.",
+      "excluded_given_prediction": {
+        "0": [
+          1
+        ],
+        "1": [
+          0
+        ]
+      }
+    },
+    "inactive_nibble": {
+      "word_bits": [
+        40,
+        44
+      ],
+      "basis": "Empirical INACTIVE/BWE pattern from the labelled broadcast archive.",
+      "excluded_given_prediction": {
+        "12": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ]
+      }
+    }
+  },
+  "all_assigned_source": {
+    "counters": 0,
+    "nominal_slots": 0,
+    "received_modes": 0,
+    "total": {
+      "predicted": 0,
+      "checked": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "no_peer": 0
+    },
+    "by_position": {
+      "1": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "2": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "3": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "4": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      }
+    },
+    "by_rule": {
+      "audio_noisy": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      },
+      "inactive_nibble": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      }
+    }
+  },
+  "native_peer_assigned_counters": 0,
+  "events": [],
+  "primary": {
+    "counter": null,
+    "counters": 0,
+    "nominal_slots": 0,
+    "received_modes": 0,
+    "total": {
+      "predicted": 0,
+      "checked": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "no_peer": 0
+    },
+    "by_position": {
+      "1": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "2": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "3": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "4": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      }
+    },
+    "by_rule": {
+      "audio_noisy": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      },
+      "inactive_nibble": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      }
+    }
+  },
+  "first_partial": {
+    "counter": null,
+    "counters": 0,
+    "nominal_slots": 0,
+    "received_modes": 0,
+    "total": {
+      "predicted": 0,
+      "checked": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "no_peer": 0
+    },
+    "by_position": {
+      "1": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "2": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "3": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "4": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0
+      }
+    },
+    "by_rule": {
+      "audio_noisy": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      },
+      "inactive_nibble": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      }
+    }
+  }
+}

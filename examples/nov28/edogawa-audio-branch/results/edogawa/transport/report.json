@@ -1,0 +1,15 @@
+{
+  "files": 1,
+  "assigned_record_observations": 1,
+  "original_complete_groups": 0,
+  "salvaged_complete_groups": 0,
+  "extra_groups": 0,
+  "missing_baseline_groups": [],
+  "crc_good_data_units": 0,
+  "conflicting_data_units": [],
+  "reassembly_crc_failures": 0,
+  "candidate_key_groups": 0,
+  "verified_text_key_groups": 0,
+  "note": "Packet/DU CRCs verify container integrity, not text or codec keys.",
+  "text_candidates_evaluated": false
+}

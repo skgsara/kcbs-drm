@@ -1,0 +1,53 @@
+{
+  "msc_sha256": "3d42c8038a506c8ee6aaee4dfb08e3229d166a46671dc1a1ca8f0d31aa28c69f",
+  "scope": "Unassigned whole data units as received, outside prospective score",
+  "rows": [
+    {
+      "native_row_zero_based": 25,
+      "phase": 1,
+      "mode_histogram": {
+        "FF": 20
+      },
+      "eligible": []
+    },
+    {
+      "native_row_zero_based": 28,
+      "phase": 1,
+      "mode_histogram": {
+        "FD": 2,
+        "FF": 18
+      },
+      "eligible": []
+    },
+    {
+      "native_row_zero_based": 29,
+      "phase": 2,
+      "mode_histogram": {
+        "FD": 2,
+        "FE": 5,
+        "FF": 13
+      },
+      "eligible": []
+    },
+    {
+      "native_row_zero_based": 32,
+      "phase": 2,
+      "mode_histogram": {
+        "FE": 8,
+        "FF": 12
+      },
+      "eligible": []
+    }
+  ],
+  "mode_histogram": {
+    "FD": 4,
+    "FE": 13,
+    "FF": 63
+  },
+  "branches": {
+    "predicted0_observed0": 0,
+    "predicted0_observed1": 0,
+    "predicted1_observed0": 0,
+    "predicted1_observed1": 0
+  }
+}

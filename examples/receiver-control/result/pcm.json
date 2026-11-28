@@ -1,0 +1,36 @@
+{
+  "sample_rate_hz": 16000,
+  "samples_per_slot": 320,
+  "slots": 2400,
+  "reference_pcm_sha256": "fde3841e93a62b08e637e0c5818e25bf3b3451445a8ca9b6eef97b0b1b532539",
+  "received_pcm_sha256": "496284b1ef47fb462ac3b60f16c7636ff98e60d7a7b3066b77cdfdfd1d02d384",
+  "frames_by_word_and_audio_result": {
+    "exact_word_before_first_erasure": {
+      "all_samples_match": 480
+    },
+    "erasure": {
+      "some_samples_differ": 287
+    },
+    "exact_word_after_erasure": {
+      "some_samples_differ": 1260,
+      "all_samples_match": 373
+    }
+  },
+  "unequal_pcm_samples": {
+    "exact_word_before_first_erasure": 0,
+    "erasure": 83551,
+    "exact_word_after_erasure": 122261
+  },
+  "first_example": {
+    "erasure": {
+      "zero_based_slot": 480,
+      "samples_different": 280,
+      "slots_since_last_erasure": 0
+    },
+    "exact_word_after_erasure": {
+      "zero_based_slot": 540,
+      "samples_different": 317,
+      "slots_since_last_erasure": 1
+    }
+  }
+}

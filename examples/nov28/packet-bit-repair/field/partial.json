@@ -1,0 +1,2457 @@
+{
+  "format": "kcbs-evs-bit-evidence-v1",
+  "counter": 43873125,
+  "total": {
+    "direct_bits": 9608,
+    "carried_unknown_bits": 4800,
+    "no_receipt_bits": 1432,
+    "slots": 60,
+    "word_erasures": 60,
+    "rule_events": 38,
+    "direct_check_events": 36,
+    "conditional_events": 2,
+    "slots_with_rule_events": 20,
+    "events_by_outcome": {
+      "match": 34,
+      "mismatch": 0,
+      "unavailable": 2,
+      "restricted": 1,
+      "unrestricted": 1,
+      "contradiction": 0
+    },
+    "unique_target_bits": 148,
+    "unique_direct_checked_bits": 136,
+    "unique_conditional_fixed_bits": 2,
+    "unique_conflicting_conditional_bits": 0
+  },
+  "by_position": {
+    "1": {
+      "direct_bits": 2472,
+      "carried_unknown_bits": 1232,
+      "no_receipt_bits": 256,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 12,
+      "direct_check_events": 12,
+      "conditional_events": 0,
+      "slots_with_rule_events": 6,
+      "events_by_outcome": {
+        "match": 10,
+        "mismatch": 0,
+        "unavailable": 2,
+        "restricted": 0,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 48,
+      "unique_direct_checked_bits": 40,
+      "unique_conditional_fixed_bits": 0,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "2": {
+      "direct_bits": 2336,
+      "carried_unknown_bits": 1168,
+      "no_receipt_bits": 456,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 9,
+      "direct_check_events": 8,
+      "conditional_events": 1,
+      "slots_with_rule_events": 5,
+      "events_by_outcome": {
+        "match": 8,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 1,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 34,
+      "unique_direct_checked_bits": 32,
+      "unique_conditional_fixed_bits": 2,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "3": {
+      "direct_bits": 2336,
+      "carried_unknown_bits": 1168,
+      "no_receipt_bits": 456,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 6,
+      "direct_check_events": 6,
+      "conditional_events": 0,
+      "slots_with_rule_events": 3,
+      "events_by_outcome": {
+        "match": 6,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 0,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 24,
+      "unique_direct_checked_bits": 24,
+      "unique_conditional_fixed_bits": 0,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "4": {
+      "direct_bits": 2464,
+      "carried_unknown_bits": 1232,
+      "no_receipt_bits": 264,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 11,
+      "direct_check_events": 10,
+      "conditional_events": 1,
+      "slots_with_rule_events": 6,
+      "events_by_outcome": {
+        "match": 10,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 0,
+        "unrestricted": 1,
+        "contradiction": 0
+      },
+      "unique_target_bits": 42,
+      "unique_direct_checked_bits": 40,
+      "unique_conditional_fixed_bits": 0,
+      "unique_conflicting_conditional_bits": 0
+    }
+  },
+  "slots": [
+    {
+      "slot": 0,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "76 ?? 57 d9 ?? c1 3c ?? e9 b8 ?? 00 37 ?? 42 8e ?? 72 c8 ?? dc e9 ?? c2 db ?? b0 b9 ?? de 24 ?? 49",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 1,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 0,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 0,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "no_adjacent_predecessor"
+    },
+    {
+      "slot": 1,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_packets",
+      "octets": "76 ?? 07 8e ?? c4 15 ?? 41 ba ?? 0d 30 ?? 49 9b ?? 8f 8f ?? 68 be ?? 6c c2 ?? 47 14 ?? d0 9a ?? bc",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 1,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 1,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 2,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_packets",
+      "octets": "76 ?? 3a 88 ?? c4 16 ?? 25 b8 ?? b2 51 ?? 5d 20 ?? b7 67 ?? b6 57 ?? 7c 00 ?? b0 1f ?? d1 7f ?? bf",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 2,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 2,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 3,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_packets",
+      "octets": "76 ?? 2f e0 ?? c4 18 ?? 20 bb ?? 0a 37 ?? bf 7c ?? 53 e2 ?? cb 8f ?? 79 46 ?? 15 a4 ?? d1 e0 ?? 09",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 3,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 3,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 4,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "76 ?? b5 5e ?? c4 16 ?? 02 91 ?? 5a 37 ?? d6 44 ?? b7 07 ?? 7a 39 ?? 62 ce ?? cd f5 ?? d0 12 ?? 0d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 4,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 4,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 5,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_packets",
+      "octets": "76 ?? 8d 2a ?? c4 16 ?? 90 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 48,
+      "carried_unknown_bits": 24,
+      "no_receipt_bits": 192,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 5,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 5,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 6,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 7,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 8,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "76 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 8,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 256,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "no_receipt",
+          "observed": null,
+          "outcome": "unavailable",
+          "source_outcome": "unavailable",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 8,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "no_receipt",
+          "observed": null,
+          "outcome": "unavailable",
+          "source_outcome": "unavailable",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 8,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "previous_mode_unavailable"
+    },
+    {
+      "slot": 9,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "missing_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
+      "direct_bits": 0,
+      "carried_unknown_bits": 0,
+      "no_receipt_bits": 264,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 10,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_packets",
+      "octets": "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 88 ?? 9c 2c ?? de 00 ?? bc",
+      "direct_bits": 48,
+      "carried_unknown_bits": 24,
+      "no_receipt_bits": 192,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_mode_unavailable"
+    },
+    {
+      "slot": 11,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_packets",
+      "octets": "76 ?? a3 2a ?? c4 15 ?? 66 91 ?? 03 dd ?? ef f2 ?? a2 82 ?? db c8 ?? e2 ad ?? ec e6 ?? de 8c ?? 1a",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 11,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 11,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "previous_mode_unavailable"
+    },
+    {
+      "slot": 12,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "76 ?? e7 e5 ?? c1 62 ?? f9 91 ?? 43 b2 ?? 81 5c ?? 3a f4 ?? b9 68 ?? 93 51 ?? 5f 2b ?? 5e 0d ?? 26",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 1,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 12,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 12,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 13,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_packets",
+      "octets": "74 ?? 96 ac ?? c4 13 ?? 50 90 ?? 33 47 ?? 8e 84 ?? 82 ff ?? 4d 6d ?? e4 9e ?? ff 23 ?? 50 da ?? 18",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 13,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 13,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 14,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_packets",
+      "octets": "76 ?? 89 51 ?? c4 11 ?? ec 93 ?? 93 af ?? 4a 9e ?? 27 24 ?? 8b 6b ?? 3b 10 ?? 36 cf ?? 5e 93 ?? 2f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 14,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 14,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 15,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_packets",
+      "octets": "76 ?? 02 06 ?? c4 12 ?? 40 bb ?? 00 3e ?? 26 38 ?? b8 ad ?? ed 8d ?? 1e ef ?? 3d fa ?? de 0c ?? 7d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 15,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 15,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 16,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_packets",
+      "octets": "76 ?? e9 96 ?? c1 3f ?? 6f b8 ?? c2 f5 ?? 5a 1a ?? 16 74 ?? 34 50 ?? 9a d2 ?? ec 67 ?? d0 12 ?? f7",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 1,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 16,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 16,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 17,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_packets",
+      "octets": "76 ?? 32 72 ?? c1 3c ?? ff 8c ?? 98 7e ?? 72 e3 ?? fc 67 ?? da b6 ?? a6 fa ?? 22 6f ?? d0 c4 ?? 6b",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 1,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 17,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 17,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 18,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_packets",
+      "octets": "76 ?? e4 c1 ?? c1 3b ?? 28 b9 ?? 07 5a ?? 63 56 ?? a0 9d ?? 7a 94 ?? c8 4b ?? 29 4a ?? d0 e0 ?? ef",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 1,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 18,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 18,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 19,
+      "counter": 43873125,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_packets",
+      "octets": "76 ?? 5a 4c ?? c5 10 ?? f0 b9 ?? 7c 0a ?? fd f9 ?? db fc ?? d6 cf ?? 94 71 ?? 79 42 ?? de 24 ?? 63",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 5,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 19,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 19,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 20,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "77 ?? 3e 78 ?? c4 16 ?? 0f 6c ?? 36 0b ?? 6c 4f ?? bd 0e ?? 2f 93 ?? ee 9e ?? 86 8b ?? c1 e6 ?? a3",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 4,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 20,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 20,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 21,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "60 ?? e9 c3 ?? fc 40 ?? 3c c3 ?? 1e 82 ?? 27 62 ?? 00 95 ?? 44 cd ?? 57 4b ?? 03 de ?? 0d c2 ?? 46",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "transition_tags",
+          "check": "transition_tag",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            10
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 3,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "restricted",
+          "fixed_bits": {
+            "8": 0,
+            "9": 0
+          },
+          "inputs": [
+            {
+              "slot": 21,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 12,
+              "role": "condition"
+            },
+            {
+              "slot": 21,
+              "word_bits": [
+                6,
+                8
+              ],
+              "observed": 0,
+              "role": "condition"
+            },
+            {
+              "slot": 21,
+              "word_bits": [
+                256,
+                264
+              ],
+              "observed": 70,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 22,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "50 ?? 24 1c ?? cb 2c ?? 77 46 ?? f8 67 ?? 5b e3 ?? c3 1b ?? 48 91 ?? 01 2f ?? a0 97 ?? 41 e2 ?? d6",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 23,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "50 ?? c8 be ?? 48 30 ?? 3e 2a ?? 4e a0 ?? 54 07 ?? 42 e0 ?? 9d 69 ?? 01 2a ?? 99 3e ?? 6d c2 ?? 4a",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 24,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "50 ?? 53 c6 ?? 4c 30 ?? df 6b ?? 3e 00 ?? 43 c6 ?? cd 13 ?? 2f 3b ?? a9 c5 ?? 02 6f ?? 01 a6 ?? 62",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 25,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "51 ?? 7a ae ?? 55 2d ?? 2e 31 ?? 11 d8 ?? 17 3a ?? e0 f3 ?? 97 53 ?? d5 5b ?? 28 8b ?? c9 a8 ?? 72",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 26,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "50 ?? 4a 88 ?? 01 e8 ?? bd 69 ?? 64 6f ?? 13 6e ?? 33 ab ?? 98 5f ?? 93 72 ?? 47 f5 ?? f8 e6 ?? c6",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 27,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "62 ?? 17 eb ?? 60 4a ?? 13 78 ?? 85 11 ?? 25 2f ?? e0 13 ?? 40 b5 ?? 54 99 ?? aa b1 ?? 6d 14 ?? 2d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "transition_tags",
+          "check": "transition_tag",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            10
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "excluded_value_count": 0,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "unrestricted",
+          "source_outcome": "unrestricted",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 27,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 12,
+              "role": "condition"
+            },
+            {
+              "slot": 27,
+              "word_bits": [
+                6,
+                8
+              ],
+              "observed": 2,
+              "role": "condition"
+            },
+            {
+              "slot": 27,
+              "word_bits": [
+                256,
+                264
+              ],
+              "observed": 45,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 28,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "50 ?? c3 bf ?? bd 98 ?? 12 eb ?? 25 53 ?? 3b 1e ?? 43 e8 ?? c2 2e ?? 9f 0b ?? 79 fb ?? 58 f0 ?? 36",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 29,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "51 ?? 73 82 ?? 24 a4 ?? 3a a4 ?? 9c 51 ?? 47 79 ?? 33 08 ?? ce df ?? 68 cd ?? c0 7c ?? f9 0a ?? 99",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 30,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "5a ?? b2 e5 ?? 15 12 ?? 30 ce ?? 15 3b ?? 6e 3d ?? da 38 ?? 65 97 ?? bb d3 ?? 36 fd ?? ec cc ?? 99",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 31,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "59 ?? a9 c3 ?? 4b 32 ?? a0 62 ?? da c6 ?? bc 62 ?? 1a 40 ?? 7c 88 ?? b9 12 ?? b8 bd ?? 98 86 ?? 36",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 32,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "58 ?? 78 2d ?? 9f 02 ?? 11 ef ?? b3 cc ?? 36 cc ?? 4f 58 ?? 17 24 ?? 45 6a ?? 2d ce ?? dc 88 ?? b6",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 33,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "58 ?? 34 0b ?? f8 b2 ?? c2 51 ?? f2 35 ?? 29 bb ?? 54 cb ?? 7e 13 ?? 3f 85 ?? 89 cb ?? 4c c6 ?? 26",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 34,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "59 ?? bc 71 ?? ba b2 ?? 1f 1d ?? 34 3a ?? 5d f7 ?? f5 b9 ?? 07 2d ?? cd f1 ?? e7 ab ?? 04 c8 ?? 36",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 35,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "51 ?? 0a 3b ?? ba 98 ?? 14 d2 ?? 06 b1 ?? c7 9b ?? 43 f2 ?? d2 53 ?? fd e2 ?? 81 ff ?? a1 46 ?? d2",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 36,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "51 ?? 4b 2b ?? b0 64 ?? b5 31 ?? 35 93 ?? 08 43 ?? 25 62 ?? 7e c0 ?? 27 78 ?? 46 fa ?? e9 e2 ?? e2",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 37,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "53 ?? 91 a2 ?? f6 b0 ?? 92 d7 ?? 8f a5 ?? 4e 0f ?? b2 f7 ?? d1 db ?? 76 06 ?? 31 b6 ?? f9 46 ?? 36",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 38,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "5a ?? a8 93 ?? 5f a2 ?? a6 7c ?? de ce ?? c5 a3 ?? f8 3f ?? dd 3d ?? 3c 53 ?? 98 a8 ?? 98 c4 ?? 3a",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 39,
+      "counter": 43873125,
+      "phase": 1,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "59 ?? db 87 ?? 39 92 ?? 1a db ?? 10 c2 ?? 4b 1d ?? 34 cb ?? dc 83 ?? 3e 82 ?? 52 44 ?? 04 e4 ?? ca",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 40,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "53 ?? ac 37 ?? 47 a4 ?? 95 10 ?? 14 51 ?? 15 2b ?? 93 6d ?? 13 1c ?? fc e0 ?? 7c d8 ?? e9 22 ?? b6",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 41,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "52 ?? 67 92 ?? 02 94 ?? 31 8c ?? 6b 12 ?? cd aa ?? c5 2a ?? 07 ce ?? 80 6e ?? 29 fa ?? c9 ca ?? 25",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 42,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "58 ?? f2 a9 ?? f6 63 ?? cf 63 ?? d1 44 ?? 0a e2 ?? 12 cc ?? bb e1 ?? 28 43 ?? 2f d1 ?? 05 4a ?? a7",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 43,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "53 ?? dc bd ?? 52 98 ?? 21 f6 ?? cf ec ?? 85 19 ?? f4 8e ?? 0d a5 ?? 45 78 ?? f3 40 ?? 61 6a ?? 1d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 44,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "50 ?? 1f 10 ?? 52 a8 ?? a7 e8 ?? 17 69 ?? 0b b9 ?? 92 ff ?? 48 ac ?? 76 72 ?? e0 ac ?? 19 08 ?? 1e",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 45,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "50 ?? 44 66 ?? 3c 9c ?? ec 01 ?? 0a 1e ?? 0b ad ?? 63 ba ?? 7e c1 ?? 6d d4 ?? a8 b2 ?? a9 26 ?? 46",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 46,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "50 ?? 10 92 ?? 1a ac ?? 5b 37 ?? ff 00 ?? 05 e7 ?? 92 81 ?? 16 50 ?? 61 01 ?? 30 a6 ?? ec e8 ?? 4a",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 47,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "58 ?? 0b 51 ?? 97 72 ?? ab 54 ?? 1e 24 ?? 6e 08 ?? 1d b6 ?? 18 ef ?? bf e9 ?? 65 aa ?? 84 b2 ?? be",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 48,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "59 ?? 81 9b ?? 07 71 ?? 80 e8 ?? 14 31 ?? b7 53 ?? 94 43 ?? 4d c8 ?? 4b 3b ?? be 7b ?? b8 e2 ?? 3a",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 49,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "5a ?? 96 1e ?? d0 d1 ?? 3c e6 ?? 4b d8 ?? a5 fa ?? 8c b1 ?? 70 b8 ?? 38 eb ?? a2 80 ?? 18 e4 ?? 36",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 50,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "5b ?? b6 25 ?? 9e c2 ?? 8b 9c ?? 38 c4 ?? 30 60 ?? fd ca ?? ca fb ?? 42 54 ?? 34 1d ?? 99 04 ?? 2a",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 51,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "58 ?? b9 88 ?? ac b2 ?? 97 62 ?? 1a 44 ?? 44 06 ?? 58 d6 ?? 56 8a ?? 59 51 ?? 09 4e ?? d8 e4 ?? 9a",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 52,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "58 ?? 18 f5 ?? 76 a2 ?? a5 68 ?? 18 58 ?? 8d 8f ?? 17 da ?? 26 b4 ?? db c9 ?? c4 7a ?? 58 e6 ?? a2",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 53,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "58 ?? 42 93 ?? 90 92 ?? 8b 1a ?? 95 e3 ?? 1f b5 ?? d4 de ?? 17 de ?? e7 f8 ?? a6 1c ?? f9 04 ?? b3",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 54,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "58 ?? 17 b2 ?? 54 83 ?? 4f 64 ?? 31 66 ?? 84 82 ?? f9 f3 ?? 03 da ?? c9 e4 ?? bb 63 ?? 59 22 ?? 32",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 55,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "59 ?? 22 f3 ?? 08 73 ?? 6d 5b ?? 7a db ?? c2 24 ?? 59 c7 ?? 0e f3 ?? 53 a1 ?? d0 27 ?? 5d 26 ?? 26",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 56,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "59 ?? 7f c0 ?? fc 64 ?? d2 45 ?? ef 34 ?? 6a cd ?? 70 34 ?? 75 ca ?? 22 aa ?? f9 8f ?? d9 6a ?? 43",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 57,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "59 ?? e6 63 ?? 28 53 ?? a6 03 ?? f4 bc ?? f4 d8 ?? 78 a5 ?? 83 91 ?? 20 fa ?? ba 2d ?? 19 8c ?? 36",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 58,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "5a ?? 4a 85 ?? bc 43 ?? e6 59 ?? f7 a9 ?? bf 23 ?? 8b 94 ?? b3 36 ?? 73 a1 ?? fe 56 ?? 05 b0 ?? 2b",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    },
+    {
+      "slot": 59,
+      "counter": 43873125,
+      "phase": 2,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "76 ?? c5 71 ?? c1 65 ?? 75 b9 ?? 60 21 ?? 6b 8a ?? 03 e3 ?? dc b9 ?? a1 eb ?? ee f4 ?? 5e 24 ?? ca",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "intra_word",
+          "check": "swb_gsc_inactive",
+          "kind": "direct_check",
+          "word_bits": [
+            44,
+            48
+          ],
+          "allowed_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "excluded_value_count": 5,
+          "observation": "direct",
+          "observed": 1,
+          "outcome": "match",
+          "source_outcome": "pass",
+          "fixed_bits": {},
+          "inputs": [
+            {
+              "slot": 59,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 14,
+              "role": "condition"
+            }
+          ]
+        },
+        {
+          "section": "gsc_fields",
+          "check": "inactive_nibble",
+          "kind": "direct_check",
+          "word_bits": [
+            40,
+            44
+          ],
+          "allowed_values": [
+            12
+          ],
+          "excluded_value_count": 15,
+          "observation": "direct",
+          "observed": 12,
+          "outcome": "match",
+          "source_outcome": "match",
+          "fixed_bits": {
+            "40": 1,
+            "41": 1,
+            "42": 0,
+            "43": 0
+          },
+          "inputs": [
+            {
+              "slot": 59,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 29,
+              "role": "condition"
+            }
+          ]
+        }
+      ],
+      "core_history_abstention": "current_signalling_index_outside_scope"
+    }
+  ]
+}

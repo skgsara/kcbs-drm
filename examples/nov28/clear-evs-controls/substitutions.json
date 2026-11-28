@@ -1,0 +1,246 @@
+{
+  "schema": "official-clear-evs-substitutions-v1",
+  "files": {
+    "testvec/testv/bitstreams/nb/stv8c_13200_8kHz.COD": 2760,
+    "testvec/testv/bitstreams/swb/stv32c_13200_32kHz.COD": 2760,
+    "testvec/testv/bitstreams/wb/stv16c_13200_16kHz.COD": 2760,
+    "testvec/testv/bitstreams/nb/stv8n1_13200_8kHz.COD": 700,
+    "testvec/testv/bitstreams/nb/stv8n2_13200_8kHz.COD": 700,
+    "testvec/testv/bitstreams/swb/stv32n1_13200_32kHz.COD": 700,
+    "testvec/testv/bitstreams/swb/stv32n2_13200_32kHz.COD": 700,
+    "testvec/testv/bitstreams/wb/stv16n1_13200_16kHz.COD": 700,
+    "testvec/testv/bitstreams/wb/stv16n2_13200_16kHz.COD": 700
+  },
+  "original_words": 12480,
+  "alternative_field_values": {
+    "wb_gsc_audio": {
+      "words": 133,
+      "excluded": 133,
+      "still_allowed": 0
+    },
+    "swb_gsc_inactive": {
+      "words": 692,
+      "excluded": 3460,
+      "still_allowed": 6920
+    },
+    "audio_noisy": {
+      "words": 145,
+      "excluded": 145,
+      "still_allowed": 0
+    },
+    "inactive_nibble": {
+      "words": 692,
+      "excluded": 10380,
+      "still_allowed": 0
+    },
+    "noisy_pitch_fill": {
+      "words": 145,
+      "excluded": 145,
+      "still_allowed": 0
+    },
+    "swb_transition_pair": {
+      "words": 203,
+      "excluded": 246,
+      "still_allowed": 363
+    }
+  },
+  "payload_bit_changes": [
+    {
+      "payload_offset": 0,
+      "trials": 99840,
+      "changed_field_report": 406,
+      "rejected": 164
+    },
+    {
+      "payload_offset": 1,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 2,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 3,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 4,
+      "trials": 99840,
+      "changed_field_report": 5970,
+      "rejected": 3311
+    },
+    {
+      "payload_offset": 5,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 6,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 7,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 8,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 9,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 10,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 11,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 12,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 13,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 14,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 15,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 16,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 17,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 18,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 19,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 20,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 21,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 22,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 23,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 24,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 25,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 26,
+      "trials": 99840,
+      "changed_field_report": 145,
+      "rejected": 145
+    },
+    {
+      "payload_offset": 27,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 28,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 29,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 30,
+      "trials": 99840,
+      "changed_field_report": 0,
+      "rejected": 0
+    },
+    {
+      "payload_offset": 31,
+      "trials": 99840,
+      "changed_field_report": 404,
+      "rejected": 185
+    }
+  ],
+  "payload_totals": {
+    "trials": 3194880,
+    "changed_field_report": 6925,
+    "rejected": 3805
+  }
+}

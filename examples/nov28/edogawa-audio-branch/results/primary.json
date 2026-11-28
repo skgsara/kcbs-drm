@@ -1,0 +1,19 @@
+{
+  "msc_sha256": "3d42c8038a506c8ee6aaee4dfb08e3229d166a46671dc1a1ca8f0d31aa28c69f",
+  "packets_sha256": "5f92594e648a8f1cc214abd91c6d5bc22051911dd4fb0a305298c54967ef5dd1",
+  "transport_counts": {
+    "msc_rows": 111,
+    "packet_crc_checks": 444,
+    "physical_packets_crc": 26,
+    "physical_packets_crc_and_header": 26,
+    "native_complete_dus": 4
+  },
+  "native_complete_group_count": 0,
+  "assigned_counters": [
+    43949404
+  ],
+  "history_overlap": [],
+  "primary": null,
+  "eligible_as_unseen": false,
+  "primary_bits": null
+}

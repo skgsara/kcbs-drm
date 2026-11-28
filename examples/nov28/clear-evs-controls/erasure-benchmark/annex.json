@@ -1,0 +1,116 @@
+{
+  "visible_sha256": "2a540959eaf6cffe9364a3a4b77cd85d92626b63ef88106b8fd8eaffc958d9ce",
+  "prediction_sha256": "aba3fe29bb6dd4d44ef85033d926421a501887f039ac965dbc686901e4b332e8",
+  "answers_sha256": "03e03c50be7bfe6cc53d100253ab90a8cd8e24c60dcbab128941032f7a38d3a9",
+  "sources": [
+    {
+      "file": "annex-a.192",
+      "sha256": "028cb596fb01c4cd7790f64d1210fef9a0aed581ab5696c349770316afbb17b7",
+      "slots": 12502,
+      "trailing_slots": 22,
+      "bad_word_groups": [],
+      "scored_groups": 208,
+      "baselines": {
+        "fields": {
+          "groups": 208,
+          "exact_groups": 0,
+          "wrong_fully_called_groups": 0,
+          "groups_with_abstention": 208,
+          "words": 3120,
+          "exact_words": 0,
+          "wrong_words": 0,
+          "no_call_words": 3120,
+          "tied_words": 3120,
+          "visible_conflicts": 0,
+          "called_bytes": 0,
+          "correct_bytes": 0,
+          "called_bits": 0,
+          "correct_bits": 0
+        },
+        "previous": {
+          "groups": 208,
+          "exact_groups": 0,
+          "wrong_fully_called_groups": 208,
+          "groups_with_abstention": 0,
+          "words": 3120,
+          "exact_words": 2,
+          "wrong_words": 3118,
+          "no_call_words": 0,
+          "tied_words": 0,
+          "visible_conflicts": 0,
+          "called_bytes": 18720,
+          "correct_bytes": 226,
+          "called_bits": 149760,
+          "correct_bits": 77758
+        },
+        "previous_same_mode": {
+          "groups": 208,
+          "exact_groups": 0,
+          "wrong_fully_called_groups": 1,
+          "groups_with_abstention": 207,
+          "words": 3120,
+          "exact_words": 2,
+          "wrong_words": 1509,
+          "no_call_words": 1609,
+          "tied_words": 0,
+          "visible_conflicts": 0,
+          "called_bytes": 9066,
+          "correct_bytes": 122,
+          "called_bits": 72528,
+          "correct_bits": 37381
+        }
+      }
+    }
+  ],
+  "distinct_original_groups": 208,
+  "totals": {
+    "fields": {
+      "groups": 208,
+      "exact_groups": 0,
+      "wrong_fully_called_groups": 0,
+      "groups_with_abstention": 208,
+      "words": 3120,
+      "exact_words": 0,
+      "wrong_words": 0,
+      "no_call_words": 3120,
+      "tied_words": 3120,
+      "visible_conflicts": 0,
+      "called_bytes": 0,
+      "correct_bytes": 0,
+      "called_bits": 0,
+      "correct_bits": 0
+    },
+    "previous": {
+      "groups": 208,
+      "exact_groups": 0,
+      "wrong_fully_called_groups": 208,
+      "groups_with_abstention": 0,
+      "words": 3120,
+      "exact_words": 2,
+      "wrong_words": 3118,
+      "no_call_words": 0,
+      "tied_words": 0,
+      "visible_conflicts": 0,
+      "called_bytes": 18720,
+      "correct_bytes": 226,
+      "called_bits": 149760,
+      "correct_bits": 77758
+    },
+    "previous_same_mode": {
+      "groups": 208,
+      "exact_groups": 0,
+      "wrong_fully_called_groups": 1,
+      "groups_with_abstention": 207,
+      "words": 3120,
+      "exact_words": 2,
+      "wrong_words": 1509,
+      "no_call_words": 1609,
+      "tied_words": 0,
+      "visible_conflicts": 0,
+      "called_bytes": 9066,
+      "correct_bytes": 122,
+      "called_bits": 72528,
+      "correct_bits": 37381
+    }
+  }
+}

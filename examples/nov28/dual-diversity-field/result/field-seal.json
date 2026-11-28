@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-28T14:24:02.060199+00:00",
+  "receiver": "a20c6f1b662138bf29d97f0b272a4d30e73517e9",
+  "sha256": {
+    "fields/results.json": "ce77beb48fabd23494c65081efa4a6ac106ce7b9fb10b4783c61e01b1bbf2643",
+    "fields/native-field-comparison.json": "fc6d6231e283b735343b17a62eee9926b02bad8b624299c70f907a3f9f434532",
+    "fields/native-forecasts.json": "6f4ceb117de0b3e104af22d01c3f5a052b312a3b3bb23103953aace825249c21",
+    "joint/report.json": "e6237b198fb98ef8b5d9b60fd6a86a6c0ce91ea5691a3baa96faf8d3ef2f3aaf",
+    "joint/msc.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observations/edogawa/observation.json": "7274a361021dc3a6d0d69fe4342c188f44b24bcef4c33cc4140e821984e05fcd",
+    "observations/edogawa/cells.bin": "975d7b53dcc668353846295130185bb611ed95dc144e15d1a432d9f497e76c5b",
+    "observations/edogawa/msc.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observations/yokohama/observation.json": "0242f5fd6964d36ce4d355a3ee6dd1ff0e3cc4cb320837e0e02e4117fe8b886d",
+    "observations/yokohama/cells.bin": "64da892034f8a56825acfb5b72a72a394ed0cc6d6a05ed4ece79c59f766a646e",
+    "observations/yokohama/msc.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

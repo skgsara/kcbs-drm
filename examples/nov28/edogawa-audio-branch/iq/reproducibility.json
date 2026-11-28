@@ -1,0 +1,28 @@
+{
+  "site": "7L4IOU Edogawa",
+  "archive_flac": "edogawa-6140khz-iq48.flac",
+  "archive_flac_sha256": "5ab669aa1a7653d010a22a03ef5494b0d025e94d60e1fa3e51f54cb36a07fac3",
+  "restored_wav_sha256": "0a96abeef758b1464ae6f39cc6d32989508038baedd63cb5af0f21c5e48a925d",
+  "original_sample_pairs": 4206480,
+  "duration_seconds": 87.635,
+  "start_sample": 0,
+  "padding_samples": 0,
+  "receiver_revision": "41b4e2d0ebdedb5e8e8f452b19154dd302cc7f4b",
+  "evaluation_revision": "b9823848190fcc4e318ee7bc7c940faeea8edfb9",
+  "native_dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "receiver_profile": "nominal 6140 kHz, zero baseband offset, Wiener, one MLC iteration, cold finite input",
+  "steps": [
+    "Restore original WAV from archived FLAC.",
+    "Demodulate once using the pinned receive-plan command.",
+    "Salvage once in transport-only mode, saving all accepted packets.",
+    "Run the frozen primary.py and score.py."
+  ],
+  "byte_identical_to_original_run": {
+    "rf/msc.bin": "3d42c8038a506c8ee6aaee4dfb08e3229d166a46671dc1a1ca8f0d31aa28c69f",
+    "transport/packets.npz": "5f92594e648a8f1cc214abd91c6d5bc22051911dd4fb0a305298c54967ef5dd1",
+    "transport/data_units.npz": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+    "primary.json": "359804ef48bc7c1e495da8d5af848b3bd321ca42cb02c36f042f4ebd70221d7a",
+    "audio.json": "e5698e9c276179dc40f12df7a6677570005a9b7c909bbb756b07f05e2b61c0eb"
+  },
+  "comparison": "Compared all bytes in the five complete files from a fresh temporary directory. Both JSON files retained their original serialization."
+}

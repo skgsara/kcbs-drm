@@ -1,0 +1,80 @@
+{
+  "published_sender_receipt_sha256": "e76dcd8b03b7df6f2200b905426a8c908affe9c805005025ef6ecb615eea7705",
+  "g192_sha256_each": [
+    "a4ab9e28e487ce496f7493e0e0f0230879784d045ac95cf7c99da4da30c8565e",
+    "21f1ec581e455f1a4467208df4bda8b46ce341cf23f5105ee9bfd9279c89e062"
+  ],
+  "range_zero_based_half_open": [
+    180,
+    240
+  ],
+  "stream_slot": 205,
+  "group_slot": 25,
+  "phase": 1,
+  "cycle_in_phase": 1,
+  "position": 2,
+  "visible_octets_per_word_by_position": [
+    33,
+    27,
+    22,
+    22
+  ],
+  "group_visible_octets": {
+    "length": 1560,
+    "equal": true,
+    "sha256_each": [
+      "7b6856eb00d7afc07d521f5323452f59c7d98161c773a8ade0db9a05476b7a5b",
+      "7b6856eb00d7afc07d521f5323452f59c7d98161c773a8ade0db9a05476b7a5b"
+    ]
+  },
+  "group_hidden_octets": {
+    "length": 420,
+    "equal": false,
+    "sha256_each": [
+      "090f27da352ccd648bee9143de6ca79ad84ddbdffb4714e5c5c4bdd33603970d",
+      "31ad14be3de9e1e4a410c122c5f8eeade9447908aa4464485997715b05f5c5c5"
+    ]
+  },
+  "group_p2_hidden_octets": {
+    "length": 90,
+    "equal": false,
+    "sha256_each": [
+      "936d9a9747a357087cf3bab815d6093bdaa5a2fc162aab8ca2f147a3396be19d",
+      "b2e7457c3cce9396122d3a666496d2f742c5afb79c4c9ae7839561674698aa29"
+    ]
+  },
+  "group_all_except_b203_of_target_ascii_bits": {
+    "length": 15839,
+    "equal": true,
+    "sha256_each": [
+      "6faf0a50ece0eb0744cdc731345f80ecd9ad66cd7e9e33ed6c9bba70a34c1378",
+      "6faf0a50ece0eb0744cdc731345f80ecd9ad66cd7e9e33ed6c9bba70a34c1378"
+    ]
+  },
+  "group_full_octets": {
+    "length": 1980,
+    "equal": false,
+    "sha256_each": [
+      "99b1dddc92ee2523157a1b90741b17eb3ee88df1e7acca0932c687e02a920bda",
+      "8ec89873c596619db07d2d2863b022af14ac2436ef37d8bedb4fd729b2e49099"
+    ]
+  },
+  "p2_payload_offset": 24,
+  "physical_bit_msb_first": 203,
+  "original_octets_hex": [
+    "67",
+    "77"
+  ],
+  "original_bit_values": [
+    0,
+    1
+  ],
+  "complete_matching_neighbors_in_group": [
+    25,
+    34
+  ],
+  "complete_matching_neighbors_in_stream": [
+    205,
+    34
+  ]
+}

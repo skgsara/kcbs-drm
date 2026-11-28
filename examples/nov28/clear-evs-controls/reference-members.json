@@ -1,0 +1,267 @@
+{
+  "archive": "https://www.3gpp.org/ftp/Specs/archive/26_series/26.444/test_sequences/26444_ce0_da0_e60_f40_g50-TestSeq_BASOP_26442.zip",
+  "archive_bytes": 1843592537,
+  "file_count": 6155,
+  "central_range": [
+    1842787766,
+    1843592514
+  ],
+  "central_sha256": "ee5fade3ddecfb19c894d4ad72c6c19fdd5fed750a6f4c7093786df91f4b979d",
+  "tail_range": [
+    1843527001,
+    1843592536
+  ],
+  "tail_sha256": "1588bcbc158d0e70c5d9b3a113c26216ba516c91fb0c74cf6b56205f7543595d",
+  "selection_rule": "First lexicographic normal clean 13200 member in each available bandwidth, based on archive name prior to payload access. Candidates filter for stv{samplerate}{c|n<digits>}_13200_<digits>kHz.COD in the bitstreams/<bandwidth> directory.",
+  "candidates": {
+    "nb": [
+      "testvec/testv/bitstreams/nb/stv8c_13200_8kHz.COD",
+      "testvec/testv/bitstreams/nb/stv8n1_13200_8kHz.COD",
+      "testvec/testv/bitstreams/nb/stv8n2_13200_8kHz.COD"
+    ],
+    "swb": [
+      "testvec/testv/bitstreams/swb/stv32c_13200_32kHz.COD",
+      "testvec/testv/bitstreams/swb/stv32n1_13200_32kHz.COD",
+      "testvec/testv/bitstreams/swb/stv32n2_13200_32kHz.COD"
+    ],
+    "wb": [
+      "testvec/testv/bitstreams/wb/stv16c_13200_16kHz.COD",
+      "testvec/testv/bitstreams/wb/stv16n1_13200_16kHz.COD",
+      "testvec/testv/bitstreams/wb/stv16n2_13200_16kHz.COD"
+    ]
+  },
+  "primary": [
+    "testvec/testv/bitstreams/nb/stv8c_13200_8kHz.COD",
+    "testvec/testv/bitstreams/swb/stv32c_13200_32kHz.COD",
+    "testvec/testv/bitstreams/wb/stv16c_13200_16kHz.COD"
+  ],
+  "replication": [
+    "testvec/testv/bitstreams/nb/stv8n1_13200_8kHz.COD",
+    "testvec/testv/bitstreams/nb/stv8n2_13200_8kHz.COD",
+    "testvec/testv/bitstreams/swb/stv32n1_13200_32kHz.COD",
+    "testvec/testv/bitstreams/swb/stv32n2_13200_32kHz.COD",
+    "testvec/testv/bitstreams/wb/stv16n1_13200_16kHz.COD",
+    "testvec/testv/bitstreams/wb/stv16n2_13200_16kHz.COD"
+  ],
+  "members": [
+    {
+      "name": "testvec/testv/bitstreams/nb/stv8c_13200_8kHz.COD",
+      "local_header_offset": 53953566,
+      "file_data_start": 53953672,
+      "file_data_end": 54094087,
+      "local_record_sha256": "25e0228fd0a93737d5c06e91c53de8fd9f62360e2ac020e0ec7ee3faaea5c7c1",
+      "compressed_sha256": "21825c9ec145e40899bbc83dc4deddf04354768fe1432b33b9df106279acac97",
+      "compress_size": 140416,
+      "size": 1468320,
+      "zip_crc32_hex": "af682544",
+      "member_sha256": "78a5c3ef2c1dc172e203c560744dd386138808c6be51863b6ad9e54b453407bb"
+    },
+    {
+      "name": "testvec/testv/bitstreams/nb/stv8n1_13200_8kHz.COD",
+      "local_header_offset": 57727553,
+      "file_data_start": 57727660,
+      "file_data_end": 57763958,
+      "local_record_sha256": "de0fd188ea76b2b23d4e0398260065a20b0b0b2cdcc1b7a0df106aa1b05c715b",
+      "compressed_sha256": "acc253649ac57e82b8dbc490e80caf096584d9a99f2ea45d62bad5d5f685590f",
+      "compress_size": 36299,
+      "size": 372400,
+      "zip_crc32_hex": "38f24c4a",
+      "member_sha256": "eed40d26528df7de1e94d30882c855bee8b5ad283945e52793033238b4f69586"
+    },
+    {
+      "name": "testvec/testv/bitstreams/nb/stv8n2_13200_8kHz.COD",
+      "local_header_offset": 55168449,
+      "file_data_start": 55168556,
+      "file_data_end": 55204957,
+      "local_record_sha256": "9d0fee03a7120c733ee27b46ff66725821f30cbbbcdad114d462a00828aca4cb",
+      "compressed_sha256": "deb2e87d9fb707853c62bbf51292c5bfeb49237b8a6c66e87a9a687197cd70f9",
+      "compress_size": 36402,
+      "size": 372400,
+      "zip_crc32_hex": "4973b201",
+      "member_sha256": "52c13876304cdafa399bad0c94af70c3101eecf36b65a31f27919412706aa30e"
+    },
+    {
+      "name": "testvec/testv/bitstreams/swb/stv32c_13200_32kHz.COD",
+      "local_header_offset": 134734003,
+      "file_data_start": 134734112,
+      "file_data_end": 134873227,
+      "local_record_sha256": "ce4291a561e83ab3ba97fe0f38a06e5c3a9183ef7e390d5b480ee74f4fc106eb",
+      "compressed_sha256": "3b573af699cc50d4acb68d4262a9bdaafe2e3db735a7e8a2f827926a096d4ff0",
+      "compress_size": 139116,
+      "size": 1468320,
+      "zip_crc32_hex": "00be7639",
+      "member_sha256": "2a188443823b70c5c15f0464ddc47e9356e6cd79a96f157986de6fce5844244b"
+    },
+    {
+      "name": "testvec/testv/bitstreams/swb/stv32n1_13200_32kHz.COD",
+      "local_header_offset": 155123183,
+      "file_data_start": 155123293,
+      "file_data_end": 155159419,
+      "local_record_sha256": "e111c72817ca48f02ba408024dfae2baa5c7dbb873e2e237084789a832285087",
+      "compressed_sha256": "9793ba37832ffde13ed1746c350830383a490e494f9190319c0f97b1626df67e",
+      "compress_size": 36127,
+      "size": 372400,
+      "zip_crc32_hex": "f9775cfb",
+      "member_sha256": "028e37f20a6213396e77bb314faf550cfd86089887df253cfede2a476800ba1c"
+    },
+    {
+      "name": "testvec/testv/bitstreams/swb/stv32n2_13200_32kHz.COD",
+      "local_header_offset": 153156815,
+      "file_data_start": 153156925,
+      "file_data_end": 153193067,
+      "local_record_sha256": "29550ad961e623eff665914994bace297d2a5b91df07b4324af1b742458890a9",
+      "compressed_sha256": "9deea682a7a0596c4be0f161424e7fbdb0ff233485dc0b339b17ff762741d862",
+      "compress_size": 36143,
+      "size": 372400,
+      "zip_crc32_hex": "d13574be",
+      "member_sha256": "4edeb69a8bbd8779a5167a75d9904fbe28258ad4f55bd61e0e3d4f49d596bf13"
+    },
+    {
+      "name": "testvec/testv/bitstreams/wb/stv16c_13200_16kHz.COD",
+      "local_header_offset": 188088212,
+      "file_data_start": 188088320,
+      "file_data_end": 188227332,
+      "local_record_sha256": "81bcb36b5c62131457716888b6eee16685a141a8755814fdbac6d48152b27754",
+      "compressed_sha256": "cbc5b256234c1739981d4c14e1bba512cdf619a254380250d5bd0b9f78d850ca",
+      "compress_size": 139013,
+      "size": 1468320,
+      "zip_crc32_hex": "153f27a5",
+      "member_sha256": "7ddfb00606f7d45991a8f921a4345f88adb428d75b4d04e6118ada64eb61ba91"
+    },
+    {
+      "name": "testvec/testv/bitstreams/wb/stv16n1_13200_16kHz.COD",
+      "local_header_offset": 184505716,
+      "file_data_start": 184505825,
+      "file_data_end": 184541696,
+      "local_record_sha256": "a50e34815400bb286e113bb8037fac918894974870e67b249f3c13ad97b623a5",
+      "compressed_sha256": "ab1c4d3941223b12cc219d034c447f567b20a3ef6cf3430c73c8c609c41a0333",
+      "compress_size": 35872,
+      "size": 372400,
+      "zip_crc32_hex": "9debae10",
+      "member_sha256": "b8cbe3b149b80875891f79b24ffbf7ea341f80ed43da8c6e11f64eef9c8f5f9e"
+    },
+    {
+      "name": "testvec/testv/bitstreams/wb/stv16n2_13200_16kHz.COD",
+      "local_header_offset": 178071314,
+      "file_data_start": 178071423,
+      "file_data_end": 178107431,
+      "local_record_sha256": "95f8de21483ee976536d86cd68cecdfe9414f8b2c63764e1ca9171c6e0c5403d",
+      "compressed_sha256": "9b320e3b1c3ebdf64f4dc703927fc759d5bb4107caeb591470f92835300d1b12",
+      "compress_size": 36009,
+      "size": 372400,
+      "zip_crc32_hex": "5523bc14",
+      "member_sha256": "6350629fbb70a809159c655efcb58a964f806c012bf283b31ed12efb6e4979a7"
+    },
+    {
+      "name": "testvec/testv/decoded/nb/stv8c_13200_8kHz.OUT",
+      "local_header_offset": 1802961620,
+      "file_data_start": 1802961723,
+      "file_data_end": 1803641963,
+      "local_record_sha256": "e7ae6167ebb2ad749badc494489ee2262c53fe69ec56107e0693adf522f0812c",
+      "compressed_sha256": "e25e82aa69632e96a3ebcdfc1dc8f9a0fc4ccebf04ed6c9d5f55288da9cea7d7",
+      "compress_size": 680241,
+      "size": 883200,
+      "zip_crc32_hex": "16dd058b",
+      "member_sha256": "297b3b1938193937b6de8b657d64e57127eb1bf1f7a851a55412b1642e18dd01"
+    },
+    {
+      "name": "testvec/testv/decoded/nb/stv8n1_13200_8kHz.OUT",
+      "local_header_offset": 1788816484,
+      "file_data_start": 1788816588,
+      "file_data_end": 1788999777,
+      "local_record_sha256": "ed53722c7f784084dbc319c27e8756a90a21d5259a95093c09c30e0aacd107d3",
+      "compressed_sha256": "881a5569ef36b7243ba955e9f10224ca746ad689fc2295c263cc5daec5fa4ffd",
+      "compress_size": 183190,
+      "size": 224000,
+      "zip_crc32_hex": "1336c4a1",
+      "member_sha256": "4ef74b3750d99a6f486724afc17418100f254a48db4a5d842a616c4f513f05e4"
+    },
+    {
+      "name": "testvec/testv/decoded/nb/stv8n2_13200_8kHz.OUT",
+      "local_header_offset": 1769495868,
+      "file_data_start": 1769495972,
+      "file_data_end": 1769676861,
+      "local_record_sha256": "e78a34f24e1c9003ada2634b06212be430bc26d9ec97a34ed399ee1937cde338",
+      "compressed_sha256": "2746c9c6b080ef5a4547121df5922bac184de7ec896fb79a78fd9ef509989b94",
+      "compress_size": 180890,
+      "size": 224000,
+      "zip_crc32_hex": "c19a3262",
+      "member_sha256": "d5e3392fdffcbe2bf86b068d841edc6b9f0c4a8c7f4596cf9606a3045d6b14d3"
+    },
+    {
+      "name": "testvec/testv/decoded/swb/stv32c_13200_32kHz.OUT",
+      "local_header_offset": 580270142,
+      "file_data_start": 580270248,
+      "file_data_end": 582909449,
+      "local_record_sha256": "be6dcaf59332eea089f826a0191ef5e49d215e0fa6f616f0b5f08cb2e653474e",
+      "compressed_sha256": "28d0feafa930cd73fa73503aba5d2665e51963e3e99a240ee43c54e0996278e9",
+      "compress_size": 2639202,
+      "size": 3532800,
+      "zip_crc32_hex": "185674d5",
+      "member_sha256": "e35a3695b004cab9116d6deee830a441d97b1ab0a78fb7de95ce24fe1a5bbc02"
+    },
+    {
+      "name": "testvec/testv/decoded/swb/stv32n1_13200_32kHz.OUT",
+      "local_header_offset": 652136026,
+      "file_data_start": 652136133,
+      "file_data_end": 652809136,
+      "local_record_sha256": "58d617c4cf9b56411edc2eb79c8c7dc4b09cf12146a44c4f65ec59f0b4ed8e01",
+      "compressed_sha256": "5e19ff72ff7dccabfb3b49f97301e36efa531ad99dfb76646786703b9c5e5ed0",
+      "compress_size": 673004,
+      "size": 896000,
+      "zip_crc32_hex": "3361ea03",
+      "member_sha256": "869d9696a7b7e1a348cc32d8eef00f397a016f6af3974e873765f226a1a907c2"
+    },
+    {
+      "name": "testvec/testv/decoded/swb/stv32n2_13200_32kHz.OUT",
+      "local_header_offset": 435023798,
+      "file_data_start": 435023905,
+      "file_data_end": 435715850,
+      "local_record_sha256": "5f70bec5cd300b5129fce5a8c6cfb15d48d030a83abddd41511546c269c2c2a7",
+      "compressed_sha256": "905bc3d81a8ce58a51985cec1462f25840175dea8d386996ea9134484fb3c3c5",
+      "compress_size": 691946,
+      "size": 896000,
+      "zip_crc32_hex": "b413adc1",
+      "member_sha256": "ac354ded6582c89f36b2afc161679e2abacd4d5d1a658a51f0865c17eca695d5"
+    },
+    {
+      "name": "testvec/testv/decoded/wb/stv16c_13200_16kHz.OUT",
+      "local_header_offset": 238122952,
+      "file_data_start": 238123057,
+      "file_data_end": 239468661,
+      "local_record_sha256": "d37ed8cbd6177bd30c0ba3bdc72935a07209d632b26d0c5112323edb96996d00",
+      "compressed_sha256": "0e565c5d09f61cedda75f644092366626cc1d130321e9fd7fbe58eb2cb16eb17",
+      "compress_size": 1345605,
+      "size": 1766400,
+      "zip_crc32_hex": "0faba75b",
+      "member_sha256": "73e27ba2790f85cde1dcfdba976b73987af598dd3fb3069f8cf5c55a0e491bf3"
+    },
+    {
+      "name": "testvec/testv/decoded/wb/stv16n1_13200_16kHz.OUT",
+      "local_header_offset": 400537737,
+      "file_data_start": 400537843,
+      "file_data_end": 400890610,
+      "local_record_sha256": "88faba247c0f7352f741b735e1d91c4ecbfb7dceb8aefc0ae00313e250ef5bd7",
+      "compressed_sha256": "2603c2a278d9c985ddac1862c4472137533e0ba9b5ae28f5c493687fa2bc90dd",
+      "compress_size": 352768,
+      "size": 448000,
+      "zip_crc32_hex": "85d6bbcf",
+      "member_sha256": "3b9dfcaa4c1bb2856a6154365bfdfec2dc1898508f96748eae792d4134a9f369"
+    },
+    {
+      "name": "testvec/testv/decoded/wb/stv16n2_13200_16kHz.OUT",
+      "local_header_offset": 343757262,
+      "file_data_start": 343757368,
+      "file_data_end": 344110795,
+      "local_record_sha256": "66fbaf7bdb441487d566cd582061fb57441608da6328e6d06401be6de4659f4b",
+      "compressed_sha256": "b74606ba2dbe401d154bb9df3e55dafc402a40c2cdd2a3864306fa85ead64acb",
+      "compress_size": 353428,
+      "size": 448000,
+      "zip_crc32_hex": "f3705201",
+      "member_sha256": "9b8c4367b513e5171bd1f18ace8d607e56166b014cd66ba85db652aebd428762"
+    }
+  ],
+  "reference_code": "3GPP TS 26.442 V12.15.0 / 13.10.0 / 14.6.0 / 15.4.0 / 16.4.0",
+  "spec_pointer": "https://www.etsi.org/deliver/etsi_ts/126400_126499/126444/19.00.01_60/ts_126444v190001p0.zip",
+  "spec_pointer_sha256": "76759870b72a3351c54130eedb59b24aa8ad7ae69bfba256f0bf673166bc7bf8"
+}

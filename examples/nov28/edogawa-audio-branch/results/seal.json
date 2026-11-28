@@ -1,0 +1,15 @@
+{
+  "sealed_utc": "2026-11-28T13:49:51.137723+00:00",
+  "receiver_revision": "b9823848190fcc4e318ee7bc7c940faeea8edfb9",
+  "station": "7L4IOU",
+  "input_sha256": {
+    "original.wav": "0a96abeef758b1464ae6f39cc6d32989508038baedd63cb5af0f21c5e48a925d",
+    "original.wav.timing.csv": "178874e30cf6f6235363354a71394c487945b0435d9faad567506c56cfe44be5",
+    "rf/msc.bin": "3d42c8038a506c8ee6aaee4dfb08e3229d166a46671dc1a1ca8f0d31aa28c69f",
+    "transport/packets.npz": "5f92594e648a8f1cc214abd91c6d5bc22051911dd4fb0a305298c54967ef5dd1"
+  },
+  "reports_sha256": {
+    "primary.json": "359804ef48bc7c1e495da8d5af848b3bd321ca42cb02c36f042f4ebd70221d7a",
+    "audio.json": "e5698e9c276179dc40f12df7a6677570005a9b7c909bbb756b07f05e2b61c0eb"
+  }
+}

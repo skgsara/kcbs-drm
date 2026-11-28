@@ -1,0 +1,63 @@
+{
+  "recording": "10min-2026-11-27T12_15_02Z_3205.00_iq.wav",
+  "source_sha256": "8ba5576dc9ab560c14a1de3b7def1a176c2f3e95010dfabe890ab002f40bb624",
+  "source_bytes": 29360172,
+  "source_format": "RIFF/WAVE little-endian PCM16, stereo I/Q, data chunk at byte 44",
+  "source_sample_pairs": 7330304,
+  "sample_rate_hz": 12000,
+  "center_hz_from_filename": 3205000,
+  "original_seconds_half_open": [
+    480,
+    540
+  ],
+  "original_iq_sample_pairs_half_open": [
+    5760000,
+    6480000
+  ],
+  "original_file_bytes_half_open": [
+    23040044,
+    25920044
+  ],
+  "nominal_utc_from_filename_half_open": [
+    "2026-11-27T12:23:02Z",
+    "2026-11-27T12:24:02Z"
+  ],
+  "station_timestamps_available": false,
+  "flac": "3205kHz-480-540s-iq12.flac",
+  "flac_bytes": 2514931,
+  "flac_sha256": "31d38a1b0cb94726f6f1a50f8a3b9eeb1c8a3e1181f6dfe562cae16861fe3c63",
+  "decoded_pcm_bytes": 2880000,
+  "decoded_pcm_sha256": "d3f1c1dd62a9ba2aa209a628bf8cb669e1c950e25f414688a9e2c1c4b572af2a",
+  "verified_sample_pairs": 720000,
+  "verification": "The FLAC decoded to the exact original little-endian PCM16 stereo I/Q bytes at the declared source offsets.",
+  "selection": "Next full minute after the previously examined [420,480) interval. Only times and recording metadata were used for selection.",
+  "previously_documented_local_source_intervals_seconds": [
+    [
+      0,
+      120
+    ],
+    [
+      240,
+      360
+    ],
+    [
+      360,
+      420
+    ],
+    [
+      420,
+      480
+    ]
+  ],
+  "prior_external_use": "The contributor published aggregate results for the matching 12:15:02 recording. This contiguous minute was locally held out for the new test.",
+  "prior_public_sources": [
+    "../../nov28/packet-bit-repair/field-input.json",
+    "../../../docs/november-2026.md"
+  ],
+  "receiver": {
+    "settings": "One cold nominal finite-input Dream pass; Wiener frequency/time interpolation 2/1, modulation metric 0, one MLC iteration; all 720000 pairs from sample zero of this FLAC. Empty primary results are retained.",
+    "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+    "demodulator_sha256": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+    "resampler_sha256": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366"
+  }
+}

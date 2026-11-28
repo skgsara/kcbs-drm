@@ -289,8 +289,17 @@ disconnect leaves the samples received in the WAV and returns a nonzero exit sta
 ```bash
 python scripts/record_ubersdr_iq.py https://ubersdr.jl1edu.freeddns.org \
     --frequency-hz 3205000 --seconds 180 --ubersdr-source ./ka9q_ubersdr \
-    --out jl1edu-3205.wav
+    --out jl1edu-3205.wav --packet-timing
 ```
+
+The optional `--packet-timing` flag writes `jl1edu-3205.wav.timing.csv`.
+Each row identifies the zero-based offset and count of complex sample pairs
+written from one packet, and the station's Unix timestamp in nanoseconds for
+its first pair. A blank timestamp means the station clock is unavailable for
+that packet. To locate a clock jump, compare a timestamp with the previous
+timestamp advanced by the intervening sample count at 48 kHz. Keep a separate
+WAV and CSV on reconnection. The receipt's `started_utc` is the time the client
+started requesting the stream.
 
 The first three minutes identified service `A00002` (**조선중앙제2라지오방송**)
 and yielded one complete data unit with a verified counter. The next 20 minutes
@@ -445,6 +454,12 @@ speech or music. Role 2 is concealed; role 3 can replay the next fully unmasked
 frame. The copy measures **−26.7 LUFS**, with a **−2.6 dBTP** true peak and
 11 silent gaps of their original durations. The March release is unchanged.
 
+KoryoFront's November 28 update reports first-position audio in **817/884**
+groups on this timeline. A cross-check of the original MSC found a complete
+data unit inside the reported 7.2-second silent stretch. On a separate 6140 kHz
+recording, a second receiver confirmed 15 additional data units assigned by
+their revised transport code. [Upstream review and reproducible packet checks](examples/nov28/koryofront-review/README.md)
+
 [Martyn’s contribution](contrib/kcbsdrm/README.md) supplies six matching groups of
 dumps, prefix archives, record reports and Korean text. All **3,517** exported full prefixes matched complete received groups by
 counter; the six captures contain **4,421** complete groups in total. Rechecking header/body CRC, padding, fill, and matching records
@@ -555,6 +570,8 @@ The resulting 96-byte blocks are distinct within each sample, with bit-one
 fractions from 0.4994 to 0.5022. Their function is unknown. Simple mappings tested so
 far did not produce supported recovery of additional mask bytes.
 
+The longer 3205 kHz member recording contained 1,081 pairs of consecutive counters with complete trailers. The whole value changed in every pair. Two independent receivers agreed on all 90 complete trailers they shared. Using the 33-byte fragments alone also located 183 of 187 peer records at the correct counter and phase. [Trailer timing, cross-frequency checks and alignment](examples/nov28/group-boundary/trailer/README.md)
+
 ## Text recovery and validation
 
 **Idle text:** In bundled March groups the phase-0 plaintext tail is sixteen
@@ -628,6 +645,18 @@ compares body, sequence, final flag and position without requiring the toggle.
 
 ## Playback controls
 
+A stock EVS decoder can produce different PCM for identical trailing frames.
+In two synthetic streams that differed by one encoded bit, 33 of the following
+34 identical frames produced different samples at 32 kHz. Decoding both
+identical suffixes from reset yielded identical samples.
+[Decoder history experiment and reproduction](examples/nov28/evs-state-control/README.md)
+
+On a 500-byte development sample, the acoustic method scored 16.8% byte
+top-1 accuracy and its mode prior scored 2.4%. The 34 high-precision calls
+reported for the acoustic method were individual bits. The six later bytes
+in the second frame position have no exact broadcast labels in this comparison.
+[Independent score audit](examples/nov28/dev-score-audit/README.md)
+
 The replay method improved held-out eSTOI from **0.437 to 0.520** on four genuine
 EVS speech excerpts with the March loss pattern. The metric compares against the
 full EVS encode, not the broadcast. Three synthetic instrumental controls showed
@@ -646,6 +675,16 @@ encodes independent controls locally, compares seven strategies, and keeps its
 selection and held-out slices separate.
 
 ## Can this run live?
+
+A separate 6140 kHz blind run at 13:47 UTC located three packets at new counter
+`43949404`. The primary delivered 87.635 seconds of IQ before disconnecting.
+It supplied 2,568 directly observable bits and no complete clear EVS words.
+The independent receiver completed 120 seconds and supplied no CRC-valid
+packets. [Lossless recordings, frozen score and per-position evidence](examples/nov28/edogawa-audio-branch/)
+
+The November 28 13:00 UTC Yokohama recording captured 1,194.7 seconds on 3205 kHz. It identified service `A00002` and its Korean label. The first ten minutes yielded zero CRC-valid MSC packets. The remainder supplied one complete 60-slot transport group, counter `43947653`. The simultaneous two-minute Edogawa reference on 6140 kHz supplied 60 complete groups. [Recordings, counters and frozen test result](examples/nov28/yokohama-1300/)
+
+Two prospective November 28 recordings show what the transport receiver can certify on live RF. At 12:28 UTC Yokohama supplied zero CRC-valid packets on 3205 kHz. At 12:32 UTC two independent receivers tuned to 6140 kHz received the same 60 slots for counter 43945659. All 10,560 directly observable bits agreed. The frozen receiver verified zero complete clear EVS words for that counter. Both examples include lossless IQ for replay. [12:28 UTC recording](examples/nov28/dual-iq-1228/) · [12:32 UTC recording](examples/nov28/same-6140-1232/)
 
 The audio stage is fast enough to prototype. On one desktop, a 17:40.8 render
 with the prefixes already on disk took about 30 seconds. An offline 16-group

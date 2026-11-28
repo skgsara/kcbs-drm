@@ -1,0 +1,86 @@
+[
+  {
+    "edogawa_row": 106,
+    "yokohama_row": 109,
+    "edogawa": {
+      "wire_sha256": "a9965e426f239ce53612d281ba25c9434a2deba75a691921941b017fc512d2a7",
+      "good_packets": [
+        1,
+        2,
+        3
+      ],
+      "q0_computed_crc": "20EE",
+      "q0_transmitted_crc": "3AEF",
+      "q0_sha256": "f92c38c83b55caaf880bfc41408c1b8f15eb72e1804df2982a4772275e5ceee6",
+      "du_crc": null,
+      "du_sha256": null
+    },
+    "yokohama": {
+      "wire_sha256": "159f9758c177c65096c6eba37a20cd9fe0f56934558ff974581c27eded0bbad7",
+      "good_packets": [
+        2
+      ],
+      "q0_computed_crc": "B526",
+      "q0_transmitted_crc": "3AEF",
+      "q0_sha256": "2787364acaec8a14b203cce097e8c285e8ebbf217685cf937b9cc7fc0879467d",
+      "du_crc": null,
+      "du_sha256": null
+    },
+    "combined": {
+      "wire_sha256": "4c8c06b74cdacc66f94dc4ef398a57a7a6118627f3ade5f559249a7435d80058",
+      "good_packets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "q0_computed_crc": "3AEF",
+      "q0_transmitted_crc": "3AEF",
+      "q0_sha256": "e051f9091dbef230ac092e973e581ea61b04d48c7d364d0cb187b675ed8ddc7b",
+      "du_crc": "4DE3",
+      "du_sha256": "4bc6396fce86d3b9362f6c004a8bf62dfa555c02f15ccc4dcd910dc37bcf3aff"
+    }
+  },
+  {
+    "edogawa_row": 117,
+    "yokohama_row": 120,
+    "edogawa": {
+      "wire_sha256": "e57d7127ddafa1383d3fbada83ebeae708408a2139fcaa2597e70bf4026a3f85",
+      "good_packets": [
+        3
+      ],
+      "q0_computed_crc": "F442",
+      "q0_transmitted_crc": "EE87",
+      "q0_sha256": "fde56717fb23bca31120df9fd9d36261e5c54286b0ca9fcd3fec8fff667f8194",
+      "du_crc": null,
+      "du_sha256": null
+    },
+    "yokohama": {
+      "wire_sha256": "ba4e825f59cf739ceea5d9517b1410918b97d0ea609403c6a8b0327c8ef6df24",
+      "good_packets": [
+        1,
+        2,
+        3
+      ],
+      "q0_computed_crc": "93F9",
+      "q0_transmitted_crc": "EE87",
+      "q0_sha256": "55aa583c38fe32b3b586552ef79421e77f1f1ca061bdecba131a8649f18200c5",
+      "du_crc": null,
+      "du_sha256": null
+    },
+    "combined": {
+      "wire_sha256": "b860b8ebfb63089c5904a03e80d053f56239c4d987d11e344a8c52818ffddc4c",
+      "good_packets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "q0_computed_crc": "EE87",
+      "q0_transmitted_crc": "EE87",
+      "q0_sha256": "34300863c330ad7b7e95fd7fece8b50c6604497592e34276dcf187aba5d081f8",
+      "du_crc": "085A",
+      "du_sha256": "70a28d7bea0c69b23cf021571dfb13a0e3a8f3bfa465ee0eaa8e4a4ce57659c3"
+    }
+  }
+]

@@ -1,0 +1,290 @@
+{
+  "revision": "901d23e091c13c8b350dbee41024303ac0995ec8",
+  "distinct_ids": 14747,
+  "serialization": "UTF-8 compact JSON, sorted distinct integers under counter_ids, trailing LF, gzip mtime=0",
+  "json_sha256": "a4a694178af6f2e6c7aa97cf2ffb8e7d23b2a4e25aece4df8402c9d437b1ad25",
+  "gzip_sha256": "f224ec3c7e79778de7a4322637c488c472470a5a3750531dedb7972547ae6097",
+  "scope": "Union of the eight committed historical inventories, later published assigned counters (including partials), available coordinate arrays in the named public transport snapshots, and the Nov 15 complete-counter list. Earlier inventory inclusions retain their original provenance. Not a survey of private or unpublished captures. No trial files, masks, plaintext or application labels are used.",
+  "sources": [
+    {
+      "path": "examples/nov28/airspy-150-gap/history.json.gz",
+      "sha256": "0cfe563ffadc12b8201d677152693ff3a9b7080c4fea5caf41c0a5e86619be43",
+      "coordinates": "counter_ids",
+      "distinct_ids": 14742,
+      "new_to_union": 14742
+    },
+    {
+      "path": "examples/nov28/group-boundary/history.json.gz",
+      "sha256": "f7f5807511565affcab83b5eb162fb3d498248a6c541b5858e147998ba800abd",
+      "coordinates": "counter_ids",
+      "distinct_ids": 14737,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/hq-neighbors/airspy-gap/history.json.gz",
+      "sha256": "9d9606b47422073a199af4937db1e7de3d65c5741cefb01bfc3091859094adc3",
+      "coordinates": "counter_ids",
+      "distinct_ids": 13103,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/hq-neighbors/historical-counter-ids.json.gz",
+      "sha256": "72116907d9fee88d8b0c0b99e67dba90746dfcfa9665595e1ec23e547c5b3431",
+      "coordinates": "counter_ids",
+      "distinct_ids": 13102,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/iq-holdout/historical-counter-ids.json.gz",
+      "sha256": "45dc8afca6f9690b7eb4f7220d0e3d8027e4ca411815001f72d7d29a48c8d844",
+      "coordinates": "counter_ids",
+      "distinct_ids": 13013,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/member-3205-20min/history.json.gz",
+      "sha256": "8af38e60adb140848588e40b522d2395c5b0ee7c58373f2a8069f6187c27f655",
+      "coordinates": "counter_ids",
+      "distinct_ids": 13735,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/swb-transition/historical-counter-ids.json.gz",
+      "sha256": "8fff97485afae11acd3c3b8964860b4172fa0e3dc9eae52a3699f9c743c2540b",
+      "coordinates": "counter_ids",
+      "distinct_ids": 13030,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/yokohama-1300/history.json.gz",
+      "sha256": "3d8cd9f71bcdb75eeb78a104348883a84754a0677c7ada11b514d0146bf607b5",
+      "coordinates": "counter_ids",
+      "distinct_ids": 13483,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/airspy-150-gap/target-result.json",
+      "sha256": "a52be3251dc87f968ef1979b71e5c64ffc20305e0b27b044db7161a6231a54e9",
+      "coordinates": "historically_unseen_union_including_partial",
+      "distinct_ids": 5,
+      "new_to_union": 5
+    },
+    {
+      "path": "examples/nov28/bit-evidence/tail-reception.json",
+      "sha256": "1d6280434d9bb99186e3d3622119f8f62377fb4b8bddb78ab710c4703a0469f1",
+      "coordinates": "assigned_counters",
+      "distinct_ids": 4,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/group-boundary/reception.json",
+      "sha256": "e0002159e59ad5ff583b51836f96b8427bb444013cba043d202779c0ed1807a0",
+      "coordinates": "assigned_ids",
+      "distinct_ids": 3,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/group-boundary/second-pass.json",
+      "sha256": "d528dfb06775e0f1696e719e16c682f8567c72f43b14f090fc8dbf0b15030c55",
+      "coordinates": "retrospective_assigned_counters",
+      "distinct_ids": 5,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/member-3205-20min/second-pass.json",
+      "sha256": "a287d55254ca47c9091962c5f10143e9fe82be363e92f65294a014cde782b673",
+      "coordinates": "new_distinct_counters",
+      "distinct_ids": 0,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/member-3205-20min/reception.json",
+      "sha256": "c10b343f27f86e3fb01ad84272028dd3888f7785b2e737e6feee10f57eadee4c",
+      "coordinates": "union inclusive counter range, excluding each inclusive no-assigned interval",
+      "distinct_ids": 1121,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/four-frequency/member-100239/reception.json",
+      "sha256": "6f9b0e22dd151332d1cec7c3db66d161c14804361e5a91725d3b3445cfbf4b05",
+      "coordinates": "full-file contiguous complete_counter_bounds, plus explicit first and last assigned",
+      "distinct_ids": 248,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov15/validation/field-check-43005013/data_units.npz",
+      "sha256": "67c05409a942b0b38a67747217c8a2acdec36c727a580f881cd08123ce9ba857",
+      "coordinates": "counters",
+      "distinct_ids": 1,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/receiver/packets.npz",
+      "sha256": "85986684749e84fb33434cccb39c9a994ddeb091ed01f20d62adfb2edc4f35ed",
+      "coordinates": "ticks // 3",
+      "distinct_ids": 26,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/validation/acelp-class-history/edogawa-data-units.npz",
+      "sha256": "7381e771cc4cb5e85c44c5c26a4075268b198ac143c5c808f923bb454d44b9af",
+      "coordinates": "counters",
+      "distinct_ids": 88,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/validation/frame-order/nov19-data-units.npz",
+      "sha256": "ea6fbedb2a0873f7eb877f92fa570aceeef7518d356d1908f9fb5593d13436b2",
+      "coordinates": "counters",
+      "distinct_ids": 46,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/validation/jl1edu-43897717/packets.npz",
+      "sha256": "3f5afece3781e2d7c32af5a61beca2f7824bca956eb4fcdd5012474c4598881f",
+      "coordinates": "ticks // 3",
+      "distinct_ids": 1,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/validation/late-payload/edogawa-data-units.npz",
+      "sha256": "15a3da86a9feca1fb6465cbeb7de442575363da7ef433c80e459cd77c148f8fb",
+      "coordinates": "counters",
+      "distinct_ids": 120,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/validation/rf-iterations/3205-added-data-units.npz",
+      "sha256": "8b0ba6380dc4365a9d84f24e7e6af4d7e1877fe6ae531e4ed286f5e5212761c6",
+      "coordinates": "counters",
+      "distinct_ids": 2,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/validation/swb-gsc/edogawa-data-units.npz",
+      "sha256": "99461ed346d48900aed781d6af9eb6ebac891af1a0302a85aecdfcf9a81ff7ac",
+      "coordinates": "counters",
+      "distinct_ids": 114,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/validation/swb-gsc/nov19/data_units.npz",
+      "sha256": "047767620d47bba9bc8450de279831f4b19fbe930b3c938cfc025af02c031205",
+      "coordinates": "counters",
+      "distinct_ids": 41,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov27/validation/tbe-tail-43900403/data_units.npz",
+      "sha256": "d7ee115d1eb719ed5bd484cfb4ac8b6de11e8f6fd2a2795c73fef70d03c54a68",
+      "coordinates": "counters",
+      "distinct_ids": 1,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/airspy-150-gap/target-data-units.npz",
+      "sha256": "3d3e3252316941797b256dbd8f5bda8db1d1b3a7f6bd0eb7c7aeedef77732d77",
+      "coordinates": "counters",
+      "distinct_ids": 1,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/airspy-150-gap/target-packets.npz",
+      "sha256": "93d1b638d80079789830fb1e439261f2c3c81e6f9d6b8c2c05a7d390959a4b3f",
+      "coordinates": "ticks // 3",
+      "distinct_ids": 1,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/bit-evidence/43877110-data-units.npz",
+      "sha256": "792c12171b8987aeb86b209051527a1da2b55de2594882959012656b93d05f20",
+      "coordinates": "counters",
+      "distinct_ids": 1,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/group-boundary/dual-3205.npz",
+      "sha256": "7824c1146312aef97628da57d97e947036ce3b5312691c5376bbcff7e223293f",
+      "coordinates": "tick // 3",
+      "distinct_ids": 119,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/group-boundary/dual-6140.npz",
+      "sha256": "05a4cc876e3f20c89d01e80eaa3fd3e4fb027f3d5ff920db34e1a9c6d008a90c",
+      "coordinates": "tick // 3",
+      "distinct_ids": 119,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/gsc-fields/data_units.npz",
+      "sha256": "4f95576e0ca67a0283b9cd7b0cf0b22a2595912cf0efea1531e222154e6e91b2",
+      "coordinates": "counters",
+      "distinct_ids": 49,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/hq-neighbors/airspy-gap/transport/data_units.npz",
+      "sha256": "50df803b43381dc89ef3291f19c810448d5885b62354c0b075513e4f3987059d",
+      "coordinates": "counters",
+      "distinct_ids": 14,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/hq-neighbors/eligible-data-units.npz",
+      "sha256": "cc822d722becfe618d964bcfc16cbae04576834f49d9fb7d409411dd90cba716",
+      "coordinates": "counters",
+      "distinct_ids": 29,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/iq-holdout/data_units.npz",
+      "sha256": "d2277e56146fbfac045790c95ff3d43481e686ff32f169b0312f19911902db03",
+      "coordinates": "counters",
+      "distinct_ids": 17,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/member-3205-20min/data_units.npz",
+      "sha256": "0fa947ffb7a15994c7923b8f7532d7d81429a4d9111900ba3d111977521e1311",
+      "coordinates": "counters",
+      "distinct_ids": 1,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/member-3205-20min/extra-dus.npz",
+      "sha256": "448b5ff64f6e6c22541a9260a8f6de78a4a27e66d6467cff8c031bc5d8f0ac53",
+      "coordinates": "counters",
+      "distinct_ids": 5,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/member-3205-20min/member-dus.npz",
+      "sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+      "coordinates": "counters",
+      "distinct_ids": 1121,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/member-3205-20min/partial-packets.npz",
+      "sha256": "e7fa92c1c09dcc145bff3b984181863898628a08495ac541faf43a82e1f5e479",
+      "coordinates": "ticks // 3",
+      "distinct_ids": 12,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov28/swb-transition/data_units.npz",
+      "sha256": "b92941d6409183de05cc71f5662955ef285326846ecb82eb960897ce7f0cb902",
+      "coordinates": "counters",
+      "distinct_ids": 68,
+      "new_to_union": 0
+    },
+    {
+      "path": "examples/nov15/validation/complete-counters.csv",
+      "sha256": "e4cfed610655f490e0496e769623289cc10e6abdd2c1fafd2b1f3da28e067550",
+      "coordinates": "counter",
+      "distinct_ids": 109,
+      "new_to_union": 0
+    }
+  ]
+}

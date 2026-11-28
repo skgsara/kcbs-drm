@@ -1,0 +1,321 @@
+{
+  "chronological_primary": 43945659,
+  "modes_from": "edogawa",
+  "independent_targets_from": "yokohama",
+  "secondary_targets": "edogawa only where the independent target octet was missing",
+  "prior_history_gate": {
+    "edogawa": [],
+    "yokohama": []
+  },
+  "totals": {
+    "all": {
+      "independent_yokohama": {
+        "audio_noisy": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "position": {
+            "1": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "2": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "3": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "4": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            }
+          }
+        },
+        "inactive_nibble": {
+          "eligible": 184,
+          "checked": 184,
+          "matched": 184,
+          "wrong": 0,
+          "missing": 0,
+          "position": {
+            "1": {
+              "eligible": 47,
+              "checked": 47,
+              "matched": 47,
+              "wrong": 0,
+              "missing": 0
+            },
+            "2": {
+              "eligible": 46,
+              "checked": 46,
+              "matched": 46,
+              "wrong": 0,
+              "missing": 0
+            },
+            "3": {
+              "eligible": 45,
+              "checked": 45,
+              "matched": 45,
+              "wrong": 0,
+              "missing": 0
+            },
+            "4": {
+              "eligible": 46,
+              "checked": 46,
+              "matched": 46,
+              "wrong": 0,
+              "missing": 0
+            }
+          }
+        }
+      },
+      "secondary_edogawa_only": {
+        "audio_noisy": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "position": {
+            "1": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "2": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "3": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "4": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            }
+          }
+        },
+        "inactive_nibble": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "position": {
+            "1": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "2": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "3": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "4": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            }
+          }
+        }
+      }
+    },
+    "primary": {
+      "independent_yokohama": {
+        "audio_noisy": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "position": {
+            "1": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "2": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "3": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "4": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            }
+          }
+        },
+        "inactive_nibble": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "position": {
+            "1": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "2": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "3": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "4": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            }
+          }
+        }
+      },
+      "secondary_edogawa_only": {
+        "audio_noisy": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "position": {
+            "1": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "2": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "3": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "4": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            }
+          }
+        },
+        "inactive_nibble": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "position": {
+            "1": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "2": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "3": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            },
+            "4": {
+              "eligible": 0,
+              "checked": 0,
+              "matched": 0,
+              "wrong": 0,
+              "missing": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "individual_csv_sha256": "9c33d65269cb81b05c447e1fb161f9396b796d4317940a10d98d1b0259a49b62"
+}

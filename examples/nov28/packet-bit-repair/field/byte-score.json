@@ -1,0 +1,517 @@
+{
+  "format": "native-evs-p4-byte-score-v1",
+  "source_msc_sha256": "e05839ecfa06b44cd7cf5d8ecc293a54e079e76f3a3dcc05677fcae5b68b9b9b",
+  "prediction_sha256": "65d6a6e00d13bc0f499e2477442cb1162438595ed5db4a692f816437eac38e0d",
+  "native_transport": {
+    "msc_rows": 144,
+    "packet_crc_checks": 576,
+    "physical_packets_crc": 381,
+    "physical_packets_crc_and_header": 381,
+    "native_complete_dus": 61
+  },
+  "native_groups": 10,
+  "mode": 116,
+  "fitted_byte": 193,
+  "baseline_byte": 192,
+  "development_counter_overlap": [],
+  "primary": 43873129,
+  "primary_scores": {
+    "total": {
+      "slots": 60,
+      "eligible": 0,
+      "abstentions": 60,
+      "fitted": {
+        "exact_bytes": 0,
+        "wrong_bytes": 0,
+        "high_nibbles": 0,
+        "low_nibbles": 0,
+        "exact_bits": 0,
+        "bits_compared": 0
+      },
+      "baseline": {
+        "exact_bytes": 0,
+        "wrong_bytes": 0,
+        "high_nibbles": 0,
+        "low_nibbles": 0,
+        "exact_bits": 0,
+        "bits_compared": 0
+      }
+    },
+    "by_position": {
+      "1": {
+        "slots": 15,
+        "eligible": 0,
+        "abstentions": 15,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "2": {
+        "slots": 15,
+        "eligible": 0,
+        "abstentions": 15,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "3": {
+        "slots": 15,
+        "eligible": 0,
+        "abstentions": 15,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      },
+      "4": {
+        "slots": 15,
+        "eligible": 0,
+        "abstentions": 15,
+        "fitted": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        },
+        "baseline": {
+          "exact_bytes": 0,
+          "wrong_bytes": 0,
+          "high_nibbles": 0,
+          "low_nibbles": 0,
+          "exact_bits": 0,
+          "bits_compared": 0
+        }
+      }
+    }
+  },
+  "all_groups": {
+    "total": {
+      "slots": 600,
+      "eligible": 30,
+      "abstentions": 570,
+      "fitted": {
+        "exact_bytes": 11,
+        "wrong_bytes": 19,
+        "high_nibbles": 30,
+        "low_nibbles": 11,
+        "exact_bits": 211,
+        "bits_compared": 240
+      },
+      "baseline": {
+        "exact_bytes": 7,
+        "wrong_bytes": 23,
+        "high_nibbles": 30,
+        "low_nibbles": 7,
+        "exact_bits": 211,
+        "bits_compared": 240
+      }
+    },
+    "by_position": {
+      "1": {
+        "slots": 150,
+        "eligible": 8,
+        "abstentions": 142,
+        "fitted": {
+          "exact_bytes": 2,
+          "wrong_bytes": 6,
+          "high_nibbles": 8,
+          "low_nibbles": 2,
+          "exact_bits": 55,
+          "bits_compared": 64
+        },
+        "baseline": {
+          "exact_bytes": 3,
+          "wrong_bytes": 5,
+          "high_nibbles": 8,
+          "low_nibbles": 3,
+          "exact_bits": 59,
+          "bits_compared": 64
+        }
+      },
+      "2": {
+        "slots": 150,
+        "eligible": 9,
+        "abstentions": 141,
+        "fitted": {
+          "exact_bytes": 4,
+          "wrong_bytes": 5,
+          "high_nibbles": 9,
+          "low_nibbles": 4,
+          "exact_bits": 64,
+          "bits_compared": 72
+        },
+        "baseline": {
+          "exact_bytes": 1,
+          "wrong_bytes": 8,
+          "high_nibbles": 9,
+          "low_nibbles": 1,
+          "exact_bits": 61,
+          "bits_compared": 72
+        }
+      },
+      "3": {
+        "slots": 150,
+        "eligible": 8,
+        "abstentions": 142,
+        "fitted": {
+          "exact_bytes": 2,
+          "wrong_bytes": 6,
+          "high_nibbles": 8,
+          "low_nibbles": 2,
+          "exact_bits": 55,
+          "bits_compared": 64
+        },
+        "baseline": {
+          "exact_bytes": 2,
+          "wrong_bytes": 6,
+          "high_nibbles": 8,
+          "low_nibbles": 2,
+          "exact_bits": 55,
+          "bits_compared": 64
+        }
+      },
+      "4": {
+        "slots": 150,
+        "eligible": 5,
+        "abstentions": 145,
+        "fitted": {
+          "exact_bytes": 3,
+          "wrong_bytes": 2,
+          "high_nibbles": 5,
+          "low_nibbles": 3,
+          "exact_bits": 37,
+          "bits_compared": 40
+        },
+        "baseline": {
+          "exact_bytes": 1,
+          "wrong_bytes": 4,
+          "high_nibbles": 5,
+          "low_nibbles": 1,
+          "exact_bits": 36,
+          "bits_compared": 40
+        }
+      }
+    }
+  },
+  "row_fields": [
+    "counter",
+    "phase",
+    "slot",
+    "position",
+    "fitted_byte",
+    "baseline_byte",
+    "received_byte"
+  ],
+  "comparisons": [
+    [
+      43873131,
+      0,
+      8,
+      1,
+      193,
+      192,
+      192
+    ],
+    [
+      43873132,
+      1,
+      24,
+      1,
+      193,
+      192,
+      194
+    ],
+    [
+      43873132,
+      1,
+      25,
+      2,
+      193,
+      192,
+      193
+    ],
+    [
+      43873132,
+      1,
+      26,
+      3,
+      193,
+      192,
+      193
+    ],
+    [
+      43873132,
+      1,
+      31,
+      4,
+      193,
+      192,
+      196
+    ],
+    [
+      43873132,
+      1,
+      32,
+      1,
+      193,
+      192,
+      196
+    ],
+    [
+      43873135,
+      1,
+      34,
+      3,
+      193,
+      192,
+      194
+    ],
+    [
+      43873136,
+      0,
+      13,
+      2,
+      193,
+      192,
+      200
+    ],
+    [
+      43873136,
+      0,
+      14,
+      3,
+      193,
+      192,
+      195
+    ],
+    [
+      43873150,
+      0,
+      17,
+      2,
+      193,
+      192,
+      195
+    ],
+    [
+      43873150,
+      0,
+      18,
+      3,
+      193,
+      192,
+      192
+    ],
+    [
+      43873150,
+      2,
+      53,
+      2,
+      193,
+      192,
+      202
+    ],
+    [
+      43873152,
+      1,
+      37,
+      2,
+      193,
+      192,
+      193
+    ],
+    [
+      43873152,
+      1,
+      38,
+      3,
+      193,
+      192,
+      193
+    ],
+    [
+      43873152,
+      1,
+      39,
+      4,
+      193,
+      192,
+      193
+    ],
+    [
+      43873152,
+      2,
+      40,
+      1,
+      193,
+      192,
+      192
+    ],
+    [
+      43873162,
+      0,
+      5,
+      2,
+      193,
+      192,
+      193
+    ],
+    [
+      43873162,
+      0,
+      17,
+      2,
+      193,
+      192,
+      193
+    ],
+    [
+      43873162,
+      0,
+      19,
+      4,
+      193,
+      192,
+      193
+    ],
+    [
+      43873162,
+      1,
+      20,
+      1,
+      193,
+      192,
+      193
+    ],
+    [
+      43873162,
+      2,
+      42,
+      3,
+      193,
+      192,
+      199
+    ],
+    [
+      43873162,
+      2,
+      44,
+      1,
+      193,
+      192,
+      193
+    ],
+    [
+      43873162,
+      2,
+      45,
+      2,
+      193,
+      192,
+      197
+    ],
+    [
+      43873162,
+      2,
+      46,
+      3,
+      193,
+      192,
+      196
+    ],
+    [
+      43873162,
+      2,
+      47,
+      4,
+      193,
+      192,
+      193
+    ],
+    [
+      43873162,
+      2,
+      48,
+      1,
+      193,
+      192,
+      196
+    ],
+    [
+      43873162,
+      2,
+      55,
+      4,
+      193,
+      192,
+      192
+    ],
+    [
+      43873162,
+      2,
+      56,
+      1,
+      193,
+      192,
+      192
+    ],
+    [
+      43873162,
+      2,
+      57,
+      2,
+      193,
+      192,
+      192
+    ],
+    [
+      43873162,
+      2,
+      58,
+      3,
+      193,
+      192,
+      192
+    ]
+  ]
+}

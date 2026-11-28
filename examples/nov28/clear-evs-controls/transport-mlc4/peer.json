@@ -1,0 +1,142 @@
+{
+  "format": "edogawa-mlc4-independent-peer-v1",
+  "peer_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+  "peer": {
+    "assigned_record_observations": 202,
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "native_rows": 220,
+    "physical_good_packet_occurrences": 859,
+    "accepted_packets": 806,
+    "accepted_dus": 200,
+    "quarantined_phases": []
+  },
+  "packets": {
+    "counts": {
+      "exact": 8,
+      "disagreement": 0,
+      "no_peer_receipt": 0,
+      "peer_phase_quarantined": 0
+    },
+    "rows": [
+      {
+        "coordinate": [
+          43945704,
+          1,
+          0
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "d5293d429041204ab4bb270f22728df9024ee490da2f5479899fc44334a62026",
+        "peer_sha256": "d5293d429041204ab4bb270f22728df9024ee490da2f5479899fc44334a62026",
+        "same_valid_wire_anywhere_in_mlc1": false
+      },
+      {
+        "coordinate": [
+          43945704,
+          1,
+          1
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "a4ca6733c3db46ed4cc8ed070e46dc03d6a5d6b18fd8987c7fe51b4e248ce31f",
+        "peer_sha256": "a4ca6733c3db46ed4cc8ed070e46dc03d6a5d6b18fd8987c7fe51b4e248ce31f",
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43945704,
+          1,
+          2
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "65081d18e6e39d3c364e682519cba13c0d09b1a58124c23ca7f732775df81fc4",
+        "peer_sha256": "65081d18e6e39d3c364e682519cba13c0d09b1a58124c23ca7f732775df81fc4",
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43945704,
+          1,
+          3
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "db6888836177c5beb6ab56b5ec99d63a068cd8235e997760bdc1b54571f9c4e6",
+        "peer_sha256": "db6888836177c5beb6ab56b5ec99d63a068cd8235e997760bdc1b54571f9c4e6",
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43945704,
+          2,
+          0
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "84ad808bc22037d3271c327e583bb53371aa3e43c1fa6e2d09aed829425c5e1b",
+        "peer_sha256": "84ad808bc22037d3271c327e583bb53371aa3e43c1fa6e2d09aed829425c5e1b",
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43945704,
+          2,
+          1
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "2f74d9cc05c46f257f04cfb6796858cf4cedde11d310789f5a4fa083905bd5ba",
+        "peer_sha256": "2f74d9cc05c46f257f04cfb6796858cf4cedde11d310789f5a4fa083905bd5ba",
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43945704,
+          2,
+          2
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "f671d76df4e7e0bbfdd995277d3905ef6a7d8c802c84e83b34e4b44777546b4f",
+        "peer_sha256": "f671d76df4e7e0bbfdd995277d3905ef6a7d8c802c84e83b34e4b44777546b4f",
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43945704,
+          2,
+          3
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "dda7b85a38e1e7a54afdaff06bfebc8ce111dbc245e679165f89102f4f41f353",
+        "peer_sha256": "dda7b85a38e1e7a54afdaff06bfebc8ce111dbc245e679165f89102f4f41f353",
+        "same_valid_wire_anywhere_in_mlc1": true
+      }
+    ]
+  },
+  "units": {
+    "counts": {
+      "exact": 2,
+      "disagreement": 0,
+      "no_peer_receipt": 0,
+      "peer_phase_quarantined": 0
+    },
+    "rows": [
+      {
+        "coordinate": [
+          43945704,
+          1
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "51780ad69c54f84382424c5948f1bb34219614bac4a54444a036e9a0879c915d",
+        "peer_sha256": "51780ad69c54f84382424c5948f1bb34219614bac4a54444a036e9a0879c915d"
+      },
+      {
+        "coordinate": [
+          43945704,
+          2
+        ],
+        "outcome": "exact",
+        "mlc4_sha256": "2b5ad7f0b52efe64d9e4fbc62e9c6cd934f1b3e20bb6b24bdead2e83482d0290",
+        "peer_sha256": "2b5ad7f0b52efe64d9e4fbc62e9c6cd934f1b3e20bb6b24bdead2e83482d0290"
+      }
+    ]
+  },
+  "decisions_sha256": "417c090b27421c1850c45ef6c91b304d48b19f3b124ad294c080fcdd93e83907",
+  "decisions_gzip_sha256": "6e1cab8945724b8c649c14468f30321b0a43774799dc94f283d2bc4033c777ce"
+}

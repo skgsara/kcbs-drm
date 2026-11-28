@@ -1,0 +1,93 @@
+{
+  "native_msc_sha256": "4cb47a60c4374f8da611917f031ca5958e278957920b59f4f8a2d615feb46c2b",
+  "native_rows": 144,
+  "stock": {
+    "ticks": 55,
+    "packets": 213,
+    "complete_dus": 50,
+    "packets_sha256": "62f2412d3b3a832e3a12c255b303ad79908f6906ff3444cf187772230828b60d",
+    "data_units_sha256": "e1f0b8381c3466b8589669e9b122f09def4116c0f382c3fe100335802498bd14"
+  },
+  "extended": {
+    "ticks": 62,
+    "packets": 236,
+    "complete_dus": 55,
+    "packets_sha256": "2365b7dc4d5d935392961994796ccf3cd4f62097962f8073b11fe5df2bba9c63",
+    "data_units_sha256": "d7e31c589f974cfc35a26fe379de6cb5eca8ef08a62ac6e493364f03aea9e038"
+  },
+  "extra_rows": [
+    {
+      "native_row": 31,
+      "counter": 43873230,
+      "phase": 2,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 54,
+      "counter": 43873238,
+      "phase": 1,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 57,
+      "counter": 43873239,
+      "phase": 1,
+      "crc_valid_ordinals": [
+        0,
+        3
+      ]
+    },
+    {
+      "native_row": 58,
+      "counter": 43873239,
+      "phase": 2,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 62,
+      "counter": 43873241,
+      "phase": 0,
+      "crc_valid_ordinals": [
+        0
+      ]
+    },
+    {
+      "native_row": 63,
+      "counter": 43873241,
+      "phase": 1,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 79,
+      "counter": 43873246,
+      "phase": 2,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "extended_quarantine": []
+}

@@ -1,0 +1,63 @@
+{
+  "format": "packet-repair-peer-v1",
+  "case": "21:26 3205 kHz",
+  "primary_receiver": "Yokohama",
+  "witness_receiver": "Edogawa",
+  "original_sha256": "b1c5bcb0d4c8bbf22841e75c1dea491a93f7ead03a402d04c82698a84ec9b9f9",
+  "corrected_sha256": "b1951da6c41e92ae8a27f9b74e6e9e2d3c650347d3562a1b071d3d12c5ddbee3",
+  "peer_sha256": "c36d4f0763a02d87b28d4afb033140fae970666bcc73c8dfb50df1e1a107e7fc",
+  "paired_rows": 118,
+  "unique_full_wire_witnesses": 318,
+  "rejected_pairs": [],
+  "counter_phase_conflicts": [],
+  "changed_packets": 1,
+  "checked_packets": 0,
+  "outcomes": {
+    "exact_182_bytes": 0,
+    "different_182_bytes": 0,
+    "no_peer_valid_packet": 1,
+    "no_witnessed_peer_row": 0
+  },
+  "corrected_header_crc_valid": 1,
+  "matched_packets_in_jointly_valid_equal_dus": 0,
+  "changed_bits_by_field": {
+    "evs_non_direct": {
+      "changed": 1,
+      "peer_checked": 0,
+      "peer_agrees": 0
+    }
+  },
+  "packets": [
+    {
+      "ordinal": 0,
+      "coordinate": null,
+      "witness_ordinals": [
+        1,
+        3
+      ],
+      "result": "no_peer_valid_packet",
+      "corrected_header_crc_valid": true,
+      "corrected_du_crc_valid": true,
+      "peer_du_crc_valid": false,
+      "original_wire_sha256": "edda97d1c5755cdbf9ff1297bb1c6a82d40f8df3099ad7332414afd162f8759e",
+      "corrected_wire_sha256": "1649d2d80f109f25ec6690ccac09d7a4ac1cb8a3e90cf43f383f5d84efe9366d",
+      "peer_wire_sha256": null,
+      "original_distance_to_peer_bits": null,
+      "corrected_distance_to_peer_bits": null,
+      "changed_bits": [
+        {
+          "du_byte": 19,
+          "field": "evs_non_direct",
+          "cycle": 0,
+          "position": 1,
+          "word_octet": 13,
+          "slot": null,
+          "wire_bit": 163,
+          "peer_bit_agrees": null
+        }
+      ],
+      "primary_row": 250,
+      "witness_row": 265
+    }
+  ]
+}

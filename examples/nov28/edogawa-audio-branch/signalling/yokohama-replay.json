@@ -1,0 +1,95 @@
+{
+  "site": "yokohama",
+  "started_utc": "2026-11-28T13:58:55.408602+00:00",
+  "finished_utc": "2026-11-28T13:58:58.297202+00:00",
+  "frequency_hz": 6140000,
+  "cold_start_sample": 0,
+  "sample_pairs": 5760000,
+  "duration_seconds": 120.0,
+  "source_flac": "yokohama-6140khz-iq48.flac",
+  "source_flac_sha256": "db78552310410656434f3436b1d6d277c1e20f07c14829d01082470319e018c7",
+  "source_pcm_sha256": "15f49a5e95174af5f414af70ce4865d99f81c2c38f711f6a56fa57d12904c294",
+  "runner_sha256": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+  "pre_crc_observer_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "inspector_sha256": "4eb63cf7dcf62a911574e93edd216d2d4c212f5aef7f51fbb15ded1cab0f874d",
+  "observer_patch_gzip_sha256": "f41861a9d948c2bccd1026493208272a07feb8c2caf5e150f916c9d1b6c5b593",
+  "stock_receiver_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "settings": {
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "mlciter": 1
+  },
+  "command": [
+    "/workspace/.venv/bin/python",
+    "-B",
+    "/workspace/shared/prospective-6140-field-1345/receive/pinned/scripts/demod_iq_window.py",
+    "/workspace/kcbs-claude-review/examples/nov28/edogawa-audio-branch/iq/yokohama-6140khz-iq48.flac",
+    "/workspace/shared/nov28-1347-standard-services/yokohama/rf",
+    "--start",
+    "0",
+    "--seconds",
+    "120",
+    "--reception-profile",
+    "wiener",
+    "--mlc-iterations",
+    "1"
+  ],
+  "expected_original_msc_sha256": "aec269eb2a4c3c5a878938ae866b6f44c24bb745d1378321ecc7c3f454c6ffc8",
+  "msc_sha256": "aec269eb2a4c3c5a878938ae866b6f44c24bb745d1378321ecc7c3f454c6ffc8",
+  "msc_bytes": 79056,
+  "byte_identical_to_original_msc": true,
+  "offline_eof": true,
+  "hashes": {
+    "signalling.bits": "33e7981b1f6a4590fd1377f291637ef118952b8189a8d41cc6874327bfb54fc9",
+    "observer-run.log": "c68d0958034d705d5332b1c64bd2e12da49499da5105053986b202c0d42e53ab",
+    "rf/manifest.json": "8eafe6c973bcb5f1e7de1d7f4257d059d3f2c71c2e2b7804b3b3f2ff86e2c1bf",
+    "rf/Dream.ini": "e2e5baf0b453333b6355c4635ef3f6575c280ab55cc95cb05557485f7e61a786",
+    "rf/dream.log": "4fc19d5b20130b7f2ef5497bcf7428526e3b8a414d29f1a2113bfadc3ba59a5e",
+    "rf/msc.bin": "aec269eb2a4c3c5a878938ae866b6f44c24bb745d1378321ecc7c3f454c6ffc8",
+    "signalling.json": "049f66e5328f21fb828322548aa72c5472b22f887810ab19110e168cad717c4f"
+  },
+  "observed_crc": {
+    "FAC": {
+      "observed": 283,
+      "crc_passed": 173,
+      "crc_failed": 110
+    },
+    "SDC": {
+      "observed": 97,
+      "crc_passed": 3,
+      "crc_failed": 94
+    }
+  },
+  "fac_services": [
+    {
+      "service_id": "A00002",
+      "short_id": 0,
+      "audio_ca": 0,
+      "language_code": 0,
+      "service": "data",
+      "service_descriptor": 0,
+      "data_ca": 0,
+      "count": 173
+    }
+  ],
+  "fac_channel_parameters": [
+    {
+      "base_enhancement": 0,
+      "rm_flag": 0,
+      "spectrum_occupancy": 3,
+      "interleaver_depth_flag": 1,
+      "msc_mode": 3,
+      "sdc_mode": 0,
+      "number_of_services_code": 1,
+      "count": 173
+    }
+  ],
+  "sdc_entity_counts": {
+    "0": 3,
+    "1": 3,
+    "5": 3,
+    "12": 3
+  },
+  "sdc_framing_errors": {}
+}

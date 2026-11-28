@@ -1,0 +1,59 @@
+{
+  "recording": "10min-2026-11-27T12_15_02Z_3205.00_iq.wav",
+  "source_sha256": "8ba5576dc9ab560c14a1de3b7def1a176c2f3e95010dfabe890ab002f40bb624",
+  "source_bytes": 29360172,
+  "source_format": "RIFF/WAVE little-endian PCM16, stereo I/Q, data chunk at byte 44",
+  "source_sample_pairs": 7330304,
+  "sample_rate_hz": 12000,
+  "center_hz_from_filename": 3205000,
+  "public_freeze": "4010d520ff200470e8429c218b392119ce6c2fb0",
+  "selection": "First 60 seconds immediately after [480,540); selected by file time before extraction.",
+  "original_seconds_half_open": [
+    540,
+    600
+  ],
+  "original_iq_sample_pairs_half_open": [
+    6480000,
+    7200000
+  ],
+  "original_file_bytes_half_open": [
+    25920044,
+    28800044
+  ],
+  "nominal_utc_from_filename_half_open": [
+    "2026-11-27T12:24:02Z",
+    "2026-11-27T12:25:02Z"
+  ],
+  "station_timestamps_available": false,
+  "flac": "3205kHz-540-600s-iq12.flac",
+  "flac_bytes": 2474742,
+  "flac_sha256": "96cd53e2fab355026c85426ee59783d55c412e144f249bdb18b77876e526ab0f",
+  "decoded_pcm_bytes": 2880000,
+  "decoded_pcm_sha256": "f2a1f3a24f7fc96ee46e850c9fe8f820235bad3b7fcd7c663ad7fdc8bff1e019",
+  "verified_sample_pairs": 720000,
+  "verification": "The FLAC decoded to the exact original little-endian PCM16 stereo I/Q bytes at the declared source offsets.",
+  "previously_documented_local_source_intervals_seconds": [
+    [
+      0,
+      120
+    ],
+    [
+      240,
+      360
+    ],
+    [
+      360,
+      420
+    ],
+    [
+      420,
+      480
+    ],
+    [
+      480,
+      540
+    ]
+  ],
+  "prior_external_use": "The contributor published aggregate results for the matching 12:15:02 recording. This contiguous minute was locally held out for the new test.",
+  "extraction_started_utc": "2026-11-28T15:50:38.576626+00:00"
+}

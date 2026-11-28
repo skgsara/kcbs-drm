@@ -1,0 +1,117 @@
+{
+  "options": [
+    "-q",
+    "-no_delay_cmp",
+    "-max_band",
+    "SWB",
+    "13200",
+    "32"
+  ],
+  "encoder_sha256": {
+    "fixed": "a963b8754b05c258521bc1403e9d8e785e74a43626635829c26057c6cc13a20c",
+    "float": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7"
+  },
+  "cases": {
+    "silence": {
+      "pcm_sha256": "0c5cc90b079d0d9c1ded1376357d23a9782a704a83e01731f50ccd162e246492",
+      "encoders": {
+        "fixed": {
+          "g192_sha256": "6fd8ba4ab17e7a19f5970a2c3d0993ea39e0e9feb4038408bb3891c28ed70ed7",
+          "total": 120,
+          "mode_histogram": {
+            "74": 117
+          },
+          "nibble_histogram": {
+            "C": 117
+          },
+          "first_eligible_slot": 3,
+          "eligible": 117,
+          "inactive_tbe": 0
+        },
+        "float": {
+          "g192_sha256": "e111db34f0fc834aa7a7e4b5991f457ee42466a258a25ab5b6b1d1121e91b22e",
+          "total": 120,
+          "mode_histogram": {
+            "74": 117
+          },
+          "nibble_histogram": {
+            "C": 117
+          },
+          "first_eligible_slot": 3,
+          "eligible": 117,
+          "inactive_tbe": 0
+        }
+      }
+    },
+    "square_then_silence": {
+      "pcm_sha256": "22335419761999ba63aca5911f67854ad7a7a62202cafba7742c8a4747723a31",
+      "encoders": {
+        "fixed": {
+          "g192_sha256": "17a45c9cfc5acf5f5f6464fac23cd3d49c88137392861e13e41461d1e87f2d26",
+          "total": 120,
+          "mode_histogram": {
+            "74": 48
+          },
+          "nibble_histogram": {
+            "C": 48
+          },
+          "first_eligible_slot": 72,
+          "eligible": 48,
+          "inactive_tbe": 0
+        },
+        "float": {
+          "g192_sha256": "cd62f23d24e4bbb3545e045b796e7a7fa6d4a82f346bbfc739ba1c967fed9bef",
+          "total": 120,
+          "mode_histogram": {
+            "74": 48
+          },
+          "nibble_histogram": {
+            "C": 48
+          },
+          "first_eligible_slot": 72,
+          "eligible": 48,
+          "inactive_tbe": 0
+        }
+      }
+    }
+  },
+  "same_pcm_suffix": {
+    "pcm_sha256": "a6430511b6325d09ced3334a8eb3172755a07f3224265eed8c80005f182ccde3",
+    "encoders": {
+      "fixed": {
+        "first_slot": 50,
+        "last_slot": 119,
+        "same_pcm_slots": 70,
+        "identical_complete_words": 0,
+        "different_complete_words": 70,
+        "same_inactive_mode_slots": 48,
+        "identical_words_with_same_inactive_mode": 0,
+        "different_words_with_same_inactive_mode": 48,
+        "first_inactive_difference": {
+          "slot": 72,
+          "mode": "74",
+          "differing_bits": 17,
+          "silence_word_sha256": "4fbe38b9ac07a2604472c33c1af8d75fb79f7a1fd88c351c6778147e66481781",
+          "after_square_word_sha256": "6b6fc61bb7394c0cab248dd0451e2b6d5bd6a30a13eb15ae26a07b6888155dc1"
+        }
+      },
+      "float": {
+        "first_slot": 50,
+        "last_slot": 119,
+        "same_pcm_slots": 70,
+        "identical_complete_words": 0,
+        "different_complete_words": 70,
+        "same_inactive_mode_slots": 48,
+        "identical_words_with_same_inactive_mode": 0,
+        "different_words_with_same_inactive_mode": 48,
+        "first_inactive_difference": {
+          "slot": 72,
+          "mode": "74",
+          "differing_bits": 80,
+          "silence_word_sha256": "6948767bd4726a817dbb99d33dfab022c8bfb5fd4f685888a901ad7cc995024c",
+          "after_square_word_sha256": "6f09ff08e06336ef8877fcc9802c547ed8301d785671d60bba9bc7899288e60d"
+        }
+      }
+    }
+  }
+}

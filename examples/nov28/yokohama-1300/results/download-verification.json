@@ -1,0 +1,34 @@
+{
+  "head": "2438fd2162cdeec41178d207d4b652fdf87bcd42",
+  "remote": "https://github.com/skgsara/kcbs-drm.git",
+  "branch": "data-nov28-1300-iq",
+  "depth": 1,
+  "restored_files": 7,
+  "recordings": [
+    {
+      "wav": "20261128T1300Z-yokohama-3205khz-segment-001-iq48.wav",
+      "sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401",
+      "sample_pairs": 54720000,
+      "timing_rows": 171000,
+      "timing_sha256": "7172706bac526b499fead615dc351619137fbcd286a8c513dbec554e9b1eee38"
+    },
+    {
+      "wav": "20261128T1300Z-yokohama-3205khz-segment-002-iq48.wav",
+      "sha256": "1d80f3c0d0caee3ba98513961dae58d95d38e663cd3d11793d7df9362767cec3",
+      "sample_pairs": 2625600,
+      "timing_rows": 8205,
+      "timing_sha256": "16a159c00ced299d5eb29c59ad6aceceb4468e91f6440800190352e36d8c2176"
+    },
+    {
+      "wav": "20261128T1300Z-edogawa-6140khz-iq48.wav",
+      "sha256": "e5af7b3f6efa584ead88cd9d28975ae06817c5d5d951bbd2b94d9e85a24f00cc",
+      "sample_pairs": 5760000,
+      "timing_rows": 18000,
+      "timing_sha256": "785a7c9bfafbf1efe07ca76c9f5520ad1f2af539ff131bf5f53f6d6d9b6f7175"
+    }
+  ],
+  "archive_href": "https://github.com/skgsara/kcbs-drm/archive/2438fd2162cdeec41178d207d4b652fdf87bcd42.zip",
+  "manifest_sha256": "ce3cc49ed15bed848e9a3d7324b8ada328bfb207c607093af51de48377ef6bc5",
+  "all_seven_sha256_match_sealed": true,
+  "all_wav_headers_match_sealed": true
+}

@@ -1,0 +1,69 @@
+{
+  "ordered_sources": [
+    "edogawa",
+    "yokohama"
+  ],
+  "history_count": 14811,
+  "any_historical_intersection": {
+    "edogawa": [],
+    "yokohama": []
+  },
+  "primary_id_seen_before": false,
+  "official_source_sha256": "77db7e78ceadb25d6a878959fd7c2580d793690be0caf4cfac3f2ed3776517ed",
+  "stations": {
+    "yokohama": "abf60a7169082b9be8fd0fc1c37a115a03e903c2c4ebd5a8827c401eb5ae4e38",
+    "edogawa": "84b6c70b2a1ca2635263e4ef9d174ec85ca3f37bcbd8167279b214cfac948eed"
+  },
+  "primary": {
+    "counter": 43945659,
+    "phase0_row": 20,
+    "du_sha256": [
+      "f6d1705cb831b4aec629ec9c3157428d71cc71110d7054845c642251f4ba80fc",
+      "833c29f9705f5b90f2a62e8a97013ee2684a66dc2c8854e1a01295fcf245fc61",
+      "7413149299fcba949fa2d853499e8aa2c85f2f5015e50a134cd8686b0b827742"
+    ]
+  },
+  "primary_peer_receipt": {
+    "packets": 12,
+    "matching_packets": 12,
+    "complete_dus": 3,
+    "equal_dus": 3,
+    "full_native": true
+  },
+  "comparison_packets": {
+    "left_only": 11,
+    "right_only": 529,
+    "union": 817,
+    "intersection": 277,
+    "exact_matches": 277,
+    "conflicting_coordinates": []
+  },
+  "comparison_whole_dus": {
+    "left_only": 2,
+    "right_only": 135,
+    "union": 202,
+    "intersection": 65,
+    "exact_matches": 65,
+    "conflicting_coordinates": []
+  },
+  "direct_complete_group_ids_both": [
+    43945659,
+    43945668,
+    43945669,
+    43945670,
+    43945683,
+    43945692,
+    43945693,
+    43945694,
+    43945705,
+    43945706,
+    43945707,
+    43945708,
+    43945709,
+    43945710,
+    43945711,
+    43945712,
+    43945713
+  ],
+  "union_direct_complete_group_count": 65
+}

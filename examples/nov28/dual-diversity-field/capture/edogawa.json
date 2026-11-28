@@ -1,0 +1,35 @@
+{
+  "origin": "https://7l4iou.tunnel.ubersdr.org",
+  "frequency_hz": 6140000,
+  "mode": "iq48",
+  "sample_rate_hz": 48000,
+  "started_utc": "2026-11-28T14:21:59.036094+00:00",
+  "requested_seconds": 90,
+  "sample_pairs": 4320000,
+  "packets": 13500,
+  "timestamped_packets": 13497,
+  "timestamp_jumps_over_one_sample": 0,
+  "max_abs_timestamp_jump_ns": 14599,
+  "first_timestamp_sample_and_unix_ns": [
+    960,
+    1795875721647513270
+  ],
+  "last_timestamp_sample_and_unix_ns": [
+    4319760,
+    1795875811622480120
+  ],
+  "iq_pcm_sha256": "542cfd75830a67a96f8870cb7a479b4825bafbd666dcedc8db0ce8d0a7a00a77",
+  "wall_seconds": 93.903,
+  "sample_seconds": 90.0,
+  "sample_target_reached": true,
+  "call_sign": "7L4IOU",
+  "original_capture_sha256": "970a5464e71d58fd7595ef0ddd9e234ec530854ae88b97a06f2171152b420f71",
+  "process": {
+    "started_utc": "2026-11-28T14:21:58.978568+00:00",
+    "ended_utc": "2026-11-28T14:23:32.960381+00:00",
+    "returncode": 0,
+    "external_timeout": false
+  },
+  "recorder_reported_error": false,
+  "timing": "iq/edogawa-6140khz-iq48.timing.csv"
+}

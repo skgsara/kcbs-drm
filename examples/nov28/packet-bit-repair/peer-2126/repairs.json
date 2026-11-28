@@ -1,0 +1,21 @@
+{
+  "original_msc_sha256": "b1c5bcb0d4c8bbf22841e75c1dea491a93f7ead03a402d04c82698a84ec9b9f9",
+  "proposed_msc_sha256": "b1951da6c41e92ae8a27f9b74e6e9e2d3c650347d3562a1b071d3d12c5ddbee3",
+  "rows": 434,
+  "row_outcomes": {
+    "multiple_failed_packet_crcs": 348,
+    "all_packet_crcs_pass": 59,
+    "no_single_bit_candidate": 26,
+    "single_bit_proposed": 1
+  },
+  "changes": [
+    {
+      "native_row": 250,
+      "packet_ordinal": 0,
+      "wire_bit_msb0": 163,
+      "data_unit_byte": 19,
+      "original_packet_sha256": "edda97d1c5755cdbf9ff1297bb1c6a82d40f8df3099ad7332414afd162f8759e",
+      "proposed_packet_sha256": "1649d2d80f109f25ec6690ccac09d7a4ac1cb8a3e90cf43f383f5d84efe9366d"
+    }
+  ]
+}

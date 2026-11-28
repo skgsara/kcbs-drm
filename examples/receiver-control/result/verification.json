@@ -1,0 +1,6387 @@
+{
+  "profile": "EF0201 declared-clear synthetic 40-group loss control",
+  "groups": 40,
+  "first_counter": 16909060,
+  "slots": 2400,
+  "sender_g192_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+  "receiver_g192_sha256": "61e4502fd5b7c6c8b835ee8c79ac3e9756b01bf05b770e97d3b1260286afeb71",
+  "word_digest_format": "In slot order, 00 for erasure or 01 followed by 33 packed MSB-first octets.",
+  "primary": {
+    "exact": false,
+    "total": {
+      "full": 2322,
+      "partial": 33,
+      "absent": 45,
+      "exact_supplied": 2113,
+      "correct_erasure": 78,
+      "wrong_word": 0,
+      "extra_erasure": 209,
+      "false_supply": 0
+    },
+    "by_position": {
+      "1": {
+        "full": 573,
+        "partial": 21,
+        "absent": 6,
+        "exact_supplied": 529,
+        "correct_erasure": 27,
+        "wrong_word": 0,
+        "extra_erasure": 44,
+        "false_supply": 0,
+        "expected_sha256": "e0468a803e9d69568264d5d0ca6e0b9f6e504df5fb8f96ad1ed505b3133e5f57",
+        "actual_sha256": "10d41f19b9be0ce4032ee97aa42149d8c706379d88a730d5c45b9e27bb560637"
+      },
+      "2": {
+        "full": 582,
+        "partial": 6,
+        "absent": 12,
+        "exact_supplied": 529,
+        "correct_erasure": 18,
+        "wrong_word": 0,
+        "extra_erasure": 53,
+        "false_supply": 0,
+        "expected_sha256": "5e1ea899554139845369bf9e5cff99e6ba91b57ffc7b0576ab1456a2f61bd1e0",
+        "actual_sha256": "7ab5360e7c026143b3885442a83e1582fb5ba5173a59441df81d0b8df1b16419"
+      },
+      "3": {
+        "full": 582,
+        "partial": 6,
+        "absent": 12,
+        "exact_supplied": 526,
+        "correct_erasure": 18,
+        "wrong_word": 0,
+        "extra_erasure": 56,
+        "false_supply": 0,
+        "expected_sha256": "4da510f31ded92020c42c4985cc893c9df15a37f73f41f024aae9d3b2cf54346",
+        "actual_sha256": "760cbb018e6a83611168496e21b30017f6800de8331ce3925957800523e26734"
+      },
+      "4": {
+        "full": 585,
+        "partial": 0,
+        "absent": 15,
+        "exact_supplied": 529,
+        "correct_erasure": 15,
+        "wrong_word": 0,
+        "extra_erasure": 56,
+        "false_supply": 0,
+        "expected_sha256": "de80fa5a25009ab5fd162275f8905ab2c005ad1775da43c59fe144f93d6df919",
+        "actual_sha256": "0364f9b6918db3d704dbaa0d67d083cee72c790af0803292949cc7403728ccca"
+      }
+    },
+    "by_counter": {
+      "16909060": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909061": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909062": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909063": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909064": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909065": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909066": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909067": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909068": {
+        "full": 51,
+        "partial": 4,
+        "absent": 5,
+        "exact_supplied": 0,
+        "correct_erasure": 9,
+        "wrong_word": 0,
+        "extra_erasure": 51,
+        "false_supply": 0
+      },
+      "16909069": {
+        "full": 54,
+        "partial": 3,
+        "absent": 3,
+        "exact_supplied": 54,
+        "correct_erasure": 6,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909070": {
+        "full": 53,
+        "partial": 3,
+        "absent": 4,
+        "exact_supplied": 13,
+        "correct_erasure": 7,
+        "wrong_word": 0,
+        "extra_erasure": 40,
+        "false_supply": 0
+      },
+      "16909071": {
+        "full": 56,
+        "partial": 1,
+        "absent": 3,
+        "exact_supplied": 0,
+        "correct_erasure": 4,
+        "wrong_word": 0,
+        "extra_erasure": 56,
+        "false_supply": 0
+      },
+      "16909072": {
+        "full": 51,
+        "partial": 4,
+        "absent": 5,
+        "exact_supplied": 20,
+        "correct_erasure": 9,
+        "wrong_word": 0,
+        "extra_erasure": 31,
+        "false_supply": 0
+      },
+      "16909073": {
+        "full": 54,
+        "partial": 3,
+        "absent": 3,
+        "exact_supplied": 54,
+        "correct_erasure": 6,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909074": {
+        "full": 53,
+        "partial": 3,
+        "absent": 4,
+        "exact_supplied": 53,
+        "correct_erasure": 7,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909075": {
+        "full": 56,
+        "partial": 1,
+        "absent": 3,
+        "exact_supplied": 56,
+        "correct_erasure": 4,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909076": {
+        "full": 51,
+        "partial": 4,
+        "absent": 5,
+        "exact_supplied": 20,
+        "correct_erasure": 9,
+        "wrong_word": 0,
+        "extra_erasure": 31,
+        "false_supply": 0
+      },
+      "16909077": {
+        "full": 54,
+        "partial": 3,
+        "absent": 3,
+        "exact_supplied": 54,
+        "correct_erasure": 6,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909078": {
+        "full": 53,
+        "partial": 3,
+        "absent": 4,
+        "exact_supplied": 53,
+        "correct_erasure": 7,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909079": {
+        "full": 56,
+        "partial": 1,
+        "absent": 3,
+        "exact_supplied": 56,
+        "correct_erasure": 4,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909080": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909081": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909082": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909083": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909084": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909085": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909086": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909087": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909088": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909089": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909090": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909091": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909092": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909093": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909094": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909095": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909096": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909097": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909098": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "16909099": {
+        "full": 60,
+        "partial": 0,
+        "absent": 0,
+        "exact_supplied": 60,
+        "correct_erasure": 0,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      }
+    },
+    "expected_sha256": "7d085974c46bfa0d2f1b1a0b7dafb3e4c9bf0405e17e1a535796a48ee3ed8a3e",
+    "actual_sha256": "366877aad6fa71657204bbf7cade2db8778a589e7a2651e5e95c60984765e3cf",
+    "nonfull_slots": [
+      {
+        "slot": 480,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 0,
+        "position": 1,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 481,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 0,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 482,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 0,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 483,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 0,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 484,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 1,
+        "position": 1,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 485,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 1,
+        "position": 2,
+        "receipt": "partial",
+        "received_octets": 24
+      },
+      {
+        "slot": 488,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 2,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 492,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 3,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 496,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 545,
+        "counter": 16909069,
+        "phase": 0,
+        "cycle": 1,
+        "position": 2,
+        "receipt": "partial",
+        "received_octets": 9
+      },
+      {
+        "slot": 546,
+        "counter": 16909069,
+        "phase": 0,
+        "cycle": 1,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 547,
+        "counter": 16909069,
+        "phase": 0,
+        "cycle": 1,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 548,
+        "counter": 16909069,
+        "phase": 0,
+        "cycle": 2,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 1
+      },
+      {
+        "slot": 549,
+        "counter": 16909069,
+        "phase": 0,
+        "cycle": 2,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 550,
+        "counter": 16909069,
+        "phase": 0,
+        "cycle": 2,
+        "position": 3,
+        "receipt": "partial",
+        "received_octets": 9
+      },
+      {
+        "slot": 610,
+        "counter": 16909070,
+        "phase": 0,
+        "cycle": 2,
+        "position": 3,
+        "receipt": "partial",
+        "received_octets": 24
+      },
+      {
+        "slot": 611,
+        "counter": 16909070,
+        "phase": 0,
+        "cycle": 2,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 612,
+        "counter": 16909070,
+        "phase": 0,
+        "cycle": 3,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 1
+      },
+      {
+        "slot": 613,
+        "counter": 16909070,
+        "phase": 0,
+        "cycle": 3,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 614,
+        "counter": 16909070,
+        "phase": 0,
+        "cycle": 3,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 615,
+        "counter": 16909070,
+        "phase": 0,
+        "cycle": 3,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 616,
+        "counter": 16909070,
+        "phase": 0,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 27
+      },
+      {
+        "slot": 676,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 7
+      },
+      {
+        "slot": 677,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 4,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 678,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 4,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 679,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 4,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 740,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 0,
+        "position": 1,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 741,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 0,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 742,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 0,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 743,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 0,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 744,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 1,
+        "position": 1,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 745,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 1,
+        "position": 2,
+        "receipt": "partial",
+        "received_octets": 24
+      },
+      {
+        "slot": 748,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 752,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 3,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 756,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 805,
+        "counter": 16909073,
+        "phase": 1,
+        "cycle": 1,
+        "position": 2,
+        "receipt": "partial",
+        "received_octets": 9
+      },
+      {
+        "slot": 806,
+        "counter": 16909073,
+        "phase": 1,
+        "cycle": 1,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 807,
+        "counter": 16909073,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 808,
+        "counter": 16909073,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 1
+      },
+      {
+        "slot": 809,
+        "counter": 16909073,
+        "phase": 1,
+        "cycle": 2,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 810,
+        "counter": 16909073,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "receipt": "partial",
+        "received_octets": 9
+      },
+      {
+        "slot": 870,
+        "counter": 16909074,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "receipt": "partial",
+        "received_octets": 24
+      },
+      {
+        "slot": 871,
+        "counter": 16909074,
+        "phase": 1,
+        "cycle": 2,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 872,
+        "counter": 16909074,
+        "phase": 1,
+        "cycle": 3,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 1
+      },
+      {
+        "slot": 873,
+        "counter": 16909074,
+        "phase": 1,
+        "cycle": 3,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 874,
+        "counter": 16909074,
+        "phase": 1,
+        "cycle": 3,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 875,
+        "counter": 16909074,
+        "phase": 1,
+        "cycle": 3,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 876,
+        "counter": 16909074,
+        "phase": 1,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 27
+      },
+      {
+        "slot": 936,
+        "counter": 16909075,
+        "phase": 1,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 7
+      },
+      {
+        "slot": 937,
+        "counter": 16909075,
+        "phase": 1,
+        "cycle": 4,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 938,
+        "counter": 16909075,
+        "phase": 1,
+        "cycle": 4,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 939,
+        "counter": 16909075,
+        "phase": 1,
+        "cycle": 4,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1000,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 0,
+        "position": 1,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1001,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 0,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1002,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 0,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1003,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 0,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1004,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 1,
+        "position": 1,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1005,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 1,
+        "position": 2,
+        "receipt": "partial",
+        "received_octets": 24
+      },
+      {
+        "slot": 1008,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 2,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 1012,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 3,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 1016,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 32
+      },
+      {
+        "slot": 1065,
+        "counter": 16909077,
+        "phase": 2,
+        "cycle": 1,
+        "position": 2,
+        "receipt": "partial",
+        "received_octets": 9
+      },
+      {
+        "slot": 1066,
+        "counter": 16909077,
+        "phase": 2,
+        "cycle": 1,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1067,
+        "counter": 16909077,
+        "phase": 2,
+        "cycle": 1,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1068,
+        "counter": 16909077,
+        "phase": 2,
+        "cycle": 2,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 1
+      },
+      {
+        "slot": 1069,
+        "counter": 16909077,
+        "phase": 2,
+        "cycle": 2,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1070,
+        "counter": 16909077,
+        "phase": 2,
+        "cycle": 2,
+        "position": 3,
+        "receipt": "partial",
+        "received_octets": 9
+      },
+      {
+        "slot": 1130,
+        "counter": 16909078,
+        "phase": 2,
+        "cycle": 2,
+        "position": 3,
+        "receipt": "partial",
+        "received_octets": 24
+      },
+      {
+        "slot": 1131,
+        "counter": 16909078,
+        "phase": 2,
+        "cycle": 2,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1132,
+        "counter": 16909078,
+        "phase": 2,
+        "cycle": 3,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 1
+      },
+      {
+        "slot": 1133,
+        "counter": 16909078,
+        "phase": 2,
+        "cycle": 3,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1134,
+        "counter": 16909078,
+        "phase": 2,
+        "cycle": 3,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1135,
+        "counter": 16909078,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1136,
+        "counter": 16909078,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 27
+      },
+      {
+        "slot": 1196,
+        "counter": 16909079,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "receipt": "partial",
+        "received_octets": 7
+      },
+      {
+        "slot": 1197,
+        "counter": 16909079,
+        "phase": 2,
+        "cycle": 4,
+        "position": 2,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1198,
+        "counter": 16909079,
+        "phase": 2,
+        "cycle": 4,
+        "position": 3,
+        "receipt": "absent",
+        "received_octets": 0
+      },
+      {
+        "slot": 1199,
+        "counter": 16909079,
+        "phase": 2,
+        "cycle": 4,
+        "position": 4,
+        "receipt": "absent",
+        "received_octets": 0
+      }
+    ],
+    "mismatches": [
+      {
+        "slot": 486,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 487,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 489,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 490,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 491,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 493,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 494,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 495,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 497,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 498,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 499,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 500,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 501,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 502,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 503,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 504,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 505,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 506,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 507,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 508,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 509,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 510,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 511,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 512,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 513,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 514,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 515,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 516,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 4,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 517,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 518,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 519,
+        "counter": 16909068,
+        "phase": 1,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 520,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 521,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 522,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 523,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 524,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 525,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 526,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 527,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 528,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 529,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 530,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 531,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 532,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 533,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 534,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 535,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 536,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 537,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 538,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 539,
+        "counter": 16909068,
+        "phase": 2,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 620,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 621,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 622,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 623,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 624,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 625,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 626,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 627,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 628,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 629,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 630,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 631,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 632,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 633,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 634,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 635,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 636,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 4,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 637,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 638,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 639,
+        "counter": 16909070,
+        "phase": 1,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 640,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 641,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 642,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 643,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 644,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 645,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 646,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 647,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 648,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 649,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 650,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 651,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 652,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 653,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 654,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 655,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 656,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 657,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 658,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 659,
+        "counter": 16909070,
+        "phase": 2,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 660,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 661,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 662,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 663,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 664,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 665,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 666,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 667,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 668,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 669,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 670,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 671,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 672,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 673,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 674,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 675,
+        "counter": 16909071,
+        "phase": 0,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 680,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 681,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 682,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 683,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 684,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 685,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 686,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 687,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 688,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 689,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 690,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 691,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 692,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 693,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 694,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 695,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 696,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 4,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 697,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 698,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 699,
+        "counter": 16909071,
+        "phase": 1,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 700,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 701,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 702,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 703,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 704,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 705,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 706,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 707,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 708,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 709,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 710,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 711,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 712,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 713,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 714,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 715,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 716,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 717,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 718,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 719,
+        "counter": 16909071,
+        "phase": 2,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 746,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 747,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 749,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 750,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 751,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 753,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 754,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 755,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 757,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 758,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 759,
+        "counter": 16909072,
+        "phase": 1,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 760,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 761,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 762,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 763,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 764,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 765,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 766,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 767,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 768,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 769,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 770,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 771,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 772,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 773,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 774,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 775,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 776,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 777,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 778,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 779,
+        "counter": 16909072,
+        "phase": 2,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 980,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 981,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 0,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 982,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 0,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 983,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 0,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 984,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 1,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 985,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 1,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 986,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 987,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 988,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 989,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 990,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 991,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 992,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 3,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 993,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 994,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 995,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 996,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 4,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 997,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 998,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 999,
+        "counter": 16909076,
+        "phase": 1,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1006,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 1,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1007,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 1,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1009,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 2,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1010,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 2,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1011,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 2,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1013,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 3,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1014,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 3,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1015,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1017,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 4,
+        "position": 2,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1018,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 4,
+        "position": 3,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      },
+      {
+        "slot": 1019,
+        "counter": 16909076,
+        "phase": 2,
+        "cycle": 4,
+        "position": 4,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      }
+    ]
+  },
+  "transport_overlay": {
+    "source_sha256": "b928230d3ef2ed3c19bc06d96ad362ead3e7ec3282c41147429c7a283cc89cda",
+    "reported_ticks": 120,
+    "comparison": {
+      "exact": true,
+      "total": {
+        "full": 2113,
+        "partial": 20,
+        "absent": 267,
+        "exact_supplied": 2113,
+        "correct_erasure": 287,
+        "wrong_word": 0,
+        "extra_erasure": 0,
+        "false_supply": 0
+      },
+      "by_position": {
+        "1": {
+          "full": 529,
+          "partial": 11,
+          "absent": 60,
+          "exact_supplied": 529,
+          "correct_erasure": 71,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0,
+          "expected_sha256": "10d41f19b9be0ce4032ee97aa42149d8c706379d88a730d5c45b9e27bb560637",
+          "actual_sha256": "10d41f19b9be0ce4032ee97aa42149d8c706379d88a730d5c45b9e27bb560637"
+        },
+        "2": {
+          "full": 529,
+          "partial": 3,
+          "absent": 68,
+          "exact_supplied": 529,
+          "correct_erasure": 71,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0,
+          "expected_sha256": "7ab5360e7c026143b3885442a83e1582fb5ba5173a59441df81d0b8df1b16419",
+          "actual_sha256": "7ab5360e7c026143b3885442a83e1582fb5ba5173a59441df81d0b8df1b16419"
+        },
+        "3": {
+          "full": 526,
+          "partial": 6,
+          "absent": 68,
+          "exact_supplied": 526,
+          "correct_erasure": 74,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0,
+          "expected_sha256": "760cbb018e6a83611168496e21b30017f6800de8331ce3925957800523e26734",
+          "actual_sha256": "760cbb018e6a83611168496e21b30017f6800de8331ce3925957800523e26734"
+        },
+        "4": {
+          "full": 529,
+          "partial": 0,
+          "absent": 71,
+          "exact_supplied": 529,
+          "correct_erasure": 71,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0,
+          "expected_sha256": "0364f9b6918db3d704dbaa0d67d083cee72c790af0803292949cc7403728ccca",
+          "actual_sha256": "0364f9b6918db3d704dbaa0d67d083cee72c790af0803292949cc7403728ccca"
+        }
+      },
+      "by_counter": {
+        "16909060": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909061": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909062": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909063": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909064": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909065": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909066": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909067": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909068": {
+          "full": 0,
+          "partial": 0,
+          "absent": 60,
+          "exact_supplied": 0,
+          "correct_erasure": 60,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909069": {
+          "full": 54,
+          "partial": 3,
+          "absent": 3,
+          "exact_supplied": 54,
+          "correct_erasure": 6,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909070": {
+          "full": 13,
+          "partial": 3,
+          "absent": 44,
+          "exact_supplied": 13,
+          "correct_erasure": 47,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909071": {
+          "full": 0,
+          "partial": 0,
+          "absent": 60,
+          "exact_supplied": 0,
+          "correct_erasure": 60,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909072": {
+          "full": 20,
+          "partial": 0,
+          "absent": 40,
+          "exact_supplied": 20,
+          "correct_erasure": 40,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909073": {
+          "full": 54,
+          "partial": 3,
+          "absent": 3,
+          "exact_supplied": 54,
+          "correct_erasure": 6,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909074": {
+          "full": 53,
+          "partial": 3,
+          "absent": 4,
+          "exact_supplied": 53,
+          "correct_erasure": 7,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909075": {
+          "full": 56,
+          "partial": 1,
+          "absent": 3,
+          "exact_supplied": 56,
+          "correct_erasure": 4,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909076": {
+          "full": 20,
+          "partial": 0,
+          "absent": 40,
+          "exact_supplied": 20,
+          "correct_erasure": 40,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909077": {
+          "full": 54,
+          "partial": 3,
+          "absent": 3,
+          "exact_supplied": 54,
+          "correct_erasure": 6,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909078": {
+          "full": 53,
+          "partial": 3,
+          "absent": 4,
+          "exact_supplied": 53,
+          "correct_erasure": 7,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909079": {
+          "full": 56,
+          "partial": 1,
+          "absent": 3,
+          "exact_supplied": 56,
+          "correct_erasure": 4,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909080": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909081": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909082": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909083": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909084": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909085": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909086": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909087": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909088": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909089": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909090": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909091": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909092": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909093": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909094": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909095": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909096": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909097": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909098": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        },
+        "16909099": {
+          "full": 60,
+          "partial": 0,
+          "absent": 0,
+          "exact_supplied": 60,
+          "correct_erasure": 0,
+          "wrong_word": 0,
+          "extra_erasure": 0,
+          "false_supply": 0
+        }
+      },
+      "expected_sha256": "366877aad6fa71657204bbf7cade2db8778a589e7a2651e5e95c60984765e3cf",
+      "actual_sha256": "366877aad6fa71657204bbf7cade2db8778a589e7a2651e5e95c60984765e3cf",
+      "nonfull_slots": [
+        {
+          "slot": 480,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 481,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 482,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 483,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 484,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 485,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 486,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 487,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 488,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 489,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 490,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 491,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 492,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 493,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 494,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 495,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 496,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 497,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 498,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 499,
+          "counter": 16909068,
+          "phase": 0,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 500,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 501,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 502,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 503,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 504,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 505,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 506,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 507,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 508,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 509,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 510,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 511,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 512,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 513,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 514,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 515,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 516,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 517,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 518,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 519,
+          "counter": 16909068,
+          "phase": 1,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 520,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 521,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 522,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 523,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 524,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 525,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 526,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 527,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 528,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 529,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 530,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 531,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 532,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 533,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 534,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 535,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 536,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 537,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 538,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 539,
+          "counter": 16909068,
+          "phase": 2,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 545,
+          "counter": 16909069,
+          "phase": 0,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "partial",
+          "received_octets": 9
+        },
+        {
+          "slot": 546,
+          "counter": 16909069,
+          "phase": 0,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 547,
+          "counter": 16909069,
+          "phase": 0,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 548,
+          "counter": 16909069,
+          "phase": 0,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 1
+        },
+        {
+          "slot": 549,
+          "counter": 16909069,
+          "phase": 0,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 550,
+          "counter": 16909069,
+          "phase": 0,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "partial",
+          "received_octets": 9
+        },
+        {
+          "slot": 610,
+          "counter": 16909070,
+          "phase": 0,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "partial",
+          "received_octets": 24
+        },
+        {
+          "slot": 611,
+          "counter": 16909070,
+          "phase": 0,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 612,
+          "counter": 16909070,
+          "phase": 0,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 1
+        },
+        {
+          "slot": 613,
+          "counter": 16909070,
+          "phase": 0,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 614,
+          "counter": 16909070,
+          "phase": 0,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 615,
+          "counter": 16909070,
+          "phase": 0,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 616,
+          "counter": 16909070,
+          "phase": 0,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 27
+        },
+        {
+          "slot": 620,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 621,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 622,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 623,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 624,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 625,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 626,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 627,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 628,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 629,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 630,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 631,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 632,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 633,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 634,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 635,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 636,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 637,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 638,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 639,
+          "counter": 16909070,
+          "phase": 1,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 640,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 641,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 642,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 643,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 644,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 645,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 646,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 647,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 648,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 649,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 650,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 651,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 652,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 653,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 654,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 655,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 656,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 657,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 658,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 659,
+          "counter": 16909070,
+          "phase": 2,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 660,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 661,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 662,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 663,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 664,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 665,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 666,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 667,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 668,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 669,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 670,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 671,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 672,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 673,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 674,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 675,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 676,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 677,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 678,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 679,
+          "counter": 16909071,
+          "phase": 0,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 680,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 681,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 682,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 683,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 684,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 685,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 686,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 687,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 688,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 689,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 690,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 691,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 692,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 693,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 694,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 695,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 696,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 697,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 698,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 699,
+          "counter": 16909071,
+          "phase": 1,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 700,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 701,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 702,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 703,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 704,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 705,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 706,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 707,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 708,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 709,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 710,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 711,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 712,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 713,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 714,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 715,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 716,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 717,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 718,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 719,
+          "counter": 16909071,
+          "phase": 2,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 740,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 741,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 742,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 743,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 744,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 745,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 746,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 747,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 748,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 749,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 750,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 751,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 752,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 753,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 754,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 755,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 756,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 757,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 758,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 759,
+          "counter": 16909072,
+          "phase": 1,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 760,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 761,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 762,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 763,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 764,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 765,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 766,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 767,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 768,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 769,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 770,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 771,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 772,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 773,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 774,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 775,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 776,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 777,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 778,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 779,
+          "counter": 16909072,
+          "phase": 2,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 805,
+          "counter": 16909073,
+          "phase": 1,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "partial",
+          "received_octets": 9
+        },
+        {
+          "slot": 806,
+          "counter": 16909073,
+          "phase": 1,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 807,
+          "counter": 16909073,
+          "phase": 1,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 808,
+          "counter": 16909073,
+          "phase": 1,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 1
+        },
+        {
+          "slot": 809,
+          "counter": 16909073,
+          "phase": 1,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 810,
+          "counter": 16909073,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "partial",
+          "received_octets": 9
+        },
+        {
+          "slot": 870,
+          "counter": 16909074,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "partial",
+          "received_octets": 24
+        },
+        {
+          "slot": 871,
+          "counter": 16909074,
+          "phase": 1,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 872,
+          "counter": 16909074,
+          "phase": 1,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 1
+        },
+        {
+          "slot": 873,
+          "counter": 16909074,
+          "phase": 1,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 874,
+          "counter": 16909074,
+          "phase": 1,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 875,
+          "counter": 16909074,
+          "phase": 1,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 876,
+          "counter": 16909074,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 27
+        },
+        {
+          "slot": 936,
+          "counter": 16909075,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 7
+        },
+        {
+          "slot": 937,
+          "counter": 16909075,
+          "phase": 1,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 938,
+          "counter": 16909075,
+          "phase": 1,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 939,
+          "counter": 16909075,
+          "phase": 1,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 980,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 981,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 982,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 983,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 984,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 985,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 986,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 987,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 988,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 989,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 990,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 991,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 992,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 993,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 994,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 995,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 996,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 997,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 998,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 999,
+          "counter": 16909076,
+          "phase": 1,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1000,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1001,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1002,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1003,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1004,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1005,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1006,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1007,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1008,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1009,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1010,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1011,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1012,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1013,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1014,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1015,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1016,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1017,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1018,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1019,
+          "counter": 16909076,
+          "phase": 2,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1065,
+          "counter": 16909077,
+          "phase": 2,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "partial",
+          "received_octets": 9
+        },
+        {
+          "slot": 1066,
+          "counter": 16909077,
+          "phase": 2,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1067,
+          "counter": 16909077,
+          "phase": 2,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1068,
+          "counter": 16909077,
+          "phase": 2,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 1
+        },
+        {
+          "slot": 1069,
+          "counter": 16909077,
+          "phase": 2,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1070,
+          "counter": 16909077,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "partial",
+          "received_octets": 9
+        },
+        {
+          "slot": 1130,
+          "counter": 16909078,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "partial",
+          "received_octets": 24
+        },
+        {
+          "slot": 1131,
+          "counter": 16909078,
+          "phase": 2,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1132,
+          "counter": 16909078,
+          "phase": 2,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 1
+        },
+        {
+          "slot": 1133,
+          "counter": 16909078,
+          "phase": 2,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1134,
+          "counter": 16909078,
+          "phase": 2,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1135,
+          "counter": 16909078,
+          "phase": 2,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1136,
+          "counter": 16909078,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 27
+        },
+        {
+          "slot": 1196,
+          "counter": 16909079,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "partial",
+          "received_octets": 7
+        },
+        {
+          "slot": 1197,
+          "counter": 16909079,
+          "phase": 2,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1198,
+          "counter": 16909079,
+          "phase": 2,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "absent",
+          "received_octets": 0
+        },
+        {
+          "slot": 1199,
+          "counter": 16909079,
+          "phase": 2,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "absent",
+          "received_octets": 0
+        }
+      ],
+      "mismatches": []
+    }
+  },
+  "negative_controls": {
+    "changed_one_bit": {
+      "rejected": true,
+      "mismatches": 1,
+      "first_mismatch": {
+        "slot": 0,
+        "counter": 16909060,
+        "phase": 0,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "wrong_word",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": 1
+      }
+    },
+    "one_slot_rotation": {
+      "rejected": true,
+      "mismatches": 2343,
+      "first_mismatch": {
+        "slot": 0,
+        "counter": 16909060,
+        "phase": 0,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "wrong_word",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": 130
+      }
+    },
+    "supplied_sender_word_in_erasure": {
+      "rejected": true,
+      "mismatches": 1,
+      "first_mismatch": {
+        "slot": 480,
+        "counter": 16909068,
+        "phase": 0,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "false_supply",
+        "received_octets": 0,
+        "received_word_bits_differing_from_sender": 0
+      }
+    },
+    "removed_good_word": {
+      "rejected": true,
+      "mismatches": 1,
+      "first_mismatch": {
+        "slot": 0,
+        "counter": 16909060,
+        "phase": 0,
+        "cycle": 0,
+        "position": 1,
+        "outcome": "extra_erasure",
+        "received_octets": 33,
+        "received_word_bits_differing_from_sender": null
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "schema": "scheduled-later-fac-sdc-replay-v1",
+  "source_later_reception_sha256": "5a29b76fc28623b71251d3d1b3e0125b2f74ae8c68f20f9bf7a170a31b8dff7b",
+  "source_primary_seal_sha256": "5923b7bc7b4ba6641714964c45d3bb5b1662cc41da1cb3563f545972285a3c64",
+  "scope": "Two non-overlapping later source intervals in original file order; separate cold Wiener/MLC1 passes. Primary excluded. Counts are decoder callback occurrences.",
+  "observer_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "inspector_sha256": "4eb63cf7dcf62a911574e93edd216d2d4c212f5aef7f51fbb15ded1cab0f874d",
+  "chunks": [
+    {
+      "chunk": "chunk-000",
+      "source_file": "segment-001.wav",
+      "source_file_sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401",
+      "source_indices": [
+        28800000,
+        54720000
+      ],
+      "raw_crc_callbacks": {
+        "FAC": {
+          "observed": 1284,
+          "crc_passed": 1102,
+          "crc_failed": 182
+        },
+        "SDC": {
+          "observed": 430,
+          "crc_passed": 32,
+          "crc_failed": 398
+        }
+      },
+      "fac_services": [
+        {
+          "service_id": "A00002",
+          "short_id": 0,
+          "audio_ca": 0,
+          "language_code": 0,
+          "service": "data",
+          "service_descriptor": 0,
+          "data_ca": 0,
+          "count": 1102
+        }
+      ],
+      "sdc_labels": [
+        {
+          "type": 1,
+          "version_flag": 0,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "count": 32,
+          "short_id": 0,
+          "label": "조선중앙제2라지오방송"
+        }
+      ],
+      "sdc_other_entity_counts": {
+        "0": 32,
+        "5": 32,
+        "12": 32
+      },
+      "sdc_framing_errors": {},
+      "msc_bytes": 788364,
+      "msc_sha256": "e53926ea1abb4ea62e0d6f4d82cf8a1914e2d085dd8bb04fc125ca18beb31e38",
+      "msc_equal_to_saved_native": true,
+      "raw_callbacks_sha256": "465bf936a85f29fd3e58f4915e8a96dc083a04fe66f6e3f5a2b65d6bad307a73",
+      "parser_json_sha256": "095a3f419a0e4f3a19d2f1779b5bd053791a9371ac40c90ebb37bdb4d7f7bcec"
+    },
+    {
+      "chunk": "chunk-001",
+      "source_file": "segment-002.wav",
+      "source_file_sha256": "1d80f3c0d0caee3ba98513961dae58d95d38e663cd3d11793d7df9362767cec3",
+      "source_indices": [
+        0,
+        2625600
+      ],
+      "raw_crc_callbacks": {
+        "FAC": {
+          "observed": 134,
+          "crc_passed": 133,
+          "crc_failed": 1
+        },
+        "SDC": {
+          "observed": 46,
+          "crc_passed": 8,
+          "crc_failed": 38
+        }
+      },
+      "fac_services": [
+        {
+          "service_id": "A00002",
+          "short_id": 0,
+          "audio_ca": 0,
+          "language_code": 0,
+          "service": "data",
+          "service_descriptor": 0,
+          "data_ca": 0,
+          "count": 133
+        }
+      ],
+      "sdc_labels": [
+        {
+          "type": 1,
+          "version_flag": 0,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "count": 8,
+          "short_id": 0,
+          "label": "조선중앙제2라지오방송"
+        }
+      ],
+      "sdc_other_entity_counts": {
+        "0": 8,
+        "5": 8,
+        "12": 8
+      },
+      "sdc_framing_errors": {},
+      "msc_bytes": 95892,
+      "msc_sha256": "6dc66e44ce505885af50a2c5117dfed0d21c45d787bab897cfb70d5fa59c90eb",
+      "msc_equal_to_saved_native": true,
+      "raw_callbacks_sha256": "01d5ad075e57e319dd22805ac761366ea196bc946685a558d4bd0a0a9f3dc839",
+      "parser_json_sha256": "b5e609833aedab923b3fa3835b3e7fcdc61817bc29b5bf780c00743ad9c7d80b"
+    }
+  ],
+  "aggregate": {
+    "raw_crc_callbacks": {
+      "FAC": {
+        "observed": 1418,
+        "crc_passed": 1235,
+        "crc_failed": 183
+      },
+      "SDC": {
+        "observed": 476,
+        "crc_passed": 40,
+        "crc_failed": 436
+      }
+    },
+    "fac_service_id_counts": {
+      "A00002": 1235
+    },
+    "sdc_label_counts": [
+      {
+        "short_id": 0,
+        "label": "조선중앙제2라지오방송",
+        "count": 40
+      }
+    ],
+    "sdc_framing_errors": {},
+    "all_native_msc_match": true
+  }
+}

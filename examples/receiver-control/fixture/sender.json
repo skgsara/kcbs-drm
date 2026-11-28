@@ -1,0 +1,58 @@
+{
+  "test_service_id": "EF0201",
+  "test_service_label": "DRM IQ TEST",
+  "first_counter": 16909060,
+  "last_counter": 16909099,
+  "groups": 40,
+  "scored_rows": 120,
+  "words": 2400,
+  "payload": "Every original 264-bit word is carried literally, with no obfuscation. Each group carries one UTF-16LE record reading SYNTHETIC EVS GROUP NN (NN = 00 through 39) with its own CRC.",
+  "audio_source": "48 seconds of deterministic synthesized harmonics, PCG64 seed 13200 noise, and silence. No broadcast, third-party music or conformance-set speech was used.",
+  "stimulus_generator": "../../nov27/validation/late-payload/gsc-control/stimuli.py",
+  "stimulus_function": "make_pcm",
+  "source_input_pcm": {
+    "sample_rate": 32000,
+    "format": "mono signed PCM16 little-endian",
+    "samples": 1536000,
+    "sha256": "8947b94fd0a024031a1554fa2f63c637f7bd4bdb8eeefc35c747504e3ac39932"
+  },
+  "encoder": {
+    "reference": "3GPP TS 26.443 floating-point C reference encoder",
+    "options": [
+      "-q",
+      "-no_delay_cmp",
+      "-max_band",
+      "SWB",
+      "13200",
+      "32"
+    ],
+    "reference_binary_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7"
+  },
+  "direct_decoder": {
+    "reference": "3GPP TS 26.443 reference decoder, continuous decode of the original encoder G.192 before packetization",
+    "options": [
+      "-q",
+      "-no_delay_cmp",
+      "16"
+    ],
+    "reference_binary_sha256": "e07384175dad995379fb738a79e949cd2d25b002f65ad0fa6bda6b8f7a1f0184",
+    "pcm_format": "mono signed PCM16 little-endian",
+    "pcm_sample_rate": 16000,
+    "pcm_samples": 768000,
+    "pcm_sha256": "fde3841e93a62b08e637e0c5818e25bf3b3451445a8ca9b6eef97b0b1b532539"
+  },
+  "files": {
+    "sender-msc.bin.gz": {
+      "uncompressed_sha256": "cb378996150b65393c4bd84a4ef818fc3ca790ceacf03b1ffe6c91b2f7bc0d47",
+      "uncompressed_bytes": 87360,
+      "gzip_bytes": 73908,
+      "gzip_sha256": "5448e37e430cc7da3abdea3d372401ff9d2b9f1b6a9147b2f14a7e67770ed313"
+    },
+    "sender.192.gz": {
+      "uncompressed_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+      "uncompressed_bytes": 1276800,
+      "gzip_bytes": 102248,
+      "gzip_sha256": "7f04f5493d93e9d09ef26d7ea31cc8919de9f054d0cfcb88fc97b3fb4a17a4fe"
+    }
+  }
+}

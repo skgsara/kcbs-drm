@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/skgsara/kcbs-drm",
+  "revision": "8d1de9e63f6b9c404cb524865817f3af93510d64",
+  "modules": {
+    "build_evs_gcc_independent.py": "d69cf9e3b5eaa514bac5edb3925227502d7b17a3ab59b940635fef781281d308",
+    "check_evs_origin.py": "9c62f1e7fce30215e2ada9b0a52f5c0f2e983546d52e8e9fdf5a95c0898dc556",
+    "compare_evs_group.py": "632c8153c19db8b6051e0f2ee71484468536b28833e1e00259cb4ee90a8505c3",
+    "evs_core_history.py": "6705df52617bda6797ae9f182bdd3ff633302cb7f4017b01e22542ad6c68f403",
+    "evs_gsc_fields.py": "204b9b920134255a2507bdc656364283c1587db34a218a6ef5d8d92b54ad84e9",
+    "project_evs_group.py": "83e0d5c24a47aa9cd3af1611da35735053a968b0d559afe1cfe44f2314d51dcb",
+    "received_evs_packets.py": "166bd6978719ea177ae9a55937bb63588e531291f5a26c005bb65441280cb75d",
+    "render_continuous.py": "803978808649436ab494c4e6b0b5d4986a64c47161d74fdd37008313ffd71e10",
+    "tail_fill_audit.py": "e488d2448c484e082c2ee1a06d6a1a79cd7aa38abac3db7ee45da9ebf7b09123"
+  },
+  "source_sha256": "ac847d76a994402a0abcd8ae27e5548d95f18c176d7ddcc819c671dedcf0da84"
+}

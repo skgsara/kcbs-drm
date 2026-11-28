@@ -1,0 +1,29 @@
+{
+  "original_msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "proposed_msc_sha256": "4a598ce9248bc740118d846ad0b7cf07873672dca034ac731c2500a54beee264",
+  "rows": 218,
+  "row_outcomes": {
+    "multiple_failed_packet_crcs": 110,
+    "no_single_bit_candidate": 24,
+    "all_packet_crcs_pass": 82,
+    "single_bit_proposed": 2
+  },
+  "changes": [
+    {
+      "native_row": 153,
+      "packet_ordinal": 0,
+      "wire_bit_msb0": 595,
+      "data_unit_byte": 73,
+      "original_packet_sha256": "7cb8870ef2eb3519b68670f956588dc34307ca2ef84613fb4e33c6a0c8b25ed1",
+      "proposed_packet_sha256": "3249741bbd29438bb82ddf7f7a194786cee246db94c479ed3914f8bc343b3d08"
+    },
+    {
+      "native_row": 156,
+      "packet_ordinal": 0,
+      "wire_bit_msb0": 1233,
+      "data_unit_byte": 153,
+      "original_packet_sha256": "fa65d4ed9adebf23868945f63c4ff76d0dee8c9f041f5b33cf1ce7458379e2eb",
+      "proposed_packet_sha256": "1431e9daf43673918f601c020844d3fb59d9cd891d1953b6dd059945fc731bd0"
+    }
+  ]
+}

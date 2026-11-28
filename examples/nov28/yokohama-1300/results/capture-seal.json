@@ -1,0 +1,148 @@
+{
+  "verified_utc": "2026-11-28T13:20:02.991180+00:00",
+  "station": "JL1EDU Yokohama",
+  "frequency_hz": 3205000,
+  "start_utc": "2026-11-28T13:00:00.000000000Z",
+  "end_utc": "2026-11-28T13:20:00.000000000Z",
+  "rate_hz": 48000,
+  "total_recorded_sample_pairs": 57345600,
+  "supervisor_sha256": "ee72313863a93a88d04f446f88cffb3efc56c7623124fa7a630585c9086d4cb9",
+  "seal_script_sha256": "a8016bb39cbc5f49cc6cd2c4cbb877d65d53b86db81f8d2e0b205c39a413c42c",
+  "attempts": [
+    {
+      "segment": "segment-001",
+      "files": {
+        "segment-001.wav": {
+          "bytes": 218880044,
+          "sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401"
+        },
+        "segment-001.wav.timing.csv": {
+          "bytes": 5608318,
+          "sha256": "7172706bac526b499fead615dc351619137fbcd286a8c513dbec554e9b1eee38"
+        },
+        "segment-001.receipt.json": {
+          "bytes": 830,
+          "sha256": "890c1eabf95e9e19d096d16fcc5f0d3dddb5d429dafc5c552343aad26b305cf4"
+        },
+        "segment-001.stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "attempt": {
+        "utc": "2026-11-28T13:19:02.780478+00:00",
+        "event": "recorder_closed",
+        "name": "segment-001",
+        "pid": 603090,
+        "process_returncode": 1,
+        "launched_utc": "2026-11-28T13:00:00.000384+00:00",
+        "closed_utc": "2026-11-28T13:19:02.779891+00:00",
+        "sample_pairs": 54720000,
+        "error": "ConnectionClosedError: no close frame received or sent"
+      },
+      "sample_pairs": 54720000,
+      "sample_seconds": 1140.0,
+      "pcm_sha256": "0f9e7ad6e7781be6598a6434cf9f5c0213e410c126195d71dcf0d777c28f3005",
+      "recorder_start_utc": "2026-11-28T13:00:00.075054+00:00",
+      "recorder_sample_target_reached": false,
+      "recorder_error": "ConnectionClosedError: no close frame received or sent",
+      "timing": {
+        "packets": 171000,
+        "sample_pairs": 54720000,
+        "first_anchor": [
+          0,
+          1795870801639512209
+        ],
+        "last_anchor": [
+          54719760,
+          1795871941634396111
+        ],
+        "first_anchor_utc": "2026-11-28T13:00:01.639512209Z",
+        "last_anchor_utc": "2026-11-28T13:19:01.634396111Z",
+        "earliest_timestamped_packet_utc": "2026-11-28T13:00:01.639512209Z",
+        "latest_timestamped_packet_end_utc": "2026-11-28T13:19:01.639396111Z",
+        "packets_without_station_clock": 0,
+        "sample_pairs_without_station_clock": 0,
+        "initial_sample_pairs_without_clock": 0,
+        "trailing_sample_pairs_without_clock": 0,
+        "anchor_jumps_exceeding_one_sample": 0,
+        "worst_positive_jump_ns": 10437,
+        "worst_negative_jump_ns": -15477,
+        "sample_pairs_by_station_clock": {
+          "before_window": 0,
+          "in_window": 54720000,
+          "at_or_after_end": 0,
+          "clock_missing": 0
+        }
+      }
+    },
+    {
+      "segment": "segment-002",
+      "files": {
+        "segment-002.wav": {
+          "bytes": 10502444,
+          "sha256": "1d80f3c0d0caee3ba98513961dae58d95d38e663cd3d11793d7df9362767cec3"
+        },
+        "segment-002.wav.timing.csv": {
+          "bytes": 258957,
+          "sha256": "16a159c00ced299d5eb29c59ad6aceceb4468e91f6440800190352e36d8c2176"
+        },
+        "segment-002.receipt.json": {
+          "bytes": 785,
+          "sha256": "a6162f9b4ff3ae0dccc397df151316297852b564f5e669ef6769018bc6a0256e"
+        },
+        "segment-002.stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "attempt": {
+        "utc": "2026-11-28T13:20:02.020201+00:00",
+        "event": "recorder_closed",
+        "name": "segment-002",
+        "pid": 603916,
+        "process_returncode": 1,
+        "launched_utc": "2026-11-28T13:19:03.780115+00:00",
+        "closed_utc": "2026-11-28T13:20:02.019991+00:00",
+        "sample_pairs": 2625600,
+        "error": "KeyboardInterrupt: "
+      },
+      "sample_pairs": 2625600,
+      "sample_seconds": 54.7,
+      "pcm_sha256": "8f83cdd0b4c4756061cdcd27819e22ad560ecf6fc9106c3e78d0f8a6a3a51f24",
+      "recorder_start_utc": "2026-11-28T13:19:03.830272+00:00",
+      "recorder_sample_target_reached": false,
+      "recorder_error": "KeyboardInterrupt: ",
+      "timing": {
+        "packets": 8205,
+        "sample_pairs": 2625600,
+        "first_anchor": [
+          2880,
+          1795871945259396760
+        ],
+        "last_anchor": [
+          2625360,
+          1795871999894391207
+        ],
+        "first_anchor_utc": "2026-11-28T13:19:05.259396760Z",
+        "last_anchor_utc": "2026-11-28T13:19:59.894391207Z",
+        "earliest_timestamped_packet_utc": "2026-11-28T13:19:05.259396760Z",
+        "latest_timestamped_packet_end_utc": "2026-11-28T13:19:59.899391207Z",
+        "packets_without_station_clock": 9,
+        "sample_pairs_without_station_clock": 2880,
+        "initial_sample_pairs_without_clock": 2880,
+        "trailing_sample_pairs_without_clock": 0,
+        "anchor_jumps_exceeding_one_sample": 0,
+        "worst_positive_jump_ns": 3063,
+        "worst_negative_jump_ns": -3832,
+        "sample_pairs_by_station_clock": {
+          "before_window": 0,
+          "in_window": 2622720,
+          "at_or_after_end": 0,
+          "clock_missing": 2880
+        }
+      }
+    }
+  ],
+  "station_clock_basis": "Timestamped packets use station time at their first sample and 48000 samples/s within that packet. Blank timestamps stay unassigned. Packet-end display rounded to the nearest nanosecond."
+}

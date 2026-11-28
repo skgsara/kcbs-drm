@@ -1,0 +1,37 @@
+{
+  "public_freeze": "5fcdf2f126d555bb8a7e6ac1ad231a5cd42d7c57",
+  "input_protocol_sha256": "7463e2d75bc57d90c501c732380b767bd20e679d04b5bcfbfa294c8066cb3dec",
+  "recording": "10min-2026-11-27T12_15_02Z_3205.00_iq.wav",
+  "source_sha256": "8ba5576dc9ab560c14a1de3b7def1a176c2f3e95010dfabe890ab002f40bb624",
+  "source_bytes": 29360172,
+  "rate_hz": 12000,
+  "channels": 2,
+  "source_sample_pairs": 7330304,
+  "source_format": "Stereo I/Q, signed little-endian PCM16",
+  "source_seconds_half_open": [
+    120,
+    240
+  ],
+  "source_sample_pairs_half_open": [
+    1440000,
+    2880000
+  ],
+  "source_bytes_half_open": [
+    5760044,
+    11520044
+  ],
+  "nominal_utc_from_filename": [
+    "2026-11-27T12:17:02Z",
+    "2026-11-27T12:19:02Z"
+  ],
+  "station_timestamps_available": false,
+  "flac": "3205kHz-120-240s-iq12.flac",
+  "flac_sha256": "8a3bfdf9ed3fef5c395d0d6230394c6ac01a7a8d4d8634768c729e9815f24c88",
+  "flac_bytes": 5012346,
+  "pcm_bytes": 5760000,
+  "pcm_sha256": "469c337c6404ec8ab177175571ecda284ebe03b98dac3ebff7765a1059001297",
+  "verified_iq_pairs": 1440000,
+  "decoded_pcm_byte_identical_to_source_range": true,
+  "extraction_started_utc": "2026-11-28T16:00:42.208870+00:00",
+  "extraction_finished_utc": "2026-11-28T16:00:42.585564+00:00"
+}

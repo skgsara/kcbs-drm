@@ -1,0 +1,791 @@
+{
+  "format": "swb-audio-b40-reception-v1",
+  "archive_sha256": "5f92594e648a8f1cc214abd91c6d5bc22051911dd4fb0a305298c54967ef5dd1",
+  "input_kind": "assigned_packet_bodies",
+  "assigned_counters": 1,
+  "complete_groups": 0,
+  "received_modes": 16,
+  "frozen_decision_columns": [
+    "counter",
+    "phase",
+    "cycle",
+    "position",
+    "mode",
+    "expected"
+  ],
+  "frozen_decision_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "secondary_rule": "Lowest (counter,phase,cycle,position) with a received AUDIO mode 6C\u20136F, including partial DUs. Select before reading b40; retain missing or contradictory targets. No replacement.",
+  "secondary_coordinate": null,
+  "secondary_row": null,
+  "target_order": [
+    -1,
+    0,
+    1
+  ],
+  "neighbor_gate_order": [
+    -1,
+    1
+  ],
+  "coordinate_basis": "Offsets are on the absolute 20 ms slot clock at fixed source decision coordinates; a missing shifted target is counted, without seeking another slot.",
+  "all": {
+    "0": {
+      "-1": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      },
+      "0": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      },
+      "1": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      }
+    },
+    "1": {
+      "-1": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      },
+      "0": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      },
+      "1": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      }
+    }
+  },
+  "in_complete_groups": {
+    "0": {
+      "-1": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      },
+      "0": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      },
+      "1": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      }
+    },
+    "1": {
+      "-1": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      },
+      "0": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      },
+      "1": {
+        "eligible": 0,
+        "checked": 0,
+        "matched": 0,
+        "wrong": 0,
+        "missing": 0,
+        "constant_one": {
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0
+        },
+        "extra_matches_over_constant_one": 0
+      }
+    }
+  },
+  "by_phase": {
+    "0": {
+      "0": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      },
+      "1": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      }
+    },
+    "1": {
+      "0": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      },
+      "1": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      }
+    },
+    "2": {
+      "0": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      },
+      "1": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      }
+    }
+  },
+  "by_position": {
+    "1": {
+      "0": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      },
+      "1": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      }
+    },
+    "2": {
+      "0": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      },
+      "1": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      }
+    },
+    "3": {
+      "0": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      },
+      "1": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      }
+    },
+    "4": {
+      "0": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      },
+      "1": {
+        "-1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "0": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        },
+        "1": {
+          "eligible": 0,
+          "checked": 0,
+          "matched": 0,
+          "wrong": 0,
+          "missing": 0,
+          "constant_one": {
+            "matched": 0,
+            "wrong": 0,
+            "missing": 0
+          },
+          "extra_matches_over_constant_one": 0
+        }
+      }
+    }
+  },
+  "ledger": []
+}

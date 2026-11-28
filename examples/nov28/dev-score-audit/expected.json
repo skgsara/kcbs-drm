@@ -1,0 +1,25 @@
+{
+  "revision": "f79d70f85d0caf2e5c5f380c9c69d3781e048121",
+  "verified_sha256": {
+    "scripts/build_mask_benchmark.py": "93ecb13cfb2459c01be7a5760a48ec71f7c6dea836822657a3b8226412844111",
+    "scripts/eval_mask_predictions.py": "2ed97232f2a8e3cadb7ff0c32de380a24ea732c039ce20a5bfb0bc0e2af955cb",
+    "examples/nov28/blind-mask-benchmark/protocol.md": "b61ed0c51ad513fe74996ecff09f1613ff4e5c379e03d2a592fef8a808f32187",
+    "examples/nov28/blind-mask-benchmark/baselines-dev.json": "ac407f16cc48695dfdfe8b0ece0ed097c67fec9d8a2d8aa812194c69d13c9c11",
+    "scripts/mask_method_acoustic.py": "c54a1289cd0b9bf86f6c65881bf68205a358f50cb8e93eafd07d81f551495d92",
+    "scripts/mask_method_learned_disc.py": "ac2c1e717f05c8c173fbe4da68d654e2ab479dfa67c3ee15a81f7c7ab5456b1b",
+    "scripts/mask_method_params.py": "1cb1f7947a14dc69e6d9daace0cf8b7bbfd8b424ffde4068a49a3208a0e65922",
+    "scripts/mask_method_rule_prior.py": "e8d2cbf7f19639173e49d25befcaa8e02d7f5a894d40cd0f07769b1726b12802"
+  },
+  "same_dev_T1_subset": {
+    "method": {"groups": 100, "byte_items": 500, "byte_top1": 0.168, "bits_called_empirical_995": 34},
+    "mode_prior": {"groups": 100, "byte_items": 500, "byte_top1": 0.024, "bits_called_empirical_995": 228},
+    "derange_control": {"groups": 100, "byte_items": 500, "byte_top1": 0.004, "bits_called_empirical_995": 1}
+  },
+  "separate_wrong_key_subset": {"groups": 20, "byte_items": 100, "byte_top1": 0.02, "bits_called_empirical_995": 2},
+  "full_dev_T1_mode_prior": {"groups": 1686, "byte_items": 8430, "byte_top1": 0.032508, "bits_called_empirical_995": 4058},
+  "toy_control": {
+    "groups": 200, "supplied_bytes": 199, "missing_bytes": 1,
+    "empirical": {"bytes": 200, "bits": 1600, "byte_precision": 0.99502, "bit_precision": 0.9975, "bits_per_group": 8},
+    "fixed_confidence_0.995": {"bytes": 199, "bits": 1592, "bits_per_group": 7.96}
+  }
+}

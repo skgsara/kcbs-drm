@@ -1,0 +1,10 @@
+{
+  "prior_inventory_sha256": "0b116969b6f496804d22ca48103046f0436da9a40470ab320398af83debbcbc7",
+  "packet_snapshot_sha256": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+  "assigned_counters": [],
+  "prior_overlap": [],
+  "complete_groups": 0,
+  "groups_with_partial_packet_rows": 0,
+  "primary": null,
+  "first_partial": null
+}

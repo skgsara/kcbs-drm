@@ -1,0 +1,9 @@
+{
+  "msc_sha256": "38aa5357ece964443790366fe50fd3b705f5cf18ce033a1033454c3c3e7710de",
+  "checked_groups": [],
+  "msc_rows": 750,
+  "packet_crc_checks": 3000,
+  "physical_packets_crc": 0,
+  "physical_packets_crc_and_header": 0,
+  "native_complete_dus": 0
+}

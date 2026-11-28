@@ -1,0 +1,19 @@
+{
+  "protocol_revision": "2d7195545c95c1e1c91b0d1e34229bca0c8d19da",
+  "implementation_revision": "1892b0aed6e07f12baf16c440f923abbe944a447",
+  "implementation_sha256": "197b81799c2d3db8eb9b4885e2d22e7058ffe2357e15a49b47314ada65ad80f8",
+  "cohorts": {
+    "float": {
+      "visible.json": "4fa311a716bf1ca296a0b4b1b2230c8b788f9056b90fad9132d669bcda32d210",
+      "decisions.json": "beea541846ce968407c3b0db1a95e056f0725d6fc0ad39ebe8ef53eec00ea8a5"
+    },
+    "fixed": {
+      "visible.json": "bc7fef4ddce611f1c26cff175a7b34b2a72b07c0a4a15df7882e966ff6b65c96",
+      "decisions.json": "133446b8899f7cf79a416a3a53d3c79cfbc8de2779d500799b0e29faf795325c"
+    },
+    "annex": {
+      "visible.json": "2a540959eaf6cffe9364a3a4b77cd85d92626b63ef88106b8fd8eaffc958d9ce",
+      "decisions.json": "aba3fe29bb6dd4d44ef85033d926421a501887f039ac965dbc686901e4b332e8"
+    }
+  }
+}

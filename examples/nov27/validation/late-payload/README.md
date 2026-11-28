@@ -1,6 +1,23 @@
-# What the EVS word tells us about payload bytes 24 and 27
+# What one EVS word tells us about the six unresolved payload octets
 
-At both disputed byte positions, two stock EVS encodes can agree on 263 of 264 bits and still differ at the remaining bit. We also found a wideband GSC case in which the first 128 bits *do* determine two later bits of byte 27. These results explain why a field-specific test can succeed while a universal per-word decision fails. Byte offsets below exclude the mode octet. Physical bit numbers include it and start at zero.
+For each of the six unresolved offsets, two genuine stock EVS outputs can have identical values in the other 32 octets and different values at that offset. The table gives one pair per offset. Each pair comes from a separate comparison. A rule using only the rest of that word must return the same answer for both members of its pair. Specific encoding modes can still constrain individual bits, as the wideband GSC example below shows. Payload offsets start after the mode octet.
+
+| Payload offset | Two observed values (hex) | Stock mode | Position in the synthetic four-word cycle |
+| ---: | --- | --- | --- |
+| 15 | `F7` / `FD` | TCX20 | P3 |
+| 18 | `BF` / `6F` | SWB voiced ACELP | P2 |
+| 21 | `39` / `37` | SWB voiced ACELP | P2 |
+| 24 | `BC` / `BD` | SWB transition ACELP | P2 |
+| 27 | `D2` / `D3` | SWB voiced ACELP | P2 |
+| 30 | `1C` / `1D` | TCX20 | P2 |
+
+The longer p15 example shows where other observations can help. The target words agree at all 22 directly transmitted octets. Across the first 60 frames of the two original streams, just six slots agree at those octets. Within P3 only the target itself agrees. The other 14 P3 slots distinguish these particular streams. The shorter p18 and p21 inputs each contain three frames. These experiments leave open whether the entire broadcast group can resolve a target word. [New p15, p18 and p21 inputs and replay](early-examples/README.md) · [p24 and p27 stock words](sender-pairs.json) · [p30 stock words and adjacent context](../native-tcx-neighbors.json)
+
+Context has a different outcome in an earlier p24 GSC control. Two 240-word stock streams differed at one bit in frame 205, giving p24 values `67` and `77`. All 239 surrounding words were identical. Even the entire 4.8-second codec sequence with that bit withheld admits both originals. The test used the EVS sender only. It leaves the additional information carried by the broadcast transport untested. [Two original GSC streams and reproduction](../swb-gsc/README.md#two-different-stock-outputs-with-the-same-surrounding-bits)
+
+## What can be scored on the recorded signals
+
+The archived P1 exports for November 27 counters 43865914, 43869343 and 43876554 each contain 15 complete words. We checked their alignment against the received mode and the 21 directly readable payload octets in each slot. All 7,920 comparable bits agreed across the 45 words. The frozen projector made zero predictions at the six later offsets, including the 270 P1 octets for which an archived answer was available. Each P2, P3 and P4 slot in these three reference excerpts was an explicit erasure. Agreement on the readable bits establishes alignment. The accuracy of the six unpredicted octets remains unmeasured. [Capture clocks and export checksums](../../../nov28/airspy-150-gap/nov27-p1-control.sources.json) · [Projection and comparison commands](../../../nov28/bit-evidence/README.md#comparing-a-text-supported-handoff)
 
 ## Different source inputs can give identical visible bytes
 

@@ -1,0 +1,47 @@
+{
+  "site": "7L4IOU Edogawa",
+  "origin": "https://7l4iou.tunnel.ubersdr.org",
+  "frequency_hz": 6140000,
+  "due_utc": "2026-11-28T13:00:00+00:00",
+  "launcher_start_utc": "2026-11-28T13:00:00.000145+00:00",
+  "recorder_return_utc": "2026-11-28T13:02:03.751116+00:00",
+  "recorder_exit_code": 0,
+  "protocol_sha256": "661ae606386a0398ed7abe3ee45738af0882da4f87f99ae1222c746fd26d69f1",
+  "attempts": 1,
+  "files": {
+    "original.wav": {
+      "bytes": 23040044,
+      "sha256": "e5af7b3f6efa584ead88cd9d28975ae06817c5d5d951bbd2b94d9e85a24f00cc"
+    },
+    "original.wav.timing.csv": {
+      "bytes": 572511,
+      "sha256": "785a7c9bfafbf1efe07ca76c9f5520ad1f2af539ff131bf5f53f6d6d9b6f7175"
+    },
+    "receipt.json": {
+      "bytes": 750,
+      "sha256": "2d5e7d0af1f423f562ead239d44bd9d95d2c7f4171c1ebba32318f01b5ddc76d"
+    },
+    "recorder.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "sample_pairs": 5760000,
+  "sample_rate": 48000,
+  "iq_pcm_sha256": "3a53ffe5b0117707b9a03ea2f8634dcc9d50705e7dd880b2856035b26ac6b4a3",
+  "timing_pairs": 5760000,
+  "timestamped_packets": 17997,
+  "untimestamped_packets": 3,
+  "first_receiver_anchor": [
+    960,
+    1795870802426654946
+  ],
+  "last_receiver_anchor": [
+    5759760,
+    1795870922401688449
+  ],
+  "sample_target_reached": true,
+  "timestamp_jumps_over_one_sample": 0,
+  "max_abs_timestamp_jump_ns": 12629,
+  "sample_seconds": 120.0
+}

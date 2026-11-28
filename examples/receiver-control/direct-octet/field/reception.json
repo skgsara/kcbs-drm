@@ -1,0 +1,40 @@
+{
+  "public_freeze": "5fcdf2f126d555bb8a7e6ac1ad231a5cd42d7c57",
+  "input_json_sha256": "fc4891306d549922a6333e43db3ab5f0ac1791f7a481229842242326afbfd322",
+  "source_flac_sha256": "8a3bfdf9ed3fef5c395d0d6230394c6ac01a7a8d4d8634768c729e9815f24c88",
+  "source_pcm_sha256": "469c337c6404ec8ab177175571ecda284ebe03b98dac3ebff7765a1059001297",
+  "original_source_sample_pairs_half_open": [
+    1440000,
+    2880000
+  ],
+  "excerpt_sample_pairs_half_open": [
+    0,
+    1440000
+  ],
+  "rate_hz": 12000,
+  "channel_offset_hz": 0.0,
+  "receiver_binary_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "demodulator_sha256": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+  "resampler_sha256": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+  "reception_profile": "wiener",
+  "settings": {
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "mlciter": 1
+  },
+  "cold_start": true,
+  "passes": 1,
+  "start_utc": "2026-11-28T16:00:42.589768+00:00",
+  "end_utc": "2026-11-28T16:00:45.112511+00:00",
+  "returncode": 0,
+  "reached_offline_eof": true,
+  "command": "KCBS_DREAM=/path/to/dream python scripts/demod_iq_window.py examples/receiver-control/direct-octet/field/3205kHz-120-240s-iq12.flac FRESH_OUTPUT --start 0 --seconds 120 --reception-profile wiener --mlc-iterations 1",
+  "msc": "native.msc.bin",
+  "msc_bytes": 215208,
+  "msc_sha256": "6cdc6f61239c3bfbad2a0e16da314ab89f8bacc017fc89f74fbb3d599358a879",
+  "native_rows": 294,
+  "row_length_histogram": {
+    "728": 294
+  }
+}

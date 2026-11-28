@@ -1,0 +1,73 @@
+{
+  "history_sha256": "2a58d5882998ff422e684295664b328f7c443c03d3be728016a64509c765f363",
+  "history_count": 14958,
+  "prior_overlap_by_stream": {
+    "left": [],
+    "right": [],
+    "combined": []
+  },
+  "combination": {
+    "kind": "witnessed_combiner",
+    "msc_sha256": {
+      "left": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "right": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "combined": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "report_sha256": "e6237b198fb98ef8b5d9b60fd6a86a6c0ce91ea5691a3baa96faf8d3ef2f3aaf",
+    "status": "no_witnessed_pairs",
+    "witnessed_pairs": 0,
+    "byte_identical_to_left": true
+  },
+  "streams": {
+    "left": {
+      "msc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packets_sha256": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+      "transport_counts": {
+        "msc_rows": 0,
+        "packet_crc_checks": 0,
+        "physical_packets_crc": 0,
+        "physical_packets_crc_and_header": 0,
+        "native_complete_dus": 0
+      },
+      "native_complete_group_count": 0,
+      "assigned_counters": [],
+      "primary": null
+    },
+    "right": {
+      "msc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packets_sha256": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+      "transport_counts": {
+        "msc_rows": 0,
+        "packet_crc_checks": 0,
+        "physical_packets_crc": 0,
+        "physical_packets_crc_and_header": 0,
+        "native_complete_dus": 0
+      },
+      "native_complete_group_count": 0,
+      "assigned_counters": [],
+      "primary": null
+    },
+    "combined": {
+      "msc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packets_sha256": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+      "transport_counts": {
+        "msc_rows": 0,
+        "packet_crc_checks": 0,
+        "physical_packets_crc": 0,
+        "physical_packets_crc_and_header": 0,
+        "native_complete_dus": 0
+      },
+      "native_complete_group_count": 0,
+      "assigned_counters": [],
+      "primary": null
+    }
+  },
+  "selections": {
+    "primary": null,
+    "first_partial": null
+  },
+  "native_forecast_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "field_comparison": "Edogawa native mode receipts predict fields scored against Yokohama native target receipts.",
+  "combined_evidence": "Combined fields use both stations. These two recordings supply no third-station validation.",
+  "field_comparison_path": "native-field-comparison.json"
+}

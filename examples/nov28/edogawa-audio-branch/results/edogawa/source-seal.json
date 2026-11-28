@@ -1,0 +1,39 @@
+{
+  "station": "edogawa",
+  "wav": "original.wav",
+  "wav_sha256": "0a96abeef758b1464ae6f39cc6d32989508038baedd63cb5af0f21c5e48a925d",
+  "bytes": 16825964,
+  "timing_csv_sha256": "178874e30cf6f6235363354a71394c487945b0435d9faad567506c56cfe44be5",
+  "recorder_receipt_sha256": "47daa91c609e335cdc7ca896c76f295d9e3673f49693aa60c09218b3030f7d2e",
+  "rate": 48000,
+  "frequency_hz": 6140000,
+  "started_utc": "2026-11-28T13:47:30.060216+00:00",
+  "error": "ConnectionClosedError: no close frame received or sent",
+  "pcm_sha256": "4da0c3678ffd41f308b9f157ea740c8e9e2612da6fd5ddb931d59313e313519d",
+  "frames": 4206480,
+  "duration": 87.635,
+  "complete": false,
+  "packets": 13145,
+  "first_and_last_station_utc": [
+    "2026-11-28T13:47:32.226972235Z",
+    "2026-11-28T13:48:59.861984234Z"
+  ],
+  "utc_bounds_ns": [
+    1795873652226972235,
+    1795873739861984234
+  ],
+  "anchor_count": 13145,
+  "missing_timestamps": 0,
+  "station_clock_jumps": [],
+  "maximum_abs_station_clock_difference_ns": 10339,
+  "sealed_utc": "2026-11-28T13:49:13.995269+00:00",
+  "public_freeze": "b9823848190fcc4e318ee7bc7c940faeea8edfb9",
+  "plan_sha256": "4ffc0a7e51eda3f4a7618cc2c9eef89acde1a912244f5a2045effe83bbcb1bf8",
+  "verifier_sha256": "47e7c7c1709e6a5242f64c13e01f4ea37794b72c14de63d4733801fa291ea936",
+  "invocation": {
+    "invoked_utc": "2026-11-28T13:47:30.000126+00:00",
+    "returned_utc": "2026-11-28T13:49:10.554362+00:00",
+    "rc": 1,
+    "source_public_freeze": "b9823848190fcc4e318ee7bc7c940faeea8edfb9"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "counts": "CRC-valid occurrences of each entire codeword in its own file. SDC hashes include a leading zero nibble before AFS. Repetition can produce identical codeword bytes at different times.",
+  "pairs": {
+    "1228": {
+      "FAC": [
+        {
+          "sha256": "ec9d3f6fcde52ebc59ddc4d9677cd3d136b0391ca5e195a1e5cb23720f892653",
+          "yokohama": 98,
+          "edogawa": 98
+        },
+        {
+          "sha256": "40cc2107595a89ff48b391b6cb4f692b17ed386434f21b85dff7cc7563f86d85",
+          "yokohama": 99,
+          "edogawa": 97
+        },
+        {
+          "sha256": "cbd02f55a0b7fc0f212d30e1805fc4bf14031d4b527062be2a4ccd35ff1892cb",
+          "yokohama": 98,
+          "edogawa": 97
+        }
+      ],
+      "SDC": [
+        {
+          "sha256": "d0cd658afd2565093ffad53a0cb1ea899feddc7e755a89bf2b1b1b4212646fa6",
+          "yokohama": 34,
+          "edogawa": 85
+        },
+        {
+          "sha256": "61e9afc3fc19bb08ba850931ad33e334b961afcaecf3504e2169d752985bfd24",
+          "yokohama": 0,
+          "edogawa": 1
+        },
+        {
+          "sha256": "65c6e6f1b71902c7685d19a48fa0b56f9e467746fdb6467f5082930058e68e07",
+          "yokohama": 1,
+          "edogawa": 0
+        }
+      ]
+    },
+    "1232": {
+      "FAC": [
+        {
+          "sha256": "ec9d3f6fcde52ebc59ddc4d9677cd3d136b0391ca5e195a1e5cb23720f892653",
+          "yokohama": 74,
+          "edogawa": 72
+        },
+        {
+          "sha256": "40cc2107595a89ff48b391b6cb4f692b17ed386434f21b85dff7cc7563f86d85",
+          "yokohama": 74,
+          "edogawa": 73
+        },
+        {
+          "sha256": "cbd02f55a0b7fc0f212d30e1805fc4bf14031d4b527062be2a4ccd35ff1892cb",
+          "yokohama": 74,
+          "edogawa": 74
+        }
+      ],
+      "SDC": [
+        {
+          "sha256": "d0cd658afd2565093ffad53a0cb1ea899feddc7e755a89bf2b1b1b4212646fa6",
+          "yokohama": 73,
+          "edogawa": 63
+        },
+        {
+          "sha256": "db0cf6c2cf1357302751f01b6fb0880fe521753e2652531cf468c5e9cbe0360b",
+          "yokohama": 1,
+          "edogawa": 1
+        }
+      ]
+    }
+  }
+}

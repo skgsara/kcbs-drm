@@ -1,0 +1,403 @@
+{
+  "format": "paired-physical-trailer-v1",
+  "shared_assigned_counters": 119,
+  "du_slices_half_open": [
+    [
+      668,
+      698
+    ],
+    [
+      665,
+      698
+    ],
+    [
+      664,
+      697
+    ]
+  ],
+  "block_length": 96,
+  "q3_du_start": 537,
+  "inputs_sha256": {
+    "3205": "7824c1146312aef97628da57d97e947036ce3b5312691c5376bbcff7e223293f",
+    "6140": "05a4cc876e3f20c89d01e80eaa3fd3e4fb027f3d5ff920db34e1a9c6d008a90c"
+  },
+  "site_3205": {
+    "accepted_q3_by_phase": [
+      119,
+      117,
+      116
+    ],
+    "complete_dus": 349,
+    "all_three_q3": 115,
+    "all_three_complete_dus": 113,
+    "distinct_complete_96_byte_blocks": 115,
+    "counter_then_96_bytes_sha256": "f9d48f89efd940f691b967ad39dfc49c7ac2d37fc0598f27a72d60e37cf831b3",
+    "phase0_counter": {
+      "checked": 119,
+      "mismatched": 0
+    },
+    "zero_fields_by_phase": [
+      {
+        "du_offsets": [
+          662,
+          663
+        ],
+        "checked_bytes": 238,
+        "nonzero_bytes": 0
+      },
+      {
+        "du_offsets": [
+          662,
+          663,
+          664
+        ],
+        "checked_bytes": 351,
+        "nonzero_bytes": 0
+      },
+      {
+        "du_offsets": [
+          662,
+          663,
+          697
+        ],
+        "checked_bytes": 348,
+        "nonzero_bytes": 0
+      }
+    ]
+  },
+  "site_6140": {
+    "accepted_q3_by_phase": [
+      119,
+      92,
+      95
+    ],
+    "complete_dus": 290,
+    "all_three_q3": 92,
+    "all_three_complete_dus": 85,
+    "distinct_complete_96_byte_blocks": 92,
+    "counter_then_96_bytes_sha256": "92185e2ca4793e49dd6e768db86aa199899325925aab9ebfaac7843411f2feb6",
+    "phase0_counter": {
+      "checked": 119,
+      "mismatched": 0
+    },
+    "zero_fields_by_phase": [
+      {
+        "du_offsets": [
+          662,
+          663
+        ],
+        "checked_bytes": 238,
+        "nonzero_bytes": 0
+      },
+      {
+        "du_offsets": [
+          662,
+          663,
+          664
+        ],
+        "checked_bytes": 276,
+        "nonzero_bytes": 0
+      },
+      {
+        "du_offsets": [
+          662,
+          663,
+          697
+        ],
+        "checked_bytes": 285,
+        "nonzero_bytes": 0
+      }
+    ]
+  },
+  "same_counter": {
+    "accepted_q3": {
+      "by_phase": [
+        {
+          "possible": 119,
+          "compared": 119,
+          "matched": 119,
+          "disagreed": 0,
+          "only_3205": 0,
+          "only_6140": 0,
+          "neither": 0,
+          "compared_bytes": 3570,
+          "disagreeing_bytes": 0
+        },
+        {
+          "possible": 119,
+          "compared": 90,
+          "matched": 90,
+          "disagreed": 0,
+          "only_3205": 27,
+          "only_6140": 2,
+          "neither": 0,
+          "compared_bytes": 2970,
+          "disagreeing_bytes": 0
+        },
+        {
+          "possible": 119,
+          "compared": 94,
+          "matched": 94,
+          "disagreed": 0,
+          "only_3205": 22,
+          "only_6140": 1,
+          "neither": 2,
+          "compared_bytes": 3102,
+          "disagreeing_bytes": 0
+        }
+      ],
+      "block": {
+        "possible": 119,
+        "compared": 90,
+        "matched": 90,
+        "disagreed": 0,
+        "only_3205": 25,
+        "only_6140": 2,
+        "neither": 2,
+        "compared_bytes": 8640,
+        "disagreeing_bytes": 0
+      },
+      "counters_by_number_of_jointly_observed_phases": {
+        "0": 0,
+        "1": 25,
+        "2": 4,
+        "3": 90
+      }
+    },
+    "complete_dus": {
+      "by_phase": [
+        {
+          "possible": 119,
+          "compared": 109,
+          "matched": 109,
+          "disagreed": 0,
+          "only_3205": 8,
+          "only_6140": 2,
+          "neither": 0,
+          "compared_bytes": 3270,
+          "disagreeing_bytes": 0
+        },
+        {
+          "possible": 119,
+          "compared": 86,
+          "matched": 86,
+          "disagreed": 0,
+          "only_3205": 31,
+          "only_6140": 2,
+          "neither": 0,
+          "compared_bytes": 2838,
+          "disagreeing_bytes": 0
+        },
+        {
+          "possible": 119,
+          "compared": 89,
+          "matched": 89,
+          "disagreed": 0,
+          "only_3205": 26,
+          "only_6140": 2,
+          "neither": 2,
+          "compared_bytes": 2937,
+          "disagreeing_bytes": 0
+        }
+      ],
+      "block": {
+        "possible": 119,
+        "compared": 81,
+        "matched": 81,
+        "disagreed": 0,
+        "only_3205": 32,
+        "only_6140": 4,
+        "neither": 2,
+        "compared_bytes": 7776,
+        "disagreeing_bytes": 0
+      },
+      "counters_by_number_of_jointly_observed_phases": {
+        "0": 6,
+        "1": 23,
+        "2": 9,
+        "3": 81
+      }
+    },
+    "distinct_equal_96_byte_blocks": 90
+  },
+  "within_station_adjacent": {
+    "site_3205": {
+      "consecutive_counter_pairs": 94,
+      "whole_blocks_different": 94,
+      "different_whole_fragments_by_phase": [
+        94,
+        94,
+        94
+      ],
+      "octet_comparisons": 9024,
+      "equal_octets": 35,
+      "different_octets": 8989,
+      "changed_octets_per_pair_histogram": {
+        "94": 4,
+        "95": 27,
+        "96": 63
+      },
+      "changed_octets_per_pair_min_median_max": [
+        94,
+        96.0,
+        96
+      ]
+    },
+    "site_6140": {
+      "consecutive_counter_pairs": 71,
+      "whole_blocks_different": 71,
+      "different_whole_fragments_by_phase": [
+        71,
+        71,
+        71
+      ],
+      "octet_comparisons": 6816,
+      "equal_octets": 30,
+      "different_octets": 6786,
+      "changed_octets_per_pair_histogram": {
+        "94": 4,
+        "95": 22,
+        "96": 45
+      },
+      "changed_octets_per_pair_min_median_max": [
+        94,
+        96,
+        96
+      ]
+    },
+    "both_sites_at_both_counters_equal": {
+      "consecutive_counter_pairs": 69,
+      "whole_blocks_different": 69,
+      "different_whole_fragments_by_phase": [
+        69,
+        69,
+        69
+      ],
+      "octet_comparisons": 6624,
+      "equal_octets": 30,
+      "different_octets": 6594,
+      "changed_octets_per_pair_histogram": {
+        "94": 4,
+        "95": 22,
+        "96": 43
+      },
+      "changed_octets_per_pair_min_median_max": [
+        94,
+        96,
+        96
+      ]
+    }
+  },
+  "adjacent_counter_control": {
+    "direction": "3205 at c versus 6140 at c+1, both counter IDs in the shared archive",
+    "accepted_q3": {
+      "by_phase": [
+        {
+          "possible": 100,
+          "compared": 100,
+          "matched": 0,
+          "disagreed": 100,
+          "only_3205": 0,
+          "only_6140": 0,
+          "neither": 0,
+          "compared_bytes": 3000,
+          "disagreeing_bytes": 2985
+        },
+        {
+          "possible": 100,
+          "compared": 81,
+          "matched": 0,
+          "disagreed": 81,
+          "only_3205": 18,
+          "only_6140": 1,
+          "neither": 0,
+          "compared_bytes": 2673,
+          "disagreeing_bytes": 2658
+        },
+        {
+          "possible": 100,
+          "compared": 83,
+          "matched": 0,
+          "disagreed": 83,
+          "only_3205": 16,
+          "only_6140": 1,
+          "neither": 0,
+          "compared_bytes": 2739,
+          "disagreeing_bytes": 2732
+        }
+      ],
+      "block": {
+        "possible": 100,
+        "compared": 80,
+        "matched": 0,
+        "disagreed": 80,
+        "only_3205": 18,
+        "only_6140": 2,
+        "neither": 0,
+        "compared_bytes": 7680,
+        "disagreeing_bytes": 7648
+      },
+      "counters_by_number_of_jointly_observed_phases": {
+        "0": 0,
+        "1": 16,
+        "2": 4,
+        "3": 80
+      }
+    },
+    "complete_dus": {
+      "by_phase": [
+        {
+          "possible": 100,
+          "compared": 93,
+          "matched": 0,
+          "disagreed": 93,
+          "only_3205": 5,
+          "only_6140": 2,
+          "neither": 0,
+          "compared_bytes": 2790,
+          "disagreeing_bytes": 2776
+        },
+        {
+          "possible": 100,
+          "compared": 77,
+          "matched": 0,
+          "disagreed": 77,
+          "only_3205": 22,
+          "only_6140": 1,
+          "neither": 0,
+          "compared_bytes": 2541,
+          "disagreeing_bytes": 2526
+        },
+        {
+          "possible": 100,
+          "compared": 78,
+          "matched": 0,
+          "disagreed": 78,
+          "only_3205": 20,
+          "only_6140": 2,
+          "neither": 0,
+          "compared_bytes": 2574,
+          "disagreeing_bytes": 2567
+        }
+      ],
+      "block": {
+        "possible": 100,
+        "compared": 71,
+        "matched": 0,
+        "disagreed": 71,
+        "only_3205": 25,
+        "only_6140": 4,
+        "neither": 0,
+        "compared_bytes": 6816,
+        "disagreeing_bytes": 6785
+      },
+      "counters_by_number_of_jointly_observed_phases": {
+        "0": 3,
+        "1": 17,
+        "2": 9,
+        "3": 71
+      }
+    }
+  },
+  "scope": "Previously published 119 mutually assigned counters. CRCs validate received packets. Coordinates for partial DUs rely on the original receiver assignments. The digest at each site concatenates four-byte big-endian counter then the 96 observed bytes, in ascending counter order. One EVS word spans 20 ms, one phase DU spans 400 ms, and its three-phase group spans 1.2 s. Successive blocks can differ without every octet changing or their components being refreshed simultaneously."
+}
