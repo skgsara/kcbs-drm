@@ -120,22 +120,18 @@ def main():
                         help="JSON with group totals or TSV with one line per slot")
     parser.add_argument("--field-checks", action="store_true",
                         help="add within-word and adjacent-mode EVS field checks to JSON")
+    parser.add_argument("--evidence", action="store_true",
+                        help="report the receipt status and allowed field values for each slot in JSON")
     args = parser.parse_args()
-    if args.field_checks and args.format != "json":
-        parser.error("--field-checks requires JSON output")
+    if (args.field_checks or args.evidence) and args.format != "json":
+        parser.error("EVS field checks and bit evidence require JSON output")
     try:
         result = project_group(args.packets or args.data_units, args.counter, packets=args.packets is not None)
-        if args.field_checks:
-            from evs_core_history import core_history
-            from evs_gsc_fields import gsc_fields
-            from evs_hq_neighbors import hq_neighbors
-            from evs_intra_word import intra_word
-            from evs_transition_tags import transition_tags
-            result["transition_tags"] = transition_tags(result["slots"])
-            result["core_history"] = core_history(result["slots"])
-            result["intra_word"] = intra_word(result["slots"])
-            result["gsc_fields"] = gsc_fields(result["slots"])
-            result["hq_neighbors"] = hq_neighbors(result["slots"])
+        if args.field_checks or args.evidence:
+            from evs_evidence import bit_evidence, field_sections
+            result.update(field_sections(result["slots"]))
+            if args.evidence:
+                result = bit_evidence(result)
     except (OSError, ValueError, EOFError, BadZipFile) as error:
         parser.exit(2, f"{parser.prog}: {error}\n")
     if args.format == "json":

@@ -1,0 +1,185 @@
+{
+  "controls": [
+    {
+      "counter": 43869343,
+      "source": "member supplied G.192",
+      "source_packets_sha256": "99ed1273b814f55b9f190f66045d5c479cb1fa9b48e8ee6e72b9bc2d5f30a6b6",
+      "reference_start": [
+        43869284,
+        0,
+        0,
+        1
+      ],
+      "projection_sha256": "80d4d0b57f40104fb0ed528a1e32aa8a37c6eeeeba498c2c1315d4e98ee67ff1",
+      "reference_sha256": "e35b777d0ef1183bb0455a33f7c24fd54ea465a10d426847c645736a724e1647",
+      "comparison_sha256": "ac095779379f7ff195fa662db8367cfd50a0b91f2e41908c18a14f3b89ab64cd",
+      "slot_agreement": {
+        "slots": {
+          "direct_agreement": 15,
+          "direct_disagreement": 0,
+          "reference_only": 0,
+          "reference_erasure": 45,
+          "outside_extent": 0
+        },
+        "compared_direct_bits": 2640,
+        "matching_direct_bits": 2640,
+        "differing_direct_bits": 0,
+        "predicates": {
+          "match": 17,
+          "mismatch": 0,
+          "unrestricted": 0,
+          "contradiction": 0,
+          "quarantined": 0,
+          "reference_only": 0,
+          "reference_erasure": 48,
+          "outside_extent": 0
+        }
+      },
+      "by_rule": {
+        "swb_gsc_inactive": {
+          "match": 8,
+          "mismatch": 0,
+          "unrestricted": 0,
+          "contradiction": 0,
+          "quarantined": 0,
+          "reference_only": 0,
+          "reference_erasure": 23,
+          "outside_extent": 0
+        },
+        "inactive_nibble": {
+          "match": 8,
+          "mismatch": 0,
+          "unrestricted": 0,
+          "contradiction": 0,
+          "quarantined": 0,
+          "reference_only": 0,
+          "reference_erasure": 23,
+          "outside_extent": 0
+        },
+        "transition_tag": {
+          "match": 1,
+          "mismatch": 0,
+          "unrestricted": 0,
+          "contradiction": 0,
+          "quarantined": 0,
+          "reference_only": 0,
+          "reference_erasure": 2,
+          "outside_extent": 0
+        }
+      },
+      "text_record": {
+        "ledger_rows": 41,
+        "overlapping_record_count": 2,
+        "records_covering_column_zero_in_header_or_body": 1,
+        "overlapping_records": [
+          {
+            "start": [
+              43869341,
+              0
+            ],
+            "crc": "ddf7",
+            "header_hex": "858c",
+            "column_zero_record_offsets": {
+              "0": 96
+            },
+            "column_zero_roles": {
+              "0": "fill"
+            },
+            "header_body_sha256": "e12df899815e1fd9edf2ff4c762d5a9d91be05166b2518f321e8156be5006df8"
+          },
+          {
+            "start": [
+              43869343,
+              1
+            ],
+            "crc": "616a",
+            "header_hex": "859c",
+            "column_zero_record_offsets": {
+              "1": 0,
+              "2": 16
+            },
+            "column_zero_roles": {
+              "1": "header",
+              "2": "body"
+            },
+            "header_body_sha256": "9e052e86946558e773fbcc219f79cda2cf9425f010e15acce02938c1860c6aa4"
+          }
+        ]
+      }
+    },
+    {
+      "counter": 43865918,
+      "source": "existing export of member-supported labels",
+      "source_packets_sha256": "5eae8b5fbb93550e8bc046b44418282854f355c4d09171057e681dd186122765",
+      "reference_start": [
+        43865854,
+        0,
+        0,
+        1
+      ],
+      "projection_sha256": "5a455bad67fa5dd1c9580c447ab26aa3df09037ec607042358a00d0ea1d6140a",
+      "reference_sha256": "cfd265ef422d86e633e18dc776d978ecd60b7592785f6f9ddc77254ba64ebec3",
+      "comparison_sha256": "07d70bd38d3cfa1009a31ffafda433e9f933787ec4030447d0e55a7160059aa6",
+      "slot_agreement": {
+        "slots": {
+          "direct_agreement": 15,
+          "direct_disagreement": 0,
+          "reference_only": 0,
+          "reference_erasure": 45,
+          "outside_extent": 0
+        },
+        "compared_direct_bits": 2640,
+        "matching_direct_bits": 2640,
+        "differing_direct_bits": 0,
+        "predicates": {
+          "match": 0,
+          "mismatch": 14,
+          "unrestricted": 0,
+          "contradiction": 0,
+          "quarantined": 0,
+          "reference_only": 0,
+          "reference_erasure": 45,
+          "outside_extent": 0
+        }
+      },
+      "by_rule": {
+        "tcx_previous_core": {
+          "match": 0,
+          "mismatch": 14,
+          "unrestricted": 0,
+          "contradiction": 0,
+          "quarantined": 0,
+          "reference_only": 0,
+          "reference_erasure": 45,
+          "outside_extent": 0
+        }
+      },
+      "text_record": {
+        "ledger_rows": 104,
+        "overlapping_record_count": 1,
+        "records_covering_column_zero_in_header_or_body": 1,
+        "overlapping_records": [
+          {
+            "start": [
+              43865917,
+              0
+            ],
+            "crc": "b81a",
+            "header_hex": "059c",
+            "column_zero_record_offsets": {
+              "0": 48,
+              "1": 64,
+              "2": 80
+            },
+            "column_zero_roles": {
+              "0": "body",
+              "1": "body",
+              "2": "body"
+            },
+            "header_body_sha256": "7204af97567faabd3116559fb31d907436c48c46952e8b376f0e1433d0a61ed8"
+          }
+        ]
+      }
+    }
+  ]
+}

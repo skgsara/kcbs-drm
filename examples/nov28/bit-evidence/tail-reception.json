@@ -1,0 +1,324 @@
+{
+  "pre_reception_protocol_sha256": "0074f0387dea63f5983eb2fdb655420ace7c892c8d61f5830b69098eafc26c02",
+  "protocol_public_commit": "75bd339afc2522d1b9097cb4f47299bcd78f0822",
+  "opening_utc": "2026-11-28T02:31:19.325642+00:00",
+  "source_name": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+  "source_bytes_half_open": [
+    583680000,
+    597076480
+  ],
+  "source_complex_samples_half_open": [
+    291840000,
+    298538240
+  ],
+  "selected_source_bytes": 13396480,
+  "range_sha256": "755de1d5b14b83707f6dc395eb79323d86c3f8a8425540d36dfff2bc0c06e0d0",
+  "actual_http_status": 206,
+  "expected_and_received_etag": "\"9eef1c0711b472da93b8c6227fb7359b\"",
+  "receiver_commit": "83d048364ab59dda6df9c5e5ef0c5293ce71ba9b",
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "nominal_duration_seconds": 7.344561403508772,
+  "input_complex_samples_consumed": 6698240,
+  "settings": {
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "mlciter": 1
+  },
+  "receiver_passes": 1,
+  "receiver_returncode": 0,
+  "physical_eof": true,
+  "msc_sha256": "df3552c616b7ef22b538c6bd807ee0754b4be6eb0dd2b80c69bc9a3b76c9405d",
+  "raw_records": 12,
+  "raw_passing_original_packet_crcs": 48,
+  "raw_passing_native_du_crcs": 12,
+  "raw_rows": [
+    {
+      "raw_row": 0,
+      "phase": 1,
+      "direct_counter": null,
+      "du_crc": "52ff",
+      "du_sha256": "7740c4e5de258810f51975cb53c48189c4b2f84cb29a1394b9be4b07b8e65ca6",
+      "transmitted_packet_crc": [
+        "c9b8",
+        "d86f",
+        "4aed",
+        "1140"
+      ]
+    },
+    {
+      "raw_row": 1,
+      "phase": 2,
+      "direct_counter": null,
+      "du_crc": "fe44",
+      "du_sha256": "d77499f7bbec6779784b70542c554c5dc0ab6354fc0d3f31d547483c290767c8",
+      "transmitted_packet_crc": [
+        "5818",
+        "59cc",
+        "b97a",
+        "4f87"
+      ]
+    },
+    {
+      "raw_row": 2,
+      "phase": 0,
+      "direct_counter": 43288873,
+      "du_crc": "ef9f",
+      "du_sha256": "f94f4329df4b5f4883f1dbe46c179c8f9adb0349663fc759f31dad63d53ca757",
+      "transmitted_packet_crc": [
+        "aebb",
+        "10d8",
+        "fefa",
+        "737d"
+      ],
+      "assigned_counter": 43288873
+    },
+    {
+      "raw_row": 3,
+      "phase": 1,
+      "direct_counter": null,
+      "du_crc": "9b1e",
+      "du_sha256": "0147f7167b399353ccfed4674d75a6cc249a49b28e2c7b4800b73f2cab577a95",
+      "transmitted_packet_crc": [
+        "9501",
+        "f143",
+        "9438",
+        "40a5"
+      ],
+      "assigned_counter": 43288873
+    },
+    {
+      "raw_row": 4,
+      "phase": 2,
+      "direct_counter": null,
+      "du_crc": "3504",
+      "du_sha256": "c561c1b83504a5e16d17722d59013da96cd6ed925405a0b1a45b5b3db0bbe401",
+      "transmitted_packet_crc": [
+        "c3ae",
+        "691f",
+        "e081",
+        "8642"
+      ],
+      "assigned_counter": 43288873
+    },
+    {
+      "raw_row": 5,
+      "phase": 0,
+      "direct_counter": 43288874,
+      "du_crc": "4bd0",
+      "du_sha256": "9150ffda870ea068f1e69a80ed8dca47a6cf804e041c3baf7cbe6752b33e6303",
+      "transmitted_packet_crc": [
+        "c0f8",
+        "75bb",
+        "1e5f",
+        "bb4e"
+      ],
+      "assigned_counter": 43288874
+    },
+    {
+      "raw_row": 6,
+      "phase": 1,
+      "direct_counter": null,
+      "du_crc": "2c27",
+      "du_sha256": "3e706785df7c86d6c287fbb0d14508cca78e7603df847300d1548bc6707f8ae6",
+      "transmitted_packet_crc": [
+        "41e1",
+        "4c3c",
+        "e94d",
+        "a8b9"
+      ],
+      "assigned_counter": 43288874
+    },
+    {
+      "raw_row": 7,
+      "phase": 2,
+      "direct_counter": null,
+      "du_crc": "6bb6",
+      "du_sha256": "8a08336cbf323e31dd416391e38069a15201cc8e68116ac55173fba9fb768807",
+      "transmitted_packet_crc": [
+        "59c3",
+        "2e34",
+        "f9de",
+        "2492"
+      ],
+      "assigned_counter": 43288874
+    },
+    {
+      "raw_row": 8,
+      "phase": 0,
+      "direct_counter": 43288875,
+      "du_crc": "5a6b",
+      "du_sha256": "1a9d77f535c5b16385d24b280437037072a9cf65dc5eb6ea03f5880160635021",
+      "transmitted_packet_crc": [
+        "dac6",
+        "9d30",
+        "8f00",
+        "09dc"
+      ],
+      "assigned_counter": 43288875
+    },
+    {
+      "raw_row": 9,
+      "phase": 1,
+      "direct_counter": null,
+      "du_crc": "6bb7",
+      "du_sha256": "a169b7c89fd237e8afe26713a08ee4605e2c8aae1655c4a8078effc1b82ae8a4",
+      "transmitted_packet_crc": [
+        "f9c0",
+        "50ec",
+        "557b",
+        "0d36"
+      ],
+      "assigned_counter": 43288875
+    },
+    {
+      "raw_row": 10,
+      "phase": 2,
+      "direct_counter": null,
+      "du_crc": "114a",
+      "du_sha256": "95415e7f5c42d2132132a6aa409c22cdcfe2cbec03f0ebca2fe15b62dbbebb32",
+      "transmitted_packet_crc": [
+        "84ad",
+        "e4f0",
+        "34bc",
+        "66b6"
+      ],
+      "assigned_counter": 43288875
+    },
+    {
+      "raw_row": 11,
+      "phase": 0,
+      "direct_counter": 43288876,
+      "du_crc": "ac59",
+      "du_sha256": "2137cab2edca55ba98d341f8715a3af4149d912d12b33268baeebc2752f4dba6",
+      "transmitted_packet_crc": [
+        "795c",
+        "131d",
+        "8ea4",
+        "60f2"
+      ],
+      "assigned_counter": 43288876
+    }
+  ],
+  "source_rows_excluded_before_first_anchor": [
+    0,
+    1
+  ],
+  "assigned_original_packets": 40,
+  "assigned_complete_du_count": 10,
+  "assigned_counters": [
+    43288873,
+    43288874,
+    43288875,
+    43288876
+  ],
+  "assigned_groups_complete": [
+    43288873,
+    43288874,
+    43288875
+  ],
+  "partial_packet_rows": 0,
+  "first_partial": null,
+  "received_direct_octets_across_all_assigned_phases": 4400,
+  "transport_snapshot_sha256": "a90ccf73dabb09c35ee6b91716641a50c3629874e27cde16db52c483c59b57f0",
+  "data_units_sha256": "e9ab0fa27e0e694de264b086a515a5ccee25e494e82401f35c3c6f9ffd5f296b",
+  "score_json_sha256": "03bdccb5437c6bab8a8c4f7050b97180a22afb24bf8bb1a62a44c733b2c423cb",
+  "prior_counters": 13731,
+  "prior_registry_sha256": "56223033999c01e6dff71ddf9f789ee3a6b5941b3904f05f3a469b8da1f8f9a9",
+  "prior_overlap": [],
+  "primary": {
+    "counter": 43288873,
+    "first_rf_dump_index": 2,
+    "mode_octets": {
+      "ff": 17,
+      "fe": 43
+    },
+    "direct_bits": 10560,
+    "physical_slots": 60,
+    "erasures": 60,
+    "complete_clear_words": 0,
+    "per_position_modeled_core_counts": {
+      "1": {
+        "slots": 15,
+        "abstain": 1,
+        "hq_match": 0,
+        "hq_mismatch": 0,
+        "tcx_conditional": 14
+      },
+      "2": {
+        "slots": 15,
+        "abstain": 0,
+        "hq_match": 0,
+        "hq_mismatch": 0,
+        "tcx_conditional": 15
+      },
+      "3": {
+        "slots": 15,
+        "abstain": 0,
+        "hq_match": 0,
+        "hq_mismatch": 0,
+        "tcx_conditional": 15
+      },
+      "4": {
+        "slots": 15,
+        "abstain": 0,
+        "hq_match": 0,
+        "hq_mismatch": 0,
+        "tcx_conditional": 15
+      }
+    },
+    "core_history_results": {
+      "slots": 60,
+      "abstain": 1,
+      "hq_match": 0,
+      "hq_mismatch": 0,
+      "tcx_conditional": 59
+    },
+    "predicted_tcx_b8_counts": {
+      "1": 59
+    },
+    "direct_observations_of_b8": 0,
+    "transition_fixed_bits": 0,
+    "intra_word": {
+      "swb_hq_class": {
+        "conditional": 0,
+        "pass": 0,
+        "reject": 0,
+        "unavailable": 0
+      },
+      "wb_gsc_audio": {
+        "conditional": 0,
+        "pass": 0,
+        "reject": 0,
+        "unavailable": 0
+      },
+      "swb_gsc_inactive": {
+        "conditional": 0,
+        "pass": 0,
+        "reject": 0,
+        "unavailable": 0
+      }
+    },
+    "gsc_fields": {
+      "audio_noisy": {
+        "match": 0,
+        "mismatch": 0,
+        "unavailable": 0
+      },
+      "inactive_nibble": {
+        "match": 0,
+        "mismatch": 0,
+        "unavailable": 0
+      },
+      "noisy_pitch_fill": {
+        "match": 0,
+        "mismatch": 0,
+        "unavailable": 0
+      }
+    },
+    "hq_neighbors": {
+      "eligible": 0,
+      "transient_excluded": 0
+    }
+  }
+}

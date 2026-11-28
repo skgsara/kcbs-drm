@@ -315,6 +315,12 @@ available bits. A fully received group exposes 10,560 of 15,840 bits
 under this layout. Two RF receivers can independently compare those
 10,560 bits.
 
+Add `--evidence` to see each slot's direct bits, received bits whose clear
+values remain unknown, and bits without an accepted packet receipt. The
+report lists each codec check's inputs and allowed target values. A separate
+comparison accepts a G.192 export with erasures, including a handoff that
+supplies only first-position words. [Recorded examples and comparison commands](examples/nov28/bit-evidence/README.md)
+
 On a later 3205 kHz transmission, two receivers in Yokohama and Tokyo
 independently reproduced all 10,560 directly comparable bits at counter
 `43900392`. The original IQ excerpts and replay commands are available
