@@ -1,0 +1,35 @@
+{
+  "wav": "20261128T1300Z-yokohama-3205khz-segment-001-iq48.wav",
+  "parts": [
+    {
+      "file": "parts/yokohama-segment-001-part-01.wav",
+      "first_sample_pair": 0,
+      "sample_pairs": 10944000,
+      "sha256": "8bb2365d514fa98bf8007ad261aaa8ac7a410b551adfeb5e1b521698bd1e82da"
+    },
+    {
+      "file": "parts/yokohama-segment-001-part-02.wav",
+      "first_sample_pair": 10944000,
+      "sample_pairs": 10944000,
+      "sha256": "97d6926adadb309a19ce714ac73109e068ffa6dc339f33d47f6d3f4bdf2cd0d4"
+    },
+    {
+      "file": "parts/yokohama-segment-001-part-03.wav",
+      "first_sample_pair": 21888000,
+      "sample_pairs": 10944000,
+      "sha256": "e4b41ad18a489ec6c181f7219c0d1b82b6f9e63a2a0ff8694622b5100682a04c"
+    },
+    {
+      "file": "parts/yokohama-segment-001-part-04.wav",
+      "first_sample_pair": 32832000,
+      "sample_pairs": 10944000,
+      "sha256": "d67006023547e251afb15d63670ca8926abf5380cf4495859242a409dbe4edaf"
+    },
+    {
+      "file": "parts/yokohama-segment-001-part-05.wav",
+      "first_sample_pair": 43776000,
+      "sample_pairs": 10944000,
+      "sha256": "64b3500593bab3d31dfe934d9212b78f0ef49b85880aee99c4f0198e8b7d2d0d"
+    }
+  ]
+}

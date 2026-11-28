@@ -1,0 +1,65 @@
+{
+  "window_start_utc": "2026-11-28T13:00:00Z",
+  "window_end_utc": "2026-11-28T13:20:00Z",
+  "sample_format": "Stereo signed 16-bit PCM. The first channel carries I, the second Q. 48,000 complex pairs per second.",
+  "clock_file_format": "sample_offset,sample_pairs,receiver_unix_ns. Blank timestamps are preserved.",
+  "source_recordings": [
+    {
+      "site": "JL1EDU Yokohama",
+      "frequency_hz": 3205000,
+      "role": "scheduled",
+      "source_file": "segment-001.wav",
+      "wav": {
+        "name": "20261128T1300Z-yokohama-3205khz-segment-001-iq48.wav",
+        "size": 218880044,
+        "sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401"
+      },
+      "timing": {
+        "name": "20261128T1300Z-yokohama-3205khz-segment-001-iq48.wav.timing.csv",
+        "size": 5608318,
+        "sha256": "7172706bac526b499fead615dc351619137fbcd286a8c513dbec554e9b1eee38"
+      },
+      "sample_pairs": 54720000,
+      "sample_rate_hz": 48000,
+      "pcm_sha256": "0f9e7ad6e7781be6598a6434cf9f5c0213e410c126195d71dcf0d777c28f3005"
+    },
+    {
+      "site": "JL1EDU Yokohama",
+      "frequency_hz": 3205000,
+      "role": "scheduled",
+      "source_file": "segment-002.wav",
+      "wav": {
+        "name": "20261128T1300Z-yokohama-3205khz-segment-002-iq48.wav",
+        "size": 10502444,
+        "sha256": "1d80f3c0d0caee3ba98513961dae58d95d38e663cd3d11793d7df9362767cec3"
+      },
+      "timing": {
+        "name": "20261128T1300Z-yokohama-3205khz-segment-002-iq48.wav.timing.csv",
+        "size": 258957,
+        "sha256": "16a159c00ced299d5eb29c59ad6aceceb4468e91f6440800190352e36d8c2176"
+      },
+      "sample_pairs": 2625600,
+      "sample_rate_hz": 48000,
+      "pcm_sha256": "8f83cdd0b4c4756061cdcd27819e22ad560ecf6fc9106c3e78d0f8a6a3a51f24"
+    },
+    {
+      "site": "7L4IOU Edogawa",
+      "frequency_hz": 6140000,
+      "role": "independent_opening_reference",
+      "source_file": "original.wav",
+      "wav": {
+        "name": "20261128T1300Z-edogawa-6140khz-iq48.wav",
+        "size": 23040044,
+        "sha256": "e5af7b3f6efa584ead88cd9d28975ae06817c5d5d951bbd2b94d9e85a24f00cc"
+      },
+      "timing": {
+        "name": "20261128T1300Z-edogawa-6140khz-iq48.wav.timing.csv",
+        "size": 572511,
+        "sha256": "785a7c9bfafbf1efe07ca76c9f5520ad1f2af539ff131bf5f53f6d6d9b6f7175"
+      },
+      "sample_pairs": 5760000,
+      "sample_rate_hz": 48000,
+      "pcm_sha256": "3a53ffe5b0117707b9a03ea2f8634dcc9d50705e7dd880b2856035b26ac6b4a3"
+    }
+  ]
+}
