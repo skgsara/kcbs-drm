@@ -1,0 +1,472 @@
+{
+  "schema": 1,
+  "scope": "Every CRC-valid physical wire in each selected data-stream callback. No packet ID, boundary, continuity, padding, data-unit or application checks gate acceptance. Missing histogram keys have count zero. IDs use ordered bins 0, 1, 2, 3. Continuity transitions require adjacent good wires of the same ID. Files are counted separately.",
+  "cases": {
+    "1228-yokohama": {
+      "msc_sha256": "cca14f30c076e44e6f4639945abe68e0a58f18a78a70dbf501390a5b15208d4c",
+      "rows": 288,
+      "row_sizes": {
+        "728": 288
+      },
+      "checked": 1152,
+      "crc_good": 0,
+      "crc_failed": 1152,
+      "by_packet_id": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "headers": {},
+      "by_ordinal": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "padding": {},
+      "padded_declared_length": {},
+      "neighboring_same_id_ci": {
+        "inside_row": {},
+        "across_rows": {}
+      },
+      "unexpected": []
+    },
+    "1228-edogawa": {
+      "msc_sha256": "6ec15e2dfecf80ee9d946a81cff5c9ed35e2ec45109ae9bf414deddbaf9d888a",
+      "rows": 293,
+      "row_sizes": {
+        "728": 293
+      },
+      "checked": 1172,
+      "crc_good": 769,
+      "crc_failed": 403,
+      "by_packet_id": [
+        769,
+        0,
+        0,
+        0
+      ],
+      "headers": {
+        "01": 185,
+        "02": 196,
+        "43": 199,
+        "80": 189
+      },
+      "by_ordinal": [
+        {
+          "80": 189
+        },
+        {
+          "01": 185
+        },
+        {
+          "02": 196
+        },
+        {
+          "43": 199
+        }
+      ],
+      "padding": {
+        "unpadded": 769
+      },
+      "padded_declared_length": {},
+      "neighboring_same_id_ci": {
+        "inside_row": {
+          "0->1": 177,
+          "1->2": 181,
+          "2->3": 191
+        },
+        "across_rows": {
+          "3->0": 178
+        }
+      },
+      "unexpected": []
+    },
+    "1232-yokohama": {
+      "msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+      "rows": 220,
+      "row_sizes": {
+        "728": 220
+      },
+      "checked": 880,
+      "crc_good": 859,
+      "crc_failed": 21,
+      "by_packet_id": [
+        859,
+        0,
+        0,
+        0
+      ],
+      "headers": {
+        "01": 212,
+        "02": 219,
+        "43": 219,
+        "80": 209
+      },
+      "by_ordinal": [
+        {
+          "80": 209
+        },
+        {
+          "01": 212
+        },
+        {
+          "02": 219
+        },
+        {
+          "43": 219
+        }
+      ],
+      "padding": {
+        "unpadded": 859
+      },
+      "padded_declared_length": {},
+      "neighboring_same_id_ci": {
+        "inside_row": {
+          "0->1": 206,
+          "1->2": 212,
+          "2->3": 218
+        },
+        "across_rows": {
+          "3->0": 208
+        }
+      },
+      "unexpected": []
+    },
+    "1232-edogawa": {
+      "msc_sha256": "08ff30e342446c25dd7b47d6009fb0ede1f6424df3888353b30aee2d393a1746",
+      "rows": 218,
+      "row_sizes": {
+        "728": 218
+      },
+      "checked": 872,
+      "crc_good": 464,
+      "crc_failed": 408,
+      "by_packet_id": [
+        464,
+        0,
+        0,
+        0
+      ],
+      "headers": {
+        "01": 114,
+        "02": 124,
+        "43": 119,
+        "80": 107
+      },
+      "by_ordinal": [
+        {
+          "80": 107
+        },
+        {
+          "01": 114
+        },
+        {
+          "02": 124
+        },
+        {
+          "43": 119
+        }
+      ],
+      "padding": {
+        "unpadded": 464
+      },
+      "padded_declared_length": {},
+      "neighboring_same_id_ci": {
+        "inside_row": {
+          "1->2": 105,
+          "2->3": 106,
+          "0->1": 94
+        },
+        "across_rows": {
+          "3->0": 93
+        }
+      },
+      "unexpected": []
+    },
+    "nov27-3205-360-420": {
+      "msc_sha256": "e3d44c7da7d4c8e4001933aeb613e7aee3b6a98d70cadb311b221a56e064664f",
+      "rows": 144,
+      "row_sizes": {
+        "728": 144
+      },
+      "checked": 576,
+      "crc_good": 381,
+      "crc_failed": 195,
+      "by_packet_id": [
+        381,
+        0,
+        0,
+        0
+      ],
+      "headers": {
+        "01": 96,
+        "02": 95,
+        "43": 103,
+        "80": 87
+      },
+      "by_ordinal": [
+        {
+          "80": 87
+        },
+        {
+          "01": 96
+        },
+        {
+          "02": 95
+        },
+        {
+          "43": 103
+        }
+      ],
+      "padding": {
+        "unpadded": 381
+      },
+      "padded_declared_length": {},
+      "neighboring_same_id_ci": {
+        "inside_row": {
+          "0->1": 80,
+          "1->2": 87,
+          "2->3": 85
+        },
+        "across_rows": {
+          "3->0": 71
+        }
+      },
+      "unexpected": []
+    }
+  },
+  "same_frequency_1232_distinct_wire_intersection_by_id": [
+    457,
+    0,
+    0,
+    0
+  ],
+  "controls": {
+    "rows": 4,
+    "row_sizes": {
+      "11": 1,
+      "728": 3
+    },
+    "checked": 12,
+    "crc_good": 11,
+    "crc_failed": 1,
+    "by_packet_id": [
+      2,
+      4,
+      2,
+      3
+    ],
+    "headers": {
+      "11": 1,
+      "18": 1,
+      "47": 1,
+      "72": 1,
+      "86": 1,
+      "95": 1,
+      "B0": 1,
+      "D8": 1,
+      "E8": 1,
+      "EF": 1,
+      "F9": 1
+    },
+    "by_ordinal": [
+      {
+        "47": 1,
+        "86": 1,
+        "D8": 1
+      },
+      {
+        "18": 1,
+        "95": 1
+      },
+      {
+        "11": 1,
+        "EF": 1,
+        "F9": 1
+      },
+      {
+        "72": 1,
+        "B0": 1,
+        "E8": 1
+      }
+    ],
+    "padding": {
+      "empty_without_both_boundary_flags": 1,
+      "nonzero_padding": 1,
+      "unpadded": 6,
+      "useful_length_out_of_range": 1,
+      "valid_empty_packet": 1,
+      "valid_padded_data": 1
+    },
+    "padded_declared_length": {
+      "0": 3,
+      "2": 1,
+      "179": 1
+    },
+    "neighboring_same_id_ci": {
+      "inside_row": {
+        "0->0": 1,
+        "0->1": 1
+      },
+      "across_rows": {}
+    },
+    "unexpected": [
+      {
+        "row": 0,
+        "ordinal": 0,
+        "header": "86",
+        "first": 1,
+        "last": 0,
+        "packet_id": 0,
+        "ppi": 0,
+        "ci": 6,
+        "padding": "unpadded",
+        "declared_useful_bytes": null,
+        "transmitted_crc16": "2885",
+        "wire_sha256": "3c32a44b05904f8c1409bb9f8c9611356785a284e12c7ae1911ac03fa7b4e461"
+      },
+      {
+        "row": 0,
+        "ordinal": 1,
+        "header": "95",
+        "first": 1,
+        "last": 0,
+        "packet_id": 1,
+        "ppi": 0,
+        "ci": 5,
+        "padding": "unpadded",
+        "declared_useful_bytes": null,
+        "transmitted_crc16": "9780",
+        "wire_sha256": "38df0a0e3e8f7180ddbc9b183e869bffa6c621c0e0ba32ed936e6b3c10bdead2"
+      },
+      {
+        "row": 0,
+        "ordinal": 2,
+        "header": "EF",
+        "first": 1,
+        "last": 1,
+        "packet_id": 2,
+        "ppi": 1,
+        "ci": 7,
+        "padding": "valid_padded_data",
+        "declared_useful_bytes": 2,
+        "transmitted_crc16": "a074",
+        "wire_sha256": "4a0e07552101796e8ada3cedb654bfdf70df99162dfd18fb9c0075506b00b2f8"
+      },
+      {
+        "row": 0,
+        "ordinal": 3,
+        "header": "B0",
+        "first": 1,
+        "last": 0,
+        "packet_id": 3,
+        "ppi": 0,
+        "ci": 0,
+        "padding": "unpadded",
+        "declared_useful_bytes": null,
+        "transmitted_crc16": "e79e",
+        "wire_sha256": "492002e651448d9b9816d51e6d9a6399dfced133904916fff2f5c86d8be18725"
+      },
+      {
+        "row": 1,
+        "ordinal": 0,
+        "header": "47",
+        "first": 0,
+        "last": 1,
+        "packet_id": 0,
+        "ppi": 0,
+        "ci": 7,
+        "padding": "unpadded",
+        "declared_useful_bytes": null,
+        "transmitted_crc16": "df31",
+        "wire_sha256": "c65b6b6839455a0392a6085d5e369d0a4fc44b044e7515ce99d8892b180e2e6a"
+      },
+      {
+        "row": 1,
+        "ordinal": 2,
+        "header": "F9",
+        "first": 1,
+        "last": 1,
+        "packet_id": 3,
+        "ppi": 1,
+        "ci": 1,
+        "padding": "valid_empty_packet",
+        "declared_useful_bytes": 0,
+        "transmitted_crc16": "1997",
+        "wire_sha256": "7bbc599e572dce77cc2687d0e39565ba53ccd27f25364adb5154cb727d766552"
+      },
+      {
+        "row": 1,
+        "ordinal": 3,
+        "header": "E8",
+        "first": 1,
+        "last": 1,
+        "packet_id": 2,
+        "ppi": 1,
+        "ci": 0,
+        "padding": "useful_length_out_of_range",
+        "declared_useful_bytes": 179,
+        "transmitted_crc16": "f718",
+        "wire_sha256": "b08bbe172528e40a7950015eb5cd0eb57d73de5000fa02cc0fabb9f83f045faf"
+      },
+      {
+        "row": 2,
+        "ordinal": 0,
+        "header": "D8",
+        "first": 1,
+        "last": 1,
+        "packet_id": 1,
+        "ppi": 1,
+        "ci": 0,
+        "padding": "nonzero_padding",
+        "declared_useful_bytes": 0,
+        "transmitted_crc16": "51e4",
+        "wire_sha256": "7e1925e7e7286d7260eae2b648a8d76575449ecbf1dd784422ff78fefef589db"
+      },
+      {
+        "row": 2,
+        "ordinal": 1,
+        "header": "18",
+        "first": 0,
+        "last": 0,
+        "packet_id": 1,
+        "ppi": 1,
+        "ci": 0,
+        "padding": "empty_without_both_boundary_flags",
+        "declared_useful_bytes": 0,
+        "transmitted_crc16": "bc62",
+        "wire_sha256": "5fd95ebb66b4228079e2203cbe37c9e4d136c3d92874af7ed6cd9c6db3b4c2f6"
+      },
+      {
+        "row": 2,
+        "ordinal": 2,
+        "header": "11",
+        "first": 0,
+        "last": 0,
+        "packet_id": 1,
+        "ppi": 0,
+        "ci": 1,
+        "padding": "unpadded",
+        "declared_useful_bytes": null,
+        "transmitted_crc16": "e6e9",
+        "wire_sha256": "3ce616aabe660d976b9f89f3ee11435220581a6a0162e422f6137e1bb9ca41bf"
+      },
+      {
+        "row": 2,
+        "ordinal": 3,
+        "header": "72",
+        "first": 0,
+        "last": 1,
+        "packet_id": 3,
+        "ppi": 0,
+        "ci": 2,
+        "padding": "unpadded",
+        "declared_useful_bytes": null,
+        "transmitted_crc16": "0e1f",
+        "wire_sha256": "25a8f321e7a3c4d17b39d6137f85e904f09bd9381b6a334055f43c94b0a1128e"
+      }
+    ]
+  }
+}

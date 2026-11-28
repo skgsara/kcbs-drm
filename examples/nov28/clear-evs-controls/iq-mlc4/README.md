@@ -15,6 +15,8 @@ Across the interval, 166 expected INACTIVE/BWE high nibbles could be read direct
 
 Every shared assigned packet and complete data unit agreed. Of the 20 gains, 18 wires were already CRC-valid in the earlier native rows and gained a coordinate. The other two wire identities were absent from that earlier valid set. Four iterations added groups 43873090 and 43873094 and retained all earlier complete groups on this interval. In a separate 6140 kHz trial with two receiving sites, both stations independently confirmed the corrected wire bytes of counter 43945704. [This interval's wire comparison](transport.json) · [Independent 6140 kHz control](../transport-mlc4/README.md)
 
+A separate replay of this exact minute recovered 146 CRC-valid FAC blocks and 48 CRC-valid SDC blocks. Each advertised the same single packet-data service. [Five-window service and packet audit](../../standard-service-audit/README.md)
+
 ## Replay
 
 The published FLAC losslessly holds original complex samples [4,320,000, 5,040,000) at 12 kHz. Its SHA-256 is `e2c0ad1d6a214f8da14c5c9c4da2159e32b5a035fc6d2f61d3fb8bfdbe0c586d`. The decoded interleaved little-endian int16 PCM digest is `ec5869c354d8b7782e75308fee467620b997366ab931a2f68f4c611c43d5e65a`. The nominal time range from the filename is 12:21:02–12:22:02 UTC on November 27. The WAV has no receiver clock timestamps. [IQ excerpt](3205kHz-360-420s-iq12.flac) · [Input hashes and both receiver runs](reception.json)

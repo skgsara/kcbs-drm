@@ -1,0 +1,1218 @@
+{
+  "protocol_sha256": "a927468d6f3a838923977d7dbdf60752174352aa822e9f12689f34a57f5c954c",
+  "observer_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "cases": {
+    "1228-yokohama": {
+      "native_msc_sha256": "cca14f30c076e44e6f4639945abe68e0a58f18a78a70dbf501390a5b15208d4c",
+      "native_msc_rows": 288,
+      "source_sha256": "ef02d8715657a049d2c4f745eb9a45afa49cba51f054b82514baaccb8e81d834",
+      "blocks": {
+        "FAC": {
+          "observed": 298,
+          "crc_passed": 295,
+          "crc_failed": 3
+        },
+        "SDC": {
+          "observed": 100,
+          "crc_passed": 35,
+          "crc_failed": 65
+        }
+      },
+      "fac_services": [
+        {
+          "service_id": "A00002",
+          "short_id": 0,
+          "audio_ca": 0,
+          "language_code": 0,
+          "service": "data",
+          "service_descriptor": 0,
+          "data_ca": 0,
+          "count": 295
+        }
+      ],
+      "fac_channel_parameters": [
+        {
+          "base_enhancement": 0,
+          "rm_flag": 0,
+          "spectrum_occupancy": 3,
+          "interleaver_depth_flag": 1,
+          "msc_mode": 3,
+          "sdc_mode": 0,
+          "number_of_services_code": 1,
+          "count": 295
+        }
+      ],
+      "fac_identities": {
+        "1": 98,
+        "2": 99,
+        "3": 98
+      },
+      "sdc_crc_passed_with_framing_error": {},
+      "sdc_entity_counts": {
+        "0": 35,
+        "1": 35,
+        "5": 35,
+        "8": 1,
+        "12": 35
+      },
+      "sdc_entities": [
+        {
+          "type": 0,
+          "version_flag": 0,
+          "raw_hex": "06010002d8",
+          "count": 35,
+          "protection_level_a": 0,
+          "protection_level_b": 1,
+          "streams": [
+            {
+              "stream_id": 0,
+              "part_a_bytes": 0,
+              "part_b_bytes": 728
+            }
+          ]
+        },
+        {
+          "type": 8,
+          "version_flag": 0,
+          "raw_hex": "06877de55c",
+          "count": 1,
+          "mjd": 61372,
+          "signalled_utc_minute": "2026-11-28T21:28Z",
+          "local_offset_minutes": null
+        },
+        {
+          "type": 5,
+          "version_flag": 0,
+          "raw_hex": "0850c1b30000",
+          "count": 35,
+          "short_id": 0,
+          "stream_id": 0,
+          "packet_mode": true,
+          "enhancement_flag": 0,
+          "application_domain": 1,
+          "data_unit_indicator": 1,
+          "packet_id": 0,
+          "packet_data_bytes": 179,
+          "dab_user_application_type": 0
+        },
+        {
+          "type": 12,
+          "version_flag": 0,
+          "raw_hex": "0ac02d2d2d6b70",
+          "count": 35,
+          "short_id": 0,
+          "language": "---",
+          "country": "kp"
+        },
+        {
+          "type": 1,
+          "version_flag": 0,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "count": 35,
+          "short_id": 0,
+          "label": "조선중앙제2라지오방송"
+        }
+      ],
+      "time_entity_occurrences": [
+        {
+          "sdc_block_index": 69,
+          "raw_hex": "06877de55c"
+        }
+      ],
+      "components": {
+        "position_units": "One-based file line and zero-based channel callback ordinal, including CRC failures.",
+        "scope": "Nearest CRC-valid callbacks give receiver file order. FAC class consistency uses the current 72-bit format. A set RFU bit calls the interpretation of the entire FAC into question (ES 201 980 §6.3.3). Stream links require a type-0 allocation and a type-5 or type-9 descriptor in the same SDC block and configuration version.",
+        "fac_joint_states": [
+          {
+            "service_id": "A00002",
+            "short_id": 0,
+            "audio_ca": 0,
+            "language_code": 0,
+            "service": "data",
+            "service_descriptor": 0,
+            "data_ca": 0,
+            "number_of_services_code": 1,
+            "reconfiguration_index": 0,
+            "rm_flag": 0,
+            "toggle": 0,
+            "rfu": 0,
+            "audio": 0,
+            "data": 1,
+            "service_class_consistency": "permitted",
+            "format_flags": [],
+            "count": 295,
+            "first": {
+              "line": 3,
+              "channel_ordinal": 1
+            },
+            "last": {
+              "line": 398,
+              "channel_ordinal": 297
+            }
+          }
+        ],
+        "singleton_fac_services": [],
+        "sdc_crc_valid_blocks": 35,
+        "sdc_parseable_blocks": 35,
+        "sdc_component_sets": [
+          {
+            "envelopes": [
+              "06010002d8",
+              "0850c1b30000"
+            ],
+            "configurations": [
+              {
+                "version_flag": 0,
+                "configuration": "current",
+                "allocations": [
+                  {
+                    "type": 0,
+                    "raw_hex": "06010002d8",
+                    "protection_level_a": 0,
+                    "protection_level_b": 1,
+                    "streams": [
+                      {
+                        "stream_id": 0,
+                        "part_a_bytes": 0,
+                        "part_b_bytes": 728
+                      }
+                    ]
+                  }
+                ],
+                "descriptors": [
+                  {
+                    "type": 5,
+                    "raw_hex": "0850c1b30000",
+                    "short_id": 0,
+                    "stream_id": 0,
+                    "packet_mode": true,
+                    "enhancement_flag": 0,
+                    "application_domain": 1,
+                    "data_unit_indicator": 1,
+                    "packet_id": 0,
+                    "packet_data_bytes": 179,
+                    "dab_user_application_type": 0,
+                    "stream": {
+                      "stream_id": 0,
+                      "part_a_bytes": 0,
+                      "part_b_bytes": 728
+                    },
+                    "allocation_raw_hex": "06010002d8",
+                    "allocation_status": "stream_allocated"
+                  }
+                ],
+                "missing_types": [
+                  9
+                ]
+              },
+              {
+                "version_flag": 1,
+                "configuration": "next",
+                "allocations": [],
+                "descriptors": [],
+                "missing_types": [
+                  0,
+                  5,
+                  9
+                ]
+              }
+            ],
+            "count": 35,
+            "first": {
+              "line": 13,
+              "channel_ordinal": 3
+            },
+            "last": {
+              "line": 373,
+              "channel_ordinal": 93
+            }
+          }
+        ]
+      }
+    },
+    "1228-edogawa": {
+      "native_msc_sha256": "6ec15e2dfecf80ee9d946a81cff5c9ed35e2ec45109ae9bf414deddbaf9d888a",
+      "native_msc_rows": 293,
+      "source_sha256": "e0a2ab8bfeab7617f4c744d88b2b7d4c1b09f1398113ffa6083e6cfd25e23697",
+      "blocks": {
+        "FAC": {
+          "observed": 296,
+          "crc_passed": 292,
+          "crc_failed": 4
+        },
+        "SDC": {
+          "observed": 100,
+          "crc_passed": 86,
+          "crc_failed": 14
+        }
+      },
+      "fac_services": [
+        {
+          "service_id": "A00002",
+          "short_id": 0,
+          "audio_ca": 0,
+          "language_code": 0,
+          "service": "data",
+          "service_descriptor": 0,
+          "data_ca": 0,
+          "count": 292
+        }
+      ],
+      "fac_channel_parameters": [
+        {
+          "base_enhancement": 0,
+          "rm_flag": 0,
+          "spectrum_occupancy": 3,
+          "interleaver_depth_flag": 1,
+          "msc_mode": 3,
+          "sdc_mode": 0,
+          "number_of_services_code": 1,
+          "count": 292
+        }
+      ],
+      "fac_identities": {
+        "1": 98,
+        "2": 97,
+        "3": 97
+      },
+      "sdc_crc_passed_with_framing_error": {},
+      "sdc_entity_counts": {
+        "0": 86,
+        "1": 86,
+        "5": 86,
+        "8": 1,
+        "12": 86
+      },
+      "sdc_entities": [
+        {
+          "type": 0,
+          "version_flag": 0,
+          "raw_hex": "06010002d8",
+          "count": 86,
+          "protection_level_a": 0,
+          "protection_level_b": 1,
+          "streams": [
+            {
+              "stream_id": 0,
+              "part_a_bytes": 0,
+              "part_b_bytes": 728
+            }
+          ]
+        },
+        {
+          "type": 8,
+          "version_flag": 0,
+          "raw_hex": "06877de55b",
+          "count": 1,
+          "mjd": 61372,
+          "signalled_utc_minute": "2026-11-28T21:27Z",
+          "local_offset_minutes": null
+        },
+        {
+          "type": 5,
+          "version_flag": 0,
+          "raw_hex": "0850c1b30000",
+          "count": 86,
+          "short_id": 0,
+          "stream_id": 0,
+          "packet_mode": true,
+          "enhancement_flag": 0,
+          "application_domain": 1,
+          "data_unit_indicator": 1,
+          "packet_id": 0,
+          "packet_data_bytes": 179,
+          "dab_user_application_type": 0
+        },
+        {
+          "type": 12,
+          "version_flag": 0,
+          "raw_hex": "0ac02d2d2d6b70",
+          "count": 86,
+          "short_id": 0,
+          "language": "---",
+          "country": "kp"
+        },
+        {
+          "type": 1,
+          "version_flag": 0,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "count": 86,
+          "short_id": 0,
+          "label": "조선중앙제2라지오방송"
+        }
+      ],
+      "time_entity_occurrences": [
+        {
+          "sdc_block_index": 20,
+          "raw_hex": "06877de55b"
+        }
+      ],
+      "components": {
+        "position_units": "One-based file line and zero-based channel callback ordinal, including CRC failures.",
+        "scope": "Nearest CRC-valid callbacks give receiver file order. FAC class consistency uses the current 72-bit format. A set RFU bit calls the interpretation of the entire FAC into question (ES 201 980 §6.3.3). Stream links require a type-0 allocation and a type-5 or type-9 descriptor in the same SDC block and configuration version.",
+        "fac_joint_states": [
+          {
+            "service_id": "A00002",
+            "short_id": 0,
+            "audio_ca": 0,
+            "language_code": 0,
+            "service": "data",
+            "service_descriptor": 0,
+            "data_ca": 0,
+            "number_of_services_code": 1,
+            "reconfiguration_index": 0,
+            "rm_flag": 0,
+            "toggle": 0,
+            "rfu": 0,
+            "audio": 0,
+            "data": 1,
+            "service_class_consistency": "permitted",
+            "format_flags": [],
+            "count": 292,
+            "first": {
+              "line": 3,
+              "channel_ordinal": 0
+            },
+            "last": {
+              "line": 396,
+              "channel_ordinal": 295
+            }
+          }
+        ],
+        "singleton_fac_services": [],
+        "sdc_crc_valid_blocks": 86,
+        "sdc_parseable_blocks": 86,
+        "sdc_component_sets": [
+          {
+            "envelopes": [
+              "06010002d8",
+              "0850c1b30000"
+            ],
+            "configurations": [
+              {
+                "version_flag": 0,
+                "configuration": "current",
+                "allocations": [
+                  {
+                    "type": 0,
+                    "raw_hex": "06010002d8",
+                    "protection_level_a": 0,
+                    "protection_level_b": 1,
+                    "streams": [
+                      {
+                        "stream_id": 0,
+                        "part_a_bytes": 0,
+                        "part_b_bytes": 728
+                      }
+                    ]
+                  }
+                ],
+                "descriptors": [
+                  {
+                    "type": 5,
+                    "raw_hex": "0850c1b30000",
+                    "short_id": 0,
+                    "stream_id": 0,
+                    "packet_mode": true,
+                    "enhancement_flag": 0,
+                    "application_domain": 1,
+                    "data_unit_indicator": 1,
+                    "packet_id": 0,
+                    "packet_data_bytes": 179,
+                    "dab_user_application_type": 0,
+                    "stream": {
+                      "stream_id": 0,
+                      "part_a_bytes": 0,
+                      "part_b_bytes": 728
+                    },
+                    "allocation_raw_hex": "06010002d8",
+                    "allocation_status": "stream_allocated"
+                  }
+                ],
+                "missing_types": [
+                  9
+                ]
+              },
+              {
+                "version_flag": 1,
+                "configuration": "next",
+                "allocations": [],
+                "descriptors": [],
+                "missing_types": [
+                  0,
+                  5,
+                  9
+                ]
+              }
+            ],
+            "count": 86,
+            "first": {
+              "line": 2,
+              "channel_ordinal": 1
+            },
+            "last": {
+              "line": 386,
+              "channel_ordinal": 97
+            }
+          }
+        ]
+      }
+    },
+    "1232-yokohama": {
+      "native_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+      "native_msc_rows": 220,
+      "source_sha256": "6e6eb33659c97752d38fc4c93c63966b9271169b7cb516c74e80dfe80a8dbb88",
+      "blocks": {
+        "FAC": {
+          "observed": 222,
+          "crc_passed": 222,
+          "crc_failed": 0
+        },
+        "SDC": {
+          "observed": 76,
+          "crc_passed": 74,
+          "crc_failed": 2
+        }
+      },
+      "fac_services": [
+        {
+          "service_id": "A00002",
+          "short_id": 0,
+          "audio_ca": 0,
+          "language_code": 0,
+          "service": "data",
+          "service_descriptor": 0,
+          "data_ca": 0,
+          "count": 222
+        }
+      ],
+      "fac_channel_parameters": [
+        {
+          "base_enhancement": 0,
+          "rm_flag": 0,
+          "spectrum_occupancy": 3,
+          "interleaver_depth_flag": 1,
+          "msc_mode": 3,
+          "sdc_mode": 0,
+          "number_of_services_code": 1,
+          "count": 222
+        }
+      ],
+      "fac_identities": {
+        "1": 74,
+        "2": 74,
+        "3": 74
+      },
+      "sdc_crc_passed_with_framing_error": {},
+      "sdc_entity_counts": {
+        "0": 74,
+        "1": 74,
+        "5": 74,
+        "8": 1,
+        "12": 74
+      },
+      "sdc_entities": [
+        {
+          "type": 0,
+          "version_flag": 0,
+          "raw_hex": "06010002d8",
+          "count": 74,
+          "protection_level_a": 0,
+          "protection_level_b": 1,
+          "streams": [
+            {
+              "stream_id": 0,
+              "part_a_bytes": 0,
+              "part_b_bytes": 728
+            }
+          ]
+        },
+        {
+          "type": 8,
+          "version_flag": 0,
+          "raw_hex": "06877de560",
+          "count": 1,
+          "mjd": 61372,
+          "signalled_utc_minute": "2026-11-28T21:32Z",
+          "local_offset_minutes": null
+        },
+        {
+          "type": 5,
+          "version_flag": 0,
+          "raw_hex": "0850c1b30000",
+          "count": 74,
+          "short_id": 0,
+          "stream_id": 0,
+          "packet_mode": true,
+          "enhancement_flag": 0,
+          "application_domain": 1,
+          "data_unit_indicator": 1,
+          "packet_id": 0,
+          "packet_data_bytes": 179,
+          "dab_user_application_type": 0
+        },
+        {
+          "type": 12,
+          "version_flag": 0,
+          "raw_hex": "0ac02d2d2d6b70",
+          "count": 74,
+          "short_id": 0,
+          "language": "---",
+          "country": "kp"
+        },
+        {
+          "type": 1,
+          "version_flag": 0,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "count": 74,
+          "short_id": 0,
+          "label": "조선중앙제2라지오방송"
+        }
+      ],
+      "time_entity_occurrences": [
+        {
+          "sdc_block_index": 50,
+          "raw_hex": "06877de560"
+        }
+      ],
+      "components": {
+        "position_units": "One-based file line and zero-based channel callback ordinal, including CRC failures.",
+        "scope": "Nearest CRC-valid callbacks give receiver file order. FAC class consistency uses the current 72-bit format. A set RFU bit calls the interpretation of the entire FAC into question (ES 201 980 §6.3.3). Stream links require a type-0 allocation and a type-5 or type-9 descriptor in the same SDC block and configuration version.",
+        "fac_joint_states": [
+          {
+            "service_id": "A00002",
+            "short_id": 0,
+            "audio_ca": 0,
+            "language_code": 0,
+            "service": "data",
+            "service_descriptor": 0,
+            "data_ca": 0,
+            "number_of_services_code": 1,
+            "reconfiguration_index": 0,
+            "rm_flag": 0,
+            "toggle": 0,
+            "rfu": 0,
+            "audio": 0,
+            "data": 1,
+            "service_class_consistency": "permitted",
+            "format_flags": [],
+            "count": 222,
+            "first": {
+              "line": 3,
+              "channel_ordinal": 0
+            },
+            "last": {
+              "line": 298,
+              "channel_ordinal": 221
+            }
+          }
+        ],
+        "singleton_fac_services": [],
+        "sdc_crc_valid_blocks": 74,
+        "sdc_parseable_blocks": 74,
+        "sdc_component_sets": [
+          {
+            "envelopes": [
+              "06010002d8",
+              "0850c1b30000"
+            ],
+            "configurations": [
+              {
+                "version_flag": 0,
+                "configuration": "current",
+                "allocations": [
+                  {
+                    "type": 0,
+                    "raw_hex": "06010002d8",
+                    "protection_level_a": 0,
+                    "protection_level_b": 1,
+                    "streams": [
+                      {
+                        "stream_id": 0,
+                        "part_a_bytes": 0,
+                        "part_b_bytes": 728
+                      }
+                    ]
+                  }
+                ],
+                "descriptors": [
+                  {
+                    "type": 5,
+                    "raw_hex": "0850c1b30000",
+                    "short_id": 0,
+                    "stream_id": 0,
+                    "packet_mode": true,
+                    "enhancement_flag": 0,
+                    "application_domain": 1,
+                    "data_unit_indicator": 1,
+                    "packet_id": 0,
+                    "packet_data_bytes": 179,
+                    "dab_user_application_type": 0,
+                    "stream": {
+                      "stream_id": 0,
+                      "part_a_bytes": 0,
+                      "part_b_bytes": 728
+                    },
+                    "allocation_raw_hex": "06010002d8",
+                    "allocation_status": "stream_allocated"
+                  }
+                ],
+                "missing_types": [
+                  9
+                ]
+              },
+              {
+                "version_flag": 1,
+                "configuration": "next",
+                "allocations": [],
+                "descriptors": [],
+                "missing_types": [
+                  0,
+                  5,
+                  9
+                ]
+              }
+            ],
+            "count": 74,
+            "first": {
+              "line": 4,
+              "channel_ordinal": 2
+            },
+            "last": {
+              "line": 296,
+              "channel_ordinal": 75
+            }
+          }
+        ]
+      }
+    },
+    "1232-edogawa": {
+      "native_msc_sha256": "08ff30e342446c25dd7b47d6009fb0ede1f6424df3888353b30aee2d393a1746",
+      "native_msc_rows": 218,
+      "source_sha256": "7c2c8dafca0c3509d9a14c064e2d3089be4f30aad508cf613a86315a98332db6",
+      "blocks": {
+        "FAC": {
+          "observed": 221,
+          "crc_passed": 219,
+          "crc_failed": 2
+        },
+        "SDC": {
+          "observed": 76,
+          "crc_passed": 64,
+          "crc_failed": 12
+        }
+      },
+      "fac_services": [
+        {
+          "service_id": "A00002",
+          "short_id": 0,
+          "audio_ca": 0,
+          "language_code": 0,
+          "service": "data",
+          "service_descriptor": 0,
+          "data_ca": 0,
+          "count": 219
+        }
+      ],
+      "fac_channel_parameters": [
+        {
+          "base_enhancement": 0,
+          "rm_flag": 0,
+          "spectrum_occupancy": 3,
+          "interleaver_depth_flag": 1,
+          "msc_mode": 3,
+          "sdc_mode": 0,
+          "number_of_services_code": 1,
+          "count": 219
+        }
+      ],
+      "fac_identities": {
+        "1": 72,
+        "2": 73,
+        "3": 74
+      },
+      "sdc_crc_passed_with_framing_error": {},
+      "sdc_entity_counts": {
+        "0": 64,
+        "1": 64,
+        "5": 64,
+        "8": 1,
+        "12": 64
+      },
+      "sdc_entities": [
+        {
+          "type": 0,
+          "version_flag": 0,
+          "raw_hex": "06010002d8",
+          "count": 64,
+          "protection_level_a": 0,
+          "protection_level_b": 1,
+          "streams": [
+            {
+              "stream_id": 0,
+              "part_a_bytes": 0,
+              "part_b_bytes": 728
+            }
+          ]
+        },
+        {
+          "type": 8,
+          "version_flag": 0,
+          "raw_hex": "06877de560",
+          "count": 1,
+          "mjd": 61372,
+          "signalled_utc_minute": "2026-11-28T21:32Z",
+          "local_offset_minutes": null
+        },
+        {
+          "type": 5,
+          "version_flag": 0,
+          "raw_hex": "0850c1b30000",
+          "count": 64,
+          "short_id": 0,
+          "stream_id": 0,
+          "packet_mode": true,
+          "enhancement_flag": 0,
+          "application_domain": 1,
+          "data_unit_indicator": 1,
+          "packet_id": 0,
+          "packet_data_bytes": 179,
+          "dab_user_application_type": 0
+        },
+        {
+          "type": 12,
+          "version_flag": 0,
+          "raw_hex": "0ac02d2d2d6b70",
+          "count": 64,
+          "short_id": 0,
+          "language": "---",
+          "country": "kp"
+        },
+        {
+          "type": 1,
+          "version_flag": 0,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "count": 64,
+          "short_id": 0,
+          "label": "조선중앙제2라지오방송"
+        }
+      ],
+      "time_entity_occurrences": [
+        {
+          "sdc_block_index": 49,
+          "raw_hex": "06877de560"
+        }
+      ],
+      "components": {
+        "position_units": "One-based file line and zero-based channel callback ordinal, including CRC failures.",
+        "scope": "Nearest CRC-valid callbacks give receiver file order. FAC class consistency uses the current 72-bit format. A set RFU bit calls the interpretation of the entire FAC into question (ES 201 980 §6.3.3). Stream links require a type-0 allocation and a type-5 or type-9 descriptor in the same SDC block and configuration version.",
+        "fac_joint_states": [
+          {
+            "service_id": "A00002",
+            "short_id": 0,
+            "audio_ca": 0,
+            "language_code": 0,
+            "service": "data",
+            "service_descriptor": 0,
+            "data_ca": 0,
+            "number_of_services_code": 1,
+            "reconfiguration_index": 0,
+            "rm_flag": 0,
+            "toggle": 0,
+            "rfu": 0,
+            "audio": 0,
+            "data": 1,
+            "service_class_consistency": "permitted",
+            "format_flags": [],
+            "count": 219,
+            "first": {
+              "line": 3,
+              "channel_ordinal": 0
+            },
+            "last": {
+              "line": 297,
+              "channel_ordinal": 220
+            }
+          }
+        ],
+        "singleton_fac_services": [],
+        "sdc_crc_valid_blocks": 64,
+        "sdc_parseable_blocks": 64,
+        "sdc_component_sets": [
+          {
+            "envelopes": [
+              "06010002d8",
+              "0850c1b30000"
+            ],
+            "configurations": [
+              {
+                "version_flag": 0,
+                "configuration": "current",
+                "allocations": [
+                  {
+                    "type": 0,
+                    "raw_hex": "06010002d8",
+                    "protection_level_a": 0,
+                    "protection_level_b": 1,
+                    "streams": [
+                      {
+                        "stream_id": 0,
+                        "part_a_bytes": 0,
+                        "part_b_bytes": 728
+                      }
+                    ]
+                  }
+                ],
+                "descriptors": [
+                  {
+                    "type": 5,
+                    "raw_hex": "0850c1b30000",
+                    "short_id": 0,
+                    "stream_id": 0,
+                    "packet_mode": true,
+                    "enhancement_flag": 0,
+                    "application_domain": 1,
+                    "data_unit_indicator": 1,
+                    "packet_id": 0,
+                    "packet_data_bytes": 179,
+                    "dab_user_application_type": 0,
+                    "stream": {
+                      "stream_id": 0,
+                      "part_a_bytes": 0,
+                      "part_b_bytes": 728
+                    },
+                    "allocation_raw_hex": "06010002d8",
+                    "allocation_status": "stream_allocated"
+                  }
+                ],
+                "missing_types": [
+                  9
+                ]
+              },
+              {
+                "version_flag": 1,
+                "configuration": "next",
+                "allocations": [],
+                "descriptors": [],
+                "missing_types": [
+                  0,
+                  5,
+                  9
+                ]
+              }
+            ],
+            "count": 64,
+            "first": {
+              "line": 4,
+              "channel_ordinal": 2
+            },
+            "last": {
+              "line": 276,
+              "channel_ordinal": 70
+            }
+          }
+        ]
+      }
+    },
+    "nov27-3205-360-420": {
+      "native_msc_sha256": "e3d44c7da7d4c8e4001933aeb613e7aee3b6a98d70cadb311b221a56e064664f",
+      "native_msc_rows": 144,
+      "source_sha256": "6f1e8ebc4d6e2a9ce212c1f10b5fa31c938fcab5ba69fa3d377fbb2fc269471e",
+      "blocks": {
+        "FAC": {
+          "observed": 146,
+          "crc_passed": 146,
+          "crc_failed": 0
+        },
+        "SDC": {
+          "observed": 51,
+          "crc_passed": 48,
+          "crc_failed": 3
+        }
+      },
+      "fac_services": [
+        {
+          "service_id": "A00002",
+          "short_id": 0,
+          "audio_ca": 0,
+          "language_code": 0,
+          "service": "data",
+          "service_descriptor": 0,
+          "data_ca": 0,
+          "count": 146
+        }
+      ],
+      "fac_channel_parameters": [
+        {
+          "base_enhancement": 0,
+          "rm_flag": 0,
+          "spectrum_occupancy": 3,
+          "interleaver_depth_flag": 1,
+          "msc_mode": 3,
+          "sdc_mode": 0,
+          "number_of_services_code": 1,
+          "count": 146
+        }
+      ],
+      "fac_identities": {
+        "1": 48,
+        "2": 49,
+        "3": 49
+      },
+      "sdc_crc_passed_with_framing_error": {},
+      "sdc_entity_counts": {
+        "0": 48,
+        "1": 48,
+        "5": 48,
+        "8": 1,
+        "12": 48
+      },
+      "sdc_entities": [
+        {
+          "type": 0,
+          "version_flag": 0,
+          "raw_hex": "06010002d8",
+          "count": 48,
+          "protection_level_a": 0,
+          "protection_level_b": 1,
+          "streams": [
+            {
+              "stream_id": 0,
+              "part_a_bytes": 0,
+              "part_b_bytes": 728
+            }
+          ]
+        },
+        {
+          "type": 8,
+          "version_flag": 0,
+          "raw_hex": "06877ddd54",
+          "count": 1,
+          "mjd": 61371,
+          "signalled_utc_minute": "2026-11-27T21:20Z",
+          "local_offset_minutes": null
+        },
+        {
+          "type": 5,
+          "version_flag": 0,
+          "raw_hex": "0850c1b30000",
+          "count": 48,
+          "short_id": 0,
+          "stream_id": 0,
+          "packet_mode": true,
+          "enhancement_flag": 0,
+          "application_domain": 1,
+          "data_unit_indicator": 1,
+          "packet_id": 0,
+          "packet_data_bytes": 179,
+          "dab_user_application_type": 0
+        },
+        {
+          "type": 12,
+          "version_flag": 0,
+          "raw_hex": "0ac02d2d2d6b70",
+          "count": 48,
+          "short_id": 0,
+          "language": "---",
+          "country": "kp"
+        },
+        {
+          "type": 1,
+          "version_flag": 0,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "count": 48,
+          "short_id": 0,
+          "label": "조선중앙제2라지오방송"
+        }
+      ],
+      "time_entity_occurrences": [
+        {
+          "sdc_block_index": 31,
+          "raw_hex": "06877ddd54"
+        }
+      ],
+      "components": {
+        "position_units": "One-based file line and zero-based channel callback ordinal, including CRC failures.",
+        "scope": "Nearest CRC-valid callbacks give receiver file order. FAC class consistency uses the current 72-bit format. A set RFU bit calls the interpretation of the entire FAC into question (ES 201 980 §6.3.3). Stream links require a type-0 allocation and a type-5 or type-9 descriptor in the same SDC block and configuration version.",
+        "fac_joint_states": [
+          {
+            "service_id": "A00002",
+            "short_id": 0,
+            "audio_ca": 0,
+            "language_code": 0,
+            "service": "data",
+            "service_descriptor": 0,
+            "data_ca": 0,
+            "number_of_services_code": 1,
+            "reconfiguration_index": 0,
+            "rm_flag": 0,
+            "toggle": 0,
+            "rfu": 0,
+            "audio": 0,
+            "data": 1,
+            "service_class_consistency": "permitted",
+            "format_flags": [],
+            "count": 146,
+            "first": {
+              "line": 3,
+              "channel_ordinal": 0
+            },
+            "last": {
+              "line": 197,
+              "channel_ordinal": 145
+            }
+          }
+        ],
+        "singleton_fac_services": [],
+        "sdc_crc_valid_blocks": 48,
+        "sdc_parseable_blocks": 48,
+        "sdc_component_sets": [
+          {
+            "envelopes": [
+              "06010002d8",
+              "0850c1b30000"
+            ],
+            "configurations": [
+              {
+                "version_flag": 0,
+                "configuration": "current",
+                "allocations": [
+                  {
+                    "type": 0,
+                    "raw_hex": "06010002d8",
+                    "protection_level_a": 0,
+                    "protection_level_b": 1,
+                    "streams": [
+                      {
+                        "stream_id": 0,
+                        "part_a_bytes": 0,
+                        "part_b_bytes": 728
+                      }
+                    ]
+                  }
+                ],
+                "descriptors": [
+                  {
+                    "type": 5,
+                    "raw_hex": "0850c1b30000",
+                    "short_id": 0,
+                    "stream_id": 0,
+                    "packet_mode": true,
+                    "enhancement_flag": 0,
+                    "application_domain": 1,
+                    "data_unit_indicator": 1,
+                    "packet_id": 0,
+                    "packet_data_bytes": 179,
+                    "dab_user_application_type": 0,
+                    "stream": {
+                      "stream_id": 0,
+                      "part_a_bytes": 0,
+                      "part_b_bytes": 728
+                    },
+                    "allocation_raw_hex": "06010002d8",
+                    "allocation_status": "stream_allocated"
+                  }
+                ],
+                "missing_types": [
+                  9
+                ]
+              },
+              {
+                "version_flag": 1,
+                "configuration": "next",
+                "allocations": [],
+                "descriptors": [],
+                "missing_types": [
+                  0,
+                  5,
+                  9
+                ]
+              }
+            ],
+            "count": 48,
+            "first": {
+              "line": 4,
+              "channel_ordinal": 2
+            },
+            "last": {
+              "line": 196,
+              "channel_ordinal": 50
+            }
+          }
+        ]
+      }
+    }
+  },
+  "pair_comparisons": [
+    {
+      "sites": [
+        "1228-yokohama",
+        "1228-edogawa"
+      ],
+      "shared_sdc_envelopes": [
+        {
+          "type": 0,
+          "raw_hex": "06010002d8",
+          "first_count": 35,
+          "second_count": 86
+        },
+        {
+          "type": 5,
+          "raw_hex": "0850c1b30000",
+          "first_count": 35,
+          "second_count": 86
+        },
+        {
+          "type": 12,
+          "raw_hex": "0ac02d2d2d6b70",
+          "first_count": 35,
+          "second_count": 86
+        },
+        {
+          "type": 1,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "first_count": 35,
+          "second_count": 86
+        }
+      ]
+    },
+    {
+      "sites": [
+        "1232-yokohama",
+        "1232-edogawa"
+      ],
+      "shared_sdc_envelopes": [
+        {
+          "type": 0,
+          "raw_hex": "06010002d8",
+          "first_count": 74,
+          "second_count": 64
+        },
+        {
+          "type": 8,
+          "raw_hex": "06877de560",
+          "first_count": 1,
+          "second_count": 1
+        },
+        {
+          "type": 5,
+          "raw_hex": "0850c1b30000",
+          "first_count": 74,
+          "second_count": 64
+        },
+        {
+          "type": 12,
+          "raw_hex": "0ac02d2d2d6b70",
+          "first_count": 74,
+          "second_count": 64
+        },
+        {
+          "type": 1,
+          "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+          "first_count": 74,
+          "second_count": 64
+        }
+      ]
+    }
+  ]
+}
