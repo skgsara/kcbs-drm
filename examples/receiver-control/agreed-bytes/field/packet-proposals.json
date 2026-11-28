@@ -1,0 +1,61 @@
+{
+  "format": "two-branch-physical-packet-proposals-v1",
+  "primary_msc_sha256": "24da9cfc61dfc4d593ba8f62d036bda3bc419de15f98c7397622a58426344e7b",
+  "alternate_msc_sha256": "0eb2a63c7f0fc6482970c8aa3e3c3e140738a13308a9c645eb685b0b2379a87c",
+  "max_disagreements": 12,
+  "native_rows": [
+    294,
+    294
+  ],
+  "aligned_rows": 271,
+  "rejected_alignment_rows": 0,
+  "counts": {
+    "both_rejected": 72,
+    "identical_crc_failed": 48,
+    "inconsistent": 15,
+    "more_than_limit": 7,
+    "unique_packet": 1,
+    "wrong_header": 1
+  },
+  "proposed_packets": 1,
+  "proposals": [
+    {
+      "primary_row": 114,
+      "alternate_row": 114,
+      "ordinal": 0,
+      "differing_bits": 11,
+      "rank": 11,
+      "disagreements_msb0": [
+        638,
+        639,
+        640,
+        643,
+        1024,
+        1025,
+        1029,
+        1032,
+        1034,
+        1036,
+        1039
+      ],
+      "primary_flips_msb0": [
+        638,
+        639,
+        640,
+        643
+      ],
+      "original_primary_sha256": "08e2928400852ede1681d451c5bcd8fe15c71823462a2e633137ccd78be5b08c",
+      "original_alternate_sha256": "d3a692b9a6062c07459547d3557c111b748ebdf718067445c70c26069b9a6424",
+      "proposed_wire_sha256": "d7187233ca8527841803ddddf8d67310dedaa38e5f198f417a5fd9ab9651369f",
+      "sibling_sources": {
+        "1": "primary",
+        "2": "primary",
+        "3": "primary"
+      },
+      "proposed_du_sha256": "ef4bcbe67302a7c4ea039568856589347c12b560a9533d988b57b6170141a0ce",
+      "transmitted_du_crc": "cf6f",
+      "primary_payload_octets_changed": 2
+    }
+  ],
+  "scope": "Proposals assume every bit where both hard decodes agree is correct. Packet and DU CRCs share a polynomial. Only a separate observation can test common errors."
+}
