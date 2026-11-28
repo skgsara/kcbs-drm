@@ -1,0 +1,370 @@
+{
+  "preselection_sha256": "e5add8a57feab781cb176e5f7785285698f44dcb9e0bdc7e531708779d3b26ca",
+  "comparison": "Different fixed receiver settings applied to exactly the same saved source; no external carrier included.",
+  "original_frozen_primary": 43907925,
+  "primary_complete_all_three": true,
+  "windows": {
+    "mlc1": {
+      "0": {
+        "raw": {
+          "bytes": 1089216,
+          "record_sizes": {
+            "728": 1488
+          },
+          "native_crc": {
+            "packet_CRC_trials": 5952,
+            "packet_CRC_passes": 5879,
+            "four_passing_packet_CRCs": 1459,
+            "also_passing_DU_CRC": 1459,
+            "CRC_passing_packets_with_unexpected_header": 0
+          },
+          "sha256": "963c60f81ba65d2149e856e9d26e8684bd7bdf527b014d4223027c2ac0ad3477"
+        },
+        "assigned": 5811,
+        "complete_dus": 1447,
+        "complete_groups": 476
+      },
+      "1": {
+        "raw": {
+          "bytes": 1094340,
+          "record_sizes": {
+            "728": 1495
+          },
+          "native_crc": {
+            "packet_CRC_trials": 5980,
+            "packet_CRC_passes": 5936,
+            "four_passing_packet_CRCs": 1472,
+            "also_passing_DU_CRC": 1472,
+            "CRC_passing_packets_with_unexpected_header": 0
+          },
+          "sha256": "b224e50eb8e438c70159b54e43f8c9899e65cbd150971fe5fa1e122f338f8085"
+        },
+        "assigned": 5863,
+        "complete_dus": 1462,
+        "complete_groups": 484
+      },
+      "2": {
+        "raw": {
+          "bytes": 346236,
+          "record_sizes": {
+            "728": 473
+          },
+          "native_crc": {
+            "packet_CRC_trials": 1892,
+            "packet_CRC_passes": 1888,
+            "four_passing_packet_CRCs": 471,
+            "also_passing_DU_CRC": 471,
+            "CRC_passing_packets_with_unexpected_header": 0
+          },
+          "sha256": "98c928f65afb25fa1b37b2b849e56cdced7257d8462210aae2d7ee482126b01a"
+        },
+        "assigned": 1871,
+        "complete_dus": 467,
+        "complete_groups": 155
+      }
+    },
+    "mlc4": {
+      "0": {
+        "raw": {
+          "bytes": 1089216,
+          "record_sizes": {
+            "728": 1488
+          },
+          "native_crc": {
+            "packet_CRC_trials": 5952,
+            "packet_CRC_passes": 5881,
+            "four_passing_packet_CRCs": 1460,
+            "also_passing_DU_CRC": 1460,
+            "CRC_passing_packets_with_unexpected_header": 0
+          },
+          "sha256": "92aab4400f8ee8611757a8e0286ad0f6eeaa768882ceda7f15823b1d111a1429"
+        },
+        "assigned": 5819,
+        "complete_dus": 1449,
+        "complete_groups": 477
+      },
+      "1": {
+        "raw": {
+          "bytes": 1094340,
+          "record_sizes": {
+            "728": 1495
+          },
+          "native_crc": {
+            "packet_CRC_trials": 5980,
+            "packet_CRC_passes": 5937,
+            "four_passing_packet_CRCs": 1473,
+            "also_passing_DU_CRC": 1473,
+            "CRC_passing_packets_with_unexpected_header": 0
+          },
+          "sha256": "247072abf1316198ec14f68c2b1dedf91eb710b1f73246571c8e0303fc641d53"
+        },
+        "assigned": 5863,
+        "complete_dus": 1462,
+        "complete_groups": 484
+      },
+      "2": {
+        "raw": {
+          "bytes": 346236,
+          "record_sizes": {
+            "728": 473
+          },
+          "native_crc": {
+            "packet_CRC_trials": 1892,
+            "packet_CRC_passes": 1888,
+            "four_passing_packet_CRCs": 471,
+            "also_passing_DU_CRC": 471,
+            "CRC_passing_packets_with_unexpected_header": 0
+          },
+          "sha256": "98c928f65afb25fa1b37b2b849e56cdced7257d8462210aae2d7ee482126b01a"
+        },
+        "assigned": 1871,
+        "complete_dus": 467,
+        "complete_groups": 155
+      }
+    }
+  },
+  "profile_totals": {
+    "baseline": {
+      "assigned_packets": 13381,
+      "complete_dus": 3335,
+      "complete_groups": 1102,
+      "assigned_counters": 1121
+    },
+    "four_iterations": {
+      "assigned_packets": 13389,
+      "complete_dus": 3337,
+      "complete_groups": 1103,
+      "assigned_counters": 1121
+    },
+    "combined": {
+      "assigned_packets": 13389,
+      "complete_dus": 3337,
+      "complete_groups": 1103,
+      "assigned_counters": 1121
+    }
+  },
+  "shared_182byte_exact_packets": 13381,
+  "disagreements": 0,
+  "baseline_coordinates_lost": 0,
+  "distinct_newly_assigned_packets": [
+    [
+      43908298,
+      1,
+      0
+    ],
+    [
+      43908298,
+      1,
+      1
+    ],
+    [
+      43908298,
+      1,
+      2
+    ],
+    [
+      43908298,
+      1,
+      3
+    ],
+    [
+      43908298,
+      2,
+      0
+    ],
+    [
+      43908298,
+      2,
+      1
+    ],
+    [
+      43908298,
+      2,
+      2
+    ],
+    [
+      43908298,
+      2,
+      3
+    ]
+  ],
+  "new_complete_du_coords": [
+    [
+      43908298,
+      1
+    ],
+    [
+      43908298,
+      2
+    ]
+  ],
+  "new_complete_groups": [
+    43908298
+  ],
+  "new_distinct_counters": [],
+  "new_groups_prior_registry_overlap": [
+    43908298
+  ],
+  "remaining_fully_absent_counter_ranges": [
+    [
+      43907948,
+      43907953
+    ],
+    [
+      43908105,
+      43908105
+    ],
+    [
+      43908117,
+      43908117
+    ],
+    [
+      43908299,
+      43908299
+    ],
+    [
+      43908502,
+      43908502
+    ],
+    [
+      43908544,
+      43908544
+    ],
+    [
+      43908759,
+      43908759
+    ],
+    [
+      43908811,
+      43908813
+    ],
+    [
+      43908825,
+      43908825
+    ],
+    [
+      43908937,
+      43908937
+    ]
+  ],
+  "remaining_counters_missing_complete_group": 35,
+  "corrected_target": {
+    "counter": 43908298,
+    "observations": {
+      "mlc1": [
+        {
+          "original_row": 1114,
+          "phase": 0,
+          "valid_packets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "valid_du_crc": true,
+          "du_crc16": "639f",
+          "du_sha256": "715a324da7fe3254f1d0b0da4de5de555bf9ca7b53bdbe2f1cbdfc3991d698a9"
+        },
+        {
+          "original_row": 1115,
+          "phase": 1,
+          "valid_packets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "valid_du_crc": true,
+          "du_crc16": "85d0",
+          "du_sha256": "e6ad75adf1dad615b8823ebbf6baeb7dbe88701982238799e13b3799cdd0c5a0"
+        },
+        {
+          "original_row": 1116,
+          "phase": 2,
+          "valid_packets": [
+            0,
+            2,
+            3
+          ],
+          "valid_du_crc": false,
+          "du_crc16": "6004"
+        }
+      ],
+      "mlc4": [
+        {
+          "original_row": 1114,
+          "phase": 0,
+          "valid_packets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "valid_du_crc": true,
+          "du_crc16": "639f",
+          "du_sha256": "715a324da7fe3254f1d0b0da4de5de555bf9ca7b53bdbe2f1cbdfc3991d698a9"
+        },
+        {
+          "original_row": 1115,
+          "phase": 1,
+          "valid_packets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "valid_du_crc": true,
+          "du_crc16": "85d0",
+          "du_sha256": "e6ad75adf1dad615b8823ebbf6baeb7dbe88701982238799e13b3799cdd0c5a0"
+        },
+        {
+          "original_row": 1116,
+          "phase": 2,
+          "valid_packets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "valid_du_crc": true,
+          "du_crc16": "6004",
+          "du_sha256": "906347cdd697e475293b8478dee71cb13c40c7058bac5e6c242bcf1bea9c03e5"
+        }
+      ]
+    },
+    "different_wire_packets_after_decoding": [
+      [
+        2,
+        1
+      ]
+    ],
+    "explanation": "At row 1116/phase 2, only physical q1 changed across iterations. Its CRC and the native DU CRC pass on MLC4. The restored coherent three-phase run also anchors the unchanged complete phase 1 at row 1115. The eight newly assigned coordinates therefore include seven unchanged physical packets."
+  },
+  "archive": {
+    "packets.npz": "9dab3d5c09f0e08ee744b7b22e9734a4dcf80ddf55a1d43998d73ce8ad9f9dd4",
+    "data_units.npz": "54b255e92f8b3299062b4d29529f3c6f45ed4d7f873c4d2f73caf724327e6316",
+    "groups.npz": "be406c3fbfd5237a165a89a4192b8f0b34b0dba6ef743761114ff1027a740852",
+    "report.json": "2624160687b79579dd871e1b2b0d2819e97cf0880f08273409aaa0a42d4f0458",
+    "provenance.json": "df9d48ca78a1fba08ce9589c3d237a7ff69e383c833972390229d1a8e2f2240b"
+  },
+  "combined_equals_four_iteration_npz": {
+    "packets.npz": true,
+    "data_units.npz": true,
+    "groups.npz": true
+  },
+  "assembly": {
+    "files": 6,
+    "assigned_record_observations": 6782,
+    "original_complete_groups": 1103,
+    "salvaged_complete_groups": 1103,
+    "extra_groups": 0,
+    "missing_baseline_groups": [],
+    "crc_good_data_units": 3337,
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "candidate_key_groups": 0,
+    "verified_text_key_groups": 0,
+    "note": "Packet/DU CRCs verify container integrity, not text or codec keys.",
+    "text_candidates_evaluated": false
+  }
+}

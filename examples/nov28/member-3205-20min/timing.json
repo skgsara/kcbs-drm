@@ -1,0 +1,81 @@
+{
+  "peer_and_member_same_tick": 131724468,
+  "member_anchors_verified_individually": [
+    {
+      "first_and_last_verified_complete_du_ticks": [
+        131723775,
+        131725266
+      ],
+      "nominal_window_seconds": [
+        0.0,
+        600.0
+      ],
+      "candidate_anchor_bounds_s": [
+        277.2,
+        280.79999999999995
+      ],
+      "manifest_sha256": "b0be13cc5df8d55bf059e9507bc990ffbf2a4a206b95bacd62b1a122ba9c7f96"
+    },
+    {
+      "first_and_last_verified_complete_du_ticks": [
+        131725245,
+        131726736
+      ],
+      "nominal_window_seconds": [
+        588.0,
+        1188.0
+      ],
+      "candidate_anchor_bounds_s": [
+        277.2,
+        280.79999999999995
+      ],
+      "manifest_sha256": "f4d318dcde69ed8f91f0fce512341a78db4ea91425d877b75a22f89ef97510e2"
+    },
+    {
+      "first_and_last_verified_complete_du_ticks": [
+        131726718,
+        131727188
+      ],
+      "nominal_window_seconds": [
+        1176.0,
+        1368.2860833333334
+      ],
+      "candidate_anchor_bounds_s": [
+        276.0,
+        280.2860833333334
+      ],
+      "manifest_sha256": "5cb25248a56083a6b49922a0eeab180f160d47f46b97a6b846fa07317f9dc79e"
+    }
+  ],
+  "member_intersection_s": [
+    277.2,
+    280.2860833333334
+  ],
+  "peer_anchor": {
+    "first_and_last_verified_complete_du_ticks": [
+      131724468,
+      131724909
+    ],
+    "nominal_window_seconds": [
+      0.0,
+      180.0
+    ],
+    "candidate_anchor_bounds_s": [
+      0.0,
+      3.5999999999999943
+    ],
+    "manifest_sha256": "46a85a7d910e2ba988186bdd2ba7c83f003d939229aba25caecd0216aa3028f7"
+  },
+  "peer_sample0_timestamp_endpoints_utc": [
+    "2026-11-28T00:02:45.823090+00:00",
+    "2026-11-28T00:02:45.823088+00:00"
+  ],
+  "nominal_member_sample0_range_on_peer_clock": [
+    "2026-11-27T23:58:05.537005+00:00",
+    "2026-11-27T23:58:12.223090+00:00"
+  ],
+  "rounding_for_reporting": "about 23:58 UTC on November 27, 2026",
+  "assumption": "Shared CRC-valid DUs establish identical digital content. The estimate treats each stream as progressing at nominal 0.4s/tick, the physical reference time of each observed tick as inside its finite IQ acquisition, and intercarrier transmission delay as negligible at minute precision. Elapsed time bounds do not equate native row ordinal with a source timestamp.",
+  "uncertainty": "Member WAV has no acquisition timestamp. No direct per-MSC sample cursor or independent physical clock calibration on either end. Intercarrier encoder/transmitter/path delay is not independently measured; no unconditional civil-time bound follows.",
+  "member_receiver_vs_peer": "Comparing member waveform sample zero with Edogawa sample-zero UTC; service clock fields and file modification dates are not used."
+}

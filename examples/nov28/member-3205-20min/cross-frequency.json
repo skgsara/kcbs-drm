@@ -1,0 +1,1028 @@
+{
+  "format": "kcbs-cross-frequency-transport-v1",
+  "primary_counter": 43907925,
+  "scope": "Transmitted digital packet and DU bytes at the same assigned counters. The 3205 kHz WAV has no UTC timestamp. MLC4 uses the same member IQ as MLC1. Comparisons here concern only the member 3205 kHz and archived Edogawa 6140 kHz receptions.",
+  "source_coordinates": {
+    "packet": [
+      "counter",
+      "phase",
+      "packet_ordinal"
+    ],
+    "du": [
+      "counter",
+      "phase"
+    ],
+    "origins": "Named MSC source followed by zero-based physical record index. Each wire digest includes all 182 bytes."
+  },
+  "sources": {
+    "member_iq_basename": "IQ-3205khz-20261128.wav",
+    "member_iq_sha256": "bda3f500aaab2032de0e93c493e87650767be1504b29085679cf7082e4b5b952",
+    "edogawa_6140_start_utc": "2026-11-28T00:02:43.880840+00:00",
+    "edogawa_6140_flac": "examples/nov27/validation/swb-gsc/7l4iou-6140-20261128T0002Z-iq48.flac",
+    "edogawa_6140_flac_sha256": "e04f6ff1cd41eb3cfe84046f04de425ee129268494667ce4e76246365445f9df",
+    "edogawa_6140_du_archive": "examples/nov27/validation/swb-gsc/edogawa-data-units.npz",
+    "edogawa_6140_du_sha256": "99461ed346d48900aed781d6af9eb6ebac891af1a0302a85aecdfcf9a81ff7ac",
+    "member_mlc4_du_archive_sha256": "54b255e92f8b3299062b4d29529f3c6f45ed4d7f873c4d2f73caf724327e6316",
+    "raw_msc_sha256": {
+      "member_3205_mlc1_window0": "963c60f81ba65d2149e856e9d26e8684bd7bdf527b014d4223027c2ac0ad3477",
+      "member_3205_mlc1_window1": "b224e50eb8e438c70159b54e43f8c9899e65cbd150971fe5fa1e122f338f8085",
+      "member_3205_mlc1_window2": "98c928f65afb25fa1b37b2b849e56cdced7257d8462210aae2d7ee482126b01a",
+      "edogawa_6140": "fea03f5d0276dd3f754731d3f05ac6b595ef0aa051672463ba5b08fdfc9179fe",
+      "member_3205_mlc4_window0": "92aab4400f8ee8611757a8e0286ad0f6eeaa768882ceda7f15823b1d111a1429",
+      "member_3205_mlc4_window1": "247072abf1316198ec14f68c2b1dedf91eb710b1f73246571c8e0303fc641d53",
+      "member_3205_mlc4_window2": "98c928f65afb25fa1b37b2b849e56cdced7257d8462210aae2d7ee482126b01a"
+    }
+  },
+  "files_sha256": {
+    "member-dus.npz": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+    "extra-dus.npz": "448b5ff64f6e6c22541a9260a8f6de78a4a27e66d6467cff8c031bc5d8f0ac53",
+    "reception.json": "c10b343f27f86e3fb01ad84272028dd3888f7785b2e737e6feee10f57eadee4c",
+    "primary.json": "4ec3530dc5ea56a23ca0837c4dd03c066fc3162ce22587dc5976a1ebf49867af",
+    "carousel-coverage.json": "1cc59f97f1ffeb1a3e64bfc95e2189dd1d27da3d55d1fca4a81258cb7281190f",
+    "data_units.npz": "0fa947ffb7a15994c7923b8f7532d7d81429a4d9111900ba3d111977521e1311"
+  },
+  "physical_packets": {
+    "shared": 1201,
+    "byte_identical": 1201,
+    "differing": 0,
+    "matching_bytes": 218582,
+    "member_only": 12180,
+    "earlier_6140_only": 24,
+    "sha256_concatenated_shared_bytes_in_sorted_coordinate_order": "d03a178c30dd1c886bed77d0ec9ecee25ee645f6a225e41f637635c146b392e2"
+  },
+  "complete_data_units": {
+    "shared": 284,
+    "byte_identical": 284,
+    "differing": 0,
+    "matching_bytes": 203344,
+    "member_only": 3051,
+    "earlier_6140_only": 8,
+    "sha256_concatenated_shared_bytes_in_sorted_coordinate_order": "fd4365f1ee52a4f765e3ef065eb0bd0a567b265de1f2fe9b327664e264fc9c79"
+  },
+  "groups": {
+    "member": 1102,
+    "earlier_edogawa": 85,
+    "common": 81,
+    "combined": 1106,
+    "additional_complete_counters": [
+      43908227,
+      43908228,
+      43908298,
+      43908300
+    ]
+  },
+  "supplemental": {
+    "packets_in_union": 13405,
+    "dus_in_union": 3343,
+    "dus_requiring_mixed_packets": [],
+    "groups_requiring_mixed_complete_dus": [],
+    "complete_dus_added_to_member": 8,
+    "independently_reproduced_on_member_iq_mlc4": [
+      [
+        43908298,
+        1
+      ],
+      [
+        43908298,
+        2
+      ]
+    ],
+    "complete_only_on_earlier_6140": [
+      [
+        43908227,
+        2
+      ],
+      [
+        43908228,
+        0
+      ],
+      [
+        43908228,
+        1
+      ],
+      [
+        43908299,
+        0
+      ],
+      [
+        43908299,
+        1
+      ],
+      [
+        43908300,
+        0
+      ]
+    ],
+    "added_du_receipts": [
+      {
+        "counter": 43908227,
+        "phase": 2,
+        "du_crc16": "42EA",
+        "du_sha256": "86c954af1197676a6a5a7e3bc7ea8c727d0af7f1e474eaeb2073c491b0ae5b02",
+        "complete_in_member_mlc4": false,
+        "packets": [
+          {
+            "ordinal": 0,
+            "wire_sha256": "0fe2fc84976b0a0dbd9a37910f7c19744f2a8bc2b08425451108b047d5eb89af",
+            "wire_crc16": "4FE0",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                217
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                903
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                903
+              ]
+            ]
+          },
+          {
+            "ordinal": 1,
+            "wire_sha256": "8b3cc92f41e2876237cb774876a1c40bcfd2c15eda1ac580029618aca4e14e3d",
+            "wire_crc16": "BEF8",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                217
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                903
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                903
+              ]
+            ]
+          },
+          {
+            "ordinal": 2,
+            "wire_sha256": "f30a65a0a230c293c2146ce472f75d433d41582f4fc4aa1c9d7542258ca82d63",
+            "wire_crc16": "276D",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                217
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 3,
+            "wire_sha256": "0e8dc0210b908e8260a36b37297ca52aa1ef531b4b9f70162e1a45f8941e63aa",
+            "wire_crc16": "E9B3",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                217
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                903
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                903
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "counter": 43908228,
+        "phase": 0,
+        "du_crc16": "813A",
+        "du_sha256": "b295a73f84f4b9ae380dba624ada4954ceac30696ddd19681f6f2ac30b08d13a",
+        "complete_in_member_mlc4": false,
+        "packets": [
+          {
+            "ordinal": 0,
+            "wire_sha256": "64dfa8eeb3806135f411a207d8bc82e1450508e1b606985b3d1a2f9376911616",
+            "wire_crc16": "4FBE",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                218
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                904
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                904
+              ]
+            ]
+          },
+          {
+            "ordinal": 1,
+            "wire_sha256": "67bd949fd4c89d518a534109153e244816e1c510b8d4e634c40a4bb7eb857c6a",
+            "wire_crc16": "A0BD",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                218
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 2,
+            "wire_sha256": "4da94716eaf16b7a61a1bdcb850570ff5e6b70732ac07c7129182c47614a7a54",
+            "wire_crc16": "F87E",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                218
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                904
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                904
+              ]
+            ]
+          },
+          {
+            "ordinal": 3,
+            "wire_sha256": "3150a4a52b0472c4043d7a436fb76ac149b8025339c616b4532d9bcdec46429a",
+            "wire_crc16": "E904",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                218
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                904
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                904
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "counter": 43908228,
+        "phase": 1,
+        "du_crc16": "CBB4",
+        "du_sha256": "482643503f2c145fe1a00ab0bcb33bb43d42c550b9009512bdd38145345cd730",
+        "complete_in_member_mlc4": false,
+        "packets": [
+          {
+            "ordinal": 0,
+            "wire_sha256": "d91f04a13d4c0f92ba57890474ab3bfc85c68185addc59b690fc4af92661ebdd",
+            "wire_crc16": "6BC7",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                219
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                905
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                905
+              ]
+            ]
+          },
+          {
+            "ordinal": 1,
+            "wire_sha256": "ea65ff4f36df1c4fe8b14eef3026efe9a1cfcbd0e23e771d4cab788d2e4d987d",
+            "wire_crc16": "65BD",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                219
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 2,
+            "wire_sha256": "fd9beab19b8e69c34048cb3131e3165beeeedad53ee07bc987f8289c430e273a",
+            "wire_crc16": "486F",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                219
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                905
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                905
+              ]
+            ]
+          },
+          {
+            "ordinal": 3,
+            "wire_sha256": "16b1bb349c366cea4aa6a14fa371c8365eda30fdb0c0545a9edeb352f120c04a",
+            "wire_crc16": "5F6A",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                219
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          }
+        ]
+      },
+      {
+        "counter": 43908298,
+        "phase": 1,
+        "du_crc16": "85D0",
+        "du_sha256": "e6ad75adf1dad615b8823ebbf6baeb7dbe88701982238799e13b3799cdd0c5a0",
+        "complete_in_member_mlc4": true,
+        "packets": [
+          {
+            "ordinal": 0,
+            "wire_sha256": "ec75701ef3c7ff3f50281bca494a4cfb22c39ac8143636144860e8248bda9136",
+            "wire_crc16": "74BD",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                429
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1115
+              ]
+            ]
+          },
+          {
+            "ordinal": 1,
+            "wire_sha256": "f445d4e0279c0dc93c33b2b634926e43b285ccc80c7f1281b41d751a0fa2672b",
+            "wire_crc16": "F85B",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                429
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1115
+              ]
+            ]
+          },
+          {
+            "ordinal": 2,
+            "wire_sha256": "818c023d397c9af3b39dd1c1557d4caef090eb259311e49b6a6ac56e5b1df77e",
+            "wire_crc16": "F0D2",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                429
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1115
+              ]
+            ]
+          },
+          {
+            "ordinal": 3,
+            "wire_sha256": "e45dbfd8f8ff9ff0fe59e58a5c016fe528c2b585480e9f73795be9a6230b5cdb",
+            "wire_crc16": "54E9",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                429
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1115
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "counter": 43908298,
+        "phase": 2,
+        "du_crc16": "6004",
+        "du_sha256": "906347cdd697e475293b8478dee71cb13c40c7058bac5e6c242bcf1bea9c03e5",
+        "complete_in_member_mlc4": true,
+        "packets": [
+          {
+            "ordinal": 0,
+            "wire_sha256": "9c47ad3cab1febbe7a8f365cc4b687f3b5c8dfc446b40d686f454dafe05e9bd1",
+            "wire_crc16": "A9F0",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                430
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1116
+              ]
+            ]
+          },
+          {
+            "ordinal": 1,
+            "wire_sha256": "05edebe86e4a3cc5f4e549d2fcc82073db2654b8e9b78d7b9ce25bcc8f5c7d1c",
+            "wire_crc16": "0268",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                430
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1116
+              ]
+            ]
+          },
+          {
+            "ordinal": 2,
+            "wire_sha256": "7731b278bffe39484b572f2f16dbef97819c0902da6552ad1b3fa35299bb853d",
+            "wire_crc16": "B87B",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                430
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1116
+              ]
+            ]
+          },
+          {
+            "ordinal": 3,
+            "wire_sha256": "504ea39d903cd6acb74f98b9ca9138f9d96b4f105e32e1f66ed6e213bc9dad1f",
+            "wire_crc16": "E8E7",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                430
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1116
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "counter": 43908299,
+        "phase": 0,
+        "du_crc16": "B63D",
+        "du_sha256": "88318a1613a821973dbe798b6fde6de84ec793cea0646ab5a5e493b19ab0f4c1",
+        "complete_in_member_mlc4": false,
+        "packets": [
+          {
+            "ordinal": 0,
+            "wire_sha256": "d4f0b0a3b8b6f9decda8f0c3f09fdc732ffa704174c00843b39e1439e2eacfbd",
+            "wire_crc16": "37DB",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                431
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 1,
+            "wire_sha256": "00a58cb77d848318bb257ae33d93d760eb2b20200d22bc1b33db1219304fd866",
+            "wire_crc16": "C588",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                431
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 2,
+            "wire_sha256": "b54082cb5128af98f3ffb319f0fe712691352fe874214fec742e762ca15b2030",
+            "wire_crc16": "E351",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                431
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 3,
+            "wire_sha256": "fabb7c2a364545118145d941f5b8cd69fed718051f82962ba533ff44a9b6eb5c",
+            "wire_crc16": "C4CA",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                431
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          }
+        ]
+      },
+      {
+        "counter": 43908299,
+        "phase": 1,
+        "du_crc16": "1D88",
+        "du_sha256": "8ba1724a0f34e4ee6cc32109f30ce65c1b1ba3ccc2a618e3f51ddc0a745900f0",
+        "complete_in_member_mlc4": false,
+        "packets": [
+          {
+            "ordinal": 0,
+            "wire_sha256": "83b88efeef13646e6443dab2ebcf2ff723bc9e93dc0910ca8a48486e78538c27",
+            "wire_crc16": "77DE",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                432
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 1,
+            "wire_sha256": "5f67ff2157b08c797054c4bfe855fe4364705ac36dac4585554bda2e7f77ccd6",
+            "wire_crc16": "87DD",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                432
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 2,
+            "wire_sha256": "339881580031fe112b43ea414f5d3c5516e81fb1d1b4688364b5c61e82dbd66c",
+            "wire_crc16": "9501",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                432
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 3,
+            "wire_sha256": "530e8a36d2a4c65a320596cb95920a950a221a63819d20a0647531f1c7ac18d3",
+            "wire_crc16": "A42B",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                432
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          }
+        ]
+      },
+      {
+        "counter": 43908300,
+        "phase": 0,
+        "du_crc16": "1EEF",
+        "du_sha256": "ee4620970e25adb21e44933a3784af53a13bce96f4ebd5748815cd94801f57a0",
+        "complete_in_member_mlc4": false,
+        "packets": [
+          {
+            "ordinal": 0,
+            "wire_sha256": "17f5b1e2bf4b6492c92aecd288cb3310f327d698a9d585dda1aadefef24eddc7",
+            "wire_crc16": "C101",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                434
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                1120
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1120
+              ]
+            ]
+          },
+          {
+            "ordinal": 1,
+            "wire_sha256": "b0c46b2fa28564c728b164b463f9ee7a640a81ba15815eb2deaef5a456250859",
+            "wire_crc16": "30E0",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                434
+              ]
+            ],
+            "member_mlc1": [],
+            "member_mlc4": []
+          },
+          {
+            "ordinal": 2,
+            "wire_sha256": "3cc830312fd1e008846b4a2a311b522ad12b22ed16813bb0f28fa34dc35546e2",
+            "wire_crc16": "DBA9",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                434
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                1120
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1120
+              ]
+            ]
+          },
+          {
+            "ordinal": 3,
+            "wire_sha256": "b905e397bb45463cfd66e9593c1949fa704396e439aa924321f3cc53db1ad1ef",
+            "wire_crc16": "FB1D",
+            "edogawa_6140": [
+              [
+                "edogawa_6140",
+                434
+              ]
+            ],
+            "member_mlc1": [
+              [
+                "member_3205_mlc1_window0",
+                1120
+              ]
+            ],
+            "member_mlc4": [
+              [
+                "member_3205_mlc4_window0",
+                1120
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "historical_exposure": {
+    "frozen_inventory_sha256": "3d6250a63663684883de2ea727c471a4f79d95724afb8226b899e14b66d844d2",
+    "inventory_counter_count": 13735,
+    "member_assigned": 1121,
+    "peer_assigned": 120,
+    "combined_assigned": 1122,
+    "member_overlap_count": 119,
+    "member_new_to_inventory": 1002,
+    "all_member_overlap_explained_by_peer": true,
+    "peer_only_assigned_counters": [
+      43908299
+    ],
+    "primary_in_frozen_inventory": false,
+    "member_historical_counter_ids": [
+      43908156,
+      43908157,
+      43908158,
+      43908161,
+      43908162,
+      43908163,
+      43908164,
+      43908166,
+      43908167,
+      43908168,
+      43908169,
+      43908174,
+      43908176,
+      43908178,
+      43908181,
+      43908182,
+      43908185,
+      43908186,
+      43908187,
+      43908188,
+      43908190,
+      43908191,
+      43908192,
+      43908194,
+      43908195,
+      43908197,
+      43908199,
+      43908200,
+      43908202,
+      43908204,
+      43908205,
+      43908206,
+      43908207,
+      43908208,
+      43908209,
+      43908210,
+      43908211,
+      43908215,
+      43908219,
+      43908220,
+      43908221,
+      43908222,
+      43908223,
+      43908224,
+      43908225,
+      43908226,
+      43908227,
+      43908228,
+      43908229,
+      43908230,
+      43908231,
+      43908232,
+      43908233,
+      43908234,
+      43908235,
+      43908236,
+      43908237,
+      43908238,
+      43908239,
+      43908240,
+      43908241,
+      43908242,
+      43908243,
+      43908244,
+      43908245,
+      43908246,
+      43908247,
+      43908248,
+      43908249,
+      43908250,
+      43908251,
+      43908252,
+      43908253,
+      43908254,
+      43908255,
+      43908256,
+      43908257,
+      43908258,
+      43908259,
+      43908260,
+      43908261,
+      43908262,
+      43908263,
+      43908264,
+      43908265,
+      43908266,
+      43908267,
+      43908268,
+      43908269,
+      43908270,
+      43908271,
+      43908272,
+      43908273,
+      43908274,
+      43908275,
+      43908276,
+      43908277,
+      43908278,
+      43908279,
+      43908280,
+      43908281,
+      43908282,
+      43908283,
+      43908284,
+      43908285,
+      43908286,
+      43908288,
+      43908289,
+      43908290,
+      43908291,
+      43908292,
+      43908295,
+      43908296,
+      43908297,
+      43908298,
+      43908300,
+      43908301,
+      43908302,
+      43908303
+    ]
+  },
+  "historical_labels": {
+    "coordinate_index_sha256": "56a86840ba453921076754e7f350ba368623b6eee10af34166414d8d01cea355",
+    "categories_checked": 18,
+    "member_matching_label_counters": 0,
+    "combined_matching_label_counters": 0,
+    "primary_matching_label_counters": 0,
+    "by_mapping": {
+      "P1_existing_128bit_prefix": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 6716,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P1_hq_development_label": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 52,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P1_hq_neighbor_text_witness": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 53,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P1_release_reference_selected": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 20,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P2_existing_128bit_prefix": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 30,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P2_hq_class_text_witness": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 49,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P2_hq_neighbor_text_witness": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 51,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P2_published_reference_selected_group_table": {
+        "coordinate_unit": "counter",
+        "archived_coordinates": 105,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P2_release_reference_selected": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 285,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "P2_swb_pair_text_witness": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 310,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "any_flagged_P1_prefix": {
+        "coordinate_unit": "counter",
+        "archived_coordinates": 4814,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "any_flagged_P2_prefix": {
+        "coordinate_unit": "counter",
+        "archived_coordinates": 4814,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "archive_counter_metadata": {
+        "coordinate_unit": "counter",
+        "archived_coordinates": 6768,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "five_flagged_P2_prefix_columns": {
+        "coordinate_unit": "counter",
+        "archived_coordinates": 4814,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "fully_flagged_P1_prefix": {
+        "coordinate_unit": "counter",
+        "archived_coordinates": 4814,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "march_named_direct_control_groups": {
+        "coordinate_unit": "counter",
+        "archived_coordinates": 702,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "member_supplied_P1_G192": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 1545,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      },
+      "text_backed_P1_G192": {
+        "coordinate_unit": "absolute_slot",
+        "archived_coordinates": 13021,
+        "member_matched_counter_count": 0,
+        "matched_counter_count_after_supplement": 0,
+        "primary_counter_match": false
+      }
+    },
+    "note": "Counter overlap with earlier digital transport does not supply clear EVS labels. Mappings are separate historical categories; a coordinate can appear in multiple categories."
+  }
+}

@@ -1,0 +1,1474 @@
+{
+  "freeze_commit": "30a3b2fee0f0f1822329a2455814adb958c4f40c",
+  "protocol_sha256": "15cbec9c8fe4de761afd513688456846bad6611ec622a0f0b3cdf72dffe9369d",
+  "source": {
+    "basename": "IQ-3205khz-20261128.wav",
+    "source_sha256": "bda3f500aaab2032de0e93c493e87650767be1504b29085679cf7082e4b5b952",
+    "server_sha1": "03621a373ebe5c7a60d3d35d8f5fb52bc944aa96",
+    "source_bytes": 241365696,
+    "sample_frames": 60341413,
+    "duration_seconds": 1368.2860090702948,
+    "header_metadata_sha256": "4bd91e86506faa5db3c1e1e9a1e617cae2ba22db5632874646c24ce502ca83bd",
+    "interpretation": "RIFF/WAVE PCM16LE at 44100 frames/s. Treat left as I and right as Q at a 3205 kHz center and zero offset (member label, no tuning or GPS in WAV). Uncalibrated nominal sample clock.",
+    "start_utc": null
+  },
+  "closure": {
+    "source_frames_consumed": [
+      0,
+      60341413
+    ],
+    "converted_samples": 16419433,
+    "converted_12k_iq_file_sha256": "746b9aea13666bc566588a7281f3fa82a99ee686b99d1fcea9af535080c53efd",
+    "output_duration_seconds": 1368.2860833333334,
+    "compensated_filter_delay_output_frames": 36,
+    "source_start_utc": null
+  },
+  "windows": {
+    "window0": {
+      "window": {
+        "index": 0,
+        "nominal_seconds_half_open": [
+          0,
+          600
+        ],
+        "source_44100_pairs_half_open": [
+          0,
+          26460000
+        ],
+        "extracted_12000_pairs_half_open": [
+          0,
+          7200000
+        ],
+        "demod_start_argument": "0",
+        "demod_seconds_argument": "600"
+      },
+      "explicit_eof": true,
+      "physically_received": {
+        "bytes": 1089216,
+        "record_sizes": {
+          "728": 1488
+        },
+        "native_crc": {
+          "packet_CRC_trials": 5952,
+          "packet_CRC_passes": 5879,
+          "four_passing_packet_CRCs": 1459,
+          "also_passing_DU_CRC": 1459,
+          "CRC_passing_packets_with_unexpected_header": 0
+        },
+        "sha256": "963c60f81ba65d2149e856e9d26e8684bd7bdf527b014d4223027c2ac0ad3477"
+      },
+      "assigned": {
+        "assigned_packets": 5811,
+        "assigned_phases": 1455,
+        "whole_native_dus": 1447,
+        "complete_groups": 476,
+        "first_complete_counter_by_phase0_row": 43907925,
+        "distinct_assigned_counters": 489,
+        "counter_range_inclusive": [
+          43907925,
+          43908422
+        ],
+        "no_assigned_packet_counters": [
+          [
+            43907948,
+            43907953
+          ],
+          [
+            43908105,
+            43908105
+          ],
+          [
+            43908117,
+            43908117
+          ],
+          [
+            43908299,
+            43908299
+          ]
+        ],
+        "assigned_counters_missing_whole_group": [
+          [
+            43907947,
+            43907947
+          ],
+          [
+            43908104,
+            43908104
+          ],
+          [
+            43908116,
+            43908116
+          ],
+          [
+            43908119,
+            43908119
+          ],
+          [
+            43908155,
+            43908155
+          ],
+          [
+            43908164,
+            43908164
+          ],
+          [
+            43908227,
+            43908228
+          ],
+          [
+            43908291,
+            43908291
+          ],
+          [
+            43908298,
+            43908298
+          ],
+          [
+            43908300,
+            43908300
+          ],
+          [
+            43908354,
+            43908354
+          ],
+          [
+            43908422,
+            43908422
+          ]
+        ],
+        "missing_whole_group_count": 22,
+        "missing_all_packets_phase_ticks": [
+          [
+            131723842,
+            131723861
+          ],
+          [
+            131724313,
+            131724317
+          ],
+          [
+            131724349,
+            131724353
+          ],
+          [
+            131724358,
+            131724359
+          ],
+          [
+            131724895,
+            131724899
+          ],
+          [
+            131725267,
+            131725268
+          ]
+        ],
+        "partial_packet_phases": [
+          [
+            43908155,
+            0,
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          [
+            43908164,
+            2,
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            43908227,
+            2,
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          [
+            43908228,
+            0,
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          [
+            43908228,
+            1,
+            [
+              0,
+              2
+            ]
+          ],
+          [
+            43908291,
+            2,
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            43908300,
+            0,
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          [
+            43908354,
+            2,
+            [
+              0,
+              1,
+              3
+            ]
+          ]
+        ],
+        "quarantined_conflicting_dus": [],
+        "failed_reassembled_du_crc": 0,
+        "independently_validated_assigned_row_counts": {
+          "window0": 1455
+        },
+        "direct_octets": 639237,
+        "wire_complete_slots": 29050,
+        "wire_partial_slots": 21,
+        "all_20_slots_in_complete_dus": 28940,
+        "direct_by_position": {
+          "1": {
+            "wire_complete": 7264,
+            "wire_partial": 11,
+            "wire_absent_in_assigned_phase": 0,
+            "direct_octets": 159865
+          },
+          "2": {
+            "wire_complete": 7262,
+            "wire_partial": 4,
+            "wire_absent_in_assigned_phase": 9,
+            "direct_octets": 159788
+          },
+          "3": {
+            "wire_complete": 7260,
+            "wire_partial": 6,
+            "wire_absent_in_assigned_phase": 9,
+            "direct_octets": 159776
+          },
+          "4": {
+            "wire_complete": 7264,
+            "wire_partial": 0,
+            "wire_absent_in_assigned_phase": 11,
+            "direct_octets": 159808
+          }
+        },
+        "archive_sha256": {
+          "packets.npz": "28a6c4a9bf427043cf87f356f2d8a667d7ac33770bf4146ba5450523bda65e46",
+          "data_units.npz": "7c0c6fc943ddda676bcdad3290b297d92141653a45434b5c4fdb7b85299bc225",
+          "groups.npz": "60b2290e0c2fcad8d4eaa034d1515e73d15cb35ca1076f1cb46ea2e8c6b0841a",
+          "report.json": "1d51ba120993c9ddf94222c24a160e42b6d38f8c3aac2227a44121bfdbe8cb35",
+          "provenance.json": "07033a03ce1e026de8d2c64a85b347e8ab5feb4bb342d2e50b7d121896090061"
+        }
+      },
+      "prior_ids": [
+        [
+          43908156,
+          43908158
+        ],
+        [
+          43908161,
+          43908164
+        ],
+        [
+          43908166,
+          43908169
+        ],
+        [
+          43908174,
+          43908174
+        ],
+        [
+          43908176,
+          43908176
+        ],
+        [
+          43908178,
+          43908178
+        ],
+        [
+          43908181,
+          43908182
+        ],
+        [
+          43908185,
+          43908188
+        ],
+        [
+          43908190,
+          43908192
+        ],
+        [
+          43908194,
+          43908195
+        ],
+        [
+          43908197,
+          43908197
+        ],
+        [
+          43908199,
+          43908200
+        ],
+        [
+          43908202,
+          43908202
+        ],
+        [
+          43908204,
+          43908211
+        ],
+        [
+          43908215,
+          43908215
+        ],
+        [
+          43908219,
+          43908286
+        ],
+        [
+          43908288,
+          43908292
+        ],
+        [
+          43908295,
+          43908298
+        ],
+        [
+          43908300,
+          43908303
+        ]
+      ],
+      "prior_count": 119,
+      "service": {
+        "raw_trace_sha256": "7572aa7b04ac61456c5b3c0428a867d7e21973f04a4224f92dab42a620aef29e",
+        "blocks": {
+          "FAC": {
+            "observed": 1495,
+            "crc_passed": 1484,
+            "crc_failed": 11
+          },
+          "SDC": {
+            "observed": 501,
+            "crc_passed": 494,
+            "crc_failed": 7
+          }
+        },
+        "fac_services": [
+          {
+            "service_id": "A00002",
+            "short_id": 0,
+            "audio_ca": 0,
+            "language_code": 0,
+            "service": "data",
+            "service_descriptor": 0,
+            "data_ca": 0,
+            "count": 1484
+          }
+        ],
+        "fac_channel": [
+          {
+            "base_enhancement": 0,
+            "rm_flag": 0,
+            "spectrum_occupancy": 3,
+            "interleaver_depth_flag": 1,
+            "msc_mode": 3,
+            "sdc_mode": 0,
+            "number_of_services_code": 1,
+            "count": 1484
+          }
+        ],
+        "entity_types": {
+          "0": 494,
+          "1": 494,
+          "5": 494,
+          "8": 9,
+          "12": 494
+        },
+        "structure_errors": {},
+        "labels": [
+          "조선중앙제2라지오방송"
+        ],
+        "streams": [
+          [
+            {
+              "stream_id": 0,
+              "part_a_bytes": 0,
+              "part_b_bytes": 728
+            }
+          ]
+        ],
+        "packet_descriptors": [
+          {
+            "type": 5,
+            "version_flag": 0,
+            "raw_hex": "0850c1b30000",
+            "count": 494,
+            "short_id": 0,
+            "stream_id": 0,
+            "packet_mode": true,
+            "enhancement_flag": 0,
+            "application_domain": 1,
+            "data_unit_indicator": 1,
+            "packet_id": 0,
+            "packet_data_bytes": 179,
+            "dab_user_application_type": 0
+          }
+        ],
+        "time_fields_as_encoded": [
+          "2026-11-28T08:58Z",
+          "2026-11-28T08:59Z",
+          "2026-11-28T09:00Z",
+          "2026-11-28T09:01Z",
+          "2026-11-28T09:02Z",
+          "2026-11-28T09:03Z",
+          "2026-11-28T09:04Z",
+          "2026-11-28T09:05Z",
+          "2026-11-28T09:06Z"
+        ]
+      }
+    },
+    "window1": {
+      "window": {
+        "index": 1,
+        "nominal_seconds_half_open": [
+          588,
+          1188
+        ],
+        "source_44100_pairs_half_open": [
+          25930800,
+          52390800
+        ],
+        "extracted_12000_pairs_half_open": [
+          7056000,
+          14256000
+        ],
+        "demod_start_argument": "588",
+        "demod_seconds_argument": "600"
+      },
+      "explicit_eof": true,
+      "physically_received": {
+        "bytes": 1094340,
+        "record_sizes": {
+          "728": 1495
+        },
+        "native_crc": {
+          "packet_CRC_trials": 5980,
+          "packet_CRC_passes": 5936,
+          "four_passing_packet_CRCs": 1472,
+          "also_passing_DU_CRC": 1472,
+          "CRC_passing_packets_with_unexpected_header": 0
+        },
+        "sha256": "b224e50eb8e438c70159b54e43f8c9899e65cbd150971fe5fa1e122f338f8085"
+      },
+      "assigned": {
+        "assigned_packets": 5863,
+        "assigned_phases": 1467,
+        "whole_native_dus": 1462,
+        "complete_groups": 484,
+        "first_complete_counter_by_phase0_row": 43908415,
+        "distinct_assigned_counters": 491,
+        "counter_range_inclusive": [
+          43908415,
+          43908912
+        ],
+        "no_assigned_packet_counters": [
+          [
+            43908502,
+            43908502
+          ],
+          [
+            43908544,
+            43908544
+          ],
+          [
+            43908759,
+            43908759
+          ],
+          [
+            43908811,
+            43908813
+          ],
+          [
+            43908825,
+            43908825
+          ]
+        ],
+        "assigned_counters_missing_whole_group": [
+          [
+            43908461,
+            43908461
+          ],
+          [
+            43908543,
+            43908543
+          ],
+          [
+            43908547,
+            43908547
+          ],
+          [
+            43908550,
+            43908550
+          ],
+          [
+            43908810,
+            43908810
+          ],
+          [
+            43908861,
+            43908861
+          ],
+          [
+            43908912,
+            43908912
+          ]
+        ],
+        "missing_whole_group_count": 14,
+        "missing_all_packets_phase_ticks": [
+          [
+            131725506,
+            131725508
+          ],
+          [
+            131725630,
+            131725634
+          ],
+          [
+            131726277,
+            131726279
+          ],
+          [
+            131726431,
+            131726441
+          ],
+          [
+            131726475,
+            131726477
+          ],
+          [
+            131726737,
+            131726738
+          ]
+        ],
+        "partial_packet_phases": [
+          [
+            43908461,
+            1,
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            43908547,
+            2,
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            43908550,
+            0,
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          [
+            43908550,
+            1,
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          [
+            43908861,
+            0,
+            [
+              0,
+              1,
+              3
+            ]
+          ]
+        ],
+        "quarantined_conflicting_dus": [],
+        "failed_reassembled_du_crc": 0,
+        "independently_validated_assigned_row_counts": {
+          "window1": 1467
+        },
+        "direct_octets": 644957,
+        "wire_complete_slots": 29311,
+        "wire_partial_slots": 11,
+        "all_20_slots_in_complete_dus": 29240,
+        "direct_by_position": {
+          "1": {
+            "wire_complete": 7327,
+            "wire_partial": 8,
+            "wire_absent_in_assigned_phase": 0,
+            "direct_octets": 161261
+          },
+          "2": {
+            "wire_complete": 7330,
+            "wire_partial": 0,
+            "wire_absent_in_assigned_phase": 5,
+            "direct_octets": 161260
+          },
+          "3": {
+            "wire_complete": 7327,
+            "wire_partial": 3,
+            "wire_absent_in_assigned_phase": 5,
+            "direct_octets": 161242
+          },
+          "4": {
+            "wire_complete": 7327,
+            "wire_partial": 0,
+            "wire_absent_in_assigned_phase": 8,
+            "direct_octets": 161194
+          }
+        },
+        "archive_sha256": {
+          "packets.npz": "157f0eff97566c85daa6604de3373f04e0d6adbc1546ce746b6453094753d5da",
+          "data_units.npz": "210044386d95d84073fc443e050db3652b53690ff4ee315dda9b67a2eaa42da9",
+          "groups.npz": "1059f96e549928bc7f12ad554d183415cf8bde3f43b6d20ece76e5c584c5de41",
+          "report.json": "79261ec57a82eef0396b864bd43b7f57861cc3ff27711d91d66977765719d683",
+          "provenance.json": "22188ebfca610daa2dbb2c700aed19d68760bc839ea3880dd1018f4a2af272c6"
+        }
+      },
+      "prior_ids": [],
+      "prior_count": 0,
+      "service": {
+        "raw_trace_sha256": "493c80454e51f4ca81754bf438d589cb449a76aa0131b821864ea89536e57d95",
+        "blocks": {
+          "FAC": {
+            "observed": 1498,
+            "crc_passed": 1498,
+            "crc_failed": 0
+          },
+          "SDC": {
+            "observed": 500,
+            "crc_passed": 499,
+            "crc_failed": 1
+          }
+        },
+        "fac_services": [
+          {
+            "service_id": "A00002",
+            "short_id": 0,
+            "audio_ca": 0,
+            "language_code": 0,
+            "service": "data",
+            "service_descriptor": 0,
+            "data_ca": 0,
+            "count": 1498
+          }
+        ],
+        "fac_channel": [
+          {
+            "base_enhancement": 0,
+            "rm_flag": 0,
+            "spectrum_occupancy": 3,
+            "interleaver_depth_flag": 1,
+            "msc_mode": 3,
+            "sdc_mode": 0,
+            "number_of_services_code": 1,
+            "count": 1498
+          }
+        ],
+        "entity_types": {
+          "0": 499,
+          "1": 499,
+          "5": 499,
+          "8": 10,
+          "12": 499
+        },
+        "structure_errors": {},
+        "labels": [
+          "조선중앙제2라지오방송"
+        ],
+        "streams": [
+          [
+            {
+              "stream_id": 0,
+              "part_a_bytes": 0,
+              "part_b_bytes": 728
+            }
+          ]
+        ],
+        "packet_descriptors": [
+          {
+            "type": 5,
+            "version_flag": 0,
+            "raw_hex": "0850c1b30000",
+            "count": 499,
+            "short_id": 0,
+            "stream_id": 0,
+            "packet_mode": true,
+            "enhancement_flag": 0,
+            "application_domain": 1,
+            "data_unit_indicator": 1,
+            "packet_id": 0,
+            "packet_data_bytes": 179,
+            "dab_user_application_type": 0
+          }
+        ],
+        "time_fields_as_encoded": [
+          "2026-11-28T09:07Z",
+          "2026-11-28T09:08Z",
+          "2026-11-28T09:09Z",
+          "2026-11-28T09:10Z",
+          "2026-11-28T09:11Z",
+          "2026-11-28T09:12Z",
+          "2026-11-28T09:13Z",
+          "2026-11-28T09:14Z",
+          "2026-11-28T09:15Z",
+          "2026-11-28T09:16Z"
+        ]
+      }
+    },
+    "window2": {
+      "window": {
+        "index": 2,
+        "nominal_seconds_half_open": [
+          1176,
+          1368.2860090702948
+        ],
+        "source_44100_pairs_half_open": [
+          51861600,
+          60341413
+        ],
+        "extracted_12000_pairs_half_open": [
+          14112000,
+          16419433
+        ],
+        "demod_start_argument": "1176",
+        "demod_seconds_argument": "192.28608333333332"
+      },
+      "explicit_eof": true,
+      "physically_received": {
+        "bytes": 346236,
+        "record_sizes": {
+          "728": 473
+        },
+        "native_crc": {
+          "packet_CRC_trials": 1892,
+          "packet_CRC_passes": 1888,
+          "four_passing_packet_CRCs": 471,
+          "also_passing_DU_CRC": 471,
+          "CRC_passing_packets_with_unexpected_header": 0
+        },
+        "sha256": "98c928f65afb25fa1b37b2b849e56cdced7257d8462210aae2d7ee482126b01a"
+      },
+      "assigned": {
+        "assigned_packets": 1871,
+        "assigned_phases": 468,
+        "whole_native_dus": 467,
+        "complete_groups": 155,
+        "first_complete_counter_by_phase0_row": 43908906,
+        "distinct_assigned_counters": 156,
+        "counter_range_inclusive": [
+          43908906,
+          43909062
+        ],
+        "no_assigned_packet_counters": [
+          [
+            43908937,
+            43908937
+          ]
+        ],
+        "assigned_counters_missing_whole_group": [
+          [
+            43908938,
+            43908938
+          ]
+        ],
+        "missing_whole_group_count": 2,
+        "missing_all_packets_phase_ticks": [
+          [
+            131726811,
+            131726813
+          ]
+        ],
+        "partial_packet_phases": [
+          [
+            43908938,
+            2,
+            [
+              0,
+              1,
+              3
+            ]
+          ]
+        ],
+        "quarantined_conflicting_dus": [],
+        "failed_reassembled_du_crc": 0,
+        "independently_validated_assigned_row_counts": {
+          "window2": 468
+        },
+        "direct_octets": 205801,
+        "wire_complete_slots": 9353,
+        "wire_partial_slots": 3,
+        "all_20_slots_in_complete_dus": 9340,
+        "direct_by_position": {
+          "1": {
+            "wire_complete": 2338,
+            "wire_partial": 2,
+            "wire_absent_in_assigned_phase": 0,
+            "direct_octets": 51455
+          },
+          "2": {
+            "wire_complete": 2339,
+            "wire_partial": 0,
+            "wire_absent_in_assigned_phase": 1,
+            "direct_octets": 51458
+          },
+          "3": {
+            "wire_complete": 2338,
+            "wire_partial": 1,
+            "wire_absent_in_assigned_phase": 1,
+            "direct_octets": 51452
+          },
+          "4": {
+            "wire_complete": 2338,
+            "wire_partial": 0,
+            "wire_absent_in_assigned_phase": 2,
+            "direct_octets": 51436
+          }
+        },
+        "archive_sha256": {
+          "packets.npz": "2d0f30605a01cba702db9e892807b8b6823863a1606efce0a3d6c648f252f6de",
+          "data_units.npz": "1de32d800f80b0e64fd43ff6c7c76222b38ee730752eea57ff4670e7d1e0894c",
+          "groups.npz": "672a42858e71e1f2f6d6113c12ca34ef315038d6574a315868e62b0e1986d02e",
+          "report.json": "e56952d77eb17dd73e6c1f8d3f71d9ab69b3c079ef6ec8968519f1a8296302ba",
+          "provenance.json": "68586551124536a3464419caa69aa6b1813855bb1c5ae094aab82e5fcef140ec"
+        }
+      },
+      "prior_ids": [],
+      "prior_count": 0,
+      "service": {
+        "raw_trace_sha256": "0b2fd609b762adbabe4ff5a38eae424ed97c0b3de3d5731536124cd1e5d04063",
+        "blocks": {
+          "FAC": {
+            "observed": 476,
+            "crc_passed": 476,
+            "crc_failed": 0
+          },
+          "SDC": {
+            "observed": 161,
+            "crc_passed": 159,
+            "crc_failed": 2
+          }
+        },
+        "fac_services": [
+          {
+            "service_id": "A00002",
+            "short_id": 0,
+            "audio_ca": 0,
+            "language_code": 0,
+            "service": "data",
+            "service_descriptor": 0,
+            "data_ca": 0,
+            "count": 476
+          }
+        ],
+        "fac_channel": [
+          {
+            "base_enhancement": 0,
+            "rm_flag": 0,
+            "spectrum_occupancy": 3,
+            "interleaver_depth_flag": 1,
+            "msc_mode": 3,
+            "sdc_mode": 0,
+            "number_of_services_code": 1,
+            "count": 476
+          }
+        ],
+        "entity_types": {
+          "0": 159,
+          "1": 159,
+          "5": 159,
+          "8": 3,
+          "12": 159
+        },
+        "structure_errors": {},
+        "labels": [
+          "조선중앙제2라지오방송"
+        ],
+        "streams": [
+          [
+            {
+              "stream_id": 0,
+              "part_a_bytes": 0,
+              "part_b_bytes": 728
+            }
+          ]
+        ],
+        "packet_descriptors": [
+          {
+            "type": 5,
+            "version_flag": 0,
+            "raw_hex": "0850c1b30000",
+            "count": 159,
+            "short_id": 0,
+            "stream_id": 0,
+            "packet_mode": true,
+            "enhancement_flag": 0,
+            "application_domain": 1,
+            "data_unit_indicator": 1,
+            "packet_id": 0,
+            "packet_data_bytes": 179,
+            "dab_user_application_type": 0
+          }
+        ],
+        "time_fields_as_encoded": [
+          "2026-11-28T09:17Z",
+          "2026-11-28T09:18Z",
+          "2026-11-28T09:19Z"
+        ]
+      }
+    }
+  },
+  "overlap_checks": [
+    {
+      "windows": [
+        0,
+        1
+      ],
+      "identical_full_182byte_packet_coordinates": 88,
+      "different_full_182byte_packet_coordinates": 0,
+      "assigned_counters_in_common": 8,
+      "complete_groups_in_common": 7
+    },
+    {
+      "windows": [
+        0,
+        2
+      ],
+      "identical_full_182byte_packet_coordinates": 0,
+      "different_full_182byte_packet_coordinates": 0,
+      "assigned_counters_in_common": 0,
+      "complete_groups_in_common": 0
+    },
+    {
+      "windows": [
+        1,
+        2
+      ],
+      "identical_full_182byte_packet_coordinates": 76,
+      "different_full_182byte_packet_coordinates": 0,
+      "assigned_counters_in_common": 7,
+      "complete_groups_in_common": 6
+    }
+  ],
+  "union": {
+    "assigned_packets": 13381,
+    "assigned_phases": 3349,
+    "whole_native_dus": 3335,
+    "complete_groups": 1102,
+    "first_complete_counter_by_phase0_row": 43907925,
+    "distinct_assigned_counters": 1121,
+    "counter_range_inclusive": [
+      43907925,
+      43909062
+    ],
+    "no_assigned_packet_counters": [
+      [
+        43907948,
+        43907953
+      ],
+      [
+        43908105,
+        43908105
+      ],
+      [
+        43908117,
+        43908117
+      ],
+      [
+        43908299,
+        43908299
+      ],
+      [
+        43908502,
+        43908502
+      ],
+      [
+        43908544,
+        43908544
+      ],
+      [
+        43908759,
+        43908759
+      ],
+      [
+        43908811,
+        43908813
+      ],
+      [
+        43908825,
+        43908825
+      ],
+      [
+        43908937,
+        43908937
+      ]
+    ],
+    "assigned_counters_missing_whole_group": [
+      [
+        43907947,
+        43907947
+      ],
+      [
+        43908104,
+        43908104
+      ],
+      [
+        43908116,
+        43908116
+      ],
+      [
+        43908119,
+        43908119
+      ],
+      [
+        43908155,
+        43908155
+      ],
+      [
+        43908164,
+        43908164
+      ],
+      [
+        43908227,
+        43908228
+      ],
+      [
+        43908291,
+        43908291
+      ],
+      [
+        43908298,
+        43908298
+      ],
+      [
+        43908300,
+        43908300
+      ],
+      [
+        43908354,
+        43908354
+      ],
+      [
+        43908461,
+        43908461
+      ],
+      [
+        43908543,
+        43908543
+      ],
+      [
+        43908547,
+        43908547
+      ],
+      [
+        43908550,
+        43908550
+      ],
+      [
+        43908810,
+        43908810
+      ],
+      [
+        43908861,
+        43908861
+      ],
+      [
+        43908938,
+        43908938
+      ]
+    ],
+    "missing_whole_group_count": 36,
+    "missing_all_packets_phase_ticks": [
+      [
+        131723842,
+        131723861
+      ],
+      [
+        131724313,
+        131724317
+      ],
+      [
+        131724349,
+        131724353
+      ],
+      [
+        131724358,
+        131724359
+      ],
+      [
+        131724895,
+        131724899
+      ],
+      [
+        131725506,
+        131725508
+      ],
+      [
+        131725630,
+        131725634
+      ],
+      [
+        131726277,
+        131726279
+      ],
+      [
+        131726431,
+        131726441
+      ],
+      [
+        131726475,
+        131726477
+      ],
+      [
+        131726811,
+        131726813
+      ]
+    ],
+    "partial_packet_phases": [
+      [
+        43908155,
+        0,
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      [
+        43908164,
+        2,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        43908227,
+        2,
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      [
+        43908228,
+        0,
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      [
+        43908228,
+        1,
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        43908291,
+        2,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        43908300,
+        0,
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      [
+        43908354,
+        2,
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      [
+        43908461,
+        1,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        43908547,
+        2,
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        43908550,
+        0,
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      [
+        43908550,
+        1,
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      [
+        43908861,
+        0,
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      [
+        43908938,
+        2,
+        [
+          0,
+          1,
+          3
+        ]
+      ]
+    ],
+    "quarantined_conflicting_dus": [],
+    "failed_reassembled_du_crc": 0,
+    "independently_validated_assigned_row_counts": {
+      "window0": 1455,
+      "window1": 1467,
+      "window2": 468
+    },
+    "direct_octets": 1471955,
+    "wire_complete_slots": 66894,
+    "wire_partial_slots": 35,
+    "all_20_slots_in_complete_dus": 66700,
+    "direct_by_position": {
+      "1": {
+        "wire_complete": 16724,
+        "wire_partial": 21,
+        "wire_absent_in_assigned_phase": 0,
+        "direct_octets": 368071
+      },
+      "2": {
+        "wire_complete": 16726,
+        "wire_partial": 4,
+        "wire_absent_in_assigned_phase": 15,
+        "direct_octets": 367996
+      },
+      "3": {
+        "wire_complete": 16720,
+        "wire_partial": 10,
+        "wire_absent_in_assigned_phase": 15,
+        "direct_octets": 367960
+      },
+      "4": {
+        "wire_complete": 16724,
+        "wire_partial": 0,
+        "wire_absent_in_assigned_phase": 21,
+        "direct_octets": 367928
+      }
+    },
+    "archive_sha256": {
+      "packets.npz": "e9a6eda8a1977e6d8fa3a1d0ef74a8ba4359603a40c5023403fd0d2df29fc101",
+      "data_units.npz": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+      "groups.npz": "ece469681bdb6ac537d6c82b6c29402f50ade2158783cf26c4bbf8ae6e19fc03",
+      "report.json": "f645b269c22171d4b631d69a5ac4b3cbed498e21d98870ca70378699473066d0",
+      "provenance.json": "d32506a7eee71a36cd47b324cf6148746ca1d28bcbca1ac6b18fc7da29c44db4"
+    }
+  },
+  "union_complete_groups_absent_from_single_windows": [],
+  "novelty": {
+    "registry_count": 13735,
+    "matched_prior_count": 119,
+    "matched_prior_counter_ids": [
+      43908156,
+      43908157,
+      43908158,
+      43908161,
+      43908162,
+      43908163,
+      43908164,
+      43908166,
+      43908167,
+      43908168,
+      43908169,
+      43908174,
+      43908176,
+      43908178,
+      43908181,
+      43908182,
+      43908185,
+      43908186,
+      43908187,
+      43908188,
+      43908190,
+      43908191,
+      43908192,
+      43908194,
+      43908195,
+      43908197,
+      43908199,
+      43908200,
+      43908202,
+      43908204,
+      43908205,
+      43908206,
+      43908207,
+      43908208,
+      43908209,
+      43908210,
+      43908211,
+      43908215,
+      43908219,
+      43908220,
+      43908221,
+      43908222,
+      43908223,
+      43908224,
+      43908225,
+      43908226,
+      43908227,
+      43908228,
+      43908229,
+      43908230,
+      43908231,
+      43908232,
+      43908233,
+      43908234,
+      43908235,
+      43908236,
+      43908237,
+      43908238,
+      43908239,
+      43908240,
+      43908241,
+      43908242,
+      43908243,
+      43908244,
+      43908245,
+      43908246,
+      43908247,
+      43908248,
+      43908249,
+      43908250,
+      43908251,
+      43908252,
+      43908253,
+      43908254,
+      43908255,
+      43908256,
+      43908257,
+      43908258,
+      43908259,
+      43908260,
+      43908261,
+      43908262,
+      43908263,
+      43908264,
+      43908265,
+      43908266,
+      43908267,
+      43908268,
+      43908269,
+      43908270,
+      43908271,
+      43908272,
+      43908273,
+      43908274,
+      43908275,
+      43908276,
+      43908277,
+      43908278,
+      43908279,
+      43908280,
+      43908281,
+      43908282,
+      43908283,
+      43908284,
+      43908285,
+      43908286,
+      43908288,
+      43908289,
+      43908290,
+      43908291,
+      43908292,
+      43908295,
+      43908296,
+      43908297,
+      43908298,
+      43908300,
+      43908301,
+      43908302,
+      43908303
+    ],
+    "primary_new_to_registry": true,
+    "whole_recording_all_counters_novel": false
+  },
+  "primary": {
+    "counter": 43907925,
+    "first_window": 0,
+    "prior_counter_overlap": false,
+    "direct_bits": 10560,
+    "physically_complete_slots": 60,
+    "full_clear_words": 0,
+    "unsupplied_clear_word_slots": 60,
+    "projector_sha256": "83e0d5c24a47aa9cd3af1611da35735053a968b0d559afe1cfe44f2314d51dcb",
+    "projection_sha256": "11cc750575481238453ac92a9d7ea678b6079308b34b1a67e2450d19512342b9"
+  },
+  "chronology_note": "Native counter and per-run receiver rows establish order. Source duration and ranges use the nominal 44100 Hz WAV clock. The WAV supplies no absolute acquisition UTC.",
+  "transport_note": "Raw packet and FAC/SDC counts refer to separate receiver windows with repeated capture time at their boundaries; unique packet coordinates are counted only once in union."
+}

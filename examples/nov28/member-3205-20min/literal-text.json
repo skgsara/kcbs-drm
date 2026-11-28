@@ -1,0 +1,118 @@
+{
+  "historical_positive": {
+    "source": "../swb-transition/p2/43877110-source.json",
+    "counter": 43877110,
+    "phase": 1,
+    "record_sha256": "858e46da917759f233604d0755b4f2bb41ded9019c4a39e3ae5231203326bd6e",
+    "accepted": [
+      {
+        "kind": "ordinary",
+        "tick": 131631331,
+        "crc": "a2c0",
+        "body_length": 10
+      }
+    ],
+    "single_bit_body_change_rejected": true
+  },
+  "input": {
+    "input": "member-dus.npz",
+    "sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+    "tails": 3335,
+    "tail_octets": 53360,
+    "first_coordinate": [
+      43907925,
+      0
+    ],
+    "last_coordinate": [
+      43909062,
+      2
+    ],
+    "span_ticks": 3414,
+    "missing_ticks_in_span": 79,
+    "runs": 22,
+    "largest_run": 625,
+    "seven_contiguous_start_ticks": 3209,
+    "any_header_even_length_and_through_crc": 1642,
+    "any_header_raw_crc_match": 0,
+    "ordinary_header_even_length": 66,
+    "ordinary_contiguous_record_span": 65,
+    "ordinary_header_raw_crc_match": 0,
+    "parser_any_header_crc_framing_utf": 0,
+    "ordinary_crc_framing_utf": 0,
+    "ordinary_crc_framing_utf_and_printable": 0,
+    "opening_header": 0,
+    "accepted_hits": []
+  },
+  "method": "Check the 16 octets at [698,714) directly in each complete CRC-valid DU. Break at every missing native tick. Evaluate the ordinary text record grammar and transmitted record CRC at each DU boundary.",
+  "literal_tail_repeats": {
+    "source": "member-dus.npz",
+    "source_sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+    "field_half_open": [
+      698,
+      714
+    ],
+    "method": "Compare literal 16-byte fields at the stated DU coordinates. Each pair is separated by 798 native DU ticks. Only complete native DUs are counted.",
+    "du_distance": 798,
+    "paired_starts": 2514,
+    "identical_pairs": 0,
+    "matching_base_ticks": [],
+    "five_available": 193,
+    "five_position_distinct_literal_tails": {
+      "5": 193
+    }
+  },
+  "member_with_second_pass": {
+    "tails": 3337,
+    "tail_octets": 53392,
+    "first_coordinate": [
+      43907925,
+      0
+    ],
+    "last_coordinate": [
+      43909062,
+      2
+    ],
+    "span_ticks": 3414,
+    "missing_ticks_in_span": 77,
+    "runs": 22,
+    "largest_run": 625,
+    "seven_contiguous_start_ticks": 3211,
+    "any_header_even_length_and_through_crc": 1644,
+    "any_header_raw_crc_match": 0,
+    "ordinary_header_even_length": 66,
+    "ordinary_contiguous_record_span": 65,
+    "ordinary_header_raw_crc_match": 0,
+    "parser_any_header_crc_framing_utf": 0,
+    "ordinary_crc_framing_utf": 0,
+    "ordinary_crc_framing_utf_and_printable": 0,
+    "opening_header": 0,
+    "accepted_hits": []
+  },
+  "including_edogawa": {
+    "tails": 3343,
+    "tail_octets": 53488,
+    "first_coordinate": [
+      43907925,
+      0
+    ],
+    "last_coordinate": [
+      43909062,
+      2
+    ],
+    "span_ticks": 3414,
+    "missing_ticks_in_span": 71,
+    "runs": 21,
+    "largest_run": 625,
+    "seven_contiguous_start_ticks": 3223,
+    "any_header_even_length_and_through_crc": 1647,
+    "any_header_raw_crc_match": 0,
+    "ordinary_header_even_length": 66,
+    "ordinary_contiguous_record_span": 65,
+    "ordinary_header_raw_crc_match": 0,
+    "parser_any_header_crc_framing_utf": 0,
+    "ordinary_crc_framing_utf": 0,
+    "ordinary_crc_framing_utf_and_printable": 0,
+    "opening_header": 0,
+    "accepted_hits": []
+  }
+}

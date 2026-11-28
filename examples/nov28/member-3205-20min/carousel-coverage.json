@@ -1,0 +1,235 @@
+{
+  "scope": "Availability of exact physical coordinates only. No DU payload was opened or compared. Repeated text, a stable carousel, and an encryption rule remain untested.",
+  "coordinate_inputs": {
+    "union/data_units.npz": [
+      "counters",
+      "phases"
+    ],
+    "union/packets.npz": [
+      "ticks",
+      "packet_ok"
+    ],
+    "du_tick_encoding": "3*counter+phase",
+    "sorted_complete_du_tick_sha256": "b2777ab6abcf0fe8b7a0b623581b76391c01f52b07f3e578c33441e9bd1f4837",
+    "sorted_assigned_tick_sha256": "ad5960ef251941e56e6799df3561592a67873337b3901ce93fd4ae282d73d8b5"
+  },
+  "native_DU_seconds": 0.4,
+  "lag_DUs": 798,
+  "lag_s": 319.2,
+  "first_assigned_counter_phase": [
+    43907925,
+    0
+  ],
+  "last_assigned_counter_phase": [
+    43909062,
+    2
+  ],
+  "first_assigned_tick": 131723775,
+  "last_assigned_tick": 131727188,
+  "grid_ticks": 3414,
+  "grid_s": 1365.6,
+  "assigned_ticks": 3349,
+  "complete_du": 3335,
+  "unassigned_ticks": 65,
+  "assigned_without_complete_du": 14,
+  "missing_whole_du": 79,
+  "longest_whole_du_loss_run": 20,
+  "start_definition": "Every possible base tick t in the closed assigned interval for which t+(k-1)*798 stays inside the interval. Windows can overlap. A successful k-window requires full native DUs at all k equally spaced ticks; neither intervening ticks nor the next repeat are required.",
+  "windows_by_k": {
+    "2": {
+      "possible_base_starts": 2616,
+      "all_k_in_sequence_present": 2514,
+      "at_least_one_missing": 102,
+      "fraction": 0.961009
+    },
+    "3": {
+      "possible_base_starts": 1818,
+      "all_k_in_sequence_present": 1713,
+      "at_least_one_missing": 105,
+      "fraction": 0.942244
+    },
+    "4": {
+      "possible_base_starts": 1020,
+      "all_k_in_sequence_present": 936,
+      "at_least_one_missing": 84,
+      "fraction": 0.917647
+    },
+    "5": {
+      "possible_base_starts": 222,
+      "all_k_in_sequence_present": 193,
+      "at_least_one_missing": 29,
+      "fraction": 0.869369
+    }
+  },
+  "independent_base_residues": {
+    "count": 798,
+    "definition": "Fold the grid on the first 798 ticks. Each residue has 4 or 5 opportunities; histogram counts available copies, including any nonconsecutive copies.",
+    "residues_by_number_of_grid_opportunities": {
+      "4": 576,
+      "5": 222
+    },
+    "residues_by_count_present": {
+      "2": 3,
+      "3": 44,
+      "4": 558,
+      "5": 193
+    }
+  },
+  "longest_contiguous_shared_segments": {
+    "4": {
+      "length_du": 121,
+      "length_s": 48.4,
+      "equally_long_runs": 1,
+      "copies": [
+        {
+          "first_counter_phase": [
+            43907971,
+            0
+          ],
+          "last_counter_phase": [
+            43908011,
+            0
+          ],
+          "relative_s_half_open": [
+            55.2,
+            103.6
+          ]
+        },
+        {
+          "first_counter_phase": [
+            43908237,
+            0
+          ],
+          "last_counter_phase": [
+            43908277,
+            0
+          ],
+          "relative_s_half_open": [
+            374.4,
+            422.8
+          ]
+        },
+        {
+          "first_counter_phase": [
+            43908503,
+            0
+          ],
+          "last_counter_phase": [
+            43908543,
+            0
+          ],
+          "relative_s_half_open": [
+            693.6,
+            742.0
+          ]
+        },
+        {
+          "first_counter_phase": [
+            43908769,
+            0
+          ],
+          "last_counter_phase": [
+            43908809,
+            0
+          ],
+          "relative_s_half_open": [
+            1012.8,
+            1061.2
+          ]
+        }
+      ],
+      "gaps_inside_each_listed_copy": 0,
+      "uncompared_s_between_successive_ranges": 270.8,
+      "left_neighbor_in_grid_missing_copy_indices_1based": [
+        3
+      ],
+      "right_neighbor_in_grid_missing_copy_indices_1based": [
+        3
+      ]
+    },
+    "5": {
+      "length_du": 84,
+      "length_s": 33.6,
+      "equally_long_runs": 1,
+      "copies": [
+        {
+          "first_counter_phase": [
+            43907971,
+            0
+          ],
+          "last_counter_phase": [
+            43907998,
+            2
+          ],
+          "relative_s_half_open": [
+            55.2,
+            88.8
+          ]
+        },
+        {
+          "first_counter_phase": [
+            43908237,
+            0
+          ],
+          "last_counter_phase": [
+            43908264,
+            2
+          ],
+          "relative_s_half_open": [
+            374.4,
+            408.0
+          ]
+        },
+        {
+          "first_counter_phase": [
+            43908503,
+            0
+          ],
+          "last_counter_phase": [
+            43908530,
+            2
+          ],
+          "relative_s_half_open": [
+            693.6,
+            727.2
+          ]
+        },
+        {
+          "first_counter_phase": [
+            43908769,
+            0
+          ],
+          "last_counter_phase": [
+            43908796,
+            2
+          ],
+          "relative_s_half_open": [
+            1012.8,
+            1046.4
+          ]
+        },
+        {
+          "first_counter_phase": [
+            43909035,
+            0
+          ],
+          "last_counter_phase": [
+            43909062,
+            2
+          ],
+          "relative_s_half_open": [
+            1332.0,
+            1365.6
+          ]
+        }
+      ],
+      "gaps_inside_each_listed_copy": 0,
+      "uncompared_s_between_successive_ranges": 285.6,
+      "left_neighbor_in_grid_missing_copy_indices_1based": [
+        3
+      ],
+      "right_neighbor_in_grid_missing_copy_indices_1based": []
+    }
+  },
+  "timing": "Relative zero is the beginning of assigned counter 43907925 phase 0. Time ranges use the native 400 ms cadence. Coordinates alone do not locate the first group within the input WAV. Exact file-relative and UTC offsets require an independent source-time anchor."
+}

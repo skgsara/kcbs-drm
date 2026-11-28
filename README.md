@@ -63,6 +63,13 @@ test fixes the target. Its protocol covers checks against evidence held
 back from the same broadcast and an optional comparison with a clear export.
 [Four-position milestone and target receipt](examples/nov15/validation/README.md)
 
+A member's **22m48s recording at 3205 kHz** yielded 1,102 complete groups in
+the frozen receiver. A second pass recovered one additional group from the
+same IQ. Across 3205 kHz and an independent Tokyo recording at 6140 kHz,
+all 1,201 shared packets agreed and 1,106 complete groups were available.
+The first complete group, 43907925, yielded zero complete clear EVS words.
+[Received data, overlap checks and five intervals for comparing bulletin text](examples/nov28/member-3205-20min/README.md)
+
 The November 28 field test fixes the first ten recorded minutes from the
 13:00–13:20 UTC Yokohama window and selects the first complete group in
 reception order. Its receiver also reports what survived in the first group

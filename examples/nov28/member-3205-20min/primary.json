@@ -1,0 +1,262 @@
+{
+  "counter": 43907925,
+  "revision": "30a3b2fee0f0f1822329a2455814adb958c4f40c",
+  "excerpt": "examples/nov28/member-3205-20min/data_units.npz",
+  "excerpt_bytes": 2780,
+  "excerpt_sha256": "0fa947ffb7a15994c7923b8f7532d7d81429a4d9111900ba3d111977521e1311",
+  "union_archive_sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+  "window0_msc_sha256": "963c60f81ba65d2149e856e9d26e8684bd7bdf527b014d4223027c2ac0ad3477",
+  "raw_record_receipts": [
+    {
+      "phase": 0,
+      "raw_row": 2,
+      "raw_record_bytes": [
+        1464,
+        2196
+      ],
+      "received_packet_crc16": [
+        "B842",
+        "024D",
+        "03A0",
+        "3D03"
+      ],
+      "received_du_crc16": "0612",
+      "du_sha256": "d26ebdc264418febee14e251119914ba54cc400f41f916215dc285003933e8ba"
+    },
+    {
+      "phase": 1,
+      "raw_row": 3,
+      "raw_record_bytes": [
+        2196,
+        2928
+      ],
+      "received_packet_crc16": [
+        "E653",
+        "F346",
+        "6EFB",
+        "0A4D"
+      ],
+      "received_du_crc16": "D00C",
+      "du_sha256": "e4d0e50c1bfadddd3cf9fed25004852d1ee01d3f5fdf3b84aee6d2e57d23481f"
+    },
+    {
+      "phase": 2,
+      "raw_row": 4,
+      "raw_record_bytes": [
+        2928,
+        3660
+      ],
+      "received_packet_crc16": [
+        "5E39",
+        "2D9C",
+        "B93B",
+        "9E47"
+      ],
+      "received_du_crc16": "7DC2",
+      "du_sha256": "43a494661f3b78854598d9fed4dc276a0a94411e163ce584314f90bf5dc47001"
+    }
+  ],
+  "projector_sha256": "83e0d5c24a47aa9cd3af1611da35735053a968b0d559afe1cfe44f2314d51dcb",
+  "evidence_module_sha256": "8107835aff25964be3b59272e56ffc7fc2d83e14df6e3807552c30ff4c6fcedb",
+  "report_sha256": {
+    "field-checks.json": "07eae5a12a51d9f3e0786c12086dcfedbe5cc927fc38be474da6ced7ad08ea77",
+    "bit-evidence.json": "433b76398e950d2dc4a329e1c09cbc88e8fad5b6d50bf7e73ef964de7198711d"
+  },
+  "earlier_packet_projection_slots_and_fields_equal": true,
+  "by_position": {
+    "1": {
+      "direct_bits": 2640,
+      "carried_unknown_bits": 1320,
+      "no_receipt_bits": 0,
+      "receiver_word_erasures": 15,
+      "modes": [
+        "52",
+        "51",
+        "58",
+        "51",
+        "51",
+        "58",
+        "50",
+        "53",
+        "FA",
+        "60",
+        "50",
+        "F8",
+        "FE",
+        "FF",
+        "FE"
+      ],
+      "mode_histogram": {
+        "50": 2,
+        "51": 3,
+        "52": 1,
+        "53": 1,
+        "58": 2,
+        "60": 1,
+        "F8": 1,
+        "FA": 1,
+        "FE": 2,
+        "FF": 1
+      },
+      "applicable_checks": {
+        "hq_previous_core/match": 2,
+        "swb_hq_class/restricted": 1,
+        "tcx_previous_core/restricted": 3,
+        "transition_tag/restricted": 1
+      },
+      "conditional_fixed_bits": 5
+    },
+    "2": {
+      "direct_bits": 2640,
+      "carried_unknown_bits": 1320,
+      "no_receipt_bits": 0,
+      "receiver_word_erasures": 15,
+      "modes": [
+        "52",
+        "53",
+        "59",
+        "53",
+        "60",
+        "5B",
+        "53",
+        "53",
+        "60",
+        "51",
+        "5A",
+        "F8",
+        "FF",
+        "FF",
+        "F8"
+      ],
+      "mode_histogram": {
+        "51": 1,
+        "52": 1,
+        "53": 4,
+        "59": 1,
+        "5A": 1,
+        "5B": 1,
+        "60": 2,
+        "F8": 2,
+        "FF": 2
+      },
+      "applicable_checks": {
+        "hq_previous_core/match": 2,
+        "tcx_previous_core/restricted": 2,
+        "transition_tag/restricted": 2
+      },
+      "conditional_fixed_bits": 4
+    },
+    "3": {
+      "direct_bits": 2640,
+      "carried_unknown_bits": 1320,
+      "no_receipt_bits": 0,
+      "receiver_word_erasures": 15,
+      "modes": [
+        "53",
+        "60",
+        "51",
+        "53",
+        "53",
+        "50",
+        "50",
+        "53",
+        "77",
+        "51",
+        "51",
+        "F8",
+        "FD",
+        "FF",
+        "F8"
+      ],
+      "mode_histogram": {
+        "50": 2,
+        "51": 3,
+        "53": 4,
+        "60": 1,
+        "77": 1,
+        "F8": 2,
+        "FD": 1,
+        "FF": 1
+      },
+      "applicable_checks": {
+        "hq_previous_core/match": 2,
+        "inactive_nibble/match": 1,
+        "swb_gsc_inactive/match": 1,
+        "tcx_previous_core/restricted": 2,
+        "transition_tag/restricted": 1
+      },
+      "conditional_fixed_bits": 4
+    },
+    "4": {
+      "direct_bits": 2640,
+      "carried_unknown_bits": 1320,
+      "no_receipt_bits": 0,
+      "receiver_word_erasures": 15,
+      "modes": [
+        "53",
+        "60",
+        "51",
+        "51",
+        "63",
+        "5B",
+        "53",
+        "53",
+        "77",
+        "61",
+        "FA",
+        "F8",
+        "FD",
+        "FF",
+        "F8"
+      ],
+      "mode_histogram": {
+        "51": 2,
+        "53": 3,
+        "5B": 1,
+        "60": 1,
+        "61": 1,
+        "63": 1,
+        "77": 1,
+        "F8": 2,
+        "FA": 1,
+        "FD": 1,
+        "FF": 1
+      },
+      "applicable_checks": {
+        "hq_previous_core/match": 3,
+        "inactive_nibble/match": 1,
+        "swb_gsc_inactive/match": 1,
+        "swb_hq_class/restricted": 1,
+        "tcx_previous_core/restricted": 2,
+        "transition_tag/restricted": 2,
+        "transition_tag/unrestricted": 1
+      },
+      "conditional_fixed_bits": 4
+    }
+  },
+  "complete_clear_words": 0,
+  "receiver_word_erasures": 60,
+  "total": {
+    "direct_bits": 10560,
+    "carried_unknown_bits": 5280,
+    "no_receipt_bits": 0,
+    "slots": 60,
+    "word_erasures": 60,
+    "rule_events": 31,
+    "direct_check_events": 13,
+    "conditional_events": 18,
+    "slots_with_rule_events": 27,
+    "events_by_outcome": {
+      "match": 13,
+      "mismatch": 0,
+      "unavailable": 0,
+      "restricted": 17,
+      "unrestricted": 1,
+      "contradiction": 0
+    },
+    "unique_target_bits": 52,
+    "unique_direct_checked_bits": 25,
+    "unique_conditional_fixed_bits": 17,
+    "unique_conflicting_conditional_bits": 0
+  }
+}
