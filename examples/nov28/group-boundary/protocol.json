@@ -1,0 +1,67 @@
+{
+  "schema": "prospective-independent-6140-neighbor-v1",
+  "declared_utc": "2026-11-28T02:57:41.812749+00:00",
+  "selection": "The two remaining local unused gaps in the November 19 long source each last four seconds. Use one new dated Edogawa reception and keep the result regardless of reception or modes.",
+  "receiver": {
+    "site": "7L4IOU Edogawa, Tokyo, Japan",
+    "origin": "https://7l4iou.tunnel.ubersdr.org",
+    "frequency_hz": 6140000,
+    "grant_mode": "iq48",
+    "duration_seconds": 90,
+    "target_pairs": 4320000,
+    "format": "Stereo PCM16LE I,Q at 48000 samples/s",
+    "connections": 1,
+    "source": "First 4,320,000 returned complex pairs, or all available in this one connection on interruption. Save original WAV/PCM hashes, original timestamps and timestamp jump counts; analysis remains sealed until the source hash is published or explicitly released by the parent. Incomplete or discontinuous capture gives a null primary.",
+    "waveform_inspection_before_release": false
+  },
+  "demod": {
+    "public_revision": "b1f1a6312e95ff67c1d296a0e9623819a9ae4758",
+    "scripts_sha256": {
+      "record_ubersdr_iq.py": "916784ae35223fecbd2c7bf03b0b8c8ff98536440f5a8493b84b7d68ff337aa7",
+      "demod_iq_window.py": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+      "resample_iq.py": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+      "salvage_msc_packets.py": "2cd23f6ee257a405beaa223bc9693c1fae27ce1ad65a399c47595c71bad10725",
+      "received_evs_packets.py": "166bd6978719ea177ae9a55937bb63588e531291f5a26c005bb65441280cb75d",
+      "project_evs_group.py": "83e0d5c24a47aa9cd3af1611da35735053a968b0d559afe1cfe44f2314d51dcb",
+      "evs_evidence.py": "8107835aff25964be3b59272e56ffc7fc2d83e14df6e3807552c30ff4c6fcedb",
+      "evs_core_history.py": "6705df52617bda6797ae9f182bdd3ff633302cb7f4017b01e22542ad6c68f403",
+      "evs_hq_neighbors.py": "326dcbb0e8a040d7e849071830d54242f4e5ccafad7ffb0b904da093996786df"
+    },
+    "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+    "profile": "wiener",
+    "mlc_iterations": 1,
+    "single_pass": true,
+    "offset_hz": 0,
+    "args": [
+      "--seconds",
+      "90",
+      "--reception-profile",
+      "wiener",
+      "--mlc-iterations",
+      "1"
+    ],
+    "salvage_args": [
+      "--transport-only",
+      "--save-packets"
+    ],
+    "upstream_pcm_decoder_sha256": {
+      "pcm_v4.py": "85a3442476172d36a086c09712a01c2e8bdb5da954f9629dc4e7c25d7ca1effd",
+      "pcm_v4_native.so": "839ff170ee2a0405f4438ae3631bc7c06a5c09956ae8b9bf3b3464e694150b6f"
+    }
+  },
+  "counter_history": {
+    "previous_counter_ids": 13735,
+    "previous_json_sha256": "3d6250a63663684883de2ea727c471a4f79d95724afb8226b899e14b66d844d2",
+    "member_assigned_counter_ids": 1121,
+    "member_previously_present": 119,
+    "member_additional": 1002,
+    "member_provenance_sha256": "d32506a7eee71a36cd47b324cf6148746ca1d28bcbca1ac6b18fc7da29c44db4",
+    "new_total": 14737,
+    "compressed_sha256": "f7f5807511565affcab83b5eb162fb3d498248a6c541b5858e147998ba800abd",
+    "decompressed_sha256": "ff50d3eb4895e69ff3ea74a3201e5dc96ac0bb1d7a0a2c01940a8107751dce7a"
+  },
+  "primary": "Earliest source-row phase-zero of a directly and consecutively received native CRC-good 0/1/2 group at one counter, independent of modes. All three row CRCs and all 12 native packet CRCs must pass and bytes agree with the transport snapshot. Report all counter IDs including partial packets; any historical ID overlap, source UTC/continuity failure, absent complete group, or failed receiver gives null blind primary.",
+  "neighbors": "At primary C, permit preceding and following context only from C-1 and C+1 respectively, conditional on that entire neighboring three-DU group and its consecutive physical rows being present in this same sealed IQ and on immediate physical row adjacency across the boundary. No wrap, missing mode, other pass, or other source is substituted. For an absent neighbor record abstention.",
+  "fields": "Report the existing within-primary group evidence unchanged. Separately report eligible boundary predictions/checks restricted to primary slots at the edges, based on directly carried mode octets and provided neighbor context. Record source raw row, counter, phase, role/cycle, DU CRC and hash and packet ordinal for each boundary mode; check only directly carried witness bits. All hidden clear values remain unscored. Keep attributions of conditional and directly verified bits separate.",
+  "scope": "Single unscheduled acquisition. All assigned packet coordinates and all complete groups count regardless of primary mode. A null test ends this recorded attempt."
+}
