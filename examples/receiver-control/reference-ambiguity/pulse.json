@@ -1,0 +1,251 @@
+{
+  "schema": "fixed-synthetic-EVS-pulse-pair-v1",
+  "stimulus": {
+    "source_rate_hz": 32000,
+    "sample_count": 7680,
+    "sample_format": "signed little-endian int16 mono",
+    "pulse_sample_zero_based": 3520,
+    "other_samples": 0,
+    "origin": "Fixed pair selected in a synthetic pulse-amplitude sweep."
+  },
+  "codec": {
+    "encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+    "decoder_sha256": "e07384175dad995379fb738a79e949cd2d25b002f65ad0fa6bda6b8f7a1f0184",
+    "encoder_options": [
+      "-q",
+      "-no_delay_cmp",
+      "-max_band",
+      "SWB",
+      "13200",
+      "32"
+    ],
+    "decoder_options": [
+      "-q",
+      "-no_delay_cmp"
+    ]
+  },
+  "inputs": [
+    {
+      "pulse_value": -11296,
+      "minimum": -11296,
+      "maximum": 0,
+      "peak": 11296,
+      "input_pcm_sha256": "bbe36383400e52ba5182264c570c1be9bb065664527647d9d70da35a37585231",
+      "full_g192_sha256": "347ea949264b4fa0e0f96c1120d472e4784628814fa8b5a74c81512e9a8d1410"
+    },
+    {
+      "pulse_value": -31936,
+      "minimum": -31936,
+      "maximum": 0,
+      "peak": 31936,
+      "input_pcm_sha256": "7363844dda6cfbbbe6810aa61ebd0362bb6793074b136a31fea4686c302fdd2e",
+      "full_g192_sha256": "ad26c13b196664c763d02694e3491c29dd5f74cb5de1b27bbda15249f56f380f"
+    }
+  ],
+  "encoded_words_per_input": 12,
+  "target_slot_zero_based": 5,
+  "position_one_based": 2,
+  "mode_hex": "FA",
+  "target_words_hex": [
+    "fa4e0da47fffc3ffc3baeee5b8332477cbe05a2c9ed427c3800446c41a5bc009df",
+    "fa4e0da4ffffc3ffc3baeee5b8332477cbe05a2c9ed427c3800446c41a5bc009df"
+  ],
+  "direct_word_octet_indices": [
+    0,
+    2,
+    3,
+    5,
+    6,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    17,
+    18,
+    20,
+    21,
+    23,
+    24,
+    26,
+    27,
+    29,
+    30,
+    32
+  ],
+  "direct_octets_hex": "fa0da4ffc3c3bae5b82477e05a9ed4c38046c45bc0df",
+  "equal_target_bits": 263,
+  "changed_word_bits_msb_first_zero_based": [
+    32
+  ],
+  "differing_word_octet_zero_based": 4,
+  "differing_payload_octet_zero_based": 3,
+  "changed_encoded_slots": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "equal_preceding_encoded_slots": 5,
+  "equal_following_encoded_slots": [],
+  "measured_output_by_khz": {
+    "8": {
+      "output_samples_per_stream": 1920,
+      "equal_preceding_samples": 800,
+      "target_samples": 160,
+      "signed_pcm16_target": [
+        {
+          "peak": 795,
+          "rms_s16": 112.653922,
+          "rms_dbfs": -49.274072
+        },
+        {
+          "peak": 2249,
+          "rms_s16": 318.676913,
+          "rms_dbfs": -40.241987
+        }
+      ],
+      "signed_pcm16_difference": {
+        "peak": 1454,
+        "rms_s16": 206.023254,
+        "rms_dbfs": -44.030674
+      },
+      "target_rms_ratio_b_over_a_db": 9.032086,
+      "changed_target_samples": 55,
+      "first_changed_target_sample": 105,
+      "last_changed_target_sample": 159,
+      "full_output_sha256": [
+        "ac37a60b81ce7092e98444b74e4cfaa3642b6cd2185e0975b8720a7ffcf3ee05",
+        "4567c6c8c522d7174039e770c644ba5b46f14bbf89aa50c8bc404653d5f83a80"
+      ],
+      "target_pcm_sha256": [
+        "0c3101372de7ac4af4c6d7fcbedd77e5ac4d1c156a185a959d446b1630fa62fa",
+        "644fc568f331434c7e773bc98213ce6b43a583d085a97ee4c71eed63a3e116fb"
+      ],
+      "copied_a_exact_all_samples": true,
+      "copied_a_pcm_sha256": "ac37a60b81ce7092e98444b74e4cfaa3642b6cd2185e0975b8720a7ffcf3ee05",
+      "truncation_after_target_exact_both": true
+    },
+    "16": {
+      "output_samples_per_stream": 3840,
+      "equal_preceding_samples": 1600,
+      "target_samples": 320,
+      "signed_pcm16_target": [
+        {
+          "peak": 1052,
+          "rms_s16": 122.748803,
+          "rms_dbfs": -48.528653
+        },
+        {
+          "peak": 2975,
+          "rms_s16": 347.174861,
+          "rms_dbfs": -39.498033
+        }
+      ],
+      "signed_pcm16_difference": {
+        "peak": 1923,
+        "rms_s16": 224.426248,
+        "rms_dbfs": -43.287526
+      },
+      "target_rms_ratio_b_over_a_db": 9.03062,
+      "changed_target_samples": 93,
+      "first_changed_target_sample": 227,
+      "last_changed_target_sample": 319,
+      "full_output_sha256": [
+        "c8565a723f5343218e36056e3236b2875726a92c6f481bfb6fa838910317d914",
+        "647e21c0616ade346791ef2519748b2772c9bb5734b7563497f6b718a091a1b1"
+      ],
+      "target_pcm_sha256": [
+        "9ee6100ec4762417f70e189b2acabf2c29d399b15452f74932d1554e6cc04a9c",
+        "29d0c893586faf9b8a85ef724eca1637aa06fe21ce005fb8994ceb7675580240"
+      ],
+      "copied_a_exact_all_samples": true,
+      "copied_a_pcm_sha256": "c8565a723f5343218e36056e3236b2875726a92c6f481bfb6fa838910317d914",
+      "truncation_after_target_exact_both": true
+    },
+    "32": {
+      "output_samples_per_stream": 7680,
+      "equal_preceding_samples": 3200,
+      "target_samples": 640,
+      "signed_pcm16_target": [
+        {
+          "peak": 1044,
+          "rms_s16": 140.762067,
+          "rms_dbfs": -47.339286
+        },
+        {
+          "peak": 2953,
+          "rms_s16": 398.115651,
+          "rms_dbfs": -38.308814
+        }
+      ],
+      "signed_pcm16_difference": {
+        "peak": 1909,
+        "rms_s16": 257.353751,
+        "rms_dbfs": -42.098389
+      },
+      "target_rms_ratio_b_over_a_db": 9.030472,
+      "changed_target_samples": 186,
+      "first_changed_target_sample": 454,
+      "last_changed_target_sample": 639,
+      "full_output_sha256": [
+        "bb137cea830b5113dcda588d8aced1a3e13897301f42d87cef8300b8a10f6a8c",
+        "f6e773b6a9c6c9f4c876ae21a756c3c60eed05c21427dc207209f72aa6ce2801"
+      ],
+      "target_pcm_sha256": [
+        "9876cc09c2c0ae509df4a35c51136795888c9ea68e1269aba16880c55c1e4a45",
+        "f1d219abee8425f80e9dd827ded94443e740a7543d78920062e6c5ecc01c051c"
+      ],
+      "copied_a_exact_all_samples": true,
+      "copied_a_pcm_sha256": "bb137cea830b5113dcda588d8aced1a3e13897301f42d87cef8300b8a10f6a8c",
+      "truncation_after_target_exact_both": true
+    },
+    "48": {
+      "output_samples_per_stream": 11520,
+      "equal_preceding_samples": 4800,
+      "target_samples": 960,
+      "signed_pcm16_target": [
+        {
+          "peak": 1026,
+          "rms_s16": 140.769278,
+          "rms_dbfs": -47.338841
+        },
+        {
+          "peak": 2901,
+          "rms_s16": 398.144267,
+          "rms_dbfs": -38.308189
+        }
+      ],
+      "signed_pcm16_difference": {
+        "peak": 1875,
+        "rms_s16": 257.375162,
+        "rms_dbfs": -42.097666
+      },
+      "target_rms_ratio_b_over_a_db": 9.030652,
+      "changed_target_samples": 279,
+      "first_changed_target_sample": 681,
+      "last_changed_target_sample": 959,
+      "full_output_sha256": [
+        "44a2bd695860b681ce888a10085a1ca811e02884a558756614ce1b21e631ff93",
+        "8be3cb805f2a891f352e531ab8313d15f8a42f3017183cffd81ce2a24acb76c0"
+      ],
+      "target_pcm_sha256": [
+        "018eb0fa4d543efab1e854b7897c87a92684b4d3fc2228e10f96195318d05997",
+        "440caaf8e11e8227c3db1637b7e8593aecd7abfcca04790b4b286d2c54cca58c"
+      ],
+      "copied_a_exact_all_samples": true,
+      "copied_a_pcm_sha256": "44a2bd695860b681ce888a10085a1ca811e02884a558756614ce1b21e631ff93",
+      "truncation_after_target_exact_both": true
+    }
+  },
+  "scope": "A synthetic impulse-amplitude comparison with a shared decoder history. The source PCM and decoded PCM have different scales. The measurements report output differences; human audibility and comparisons with music were not evaluated.",
+  "second_build": {
+    "encoder_sha256": "a69deeb448bb3e5f9303e8f3a4a558d47776ec403bbd268b416993f08a436ff2",
+    "decoder_sha256": "93e19f7ceead1fa18c1c3ccbd480177a56163dd7a53b3db13e5d4a9042c011fd",
+    "identical_complete_g192_and_pcm_at_all_four_rates": true
+  }
+}

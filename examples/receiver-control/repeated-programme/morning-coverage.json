@@ -1,0 +1,192 @@
+{
+  "clock_scope": "05:01:40\u201305:01:50 KST on each date. Korea is UTC+09:00. November 25 uses the second 04:57:46 KST IQ filename in the contributor header. Filename starts and capture ends are stated to whole seconds; neither file gives per-MSC-row UTC or sample times.",
+  "envelope": "Assume the reported times enclose the phase-zero receptions and the counter advances every 1,200 ms. If the recorded UTC duration is D and the observed counter extrema are c0,c1, the start of c0 is between 0 and D\u22121200*(c1\u2212c0) ms after the filename start. The counter envelope includes every group intersecting the half-open ten-second interval under that assumption. Absolute clock accuracy and receiver delay have not been calibrated.",
+  "counting": "Choose the nearest complete phase-zero anchors strictly outside the counter envelope. Count complete, header/CRC-checked native DUs on every pass spanning those anchors at the expected three native rows per group. Overlapping 716-byte DUs must agree at each coordinate. The interior can be longer than ten seconds. These are transport counts.",
+  "window": "Each complete DU occupies 400 ms at its checked relative coordinate. For all possible offsets of the first observed counter within the nominal slack, overlap with the requested ten seconds is piecewise linear. Minima and maxima occur at the endpoints or where a DU boundary meets a window edge. Times use the nominal file clock; the calculation also checks every whole millisecond.",
+  "nov25": {
+    "file": "contrib/kcbsdrm/reference/sf_2026-11-25_0457KST_3205_hik.bin",
+    "sha256": "c0ff7cfb023c45e065ec3745d90a3accac35aa873f1fa5244906409da36a811e",
+    "contributor_header": "contrib/kcbsdrm/reference/KCBS2_text_2026-11-25_0448KST_3205kHz_hik.iptime.org.txt",
+    "header_sha256": "4858239e4f48427ff544d29ca14715938417393b1bf4a2d2f1442e5d90c2a26b",
+    "source_file_start_utc": "2026-11-24T19:57:46Z",
+    "capture_end_utc": "2026-11-24T20:15:29Z",
+    "target_start_utc": "2026-11-24T20:01:40Z",
+    "native_rows": 3091,
+    "complete_du_observations": 3021,
+    "distinct_complete_dus_in_file": 2597,
+    "observed_complete_phase_zero_counter_range": [
+      43679908,
+      43680792
+    ],
+    "duration_ms": 1063000,
+    "nominal_earliest_phase_zero_offset_range_ms": [
+      0,
+      2200
+    ],
+    "nominal_counter_envelope_inclusive": [
+      43680101,
+      43680111
+    ],
+    "outer_complete_phase_zero_counters": [
+      43680100,
+      43680112
+    ],
+    "interior_nominal_duration_ms": 13200,
+    "interior_expected_dus": 33,
+    "passes": [
+      {
+        "anchor_rows": [
+          578,
+          614
+        ],
+        "interior_native_rows_half_open": [
+          581,
+          614
+        ],
+        "complete_du_observations": 33
+      }
+    ],
+    "distinct_complete_interior_dus": 33,
+    "complete_interior_coordinate_count": 33,
+    "repeated_interior_observations": 0,
+    "complete_du_offsets_from_first_interior": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "ten_second_window": {
+      "nominal_target_duration_ms": 10000,
+      "complete_du_min_ms": 10000,
+      "complete_du_max_ms": 10000,
+      "minimum_at_c0_offset_ms": 0,
+      "maximum_at_c0_offset_ms": 0,
+      "tested_boundary_offsets": 7,
+      "integer_offsets_crosschecked": 2201
+    }
+  },
+  "nov26": {
+    "file": "contrib/kcbsdrm/reference/sf_2026-11-26_0500KST_3205_hl5ntr.bin",
+    "sha256": "4eaa8c8e2119dd817cad676273f5b5c2eb1a66067c4447b550c85f6a248ca6a0",
+    "contributor_header": "contrib/kcbsdrm/reference/KCBS2_text_2026-11-26_0500KST_3205kHz_hl5ntr-sdr.ddns.net.txt",
+    "header_sha256": "be5cacf8323751c87756a0eda9c07f28522c8aac57bfc3111669f24e0c96b11e",
+    "source_file_start_utc": "2026-11-25T20:00:18Z",
+    "capture_end_utc": "2026-11-25T20:16:02Z",
+    "target_start_utc": "2026-11-25T20:01:40Z",
+    "native_rows": 2725,
+    "complete_du_observations": 1674,
+    "distinct_complete_dus_in_file": 1437,
+    "observed_complete_phase_zero_counter_range": [
+      43752039,
+      43752820
+    ],
+    "duration_ms": 944000,
+    "nominal_earliest_phase_zero_offset_range_ms": [
+      0,
+      6800
+    ],
+    "nominal_counter_envelope_inclusive": [
+      43752101,
+      43752115
+    ],
+    "outer_complete_phase_zero_counters": [
+      43752096,
+      43752120
+    ],
+    "interior_nominal_duration_ms": 27600,
+    "interior_expected_dus": 69,
+    "passes": [
+      {
+        "anchor_rows": [
+          173,
+          245
+        ],
+        "interior_native_rows_half_open": [
+          176,
+          245
+        ],
+        "complete_du_observations": 25
+      },
+      {
+        "anchor_rows": [
+          2502,
+          2574
+        ],
+        "interior_native_rows_half_open": [
+          2505,
+          2574
+        ],
+        "complete_du_observations": 22
+      }
+    ],
+    "distinct_complete_interior_dus": 26,
+    "complete_interior_coordinate_count": 26,
+    "repeated_interior_observations": 21,
+    "complete_du_offsets_from_first_interior": [
+      16,
+      19,
+      20,
+      23,
+      26,
+      27,
+      38,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      55,
+      56,
+      58,
+      59,
+      67,
+      68
+    ],
+    "ten_second_window": {
+      "nominal_target_duration_ms": 10000,
+      "complete_du_min_ms": 2800,
+      "complete_du_max_ms": 6000,
+      "minimum_at_c0_offset_ms": 6400,
+      "maximum_at_c0_offset_ms": 0,
+      "tested_boundary_offsets": 18,
+      "integer_offsets_crosschecked": 6801
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "public_freeze": "1c716a0876f24329776f1cf5ce79397dcd502745",
+  "input_protocol": "examples/receiver-control/agreed-bytes/protocol.md",
+  "input_protocol_sha256": "195d22bfe92375fab36d0a481d62805a44ddfab0ad387bb16549904b6a69d72e",
+  "acquisition_started_utc": "2026-11-28T16:20:22.078391+00:00",
+  "seal_finished_utc": "2026-11-28T16:20:25.220224+00:00",
+  "recording": "2026-11-27T12_11_22Z_3205.00_iq.wav",
+  "source_original_bytes": 8978476,
+  "source_sha1": "c7986399c981ac7bfb9f6b01affb614aefd56e00",
+  "source_sha256": "7b8aac35ed341b6e193385d119e89695529202dd4a3c14e8cca81bc6d7a78094",
+  "metadata_previously_reported_etag": "8169572bbe1415a0f9073352192af4f3",
+  "acquisition": {
+    "method": "public-share HTTPS GET",
+    "http_status": 200,
+    "etag": "8169572bbe1415a0f9073352192af4f3",
+    "last_modified": "Fri, 27 Nov 2026 12:46:19 GMT"
+  },
+  "source_rate_hz": 12000,
+  "source_format": "RIFF/WAVE PCM16LE stereo I/Q",
+  "source_sample_pairs": 2244096,
+  "source_seconds_half_open": [
+    0,
+    120
+  ],
+  "source_sample_pairs_half_open": [
+    0,
+    1440000
+  ],
+  "nominal_clock_utc_from_filename": [
+    "2026-11-27T12:11:22Z",
+    "2026-11-27T12:13:22Z"
+  ],
+  "station_sample_timestamps_available": false,
+  "source_riff_data_offset": 44,
+  "source_data_bytes": 8976384,
+  "source_original_file_bytes_half_open": [
+    44,
+    5760044
+  ],
+  "pcm_sha256": "a654682c379772d9f3808366e8ea1f0eaf7ee806c924bd0cc97b0b1cbc98a91e",
+  "pcm_bytes": 5760000,
+  "flac": "3205kHz-121122-0-120s-iq12.flac",
+  "flac_sha256": "fe444ecf67d35fc6aeb03a033b8410934ef172b14194d35b18f27115f8b14a20",
+  "flac_bytes": 5018596,
+  "compared_pcm_bytes": 5760000,
+  "byte_identical": true
+}

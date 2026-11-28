@@ -1,0 +1,11 @@
+{
+  "sealed_utc": "2026-11-28T16:57:41.860875+00:00",
+  "revision": "3250f175b96ad3c373e466b09bc2f082bdc044a1",
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "origin": "https://ubersdr.jl1edu.freeddns.org",
+  "frequency_hz": 3205000,
+  "requested_seconds": 150,
+  "permitted_input": "first 150 recorded seconds or what is available from one public IQ48 acquisition, nominal tuning",
+  "demod": "demod_iq_window.py, wiener, 1 MLC iteration, one finite-input pass",
+  "selection": "first CRC-clean native complete 0/1/2 group and first partial transport control using existing phase-anchors/score_air.py rules. Score direct fields and standard conditional EVS checks as in agreed-bytes/field_groups.py. Keep AM or any programme feed separate from selection and evaluation."
+}

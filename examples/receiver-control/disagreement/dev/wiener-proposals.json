@@ -1,0 +1,22 @@
+{
+  "format": "two-branch-physical-packet-proposals-v1",
+  "primary_msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "alternate_msc_sha256": "08ff30e342446c25dd7b47d6009fb0ede1f6424df3888353b30aee2d393a1746",
+  "max_disagreements": 12,
+  "native_rows": [
+    218,
+    218
+  ],
+  "aligned_rows": 136,
+  "rejected_alignment_rows": 0,
+  "counts": {
+    "both_rejected": 85,
+    "identical_crc_failed": 64,
+    "inconsistent": 8,
+    "more_than_limit": 11,
+    "wrong_header": 2
+  },
+  "proposed_packets": 0,
+  "proposals": [],
+  "scope": "Proposals assume every bit where both hard decodes agree is correct. Packet and DU CRCs share a polynomial. Only a separate observation can test common errors."
+}

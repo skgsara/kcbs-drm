@@ -1,0 +1,140 @@
+{
+  "synthetic_original_row_sha256": "cb5d6e619ceeb67ff5c4ffaa5135b61e5f23ea8c9da1ab028c22ba82613ae6d9",
+  "synthetic_target_ordinal": 1,
+  "synthetic_original_wire_sha256": "77c56f6828ff39d4a33658f9c2cd9dd3e0c0fdf0711a742324cdf466fc4f541c",
+  "invalid_decision_seal_rejected": true,
+  "cases": [
+    {
+      "name": "complementary",
+      "primary_target_flips": [
+        100
+      ],
+      "alternate_target_flips": [
+        200
+      ],
+      "shared_sibling_error": false,
+      "proposals": 1,
+      "proposed_checks": {
+        "packet_crcs_pass": 4,
+        "data_unit_crc_pass": true
+      },
+      "sender_comparison": "exact",
+      "proposed_wire_sha256": "77c56f6828ff39d4a33658f9c2cd9dd3e0c0fdf0711a742324cdf466fc4f541c",
+      "remaining_wrong_wire_bits": 0
+    },
+    {
+      "name": "shared_undetectable_error",
+      "primary_target_flips": [
+        100,
+        300,
+        304,
+        311,
+        316
+      ],
+      "alternate_target_flips": [
+        200,
+        300,
+        304,
+        311,
+        316
+      ],
+      "shared_sibling_error": false,
+      "proposals": 1,
+      "proposed_checks": {
+        "packet_crcs_pass": 4,
+        "data_unit_crc_pass": true
+      },
+      "sender_comparison": "different",
+      "proposed_wire_sha256": "b9af4827c10e904168cd3ae1503710a7e423ee52c99ecc6e660cf355eb581954",
+      "remaining_wrong_wire_bits": 4
+    },
+    {
+      "name": "shared_single_error",
+      "primary_target_flips": [
+        100,
+        300
+      ],
+      "alternate_target_flips": [
+        200,
+        300
+      ],
+      "shared_sibling_error": false,
+      "proposals": 0,
+      "abstention": "inconsistent"
+    },
+    {
+      "name": "dependent_disagreements",
+      "primary_target_flips": [
+        300
+      ],
+      "alternate_target_flips": [
+        304,
+        311,
+        316
+      ],
+      "shared_sibling_error": false,
+      "proposals": 0,
+      "abstention": "multiple_solutions"
+    },
+    {
+      "name": "disagreement_limit",
+      "primary_target_flips": [
+        100
+      ],
+      "alternate_target_flips": [
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212
+      ],
+      "shared_sibling_error": false,
+      "proposals": 0,
+      "abstention": "more_than_limit"
+    },
+    {
+      "name": "unavailable_sibling",
+      "primary_target_flips": [
+        100
+      ],
+      "alternate_target_flips": [
+        200
+      ],
+      "shared_sibling_error": true,
+      "proposals": 0,
+      "abstention": "missing_original_sibling"
+    },
+    {
+      "name": "common_failed_packet",
+      "primary_target_flips": [
+        100
+      ],
+      "alternate_target_flips": [
+        100
+      ],
+      "shared_sibling_error": false,
+      "proposals": 0,
+      "abstention": "identical_crc_failed"
+    },
+    {
+      "name": "bad_header",
+      "primary_target_flips": [
+        0,
+        100
+      ],
+      "alternate_target_flips": [
+        200
+      ],
+      "shared_sibling_error": false,
+      "proposals": 0,
+      "abstention": "wrong_header"
+    }
+  ]
+}

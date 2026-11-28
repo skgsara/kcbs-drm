@@ -1,0 +1,13 @@
+{
+  "format": "two-branch-physical-packet-score-v1",
+  "decision_sha256": "2f4e608db6c85253b19bb921e798a586f75d2c68cde5b59bd9e685a4ae8f631b",
+  "peer_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+  "declared_witness_origin": "independent-station",
+  "proposals": 0,
+  "outcomes": {
+    "exact": 0,
+    "different": 0,
+    "unavailable": 0
+  },
+  "comparisons": []
+}

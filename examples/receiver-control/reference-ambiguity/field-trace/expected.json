@@ -1,0 +1,256 @@
+{
+  "input_sha256": {
+    "fixed": "78a5c3ef2c1dc172e203c560744dd386138808c6be51863b6ad9e54b453407bb",
+    "float": "e561715e12f3a8836de12d07c3effd00b982bca001dfabe00547b5f870aa0567"
+  },
+  "source_sha256": {
+    "lib_dec/hq_lr_dec.c": "1bd289bf0d8cc9143207c4de04fb2561ce848a3c9661306b18371dc4d8f1bd35",
+    "lib_dec/tcq_core_dec.c": "62554e8dd050e212ad84a799d9bfc169004d368cee6f023e50f8df161b5f3818",
+    "lib_com/hq2_core_com.c": "6c778752906cde1c5737aa9969d4c6292d6d55891f49f65cd379c5e146f40a20"
+  },
+  "output_rate_hz": 8000,
+  "samples_per_run": 441600,
+  "floating_baseline_and_four_individual_replacements_pcm_sha256": "f6448c4463b3e595082cae2659ca31fc28fa0468c63fb6c67e531081c7ae2fa6",
+  "rows": [
+    {
+      "slot": 1648,
+      "physical_history_bits": [
+        80,
+        81
+      ],
+      "fixed_float_history_pairs": [
+        "00",
+        "11"
+      ],
+      "packed_word_sha256": [
+        "7a0e4045caf268110ea87a7a9d4b1d1b153dad2cf697cdfc48d2d5f0faedb02b",
+        "5039cebc7837851741e7fa8fb7bbc51d212ff057d824cf78cf81d2f40ba4e991"
+      ],
+      "tcq_budget_bits": 178,
+      "top_energy_tuples_band_weightQ14_weightedenergy": [
+        [
+          [
+            15,
+            13926,
+            311940
+          ],
+          [
+            16,
+            13926,
+            278520
+          ]
+        ],
+        [
+          [
+            15,
+            13106,
+            293572
+          ],
+          [
+            16,
+            13106,
+            262120
+          ]
+        ]
+      ],
+      "upper_two_band_allocation_Q16": [
+        0,
+        0
+      ],
+      "upper_two_band_pulse_counts": [
+        0,
+        0
+      ],
+      "secondary_allocation_indices": [
+        2,
+        0
+      ],
+      "equal_array_sha256_le_int32": {
+        "allocation": "74a2c10e17bc81c8ca972e998097578366391cadf29202543235a28e11aeaa87",
+        "secondary": "d86e8112f3c4c4442126f8e9f44f16867da487f29052bf91b810457db34209a4",
+        "pulse_counts": "87f2430a5a350df79d4e8f5c0da06e04dff73755cd84e3be7e18149f9e5cd8c8",
+        "spectrum": "fccc3170fc99f1287fe32eaa5712e03b73802ce1453198387adbc4fa5458a159"
+      }
+    },
+    {
+      "slot": 1664,
+      "physical_history_bits": [
+        84,
+        85
+      ],
+      "fixed_float_history_pairs": [
+        "00",
+        "11"
+      ],
+      "packed_word_sha256": [
+        "90f28ce84d7a5c4d305b079c416a3cc0b86aa9de83d7462873fc02b6276348ff",
+        "ffb6fc693133ce77c7169f9732a6d53dfcc7e895ee7a397d14d30cff389b2367"
+      ],
+      "tcq_budget_bits": 174,
+      "top_energy_tuples_band_weightQ14_weightedenergy": [
+        [
+          [
+            15,
+            13926,
+            311940
+          ],
+          [
+            16,
+            13926,
+            311940
+          ]
+        ],
+        [
+          [
+            15,
+            13106,
+            293572
+          ],
+          [
+            16,
+            13106,
+            293572
+          ]
+        ]
+      ],
+      "upper_two_band_allocation_Q16": [
+        0,
+        0
+      ],
+      "upper_two_band_pulse_counts": [
+        0,
+        0
+      ],
+      "secondary_allocation_indices": [
+        2,
+        9
+      ],
+      "equal_array_sha256_le_int32": {
+        "allocation": "bacfc6b477d7ad054617f1b0588580ac1de580774fcc188518d3d688cdcd00e3",
+        "secondary": "a8db57eb231a849fee7592bd51c53ba4a0a9d20470bb2cd58cbd523a7890de63",
+        "pulse_counts": "f9b42e8fc5e3bb864633b5e79c9800607d7ac7672d2d269bc8e6336499484977",
+        "spectrum": "ed528da94c3d6baa9f6aa8f90e9c0539ffd7379d6dc905b311eb37441debe79a"
+      }
+    },
+    {
+      "slot": 1702,
+      "physical_history_bits": [
+        80,
+        81
+      ],
+      "fixed_float_history_pairs": [
+        "00",
+        "11"
+      ],
+      "packed_word_sha256": [
+        "aaac616f64215172d2afc0fda6301498942c5589b5aa367daafac98852991a3a",
+        "5b857ec3adf6bb47553e37f3bdc6bcec50932501a90902687dfe930f196b5905"
+      ],
+      "tcq_budget_bits": 178,
+      "top_energy_tuples_band_weightQ14_weightedenergy": [
+        [
+          [
+            15,
+            13926,
+            334224
+          ],
+          [
+            16,
+            13926,
+            311940
+          ]
+        ],
+        [
+          [
+            15,
+            13106,
+            314544
+          ],
+          [
+            16,
+            13106,
+            293572
+          ]
+        ]
+      ],
+      "upper_two_band_allocation_Q16": [
+        0,
+        0
+      ],
+      "upper_two_band_pulse_counts": [
+        0,
+        0
+      ],
+      "secondary_allocation_indices": [
+        2,
+        0
+      ],
+      "equal_array_sha256_le_int32": {
+        "allocation": "e609babae5a3dfbb1463e33b4dac7715fffdf17237659f45a1b7b656ace1de36",
+        "secondary": "d86e8112f3c4c4442126f8e9f44f16867da487f29052bf91b810457db34209a4",
+        "pulse_counts": "a785685f5bdaac5916a20563adafc69585a08be6cab0d2527258ea76a0133ace",
+        "spectrum": "64ef414b4c02570b8104d17249b5ad16086d4ff326ec3d35c351db23c5231605"
+      }
+    },
+    {
+      "slot": 1743,
+      "physical_history_bits": [
+        81,
+        82
+      ],
+      "fixed_float_history_pairs": [
+        "00",
+        "11"
+      ],
+      "packed_word_sha256": [
+        "3fb40542073ccf8e8483825593a7a432f7082806ee6167c4f2b03cf7b6cbce24",
+        "bb942dbc6a45758264e3a8b788404e0df770bd92f84078d5f37ea784bb978e5e"
+      ],
+      "tcq_budget_bits": 177,
+      "top_energy_tuples_band_weightQ14_weightedenergy": [
+        [
+          [
+            15,
+            13926,
+            289660
+          ],
+          [
+            16,
+            13926,
+            311940
+          ]
+        ],
+        [
+          [
+            15,
+            13106,
+            272604
+          ],
+          [
+            16,
+            13106,
+            293572
+          ]
+        ]
+      ],
+      "upper_two_band_allocation_Q16": [
+        0,
+        0
+      ],
+      "upper_two_band_pulse_counts": [
+        0,
+        0
+      ],
+      "secondary_allocation_indices": [
+        2,
+        7
+      ],
+      "equal_array_sha256_le_int32": {
+        "allocation": "ed40443e314211d03d0016a7d92863774f5e0bc9f4d0e5050747b6487ba66dd4",
+        "secondary": "2d67ef783431a8116dcaef3e3975503030a5b7496f7b1d21a951e0f17d115221",
+        "pulse_counts": "115b7932d4e44963801a56b17026c46ae0e22efb32f9db8d047a44ad516044a9",
+        "spectrum": "78fb4e0cb3368d997eb16922b46a51296f0577baf3ce72060ee30e367a05790b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "format": "two-branch-physical-packet-score-v1",
+  "decision_sha256": "3896a7a5e6be7cd660fcb8c7a79612b6d4a1fb3adf83bfd64d18596d01ec4f7b",
+  "peer_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+  "declared_witness_origin": "independent-station",
+  "proposals": 3,
+  "outcomes": {
+    "exact": 3,
+    "different": 0,
+    "unavailable": 0
+  },
+  "comparisons": [
+    {
+      "primary_row": 41,
+      "peer_row": 44,
+      "ordinal": 0,
+      "outcome": "exact",
+      "peer_wire_sha256": "db4c3ef64a74a8c97dfa57fec93eb92fa956dec638eeacd4bb80482e2d8616bf"
+    },
+    {
+      "primary_row": 129,
+      "peer_row": 132,
+      "ordinal": 0,
+      "outcome": "exact",
+      "peer_wire_sha256": "3729cdf1cb98d435d9ce81f4672e029e2b315d64c12a98c6f8997d09cf1fbf7f"
+    },
+    {
+      "primary_row": 156,
+      "peer_row": 159,
+      "ordinal": 0,
+      "outcome": "exact",
+      "peer_wire_sha256": "d5293d429041204ab4bb270f22728df9024ee490da2f5479899fc44334a62026"
+    }
+  ]
+}

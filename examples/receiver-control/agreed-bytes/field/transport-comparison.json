@@ -1,0 +1,409 @@
+{
+  "decision_sha256": "787c4f34d8d295ea10e4710c89731fe1876c51e1481fa824cc1bbde99033c2e7",
+  "arms": {
+    "wiener1": {
+      "msc_sha256": "24da9cfc61dfc4d593ba8f62d036bda3bc419de15f98c7397622a58426344e7b",
+      "received_packets": 753,
+      "complete_data_units": 168,
+      "complete_groups": 42,
+      "selected_groups": {
+        "43872625": {
+          "received_packet_ordinals": {},
+          "physically_complete_slots": 0,
+          "physically_partial_slots": 0,
+          "physically_missing_slots": 60,
+          "confirmed_direct_bits": 0,
+          "full_clear_words": 0
+        }
+      }
+    },
+    "linear4": {
+      "msc_sha256": "0eb2a63c7f0fc6482970c8aa3e3c3e140738a13308a9c645eb685b0b2379a87c",
+      "received_packets": 745,
+      "complete_data_units": 167,
+      "complete_groups": 42,
+      "selected_groups": {
+        "43872625": {
+          "received_packet_ordinals": {},
+          "physically_complete_slots": 0,
+          "physically_partial_slots": 0,
+          "physically_missing_slots": 60,
+          "confirmed_direct_bits": 0,
+          "full_clear_words": 0
+        }
+      }
+    },
+    "wiener4": {
+      "msc_sha256": "32f3963767428a2c65b86b0f130c97f154a1bbfbd4d5e94135f38288b614e6cf",
+      "received_packets": 774,
+      "complete_data_units": 172,
+      "complete_groups": 42,
+      "selected_groups": {
+        "43872625": {
+          "received_packet_ordinals": {
+            "0": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "1": [
+              0,
+              1,
+              2
+            ],
+            "2": [
+              0,
+              2
+            ]
+          },
+          "physically_complete_slots": 46,
+          "physically_partial_slots": 5,
+          "physically_missing_slots": 9,
+          "confirmed_direct_bits": 8280,
+          "full_clear_words": 0
+        }
+      }
+    },
+    "proposed": {
+      "msc_sha256": "cdcfaf5d52f368b399aac5a00e5e7864cfbf04922e99f075cf795c042f850781",
+      "received_packets": 766,
+      "complete_data_units": 170,
+      "complete_groups": 42,
+      "selected_groups": {
+        "43872625": {
+          "received_packet_ordinals": {
+            "0": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "1": [
+              0,
+              1,
+              2
+            ],
+            "2": [
+              0,
+              2
+            ]
+          },
+          "physically_complete_slots": 46,
+          "physically_partial_slots": 5,
+          "physically_missing_slots": 9,
+          "confirmed_direct_bits": 8280,
+          "full_clear_words": 0
+        }
+      }
+    }
+  },
+  "proposal_origins": [
+    {
+      "primary_row": 114,
+      "alternate_row": 114,
+      "repaired_ordinal": 0,
+      "phase_tag": 0,
+      "counter_if_transmitted_here": 43872625,
+      "file": "row-000114.du",
+      "du_sha256": "ef4bcbe67302a7c4ea039568856589347c12b560a9533d988b57b6170141a0ce",
+      "transmitted_du_crc": "cf6f",
+      "changed_physical_bits": [
+        {
+          "wire_bit_msb0": 638,
+          "du_byte": 78,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 3,
+          "word_octet": 6,
+          "slot": 2,
+          "physical_word_bit_msb0": 54,
+          "payload_offset_excluding_mode": 5
+        },
+        {
+          "wire_bit_msb0": 639,
+          "du_byte": 78,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 3,
+          "word_octet": 6,
+          "slot": 2,
+          "physical_word_bit_msb0": 55,
+          "payload_offset_excluding_mode": 5
+        },
+        {
+          "wire_bit_msb0": 640,
+          "du_byte": 79,
+          "field": "evs_non_direct",
+          "cycle": 0,
+          "position": 3,
+          "word_octet": 7,
+          "slot": 2,
+          "physical_word_bit_msb0": 56,
+          "payload_offset_excluding_mode": 6
+        },
+        {
+          "wire_bit_msb0": 643,
+          "du_byte": 79,
+          "field": "evs_non_direct",
+          "cycle": 0,
+          "position": 3,
+          "word_octet": 7,
+          "slot": 2,
+          "physical_word_bit_msb0": 59,
+          "payload_offset_excluding_mode": 6
+        }
+      ],
+      "sibling_sources": {
+        "1": "primary",
+        "2": "primary",
+        "3": "primary"
+      }
+    }
+  ],
+  "proposed_minus_wiener1": [
+    [
+      43872625,
+      0,
+      0
+    ],
+    [
+      43872625,
+      0,
+      1
+    ],
+    [
+      43872625,
+      0,
+      2
+    ],
+    [
+      43872625,
+      0,
+      3
+    ],
+    [
+      43872625,
+      1,
+      0
+    ],
+    [
+      43872625,
+      1,
+      1
+    ],
+    [
+      43872625,
+      1,
+      2
+    ],
+    [
+      43872625,
+      2,
+      0
+    ],
+    [
+      43872625,
+      2,
+      2
+    ],
+    [
+      43872626,
+      2,
+      0
+    ],
+    [
+      43872626,
+      2,
+      1
+    ],
+    [
+      43872626,
+      2,
+      2
+    ],
+    [
+      43872626,
+      2,
+      3
+    ]
+  ],
+  "wiener1_minus_proposed": [],
+  "proposed_minus_any_single_pass": [],
+  "gained_body_comparisons": [
+    {
+      "counter": 43872625,
+      "phase": 0,
+      "ordinal": 0,
+      "proposed_body_sha256": "bb10e449d7d480e95b4d66185cfa6de253b0e9f12fb531a21e423fac0d5b2562",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872625,
+      "phase": 0,
+      "ordinal": 1,
+      "proposed_body_sha256": "285d886439b1ea8acf2b6cb467930add0f0f36eefa9f3bf160c02119be2c9a4c",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872625,
+      "phase": 0,
+      "ordinal": 2,
+      "proposed_body_sha256": "2925244e3af18d88b441b746205cfaa316c29b4f790d684b38a9c49296a223e2",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872625,
+      "phase": 0,
+      "ordinal": 3,
+      "proposed_body_sha256": "dab21874d9c5af47559fd5974831143fc352785c7f305bb34b9563a8ee1668e1",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872625,
+      "phase": 1,
+      "ordinal": 0,
+      "proposed_body_sha256": "0eb565bf771ede09d7f09d95605b90598c7008350a6d4f6d33ffa59d13fe386e",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872625,
+      "phase": 1,
+      "ordinal": 1,
+      "proposed_body_sha256": "5302789ae9179a811f324ae25c18e2d3e8fa7505033bf5fd84de482a517073a4",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872625,
+      "phase": 1,
+      "ordinal": 2,
+      "proposed_body_sha256": "2d952b242b45d9016da3e86239b06be2e381214c5aae30b9bb94b842db40edf2",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872625,
+      "phase": 2,
+      "ordinal": 0,
+      "proposed_body_sha256": "88ff4b9e8b6524e752183fde012eddba1c654c0a3fb5e814b5a6dcd0f053633c",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872625,
+      "phase": 2,
+      "ordinal": 2,
+      "proposed_body_sha256": "8027459e11db3966fc78066b5f1059cd27c476a7d063aaa7aa68f0f6f5a8d099",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872626,
+      "phase": 2,
+      "ordinal": 0,
+      "proposed_body_sha256": "9eb8cf92c15104258997bdff269ceb120118f386fc027712c34ceb1de7c885b1",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872626,
+      "phase": 2,
+      "ordinal": 1,
+      "proposed_body_sha256": "338e5d629d5c1933acce8c019dfde77b3ae0f04a1a487e087aeaaf9f5e822685",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872626,
+      "phase": 2,
+      "ordinal": 2,
+      "proposed_body_sha256": "1bf658ff204277d3ad38991b754405ccb3d506054fe3e8104649da1e9ab0241d",
+      "same_iq_wiener4_body_exact": true
+    },
+    {
+      "counter": 43872626,
+      "phase": 2,
+      "ordinal": 3,
+      "proposed_body_sha256": "86cf78b7cd3dc13a8783dc124ab82790a7e7c11c799e062b2891020b53399f3a",
+      "same_iq_wiener4_body_exact": true
+    }
+  ],
+  "all_arm_assigned_counters": [
+    43872587,
+    43872588,
+    43872589,
+    43872590,
+    43872591,
+    43872592,
+    43872593,
+    43872594,
+    43872595,
+    43872596,
+    43872597,
+    43872598,
+    43872599,
+    43872602,
+    43872603,
+    43872604,
+    43872605,
+    43872606,
+    43872607,
+    43872608,
+    43872609,
+    43872610,
+    43872611,
+    43872612,
+    43872613,
+    43872614,
+    43872615,
+    43872616,
+    43872617,
+    43872618,
+    43872619,
+    43872620,
+    43872621,
+    43872622,
+    43872623,
+    43872625,
+    43872626,
+    43872627,
+    43872628,
+    43872629,
+    43872630,
+    43872631,
+    43872632,
+    43872633,
+    43872634,
+    43872635,
+    43872636,
+    43872637,
+    43872638,
+    43872639,
+    43872640,
+    43872641,
+    43872642,
+    43872643,
+    43872644,
+    43872648,
+    43872649,
+    43872650,
+    43872651,
+    43872652,
+    43872653,
+    43872654,
+    43872656,
+    43872659,
+    43872660,
+    43872661,
+    43872663,
+    43872664,
+    43872665,
+    43872666,
+    43872667,
+    43872673,
+    43872674,
+    43872675,
+    43872678,
+    43872679,
+    43872680,
+    43872681,
+    43872682,
+    43872684
+  ],
+  "all_arm_prior_overlap": []
+}

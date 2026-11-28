@@ -1,0 +1,77 @@
+{
+  "synthetic": {
+    "correct_unchanged_bodies": {
+      "header_only_compatible": 32,
+      "fcs_only_compatible": 64
+    },
+    "rejected_logical_bit_errors": {
+      "unedited_unit_crc_failed": 5728
+    },
+    "crc_compatible_body_and_damaged_wire_fcs": {
+      "outcome": "fcs_only_compatible",
+      "matches_sender": false
+    }
+  },
+  "field_1232": {
+    "left": "edogawa-msc.bin",
+    "right": "yokohama-msc.bin",
+    "original_sha256": [
+      "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+      "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64"
+    ],
+    "witnessed_row_pairs": 135,
+    "left_results": {
+      "native_rows": 218,
+      "three_canonical_good_and_one_crc_failed": 26,
+      "unchanged_du_crc_passed": 0,
+      "outcomes": {
+        "not_one_failed_crc": 192,
+        "unedited_unit_crc_failed": 26
+      },
+      "peer_packet_comparisons": {},
+      "candidates": []
+    },
+    "right_results": {
+      "native_rows": 220,
+      "three_canonical_good_and_one_crc_failed": 9,
+      "unchanged_du_crc_passed": 0,
+      "outcomes": {
+        "not_one_failed_crc": 211,
+        "unedited_unit_crc_failed": 9
+      },
+      "peer_packet_comparisons": {},
+      "candidates": []
+    }
+  },
+  "field_2126": {
+    "left": "primary.msc.bin",
+    "right": "witness.msc.bin",
+    "original_sha256": [
+      "b1c5bcb0d4c8bbf22841e75c1dea491a93f7ead03a402d04c82698a84ec9b9f9",
+      "c36d4f0763a02d87b28d4afb033140fae970666bcc73c8dfb50df1e1a107e7fc"
+    ],
+    "witnessed_row_pairs": 118,
+    "left_results": {
+      "native_rows": 434,
+      "three_canonical_good_and_one_crc_failed": 27,
+      "unchanged_du_crc_passed": 0,
+      "outcomes": {
+        "not_one_failed_crc": 407,
+        "unedited_unit_crc_failed": 27
+      },
+      "peer_packet_comparisons": {},
+      "candidates": []
+    },
+    "right_results": {
+      "native_rows": 444,
+      "three_canonical_good_and_one_crc_failed": 66,
+      "unchanged_du_crc_passed": 0,
+      "outcomes": {
+        "not_one_failed_crc": 378,
+        "unedited_unit_crc_failed": 66
+      },
+      "peer_packet_comparisons": {},
+      "candidates": []
+    }
+  }
+}
