@@ -674,6 +674,12 @@ selection and held-out slices separate.
 
 ## Can this run live?
 
+A separate 6140 kHz blind run at 13:47 UTC located three packets at new counter
+`43949404`. The primary delivered 87.635 seconds of IQ before disconnecting.
+It supplied 2,568 directly observable bits and no complete clear EVS words.
+The independent receiver completed 120 seconds and supplied no CRC-valid
+packets. [Lossless recordings, frozen score and per-position evidence](examples/nov28/edogawa-audio-branch/)
+
 The November 28 13:00 UTC Yokohama recording captured 1,194.7 seconds on 3205 kHz. It identified service `A00002` and its Korean label. The first ten minutes yielded zero CRC-valid MSC packets. The remainder supplied one complete 60-slot transport group, counter `43947653`. The simultaneous two-minute Edogawa reference on 6140 kHz supplied 60 complete groups. [Recordings, counters and frozen test result](examples/nov28/yokohama-1300/)
 
 Two prospective November 28 recordings show what the transport receiver can certify on live RF. At 12:28 UTC Yokohama supplied zero CRC-valid packets on 3205 kHz. At 12:32 UTC two independent receivers tuned to 6140 kHz received the same 60 slots for counter 43945659. All 10,560 directly observable bits agreed. The frozen receiver verified zero complete clear EVS words for that counter. Both examples include lossless IQ for replay. [12:28 UTC recording](examples/nov28/dual-iq-1228/) · [12:32 UTC recording](examples/nov28/same-6140-1232/)

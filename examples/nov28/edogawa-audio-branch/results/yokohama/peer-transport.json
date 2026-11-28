@@ -1,0 +1,28 @@
+{
+  "demodulation_start_utc": "2026-11-28T13:50:12.547949+00:00",
+  "primary_seal_utc": "2026-11-28T13:49:51.137723+00:00",
+  "physical_counts": {
+    "msc_rows": 108,
+    "packet_crc_checks": 432,
+    "physical_packets_crc": 0,
+    "physical_packets_crc_and_header": 0,
+    "native_complete_dus": 0
+  },
+  "assigned_counters": [],
+  "accepted_packet_count": 0,
+  "accepted_du_count": 0,
+  "native_whole_group_count": 0,
+  "earliest_native_whole": null,
+  "target": 43949404,
+  "target_native_groups": [],
+  "target_assigned_packet_rows": {},
+  "target_complete_phases": [],
+  "transport_only": true,
+  "station": "JL1EDU",
+  "sha256": {
+    "rf/msc.bin": "aec269eb2a4c3c5a878938ae866b6f44c24bb745d1378321ecc7c3f454c6ffc8",
+    "transport/packets.npz": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+    "transport/data_units.npz": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+    "transport/provenance.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

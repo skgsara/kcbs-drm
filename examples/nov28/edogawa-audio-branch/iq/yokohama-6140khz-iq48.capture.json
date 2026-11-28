@@ -1,0 +1,26 @@
+{
+  "origin": "https://ubersdr.jl1edu.freeddns.org",
+  "frequency_hz": 6140000,
+  "mode": "iq48",
+  "sample_rate_hz": 48000,
+  "started_utc": "2026-11-28T13:47:30.063888+00:00",
+  "requested_seconds": 120,
+  "sample_pairs": 5760000,
+  "packets": 18000,
+  "timestamped_packets": 17994,
+  "timestamp_jumps_over_one_sample": 0,
+  "max_abs_timestamp_jump_ns": 7168,
+  "first_timestamp_sample_and_unix_ns": [
+    1920,
+    1795873651539306252
+  ],
+  "last_timestamp_sample_and_unix_ns": [
+    5759760,
+    1795873771494289416
+  ],
+  "iq_pcm_sha256": "15f49a5e95174af5f414af70ce4865d99f81c2c38f711f6a56fa57d12904c294",
+  "packet_timing_file": "original.wav.timing.csv",
+  "wall_seconds": 123.525,
+  "sample_seconds": 120.0,
+  "sample_target_reached": true
+}
