@@ -2,6 +2,7 @@
 import argparse
 from collections import Counter
 import csv
+import gzip
 from hashlib import sha256
 from io import StringIO
 import json
@@ -13,7 +14,9 @@ sys.path.insert(0, str(HERE.parent / "dual-iq-1228"))
 import score_fields as scorer
 from check_evs_origin import PROJECTED_OCTETS
 from evs_evidence import bit_evidence, field_sections
+from locate_evs_slots import unit_locations
 from project_evs_group import project_group
+from received_evs_packets import PACKET_BYTES
 from render_continuous import MODE_POSITIONS, PACKET_STARTS
 
 INDEPENDENT = "independent_yokohama"
@@ -25,6 +28,84 @@ CSV_HEADER = ("counter", "slot", "position", "mode", "field", "predicted", "targ
 def require(condition, message):
     if not condition:
         raise ValueError(message)
+
+
+def checked_bytes(path, expected_hash):
+    data = path.read_bytes()
+    require(sha256(data).hexdigest() == expected_hash, f"{path.name} differs from its published SHA-256")
+    return data
+
+
+def station_transport(snapshot, receipt, site):
+    """The archive supplies 179-byte bodies. native_groups.py checks native headers and packet CRCs."""
+    packets = {}
+    units = {}
+    for tick, (unit, present) in snapshot.items():
+        counter, phase = divmod(tick, 3)
+        for ordinal, packet in enumerate(unit.reshape(4, PACKET_BYTES)):
+            if present[ordinal]:
+                packets[counter, phase, ordinal] = packet.tobytes()
+        if present.all():
+            units[counter, phase] = unit.tobytes()  # snapshot() already checked its transmitted DU CRC.
+
+    require(len(packets) == receipt["coord_packets"], f"{site}: assigned packet count differs")
+    require(len(units) == receipt["coord_dus"], f"{site}: complete DU count differs")
+    counters = {counter for counter, _, _ in packets}
+    require(sorted(counters) == receipt["assigned_counters"], f"{site}: assigned counters differ")
+    complete_groups = {counter for counter in counters if all((counter, phase) in units for phase in range(3))}
+    require(sorted(complete_groups) == receipt["archived_complete_groups"], f"{site}: complete archive groups differ")
+
+    native_groups = set()
+    previous_row = -1
+    for group in receipt["direct_complete_groups"]:
+        counter = group["counter"]
+        start = group["phase0_row"]
+        require(previous_row < start and start + 2 < receipt["msc_rows"], f"{site}: invalid native group row order")
+        previous_row = start
+        require(counter in complete_groups, f"{site}: native group {counter} lacks a complete archived DU")
+        hashes = [sha256(units[counter, phase]).hexdigest() for phase in range(3)]
+        require(hashes == group["du_sha256"], f"{site}: native/archived DU differs at counter {counter}")
+        native_groups.add(counter)
+    return packets, units, counters, native_groups
+
+
+def coordinate_overlap(left, right):
+    shared = left.keys() & right.keys()
+    conflicts = sorted(key for key in shared if left[key] != right[key])
+    return dict(left_only=len(left) - len(shared), right_only=len(right) - len(shared),
+                union=len(left.keys() | right.keys()), intersection=len(shared),
+                exact_matches=len(shared) - len(conflicts), conflicting_coordinates=[list(key) for key in conflicts])
+
+
+def verify_transport(source, peer, native, primary, history, comparison):
+    """Recompute the published comparison from the hash-bound assigned archives and chronological group receipts."""
+    source_packets, source_units, source_ids, source_groups = station_transport(source, native["edogawa"], "edogawa")
+    peer_packets, peer_units, peer_ids, peer_groups = station_transport(peer, native["yokohama"], "yokohama")
+    peer_primary = None
+    if primary is not None:
+        packets = {key: body for key, body in peer_packets.items() if key[0] == primary}
+        units = {key: body for key, body in peer_units.items() if key[0] == primary}
+        peer_primary = dict(
+            packets=len(packets),
+            matching_packets=sum(source_packets.get(key) == body for key, body in packets.items()),
+            complete_dus=len(units),
+            equal_dus=sum(source_units.get(key) == body for key, body in units.items()),
+            full_native=primary in peer_groups,
+        )
+    measured = dict(
+        ordered_sources=["edogawa", "yokohama"],
+        history_count=len(history),
+        any_historical_intersection=dict(edogawa=sorted(source_ids & history), yokohama=sorted(peer_ids & history)),
+        primary_id_seen_before=primary in history if primary is not None else None,
+        primary_peer_receipt=peer_primary,
+        comparison_packets=coordinate_overlap(source_packets, peer_packets),
+        comparison_whole_dus=coordinate_overlap(source_units, peer_units),
+        direct_complete_group_ids_both=sorted(source_groups & peer_groups),
+        union_direct_complete_group_count=len(source_groups | peer_groups),
+    )
+    for name, value in measured.items():
+        require(value == comparison[name], f"transport receipt differs for {name}")
+    return measured
 
 
 def field_counts(events):
@@ -41,6 +122,49 @@ def field_summary(events):
                      for pos in range(1, 5)}
         result[rule] = field_counts(subset) | {"position": positions}
     return result
+
+
+def direct_signatures(snapshot):
+    signatures = {}
+    for tick, (unit, present) in snapshot.items():
+        counter, phase = divmod(tick, 3)
+        for (_, _, cycle, position), octets in unit_locations(counter, phase, unit, present):
+            signatures[tick * 20 + cycle * 4 + position - 1] = octets
+    return signatures
+
+
+def signature_counts(slots, source, peer, shift):
+    checked = matched = 0
+    for slot in slots:
+        left = source.get(slot)
+        right = peer.get(slot + shift)
+        if left is not None and right is not None:
+            checked += 1
+            matched += left == right
+    return dict(eligible=len(slots), checked=checked, matched=matched, wrong=checked - matched,
+                missing=len(slots) - checked)
+
+
+def alignment_controls(decisions, source, peer, primary):
+    """Keep each source prediction fixed while moving its peer target along the slot clock."""
+    source_words = direct_signatures(source)
+    peer_words = direct_signatures(peer)
+    inactive = [decision for decision in decisions if decision[3] == "inactive_nibble"]
+    inactive_slots = [60 * counter + slot for counter, slot, _, _, _ in inactive]
+    primary_slots = [] if primary is None else range(60 * primary, 60 * (primary + 1))
+    results = []
+    for shift in (-60, -1, 0, 1, 60):
+        shifted = []
+        for counter, slot, mode, rule, expected in inactive:
+            next_counter, next_slot = divmod(60 * counter + slot + shift, 60)
+            shifted.append((next_counter, next_slot, mode, rule, expected))
+        results.append(dict(
+            peer_shift_slots=shift,
+            inactive_nibble=field_counts(scorer.observe(shifted, peer)),
+            inactive_direct_octets=signature_counts(inactive_slots, source_words, peer_words, shift),
+            primary_direct_octets=signature_counts(primary_slots, source_words, peer_words, shift),
+        ))
+    return results
 
 
 def verify_fields(decisions, source, peer, primary, saved, comparison, csv_path):
@@ -140,8 +264,14 @@ def compare_primary(primary, source_path, peer_path, include_slots):
 
 
 def replay(case_dir, include_slots):
-    protocol = json.loads((case_dir / "protocol.json").read_text())
     comparison = json.loads((case_dir / "comparison.json").read_text())
+    sources = json.loads(checked_bytes(case_dir / "sealed-sources.json", comparison["official_source_sha256"]))
+    protocol = json.loads(checked_bytes(case_dir / "protocol.json", sources["protocol_sha256"]))
+    prior = protocol["history"]
+    registry = checked_bytes(case_dir / "history.json.gz", prior["file_sha256"])
+    ids = json.loads(gzip.decompress(registry))["counter_ids"]
+    history = set(ids)
+    require(len(history) == len(ids) == prior["total"], "frozen history count differs")
     saved = json.loads((case_dir / "fields.json").read_text())
     plan = protocol["direct_fields"]
     predictor_sha = sha256((scorer.SCRIPTS / "evs_gsc_fields.py").read_bytes()).hexdigest()
@@ -153,12 +283,9 @@ def replay(case_dir, include_slots):
     packet_hashes = {}
     native = {}
     for site, path in (("edogawa", source_path), ("yokohama", peer_path)):
-        receipt = (case_dir / f"{site}-native.json").read_bytes()
-        require(sha256(receipt).hexdigest() == comparison["stations"][site], f"{site} native receipt differs")
-        native[site] = json.loads(receipt)
-        packet_hashes[path.name] = sha256(path.read_bytes()).hexdigest()
-        require(packet_hashes[path.name] == native[site]["archive_sha256"]["packets.npz"],
-                f"{site} packet snapshot differs from native receipt")
+        native[site] = json.loads(checked_bytes(case_dir / f"{site}-native.json", comparison["stations"][site]))
+        packet_hashes[path.name] = native[site]["archive_sha256"]["packets.npz"]
+        checked_bytes(path, packet_hashes[path.name])
     primary_record = min(native["edogawa"]["direct_complete_groups"], key=lambda group: group["phase0_row"],
                          default=None)
     require(primary_record == comparison["primary"], "primary differs from earliest complete native group")
@@ -166,18 +293,14 @@ def replay(case_dir, include_slots):
     source = scorer.snapshot(source_path)
     _, decisions = scorer.forecasts(source)
     peer = scorer.snapshot(peer_path)
-    if primary is not None:
-        fingerprints = []
-        for phase in range(3):
-            row = source.get(3*primary + phase)
-            require(row is not None and row[1].all(), "selected primary lacks a complete Edogawa DU")
-            fingerprints.append(sha256(row[0].tobytes()).hexdigest())
-        require(fingerprints == primary_record["du_sha256"], "primary DUs disagree with the selection receipt")
+    transport = verify_transport(source, peer, native, primary, history, comparison)
     return dict(
         packet_sha256=packet_hashes,
-        field_protocol_sha256=sha256((case_dir / "protocol.json").read_bytes()).hexdigest(),
+        field_protocol_sha256=sources["protocol_sha256"],
+        transport=transport,
         fields=verify_fields(decisions, source, peer, primary, saved, comparison, case_dir / "field-rows.csv"),
         primary_direct=compare_primary(primary, source_path, peer_path, include_slots),
+        retrospective_alignment_controls=alignment_controls(decisions, source, peer, primary),
     )
 
 
