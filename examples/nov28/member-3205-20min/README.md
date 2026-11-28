@@ -18,6 +18,34 @@ The FAC in this recording signals short interleaving and 16-QAM for both MSC and
 
 Using the Edogawa receiver's timestamps and the shared counter sequence places the start of the member file at about **23:58 UTC on November 27** (07:58 Beijing time on November 28). This is a minute-level estimate assuming the transmitters carried the same data with negligible relative delay at that precision. [Clock evidence and assumptions](timing.json)
 
+## Locating an EVS export without a frame list
+
+All 66,700 slots in the 3,335 complete 3205 kHz data units had distinct combinations of the mode and 21 directly transmitted payload octets. We looked up each of 5,840 slots from the independent Edogawa 6140 kHz recording using those 22 octets alone. We then compared the returned coordinates with Edogawa's recorded counter, phase, cycle and position. Both recordings had already been examined.
+
+| True coordinate in the complete 3205 kHz data units | Edogawa slots | Unique correct coordinate | Unique wrong coordinate | Multiple candidates | No candidate |
+|---|---:|---:|---:|---:|---:|
+| Present | 5,680 | 5,680 | 0 | 0 | 0 |
+| Absent | 160 | 0 | 0 | 0 | 160 |
+
+Each frame position contributed 1,420 correct matches and 40 unmatched slots in the complete-DU check. Some incomplete 3205 kHz data units also retained every packet needed for a slot's 22 octets. Including these added 194 searchable slots across the recording. All 66,894 combinations remained distinct. The same 6140 kHz queries then returned **5,731 unique correct coordinates**, zero wrong coordinates and 109 unmatched slots. Among those 109, the member had some of the 22 octets for 13 slots and none for 96. [3205 kHz data](member-dus.npz) · [Accepted packets from incomplete units](partial-packets.npz) · [6140 kHz data](../../nov27/validation/swb-gsc/edogawa-data-units.npz)
+
+A unique match establishes where the observed 22 octets occur within the indexed data. If a broadcast repeats these same octets and the index lacks the true occurrence, the reported coordinate can be wrong. The comparison leaves the eleven masked payload octets untested. A separate check on the published 12-second music excerpt located all 600 G.192 words at their listed coordinates on each frequency. The release labels the 150 first-position words as text-supported and the 450 other words as inferred. [Locator](../../../scripts/locate_evs_slots.py) · [Music excerpt frame list](../../nov27/frames.csv)
+
+From the repository root, reproduce the comparison or substitute a supplied G.192 or EVS storage export.
+
+```sh
+corpus=examples/nov28/member-3205-20min/member-dus.npz
+packets=examples/nov28/member-3205-20min/partial-packets.npz
+peer=examples/nov27/validation/swb-gsc/edogawa-data-units.npz
+python scripts/locate_evs_slots.py "$corpus" --peer-dus "$peer"
+python scripts/locate_evs_slots.py "$corpus" --extra-packets "$packets" --peer-dus "$peer"
+python scripts/locate_evs_slots.py "$corpus" --extra-packets "$packets" --export supplied.192.gz > locations.jsonl
+```
+
+The export report retains the zero-based input slot, its outcome and all candidate coordinates. Positions run from 1 through 4. Erasures and repeated input words keep their original slots. The final JSON line gives the counts after the entire input has been read.
+
+The packet supplement contains the 14 ticks of the frozen 3205 kHz packet archive with one to three accepted packet ordinals. We preserved the ticks, packet order and receipt flags, and zeroed storage for rejected packets. All 41 included packet bodies match their original receiver rows, whose packet headers and CRCs passed. The parent archive's SHA-256 is recorded in `union.archive_sha256`. [Frozen receiver receipt](reception.json)
+
 ## Five places to test the text carousel
 
 A different recording had shown a bulletin period of 798 data units (319.2 seconds). Applying that spacing to this capture gives **five intervals of 33.6 seconds** with all 84 successive data units present in each interval. The first four also have an uninterrupted 48.4-second stretch. These counts describe which data arrived. Confirming a text repeat requires checking the bulletin contents and their own record CRCs. [Exact coverage, denominators and gaps](carousel-coverage.json)
