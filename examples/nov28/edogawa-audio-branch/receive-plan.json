@@ -1,0 +1,103 @@
+{
+  "schema": "prospective-single-source-native-transport-v1",
+  "declared_utc": "2026-11-28T13:45:39.221382+00:00",
+  "site": "7L4IOU Edogawa, Japan",
+  "source_origin": "https://7l4iou.tunnel.ubersdr.org",
+  "acquisition": {
+    "start": "one new grant after explicit release of receive plan",
+    "frequency_hz": 6140000,
+    "complex_rate_hz": 48000,
+    "mode": "iq48",
+    "seconds": 120,
+    "original_sample_pairs_requested": 5760000,
+    "pcm": "WAV stereo little-endian signed 16-bit IQ",
+    "timing": "one CSV row per committed network packet; preserve all receiver timestamps and report gaps or missing anchors",
+    "attempts": 1,
+    "peer": null
+  },
+  "archive": {
+    "working_directory": "/workspace/shared/prospective-6140-field-1345/edogawa",
+    "capture_stdout": "capture.json",
+    "capture_stderr": "recorder.log",
+    "wave_file": "original.wav",
+    "original_timing_csv": "original.wav.timing.csv"
+  },
+  "previous_fixed_recipe_sha256": "5bd0d537920b46282b558beae50809b4f30590ece06aa9bd48466c180477607c",
+  "receiver_revision": "41b4e2d0ebdedb5e8e8f452b19154dd302cc7f4b",
+  "receiver_script_sha256": {
+    "build_evs_gcc_independent.py": "d69cf9e3b5eaa514bac5edb3925227502d7b17a3ab59b940635fef781281d308",
+    "demod_iq_window.py": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+    "record_ubersdr_iq.py": "fb2c2a542b6be2de5bd3fa054202a7ab394ef58220a0828d4230462903f9091d",
+    "resample_iq.py": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+    "salvage_msc_packets.py": "2cd23f6ee257a405beaa223bc9693c1fae27ce1ad65a399c47595c71bad10725",
+    "tail_fill_audit.py": "e488d2448c484e082c2ee1a06d6a1a79cd7aa38abac3db7ee45da9ebf7b09123"
+  },
+  "ubersdr_source_revision": "8134b1fa5d989de776999ae80145c9a0b8d46e2e",
+  "pcm_decoder_sha256": {
+    "pcm_v4.py": "85a3442476172d36a086c09712a01c2e8bdb5da954f9629dc4e7c25d7ca1effd",
+    "pcm_v4_native.so": "839ff170ee2a0405f4438ae3631bc7c06a5c09956ae8b9bf3b3464e694150b6f"
+  },
+  "python_resolved_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+  "python_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+  "native_dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "environment": {
+    "KCBS_DREAM": "/workspace/dprk-drm/work/nov26-6140-full/dream-offline",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "commands": {
+    "capture": [
+      "/workspace/.venv/bin/python",
+      "-B",
+      "/workspace/shared/prospective-6140-field-1345/receive/pinned/scripts/record_ubersdr_iq.py",
+      "https://7l4iou.tunnel.ubersdr.org",
+      "--frequency-hz",
+      "6140000",
+      "--seconds",
+      "120",
+      "--ubersdr-source",
+      "/workspace/dprk-drm/work/live-sdr/recorder-kit/ka9q_ubersdr",
+      "--out",
+      "original.wav",
+      "--packet-timing"
+    ],
+    "demod": [
+      "/workspace/.venv/bin/python",
+      "-B",
+      "/workspace/shared/prospective-6140-field-1345/receive/pinned/scripts/demod_iq_window.py",
+      "original.wav",
+      "rf",
+      "--start",
+      "0",
+      "--seconds",
+      "120",
+      "--reception-profile",
+      "wiener",
+      "--mlc-iterations",
+      "1"
+    ],
+    "transport": [
+      "/workspace/.venv/bin/python",
+      "-B",
+      "/workspace/shared/prospective-6140-field-1345/receive/pinned/scripts/salvage_msc_packets.py",
+      "rf/msc.bin",
+      "--transport-only",
+      "--save-packets",
+      "--out",
+      "transport"
+    ]
+  },
+  "receiver": {
+    "start_sample": 0,
+    "center_offset_hz": 0,
+    "window": "all actually recorded samples up to 120 seconds",
+    "padding_samples": 0,
+    "cold_starts": 1,
+    "finite_input": true,
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "mlciter": 1
+  },
+  "outcomes": "Preserve acquisition status, original PCM and timing hashes and any discontinuities. If RF samples exist, run one native pass on the available samples and report actual duration. Validate both packet and DU CRC and direct phase/counter chronology. Any primary is the first complete counter in physical row order. Empty acceptance is reportable; no replacement, second station, retuning or application-based choice."
+}
