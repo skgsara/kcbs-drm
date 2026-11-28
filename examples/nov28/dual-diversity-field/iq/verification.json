@@ -1,0 +1,63 @@
+{
+  "schema": "drm-dual-iq-public-archive-v1",
+  "freeze_commit": "a20c6f1b662138bf29d97f0b272a4d30e73517e9",
+  "normative_sha256": {
+    "protocol.md": "53175bf4abdda6de0c2f2a111e1e757e0a007bd64df532ceb084565274b70fb9",
+    "receive-plan.json": "61cc8fe3a7aaab1c4cda6f45dd9b34a83db7bb12be421ddf46d81230b04a68d1",
+    "development.json": "20a7849b1430846725ebc7b0ca823fbe6bcccb0b511897164ab33f00c69c959e",
+    "history.json.gz": "42985e72a35104e6590acc6a2f5a6e006b723cbcb3558d9ea99d5f41ffe82587",
+    "field.py": "41cc882fcaca49d9e497c70dcc319c2e36837d8d565056b03854a0b2440d9d29"
+  },
+  "clock_coverage": "capture/clock-coverage.json",
+  "clock_coverage_sha256": "827fc9d49340e93b61907f9d9658360f764147717afba635b534d91621987d52",
+  "original_flac_receipt_sha256": "1c64fb9b1b7cc4a6c54d1ff90385cf2f9d290913b2d21ee7653549099543ea78",
+  "path_basis": "Published paths are relative to the example directory. The clock seal retains the original per-station filenames.",
+  "decoder_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "restore_command": "ffmpeg -nostdin -v error -i INPUT.flac -map 0:a:0 -c:a pcm_s16le -map_metadata -1 -map_chapters -1 -fflags +bitexact -flags:a +bitexact RESTORED.wav",
+  "stations": {
+    "edogawa": {
+      "call_sign": "7L4IOU",
+      "actual_sample_pairs": 4320000,
+      "sample_rate_hz": 48000,
+      "pcm_bytes": 17280000,
+      "pcm_sha256": "542cfd75830a67a96f8870cb7a479b4825bafbd666dcedc8db0ce8d0a7a00a77",
+      "original_wav_sha256": "a078a94acee9c5198c4611e9b3caeab7f9fb56f03a763982cf68e2e65a31c837",
+      "original_wav_bytes": 17280044,
+      "timing": "iq/edogawa-6140khz-iq48.timing.csv",
+      "timing_sha256": "eaef73c411103ea4165ea7bcdeb5b9422b1302acd66ff14eae0eb58a5c2da09d",
+      "packet_rows": 13500,
+      "directly_timed_packets": 13497,
+      "blank_timestamp_packets": 3,
+      "blank_timestamp_sample_pairs": 960,
+      "restored_wav_sha256": "a078a94acee9c5198c4611e9b3caeab7f9fb56f03a763982cf68e2e65a31c837",
+      "archive": "iq/edogawa-6140khz-iq48.flac",
+      "format": "FLAC",
+      "archive_sha256": "8f7d263c09dc08f19df0c43c731576997657976f3cb7b31a664c752d090c9c84",
+      "archive_bytes": 12442856,
+      "station_metadata": "capture/edogawa.json",
+      "station_metadata_sha256": "b48b1fc3dc98c10ef3eeef5ffdff3a068618efd96248847f93e2bcb5a9e78761"
+    },
+    "yokohama": {
+      "call_sign": "JL1EDU",
+      "actual_sample_pairs": 4320000,
+      "sample_rate_hz": 48000,
+      "pcm_bytes": 17280000,
+      "pcm_sha256": "6a87b441be20df4df6b85d6b830da3540560736673e575c9db29d53e4210194d",
+      "original_wav_sha256": "f64d398e74df5b4856c08c094c50f1c22847e414d2d779741e640fcf0f768df0",
+      "original_wav_bytes": 17280044,
+      "timing": "iq/yokohama-6140khz-iq48.timing.csv",
+      "timing_sha256": "5cf73f599404a7db3262a4abc325ffd8123a570dcdc3a15a6dcb117ad561ffc3",
+      "packet_rows": 13500,
+      "directly_timed_packets": 13494,
+      "blank_timestamp_packets": 6,
+      "blank_timestamp_sample_pairs": 1920,
+      "restored_wav_sha256": "f64d398e74df5b4856c08c094c50f1c22847e414d2d779741e640fcf0f768df0",
+      "archive": "iq/yokohama-6140khz-iq48.flac",
+      "format": "FLAC",
+      "archive_sha256": "2282f6a609ed99c91d8e64a5647f607807ca2c77bd3b40cfa7552161fc540f54",
+      "archive_bytes": 12988450,
+      "station_metadata": "capture/yokohama.json",
+      "station_metadata_sha256": "56f20052147ef1608b0188e4b842c6ce40f82116acebf5b2f5d56be8e5bbf378"
+    }
+  }
+}

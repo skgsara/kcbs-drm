@@ -1,0 +1,35 @@
+{
+  "origin": "https://ubersdr.jl1edu.freeddns.org",
+  "frequency_hz": 6140000,
+  "mode": "iq48",
+  "sample_rate_hz": 48000,
+  "started_utc": "2026-11-28T14:21:59.061098+00:00",
+  "requested_seconds": 90,
+  "sample_pairs": 4320000,
+  "packets": 13500,
+  "timestamped_packets": 13494,
+  "timestamp_jumps_over_one_sample": 0,
+  "max_abs_timestamp_jump_ns": 14102,
+  "first_timestamp_sample_and_unix_ns": [
+    1920,
+    1795875722479188168
+  ],
+  "last_timestamp_sample_and_unix_ns": [
+    4319760,
+    1795875812434170168
+  ],
+  "iq_pcm_sha256": "6a87b441be20df4df6b85d6b830da3540560736673e575c9db29d53e4210194d",
+  "wall_seconds": 95.46,
+  "sample_seconds": 90.0,
+  "sample_target_reached": true,
+  "call_sign": "JL1EDU",
+  "original_capture_sha256": "af4e9f6d72eecc8646c1d5e7f6ec2d15c3e2c8e463ff5d59e431ed3b08cf3976",
+  "process": {
+    "started_utc": "2026-11-28T14:21:58.979543+00:00",
+    "ended_utc": "2026-11-28T14:23:34.563128+00:00",
+    "returncode": 0,
+    "external_timeout": false
+  },
+  "recorder_reported_error": false,
+  "timing": "iq/yokohama-6140khz-iq48.timing.csv"
+}
