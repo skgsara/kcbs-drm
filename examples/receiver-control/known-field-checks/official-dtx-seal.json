@@ -1,0 +1,12 @@
+{
+  "predictor_revision": "071588f8e045fd705d57f17c691494b4bb628d42",
+  "source": "3GPP TS 26.444 floating-point SWB DTX, three named cases and their f06 and b10 variants",
+  "forecasts": {
+    "bytes": 351330,
+    "sha256": "806cedc133bd780d49bfc08078ac36059ee83afd2e4ca1d39772a39be972820d"
+  },
+  "features": {
+    "bytes": 278644,
+    "sha256": "e94b3e1c47a9297acbd8ed1cd4b327360508d6308f9c9be0ccaf9df263e01c0c"
+  }
+}
