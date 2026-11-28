@@ -1,0 +1,150 @@
+{
+  "first_counter": 16909060,
+  "groups": 40,
+  "native_msc_sha256": "53e043ffbc837c0ef321f8bc3ac02992414e3906ce5021a52227df2c639e3c28",
+  "stock_packet_sha256": "cc1594704e02bcdad1e52653a86c5ca98d0def845500d65802c753a83de1a7d7",
+  "sender_g192_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+  "additions": [
+    {
+      "native_row": 55,
+      "counter": 16909068,
+      "phase": 1,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 56,
+      "counter": 16909068,
+      "phase": 2,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 61,
+      "counter": 16909070,
+      "phase": 1,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 62,
+      "counter": 16909070,
+      "phase": 2,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 63,
+      "counter": 16909071,
+      "phase": 0,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "native_row": 64,
+      "counter": 16909071,
+      "phase": 1,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 65,
+      "counter": 16909071,
+      "phase": 2,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 68,
+      "counter": 16909072,
+      "phase": 2,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "native_row": 79,
+      "counter": 16909076,
+      "phase": 1,
+      "crc_valid_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "overlay_quarantine": [],
+  "stock": {
+    "packets": 424,
+    "complete_dus": 100,
+    "totals": {
+      "full": 2322,
+      "partial": 33,
+      "absent": 45,
+      "exact_supplied": 2113,
+      "correct_erasure": 78,
+      "wrong_word": 0,
+      "extra_erasure": 209,
+      "false_supply": 0
+    },
+    "exact_by_position": [
+      529,
+      529,
+      526,
+      529
+    ],
+    "word_and_erasure_sha256": "366877aad6fa71657204bbf7cade2db8778a589e7a2651e5e95c60984765e3cf"
+  },
+  "extended": {
+    "packets": 459,
+    "complete_dus": 108,
+    "totals": {
+      "full": 2322,
+      "partial": 33,
+      "absent": 45,
+      "exact_supplied": 2289,
+      "correct_erasure": 78,
+      "wrong_word": 0,
+      "extra_erasure": 33,
+      "false_supply": 0
+    },
+    "exact_by_position": [
+      573,
+      573,
+      570,
+      573
+    ],
+    "word_and_erasure_sha256": "1b70ec7f82d516deed36df448b385e572c9f71fe0d53f27076a6e9b88fdedd3e"
+  }
+}
