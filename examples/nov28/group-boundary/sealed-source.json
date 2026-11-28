@@ -1,0 +1,23 @@
+{
+  "sealed_utc": "2026-11-28T03:00:14.231713+00:00",
+  "protocol_sha256": "b39147e4c01530aa6f1ab282276d0d5e95ade672e7d49fb349f5e6ce1abfbf07",
+  "wav_sha256": "cd3d0bb2f0134d19530e8373582a3197610b274ae15cfdeb2794a8571055bd34",
+  "pcm_sha256": "43e308ed8b9cf56326abbac0e92110fa7008f43bd28327b7be8eb47305df087b",
+  "source_name": "sealed.wav",
+  "source_bytes": 17280044,
+  "sample_pairs": 4320000,
+  "sample_rate": 48000,
+  "seconds": 90.0,
+  "station_clock_range_utc_half_open": [
+    "2026-11-28T02:57:56.621605503Z",
+    "2026-11-28T02:59:26.621599253Z"
+  ],
+  "station_timestamps": 13500,
+  "timestamp_discontinuities_over_one_sample": 0,
+  "native_max_timestamp_error_ns": 9229,
+  "complete": true,
+  "error": null,
+  "receiver": "https://7l4iou.tunnel.ubersdr.org",
+  "frequency_hz": 6140000,
+  "capture_receipt_sha256": "c63e56b3d4842bddf21c9dc53d8339fa1769b7bf1ec07d4a3391497d863542dd"
+}

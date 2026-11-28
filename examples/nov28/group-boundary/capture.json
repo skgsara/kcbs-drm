@@ -1,0 +1,25 @@
+{
+  "origin": "https://7l4iou.tunnel.ubersdr.org",
+  "frequency_hz": 6140000,
+  "mode": "iq48",
+  "sample_rate_hz": 48000,
+  "started_utc": "2026-11-28T02:57:54.558009+00:00",
+  "requested_seconds": 90,
+  "sample_pairs": 4320000,
+  "packets": 13500,
+  "timestamped_packets": 13500,
+  "timestamp_jumps_over_one_sample": 0,
+  "max_abs_timestamp_jump_ns": 9229,
+  "first_timestamp_sample_and_unix_ns": [
+    0,
+    1795834676621605503
+  ],
+  "last_timestamp_sample_and_unix_ns": [
+    4319760,
+    1795834766616599253
+  ],
+  "iq_pcm_sha256": "43e308ed8b9cf56326abbac0e92110fa7008f43bd28327b7be8eb47305df087b",
+  "wall_seconds": 93.369,
+  "sample_seconds": 90.0,
+  "sample_target_reached": true
+}
