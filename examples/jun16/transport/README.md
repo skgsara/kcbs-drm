@@ -44,3 +44,26 @@ python scripts/project_evs_group.py replay-combined/data_units.npz --counter 320
 ```
 
 The excerpts individually yield zero complete groups. The combined run yields one. The complete groups in the table above require the full original dumps.
+
+## Which EVS bytes were heard on both frequencies?
+
+The receiver can retain the CRC-valid packets of an incomplete data unit and report which individual EVS word octets they cover. For counter 32088106, the five original MSC rows give the following counts. Each number counts distinct pairs of slot and directly transmitted word-octet index. The 6140 kHz boundary anchor belongs to the next counter.
+
+| Reception or comparison | P1 | P2 | P3 | P4 | Total octets |
+|---|---:|---:|---:|---:|---:|
+| 3205 kHz excerpt | 85 | 88 | 82 | 66 | 321 |
+| 6140 kHz excerpt | 309 | 292 | 292 | 308 | 1,201 |
+| Available on both frequencies, identical | 64 | 50 | 44 | 44 | 202 |
+| Available on at least one frequency | 330 | 330 | 330 | 330 | 1,320 |
+
+Of the 10,560 directly carried bits, **1,616** could be compared across the two excerpts. The other 8,944 appeared on only one frequency in these files. At slot 10 (phase 0, cycle 2, P3), 3205 kHz supplied 16 of the 22 visible octets and 6140 supplied the other six. This is the only slot whose visible projection required both inputs. The 11 masked octets in each word have no clear-value comparison here. [Original packet receipts](receipt.json) · [Replay and per-position regression tests](../../../scripts/test_project_evs_group.py)
+
+To inspect the first reception separately, run the following from the repository root with a new output directory.
+
+```sh
+study=examples/jun16/transport
+python scripts/salvage_msc_packets.py "$study/june-3205.msc.bin" --transport-only --save-packets --out partial-3205
+python scripts/project_evs_group.py --packets partial-3205/packets.npz --counter 32088106 --field-checks
+```
+
+In the packet report a hexadecimal byte comes from a flagged packet at a direct word position. `??` marks a received masked location and `--` marks a location without a received packet. A receipt of `received_packets` means that some or all of the word's locations were received in a phase lacking a complete data-unit check. It is possible to receive all 33 locations of one word inside an incomplete phase. `physically_complete_slots` counts such words, while `missing_du_slots` counts every slot in a phase without a complete data unit. A fully received word can still contain masked octets.

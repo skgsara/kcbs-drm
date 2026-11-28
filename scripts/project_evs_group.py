@@ -1,4 +1,4 @@
-"""Project the directly transmitted EVS octets from the CRC-checked DUs of one counter."""
+"""Project the directly transmitted EVS octets from received data units or packet receipts."""
 import argparse
 import csv
 import json
@@ -10,6 +10,7 @@ import numpy as np
 
 from check_evs_origin import PROJECTED_OCTETS
 from compare_evs_group import valid_integer
+from received_evs_packets import read_packet_snapshot
 from render_continuous import MODE_POSITIONS, PACKET_STARTS
 from tail_fill_audit import crc
 
@@ -51,44 +52,69 @@ def read_phases(path, counter):
     return {phase: unit for count, phase, unit in checked_units(path) if count == counter}
 
 
-def project_group(path, counter):
+def project_group(path, counter, *, packets=False):
     if not valid_integer(counter, 0, 0xffffffff):
         raise ValueError("counter must be an unsigned 32-bit integer")
-    phases = read_phases(path, counter)
+    if packets:
+        ticks, units, flags = read_packet_snapshot(path)
+        phases = {int(ticks[i] % 3): (units[i], flags[i]) for i in np.flatnonzero(ticks // 3 == counter)}
+    else:
+        phases = {phase: (unit, (True,) * 4) for phase, unit in read_phases(path, counter).items()}
+    complete_phases = sorted(phase for phase, (_, flags) in phases.items() if all(flags))
     slots = []
+    physical_octets = []
     for phase in range(3):
-        unit = phases.get(phase)
+        source = phases.get(phase)
         for i, (mode, payload) in enumerate(zip(MODE_POSITIONS, PACKET_STARTS, strict=True)):
             cycle, role = divmod(i, 4)
-            if unit is None:
-                octets = ["--"] * 33
-                receipt = "missing_du"
-                bits = 0
-            else:
-                octets = ["??"] * 33
-                for j in PROJECTED_OCTETS:
-                    offset = mode if j == 0 else payload + j - 1
-                    octets[j] = f"{unit[offset]:02x}"
-                receipt = "received_du"
-                bits = 8 * len(PROJECTED_OCTETS)
+            octets = ["--"] * 33
+            receipt = "missing_du"
+            observed = bits = 0
+            if source is not None:
+                unit, flags = source
+                for j, offset in enumerate((mode, *range(payload, payload + 32))):
+                    if flags[offset // 179]:
+                        observed += 1
+                        if j in PROJECTED_OCTETS:
+                            octets[j] = f"{unit[offset]:02x}"
+                            bits += 8
+                        else:
+                            octets[j] = "??"
+                if phase in complete_phases:
+                    receipt = "received_du"
+                elif observed:
+                    receipt = "received_packets"
+            if packets and not observed:
+                receipt = "missing_packets"
+            physical_octets.append(observed)
             slots.append(dict(slot=len(slots), counter=int(counter), phase=phase, cycle=cycle, position=role + 1,
                               receipt=receipt, direct_bits=bits, octets=" ".join(octets)))
-    complete = sum(row["receipt"] == "received_du" for row in slots)
+    complete = physical_octets.count(33)
     full_words = sum(row["direct_bits"] == 264 for row in slots)
-    return dict(format="kcbs-evs-projection-v1", counter=int(counter), received_du_phases=sorted(phases),
+    result = dict(format="kcbs-evs-projection-v1", counter=int(counter), received_du_phases=complete_phases,
                 layout="Each row starts with the mode octet followed by 32 payload octets.",
                 word_erasure_basis="The projection cannot supply a full word if any octet is unknown or unavailable.",
                 markers={"??": "received octet with unknown clear value",
                          "--": "no CRC-checked data unit for this phase in the supplied archive"},
                 direct_word_octet_indices=list(PROJECTED_OCTETS),
-                total_slots=len(slots), physically_complete_slots=complete, missing_du_slots=len(slots) - complete,
+                total_slots=len(slots), physically_complete_slots=complete, missing_du_slots=20 * (3 - len(complete_phases)),
                 confirmed_direct_bits=sum(row["direct_bits"] for row in slots),
                 full_clear_words=full_words, word_erasures=len(slots) - full_words, slots=slots)
+    if packets:
+        result.update(format="kcbs-evs-packet-projection-v1",
+                      received_packet_ordinals={str(p): [q for q, ok in enumerate(flags) if ok]
+                                                for p, (_, flags) in sorted(phases.items()) if any(flags)},
+                      physically_partial_slots=sum(0 < n < 33 for n in physical_octets),
+                      physically_missing_slots=physical_octets.count(0))
+        result["markers"]["--"] = "no packet receipt for this octet"
+    return result
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("data_units", type=Path, help="data_units.npz from salvage_msc_packets.py")
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument("data_units", nargs="?", type=Path, help="CRC-checked data_units.npz")
+    source.add_argument("--packets", type=Path, help="packets.npz from salvage_msc_packets.py --save-packets")
     parser.add_argument("--counter", type=int, required=True)
     parser.add_argument("--format", choices=("json", "tsv"), default="json",
                         help="JSON with group totals or TSV with one line per slot")
@@ -98,7 +124,7 @@ def main():
     if args.field_checks and args.format != "json":
         parser.error("--field-checks requires JSON output")
     try:
-        result = project_group(args.data_units, args.counter)
+        result = project_group(args.packets or args.data_units, args.counter, packets=args.packets is not None)
         if args.field_checks:
             from evs_core_history import core_history
             from evs_gsc_fields import gsc_fields

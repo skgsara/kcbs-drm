@@ -52,3 +52,39 @@ done
 
 Each projection must have SHA-256
 `5070d33e922265638c9279169988c963c713c75d3ecf5ad7ddcaaf8fce80b54a`.
+
+## Compare individually received packets
+
+We replayed each published IQ excerpt once with the receiver settings above.
+All 50 physical packets received by both sites agreed byte for byte. Across
+the two excerpts the receivers had 5,446 directly transmitted EVS octets in
+common, with zero disagreements. Of these, 1,486 fell in five phases for
+which at least one station lacked a complete data unit.
+
+| Counter | Phase | Shared direct octets in the incomplete phase |
+| --- | ---: | ---: |
+| 43900389 | 0 | 321 |
+| 43900391 | 1 | 321 |
+| 43900393 | 1 | 321 |
+| 43900395 | 2 | 202 |
+| 43900396 | 0 | 321 |
+
+The neighboring phases were examined retrospectively. At the preselected
+counter 43900392, all 1,320 direct octets matched and the packet report
+leaves all 60 words erased. [Per-counter results and receiver hashes](packet-comparison.json)
+
+Use the MSC files from the replay above to compare the two packet archives.
+
+```sh
+for station in jl1edu 7l4iou; do
+    run=work/$station-43900392
+    python scripts/salvage_msc_packets.py "$run/msc.bin" --out "$run/packets" --transport-only --save-packets
+    python scripts/project_evs_group.py --packets "$run/packets/packets.npz" --counter 43900392 > "$run/packet-projection.json"
+    sha256sum "$run/packet-projection.json"
+done
+python examples/nov27/validation/paired-43900392/compare_packets.py \
+    work/jl1edu-43900392/packets/packets.npz work/7l4iou-43900392/packets/packets.npz
+```
+
+Both target packet projections have SHA-256
+`4b3e7c0a589a8e127dd4f6f82b6f37d1dcda4bded9000d988617a33e16e1104f`.

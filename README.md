@@ -59,6 +59,11 @@ test fixes the target. Its protocol covers checks against evidence held
 back from the same broadcast and an optional comparison with a clear export.
 [Four-position milestone and target receipt](examples/nov15/validation/README.md)
 
+The November 28 field test fixes the first ten recorded minutes from the
+13:00–13:20 UTC Yokohama window and selects the first complete group in
+reception order. Its receiver also reports what survived in the first group
+with a partially received phase. [Frozen test and scoring commands](examples/nov28/yokohama-1300/protocol.md)
+
 For **43865914**, the handoff's TCX spectrum check accepts all 15 known
 first-position words even after the low bit of payload byte 30 is changed
 in every word. The second position remains unresolved.
@@ -389,6 +394,15 @@ Combining CRC-valid packets yields **415**. Two additional groups combine
 complete data units from different frequencies. At counter 32088106,
 complementary packets from the two frequencies complete a single data unit.
 [Original received packets and replay](examples/jun16/transport/README.md)
+
+Use `--transport-only --save-packets` during salvage to retain individually
+checked packets from incomplete phases. Pass the resulting archive to
+`project_evs_group.py --packets` to see the directly carried octets for each
+of the 60 words. In the June example, 202 of 1,320 distinct visible octets
+were received on both frequencies, and every one agreed.
+Independent 3205 kHz recordings from Tokyo and Yokohama also agreed on
+5,446 shared octets, including 1,486 in five phases with packet loss.
+[Paired IQ excerpts and packet-level comparison](examples/nov27/validation/paired-43900392/README.md#compare-individually-received-packets)
 
 ## Render the contributed November recording
 

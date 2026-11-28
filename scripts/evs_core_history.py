@@ -7,7 +7,7 @@ OUTCOMES = ("abstain", "hq_match", "hq_mismatch", "tcx_conditional")
 
 
 def received_mode(row):
-    if row["receipt"] != "received_du":
+    if row["receipt"] not in ("received_du", "received_packets"):
         return None
     token = row["octets"].partition(" ")[0]
     if len(token) == 2 and all(char in hexdigits for char in token):

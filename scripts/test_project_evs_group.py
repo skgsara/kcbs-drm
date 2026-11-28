@@ -55,6 +55,61 @@ class ProjectionTests(unittest.TestCase):
         np.savez(self.path, counters=np.full(len(dus), COUNTER, np.uint32), phases=np.array(phases, np.uint8),
                  du=np.array(dus, np.uint8).reshape(-1, 716))
 
+    def test_partial_packet_mode_can_arrive_separately_from_its_payload(self):
+        phase0 = fixture(0)[0]
+        phase0[4] = 0x68  # P1 mode in cycle 2, payload in missing packet 1.
+        units = np.array([list(phase0), list(fixture(1)[0])], np.uint8).reshape(2, 4, 179)
+        flags = np.array([[True, False, False, True], [True] * 4])
+        path = self.path.with_name("packets.npz")
+
+        def save():
+            np.savez(path, ticks=np.array([3 * COUNTER, 3 * COUNTER + 1]), packets=units, packet_ok=flags)
+
+        save()
+        result = project_group(path, COUNTER, packets=True)
+        self.assertEqual(result["received_du_phases"], [1])
+        row = result["slots"][8]
+        self.assertEqual((row["receipt"], row["direct_bits"], row["octets"].split()),
+                         ("received_packets", 8, ["68"] + ["--"] * 32))
+        self.assertEqual(result["slots"][3]["octets"].split()[31], "??")
+        self.assertEqual(result["slots"][40]["receipt"], "missing_packets")
+        self.assertEqual(result["word_erasures"], 60)
+        units[~flags] ^= 255
+        save()
+        self.assertEqual(project_group(path, COUNTER, packets=True), result)
+        command = [sys.executable, "-B", str(Path(__file__).with_name("project_evs_group.py")),
+                   "--packets", str(path), "--counter", str(COUNTER), "--field-checks"]
+        checked = json.loads(subprocess.check_output(command))
+        observations = [r for r in checked["gsc_fields"]["slots"] if r["slot"] == 8]
+        self.assertEqual([(r["check"], r["outcome"]) for r in observations], [("audio_noisy", "unavailable")])
+
+    def test_june_separate_receptions_and_union(self):
+        scripts = Path(__file__).resolve().parent
+        study = scripts.parent / "examples/jun16/transport"
+        receivers = [study / f"june-{freq}.msc.bin" for freq in (3205, 6140)]
+        observed = []
+        for i, inputs in enumerate(([receivers[0]], [receivers[1]], receivers)):
+            output = self.path.parent / str(i)
+            subprocess.run([sys.executable, "-B", scripts / "salvage_msc_packets.py", *inputs,
+                            "--transport-only", "--save-packets", "--out", output],
+                           capture_output=True, check=True)
+            group = project_group(output / "packets.npz", 32088106, packets=True)
+            direct = {(row["slot"], j): token for row in group["slots"]
+                      for j, token in enumerate(row["octets"].split()) if token not in ("??", "--")}
+            self.assertEqual(group["confirmed_direct_bits"], 8 * len(direct))
+            self.assertEqual(group["physically_complete_slots"], (13, 54, 60)[i])
+            self.assertEqual(group["full_clear_words"], 0)
+            observed.append(direct)
+        first, second, combined = observed
+        self.assertEqual(first | second, combined)
+        shared = first.keys() & second.keys()
+        self.assertTrue(all(first[k] == second[k] for k in shared))
+        for coords, expected in ((first, [85, 88, 82, 66]), (second, [309, 292, 292, 308]),
+                                 (shared, [64, 50, 44, 44]), (combined, [330] * 4)):
+            counts = [sum(slot % 4 == role for slot, _ in coords) for role in range(4)]
+            self.assertEqual(counts, expected)
+        self.assertEqual([sum(slot == 10 for slot, _ in d) for d in observed], [16, 6, 22])
+
     def test_exact_slot_geometry_and_visibility(self):
         self.save([2, 0, 1])
         result = project_group(self.path, COUNTER)

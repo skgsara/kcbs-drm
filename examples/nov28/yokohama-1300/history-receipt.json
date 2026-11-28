@@ -1,0 +1,86 @@
+{
+  "format": "kcbs-counter-history-union-v1",
+  "registry": "history.json.gz",
+  "counter_ids": 13483,
+  "canonical_plaintext": "UTF-8 JSON object with sole member counter_ids, unique ascending uint32 integers, no spaces, LF terminator.",
+  "compression": "gzip level 9; MTIME 0; no filename in header",
+  "decompressed_bytes": 121446,
+  "decompressed_sha256": "0b116969b6f496804d22ca48103046f0436da9a40470ab320398af83debbcbc7",
+  "gzip_bytes": 29587,
+  "gzip_sha256": "3d8cd9f71bcdb75eeb78a104348883a84754a0677c7ada11b514d0146bf607b5",
+  "public_repository_commit": "2054509b814dafc886005a7e808371d799d114e7",
+  "published_base": {
+    "path": "kcbs-milestone-public/examples/nov28/hq-neighbors/airspy-gap/history.json.gz",
+    "sha256": "9d9606b47422073a199af4937db1e7de3d65c5741cefb01bfc3091859094adc3",
+    "decompressed_sha256": "c3b77ffd2cb8bf4843cdd872dbde4976d1bb050e882abdd316aef14b805f56c0",
+    "counter_ids": 13103
+  },
+  "airspy_gap": {
+    "path": "kcbs-milestone-public/examples/nov28/hq-neighbors/airspy-gap/receipt.json",
+    "sha256": "156f6b9e560d346bb4ae71899b4ccc17847485e3e6d94c6b80c4a5817f930043",
+    "field": "assigned_counters",
+    "counter_ids": 14,
+    "new": 14
+  },
+  "june16": {
+    "assigned_union_counter_ids": 535,
+    "min_max": [
+      32087538,
+      32088159
+    ],
+    "overlap_with_prior_and_gap": 169,
+    "new": 366,
+    "with_any_complete_du": 521,
+    "only_partial_or_anchor": 14,
+    "with_complete_three_phase_group": 415,
+    "counter_extraction": "Distinct first component of all assigned (counter,phase,packet) keys. The pooled coordinate set exactly equals the union of both carrier sets. No ranges imputed.",
+    "assigned_packet_provenance": {
+      "3205": {
+        "path": "dprk-drm/work/reference-acceptance/dual-rf-june-gain/3205/provenance.json",
+        "sha256": "7c1a3b71ba543a0a9f397e464447dfd9ffde67404f5fee6c333f1d8a22dc7a22",
+        "assigned_packet_coordinates": 5319,
+        "distinct_counter_ids": 507
+      },
+      "6140": {
+        "path": "dprk-drm/work/reference-acceptance/dual-rf-june-gain/6140/provenance.json",
+        "sha256": "2e80931d5d1fcc7417996f81a01d7fa7d2c57cb3fe7aefa3f3a2404ce28f25ee",
+        "assigned_packet_coordinates": 2183,
+        "distinct_counter_ids": 219
+      },
+      "3205-6140": {
+        "path": "dprk-drm/work/reference-acceptance/dual-rf-june-gain/3205-6140/provenance.json",
+        "sha256": "cbc76c27d1349ec95827aae38489255c5550378d726e39abc2c068827684ed28",
+        "assigned_packet_coordinates": 5791,
+        "distinct_counter_ids": 535
+      }
+    },
+    "pooled_du_coordinates": {
+      "path": "dprk-drm/work/reference-acceptance/dual-rf-june-gain/3205-6140/data_units.npz",
+      "sha256": "2e12b1091530852f6b7d872120fe213d8deb8291dfdc41416bf7b822ff170de8"
+    },
+    "published_full_file_audit": {
+      "path": "kcbs-milestone-public/examples/jun16/transport/audit.json",
+      "sha256": "add1ea616ef68a14702dd3e181aba200c3fd1ec2e70e44bfe7b0e829434ecd3f"
+    },
+    "original_full_msc_sha256_as_recorded_in_published_audit": {
+      "3205": "f8e4c472edf6d42ea93ecfc98746a5999b28cad519a2dd0f5d52bd895f02a1c8",
+      "6140": "32f613781d8a661a17392a33289bb33c6c1310671921eded41c4c75ec1ecd899"
+    }
+  },
+  "additional_cross_checks": {
+    "nov28_four_frequency": {
+      "path": "kcbs-milestone-public/examples/nov28/four-frequency/nov28-digital.json",
+      "sha256": "8864f8d45a61ce14f407402899ca8c7dc757d5eaacd34f4037b23d2d899a57aa",
+      "assigned_or_anchored_ids": 21,
+      "additional": []
+    },
+    "nov27_retrospective_0617_pair": {
+      "path": "kcbs-milestone-public/examples/nov27/receiver/packets.npz",
+      "sha256": "85986684749e84fb33434cccb39c9a994ddeb091ed01f20d62adfb2edc4f35ed",
+      "assigned_ids": 26,
+      "additional": []
+    },
+    "member_disclosure_43912071": "Included in published base. The later 45-second 09:42:39 Beijing group report names no counter numbers, so it contributes no inferred IDs."
+  },
+  "scope": "Frozen local exclusion inventory of previously documented counter IDs; it cannot certify a globally unseen transmission. The new holdout supplies no input."
+}

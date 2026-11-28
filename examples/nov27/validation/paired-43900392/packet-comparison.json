@@ -1,0 +1,874 @@
+{
+  "target": 43900392,
+  "source_trials": 2,
+  "seconds_per_site": 24,
+  "sample_pairs_per_site": 288000,
+  "fixed_protocol": {
+    "demod": "demod_iq_window.py IQ fresh-run --seconds 24",
+    "salvage": "salvage_msc_packets.py fresh-run/msc.bin --out fresh-run/transport --transport-only --save-packets",
+    "project": "project_evs_group.py --packets fresh-run/transport/packets.npz --counter C"
+  },
+  "native_dream_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "script_sha256": {
+    "demod_iq_window.py": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+    "salvage_msc_packets.py": "2cd23f6ee257a405beaa223bc9693c1fae27ce1ad65a399c47595c71bad10725",
+    "project_evs_group.py": "f47372887e38142d5c165590b7b86af54a1d1f13c580da0d02d84e10b7fdf37b",
+    "received_evs_packets.py": "166bd6978719ea177ae9a55937bb63588e531291f5a26c005bb65441280cb75d"
+  },
+  "sites": {
+    "jl1edu": {
+      "input": "jl1edu-3205-43900392-iq12.wav",
+      "iq_wav_sha256": "97116019f94aa5457d9fdf2e521f79dba07b956a959e8a49c0d4358b46091671",
+      "raw_728byte_rows": 52,
+      "raw_crc_passed_packet_observations": 88,
+      "assigned_rows": 14,
+      "assigned_unique_packets": 54,
+      "exact_target_rows": [
+        35,
+        36,
+        37
+      ],
+      "no_receipt_internal_counters": [
+        43900390,
+        43900394
+      ],
+      "assigned_counter_bounds": [
+        43900389,
+        43900396
+      ],
+      "received_complete_counters": [
+        43900392,
+        43900393,
+        43900395
+      ],
+      "received_incomplete_counters": [
+        43900389,
+        43900391,
+        43900396
+      ],
+      "assigned_phases": 14,
+      "native_complete_dus": 12,
+      "all_direct_octets": 5922,
+      "source_timestamps_jumps_gt_one_sample_published_full_capture": 0,
+      "msc_sha256": "f43235da8d6c5d6c56e4c930b9e11fb51bc1f6c9b04c5f47653ac51e2e526706",
+      "packets_npz_sha256": "22ba619e3996b70fc0f21e3644003afd3bcea306a2f5aa7aa9bf50d01ede211e",
+      "target_packet_projection_json_sha256": "4b3e7c0a589a8e127dd4f6f82b6f37d1dcda4bded9000d988617a33e16e1104f",
+      "target_du_projection_sha256": "5070d33e922265638c9279169988c963c713c75d3ecf5ad7ddcaaf8fce80b54a",
+      "target_phase_sha256": [
+        "f6a654399be25312ea963adda6cfc37b26a1ac86235029f623048f29eb953c79",
+        "6a14eefd02e02be4fa82ca84556f6ac8cc52e0bede36e45c0abac5d29b641fd9",
+        "843c9fa4df7235b513c0edef9cf00f7f3157fa783cc48d4474f2c1c917cf084a"
+      ]
+    },
+    "7l4iou": {
+      "input": "7l4iou-3205-43900392-iq12.wav",
+      "iq_wav_sha256": "b452351d8987cd788a03b9058c9c71d4a9c306e702917ef1e96e3bdfae22b06a",
+      "raw_728byte_rows": 54,
+      "raw_crc_passed_packet_observations": 179,
+      "assigned_rows": 38,
+      "assigned_unique_packets": 146,
+      "exact_target_rows": [
+        27,
+        28,
+        29
+      ],
+      "no_receipt_internal_counters": [
+        43900397
+      ],
+      "assigned_counter_bounds": [
+        43900386,
+        43900400
+      ],
+      "received_complete_counters": [
+        43900386,
+        43900387,
+        43900388,
+        43900389,
+        43900390,
+        43900391,
+        43900392,
+        43900394,
+        43900399,
+        43900400
+      ],
+      "received_incomplete_counters": [
+        43900393,
+        43900395,
+        43900396,
+        43900398
+      ],
+      "assigned_phases": 38,
+      "native_complete_dus": 34,
+      "all_direct_octets": 16006,
+      "source_timestamps_jumps_gt_one_sample_published_full_capture": 0,
+      "msc_sha256": "da0858ea1642474019d34082d8c48521bc5c2b50de9a7a0894347316e95a4783",
+      "packets_npz_sha256": "db35dae72049d59e83d9ad6f2dc9a386faff0d87f57bf9bec9a8abb233395b5f",
+      "target_packet_projection_json_sha256": "4b3e7c0a589a8e127dd4f6f82b6f37d1dcda4bded9000d988617a33e16e1104f",
+      "target_du_projection_sha256": "5070d33e922265638c9279169988c963c713c75d3ecf5ad7ddcaaf8fce80b54a",
+      "target_phase_sha256": [
+        "f6a654399be25312ea963adda6cfc37b26a1ac86235029f623048f29eb953c79",
+        "6a14eefd02e02be4fa82ca84556f6ac8cc52e0bede36e45c0abac5d29b641fd9",
+        "843c9fa4df7235b513c0edef9cf00f7f3157fa783cc48d4474f2c1c917cf084a"
+      ]
+    }
+  },
+  "primary_target": {
+    "identical_direct_octets": 1320,
+    "by_position": [
+      330,
+      330,
+      330,
+      330
+    ],
+    "complete_264bit_clear_words": 0
+  },
+  "observed_counter_bounds": [
+    43900386,
+    43900400
+  ],
+  "no_assigned_packets_at_either_site_in_span": [
+    43900397
+  ],
+  "shared_identical_full_182byte_packets": 50,
+  "shared_packet_disagreements": 0,
+  "all_direct_octets_common": 5446,
+  "all_direct_octets_union": 16482,
+  "peer_verified_octets_outside_common_complete_phases": 1486,
+  "cross_station_direct_octet_disagreements": 0,
+  "counters": [
+    {
+      "counter": 43900386,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900387,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900388,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900389,
+      "crc_good_packet_indices": {
+        "jl1edu": {
+          "0": [
+            0,
+            2,
+            3
+          ]
+        },
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 321,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 321,
+      "matching_by_position": [
+        89,
+        72,
+        72,
+        88
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 321,
+      "partial_phase_matches_by_position": [
+        89,
+        72,
+        72,
+        88
+      ]
+    },
+    {
+      "counter": 43900390,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900391,
+      "crc_good_packet_indices": {
+        "jl1edu": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 1201,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 1201,
+      "matching_by_position": [
+        305,
+        308,
+        302,
+        286
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 880,
+      "peer_matched_at_partial_phases": 321,
+      "partial_phase_matches_by_position": [
+        85,
+        88,
+        82,
+        66
+      ]
+    },
+    {
+      "counter": 43900392,
+      "crc_good_packet_indices": {
+        "jl1edu": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 1320,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 1320,
+      "matching_by_position": [
+        330,
+        330,
+        330,
+        330
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 1320,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900393,
+      "crc_good_packet_indices": {
+        "jl1edu": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 1320,
+        "7l4iou": 1201
+      },
+      "both_matching_octets": 1201,
+      "matching_by_position": [
+        309,
+        292,
+        292,
+        308
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 880,
+      "peer_matched_at_partial_phases": 321,
+      "partial_phase_matches_by_position": [
+        89,
+        72,
+        72,
+        88
+      ]
+    },
+    {
+      "counter": 43900394,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900395,
+      "crc_good_packet_indices": {
+        "jl1edu": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 1320,
+        "7l4iou": 1082
+      },
+      "both_matching_octets": 1082,
+      "matching_by_position": [
+        284,
+        270,
+        264,
+        264
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 880,
+      "peer_matched_at_partial_phases": 202,
+      "partial_phase_matches_by_position": [
+        64,
+        50,
+        44,
+        44
+      ]
+    },
+    {
+      "counter": 43900396,
+      "crc_good_packet_indices": {
+        "jl1edu": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 440,
+        "7l4iou": 321
+      },
+      "both_matching_octets": 321,
+      "matching_by_position": [
+        85,
+        88,
+        82,
+        66
+      ],
+      "distinct_union": 440,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 321,
+      "partial_phase_matches_by_position": [
+        85,
+        88,
+        82,
+        66
+      ]
+    },
+    {
+      "counter": 43900397,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {}
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 0
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 0,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900398,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {
+          "0": [
+            0,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 202
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 202,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900399,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43900400,
+      "crc_good_packet_indices": {
+        "jl1edu": {},
+        "7l4iou": {
+          "0": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "1": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "direct_octets": {
+        "jl1edu": 0,
+        "7l4iou": 1320
+      },
+      "both_matching_octets": 0,
+      "matching_by_position": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_union": 1320,
+      "in_common_complete_phases": 0,
+      "peer_matched_at_partial_phases": 0,
+      "partial_phase_matches_by_position": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "limitations": [
+    "Projection coordinates cover mode plus 21 payload octets per word. No masked clear values were tested.",
+    "This is a replay of published excerpts. The earlier prospective choice applies to 43900392 only. Neighbor comparisons are retrospective.",
+    "A missing counter or unassigned phase in receiver transport is a hole in assigned reception. These 12 kHz WAVs do not carry packet timestamps; full-session timing comes from the original collection receipt."
+  ]
+}

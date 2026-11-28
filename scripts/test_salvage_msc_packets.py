@@ -5,6 +5,8 @@ import io
 import json
 from pathlib import Path
 import struct
+import subprocess
+import sys
 import tempfile
 import unittest
 
@@ -94,6 +96,53 @@ class PacketIntegrity(unittest.TestCase):
         self.assertEqual(set(units), {(100, 1), (100, 2)})
         self.assertEqual(report['conflicting_data_units'], [[100, 0]])
         self.assertNotIn('rejected_record_observations', report)
+
+    def test_optional_snapshot_preserves_legacy_outputs_and_marks_only_received_bodies(self):
+        with tempfile.TemporaryDirectory() as td, redirect_stdout(io.StringIO()):
+            root = Path(td)
+            path = root / 'receiver.msc'
+            partial = row(0, 0xffffffff, variant=53, bad_packet=1)
+            path.write_bytes(partial + row(0, bad_packet=1) + row(0, bad_packet=2))
+            old, new = root / 'old', root / 'new'
+            salvage([path], old, transport_only=True)
+            subprocess.run([sys.executable, Path(__file__).with_name('salvage_msc_packets.py'),
+                            path, '--out', new, '--transport-only', '--save-packets'], check=True,
+                           stdout=subprocess.DEVNULL)
+            self.assertEqual({p.name for p in new.iterdir()} - {p.name for p in old.iterdir()}, {'packets.npz'})
+            for file in old.iterdir():
+                self.assertEqual(file.read_bytes(), (new / file.name).read_bytes(), file.name)
+            with np.load(new / 'packets.npz') as packets, np.load(new / 'data_units.npz') as units:
+                self.assertEqual(set(packets.files), {'ticks', 'packets', 'packet_ok'})
+                self.assertEqual(packets['ticks'].dtype, np.int64)
+                self.assertEqual(packets['packets'].dtype, np.uint8)
+                self.assertEqual(packets['packet_ok'].dtype, np.bool_)
+                np.testing.assert_array_equal(packets['ticks'], [300, 3 * 0xffffffff])
+                np.testing.assert_array_equal(packets['packet_ok'], [[True] * 4, [True, False, True, True]])
+                self.assertEqual(packets['packets'][0].tobytes(), units['du'][0].tobytes())
+                for q, body in enumerate(packets['packets'][1]):
+                    offset = 4 + 182 * q + 1
+                    expected = bytes(179) if q == 1 else partial[offset:offset + 179]
+                    self.assertEqual(body.tobytes(), expected)
+
+    def test_snapshot_excludes_whole_conflicted_and_bad_reassembled_phases(self):
+        with tempfile.TemporaryDirectory() as td, redirect_stdout(io.StringIO()):
+            root = Path(td)
+            path = root / 'receiver.msc'
+            # The two partial rows for 101 supply a single candidate for each packet
+            # but collectively fail the DU CRC. Change q1 including its valid packet CRC.
+            other = bytearray(row(0, 101, bad_packet=2))
+            q1 = slice(4 + 182, 4 + 364)
+            other[q1] = row(0, 101, variant=23)[q1]
+            path.write_bytes(row(0) + row(0, variant=19) + row(0, 101, bad_packet=1) + other)
+            out = root / 'out'
+            salvage([path], out, save_packets=True, transport_only=True)
+            report = json.loads((out / 'report.json').read_text())
+            self.assertEqual(report['conflicting_data_units'], [[100, 0]])
+            self.assertEqual(report['reassembly_crc_failures'], 1)
+            with np.load(out / 'packets.npz') as packets:
+                self.assertEqual(packets['ticks'].shape, (0,))
+                self.assertEqual(packets['packet_ok'].shape, (0, 4))
+                self.assertEqual(packets['packets'].shape, (0, 4, 179))
 
 
 if __name__ == '__main__':

@@ -59,7 +59,7 @@ def records(path, *, rejected_records=None):
             index += 1
 
 
-def salvage(paths, out, *, transport_only=False):
+def salvage(paths, out, *, transport_only=False, save_packets=False):
     payloads = defaultdict(set)
     provenance = defaultdict(list)
     baseline = set()
@@ -105,18 +105,28 @@ def salvage(paths, out, *, transport_only=False):
     dus = {}
     conflicts = []
     crc_fail = 0
+    ticks, packet_flags = [], []
+    packet_bodies = bytearray()
+    missing_packet = bytes(179)
     for c, p in sorted({(c, p) for c, p, q in payloads}):
         possibilities = [payloads.get((c, p, q), set()) for q in range(4)]
         if any(len(v) > 1 for v in possibilities):
             conflicts.append((c, p))
             continue
-        if not all(len(v) == 1 for v in possibilities):
+        present = [bool(v) for v in possibilities]
+        complete = all(present)
+        if not complete and not save_packets:
             continue
-        du = b''.join(next(iter(v)) for v in possibilities)
-        if crc(du[:714]) != int.from_bytes(du[714:], 'big'):
-            crc_fail += 1
-            continue
-        dus[c, p] = du
+        du = b''.join(next(iter(v), missing_packet) for v in possibilities)
+        if complete:
+            if crc(du[:714]) != int.from_bytes(du[714:], 'big'):
+                crc_fail += 1
+                continue
+            dus[c, p] = du
+        if save_packets:
+            ticks.append(3*c + p)
+            packet_bodies.extend(du)
+            packet_flags.append(present)
     counters = np.array([c for c in sorted({c for c, p in dus})
                          if all((c, p) in dus for p in range(3))], dtype=np.uint32)
     du = np.array([list(dus[int(c), p]) for c in counters for p in range(3)],
@@ -155,6 +165,10 @@ def salvage(paths, out, *, transport_only=False):
                         counters=np.array([c for c,p in partial_indices], np.uint32),
                         phases=np.array([p for c,p in partial_indices], np.uint8),
                         du=np.array([list(dus[k]) for k in partial_indices], np.uint8).reshape(-1,716))
+    if save_packets:
+        np.savez_compressed(out/'packets.npz', ticks=np.asarray(ticks, dtype=np.int64),
+                            packets=np.frombuffer(packet_bodies, np.uint8).reshape(-1, 4, 179),
+                            packet_ok=np.asarray(packet_flags, dtype=bool).reshape(-1, 4))
     (out/'report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
     (out/'provenance.json').write_text(json.dumps({','.join(map(str,k)): v for k,v in provenance.items()}),
                                        encoding='utf-8')
@@ -166,5 +180,7 @@ if __name__ == '__main__':
     ap.add_argument('inputs', nargs='+')
     ap.add_argument('--out', required=True)
     ap.add_argument('--transport-only', action='store_true', help='assemble received data units and skip text candidates')
+    ap.add_argument('--save-packets', action='store_true',
+                    help='write packets.npz with CRC-good packet bodies and receipt flags for complete and partial phases')
     a = ap.parse_args()
-    salvage(a.inputs, a.out, transport_only=a.transport_only)
+    salvage(a.inputs, a.out, transport_only=a.transport_only, save_packets=a.save_packets)
