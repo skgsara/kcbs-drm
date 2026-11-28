@@ -1,0 +1,9 @@
+{
+  "placement_seal_sha256": "2d1ef73ab5830cd5756a1d0e2fc3d15f6dd40b7d80750b9ed2d3948d62a0375e",
+  "prior_ids": 15194,
+  "inventory_sha256": "3fa7b3ad29857f9d8c144f5c57e3421892f435d62d23a7fc677d02456e19e2a3",
+  "assigned_counters": 0,
+  "previously_seen": [],
+  "pristine_primary": null,
+  "incomplete_control": null
+}

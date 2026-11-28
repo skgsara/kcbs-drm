@@ -1,0 +1,229 @@
+{
+  "source": "edogawa-6122.wav",
+  "source_sha256": "d31ee6446bbae3408d12dd242bee830cf12bf141095690dd399fd6c044a3c62c",
+  "pcm_sha256": "072d9fe41240edcb29ca2e42b28941efaf6d79979289fb5251547d55636b1768",
+  "protocol_center_hz": 6122000,
+  "iq_rate_hz": 48000,
+  "iq_sample_pairs": 8640000,
+  "audio_file": "6100-envelope-12k.wav",
+  "audio_sha256": "fc00917c9f1b5534a82072fb9b461bc1aca1ff400e147b8d756fe9b3b88fb5a9",
+  "audio_rate_hz": 12000,
+  "audio_samples": 2160000,
+  "audio_sample_map": "output index k corresponds to input IQ index 4*k; no accumulated FIR delay",
+  "time": {
+    "timing_file": "edogawa-6122.wav.timing.csv",
+    "timing_sha256": "9bff1f5c31bf5d902b0c8fb9a6a8534396f24b16bdf8f3b8de77268601308c99",
+    "receiver_first_utc": "2026-11-28T17:03:26.285914+00:00",
+    "receiver_end_exclusive_utc": "2026-11-28T17:06:26.285563+00:00",
+    "receiver_first_unix_ns": 1795885406285913545,
+    "receiver_end_exclusive_unix_ns": 1795885586285562721,
+    "first_anchor_sample": 1920,
+    "last_anchor_sample": 8639760,
+    "anchor_count": 26994,
+    "jumps": []
+  },
+  "raw_receiver_receipt_sha256": "baccc50d50d5fa3f89d106c89a0449b776af6cc3d002291a93977562b9d5601f",
+  "gain": 6.303788,
+  "carrier_estimate_hz_relative_to_nominal": 0.97656,
+  "carrier_peak_db_over_local_median": 34.93,
+  "used_rf_offset_hz": -21999.0234375,
+  "rf_half_gain_cutoffs_relative_to_center": [
+    -23199.0234375,
+    -18199.0234375
+  ],
+  "rf_fir": "801 symmetric prototype Kaiser beta 9, complex-modulated on input sample grid; centered convolution, magnitude",
+  "audio_fir": "1601 taps centered Kaiser beta 9, half-gain 90..3600 Hz, 4:1 decimation from sample zero",
+  "boundary_processing": "filter each contiguous clock span separately; RF uses zero extension, audio envelope edge-held; within 25 ms of each edge FIR support incomplete",
+  "upper_only_above_hz": 1200,
+  "full_input_nyquist_hz": [
+    -24000,
+    24000
+  ],
+  "limit": "actual front-end response and programme identity unknown",
+  "synthetic_check": {
+    "zero_lag_r": 1.0,
+    "opposite_edge_addition_relative_rms": 3.777e-06
+  },
+  "ten_second_rf": [
+    {
+      "start_s": 0.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 40.05,
+      "lower_300_1000_to_upper_5000_7000_db": 8.39,
+      "upper_300_1000_to_upper_5000_7000_db": 8.75,
+      "upper_1200_3500_to_upper_5000_7000_db": 2.37,
+      "mirrored_band_log_spectrum_time_r": 0.3119,
+      "circular_shift_two_s_r": 0.01
+    },
+    {
+      "start_s": 10.0,
+      "peak_hz_relative_to_nominal": -56.152,
+      "carrier_peak_to_local_50_250_hz_median_db": 40.86,
+      "lower_300_1000_to_upper_5000_7000_db": 6.09,
+      "upper_300_1000_to_upper_5000_7000_db": 6.34,
+      "upper_1200_3500_to_upper_5000_7000_db": 2.84,
+      "mirrored_band_log_spectrum_time_r": 0.1686,
+      "circular_shift_two_s_r": -0.0272
+    },
+    {
+      "start_s": 20.0,
+      "peak_hz_relative_to_nominal": -56.152,
+      "carrier_peak_to_local_50_250_hz_median_db": 44.12,
+      "lower_300_1000_to_upper_5000_7000_db": 9.29,
+      "upper_300_1000_to_upper_5000_7000_db": 11.85,
+      "upper_1200_3500_to_upper_5000_7000_db": 4.82,
+      "mirrored_band_log_spectrum_time_r": 0.0907,
+      "circular_shift_two_s_r": -0.0018
+    },
+    {
+      "start_s": 30.0,
+      "peak_hz_relative_to_nominal": -56.152,
+      "carrier_peak_to_local_50_250_hz_median_db": 45.23,
+      "lower_300_1000_to_upper_5000_7000_db": 7.97,
+      "upper_300_1000_to_upper_5000_7000_db": 8.54,
+      "upper_1200_3500_to_upper_5000_7000_db": 2.55,
+      "mirrored_band_log_spectrum_time_r": 0.335,
+      "circular_shift_two_s_r": -0.019
+    },
+    {
+      "start_s": 40.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 40.74,
+      "lower_300_1000_to_upper_5000_7000_db": 5.73,
+      "upper_300_1000_to_upper_5000_7000_db": 8.9,
+      "upper_1200_3500_to_upper_5000_7000_db": 5.19,
+      "mirrored_band_log_spectrum_time_r": 0.5127,
+      "circular_shift_two_s_r": -0.019
+    },
+    {
+      "start_s": 50.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 38.14,
+      "lower_300_1000_to_upper_5000_7000_db": 9.91,
+      "upper_300_1000_to_upper_5000_7000_db": 8.32,
+      "upper_1200_3500_to_upper_5000_7000_db": 4.89,
+      "mirrored_band_log_spectrum_time_r": 0.5288,
+      "circular_shift_two_s_r": -0.0169
+    },
+    {
+      "start_s": 60.0,
+      "peak_hz_relative_to_nominal": -56.152,
+      "carrier_peak_to_local_50_250_hz_median_db": 39.75,
+      "lower_300_1000_to_upper_5000_7000_db": 11.21,
+      "upper_300_1000_to_upper_5000_7000_db": 10.53,
+      "upper_1200_3500_to_upper_5000_7000_db": 5.85,
+      "mirrored_band_log_spectrum_time_r": 0.4458,
+      "circular_shift_two_s_r": -0.0308
+    },
+    {
+      "start_s": 70.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 40.95,
+      "lower_300_1000_to_upper_5000_7000_db": 13.13,
+      "upper_300_1000_to_upper_5000_7000_db": 11.43,
+      "upper_1200_3500_to_upper_5000_7000_db": 6.36,
+      "mirrored_band_log_spectrum_time_r": 0.5397,
+      "circular_shift_two_s_r": -0.0108
+    },
+    {
+      "start_s": 80.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 36.94,
+      "lower_300_1000_to_upper_5000_7000_db": 6.6,
+      "upper_300_1000_to_upper_5000_7000_db": 6.92,
+      "upper_1200_3500_to_upper_5000_7000_db": 4.53,
+      "mirrored_band_log_spectrum_time_r": 0.3885,
+      "circular_shift_two_s_r": -0.0015
+    },
+    {
+      "start_s": 90.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 38.94,
+      "lower_300_1000_to_upper_5000_7000_db": 5.82,
+      "upper_300_1000_to_upper_5000_7000_db": 7.47,
+      "upper_1200_3500_to_upper_5000_7000_db": 4.28,
+      "mirrored_band_log_spectrum_time_r": 0.2899,
+      "circular_shift_two_s_r": -0.0355
+    },
+    {
+      "start_s": 100.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 37.83,
+      "lower_300_1000_to_upper_5000_7000_db": 11.25,
+      "upper_300_1000_to_upper_5000_7000_db": 12.68,
+      "upper_1200_3500_to_upper_5000_7000_db": 7.56,
+      "mirrored_band_log_spectrum_time_r": 0.462,
+      "circular_shift_two_s_r": -0.0034
+    },
+    {
+      "start_s": 110.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 37.91,
+      "lower_300_1000_to_upper_5000_7000_db": 12.23,
+      "upper_300_1000_to_upper_5000_7000_db": 11.05,
+      "upper_1200_3500_to_upper_5000_7000_db": 8.36,
+      "mirrored_band_log_spectrum_time_r": 0.4559,
+      "circular_shift_two_s_r": -0.0802
+    },
+    {
+      "start_s": 120.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 35.37,
+      "lower_300_1000_to_upper_5000_7000_db": 10.68,
+      "upper_300_1000_to_upper_5000_7000_db": 10.95,
+      "upper_1200_3500_to_upper_5000_7000_db": 7.43,
+      "mirrored_band_log_spectrum_time_r": 0.3884,
+      "circular_shift_two_s_r": -0.0088
+    },
+    {
+      "start_s": 130.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 35.12,
+      "lower_300_1000_to_upper_5000_7000_db": 9.65,
+      "upper_300_1000_to_upper_5000_7000_db": 9.69,
+      "upper_1200_3500_to_upper_5000_7000_db": 7.41,
+      "mirrored_band_log_spectrum_time_r": 0.4336,
+      "circular_shift_two_s_r": 0.0314
+    },
+    {
+      "start_s": 140.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 35.76,
+      "lower_300_1000_to_upper_5000_7000_db": 8.6,
+      "upper_300_1000_to_upper_5000_7000_db": 10.26,
+      "upper_1200_3500_to_upper_5000_7000_db": 6.96,
+      "mirrored_band_log_spectrum_time_r": 0.1971,
+      "circular_shift_two_s_r": 0.0087
+    },
+    {
+      "start_s": 150.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 36.36,
+      "lower_300_1000_to_upper_5000_7000_db": 5.42,
+      "upper_300_1000_to_upper_5000_7000_db": 9.23,
+      "upper_1200_3500_to_upper_5000_7000_db": 4.44,
+      "mirrored_band_log_spectrum_time_r": 0.2452,
+      "circular_shift_two_s_r": 0.0055
+    },
+    {
+      "start_s": 160.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 37.19,
+      "lower_300_1000_to_upper_5000_7000_db": 8.04,
+      "upper_300_1000_to_upper_5000_7000_db": 6.64,
+      "upper_1200_3500_to_upper_5000_7000_db": 5.27,
+      "mirrored_band_log_spectrum_time_r": 0.2592,
+      "circular_shift_two_s_r": -0.0609
+    },
+    {
+      "start_s": 170.0,
+      "peak_hz_relative_to_nominal": 0.977,
+      "carrier_peak_to_local_50_250_hz_median_db": 36.58,
+      "lower_300_1000_to_upper_5000_7000_db": 10.82,
+      "upper_300_1000_to_upper_5000_7000_db": 12.9,
+      "upper_1200_3500_to_upper_5000_7000_db": 6.42,
+      "mirrored_band_log_spectrum_time_r": 0.4647,
+      "circular_shift_two_s_r": 0.0257
+    }
+  ]
+}

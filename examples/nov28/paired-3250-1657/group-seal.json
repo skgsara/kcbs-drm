@@ -1,0 +1,31 @@
+{
+  "native_msc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "native": {
+    "msc_rows": 0,
+    "packet_crc_checks": 0,
+    "physical_packets_crc": 0,
+    "physical_packets_crc_and_header": 0,
+    "native_complete_dus": 0
+  },
+  "pristine_native_groups": 0,
+  "archive_sha256": {
+    "stock": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+    "extended": "d5c4ff4deafbb8cb78c7065af7d434f4c6ead42727eb4951f7a5b4e00cf023f3"
+  },
+  "stock": {
+    "packet_coordinates": 0,
+    "complete_dus": 0,
+    "complete_groups": 0,
+    "assigned_counters": []
+  },
+  "extended": {
+    "packet_coordinates": 0,
+    "complete_dus": 0,
+    "complete_groups": 0,
+    "assigned_counters": []
+  },
+  "placements": [],
+  "new_packet_coordinates": [],
+  "pristine_primary": null,
+  "incomplete_control": null
+}

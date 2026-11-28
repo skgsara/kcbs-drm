@@ -1,0 +1,240 @@
+{
+  "format": "paired-receiver-iq-archive-v1",
+  "sample_format": "Stereo signed 16-bit PCM, I then Q, 48,000 complex pairs/s; original sample order preserved.",
+  "clock_basis": "Receiver packet timestamps only. Each half-open coverage span begins at its first stamped sample and ends at its final stamped packet start plus its nominal sample duration. Adjacent packets with time residual at most one nominal sample are treated as continuous. Unstamped samples are excluded. No inter-station clock, RF propagation or programme delay correction.",
+  "archive_validation": "Each FLAC was decoded to raw little-endian PCM and compared byte-for-byte with the WAV data chunk. The original timing CSV bytes were compared after gzip decompression; gzip header mtime is zero.",
+  "recordings": {
+    "drm": {
+      "station": "JL1EDU, Yokohama",
+      "public_receiver": "https://ubersdr.jl1edu.freeddns.org",
+      "frequency_hz": 3205000,
+      "status": "completed",
+      "recorder_error": null,
+      "requested_seconds": 150,
+      "sample_pairs": 7200000,
+      "sample_duration_seconds": 150.0,
+      "original_wav_bytes": 28800044,
+      "original_wav_sha256": "17e10995a9f009f728034d0f8fd0c7e7b06f03d703204483d78373ddf93c09d9",
+      "original_iq_pcm_s16le_sha256": "db85d1f95dd4690ec772325d2f33bd59417ecdc9427a45ff6bb3c14541725d21",
+      "source_recorder_json_sha256": "b4d14fb2ee4140f3615d955ceb2b94bf131edba53e899ebdc65e1096b32d03f7",
+      "flac": "jl1edu-3205.flac",
+      "flac_bytes": 21371503,
+      "flac_sha256": "6b08ba0a1366b73b1266b19a3026aa6f9fea644a545832df1d700a0a19cdc358",
+      "decoded_pcm_sha256": "db85d1f95dd4690ec772325d2f33bd59417ecdc9427a45ff6bb3c14541725d21",
+      "timing_gzip": "jl1edu-3205-timing.csv.gz",
+      "original_timing_csv_bytes": 716397,
+      "original_timing_csv_sha256": "c64f21ba59e25c451c600ea829ec22e81c7125ae44986518966f50b00e86e4ec",
+      "timing_gzip_bytes": 120389,
+      "timing_gzip_sha256": "5511c936a4ae6efcb744cd90872f4046349d285f54dd388815f363f1f682e071",
+      "receiver_clock": {
+        "packets": 22500,
+        "timestamped_packets": 22491,
+        "timestamped_sample_pairs": 7197120,
+        "missing_timestamp_sample_ranges": [
+          [
+            0,
+            2880
+          ]
+        ],
+        "untimestamped_prefix_samples": 2880,
+        "first_timestamp_sample_and_unix_ns": [
+          2880,
+          1795885063799780665
+        ],
+        "last_timestamp_sample_and_unix_ns": [
+          7199760,
+          1795885213734810254
+        ],
+        "transitions_over_one_sample": 0,
+        "jumps": [],
+        "max_abs_residual_ns": 10932,
+        "continuous_stamped_runs": [
+          {
+            "first_sample": 2880,
+            "end_sample_exclusive": 7200000,
+            "start_unix_ns": 1795885063799780665,
+            "end_exclusive_unix_ns": 1795885213739810254,
+            "start_utc": "2026-11-28T16:57:43.799780665Z",
+            "end_exclusive_utc": "2026-11-28T17:00:13.739810254Z",
+            "duration_ns": 149940029589,
+            "seconds": 149.940029589
+          }
+        ]
+      }
+    },
+    "am-short": {
+      "station": "7L4IOU, Edogawa",
+      "public_receiver": "https://7l4iou.tunnel.ubersdr.org",
+      "frequency_hz": 3250000,
+      "status": "interrupted",
+      "recorder_error": "ConnectionClosedError: no close frame received or sent",
+      "requested_seconds": 150,
+      "sample_pairs": 51240,
+      "sample_duration_seconds": 1.0675,
+      "original_wav_bytes": 205004,
+      "original_wav_sha256": "b13b360225953be31554f2b2027c0549a4b75ae3b171e8c278c6d542e1d7b392",
+      "original_iq_pcm_s16le_sha256": "e3ee305218e340add301c51786686bcbdb1749afebf4f62c9f712c2c473d4359",
+      "source_recorder_json_sha256": "c5f7006f8210ec02cb2b9e8e03a6ee486400cc47a07269eb4b21c55ff3dbd168",
+      "flac": "7l4iou-3250-short.flac",
+      "flac_bytes": 157674,
+      "flac_sha256": "5cda1d672c2f905fb0db644028853b27fe2377105063f205a8ebbe5d68c27e8f",
+      "decoded_pcm_sha256": "e3ee305218e340add301c51786686bcbdb1749afebf4f62c9f712c2c473d4359",
+      "timing_gzip": "7l4iou-3250-short-timing.csv.gz",
+      "original_timing_csv_bytes": 4635,
+      "original_timing_csv_sha256": "6bf09ce44db72af95d9485542b2797f29ed21c6862629a9ac1d77a5f4632e414",
+      "timing_gzip_bytes": 915,
+      "timing_gzip_sha256": "8caac028e6b4a8ef6117c29e53d494718725a3bb37b4c92d370d823b443a4f5c",
+      "receiver_clock": {
+        "packets": 160,
+        "timestamped_packets": 151,
+        "timestamped_sample_pairs": 48360,
+        "missing_timestamp_sample_ranges": [
+          [
+            0,
+            2880
+          ]
+        ],
+        "untimestamped_prefix_samples": 2880,
+        "first_timestamp_sample_and_unix_ns": [
+          2880,
+          1795885041207022803
+        ],
+        "last_timestamp_sample_and_unix_ns": [
+          50880,
+          1795885042207022803
+        ],
+        "transitions_over_one_sample": 0,
+        "jumps": [],
+        "max_abs_residual_ns": 0,
+        "continuous_stamped_runs": [
+          {
+            "first_sample": 2880,
+            "end_sample_exclusive": 51240,
+            "start_unix_ns": 1795885041207022803,
+            "end_exclusive_unix_ns": 1795885042214522803,
+            "start_utc": "2026-11-28T16:57:21.207022803Z",
+            "end_exclusive_utc": "2026-11-28T16:57:22.214522803Z",
+            "duration_ns": 1007500000,
+            "seconds": 1.0075
+          }
+        ]
+      }
+    },
+    "am-reconnect": {
+      "station": "7L4IOU, Edogawa",
+      "public_receiver": "https://7l4iou.tunnel.ubersdr.org",
+      "frequency_hz": 3250000,
+      "status": "completed",
+      "recorder_error": null,
+      "requested_seconds": 120,
+      "sample_pairs": 5760000,
+      "sample_duration_seconds": 120.0,
+      "original_wav_bytes": 23040044,
+      "original_wav_sha256": "9de22a2f180f47382ef06c2a07128e41f2c07c51c2e2c7f174f0b968b2f7ff60",
+      "original_iq_pcm_s16le_sha256": "eb64eb06415a172fa53aa1866e381b0417d8ebb87bfc54c3947624269cea5ac0",
+      "source_recorder_json_sha256": "113d3f003ea257f7a80fdc8d1c4b48772028daa2ef49fc2af45789aef4a7c125",
+      "flac": "7l4iou-3250-reconnect.flac",
+      "flac_bytes": 16307115,
+      "flac_sha256": "e5c92836fb589f240282e1ff44d1da06240b590c3df05ee66947c0961be0bee8",
+      "decoded_pcm_sha256": "eb64eb06415a172fa53aa1866e381b0417d8ebb87bfc54c3947624269cea5ac0",
+      "timing_gzip": "7l4iou-3250-reconnect-timing.csv.gz",
+      "original_timing_csv_bytes": 572397,
+      "original_timing_csv_sha256": "7fd086733b33dd635a1ce6feb409a083525c9c4ec15f80657a7c0fe2d404a2cf",
+      "timing_gzip_bytes": 97505,
+      "timing_gzip_sha256": "5db0a5d38a30aabee7064e1ded1f88cc16e2ccc5b19d1f78cdb9f27efe9cd59e",
+      "receiver_clock": {
+        "packets": 18000,
+        "timestamped_packets": 17991,
+        "timestamped_sample_pairs": 5757120,
+        "missing_timestamp_sample_ranges": [
+          [
+            0,
+            2880
+          ]
+        ],
+        "untimestamped_prefix_samples": 2880,
+        "first_timestamp_sample_and_unix_ns": [
+          2880,
+          1795885121266788754
+        ],
+        "last_timestamp_sample_and_unix_ns": [
+          5759760,
+          1795885241201420906
+        ],
+        "transitions_over_one_sample": 1,
+        "jumps": [
+          {
+            "sample_index": 1999680,
+            "residual_ns": -21094
+          }
+        ],
+        "max_abs_residual_ns": 21094,
+        "continuous_stamped_runs": [
+          {
+            "first_sample": 2880,
+            "end_sample_exclusive": 1999680,
+            "start_unix_ns": 1795885121266788754,
+            "end_exclusive_unix_ns": 1795885162866664945,
+            "start_utc": "2026-11-28T16:58:41.266788754Z",
+            "end_exclusive_utc": "2026-11-28T16:59:22.866664945Z",
+            "duration_ns": 41599876191,
+            "seconds": 41.599876191
+          },
+          {
+            "first_sample": 1999680,
+            "end_sample_exclusive": 5760000,
+            "start_unix_ns": 1795885162866643851,
+            "end_exclusive_unix_ns": 1795885241206420906,
+            "start_utc": "2026-11-28T16:59:22.866643851Z",
+            "end_exclusive_utc": "2026-11-28T17:00:41.206420906Z",
+            "duration_ns": 78339777055,
+            "seconds": 78.339777055
+          }
+        ]
+      }
+    }
+  },
+  "continuous_timestamped_overlaps": {
+    "drm_with_am-short": [],
+    "drm_with_am-reconnect": [
+      {
+        "start_unix_ns": 1795885121266788754,
+        "end_exclusive_unix_ns": 1795885162866664945,
+        "start_utc": "2026-11-28T16:58:41.266788754Z",
+        "end_exclusive_utc": "2026-11-28T16:59:22.866664945Z",
+        "duration_ns": 41599876191,
+        "seconds": 41.599876191
+      },
+      {
+        "start_unix_ns": 1795885162866643851,
+        "end_exclusive_unix_ns": 1795885213739810254,
+        "start_utc": "2026-11-28T16:59:22.866643851Z",
+        "end_exclusive_utc": "2026-11-28T17:00:13.739810254Z",
+        "duration_ns": 50873166403,
+        "seconds": 50.873166403
+      }
+    ]
+  },
+  "union_of_stamped_overlap_runs": {
+    "drm_with_am-short": {
+      "intervals": [],
+      "distinct_duration_ns": 0,
+      "double_counted_ns_if_run_durations_were_summed": 0
+    },
+    "drm_with_am-reconnect": {
+      "intervals": [
+        {
+          "start_unix_ns": 1795885121266788754,
+          "end_exclusive_unix_ns": 1795885213739810254,
+          "start_utc": "2026-11-28T16:58:41.266788754Z",
+          "end_exclusive_utc": "2026-11-28T17:00:13.739810254Z",
+          "duration_ns": 92473021500,
+          "seconds": 92.4730215
+        }
+      ],
+      "distinct_duration_ns": 92473021500,
+      "double_counted_ns_if_run_durations_were_summed": 21094
+    }
+  },
+  "total_packaged_asset_bytes": 38055101
+}

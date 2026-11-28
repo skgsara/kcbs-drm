@@ -1,0 +1,33 @@
+{
+  "revision": "3250f175b96ad3c373e466b09bc2f082bdc044a1",
+  "source_sha256": "17e10995a9f009f728034d0f8fd0c7e7b06f03d703204483d78373ddf93c09d9",
+  "msc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "native": {
+    "msc_rows": 0,
+    "packet_crc_checks": 0,
+    "physical_packets_crc": 0,
+    "physical_packets_crc_and_header": 0,
+    "native_complete_dus": 0
+  },
+  "native_groups": 0,
+  "native_group_counters": [],
+  "stock": {
+    "packet_coordinates": 0,
+    "complete_dus": 0,
+    "complete_groups": 0,
+    "assigned_counters": []
+  },
+  "extended": {
+    "packet_coordinates": 0,
+    "complete_dus": 0,
+    "complete_groups": 0,
+    "assigned_counters": []
+  },
+  "finite_eof": true,
+  "raw_signalling_observations": "no FAC/SDC dump in the sealed single-pass receiver command",
+  "placed_original_rows": 0,
+  "selection_seal_sha256": "2d1ef73ab5830cd5756a1d0e2fc3d15f6dd40b7d80750b9ed2d3948d62a0375e",
+  "fields_sha256": "61f4a2bf81fdea015007ae2d82e6fe6f8de40e45eaab1968f34998f92cd4cfdd",
+  "pristine_primary": null,
+  "incomplete_control": null
+}

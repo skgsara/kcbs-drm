@@ -1,0 +1,38 @@
+{
+  "source": "/workspace/shared/kcbs2-common-clock-20261128/raw/edogawa-6122.wav",
+  "output": "/workspace/shared/kcbs2-common-clock-20261128/blind/edogawa-6140-iq12.wav",
+  "offset_hz": 18000.0,
+  "offset_convention": "selected channel frequency minus source center frequency",
+  "channels": [
+    "I",
+    "Q"
+  ],
+  "source_format": "WAV",
+  "source_subtype": "PCM_16",
+  "source_sample_rate_hz": 48000,
+  "source_frames": 8640000,
+  "source_sample_range": [
+    0,
+    8640000
+  ],
+  "source_start_utc": null,
+  "output_sample_zero_source_frame": 0,
+  "output_start_utc": null,
+  "output_sample_rate_hz": 12000,
+  "output_frames": 2160000,
+  "output_format": "WAV",
+  "output_subtype": "FLOAT",
+  "source_frames_per_output_frame": {
+    "numerator": 4,
+    "denominator": 1
+  },
+  "source_duration_seconds": 180.0,
+  "output_duration_seconds": 180.0,
+  "fir_passband_hz": 5050,
+  "fir_stopband_hz": 5950,
+  "kaiser_design_attenuation_db": 85,
+  "fir_taps": 289,
+  "fir_design_rate_hz": 48000,
+  "compensated_delay_output_frames": 36,
+  "boundary": "Zero extension only at file ends. Output frame k is centered at source time k/12000 seconds."
+}

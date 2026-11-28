@@ -1,0 +1,44 @@
+{
+  "outcome": "no_public_programme_audio_acquired",
+  "requested_target_seconds": 120,
+  "capture_start_utc": null,
+  "capture_end_utc": null,
+  "received_audio_samples": 0,
+  "stream_latency_seconds": null,
+  "media_clock": null,
+  "recorded_at_utc": "2026-11-28T16:58:51.652173+00:00",
+  "sources": [
+    {
+      "url": "https://live.koryocdn.org/kcbs2/index.m3u8",
+      "advertised_by": [
+        "https://www.freqtrail.com/stations/KP",
+        "https://blog.xmgspace.me/swdx.html"
+      ],
+      "ordinary_get_utc": "2026-11-28T16:57:17.677888+00:00",
+      "http_status": 403
+    },
+    {
+      "url": "https://juche-tv.vercel.app/",
+      "http_status": 200,
+      "observed": "Current homepage says Juche TV is discontinued, its KCBS/KCBS-2/Pyongyang FM and VOD are off air, and it obtained all streams from KoryoFront."
+    },
+    {
+      "url": "https://juche-tv.vercel.app/KCBS2",
+      "http_status": 404,
+      "observed": "Previously publicly linked KCBS-2 player."
+    },
+    {
+      "url": "https://koryofront.org/radio",
+      "http_status": 403
+    },
+    {
+      "url": "https://koryo.tv/",
+      "http_status": 503
+    },
+    {
+      "url": "https://intchoson.com/",
+      "http_status": 403
+    }
+  ],
+  "note": "Web access checks only. A directory listing cannot establish current media delivery or RF activity. No station timestamps, file hash or simultaneous programme sample exist for this attempt."
+}

@@ -1,0 +1,151 @@
+{
+  "frequency_hz": 3250000,
+  "station": "7L4IOU Edogawa",
+  "asset": "original.wav",
+  "wav_sha256": "9de22a2f180f47382ef06c2a07128e41f2c07c51c2e2c7f174f0b968b2f7ff60",
+  "pcm_sha256": "eb64eb06415a172fa53aa1866e381b0417d8ebb87bfc54c3947624269cea5ac0",
+  "timing_csv_sha256": "7fd086733b33dd635a1ce6feb409a083525c9c4ec15f80657a7c0fe2d404a2cf",
+  "rate_hz": 48000,
+  "sample_pairs": 5760000,
+  "duration_s": 120.0,
+  "recorder_started_utc": "2026-11-28T16:58:39.498068+00:00",
+  "receiver_first_utc": "2026-11-28T16:58:41.206789+00:00",
+  "receiver_end_exclusive_utc": "2026-11-28T17:00:41.206421+00:00",
+  "receiver_first_unix_ns": 1795885121206788754,
+  "receiver_end_exclusive_unix_ns": 1795885241206420906,
+  "first_timestamped_sample": 2880,
+  "last_timestamped_sample": 5759760,
+  "timestamped_packets": 17991,
+  "packet_count": 18000,
+  "jumps_over_one_sample": 1,
+  "largest_jump_ns": 21094,
+  "source_clipped_iq_components": 1,
+  "demod": "8th-order Butterworth low-pass 4.2kHz IQ at nominal channel center, magnitude envelope, 1:4 scipy resample_poly, 4th-order 90\u20133900 Hz audio bandpass, single fixed peak gain",
+  "audio_wav": "am-envelope-12k.wav",
+  "audio_sha256": "f6498d60f59653e191a089a459a13d6d8f2506f051e4cd5918969aa58652a6b9",
+  "audio_sample_rate": 12000,
+  "audio_samples": 1440000,
+  "audio_constant_gain": 4.8813,
+  "measurements": [
+    {
+      "start_s": 0,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 51.49,
+      "sideband_mirrored_time_variation_r": 0.5376,
+      "two_second_circular_shift_r": -0.0361,
+      "usb_450_2200_vs_outer_floor_db": 2.34,
+      "lsb_450_2200_vs_outer_floor_db": 2.06,
+      "envelope_level_spread_90th_to_10th_100ms_db": 12.56
+    },
+    {
+      "start_s": 10,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 53.19,
+      "sideband_mirrored_time_variation_r": 0.4934,
+      "two_second_circular_shift_r": 0.0002,
+      "usb_450_2200_vs_outer_floor_db": 2.22,
+      "lsb_450_2200_vs_outer_floor_db": 1.75,
+      "envelope_level_spread_90th_to_10th_100ms_db": 9.14
+    },
+    {
+      "start_s": 20,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 56.22,
+      "sideband_mirrored_time_variation_r": 0.5105,
+      "two_second_circular_shift_r": -0.0259,
+      "usb_450_2200_vs_outer_floor_db": 2.51,
+      "lsb_450_2200_vs_outer_floor_db": 2.52,
+      "envelope_level_spread_90th_to_10th_100ms_db": 8.59
+    },
+    {
+      "start_s": 30,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 48.71,
+      "sideband_mirrored_time_variation_r": 0.5308,
+      "two_second_circular_shift_r": -0.048,
+      "usb_450_2200_vs_outer_floor_db": 1.5,
+      "lsb_450_2200_vs_outer_floor_db": 1.26,
+      "envelope_level_spread_90th_to_10th_100ms_db": 7.93
+    },
+    {
+      "start_s": 40,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 48.46,
+      "sideband_mirrored_time_variation_r": 0.5091,
+      "two_second_circular_shift_r": -0.0627,
+      "usb_450_2200_vs_outer_floor_db": 3.9,
+      "lsb_450_2200_vs_outer_floor_db": 3.88,
+      "envelope_level_spread_90th_to_10th_100ms_db": 7.77
+    },
+    {
+      "start_s": 50,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 49.87,
+      "sideband_mirrored_time_variation_r": 0.4135,
+      "two_second_circular_shift_r": -0.0305,
+      "usb_450_2200_vs_outer_floor_db": 1.77,
+      "lsb_450_2200_vs_outer_floor_db": 2.35,
+      "envelope_level_spread_90th_to_10th_100ms_db": 10.1
+    },
+    {
+      "start_s": 60,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 54.72,
+      "sideband_mirrored_time_variation_r": 0.302,
+      "two_second_circular_shift_r": -0.0523,
+      "usb_450_2200_vs_outer_floor_db": -0.15,
+      "lsb_450_2200_vs_outer_floor_db": -0.15,
+      "envelope_level_spread_90th_to_10th_100ms_db": 8.13
+    },
+    {
+      "start_s": 70,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 55.42,
+      "sideband_mirrored_time_variation_r": 0.4064,
+      "two_second_circular_shift_r": -0.0865,
+      "usb_450_2200_vs_outer_floor_db": -0.13,
+      "lsb_450_2200_vs_outer_floor_db": -0.15,
+      "envelope_level_spread_90th_to_10th_100ms_db": 17.31
+    },
+    {
+      "start_s": 80,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 56.57,
+      "sideband_mirrored_time_variation_r": 0.2987,
+      "two_second_circular_shift_r": -0.0404,
+      "usb_450_2200_vs_outer_floor_db": -0.38,
+      "lsb_450_2200_vs_outer_floor_db": -0.45,
+      "envelope_level_spread_90th_to_10th_100ms_db": 8.52
+    },
+    {
+      "start_s": 90,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 53.36,
+      "sideband_mirrored_time_variation_r": 0.4478,
+      "two_second_circular_shift_r": -0.0407,
+      "usb_450_2200_vs_outer_floor_db": 1.65,
+      "lsb_450_2200_vs_outer_floor_db": 1.57,
+      "envelope_level_spread_90th_to_10th_100ms_db": 10.44
+    },
+    {
+      "start_s": 100,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 53.29,
+      "sideband_mirrored_time_variation_r": 0.4844,
+      "two_second_circular_shift_r": 0.0158,
+      "usb_450_2200_vs_outer_floor_db": 3.27,
+      "lsb_450_2200_vs_outer_floor_db": 2.98,
+      "envelope_level_spread_90th_to_10th_100ms_db": 8.15
+    },
+    {
+      "start_s": 110,
+      "peak_near_nominal_hz": 1.46,
+      "peak_vs_local_floor_db": 46.17,
+      "sideband_mirrored_time_variation_r": 0.4353,
+      "two_second_circular_shift_r": 0.0271,
+      "usb_450_2200_vs_outer_floor_db": 0.18,
+      "lsb_450_2200_vs_outer_floor_db": 0.05,
+      "envelope_level_spread_90th_to_10th_100ms_db": 9.58
+    }
+  ]
+}

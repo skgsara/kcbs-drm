@@ -1,0 +1,73 @@
+{
+  "protocol_sha256": "163a7e5fd2a8ee49832a032bc27c6f0dabb3bf3cc6f4477f9c4f9a53e87dbf0f",
+  "native_summary_sha256": "ffca538fdc18e90f6055b5393fb00494c1b682bac9e3fd1101225e1124660eb6",
+  "native_primary_seal_sha256": "2d1ef73ab5830cd5756a1d0e2fc3d15f6dd40b7d80750b9ed2d3948d62a0375e",
+  "sealed_native_msc_rows": 0,
+  "sealed_stock_accepted_packet_coordinates": 0,
+  "available_mode_octets": 0,
+  "geometry": {
+    "timing_sha256": {
+      "drm/yokohama-3205.wav.timing.csv": "c64f21ba59e25c451c600ea829ec22e81c7125ae44986518966f50b00e86e4ec",
+      "am/original.wav.timing.csv": "6bf09ce44db72af95d9485542b2797f29ed21c6862629a9ac1d77a5f4632e414",
+      "am/second/original.wav.timing.csv": "7fd086733b33dd635a1ce6feb409a083525c9c4ec15f80657a7c0fe2d404a2cf"
+    },
+    "evaluated_digital_iq_samples": 7200000,
+    "digital_segments": [
+      {
+        "path": "drm/yokohama-3205.wav.timing.csv",
+        "sample_start": 2880,
+        "sample_end": 7200000,
+        "station_start_ns": 1795885063799780665,
+        "station_end_ns": 1795885213739810254
+      }
+    ],
+    "analogue_segments": [
+      {
+        "path": "am/original.wav.timing.csv",
+        "sample_start": 2880,
+        "sample_end": 51240,
+        "station_start_ns": 1795885041207022803,
+        "station_end_ns": 1795885042214522803
+      },
+      {
+        "path": "am/second/original.wav.timing.csv",
+        "sample_start": 2880,
+        "sample_end": 1999680,
+        "station_start_ns": 1795885121266788754,
+        "station_end_ns": 1795885162866664945
+      },
+      {
+        "path": "am/second/original.wav.timing.csv",
+        "sample_start": 1999680,
+        "sample_end": 5760000,
+        "station_start_ns": 1795885162866643851,
+        "station_end_ns": 1795885241206420906
+      }
+    ],
+    "overlap_start_utc": "2026-11-28T16:59:22.866644+00:00",
+    "overlap_end_utc": "2026-11-28T17:00:13.739810+00:00",
+    "longest_timed_overlap_seconds": 50.873166403,
+    "after_margins_seconds": 26.873166403,
+    "chosen_digital": {
+      "path": "drm/yokohama-3205.wav.timing.csv",
+      "sample_start": 2880,
+      "sample_end": 7200000,
+      "station_start_ns": 1795885063799780665,
+      "station_end_ns": 1795885213739810254
+    },
+    "chosen_analogue": {
+      "path": "am/second/original.wav.timing.csv",
+      "sample_start": 1999680,
+      "sample_end": 5760000,
+      "station_start_ns": 1795885162866643851,
+      "station_end_ns": 1795885241206420906
+    }
+  },
+  "training_score": null,
+  "validation_score": null,
+  "features_read": false,
+  "lag_trials": 0,
+  "timing_shortfall_seconds": 19.126833597,
+  "status": "abstain",
+  "reason": "Longest continuous station-timed overlap is shorter than 70 s before the two 12 s margins."
+}

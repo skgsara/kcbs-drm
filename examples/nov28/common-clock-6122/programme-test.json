@@ -1,0 +1,46 @@
+{
+  "primary_seal_sha256": "2d1ef73ab5830cd5756a1d0e2fc3d15f6dd40b7d80750b9ed2d3948d62a0375e",
+  "timing_protocol_sha256": "b88a46278b99011cf578a619e7fda153591065b28f77fa2befe835ad3aaea7d6",
+  "template_sha256": "d5a2d263902dd9aeb98ddabcc517a97b8338faba55c8e32e6b5f16a234c6010e",
+  "native_rows": 0,
+  "stock_observed_packet_coordinates": 0,
+  "common_source_frames": 8640000,
+  "common_source_seconds": 180.0,
+  "source_sha256": "d31ee6446bbae3408d12dd242bee830cf12bf141095690dd399fd6c044a3c62c",
+  "selected_digital_channel_sha256": "1abdaafecca932ba22ee529848136a7e49a35401faaccb72ad8f790cb65fca19",
+  "sealed_native_summary_sha256": "340e0197b9c00497cde56faff137e85b4b914fe20bc0b2e34e5ab65288b5c903",
+  "timestamp_quality": {
+    "timing_csv_sha256": "9bff1f5c31bf5d902b0c8fb9a6a8534396f24b16bdf8f3b8de77268601308c99",
+    "rows": 27000,
+    "timestamped_packets": 26994,
+    "untimestamped_packets": 6,
+    "first_timestamp_sample_and_ns": [
+      1920,
+      1795885406325913545
+    ],
+    "last_timestamp_sample_and_ns": [
+      8639760,
+      1795885586280562721
+    ],
+    "timing_jumps_over_one_sample": 0,
+    "largest_absolute_timestamp_jump_ns": 18673,
+    "gaps_over_20ms": []
+  },
+  "time_windows_seconds_from_nominal_digital_origin": {
+    "fit": [
+      20,
+      50
+    ],
+    "held_out": [
+      90,
+      120
+    ]
+  },
+  "am_features_opened": false,
+  "lag_trials": 0,
+  "fit": null,
+  "held_out": null,
+  "received_mode_octets": 0,
+  "status": "abstain",
+  "reason": "No accepted native MSC packet/mode coordinates, so the nominal digital origin and score are undefined."
+}

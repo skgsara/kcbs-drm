@@ -1,0 +1,17 @@
+{
+  "sideband": "upper",
+  "relative_passband_hz": [
+    200,
+    1500
+  ],
+  "rf_offset_band_hz": [
+    -21800,
+    -20500
+  ],
+  "carrier_hz": -22000,
+  "assumed_phase_rad": 0,
+  "trim_seconds_each_end": 0.1,
+  "actual_samples": 3331200,
+  "fixed_lag_samples": 0,
+  "real_component_correlation": 0.9991787046486456
+}
