@@ -1,0 +1,525 @@
+{
+  "scope": "Retrospective direct comparison of physical 182-byte wire packets on independently received, paired original streams. Candidate generation and header checks use the source alone. For each damaged source packet, an unchanged distinct quarter anchors its row and the peer supplies the comparison target only if the transmitted header and CRC pass there. Counts are conditional on those witnesses, and exclude unaligned rows. No proposal is incorporated into accepted receiver coverage.",
+  "cases": [
+    {
+      "capture": "Nov28-1232",
+      "left": "edogawa-msc.bin",
+      "right": "yokohama-msc.bin",
+      "source": "examples/nov28/same-6140-1232",
+      "left_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+      "right_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+      "alignment": {
+        "left": {
+          "native_rows": 218,
+          "unsupported_rows": 0,
+          "valid_packets": 451
+        },
+        "right": {
+          "native_rows": 220,
+          "unsupported_rows": 0,
+          "valid_packets": 859
+        },
+        "shared_distinct_wires": 444,
+        "nonunique_shared_wires": 0,
+        "candidate_pairs": 135,
+        "accepted_pairs": 135,
+        "accepted_witnesses": 444,
+        "rejected_pairs": 0,
+        "rejection_reasons": {}
+      },
+      "left_as_source": {
+        "counts": {
+          "source_crc_failed_peer_valid": 88,
+          "single_bit_syndrome": 4,
+          "proposal_header_wrong": 0,
+          "packet_only_exact": 0,
+          "packet_only_wrong": 4,
+          "strict_du_gate_exact": 0,
+          "strict_du_gate_wrong": 2,
+          "same_wire_both_valid": 444,
+          "peer_unusable_source_crc_failed": 2
+        },
+        "distance_of_bad_wire_to_peer": {
+          "16-31": 17,
+          "2": 4,
+          "3": 5,
+          "32-63": 13,
+          "4-7": 17,
+          "64-127": 2,
+          "8-15": 30
+        },
+        "distance_change": {
+          "wrong": {
+            "further": 4
+          }
+        },
+        "published_row_rule_by_packet_result": {
+          "wrong": {
+            "multiple_failed_packet_crcs": 2,
+            "single_bit_proposed": 2
+          }
+        },
+        "candidate_wires": [
+          {
+            "source_row": 60,
+            "peer_row": 63,
+            "ordinal": 2,
+            "source_valid_ordinals": [
+              3
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              3
+            ],
+            "original_distance": 5,
+            "proposed_distance": 6,
+            "changed_wire_bit_msb0": 514,
+            "published_row_gate": "multiple_failed_packet_crcs",
+            "exact_peer_match": false,
+            "source_wire_sha256": "1facbc1a7c4894e3372de63efa5511542255c27b7c591d2052b4f08f81f55324",
+            "proposed_wire_sha256": "ed87b19172d0c19d04d450e3f29fa9cefd3b5796f3783fd2572dacaa78cc0b2e",
+            "peer_wire_sha256": "24245c815d79bec7a3e215451da2c65c72fab72f760499a1792276629d924b23"
+          },
+          {
+            "source_row": 111,
+            "peer_row": 114,
+            "ordinal": 1,
+            "source_valid_ordinals": [
+              2
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              2
+            ],
+            "original_distance": 37,
+            "proposed_distance": 38,
+            "changed_wire_bit_msb0": 1311,
+            "published_row_gate": "multiple_failed_packet_crcs",
+            "exact_peer_match": false,
+            "source_wire_sha256": "e6778697c78da79f09323888bf02716e2e0203027476dcccf6ffca4e7da7265f",
+            "proposed_wire_sha256": "045813d8f53b64510a2de43801846f85709ac95504ddf7a27766dbc5b0bd4089",
+            "peer_wire_sha256": "cd82bf0ecf895407170a7ffeed445627a120068b65a95fc34f8e6865076dcf5f"
+          },
+          {
+            "source_row": 153,
+            "peer_row": 156,
+            "ordinal": 0,
+            "source_valid_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "original_distance": 9,
+            "proposed_distance": 10,
+            "changed_wire_bit_msb0": 595,
+            "published_row_gate": "single_bit_proposed",
+            "exact_peer_match": false,
+            "source_wire_sha256": "7cb8870ef2eb3519b68670f956588dc34307ca2ef84613fb4e33c6a0c8b25ed1",
+            "proposed_wire_sha256": "3249741bbd29438bb82ddf7f7a194786cee246db94c479ed3914f8bc343b3d08",
+            "peer_wire_sha256": "e0ec709e8ef51d4760babd8566edd35baea15df6bb33f33da13a4cd881443363"
+          },
+          {
+            "source_row": 156,
+            "peer_row": 159,
+            "ordinal": 0,
+            "source_valid_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "original_distance": 5,
+            "proposed_distance": 6,
+            "changed_wire_bit_msb0": 1233,
+            "published_row_gate": "single_bit_proposed",
+            "exact_peer_match": false,
+            "source_wire_sha256": "fa65d4ed9adebf23868945f63c4ff76d0dee8c9f041f5b33cf1ce7458379e2eb",
+            "proposed_wire_sha256": "1431e9daf43673918f601c020844d3fb59d9cd891d1953b6dd059945fc731bd0",
+            "peer_wire_sha256": "d5293d429041204ab4bb270f22728df9024ee490da2f5479899fc44334a62026"
+          }
+        ]
+      },
+      "right_as_source": {
+        "counts": {
+          "source_crc_failed_peer_valid": 6,
+          "single_bit_syndrome": 0,
+          "proposal_header_wrong": 0,
+          "packet_only_exact": 0,
+          "packet_only_wrong": 0,
+          "strict_du_gate_exact": 0,
+          "strict_du_gate_wrong": 0,
+          "same_wire_both_valid": 444,
+          "peer_unusable_source_crc_failed": 2
+        },
+        "distance_of_bad_wire_to_peer": {
+          "16-31": 2,
+          "3": 1,
+          "4-7": 1,
+          "8-15": 2
+        },
+        "distance_change": {},
+        "published_row_rule_by_packet_result": {},
+        "candidate_wires": []
+      }
+    },
+    {
+      "capture": "Nov27-2126",
+      "left": "primary.msc.bin",
+      "right": "witness.msc.bin",
+      "source": "examples/nov28/packet-bit-repair/peer-2126",
+      "left_sha256": "b1c5bcb0d4c8bbf22841e75c1dea491a93f7ead03a402d04c82698a84ec9b9f9",
+      "right_sha256": "c36d4f0763a02d87b28d4afb033140fae970666bcc73c8dfb50df1e1a107e7fc",
+      "alignment": {
+        "left": {
+          "native_rows": 434,
+          "unsupported_rows": 0,
+          "valid_packets": 374
+        },
+        "right": {
+          "native_rows": 444,
+          "unsupported_rows": 0,
+          "valid_packets": 1519
+        },
+        "shared_distinct_wires": 318,
+        "nonunique_shared_wires": 0,
+        "candidate_pairs": 118,
+        "accepted_pairs": 118,
+        "accepted_witnesses": 318,
+        "rejected_pairs": 0,
+        "rejection_reasons": {}
+      },
+      "left_as_source": {
+        "counts": {
+          "source_crc_failed_peer_valid": 110,
+          "single_bit_syndrome": 5,
+          "proposal_header_wrong": 0,
+          "packet_only_exact": 2,
+          "packet_only_wrong": 3,
+          "strict_du_gate_exact": 0,
+          "strict_du_gate_wrong": 0,
+          "same_wire_both_valid": 318,
+          "peer_unusable_source_crc_failed": 11
+        },
+        "distance_of_bad_wire_to_peer": {
+          "1": 2,
+          "16-31": 31,
+          "2": 4,
+          "3": 7,
+          "32-63": 11,
+          "4-7": 18,
+          "64-127": 3,
+          "8-15": 34
+        },
+        "distance_change": {
+          "exact": {
+            "closer": 2
+          },
+          "wrong": {
+            "further": 3
+          }
+        },
+        "published_row_rule_by_packet_result": {
+          "exact": {
+            "multiple_failed_packet_crcs": 2
+          },
+          "wrong": {
+            "multiple_failed_packet_crcs": 3
+          }
+        },
+        "candidate_wires": [
+          {
+            "source_row": 191,
+            "peer_row": 206,
+            "ordinal": 0,
+            "source_valid_ordinals": [
+              2
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              2
+            ],
+            "original_distance": 1,
+            "proposed_distance": 0,
+            "changed_wire_bit_msb0": 533,
+            "published_row_gate": "multiple_failed_packet_crcs",
+            "exact_peer_match": true,
+            "source_wire_sha256": "d8e3fb9fbc7eb487362b9e6a4d0441d1248e7bce30ccf24e9461dca3a94ae779",
+            "proposed_wire_sha256": "6fc4cfb74078f6775bcf664cd4da9e8b539c275f6f18bb46e3918c49227f2bcc",
+            "peer_wire_sha256": "6fc4cfb74078f6775bcf664cd4da9e8b539c275f6f18bb46e3918c49227f2bcc"
+          },
+          {
+            "source_row": 191,
+            "peer_row": 206,
+            "ordinal": 1,
+            "source_valid_ordinals": [
+              2
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              2
+            ],
+            "original_distance": 25,
+            "proposed_distance": 26,
+            "changed_wire_bit_msb0": 1166,
+            "published_row_gate": "multiple_failed_packet_crcs",
+            "exact_peer_match": false,
+            "source_wire_sha256": "6714d317fd49ab20f6ad1a33a4951b0340b3f3a4d73148a5f5da9266d7c0ecdd",
+            "proposed_wire_sha256": "d581bc9595b15e28c6511b8d8368db780c6873062edfd00bb77b62595905336d",
+            "peer_wire_sha256": "718dd49dedaa705b0a28b1aa188333487f8e216ea8ff58abfa796a08f268e8e2"
+          },
+          {
+            "source_row": 235,
+            "peer_row": 250,
+            "ordinal": 1,
+            "source_valid_ordinals": [
+              2,
+              3
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              2,
+              3
+            ],
+            "original_distance": 39,
+            "proposed_distance": 40,
+            "changed_wire_bit_msb0": 626,
+            "published_row_gate": "multiple_failed_packet_crcs",
+            "exact_peer_match": false,
+            "source_wire_sha256": "1a2f9f6540440237ce830da29afa822164f97db8456b0cc271c58f2ff044475e",
+            "proposed_wire_sha256": "ca7636c85eefd372945ab71e75b0137bb8ed21affcfd93b2bcf2573b698b5faa",
+            "peer_wire_sha256": "cb8ab10444ff0eab916ac907d0a2c523c896de05571c861548ed3240c2d8078c"
+          },
+          {
+            "source_row": 255,
+            "peer_row": 270,
+            "ordinal": 1,
+            "source_valid_ordinals": [
+              2,
+              3
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              2,
+              3
+            ],
+            "original_distance": 1,
+            "proposed_distance": 0,
+            "changed_wire_bit_msb0": 306,
+            "published_row_gate": "multiple_failed_packet_crcs",
+            "exact_peer_match": true,
+            "source_wire_sha256": "01dd8d8cb13d8a38fef8aefe9d686aedae3aa9f4e52ec2bede3a6fd4b5da91c9",
+            "proposed_wire_sha256": "65d43745ffae4f6a90f4491f35567cb922b45b69b1d3d418e3f55ba5f7f8b3bf",
+            "peer_wire_sha256": "65d43745ffae4f6a90f4491f35567cb922b45b69b1d3d418e3f55ba5f7f8b3bf"
+          },
+          {
+            "source_row": 281,
+            "peer_row": 296,
+            "ordinal": 0,
+            "source_valid_ordinals": [
+              3
+            ],
+            "peer_valid_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": true,
+            "unchanged_witness_ordinals": [
+              3
+            ],
+            "original_distance": 73,
+            "proposed_distance": 74,
+            "changed_wire_bit_msb0": 475,
+            "published_row_gate": "multiple_failed_packet_crcs",
+            "exact_peer_match": false,
+            "source_wire_sha256": "5c7a17d9acd2509b08cc8e79dbe754fe0d784fc3bb73dee266cffb9e7574dc9b",
+            "proposed_wire_sha256": "80f14359321e5b3af34ebf264121e91f501e069dd5f2be3071ddb9d1e4e1a05a",
+            "peer_wire_sha256": "3fd7674fa283775a9504b8f54eaa708bf5a3273020ce41aaf6471d82226340b9"
+          }
+        ]
+      },
+      "right_as_source": {
+        "counts": {
+          "source_crc_failed_peer_valid": 33,
+          "single_bit_syndrome": 1,
+          "proposal_header_wrong": 0,
+          "packet_only_exact": 0,
+          "packet_only_wrong": 1,
+          "strict_du_gate_exact": 0,
+          "strict_du_gate_wrong": 0,
+          "same_wire_both_valid": 318,
+          "peer_unusable_source_crc_failed": 11
+        },
+        "distance_of_bad_wire_to_peer": {
+          "16-31": 3,
+          "2": 1,
+          "3": 4,
+          "32-63": 1,
+          "4-7": 9,
+          "8-15": 15
+        },
+        "distance_change": {
+          "wrong": {
+            "further": 1
+          }
+        },
+        "published_row_rule_by_packet_result": {
+          "wrong": {
+            "multiple_failed_packet_crcs": 1
+          }
+        },
+        "candidate_wires": [
+          {
+            "source_row": 165,
+            "peer_row": 150,
+            "ordinal": 1,
+            "source_valid_ordinals": [
+              0,
+              3
+            ],
+            "peer_valid_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "peer_complete_du_crc": null,
+            "unchanged_witness_ordinals": [
+              3
+            ],
+            "original_distance": 11,
+            "proposed_distance": 12,
+            "changed_wire_bit_msb0": 1416,
+            "published_row_gate": "multiple_failed_packet_crcs",
+            "exact_peer_match": false,
+            "source_wire_sha256": "4e8e2dc3ff8ad178583767158b89a827c22def08afed4e9bda54a41e3621797b",
+            "proposed_wire_sha256": "79771b8536e851f43a277264df1d33550e5e7afbdb2fed4d89db896ceeca36d7",
+            "peer_wire_sha256": "77b9685fa24d2438321bded5dd74ddd4fd5dbb45e829335c93a73dea574cd9d6"
+          }
+        ]
+      }
+    },
+    {
+      "capture": "Jun16-3205-6140",
+      "left": "sf_3205.bin",
+      "right": "sf_6140.bin",
+      "source": "https://github.com/martynw/KCBSDRM/tree/0b3e75fcb642d17d79c72f8f628cb4424273c06c/reference",
+      "left_sha256": "f8e4c472edf6d42ea93ecfc98746a5999b28cad519a2dd0f5d52bd895f02a1c8",
+      "right_sha256": "32f613781d8a661a17392a33289bb33c6c1310671921eded41c4c75ec1ecd899",
+      "alignment": {
+        "left": {
+          "native_rows": 3328,
+          "unsupported_rows": 0,
+          "valid_packets": 11465
+        },
+        "right": {
+          "native_rows": 1778,
+          "unsupported_rows": 0,
+          "valid_packets": 2946
+        },
+        "shared_distinct_wires": 2653,
+        "nonunique_shared_wires": 1570,
+        "candidate_pairs": 331,
+        "accepted_pairs": 0,
+        "accepted_witnesses": 0,
+        "rejected_pairs": 331,
+        "rejection_reasons": {
+          "crossed_order": 331
+        }
+      },
+      "left_as_source": {
+        "counts": {
+          "source_crc_failed_peer_valid": 0,
+          "single_bit_syndrome": 0,
+          "proposal_header_wrong": 0,
+          "packet_only_exact": 0,
+          "packet_only_wrong": 0,
+          "strict_du_gate_exact": 0,
+          "strict_du_gate_wrong": 0,
+          "same_wire_both_valid": 0,
+          "peer_unusable_source_crc_failed": 0
+        },
+        "distance_of_bad_wire_to_peer": {},
+        "distance_change": {},
+        "published_row_rule_by_packet_result": {},
+        "candidate_wires": []
+      },
+      "right_as_source": {
+        "counts": {
+          "source_crc_failed_peer_valid": 0,
+          "single_bit_syndrome": 0,
+          "proposal_header_wrong": 0,
+          "packet_only_exact": 0,
+          "packet_only_wrong": 0,
+          "strict_du_gate_exact": 0,
+          "strict_du_gate_wrong": 0,
+          "same_wire_both_valid": 0,
+          "peer_unusable_source_crc_failed": 0
+        },
+        "distance_of_bad_wire_to_peer": {},
+        "distance_change": {},
+        "published_row_rule_by_packet_result": {},
+        "candidate_wires": []
+      }
+    }
+  ]
+}

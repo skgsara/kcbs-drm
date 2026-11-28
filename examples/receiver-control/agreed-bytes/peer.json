@@ -1,0 +1,1941 @@
+{
+  "schema": "two-failing-branches-direct-EVS-v1",
+  "inputs": {
+    "one_iteration": {
+      "filename": "edogawa-msc.bin",
+      "sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172"
+    },
+    "four_iterations": {
+      "filename": "edogawa-mlc4-msc.bin",
+      "sha256": "08ff30e342446c25dd7b47d6009fb0ede1f6424df3888353b30aee2d393a1746"
+    },
+    "peer": {
+      "filename": "yokohama-msc.bin",
+      "sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64"
+    }
+  },
+  "source_native_row_counts": [
+    218,
+    218
+  ],
+  "peer_native_rows": 220,
+  "witnessed_branch_row_pairs": 136,
+  "witnessed_first_to_peer_row_pairs": 135,
+  "source_ledger_sha256": "e1c5930144df72e024de9822649b49c0a5bf98e6666447aea354caa4d969ec6b",
+  "scope": "Retrospective 12:32 row split. Both target CRCs must fail; a distinct, unique CRC-valid wire supplies each row correspondence. The peer's target must pass CRC and header. Only mode and p1,p2,p4,p5,...,p31 are scored. The two branches share their original IQ.",
+  "primary": "Emit equal octets in a run of at least eight equal directly readable EVS octets, in ascending wire address within one packet, skipping other bytes. Modes and payload use the same rule. No reference bytes participate in constructing runs.",
+  "groups": {
+    "all": {
+      "availability": {
+        "both_crc_failed": 85,
+        "both_canonical_headers": 83,
+        "with_peer_row": 82,
+        "peer_target_crc_good": 80,
+        "peer_target_missing": 5,
+        "direct_octets_total": 9539,
+        "direct_octets_with_peer": 8980,
+        "direct_octets_missing_peer": 559,
+        "run8_octets_total": 9407,
+        "run8_octets_missing_peer": 539
+      },
+      "equal_bits": {
+        "issued_equal_bits": 71529,
+        "correct_equal_bits": 70847
+      },
+      "estimates": {
+        "one_iteration": {
+          "octets": 8980,
+          "exact_octets": 8686,
+          "correct_bits": 70893,
+          "packets_with_predictions": 80,
+          "packets_all_predicted_octets_exact": 1
+        },
+        "four_iterations": {
+          "octets": 8980,
+          "exact_octets": 8749,
+          "correct_bits": 71112,
+          "packets_with_predictions": 80,
+          "packets_all_predicted_octets_exact": 1
+        },
+        "equal_octet": {
+          "octets": 8892,
+          "exact_octets": 8679,
+          "correct_bits": 70460,
+          "packets_with_predictions": 80,
+          "packets_all_predicted_octets_exact": 3
+        },
+        "equal_run_8": {
+          "octets": 8868,
+          "exact_octets": 8659,
+          "correct_bits": 70283,
+          "packets_with_predictions": 80,
+          "packets_all_predicted_octets_exact": 4
+        },
+        "equal_run_8_mode": {
+          "octets": 433,
+          "exact_octets": 423,
+          "correct_bits": 3433,
+          "packets_with_predictions": 80,
+          "packets_all_predicted_octets_exact": 70
+        },
+        "equal_run_8_payload": {
+          "octets": 8435,
+          "exact_octets": 8236,
+          "correct_bits": 66850,
+          "packets_with_predictions": 80,
+          "packets_all_predicted_octets_exact": 5
+        },
+        "different_one_iteration": {
+          "octets": 88,
+          "exact_octets": 7,
+          "correct_bits": 433,
+          "packets_with_predictions": 18,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "different_four_iterations": {
+          "octets": 88,
+          "exact_octets": 70,
+          "correct_bits": 652,
+          "packets_with_predictions": 18,
+          "packets_all_predicted_octets_exact": 12
+        }
+      },
+      "labelled_packets": [
+        {
+          "first_row": 0,
+          "fourth_row": 0,
+          "peer_row": 3,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 0,
+          "fourth_row": 0,
+          "peer_row": 3,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 118,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 0,
+          "fourth_row": 0,
+          "peer_row": 3,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 4,
+          "fourth_row": 4,
+          "peer_row": 7,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 106,
+          "run_8_exact": 104
+        },
+        {
+          "first_row": 5,
+          "fourth_row": 5,
+          "peer_row": 8,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 99,
+          "run_8_exact": 99
+        },
+        {
+          "first_row": 5,
+          "fourth_row": 5,
+          "peer_row": 8,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 5,
+          "fourth_row": 5,
+          "peer_row": 8,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 82
+        },
+        {
+          "first_row": 6,
+          "fourth_row": 6,
+          "peer_row": 9,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 6,
+          "fourth_row": 6,
+          "peer_row": 9,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 112
+        },
+        {
+          "first_row": 7,
+          "fourth_row": 7,
+          "peer_row": 10,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 118,
+          "run_8_exact": 113
+        },
+        {
+          "first_row": 7,
+          "fourth_row": 7,
+          "peer_row": 10,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 116,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 7,
+          "fourth_row": 7,
+          "peer_row": 10,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 8,
+          "fourth_row": 8,
+          "peer_row": 11,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 112
+        },
+        {
+          "first_row": 8,
+          "fourth_row": 8,
+          "peer_row": 11,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 11,
+          "fourth_row": 11,
+          "peer_row": 14,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 11,
+          "fourth_row": 11,
+          "peer_row": 14,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 114
+        },
+        {
+          "first_row": 12,
+          "fourth_row": 12,
+          "peer_row": 15,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 12,
+          "fourth_row": 12,
+          "peer_row": 15,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 13,
+          "fourth_row": 13,
+          "peer_row": 16,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 13,
+          "fourth_row": 13,
+          "peer_row": 16,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 17,
+          "fourth_row": 17,
+          "peer_row": 20,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 18,
+          "fourth_row": 18,
+          "peer_row": 21,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 25,
+          "fourth_row": 25,
+          "peer_row": 28,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 80
+        },
+        {
+          "first_row": 26,
+          "fourth_row": 26,
+          "peer_row": 29,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 28,
+          "fourth_row": 28,
+          "peer_row": 31,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 80
+        },
+        {
+          "first_row": 29,
+          "fourth_row": 29,
+          "peer_row": 32,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 32,
+          "fourth_row": 32,
+          "peer_row": 35,
+          "ordinal": 0,
+          "both_headers_canonical": false,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 114
+        },
+        {
+          "first_row": 32,
+          "fourth_row": 32,
+          "peer_row": 35,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 33,
+          "fourth_row": 33,
+          "peer_row": 36,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 114
+        },
+        {
+          "first_row": 36,
+          "fourth_row": 36,
+          "peer_row": 39,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 39,
+          "fourth_row": 39,
+          "peer_row": 42,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 41,
+          "fourth_row": 41,
+          "peer_row": 44,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 42,
+          "fourth_row": 42,
+          "peer_row": 45,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 112,
+          "run_8_exact": 109
+        },
+        {
+          "first_row": 43,
+          "fourth_row": 43,
+          "peer_row": 46,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 117,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 43,
+          "fourth_row": 43,
+          "peer_row": 46,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 80
+        },
+        {
+          "first_row": 45,
+          "fourth_row": 45,
+          "peer_row": 48,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 45,
+          "fourth_row": 45,
+          "peer_row": 48,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 82
+        },
+        {
+          "first_row": 46,
+          "fourth_row": 46,
+          "peer_row": 49,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 58,
+          "fourth_row": 58,
+          "peer_row": 61,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 60,
+          "fourth_row": 60,
+          "peer_row": 63,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 113,
+          "run_8_exact": 110
+        },
+        {
+          "first_row": 60,
+          "fourth_row": 60,
+          "peer_row": 63,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 114,
+          "run_8_exact": 112
+        },
+        {
+          "first_row": 68,
+          "fourth_row": 68,
+          "peer_row": 71,
+          "ordinal": 0,
+          "both_headers_canonical": false,
+          "scored_direct_octets": 119,
+          "run_8_octets": 105,
+          "run_8_exact": 100
+        },
+        {
+          "first_row": 68,
+          "fourth_row": 68,
+          "peer_row": 71,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 110,
+          "run_8_exact": 110
+        },
+        {
+          "first_row": 68,
+          "fourth_row": 68,
+          "peer_row": 71,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 69,
+          "fourth_row": 69,
+          "peer_row": 72,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 118,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 69,
+          "fourth_row": 69,
+          "peer_row": 72,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 71,
+          "fourth_row": 71,
+          "peer_row": 74,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 82
+        },
+        {
+          "first_row": 72,
+          "fourth_row": 72,
+          "peer_row": 75,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 74,
+          "fourth_row": 74,
+          "peer_row": 77,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 74,
+          "fourth_row": 74,
+          "peer_row": 77,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 76,
+          "fourth_row": 76,
+          "peer_row": 79,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 77,
+          "fourth_row": 77,
+          "peer_row": 80,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 114
+        },
+        {
+          "first_row": 77,
+          "fourth_row": 77,
+          "peer_row": 80,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 78,
+          "fourth_row": 78,
+          "peer_row": 81,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 90,
+          "fourth_row": 90,
+          "peer_row": 93,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 90,
+          "fourth_row": 90,
+          "peer_row": 93,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 104,
+          "fourth_row": 104,
+          "peer_row": 107,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 83
+        },
+        {
+          "first_row": 109,
+          "fourth_row": 109,
+          "peer_row": 112,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 111,
+          "fourth_row": 111,
+          "peer_row": 114,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 117,
+          "run_8_exact": 111
+        },
+        {
+          "first_row": 111,
+          "fourth_row": 111,
+          "peer_row": 114,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 114,
+          "run_8_exact": 113
+        },
+        {
+          "first_row": 111,
+          "fourth_row": 111,
+          "peer_row": 114,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 117,
+          "fourth_row": 117,
+          "peer_row": 120,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 114,
+          "run_8_exact": 110
+        },
+        {
+          "first_row": 129,
+          "fourth_row": 129,
+          "peer_row": 132,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 129,
+          "fourth_row": 129,
+          "peer_row": 132,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 130,
+          "fourth_row": 130,
+          "peer_row": 133,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 115,
+          "run_8_exact": 106
+        },
+        {
+          "first_row": 130,
+          "fourth_row": 130,
+          "peer_row": 133,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 145,
+          "fourth_row": 145,
+          "peer_row": 148,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 146,
+          "fourth_row": 146,
+          "peer_row": 149,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 148,
+          "fourth_row": 148,
+          "peer_row": 151,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 148,
+          "fourth_row": 148,
+          "peer_row": 151,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 151,
+          "fourth_row": 151,
+          "peer_row": 154,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 116,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 151,
+          "fourth_row": 151,
+          "peer_row": 154,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 153,
+          "fourth_row": 153,
+          "peer_row": 156,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 191,
+          "fourth_row": 191,
+          "peer_row": 194,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 108,
+          "run_8_exact": 97
+        },
+        {
+          "first_row": 191,
+          "fourth_row": 191,
+          "peer_row": 194,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 112
+        },
+        {
+          "first_row": 191,
+          "fourth_row": 191,
+          "peer_row": 194,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 76
+        },
+        {
+          "first_row": 193,
+          "fourth_row": 193,
+          "peer_row": 196,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 195,
+          "fourth_row": 195,
+          "peer_row": 198,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 197,
+          "fourth_row": 197,
+          "peer_row": 200,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 197,
+          "fourth_row": 197,
+          "peer_row": 200,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        }
+      ]
+    },
+    "calibration_rows_0_71": {
+      "availability": {
+        "both_crc_failed": 47,
+        "both_canonical_headers": 45,
+        "with_peer_row": 47,
+        "peer_target_crc_good": 47,
+        "peer_target_missing": 0,
+        "direct_octets_total": 5233,
+        "direct_octets_with_peer": 5233,
+        "direct_octets_missing_peer": 0,
+        "run8_octets_total": 5151,
+        "run8_octets_missing_peer": 0
+      },
+      "equal_bits": {
+        "issued_equal_bits": 41657,
+        "correct_equal_bits": 41239
+      },
+      "estimates": {
+        "one_iteration": {
+          "octets": 5233,
+          "exact_octets": 5054,
+          "correct_bits": 41271,
+          "packets_with_predictions": 47,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "four_iterations": {
+          "octets": 5233,
+          "exact_octets": 5095,
+          "correct_bits": 41414,
+          "packets_with_predictions": 47,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "equal_octet": {
+          "octets": 5175,
+          "exact_octets": 5049,
+          "correct_bits": 40988,
+          "packets_with_predictions": 47,
+          "packets_all_predicted_octets_exact": 1
+        },
+        "equal_run_8": {
+          "octets": 5151,
+          "exact_octets": 5029,
+          "correct_bits": 40811,
+          "packets_with_predictions": 47,
+          "packets_all_predicted_octets_exact": 2
+        },
+        "equal_run_8_mode": {
+          "octets": 242,
+          "exact_octets": 238,
+          "correct_bits": 1923,
+          "packets_with_predictions": 47,
+          "packets_all_predicted_octets_exact": 43
+        },
+        "equal_run_8_payload": {
+          "octets": 4909,
+          "exact_octets": 4791,
+          "correct_bits": 38888,
+          "packets_with_predictions": 47,
+          "packets_all_predicted_octets_exact": 2
+        },
+        "different_one_iteration": {
+          "octets": 58,
+          "exact_octets": 5,
+          "correct_bits": 283,
+          "packets_with_predictions": 12,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "different_four_iterations": {
+          "octets": 58,
+          "exact_octets": 46,
+          "correct_bits": 426,
+          "packets_with_predictions": 12,
+          "packets_all_predicted_octets_exact": 9
+        }
+      },
+      "labelled_packets": [
+        {
+          "first_row": 0,
+          "fourth_row": 0,
+          "peer_row": 3,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 0,
+          "fourth_row": 0,
+          "peer_row": 3,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 118,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 0,
+          "fourth_row": 0,
+          "peer_row": 3,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 4,
+          "fourth_row": 4,
+          "peer_row": 7,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 106,
+          "run_8_exact": 104
+        },
+        {
+          "first_row": 5,
+          "fourth_row": 5,
+          "peer_row": 8,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 99,
+          "run_8_exact": 99
+        },
+        {
+          "first_row": 5,
+          "fourth_row": 5,
+          "peer_row": 8,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 5,
+          "fourth_row": 5,
+          "peer_row": 8,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 82
+        },
+        {
+          "first_row": 6,
+          "fourth_row": 6,
+          "peer_row": 9,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 6,
+          "fourth_row": 6,
+          "peer_row": 9,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 112
+        },
+        {
+          "first_row": 7,
+          "fourth_row": 7,
+          "peer_row": 10,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 118,
+          "run_8_exact": 113
+        },
+        {
+          "first_row": 7,
+          "fourth_row": 7,
+          "peer_row": 10,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 116,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 7,
+          "fourth_row": 7,
+          "peer_row": 10,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 8,
+          "fourth_row": 8,
+          "peer_row": 11,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 112
+        },
+        {
+          "first_row": 8,
+          "fourth_row": 8,
+          "peer_row": 11,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 11,
+          "fourth_row": 11,
+          "peer_row": 14,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 11,
+          "fourth_row": 11,
+          "peer_row": 14,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 114
+        },
+        {
+          "first_row": 12,
+          "fourth_row": 12,
+          "peer_row": 15,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 12,
+          "fourth_row": 12,
+          "peer_row": 15,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 13,
+          "fourth_row": 13,
+          "peer_row": 16,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 13,
+          "fourth_row": 13,
+          "peer_row": 16,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 17,
+          "fourth_row": 17,
+          "peer_row": 20,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 18,
+          "fourth_row": 18,
+          "peer_row": 21,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 25,
+          "fourth_row": 25,
+          "peer_row": 28,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 80
+        },
+        {
+          "first_row": 26,
+          "fourth_row": 26,
+          "peer_row": 29,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 28,
+          "fourth_row": 28,
+          "peer_row": 31,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 80
+        },
+        {
+          "first_row": 29,
+          "fourth_row": 29,
+          "peer_row": 32,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 32,
+          "fourth_row": 32,
+          "peer_row": 35,
+          "ordinal": 0,
+          "both_headers_canonical": false,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 114
+        },
+        {
+          "first_row": 32,
+          "fourth_row": 32,
+          "peer_row": 35,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 33,
+          "fourth_row": 33,
+          "peer_row": 36,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 114
+        },
+        {
+          "first_row": 36,
+          "fourth_row": 36,
+          "peer_row": 39,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 39,
+          "fourth_row": 39,
+          "peer_row": 42,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 41,
+          "fourth_row": 41,
+          "peer_row": 44,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 42,
+          "fourth_row": 42,
+          "peer_row": 45,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 112,
+          "run_8_exact": 109
+        },
+        {
+          "first_row": 43,
+          "fourth_row": 43,
+          "peer_row": 46,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 117,
+          "run_8_exact": 115
+        },
+        {
+          "first_row": 43,
+          "fourth_row": 43,
+          "peer_row": 46,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 80
+        },
+        {
+          "first_row": 45,
+          "fourth_row": 45,
+          "peer_row": 48,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 45,
+          "fourth_row": 45,
+          "peer_row": 48,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 82
+        },
+        {
+          "first_row": 46,
+          "fourth_row": 46,
+          "peer_row": 49,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 58,
+          "fourth_row": 58,
+          "peer_row": 61,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 60,
+          "fourth_row": 60,
+          "peer_row": 63,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 113,
+          "run_8_exact": 110
+        },
+        {
+          "first_row": 60,
+          "fourth_row": 60,
+          "peer_row": 63,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 114,
+          "run_8_exact": 112
+        },
+        {
+          "first_row": 68,
+          "fourth_row": 68,
+          "peer_row": 71,
+          "ordinal": 0,
+          "both_headers_canonical": false,
+          "scored_direct_octets": 119,
+          "run_8_octets": 105,
+          "run_8_exact": 100
+        },
+        {
+          "first_row": 68,
+          "fourth_row": 68,
+          "peer_row": 71,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 110,
+          "run_8_exact": 110
+        },
+        {
+          "first_row": 68,
+          "fourth_row": 68,
+          "peer_row": 71,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 69,
+          "fourth_row": 69,
+          "peer_row": 72,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 118,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 69,
+          "fourth_row": 69,
+          "peer_row": 72,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 71,
+          "fourth_row": 71,
+          "peer_row": 74,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 82
+        }
+      ]
+    },
+    "guard_rows_72_83": {
+      "availability": {
+        "both_crc_failed": 7,
+        "both_canonical_headers": 7,
+        "with_peer_row": 7,
+        "peer_target_crc_good": 7,
+        "peer_target_missing": 0,
+        "direct_octets_total": 797,
+        "direct_octets_with_peer": 797,
+        "direct_octets_missing_peer": 0,
+        "run8_octets_total": 797,
+        "run8_octets_missing_peer": 0
+      },
+      "equal_bits": {
+        "issued_equal_bits": 6376,
+        "correct_equal_bits": 6344
+      },
+      "estimates": {
+        "one_iteration": {
+          "octets": 797,
+          "exact_octets": 784,
+          "correct_bits": 6344,
+          "packets_with_predictions": 7,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "four_iterations": {
+          "octets": 797,
+          "exact_octets": 784,
+          "correct_bits": 6344,
+          "packets_with_predictions": 7,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "equal_octet": {
+          "octets": 797,
+          "exact_octets": 784,
+          "correct_bits": 6344,
+          "packets_with_predictions": 7,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "equal_run_8": {
+          "octets": 797,
+          "exact_octets": 784,
+          "correct_bits": 6344,
+          "packets_with_predictions": 7,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "equal_run_8_mode": {
+          "octets": 47,
+          "exact_octets": 47,
+          "correct_bits": 376,
+          "packets_with_predictions": 7,
+          "packets_all_predicted_octets_exact": 7
+        },
+        "equal_run_8_payload": {
+          "octets": 750,
+          "exact_octets": 737,
+          "correct_bits": 5968,
+          "packets_with_predictions": 7,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "different_one_iteration": {
+          "octets": 0,
+          "exact_octets": 0,
+          "correct_bits": 0,
+          "packets_with_predictions": 0,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "different_four_iterations": {
+          "octets": 0,
+          "exact_octets": 0,
+          "correct_bits": 0,
+          "packets_with_predictions": 0,
+          "packets_all_predicted_octets_exact": 0
+        }
+      },
+      "labelled_packets": [
+        {
+          "first_row": 72,
+          "fourth_row": 72,
+          "peer_row": 75,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 74,
+          "fourth_row": 74,
+          "peer_row": 77,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 74,
+          "fourth_row": 74,
+          "peer_row": 77,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 76,
+          "fourth_row": 76,
+          "peer_row": 79,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 77,
+          "fourth_row": 77,
+          "peer_row": 80,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 114
+        },
+        {
+          "first_row": 77,
+          "fourth_row": 77,
+          "peer_row": 80,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 78,
+          "fourth_row": 78,
+          "peer_row": 81,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        }
+      ]
+    },
+    "evaluation_rows_84_end": {
+      "availability": {
+        "both_crc_failed": 31,
+        "both_canonical_headers": 31,
+        "with_peer_row": 28,
+        "peer_target_crc_good": 26,
+        "peer_target_missing": 5,
+        "direct_octets_total": 3509,
+        "direct_octets_with_peer": 2950,
+        "direct_octets_missing_peer": 559,
+        "run8_octets_total": 3459,
+        "run8_octets_missing_peer": 539
+      },
+      "equal_bits": {
+        "issued_equal_bits": 23496,
+        "correct_equal_bits": 23264
+      },
+      "estimates": {
+        "one_iteration": {
+          "octets": 2950,
+          "exact_octets": 2848,
+          "correct_bits": 23278,
+          "packets_with_predictions": 26,
+          "packets_all_predicted_octets_exact": 1
+        },
+        "four_iterations": {
+          "octets": 2950,
+          "exact_octets": 2870,
+          "correct_bits": 23354,
+          "packets_with_predictions": 26,
+          "packets_all_predicted_octets_exact": 1
+        },
+        "equal_octet": {
+          "octets": 2920,
+          "exact_octets": 2846,
+          "correct_bits": 23128,
+          "packets_with_predictions": 26,
+          "packets_all_predicted_octets_exact": 2
+        },
+        "equal_run_8": {
+          "octets": 2920,
+          "exact_octets": 2846,
+          "correct_bits": 23128,
+          "packets_with_predictions": 26,
+          "packets_all_predicted_octets_exact": 2
+        },
+        "equal_run_8_mode": {
+          "octets": 144,
+          "exact_octets": 138,
+          "correct_bits": 1134,
+          "packets_with_predictions": 26,
+          "packets_all_predicted_octets_exact": 20
+        },
+        "equal_run_8_payload": {
+          "octets": 2776,
+          "exact_octets": 2708,
+          "correct_bits": 21994,
+          "packets_with_predictions": 26,
+          "packets_all_predicted_octets_exact": 3
+        },
+        "different_one_iteration": {
+          "octets": 30,
+          "exact_octets": 2,
+          "correct_bits": 150,
+          "packets_with_predictions": 6,
+          "packets_all_predicted_octets_exact": 0
+        },
+        "different_four_iterations": {
+          "octets": 30,
+          "exact_octets": 24,
+          "correct_bits": 226,
+          "packets_with_predictions": 6,
+          "packets_all_predicted_octets_exact": 3
+        }
+      },
+      "labelled_packets": [
+        {
+          "first_row": 90,
+          "fourth_row": 90,
+          "peer_row": 93,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 90,
+          "fourth_row": 90,
+          "peer_row": 93,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 104,
+          "fourth_row": 104,
+          "peer_row": 107,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 83
+        },
+        {
+          "first_row": 109,
+          "fourth_row": 109,
+          "peer_row": 112,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 111,
+          "fourth_row": 111,
+          "peer_row": 114,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 117,
+          "run_8_exact": 111
+        },
+        {
+          "first_row": 111,
+          "fourth_row": 111,
+          "peer_row": 114,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 114,
+          "run_8_exact": 113
+        },
+        {
+          "first_row": 111,
+          "fourth_row": 111,
+          "peer_row": 114,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 117,
+          "fourth_row": 117,
+          "peer_row": 120,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 114,
+          "run_8_exact": 110
+        },
+        {
+          "first_row": 129,
+          "fourth_row": 129,
+          "peer_row": 132,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 129,
+          "fourth_row": 129,
+          "peer_row": 132,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 130,
+          "fourth_row": 130,
+          "peer_row": 133,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 115,
+          "run_8_exact": 106
+        },
+        {
+          "first_row": 130,
+          "fourth_row": 130,
+          "peer_row": 133,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 145,
+          "fourth_row": 145,
+          "peer_row": 148,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 146,
+          "fourth_row": 146,
+          "peer_row": 149,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 148,
+          "fourth_row": 148,
+          "peer_row": 151,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 148,
+          "fourth_row": 148,
+          "peer_row": 151,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 151,
+          "fourth_row": 151,
+          "peer_row": 154,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 116,
+          "run_8_exact": 116
+        },
+        {
+          "first_row": 151,
+          "fourth_row": 151,
+          "peer_row": 154,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 153,
+          "fourth_row": 153,
+          "peer_row": 156,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 117
+        },
+        {
+          "first_row": 191,
+          "fourth_row": 191,
+          "peer_row": 194,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 108,
+          "run_8_exact": 97
+        },
+        {
+          "first_row": 191,
+          "fourth_row": 191,
+          "peer_row": 194,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 112
+        },
+        {
+          "first_row": 191,
+          "fourth_row": 191,
+          "peer_row": 194,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 76
+        },
+        {
+          "first_row": 193,
+          "fourth_row": 193,
+          "peer_row": 196,
+          "ordinal": 1,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 195,
+          "fourth_row": 195,
+          "peer_row": 198,
+          "ordinal": 3,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 83,
+          "run_8_octets": 83,
+          "run_8_exact": 81
+        },
+        {
+          "first_row": 197,
+          "fourth_row": 197,
+          "peer_row": 200,
+          "ordinal": 0,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 118
+        },
+        {
+          "first_row": 197,
+          "fourth_row": 197,
+          "peer_row": 200,
+          "ordinal": 2,
+          "both_headers_canonical": true,
+          "scored_direct_octets": 119,
+          "run_8_octets": 119,
+          "run_8_exact": 116
+        }
+      ]
+    }
+  }
+}
