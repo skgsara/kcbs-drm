@@ -1,0 +1,53 @@
+{
+  "source": "../../nov28/same-6140-1232/yokohama-msc.bin",
+  "source_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+  "changed_valid_msc_sha256": "faa2fa8077c62bc140569ea1176a60479ea192ced9e393f7a252557594e81a86",
+  "stale_crc_negative_msc_sha256": "28e457f764d3dccf4613e378f1428e40c3203e7224c397e8db70c6421ff10150",
+  "source_and_valid_mutant_native_counts": {
+    "msc_rows": 220,
+    "packet_crc_checks": 880,
+    "physical_packets_crc": 859,
+    "physical_packets_crc_and_header": 859,
+    "native_complete_dus": 206
+  },
+  "native_groups": 65,
+  "negative_complete_groups": 0,
+  "changed_du_and_packet_checks": {
+    "changed_physical_center_octets": 1300,
+    "changed_packet_crcs": 780,
+    "recomputed_du_crcs": 195,
+    "recomputed_packet_crcs": 780
+  },
+  "reserved_slots_per_group": [
+    1,
+    4,
+    7,
+    10,
+    13,
+    16,
+    19,
+    22,
+    25,
+    28,
+    31,
+    34,
+    37,
+    40,
+    43,
+    46,
+    49,
+    52,
+    55,
+    58
+  ],
+  "payload_offset": 5,
+  "feature_rows": 1300,
+  "permitted_scalar_octets_read": 6500,
+  "accepted_decisions": 117,
+  "features_sha256_before_after_and_restricted": "20a369b29eb5d5622f4f5ccfaad56f6699eb981f48b0f7b0912f7aeb72af9be2",
+  "decisions_sha256_before_after_and_restricted": "978be63911a44274c9e766de78ad9e68386378e813495182cba77d75cd0069e1",
+  "model_fit_source_sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+  "mode_baseline_sha256": "a089ea07b2b5f99ca22cd190ce459273f10275049aa2943b585e25acbc124f8b",
+  "model_training_counter_overlap": 0,
+  "scope": "Artificial withhold on one receiver. Naturally missing targets and independent station scores are separate evaluations. The predictor receives no current center octet or CRC."
+}

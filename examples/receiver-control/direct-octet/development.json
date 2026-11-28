@@ -1,0 +1,374 @@
+{
+  "member_3205": {
+    "source_sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+    "groups": 1102,
+    "overlap_with_model_fit": 1102,
+    "all_readable_offsets": [
+      {
+        "offset": 1,
+        "predictions": 154,
+        "exact": 15
+      },
+      {
+        "offset": 2,
+        "predictions": 129,
+        "exact": 3
+      },
+      {
+        "offset": 4,
+        "predictions": 955,
+        "exact": 433
+      },
+      {
+        "offset": 5,
+        "predictions": 2720,
+        "exact": 2038
+      },
+      {
+        "offset": 7,
+        "predictions": 953,
+        "exact": 586
+      },
+      {
+        "offset": 8,
+        "predictions": 205,
+        "exact": 39
+      },
+      {
+        "offset": 10,
+        "predictions": 166,
+        "exact": 5
+      },
+      {
+        "offset": 11,
+        "predictions": 228,
+        "exact": 22
+      },
+      {
+        "offset": 13,
+        "predictions": 64,
+        "exact": 3
+      },
+      {
+        "offset": 14,
+        "predictions": 49,
+        "exact": 0
+      },
+      {
+        "offset": 16,
+        "predictions": 65,
+        "exact": 1
+      },
+      {
+        "offset": 17,
+        "predictions": 47,
+        "exact": 0
+      },
+      {
+        "offset": 19,
+        "predictions": 54,
+        "exact": 0
+      },
+      {
+        "offset": 20,
+        "predictions": 55,
+        "exact": 5
+      },
+      {
+        "offset": 22,
+        "predictions": 68,
+        "exact": 1
+      },
+      {
+        "offset": 23,
+        "predictions": 59,
+        "exact": 11
+      },
+      {
+        "offset": 25,
+        "predictions": 50,
+        "exact": 1
+      },
+      {
+        "offset": 26,
+        "predictions": 57,
+        "exact": 4
+      },
+      {
+        "offset": 28,
+        "predictions": 255,
+        "exact": 59
+      },
+      {
+        "offset": 29,
+        "predictions": 115,
+        "exact": 13
+      },
+      {
+        "offset": 31,
+        "predictions": 320,
+        "exact": 39
+      }
+    ],
+    "p5": {
+      "all": {
+        "reserved_centers": 22040,
+        "predictions": 2720,
+        "abstentions": 19320,
+        "exact": 2038,
+        "wrong": 682,
+        "mode_baseline_exact": 403,
+        "both_exact": 355,
+        "only_consensus_exact": 1683,
+        "only_mode_baseline_exact": 48,
+        "consensus_exact_bits": 20302,
+        "bits_compared": 21760,
+        "counters_with_predictions": 675
+      },
+      "by_position": {
+        "1": {
+          "reserved_centers": 5510,
+          "predictions": 679,
+          "abstentions": 4831,
+          "exact": 493,
+          "wrong": 186,
+          "mode_baseline_exact": 102,
+          "both_exact": 87,
+          "only_consensus_exact": 406,
+          "only_mode_baseline_exact": 15,
+          "consensus_exact_bits": 5037,
+          "bits_compared": 5432,
+          "counters_with_predictions": 404
+        },
+        "2": {
+          "reserved_centers": 5510,
+          "predictions": 683,
+          "abstentions": 4827,
+          "exact": 505,
+          "wrong": 178,
+          "mode_baseline_exact": 109,
+          "both_exact": 95,
+          "only_consensus_exact": 410,
+          "only_mode_baseline_exact": 14,
+          "consensus_exact_bits": 5085,
+          "bits_compared": 5464,
+          "counters_with_predictions": 394
+        },
+        "3": {
+          "reserved_centers": 5510,
+          "predictions": 704,
+          "abstentions": 4806,
+          "exact": 546,
+          "wrong": 158,
+          "mode_baseline_exact": 108,
+          "both_exact": 99,
+          "only_consensus_exact": 447,
+          "only_mode_baseline_exact": 9,
+          "consensus_exact_bits": 5290,
+          "bits_compared": 5632,
+          "counters_with_predictions": 426
+        },
+        "4": {
+          "reserved_centers": 5510,
+          "predictions": 654,
+          "abstentions": 4856,
+          "exact": 494,
+          "wrong": 160,
+          "mode_baseline_exact": 84,
+          "both_exact": 74,
+          "only_consensus_exact": 420,
+          "only_mode_baseline_exact": 10,
+          "consensus_exact_bits": 4890,
+          "bits_compared": 5232,
+          "counters_with_predictions": 402
+        }
+      }
+    }
+  },
+  "edogawa_6140": {
+    "source_sha256": "15a3da86a9feca1fb6465cbeb7de442575363da7ef433c80e459cd77c148f8fb",
+    "groups": 81,
+    "overlap_with_model_fit": 0,
+    "all_readable_offsets": [
+      {
+        "offset": 1,
+        "predictions": 10,
+        "exact": 2
+      },
+      {
+        "offset": 2,
+        "predictions": 9,
+        "exact": 0
+      },
+      {
+        "offset": 4,
+        "predictions": 6,
+        "exact": 2
+      },
+      {
+        "offset": 5,
+        "predictions": 77,
+        "exact": 35
+      },
+      {
+        "offset": 7,
+        "predictions": 10,
+        "exact": 1
+      },
+      {
+        "offset": 8,
+        "predictions": 8,
+        "exact": 0
+      },
+      {
+        "offset": 10,
+        "predictions": 2,
+        "exact": 0
+      },
+      {
+        "offset": 11,
+        "predictions": 7,
+        "exact": 0
+      },
+      {
+        "offset": 13,
+        "predictions": 6,
+        "exact": 0
+      },
+      {
+        "offset": 14,
+        "predictions": 4,
+        "exact": 0
+      },
+      {
+        "offset": 16,
+        "predictions": 4,
+        "exact": 0
+      },
+      {
+        "offset": 17,
+        "predictions": 5,
+        "exact": 0
+      },
+      {
+        "offset": 19,
+        "predictions": 2,
+        "exact": 0
+      },
+      {
+        "offset": 20,
+        "predictions": 2,
+        "exact": 0
+      },
+      {
+        "offset": 22,
+        "predictions": 4,
+        "exact": 0
+      },
+      {
+        "offset": 23,
+        "predictions": 7,
+        "exact": 0
+      },
+      {
+        "offset": 25,
+        "predictions": 2,
+        "exact": 1
+      },
+      {
+        "offset": 26,
+        "predictions": 2,
+        "exact": 0
+      },
+      {
+        "offset": 28,
+        "predictions": 18,
+        "exact": 3
+      },
+      {
+        "offset": 29,
+        "predictions": 24,
+        "exact": 3
+      },
+      {
+        "offset": 31,
+        "predictions": 39,
+        "exact": 9
+      }
+    ],
+    "p5": {
+      "all": {
+        "reserved_centers": 1620,
+        "predictions": 77,
+        "abstentions": 1543,
+        "exact": 35,
+        "wrong": 42,
+        "mode_baseline_exact": 0,
+        "both_exact": 0,
+        "only_consensus_exact": 35,
+        "only_mode_baseline_exact": 0,
+        "consensus_exact_bits": 523,
+        "bits_compared": 616,
+        "counters_with_predictions": 41
+      },
+      "by_position": {
+        "1": {
+          "reserved_centers": 405,
+          "predictions": 16,
+          "abstentions": 389,
+          "exact": 4,
+          "wrong": 12,
+          "mode_baseline_exact": 0,
+          "both_exact": 0,
+          "only_consensus_exact": 4,
+          "only_mode_baseline_exact": 0,
+          "consensus_exact_bits": 102,
+          "bits_compared": 128,
+          "counters_with_predictions": 16
+        },
+        "2": {
+          "reserved_centers": 405,
+          "predictions": 21,
+          "abstentions": 384,
+          "exact": 10,
+          "wrong": 11,
+          "mode_baseline_exact": 0,
+          "both_exact": 0,
+          "only_consensus_exact": 10,
+          "only_mode_baseline_exact": 0,
+          "consensus_exact_bits": 140,
+          "bits_compared": 168,
+          "counters_with_predictions": 17
+        },
+        "3": {
+          "reserved_centers": 405,
+          "predictions": 21,
+          "abstentions": 384,
+          "exact": 12,
+          "wrong": 9,
+          "mode_baseline_exact": 0,
+          "both_exact": 0,
+          "only_consensus_exact": 12,
+          "only_mode_baseline_exact": 0,
+          "consensus_exact_bits": 148,
+          "bits_compared": 168,
+          "counters_with_predictions": 17
+        },
+        "4": {
+          "reserved_centers": 405,
+          "predictions": 19,
+          "abstentions": 386,
+          "exact": 9,
+          "wrong": 10,
+          "mode_baseline_exact": 0,
+          "both_exact": 0,
+          "only_consensus_exact": 9,
+          "only_mode_baseline_exact": 0,
+          "consensus_exact_bits": 133,
+          "bits_compared": 152,
+          "counters_with_predictions": 18
+        }
+      }
+    }
+  }
+}
