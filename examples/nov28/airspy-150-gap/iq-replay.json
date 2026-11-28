@@ -1,0 +1,11 @@
+{
+  "isolated_wideband_input_sha256": "75c005f65d95a86e7f25151ba8afc803cedb9c4d8df25d3860e0503facbb3030",
+  "resampled_wav_sha256": "d87891ad5ada171ebc855b48c6c7482c09655f5c9b6b840861dde243fe9b6698",
+  "iq_pcm16le_sha256": "c23365402ddccec9f7e71a0a3fc2d8ca6cfb81a54cee10340d0881daddb92a78",
+  "flac_sha256": "8bb4520a3188cfa7d8aa32f0bbe1380216640346dc1420ec9f6f97d13aa1f5c5",
+  "complex_pairs_48k": 1440000,
+  "compressed_bytes": 487193,
+  "msc_replay_bytes": 11712,
+  "msc_replay_sha256": "b14cdf41ba056f0703a591010d6bbda77467493c66c997fabc420d87eef41073",
+  "frozen_isolated_msc_identical": true
+}

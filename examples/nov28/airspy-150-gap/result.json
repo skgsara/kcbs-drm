@@ -1,0 +1,123 @@
+{
+  "utc": "2026-11-28T03:08:23.413667+00:00",
+  "public_freeze": "283590f30c14615566933881f0e7946335d024bf",
+  "sole_target": 43288730,
+  "historical_count": 14742,
+  "target_previously_recorded": false,
+  "verified_runs": true,
+  "target_condition": true,
+  "isolated_reproduced": true,
+  "arms": {
+    "full": {
+      "target_intact": true,
+      "raw_records": 69,
+      "valid_native_DUs": 66,
+      "valid_packet_CRCs": 264,
+      "assigned_counters": [
+        43288713,
+        43288714,
+        43288715,
+        43288716,
+        43288717,
+        43288718,
+        43288719,
+        43288720,
+        43288721,
+        43288722,
+        43288723,
+        43288724,
+        43288725,
+        43288726,
+        43288727,
+        43288728,
+        43288729,
+        43288730,
+        43288731,
+        43288732,
+        43288733,
+        43288734,
+        43288735
+      ],
+      "target_observations": [
+        {
+          "record_indices": [
+            51,
+            52,
+            53
+          ],
+          "DU_sha256": [
+            "55d32da684ddcb23579abed5dd5be37eeef4171b2b17914f82b6bf21d50f5675",
+            "5237a323b42762ed9c6089236d3cb60e51451db1b55136b27de75bae9e585970",
+            "7f378e78ddf2b41ab46e2c46943942818c30420ef695d8872886f3260a30724c"
+          ]
+        }
+      ],
+      "target_salvage_phase_to_DU_sha256": {
+        "0": "55d32da684ddcb23579abed5dd5be37eeef4171b2b17914f82b6bf21d50f5675",
+        "1": "5237a323b42762ed9c6089236d3cb60e51451db1b55136b27de75bae9e585970",
+        "2": "7f378e78ddf2b41ab46e2c46943942818c30420ef695d8872886f3260a30724c"
+      },
+      "clean_native_end": true
+    },
+    "blanked": {
+      "target_intact": false,
+      "raw_records": 69,
+      "valid_native_DUs": 57,
+      "valid_packet_CRCs": 228,
+      "assigned_counters": [
+        43288713,
+        43288714,
+        43288715,
+        43288716,
+        43288717,
+        43288718,
+        43288719,
+        43288720,
+        43288721,
+        43288722,
+        43288723,
+        43288724,
+        43288725,
+        43288726,
+        43288727,
+        43288732,
+        43288733,
+        43288734,
+        43288735
+      ],
+      "target_observations": [],
+      "target_salvage_phase_to_DU_sha256": {},
+      "clean_native_end": true
+    },
+    "isolated": {
+      "target_intact": true,
+      "raw_records": 16,
+      "valid_native_DUs": 4,
+      "valid_packet_CRCs": 18,
+      "assigned_counters": [
+        43288730
+      ],
+      "target_observations": [
+        {
+          "record_indices": [
+            2,
+            3,
+            4
+          ],
+          "DU_sha256": [
+            "55d32da684ddcb23579abed5dd5be37eeef4171b2b17914f82b6bf21d50f5675",
+            "5237a323b42762ed9c6089236d3cb60e51451db1b55136b27de75bae9e585970",
+            "7f378e78ddf2b41ab46e2c46943942818c30420ef695d8872886f3260a30724c"
+          ]
+        }
+      ],
+      "target_salvage_phase_to_DU_sha256": {
+        "0": "55d32da684ddcb23579abed5dd5be37eeef4171b2b17914f82b6bf21d50f5675",
+        "1": "5237a323b42762ed9c6089236d3cb60e51451db1b55136b27de75bae9e585970",
+        "2": "7f378e78ddf2b41ab46e2c46943942818c30420ef695d8872886f3260a30724c"
+      },
+      "clean_native_end": true
+    }
+  },
+  "source_range_sha256": "2afb37b7e3c9ab44cd4be0432ff822096652f15382e023936016671624cd57d4"
+}

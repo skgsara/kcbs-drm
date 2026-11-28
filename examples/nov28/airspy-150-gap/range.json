@@ -1,0 +1,13 @@
+{
+  "when": "2026-11-28T03:08:15.629714+00:00",
+  "status": 206,
+  "headers": {
+    "ETag": "\"9eef1c0711b472da93b8c6227fb7359b\"",
+    "Content-Length": "7296000",
+    "Content-Range": "bytes 273600000-280895999/597076480",
+    "Last-Modified": "Fri, 27 Nov 2026 03:06:32 GMT",
+    "OC-Checksum": "SHA1:ec5e67a39cb4d705fb5f7494533eee263a5fc481"
+  },
+  "sha256": "2afb37b7e3c9ab44cd4be0432ff822096652f15382e023936016671624cd57d4",
+  "bytes": 7296000
+}

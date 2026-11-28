@@ -1,0 +1,330 @@
+{
+  "public_freeze": "283590f30c14615566933881f0e7946335d024bf",
+  "original_name": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+  "new_source_range_s": [
+    150,
+    154
+  ],
+  "new_source_range_bytes_half_open": [
+    273600000,
+    280896000
+  ],
+  "received_new_range_bytes": 7296000,
+  "new_source_cs8_sha256": "2afb37b7e3c9ab44cd4be0432ff822096652f15382e023936016671624cd57d4",
+  "acquisition_arms": "30s at nominal 6140 kHz [130,160); full, gap zero, and four-second gap between zero flanks, separately filtered from source-rate signed CS8. One cold Wiener/MLC1 per arm.",
+  "sole_target": 43288730,
+  "history_count": 14742,
+  "target_was_in_inventory": false,
+  "arms": {
+    "full": {
+      "native_end": true,
+      "raw_records": 69,
+      "raw_crc_good_packets": 264,
+      "raw_crc_good_dus": 66,
+      "packet_coords": 252,
+      "du_coords": 63,
+      "complete_counters": 20,
+      "assigned_ids": [
+        43288713,
+        43288714,
+        43288715,
+        43288716,
+        43288717,
+        43288718,
+        43288719,
+        43288720,
+        43288721,
+        43288722,
+        43288723,
+        43288724,
+        43288725,
+        43288726,
+        43288727,
+        43288728,
+        43288729,
+        43288730,
+        43288731,
+        43288732,
+        43288733,
+        43288734,
+        43288735
+      ],
+      "assigned_in_history": [
+        43288713,
+        43288714,
+        43288715,
+        43288716,
+        43288717,
+        43288718,
+        43288719,
+        43288720,
+        43288721,
+        43288722,
+        43288723,
+        43288724,
+        43288725,
+        43288726,
+        43288727,
+        43288733,
+        43288734,
+        43288735
+      ],
+      "assigned_missing_from_history": [
+        43288728,
+        43288729,
+        43288730,
+        43288731,
+        43288732
+      ],
+      "previously_unseen_complete": [
+        43288728,
+        43288730,
+        43288731,
+        43288732
+      ],
+      "previously_unseen_with_partial_du_or_packets_only": [
+        43288729
+      ],
+      "all_assigned_without_complete_group": [
+        43288725,
+        43288727,
+        43288729
+      ],
+      "all_packet_only_counters": [],
+      "target_du_phases": [
+        0,
+        1,
+        2
+      ],
+      "raw_target_row_indices": [
+        51,
+        52,
+        53
+      ],
+      "source_cs8_sha256": "f2c13cdf0a76bb72b0f7f53f6e591b842ffae1c368fd78ff33e2ed00abedf8ad",
+      "native_msc_sha256": "e6f236a61a15cefa4930cf4ec1df51598f396c5682f82ba42250a049ce1b96fc"
+    },
+    "blanked": {
+      "native_end": true,
+      "raw_records": 69,
+      "raw_crc_good_packets": 228,
+      "raw_crc_good_dus": 57,
+      "packet_coords": 212,
+      "du_coords": 53,
+      "complete_counters": 17,
+      "assigned_ids": [
+        43288713,
+        43288714,
+        43288715,
+        43288716,
+        43288717,
+        43288718,
+        43288719,
+        43288720,
+        43288721,
+        43288722,
+        43288723,
+        43288724,
+        43288725,
+        43288726,
+        43288727,
+        43288732,
+        43288733,
+        43288734,
+        43288735
+      ],
+      "assigned_in_history": [
+        43288713,
+        43288714,
+        43288715,
+        43288716,
+        43288717,
+        43288718,
+        43288719,
+        43288720,
+        43288721,
+        43288722,
+        43288723,
+        43288724,
+        43288725,
+        43288726,
+        43288727,
+        43288733,
+        43288734,
+        43288735
+      ],
+      "assigned_missing_from_history": [
+        43288732
+      ],
+      "previously_unseen_complete": [
+        43288732
+      ],
+      "previously_unseen_with_partial_du_or_packets_only": [],
+      "all_assigned_without_complete_group": [
+        43288725,
+        43288727
+      ],
+      "all_packet_only_counters": [],
+      "target_du_phases": [],
+      "raw_target_row_indices": [],
+      "source_cs8_sha256": "44a30b3db94cf2200903c2c5a31b7fa292648f841a21afb586a0552141daed4f",
+      "native_msc_sha256": "67040e48cf5998419179cce3f969a00b5e1111d04df58b3d4a95f8c6b9be713f"
+    },
+    "isolated": {
+      "native_end": true,
+      "raw_records": 16,
+      "raw_crc_good_packets": 18,
+      "raw_crc_good_dus": 4,
+      "packet_coords": 12,
+      "du_coords": 3,
+      "complete_counters": 1,
+      "assigned_ids": [
+        43288730
+      ],
+      "assigned_in_history": [],
+      "assigned_missing_from_history": [
+        43288730
+      ],
+      "previously_unseen_complete": [
+        43288730
+      ],
+      "previously_unseen_with_partial_du_or_packets_only": [],
+      "all_assigned_without_complete_group": [],
+      "all_packet_only_counters": [],
+      "target_du_phases": [
+        0,
+        1,
+        2
+      ],
+      "raw_target_row_indices": [
+        2,
+        3,
+        4
+      ],
+      "source_cs8_sha256": "75c005f65d95a86e7f25151ba8afc803cedb9c4d8df25d3860e0503facbb3030",
+      "native_msc_sha256": "b14cdf41ba056f0703a591010d6bbda77467493c66c997fabc420d87eef41073"
+    }
+  },
+  "result": "Full and isolated gap each supplied the same three complete native target records including all 12 packet headers and transmitted CRCs. The blanked-gap input did not assign the target.",
+  "target_already_verified_packet_crc_count": 12,
+  "target_already_verified_du_crc_count": 3,
+  "target_source_rows": [
+    {
+      "phase": 0,
+      "native_index": 51,
+      "raw_record_sha256": "84f882ab745b46708443b570015ad198707f13d022b405fb01a0844816b409a2",
+      "du_sha256": "55d32da684ddcb23579abed5dd5be37eeef4171b2b17914f82b6bf21d50f5675",
+      "transmitted_du_crc": "cc99",
+      "packets": [
+        {
+          "index": 0,
+          "header_hex": "80",
+          "transmitted_crc": "daa5",
+          "raw_packet_sha256": "3fcd470776cd485c168dff68e2ec50bf8e8daae170c0d42d2f1dab3369405d61"
+        },
+        {
+          "index": 1,
+          "header_hex": "01",
+          "transmitted_crc": "9789",
+          "raw_packet_sha256": "ca014161b7d940ce2046b0231c57c9ae79dfd2c6ff1ecd14b3e19e2773e5e196"
+        },
+        {
+          "index": 2,
+          "header_hex": "02",
+          "transmitted_crc": "8c3f",
+          "raw_packet_sha256": "67258d4649154fbe604a72e5dde4c3dbe2ef6819b401df2c871aa145d2d493ea"
+        },
+        {
+          "index": 3,
+          "header_hex": "43",
+          "transmitted_crc": "8dac",
+          "raw_packet_sha256": "cb9e3b77ce2714e5fde3d51dfe175b5d11e21e2ac3408fef114e9195af44f1e4"
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "native_index": 52,
+      "raw_record_sha256": "74f2c42875b13f013ff32c29a39d52150da58295354920f1d002a57c8a98af34",
+      "du_sha256": "5237a323b42762ed9c6089236d3cb60e51451db1b55136b27de75bae9e585970",
+      "transmitted_du_crc": "24f8",
+      "packets": [
+        {
+          "index": 0,
+          "header_hex": "80",
+          "transmitted_crc": "363c",
+          "raw_packet_sha256": "2964b36c7c95aca63a5ff538f6481ab861739b1d66baae535c450e9b0ec2e894"
+        },
+        {
+          "index": 1,
+          "header_hex": "01",
+          "transmitted_crc": "20d6",
+          "raw_packet_sha256": "5bd33612bb1b1149875ac7b673b90a0c149c3487b8fb6d2b0dbb109f34220c0a"
+        },
+        {
+          "index": 2,
+          "header_hex": "02",
+          "transmitted_crc": "f99e",
+          "raw_packet_sha256": "b01fc100e834554fea548b7b3874f42e61f42235d05794cb6e620100c951d070"
+        },
+        {
+          "index": 3,
+          "header_hex": "43",
+          "transmitted_crc": "7dbf",
+          "raw_packet_sha256": "fc810a6310f064e55d95b91c138d7075c0ce7b438b2413580bc30f1f2761f78a"
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "native_index": 53,
+      "raw_record_sha256": "4dac8f17e32d1b285803faa93e55a64cf49ba0575ad552cf29e986d3eada6b85",
+      "du_sha256": "7f378e78ddf2b41ab46e2c46943942818c30420ef695d8872886f3260a30724c",
+      "transmitted_du_crc": "f659",
+      "packets": [
+        {
+          "index": 0,
+          "header_hex": "80",
+          "transmitted_crc": "11bc",
+          "raw_packet_sha256": "4d10fb802bf756cab38167eac4fd9609a4fef8f9dddfa30a36753c77cf80fa72"
+        },
+        {
+          "index": 1,
+          "header_hex": "01",
+          "transmitted_crc": "9846",
+          "raw_packet_sha256": "66c9dd4b60e186320444b43953bd0315c67d4ed7b346f4d9adea439799d8a5ff"
+        },
+        {
+          "index": 2,
+          "header_hex": "02",
+          "transmitted_crc": "38ad",
+          "raw_packet_sha256": "2e78b0ffa661df0136347d1009e369cb52c74fe92e7944e72527d4a795557edd"
+        },
+        {
+          "index": 3,
+          "header_hex": "43",
+          "transmitted_crc": "8ba2",
+          "raw_packet_sha256": "d6ae818c3545966356e460030ad4dcd7c413eb569de8b970c589c6e1c3cdfa53"
+        }
+      ]
+    }
+  ],
+  "isolated_source_row_indices": [
+    2,
+    3,
+    4
+  ],
+  "all_target_records_native_bytes_identical": true,
+  "historically_unseen_union_including_partial": [
+    43288728,
+    43288729,
+    43288730,
+    43288731,
+    43288732
+  ],
+  "files": {
+    "target-43288730.msc.bin": "8de850b8fbfb251d7f7dab938f9f8ad30eeb55b4d6828ebd35544cadb36f220e",
+    "target-packets.npz": "93d1b638d80079789830fb1e439261f2c3c81e6f9d6b8c2c05a7d390959a4b3f",
+    "target-data-units.npz": "3d3e3252316941797b256dbd8f5bda8db1d1b3a7f6bd0eb7c7aeedef77732d77"
+  }
+}

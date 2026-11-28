@@ -76,6 +76,12 @@ confirmed the predicted high nibble `C`. A separate 90-second prospective
 capture at 6140 kHz yielded three previously unseen counters, all partial.
 [Two-receiver bit comparison and prospective reception](examples/nov28/group-boundary/README.md)
 
+Four previously unread seconds of November 19 IQ reproduced all 60 transmitted
+slots of the preselected counter 43288730. Replacing those four seconds with
+zeros removed the target. The receiver produced zero complete clear EVS words
+and reported nine conditional two-bit fields for independent checking.
+[IQ replay, three sample controls and per-position results](examples/nov28/airspy-150-gap/README.md)
+
 The November 28 field test fixes the first ten recorded minutes from the
 13:00–13:20 UTC Yokohama window and selects the first complete group in
 reception order. Its receiver also reports what survived in the first group
