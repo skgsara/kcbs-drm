@@ -22,3 +22,15 @@ All 15 Edogawa additions can also be located by comparing each CRC-valid native 
 The phase-one and phase-two units carry no group counter of their own. In a controlled file where group 101 was repeated and group 102 was missing, the distance between the outer anchors stayed exactly as expected. The upstream rule assigned two intact units from 101 to 102. Both still passed CRC. This is why our cross-site check compares the bytes at an independently assigned coordinate.
 
 Run `python examples/nov28/koryofront-review/check.py` from the repository root to list the November 25 phase-zero receipt and the two independent file comparisons, with raw row numbers and SHA-256 digests. This check reads the original MSC and packet files directly. The 12:32 comparison adds evidence about where received units belong. The prospective blind-decoding scores continue to use their registered inputs and counter rules.
+
+## A text repeat that changes phase
+
+The November 26 10:08 KST text archive provides a control for comparing record starts across phases. Its 299 records marked both `ok` and `complete` have unique block-aligned starts. Divide the archive's `pos` by eight UTF-16 units per block to obtain the block index. For each spacing below, we paired observed starts and compared the published text, sequence number and final-record flag. The record status comes from the contributor's archive. [Original record positions and text](../../../contrib/kcbsdrm/reference/items_2026-11-26_1008KST_merged.json)
+
+| Start-to-start spacing in data units | Pairs with both starts recorded | Pairs matching all three fields |
+|---:|---:|---:|
+| 797 | 21 | 0 |
+| 798 | 32 | 0 |
+| 878 | 178 | 178 |
+
+One example runs from counter **43767451, phase 2** to **43767744, phase 1**. The start distance is `3 × (43767744 − 43767451) + (1 − 2) = 878` data units. The 178 matching pairs cover all three phase transitions, with 58 from 0 to 2, 57 from 1 to 0 and 63 from 2 to 1. A 797-unit interval would produce the same phase transitions. A separate November 27 recording has a measured 798-unit interval and preserves phase. Each comparison applies to its own recording. [November 27 record comparison](../../nov27/validation/tcx-zero-pair/43865914-review.md#two-observations-available-directly-from-the-signal)
