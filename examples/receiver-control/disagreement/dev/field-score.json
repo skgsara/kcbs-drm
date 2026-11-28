@@ -1,0 +1,212 @@
+{
+  "decision_sha256": "3896a7a5e6be7cd660fcb8c7a79612b6d4a1fb3adf83bfd64d18596d01ec4f7b",
+  "original_primary_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "independent_station_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+  "sealed_row_map_sha256": "31605d50dea3f9a89ef9fef1b351eedfbb882a234b93038473e23331d8e30207",
+  "checked_by_origin": {
+    "solved": {
+      "checked_packets": 3,
+      "exact_packets": 3,
+      "evs_direct_octets": 4,
+      "evs_direct_bits": 10,
+      "evs_non_direct_octets": 1,
+      "evs_non_direct_bits": 1
+    },
+    "observed_alternate_sibling": {
+      "checked_packets": 1,
+      "exact_packets": 1,
+      "evs_non_direct_octets": 1,
+      "evs_non_direct_bits": 3,
+      "evs_direct_octets": 1,
+      "evs_direct_bits": 1
+    }
+  },
+  "complete_du_bytes_equal_at_peer": {
+    "41": true,
+    "129": true,
+    "156": true
+  },
+  "packets": [
+    {
+      "kind": "solved",
+      "coordinate": [
+        43945666,
+        0
+      ],
+      "primary_row": 41,
+      "peer_row": 44,
+      "ordinal": 0,
+      "independent_full_wire": "exact_182_bytes",
+      "peer_du_crc_valid": true,
+      "changes": [
+        {
+          "wire_octet": 114,
+          "changed_bits_msb0": [
+            2,
+            4,
+            6
+          ],
+          "du_byte": 113,
+          "field": "evs_direct",
+          "slot": 3,
+          "position": 4,
+          "word_octet": 8,
+          "payload_offset_excluding_mode": 7,
+          "primary_byte": 232,
+          "proposed_byte": 194,
+          "peer_byte": 194
+        }
+      ]
+    },
+    {
+      "kind": "solved",
+      "coordinate": [
+        43945695,
+        1
+      ],
+      "primary_row": 129,
+      "peer_row": 132,
+      "ordinal": 0,
+      "independent_full_wire": "exact_182_bytes",
+      "peer_du_crc_valid": true,
+      "changes": [
+        {
+          "wire_octet": 53,
+          "changed_bits_msb0": [
+            7
+          ],
+          "du_byte": 52,
+          "field": "evs_non_direct",
+          "slot": 21,
+          "position": 2,
+          "word_octet": 13
+        },
+        {
+          "wire_octet": 54,
+          "changed_bits_msb0": [
+            1,
+            3
+          ],
+          "du_byte": 53,
+          "field": "evs_direct",
+          "slot": 21,
+          "position": 2,
+          "word_octet": 14,
+          "payload_offset_excluding_mode": 13,
+          "primary_byte": 23,
+          "proposed_byte": 71,
+          "peer_byte": 71
+        }
+      ]
+    },
+    {
+      "kind": "observed_alternate_sibling",
+      "coordinate": [
+        43945695,
+        1
+      ],
+      "primary_row": 129,
+      "peer_row": 132,
+      "ordinal": 1,
+      "independent_full_wire": "exact_182_bytes",
+      "peer_du_crc_valid": true,
+      "changes": [
+        {
+          "wire_octet": 50,
+          "changed_bits_msb0": [
+            4,
+            5,
+            7
+          ],
+          "du_byte": 228,
+          "field": "evs_non_direct",
+          "slot": 26,
+          "position": 3,
+          "word_octet": 25
+        },
+        {
+          "wire_octet": 51,
+          "changed_bits_msb0": [
+            0
+          ],
+          "du_byte": 229,
+          "field": "evs_direct",
+          "slot": 26,
+          "position": 3,
+          "word_octet": 26,
+          "payload_offset_excluding_mode": 25,
+          "primary_byte": 221,
+          "proposed_byte": 93,
+          "peer_byte": 93
+        }
+      ]
+    },
+    {
+      "kind": "solved",
+      "coordinate": [
+        43945704,
+        1
+      ],
+      "primary_row": 156,
+      "peer_row": 159,
+      "ordinal": 0,
+      "independent_full_wire": "exact_182_bytes",
+      "peer_du_crc_valid": true,
+      "changes": [
+        {
+          "wire_octet": 105,
+          "changed_bits_msb0": [
+            5,
+            6
+          ],
+          "du_byte": 104,
+          "field": "evs_direct",
+          "slot": 22,
+          "position": 3,
+          "word_octet": 32,
+          "payload_offset_excluding_mode": 31,
+          "primary_byte": 25,
+          "proposed_byte": 31,
+          "peer_byte": 31
+        },
+        {
+          "wire_octet": 106,
+          "changed_bits_msb0": [
+            1,
+            2,
+            3
+          ],
+          "du_byte": 105,
+          "field": "evs_direct",
+          "slot": 23,
+          "position": 4,
+          "word_octet": 0,
+          "payload_offset_excluding_mode": null,
+          "primary_byte": 136,
+          "proposed_byte": 248,
+          "peer_byte": 248
+        }
+      ]
+    }
+  ],
+  "primary_unmodified": {
+    "msc_rows": 218,
+    "packet_crc_checks": 872,
+    "physical_packets_crc": 451,
+    "physical_packets_crc_and_header": 451,
+    "native_complete_dus": 82
+  },
+  "primary_proposed_overlay": {
+    "msc_rows": 218,
+    "packet_crc_checks": 872,
+    "physical_packets_crc": 455,
+    "physical_packets_crc_and_header": 455,
+    "native_complete_dus": 85
+  },
+  "unmodified_complete_groups": 17,
+  "proposed_overlay_complete_groups": 18,
+  "additional_local_complete_groups": [
+    43945704
+  ],
+  "additional_groups_beyond_union": []
+}

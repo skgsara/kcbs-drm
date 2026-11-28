@@ -1,0 +1,21 @@
+{
+  "format": "two-branch-physical-packet-score-v1",
+  "decision_sha256": "787c4f34d8d295ea10e4710c89731fe1876c51e1481fa824cc1bbde99033c2e7",
+  "peer_msc_sha256": "32f3963767428a2c65b86b0f130c97f154a1bbfbd4d5e94135f38288b614e6cf",
+  "declared_witness_origin": "same-iq",
+  "proposals": 1,
+  "outcomes": {
+    "exact": 1,
+    "different": 0,
+    "unavailable": 0
+  },
+  "comparisons": [
+    {
+      "primary_row": 114,
+      "peer_row": 114,
+      "ordinal": 0,
+      "outcome": "exact",
+      "peer_wire_sha256": "d7187233ca8527841803ddddf8d67310dedaa38e5f198f417a5fd9ab9651369f"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "decision_sha256": "3896a7a5e6be7cd660fcb8c7a79612b6d4a1fb3adf83bfd64d18596d01ec4f7b",
+  "primary_msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "alternate_msc_sha256": "0de1ec4f3718ae0898f4ca4e1c8def67c623c16376c8e3854f6f92b5e1b5ebeb",
+  "proposed_msc_sha256": "f778c78db40f14992fe51a65521c7c10e87a381b846732a3f4a7e978d8bcdc35",
+  "rows": [
+    {
+      "primary_row": 41,
+      "alternate_row": 41,
+      "repaired_ordinal": 0,
+      "phase_tag": 0,
+      "counter_if_transmitted_here": 43945666,
+      "file": "row-000041.du",
+      "du_sha256": "2d426f9d37464ee6c5f3b595a24d4361d8168e322a4c42db502ca1521a704eca",
+      "transmitted_du_crc": "baf7",
+      "changed_physical_bits": [
+        {
+          "wire_bit_msb0": 914,
+          "du_byte": 113,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 4,
+          "word_octet": 8,
+          "slot": 3,
+          "physical_word_bit_msb0": 66,
+          "payload_offset_excluding_mode": 7
+        },
+        {
+          "wire_bit_msb0": 916,
+          "du_byte": 113,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 4,
+          "word_octet": 8,
+          "slot": 3,
+          "physical_word_bit_msb0": 68,
+          "payload_offset_excluding_mode": 7
+        },
+        {
+          "wire_bit_msb0": 918,
+          "du_byte": 113,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 4,
+          "word_octet": 8,
+          "slot": 3,
+          "physical_word_bit_msb0": 70,
+          "payload_offset_excluding_mode": 7
+        }
+      ],
+      "sibling_sources": {
+        "1": "primary",
+        "2": "primary",
+        "3": "primary"
+      }
+    },
+    {
+      "primary_row": 129,
+      "alternate_row": 129,
+      "repaired_ordinal": 0,
+      "phase_tag": 1,
+      "counter_if_transmitted_here": null,
+      "file": "row-000129.du",
+      "du_sha256": "5460e4b0bbf0d7d3aed6c766cd18a2ef99670a75852b7cfb3817983dea2085dd",
+      "transmitted_du_crc": "9ba4",
+      "changed_physical_bits": [
+        {
+          "wire_bit_msb0": 431,
+          "du_byte": 52,
+          "field": "evs_non_direct",
+          "cycle": 0,
+          "position": 2,
+          "word_octet": 13,
+          "slot": 21,
+          "physical_word_bit_msb0": 111,
+          "payload_offset_excluding_mode": 12
+        },
+        {
+          "wire_bit_msb0": 433,
+          "du_byte": 53,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 2,
+          "word_octet": 14,
+          "slot": 21,
+          "physical_word_bit_msb0": 113,
+          "payload_offset_excluding_mode": 13
+        },
+        {
+          "wire_bit_msb0": 435,
+          "du_byte": 53,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 2,
+          "word_octet": 14,
+          "slot": 21,
+          "physical_word_bit_msb0": 115,
+          "payload_offset_excluding_mode": 13
+        }
+      ],
+      "sibling_sources": {
+        "1": "alternate",
+        "2": "primary",
+        "3": "primary"
+      }
+    },
+    {
+      "primary_row": 156,
+      "alternate_row": 156,
+      "repaired_ordinal": 0,
+      "phase_tag": 1,
+      "counter_if_transmitted_here": null,
+      "file": "row-000156.du",
+      "du_sha256": "51780ad69c54f84382424c5948f1bb34219614bac4a54444a036e9a0879c915d",
+      "transmitted_du_crc": "867e",
+      "changed_physical_bits": [
+        {
+          "wire_bit_msb0": 845,
+          "du_byte": 104,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 3,
+          "word_octet": 32,
+          "slot": 22,
+          "physical_word_bit_msb0": 261,
+          "payload_offset_excluding_mode": 31
+        },
+        {
+          "wire_bit_msb0": 846,
+          "du_byte": 104,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 3,
+          "word_octet": 32,
+          "slot": 22,
+          "physical_word_bit_msb0": 262,
+          "payload_offset_excluding_mode": 31
+        },
+        {
+          "wire_bit_msb0": 849,
+          "du_byte": 105,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 4,
+          "word_octet": 0,
+          "slot": 23,
+          "physical_word_bit_msb0": 1,
+          "payload_offset_excluding_mode": null
+        },
+        {
+          "wire_bit_msb0": 850,
+          "du_byte": 105,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 4,
+          "word_octet": 0,
+          "slot": 23,
+          "physical_word_bit_msb0": 2,
+          "payload_offset_excluding_mode": null
+        },
+        {
+          "wire_bit_msb0": 851,
+          "du_byte": 105,
+          "field": "evs_direct",
+          "cycle": 0,
+          "position": 4,
+          "word_octet": 0,
+          "slot": 23,
+          "physical_word_bit_msb0": 3,
+          "payload_offset_excluding_mode": null
+        }
+      ],
+      "sibling_sources": {
+        "1": "primary",
+        "2": "primary",
+        "3": "primary"
+      }
+    }
+  ],
+  "scope": "Diagnostic DU and native-stream overlays. Unlisted primary rows are unchanged. Each listed row uses the proposed packet and its CRC-valid source siblings. Absolute counters need separate transport assignment except where transmitted in phase 0."
+}

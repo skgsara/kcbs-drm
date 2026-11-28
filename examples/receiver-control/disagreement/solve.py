@@ -123,14 +123,21 @@ def propose(raw_a, raw_b):
                       "share a polynomial. Only a separate observation can test common errors.")
 
 
-def score(raw_a, raw_b, saved_path, seal, peer):
+def sealed(raw_a, raw_b, saved_path, seal):
     raw = saved_path.read_bytes()
     if digest(raw) != seal.lower():
         raise ValueError("wrong decision seal")
     forecast = json.loads(raw)
     if forecast != propose(raw_a, raw_b):
         raise ValueError("sealed decisions differ from original inputs and fixed solver")
+    return forecast
+
+
+def score(raw_a, raw_b, saved_path, seal, peer, origin="unspecified"):
+    forecast = sealed(raw_a, raw_b, saved_path, seal)
     observed = peer.read_bytes()
+    if origin == "independent-station" and digest(observed) in (digest(raw_a), digest(raw_b)):
+        raise ValueError("an identical source file cannot serve as an independent station")
     peer_rows = parse_msc(observed)
     rows = parse_msc(raw_a)
     mapping = dict(witnessed_pairs(rows, peer_rows)[0])
@@ -146,7 +153,7 @@ def score(raw_a, raw_b, saved_path, seal, peer):
         results.append(dict(primary_row=i, peer_row=j, ordinal=q, outcome=outcome,
                             peer_wire_sha256=digest(wire) if wire is not None else None))
     return dict(format="two-branch-physical-packet-score-v1", decision_sha256=seal.lower(),
-                peer_msc_sha256=digest(observed), proposals=len(results),
+                peer_msc_sha256=digest(observed), declared_witness_origin=origin, proposals=len(results),
                 outcomes={s: sum(r["outcome"] == s for r in results) for s in ("exact", "different", "unavailable")},
                 comparisons=results)
 
@@ -155,19 +162,21 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="stage", required=True)
     generate = commands.add_parser("propose", help="emit sealable proposals without a reference")
-    check = commands.add_parser("score", help="compare externally sealed decisions against independently received packets")
+    check = commands.add_parser("score", help="compare externally sealed decisions with CRC-accepted witness packets")
     for sub in (generate, check):
         sub.add_argument("primary", type=Path)
         sub.add_argument("alternate", type=Path)
     check.add_argument("decisions", type=Path)
     check.add_argument("--seal", required=True)
     check.add_argument("--peer", type=Path, required=True)
+    check.add_argument("--witness-origin", choices=("independent-station", "same-iq", "unspecified"),
+                       default="unspecified", help="declared acquisition relationship; hashes alone cannot establish it")
     args = parser.parse_args()
     a, b = args.primary.read_bytes(), args.alternate.read_bytes()
     if args.stage == "propose":
         result = propose(a, b)
     else:
-        result = score(a, b, args.decisions, args.seal, args.peer)
+        result = score(a, b, args.decisions, args.seal, args.peer, args.witness_origin)
     print(json.dumps(result, indent=2))
 
 

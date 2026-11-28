@@ -48,3 +48,7 @@ python "$check" score "$field/native.msc.bin" /tmp/clear-drm-field "$seal"
 python "$field/coverage.py" /tmp/clear-drm-field --seal "$seal" > /tmp/clear-drm-coverage.json
 cmp "$field/coverage.json" /tmp/clear-drm-coverage.json
 ```
+
+## Damaged packets in on-air recordings
+
+Two channel estimates from the same IQ recovered three physical packets in the 6140 kHz development recording. A second station recorded all three packets byte-for-byte. A further 3205 kHz trial used the frozen receiver on a locally unopened interval and checked its one complete packet proposal against a third demodulation. The reports include the four-position EVS results, the costs of accepting individual bytes from failed packets, and a synthetic case where a unique CRC solution still contains errors. [Independent station comparison](disagreement/README.md) · [Frozen field test](agreed-bytes/README.md)

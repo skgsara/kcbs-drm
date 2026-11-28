@@ -1,0 +1,126 @@
+{
+  "format": "two-branch-physical-packet-proposals-v1",
+  "primary_msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "alternate_msc_sha256": "0de1ec4f3718ae0898f4ca4e1c8def67c623c16376c8e3854f6f92b5e1b5ebeb",
+  "max_disagreements": 12,
+  "native_rows": [
+    218,
+    219
+  ],
+  "aligned_rows": 131,
+  "rejected_alignment_rows": 0,
+  "counts": {
+    "both_rejected": 42,
+    "identical_crc_failed": 6,
+    "inconsistent": 4,
+    "missing_original_sibling": 3,
+    "more_than_limit": 24,
+    "unique_packet": 6,
+    "wrong_header": 2
+  },
+  "proposed_packets": 3,
+  "proposals": [
+    {
+      "primary_row": 41,
+      "alternate_row": 41,
+      "ordinal": 0,
+      "differing_bits": 9,
+      "rank": 9,
+      "disagreements_msb0": [
+        599,
+        601,
+        603,
+        607,
+        608,
+        611,
+        914,
+        916,
+        918
+      ],
+      "primary_flips_msb0": [
+        914,
+        916,
+        918
+      ],
+      "original_primary_sha256": "f2c20fded2de4654f5a35ebd13b60021e0fc9d26b260fc37fa29e9758edffe6d",
+      "original_alternate_sha256": "5f78bf4273740c3356dd0e7fb31f470cbd33891d8d0d800e4236c6e04199a497",
+      "proposed_wire_sha256": "db4c3ef64a74a8c97dfa57fec93eb92fa956dec638eeacd4bb80482e2d8616bf",
+      "sibling_sources": {
+        "1": "primary",
+        "2": "primary",
+        "3": "primary"
+      },
+      "proposed_du_sha256": "2d426f9d37464ee6c5f3b595a24d4361d8168e322a4c42db502ca1521a704eca",
+      "transmitted_du_crc": "baf7",
+      "primary_payload_octets_changed": 1
+    },
+    {
+      "primary_row": 129,
+      "alternate_row": 129,
+      "ordinal": 0,
+      "differing_bits": 7,
+      "rank": 7,
+      "disagreements_msb0": [
+        419,
+        421,
+        423,
+        426,
+        431,
+        433,
+        435
+      ],
+      "primary_flips_msb0": [
+        431,
+        433,
+        435
+      ],
+      "original_primary_sha256": "f2af859eedaad3a3df98f8f6ef0f61e5f5a589810db7165224d61c997bb68f02",
+      "original_alternate_sha256": "c661fe7a4397032d3c93fd574ac54132cb588010302e38570220cb05b11503bb",
+      "proposed_wire_sha256": "3729cdf1cb98d435d9ce81f4672e029e2b315d64c12a98c6f8997d09cf1fbf7f",
+      "sibling_sources": {
+        "1": "alternate",
+        "2": "primary",
+        "3": "primary"
+      },
+      "proposed_du_sha256": "5460e4b0bbf0d7d3aed6c766cd18a2ef99670a75852b7cfb3817983dea2085dd",
+      "transmitted_du_crc": "9ba4",
+      "primary_payload_octets_changed": 2
+    },
+    {
+      "primary_row": 156,
+      "alternate_row": 156,
+      "ordinal": 0,
+      "differing_bits": 8,
+      "rank": 8,
+      "disagreements_msb0": [
+        430,
+        432,
+        433,
+        845,
+        846,
+        849,
+        850,
+        851
+      ],
+      "primary_flips_msb0": [
+        845,
+        846,
+        849,
+        850,
+        851
+      ],
+      "original_primary_sha256": "fa65d4ed9adebf23868945f63c4ff76d0dee8c9f041f5b33cf1ce7458379e2eb",
+      "original_alternate_sha256": "0d6df931f362dd83cad0371b5d9b1656fa36b3a173c11a78b4bad66eef3ea663",
+      "proposed_wire_sha256": "d5293d429041204ab4bb270f22728df9024ee490da2f5479899fc44334a62026",
+      "sibling_sources": {
+        "1": "primary",
+        "2": "primary",
+        "3": "primary"
+      },
+      "proposed_du_sha256": "51780ad69c54f84382424c5948f1bb34219614bac4a54444a036e9a0879c915d",
+      "transmitted_du_crc": "867e",
+      "primary_payload_octets_changed": 2
+    }
+  ],
+  "scope": "Proposals assume every bit where both hard decodes agree is correct. Packet and DU CRCs share a polynomial. Only a separate observation can test common errors."
+}
