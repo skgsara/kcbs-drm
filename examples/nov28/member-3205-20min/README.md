@@ -66,6 +66,27 @@ With the original contributor note, run the following from the repository root.
 python examples/nov28/member-3205-20min/check_member_handoff.py skgsara-crosscheck-20261128.md
 ```
 
+### Comparing the handoff with the earlier blind predictions
+
+Before this handoff arrived, the IQ-only receiver had published predictions for counter 43907925, the first complete group in the member recording. The counter was absent from its frozen inventory. Replaying the three archived DUs reproduces the published per-slot evidence SHA-256 `433b76398e950d2dc4a329e1c09cbc88e8fad5b6d50bf7e73ef964de7198711d`. We compared **every conditional field at P1 and P2** with the value computed using the contributor's single submitted candidate and the published word layout. All nine fields target the first payload octet. The text record with CRC `730B` supports the submitted comparison data. [Original IQ result](primary.json) · [Comparison values for all eligible fields](candidate-43907925-early-fields.csv)
+
+| Position and zero-based slots | Word bits, MSB first | Allowed by the frozen receiver | Value from submitted candidate |
+|---|---|---|---|
+| P1, 32 | 8–9 | `00`, `01`, `10` | `00` |
+| P1, 36 | 8–9 | `00` | `00` |
+| P1, 48, 52, 56 | 8 | `1` | `1` at all three |
+| P2, 17 | 8–9 | `00` | `00` |
+| P2, 33 | 8–9 | `00`, `10`, `11` | `11` |
+| P2, 49, 53 | 8 | `1` | `1` at both |
+
+Seven fields had a single allowed value, covering nine individually predicted bits. All nine bits agreed. Two further fields excluded just one pair each. The submitted values fell within both allowed sets. The nine fields depend on only four distinct bits of one candidate, two for P1 and two for P2. This measures agreement with that candidate on this counter. It provides no independent estimate of clear-bit accuracy. The P3 and P4 predictions still lack labels here. The IQ-only score remains zero complete clear words out of 60.
+
+```sh
+case_dir=examples/nov28/member-3205-20min
+python scripts/project_evs_group.py "$case_dir/data_units.npz" --counter 43907925 --field-checks > /tmp/43907925-fields.json
+python scripts/compare_evs_evidence.py /tmp/43907925-fields.json "$case_dir/candidate-43907925-early-fields.csv" --bit-labels
+```
+
 ## Five places to test the text carousel
 
 A different recording had shown a bulletin period of 798 data units (319.2 seconds). Applying that spacing to this capture gives **five intervals of 33.6 seconds** with all 84 successive data units present in each interval. The first four also have an uninterrupted 48.4-second stretch. These counts describe which data arrived. Confirming a text repeat requires checking the bulletin contents and their own record CRCs. [Exact coverage, denominators and gaps](carousel-coverage.json)

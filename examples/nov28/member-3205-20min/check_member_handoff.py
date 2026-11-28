@@ -1,18 +1,54 @@
 """Check the six EVS examples and three clear text records in the contributor's November 28 note."""
 import argparse
+import csv
 from hashlib import sha256
 import json
 from pathlib import Path
 import re
 import sys
 
+import numpy as np
+
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parents[2] / "scripts"))
 from check_evs_origin import PROJECTED_OCTETS
+from evs_evidence import bit_evidence, field_sections
 from locate_evs_slots import build_index
 from parse_text_records import parse_record
-from project_evs_group import checked_units
-from render_continuous import MODE_POSITIONS
+from project_evs_group import checked_units, project_group
+from render_continuous import MODE_POSITIONS, group_frames
+
+
+def check_candidate_labels(counter, units, supplied):
+    primary = json.loads((HERE / "primary.json").read_text())
+    projection = project_group(HERE / "data_units.npz", counter)
+    projection.update(field_sections(projection["slots"]))
+    ledger = bit_evidence(projection)
+    serialized = (json.dumps(ledger, indent=2) + "\n").encode()
+    if sha256(serialized).hexdigest() != primary["report_sha256"]["bit-evidence.json"]:
+        raise ValueError("receiver field ledger differs from the published blind result")
+
+    phases = np.stack([np.frombuffer(units[3 * counter + ph], np.uint8) for ph in range(3)])
+    _, payloads = group_frames(phases, np.frombuffer(supplied, np.uint8))
+    expected = []
+    for slot in ledger["slots"]:
+        if slot["position"] not in (1, 2):
+            continue
+        for rule in slot["events"]:
+            if rule["kind"] != "conditional":
+                continue
+            start, end = rule["word_bits"]
+            if not 8 <= start < end <= 16:
+                raise ValueError("unexpected target outside the first payload octet")
+            octet = f"{payloads[slot['slot'], 0]:08b}"
+            expected.append((counter, slot["phase"], slot["cycle"], slot["position"],
+                             start, octet[start - 8:end - 8]))
+    with (HERE / "candidate-43907925-early-fields.csv").open(newline="") as f:
+        actual = [(int(r["counter"]), int(r["phase"]), int(r["cycle"]), int(r["position"]),
+                   int(r["first_bit"]), r["bits"]) for r in csv.DictReader(f)]
+    if actual != expected:
+        raise ValueError("published comparison values differ from the supplied candidate at eligible slots")
+    return len(expected)
 
 
 def check(note_path):
@@ -78,6 +114,7 @@ def check(note_path):
                 submitted_evs_rows_sha256=sha256(examples).hexdigest(), records=records,
                 record_blocks_received=sum(t in units for t in submitted_blocks),
                 first_supplied_text_pair_matches=(anchored == submitted_blocks[first_tick]),
+                candidate_field_labels_reproduced=check_candidate_labels(counter, units, supplied),
                 within_counter_text_checks=shifts)
 
 
