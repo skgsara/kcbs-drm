@@ -1,0 +1,97 @@
+{
+  "frozen_utc": "2026-11-28T03:07:06.503474+00:00",
+  "archive_name": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+  "authorized_url_sha256": "5c9e5932caaaa5081a5f8151b9fe30ef1016562b4ecf402f8e1de2e6ec8de9a7",
+  "original_bytes": 597076480,
+  "remote_etag": "9eef1c0711b472da93b8c6227fb7359b",
+  "service_advertised_full_object_sha1": "ec5e67a39cb4d705fb5f7494533eee263a5fc481",
+  "acquisition_label": "17:31:39 file label; no UTC offset asserted",
+  "raw_layout": "signed interleaved int8 I,Q, 912000 pairs/s, nominal carrier 6140000 Hz, zero IF",
+  "previously_read_flanks": [
+    {
+      "seconds_half_open": [
+        130,
+        150
+      ],
+      "original_bytes_half_open": [
+        237120000,
+        273600000
+      ],
+      "cached_source_interval_start_s": 0,
+      "cache_file": "rf-followup/nov19-source/173139/bytes-0-273599999.cs8",
+      "cache_file_sha256": "fc1efd0cc8befc8e55160b135660262effe744736dc6d6a02730e47359387ee7",
+      "segment_sha256": "20ddff81e986e47af7acb727bc76485e7c77393726770232eb1775bd8d6fe755"
+    },
+    {
+      "seconds_half_open": [
+        154,
+        160
+      ],
+      "original_bytes_half_open": [
+        280896000,
+        291840000
+      ],
+      "cached_source_interval_start_s": 154,
+      "cache_file": "reference-acceptance/airspy-split/range/bytes-280896000-321023999.cs8",
+      "cache_file_sha256": "c1bbf2b3551abc5379c9c7b24e7a8766ecbc6b027dcea174023e80c0c9d26404",
+      "segment_sha256": "c9bbcce7e0603c14931b0871d3b20357c21f79abdb783f0b8c26e8bb59df0502"
+    }
+  ],
+  "single_new_interval": {
+    "seconds_half_open": [
+      150,
+      154
+    ],
+    "source_sample_pairs_half_open": [
+      136800000,
+      140448000
+    ],
+    "source_bytes_half_open": [
+      273600000,
+      280896000
+    ],
+    "expected_bytes": 7296000
+  },
+  "source_span_s": [
+    130,
+    160
+  ],
+  "sole_target": 43288730,
+  "previous_14737_history_gz_sha256": "f7f5807511565affcab83b5eb162fb3d498248a6c541b5858e147998ba800abd",
+  "five_new_edogawa_ids": [
+    43916921,
+    43916927,
+    43916933,
+    43916972,
+    43916987
+  ],
+  "edogawa_second_pass_sha256": "d528dfb06775e0f1696e719e16c682f8567c72f43b14f090fc8dbf0b15030c55",
+  "excluded_count": 14742,
+  "history_gzip_sha256": "0cfe563ffadc12b8201d677152693ff3a9b7080c4fea5caf41c0a5e86619be43",
+  "history_json_sha256": "fc1afc22bd7ab1700f012ec73c81c91bc2c58132189f76f98d8dd5be4062c166",
+  "target_in_historical_registry": false,
+  "radio_receiver_revision": "530c9588cf192f73256a9b704ffd758397865141",
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "script_sha256": {
+    "demod_iq_window.py": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+    "resample_iq.py": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+    "salvage_msc_packets.py": "a9f86d51294a2b61064f8886993881df523eee3a807854a48a511d39f54bc8d4",
+    "tail_fill_audit.py": "e488d2448c484e082c2ee1a06d6a1a79cd7aa38abac3db7ee45da9ebf7b09123",
+    "build_evs_gcc_independent.py": "d69cf9e3b5eaa514bac5edb3925227502d7b17a3ab59b940635fef781281d308"
+  },
+  "library_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "soundfile": "0.14.0"
+  },
+  "old_adjacent_received_coordinates": {
+    "before_150": [
+      43288727,
+      0
+    ],
+    "from_154": [
+      43288733,
+      0
+    ]
+  }
+}
