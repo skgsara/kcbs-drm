@@ -637,6 +637,18 @@ compares body, sequence, final flag and position without requiring the toggle.
 
 ## Playback controls
 
+A stock EVS decoder can produce different PCM for identical trailing frames.
+In two synthetic streams that differed by one encoded bit, 33 of the following
+34 identical frames produced different samples at 32 kHz. Decoding both
+identical suffixes from reset yielded identical samples.
+[Decoder history experiment and reproduction](examples/nov28/evs-state-control/README.md)
+
+On a 500-byte development sample, the acoustic method scored 16.8% byte
+top-1 accuracy and its mode prior scored 2.4%. The 34 high-precision calls
+reported for the acoustic method were individual bits. The six later bytes
+in the second frame position have no exact broadcast labels in this comparison.
+[Independent score audit](examples/nov28/dev-score-audit/README.md)
+
 The replay method improved held-out eSTOI from **0.437 to 0.520** on four genuine
 EVS speech excerpts with the March loss pattern. The metric compares against the
 full EVS encode, not the broadcast. Three synthetic instrumental controls showed

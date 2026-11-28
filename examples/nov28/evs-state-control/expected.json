@@ -1,0 +1,136 @@
+{
+  "sender_receipt_sha256": "e76dcd8b03b7df6f2200b905426a8c908affe9c805005025ef6ecb615eea7705",
+  "frame_count": 240,
+  "decoder_options": [
+    "-q",
+    "-no_delay_cmp"
+  ],
+  "cases": {
+    "p24": {
+      "target_wire_bit": 203,
+      "changed_encoded_slots": [
+        205
+      ],
+      "decoder_by_khz": {
+        "16": {
+          "pcm_sha256": [
+            "93747ad5bc57916bfd60b0a3f10520372bb84991c2bbb98e606dc3a92df68105",
+            "bc8931106e411aa4da4b86fab786ea6b967878e73216ba6732b830384dec9f73"
+          ],
+          "samples_per_stream": 76800,
+          "changed_samples": 1631,
+          "first_changed_sample": 65631,
+          "last_changed_sample": 76447,
+          "first_changed_pcm_frame": 205,
+          "changed_pcm_frame_ranges": [
+            [
+              205,
+              210
+            ],
+            [
+              211,
+              224
+            ],
+            [
+              228,
+              239
+            ]
+          ],
+          "common_suffix_first_slot": 206,
+          "common_suffix_words": 34,
+          "differing_pcm_frames_in_common_suffix": 28,
+          "reset_suffix_pcm_equal": true,
+          "reset_suffix_pcm_sha256": "0e4b4ae59a0875d8874dbbd94abe3f4b1e7c13f9e466beb18bcd49a079bd7448"
+        },
+        "32": {
+          "pcm_sha256": [
+            "db7e38d49f4083609a06ceac7344a60b09129410a77e076fa30c258442d84b16",
+            "4c59acf44199201f5587af4404100623cba398799dacce7305c3a0821fee962c"
+          ],
+          "samples_per_stream": 153600,
+          "changed_samples": 6506,
+          "first_changed_sample": 131226,
+          "last_changed_sample": 153545,
+          "first_changed_pcm_frame": 205,
+          "changed_pcm_frame_ranges": [
+            [
+              205,
+              225
+            ],
+            [
+              226,
+              240
+            ]
+          ],
+          "common_suffix_first_slot": 206,
+          "common_suffix_words": 34,
+          "differing_pcm_frames_in_common_suffix": 33,
+          "reset_suffix_pcm_equal": true,
+          "reset_suffix_pcm_sha256": "d4869b0142a161a8082b58ccb01440d944802948cc4c9095fea70e41d6ce2960"
+        }
+      }
+    },
+    "p27": {
+      "target_wire_bit": 225,
+      "changed_encoded_slots": [
+        205,
+        206,
+        207
+      ],
+      "decoder_by_khz": {
+        "16": {
+          "pcm_sha256": [
+            "0dddc1c5436b12b1e3ea1ef0a498223eb7e484e9239caa2aa193347239732405",
+            "25b0e5a7bc284a98023fbf8b12d68315acb7e0dbc69ac3963bbb1fc5fdec568c"
+          ],
+          "samples_per_stream": 76800,
+          "changed_samples": 1745,
+          "first_changed_sample": 65629,
+          "last_changed_sample": 72239,
+          "first_changed_pcm_frame": 205,
+          "changed_pcm_frame_ranges": [
+            [
+              205,
+              212
+            ],
+            [
+              213,
+              226
+            ]
+          ],
+          "common_suffix_first_slot": 208,
+          "common_suffix_words": 32,
+          "differing_pcm_frames_in_common_suffix": 17,
+          "reset_suffix_pcm_equal": true,
+          "reset_suffix_pcm_sha256": "7b0f4357752a3b2b06e135c21b3bc17faba1aa8ee3a87c99e6cefb01e22bbfb8"
+        },
+        "32": {
+          "pcm_sha256": [
+            "b30646e4d63f29d896daf430c334af44193cb3d73e74903f23b71cba342a277d",
+            "14414906ae94c218f055e8c5833579c8bb65e0b246d1dce4d672fc6ad37234a7"
+          ],
+          "samples_per_stream": 153600,
+          "changed_samples": 7064,
+          "first_changed_sample": 131215,
+          "last_changed_sample": 153560,
+          "first_changed_pcm_frame": 205,
+          "changed_pcm_frame_ranges": [
+            [
+              205,
+              228
+            ],
+            [
+              229,
+              240
+            ]
+          ],
+          "common_suffix_first_slot": 208,
+          "common_suffix_words": 32,
+          "differing_pcm_frames_in_common_suffix": 31,
+          "reset_suffix_pcm_equal": true,
+          "reset_suffix_pcm_sha256": "933d86d0089a6c291714b1329c40904bd955cc26b0ab2fe895c69024e64ae7b5"
+        }
+      }
+    }
+  }
+}
