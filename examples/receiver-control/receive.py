@@ -132,9 +132,7 @@ def prepare_iq(source, out):
                                interleaved_pcm16le_sha256=pcm.hexdigest())
 
 
-def receive(iq, dream, decoder, out, first, groups):
-    if not (0 < groups <= 500 and 0 <= first <= 2**32 - groups):
-        raise ValueError("expected 1–500 groups within the unsigned 32-bit counter range")
+def demodulate_test_service(iq, dream, out):
     effective, input_receipt = prepare_iq(iq, out)
     demod = out / "demod"
     bits = demod / "signalling.bits"
@@ -150,7 +148,27 @@ def receive(iq, dream, decoder, out, first, groups):
     signals = inspect_file(bits)
     save(demod / "signalling.json", signals)
     fixture_service(signals)
-    msc = demod / "msc.bin"
+    return effective, input_receipt, signals, demod / "msc.bin"
+
+
+def receive_discovered(iq, dream, out):
+    from discover import discover
+
+    effective, input_receipt, signals, msc = demodulate_test_service(iq, dream, out)
+    discover(msc, out / "groups")
+    paths = dict(source_iq=iq, demod_input_wav=effective, dream=dream, msc=msc,
+                 catalogue=out / "groups/catalog.json")
+    report = dict(profile="Declared-clear synthetic EF0201 / DRM IQ TEST", input=input_receipt,
+                  signalling_crc=signals["blocks"], catalogue="groups/catalog.json",
+                  sha256={name: digest(path) for name, path in paths.items()})
+    save(out / "report.json", report)
+    return report
+
+
+def receive(iq, dream, decoder, out, first, groups):
+    if not (0 < groups <= 500 and 0 <= first <= 2**32 - groups):
+        raise ValueError("expected 1–500 groups within the unsigned 32-bit counter range")
+    effective, input_receipt, signals, msc = demodulate_test_service(iq, dream, out)
     with (out / "salvage.log").open("w", encoding="utf-8") as log, redirect_stdout(log):
         salvage([msc], out / "receiver", transport_only=True, save_packets=True)
     packet_path = out / "receiver/packets.npz"
@@ -198,15 +216,25 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("iq", type=Path, help="48 kHz stereo PCM16 I/Q WAV or lossless FLAC")
     parser.add_argument("--dream", required=True, type=Path, help="finite-input Dream with KCBS_SIGNALLING_BITS")
-    parser.add_argument("--decoder", required=True, type=Path, help="stock floating-point EVS_dec")
+    parser.add_argument("--decoder", type=Path, help="stock floating-point EVS_dec for the scored timeline")
     parser.add_argument("--out", required=True, type=Path, help="fresh output directory")
-    parser.add_argument("--first-counter", type=lambda s: int(s, 0), default=0x01020304,
+    parser.add_argument("--discover", action="store_true", help="write complete received EVS groups in native row order")
+    parser.add_argument("--first-counter", type=lambda s: int(s, 0),
                         help="first scored phase-zero counter (default 0x01020304)")
-    parser.add_argument("--groups", type=int, default=40, help="number of 60-slot groups (default 40)")
+    parser.add_argument("--groups", type=int, help="number of 60-slot groups (default 40)")
     args = parser.parse_args()
+    if args.discover and (args.first_counter is not None or args.groups is not None):
+        parser.error("--discover reads counter boundaries from the received data; omit --first-counter and --groups")
+    if not args.discover and args.decoder is None:
+        parser.error("--decoder is required to render the scored timeline")
     try:
-        report = receive(args.iq.resolve(strict=True), args.dream.resolve(strict=True),
-                         args.decoder.resolve(strict=True), args.out.resolve(), args.first_counter, args.groups)
+        iq, dream, out = args.iq.resolve(strict=True), args.dream.resolve(strict=True), args.out.resolve()
+        if args.discover:
+            report = receive_discovered(iq, dream, out)
+        else:
+            first = 0x01020304 if args.first_counter is None else args.first_counter
+            groups = 40 if args.groups is None else args.groups
+            report = receive(iq, dream, args.decoder.resolve(strict=True), out, first, groups)
         print(json.dumps(report, indent=2))
     except (OSError, ValueError, KeyError, wave.Error, subprocess.CalledProcessError) as exc:
         parser.exit(1, f"{exc}\n")
