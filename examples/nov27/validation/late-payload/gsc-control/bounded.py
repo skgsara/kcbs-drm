@@ -122,9 +122,12 @@ def patch_bit_readers(text):
     return text
 
 
-def patch_gsc(text):
+def patch_gsc(text, stop_after_prefix=False):
     call, = [line for line in text.splitlines() if "pvq_core_dec( st, gsc_sfm_start," in line]
-    return once(text, call, "        walk_prefix(st, bit, nb_subbands, bits_per_bands);\n" + call)
+    walk = "        walk_prefix(st, bit, nb_subbands, bits_per_bands);\n"
+    if stop_after_prefix:
+        walk += "        exit(42);\n"
+    return once(text, call, walk + call)
 
 
 def patch_vector(text):
@@ -176,13 +179,13 @@ def patch_range(text):
     return once(text, raw, INDEX + raw)
 
 
-def build(work, source_root):
+def build(work, source_root, *, stop_after_prefix=False):
     for name, expected in PINS.items():
         if hashlib.sha256((source_root / name).read_bytes()).hexdigest() != expected:
             raise ValueError(f"TS 26.443 source hash differs for {name}")
     patches = {
         "lib_com/bitstream.c": patch_bit_readers,
-        "lib_dec/gs_dec.c": patch_gsc,
+        "lib_dec/gs_dec.c": lambda text: patch_gsc(text, stop_after_prefix),
         "lib_dec/pvq_decode.c": patch_vector,
         "lib_dec/pvq_core_dec.c": patch_core,
         "lib_dec/range_dec.c": patch_range,
