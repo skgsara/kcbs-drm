@@ -6,6 +6,10 @@ DRM service information, checks received data packets, recovers Korean
 scrolling text and decodes supported audio frames using the 3GPP EVS reference
 decoder. Recovery varies with radio reception and the available text evidence.
 
+Download the **23 original radio recordings** individually from the November 28 collection.
+The JSON index gives each recording’s original name, size, SHA-256 and direct download URL.
+[Sample release](https://github.com/skgsara/kcbs-drm/releases/tag/samples-2026-11-28) · [Recording index](https://github.com/skgsara/kcbs-drm/releases/download/samples-2026-11-28/samples.json)
+
 This work builds on KoryoFront’s KCBS-2 receiver and Martyn’s independent
 KCBS DRM analysis. KoryoFront documented the transport layout and shared
 the March recordings in collaboration with Martyn. Martyn (martynw) contributed the variable-length text
