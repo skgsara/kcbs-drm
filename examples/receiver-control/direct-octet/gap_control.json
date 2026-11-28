@@ -1,0 +1,941 @@
+{
+  "scope": "Existing historical CRC-checked packet snapshots only. Centers 1,4,...58 in any counter with at least one assigned packet. Immediate neighbors use 20 centers; same-role neighbors \u00b14 use the 18 centers with both donors within the group. Each arm requires three directly received, equal mode bytes and two directly received, equal donor p5 bytes at the same source. The center's directly carried p5 is the target. Predictions are frozen by the donor rule before checking source or peer centers. 'missing_with_peer_target' counts peer-labelled gaps before these prerequisites; 'natural_gap_with_peer' counts testable predictions. Visible centers are retrospective agreement controls. Site directions and repeated transmissions describe related observations. In the all-60 geometry alone, edge slots use the adjacent counter.",
+  "geometry": {
+    "immediate_neighbors": {
+      "centers": 20,
+      "same_packet_as_neighbor_p5": {
+        "both": 12,
+        "left_only": 4,
+        "right_only": 4,
+        "neither": 0
+      },
+      "same_packet_as_center_mode": 17,
+      "center_mode_in_different_packet_at": [
+        16,
+        28,
+        52
+      ],
+      "all_five_inputs_outside_target_packet_at": []
+    },
+    "same_role_neighbors": {
+      "centers": 18,
+      "same_packet_as_neighbor_p5": {
+        "both": 0,
+        "left_only": 5,
+        "right_only": 4,
+        "neither": 9
+      },
+      "same_packet_as_center_mode": 15,
+      "center_mode_in_different_packet_at": [
+        16,
+        28,
+        52
+      ],
+      "all_five_inputs_outside_target_packet_at": [
+        28
+      ]
+    },
+    "same_role_geometry_eligible_only": {
+      "centers": 1,
+      "same_packet_as_neighbor_p5": {
+        "both": 0,
+        "left_only": 0,
+        "right_only": 0,
+        "neither": 1
+      },
+      "same_packet_as_center_mode": 0,
+      "center_mode_in_different_packet_at": [
+        28
+      ],
+      "all_five_inputs_outside_target_packet_at": [
+        28
+      ]
+    },
+    "same_role_required_packets": {
+      "28": {
+        "target": [
+          1,
+          1
+        ],
+        "modes": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "donors": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    "all_interior_immediate_neighbors": {
+      "centers": 58,
+      "same_packet_as_neighbor_p5": {
+        "both": 36,
+        "left_only": 11,
+        "right_only": 11,
+        "neither": 0
+      },
+      "same_packet_as_center_mode": 49,
+      "center_mode_in_different_packet_at": [
+        8,
+        12,
+        16,
+        28,
+        32,
+        36,
+        48,
+        52,
+        56
+      ],
+      "all_five_inputs_outside_target_packet_at": []
+    },
+    "immediate_including_adjacent_counter_edges": {
+      "centers": 60,
+      "same_packet_as_neighbor_p5": {
+        "both": 36,
+        "left_only": 12,
+        "right_only": 12,
+        "neither": 0
+      },
+      "same_packet_as_center_mode": 51,
+      "center_mode_in_different_packet_at": [
+        8,
+        12,
+        16,
+        28,
+        32,
+        36,
+        48,
+        52,
+        56
+      ],
+      "all_five_inputs_outside_target_packet_at": []
+    }
+  },
+  "cases": [
+    {
+      "capture": "Nov28-1232",
+      "left": "Yokohama 6140",
+      "right": "Edogawa 6140",
+      "provenance": "examples/nov28/same-6140-1232/README.md",
+      "left_snapshot_sha256": "ee0eb383de5fcf07121583752894e6226dba58dd5340bd37de983827fa7c39fd",
+      "right_snapshot_sha256": "8eb521c769f27344fb0b5b813de2d298e1b53ef03588a41540602daf775ff9be",
+      "left_complete_dus_sha256": null,
+      "right_complete_dus_sha256": null,
+      "immediate_neighbors": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 70,
+            "centers": 1400,
+            "source_target_present": 1344,
+            "source_target_missing": 56,
+            "missing_with_peer_target": 0,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 1340,
+            "all_five_with_matching_modes": 758,
+            "consensus_calls": 120,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 120,
+            "visible_center_correct": 83,
+            "visible_calls_with_peer": 43,
+            "visible_peer_correct": 30
+          },
+          "shared_assigned_counters": {
+            "counters": 33,
+            "centers": 660,
+            "source_target_present": 647,
+            "source_target_missing": 13,
+            "missing_with_peer_target": 0,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 646,
+            "all_five_with_matching_modes": 406,
+            "consensus_calls": 62,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 62,
+            "visible_center_correct": 42,
+            "visible_calls_with_peer": 43,
+            "visible_peer_correct": 30
+          }
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 34,
+            "centers": 680,
+            "source_target_present": 482,
+            "source_target_missing": 198,
+            "missing_with_peer_target": 183,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 466,
+            "all_five_with_matching_modes": 315,
+            "consensus_calls": 44,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 44,
+            "visible_center_correct": 29,
+            "visible_calls_with_peer": 42,
+            "visible_peer_correct": 29
+          },
+          "shared_assigned_counters": {
+            "counters": 33,
+            "centers": 660,
+            "source_target_present": 464,
+            "source_target_missing": 196,
+            "missing_with_peer_target": 183,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 448,
+            "all_five_with_matching_modes": 299,
+            "consensus_calls": 42,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 42,
+            "visible_center_correct": 29,
+            "visible_calls_with_peer": 42,
+            "visible_peer_correct": 29
+          }
+        }
+      },
+      "same_role_neighbors": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 70,
+            "centers": 1260,
+            "source_target_present": 1208,
+            "source_target_missing": 52,
+            "missing_with_peer_target": 0,
+            "missing_with_both_neighbor_p5": 2,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 1196,
+            "all_five_with_matching_modes": 436,
+            "consensus_calls": 36,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 36,
+            "visible_center_correct": 12,
+            "visible_calls_with_peer": 22,
+            "visible_peer_correct": 7
+          },
+          "shared_assigned_counters": {
+            "counters": 33,
+            "centers": 594,
+            "source_target_present": 582,
+            "source_target_missing": 12,
+            "missing_with_peer_target": 0,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 580,
+            "all_five_with_matching_modes": 266,
+            "consensus_calls": 27,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 27,
+            "visible_center_correct": 10,
+            "visible_calls_with_peer": 22,
+            "visible_peer_correct": 7
+          }
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 34,
+            "centers": 612,
+            "source_target_present": 428,
+            "source_target_missing": 184,
+            "missing_with_peer_target": 170,
+            "missing_with_both_neighbor_p5": 6,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 388,
+            "all_five_with_matching_modes": 223,
+            "consensus_calls": 23,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 23,
+            "visible_center_correct": 7,
+            "visible_calls_with_peer": 22,
+            "visible_peer_correct": 7
+          },
+          "shared_assigned_counters": {
+            "counters": 33,
+            "centers": 594,
+            "source_target_present": 412,
+            "source_target_missing": 182,
+            "missing_with_peer_target": 170,
+            "missing_with_both_neighbor_p5": 5,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 374,
+            "all_five_with_matching_modes": 213,
+            "consensus_calls": 22,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 22,
+            "visible_center_correct": 7,
+            "visible_calls_with_peer": 22,
+            "visible_peer_correct": 7
+          }
+        }
+      },
+      "same_role_geometry_eligible_only": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 70,
+            "centers": 70,
+            "source_target_present": 66,
+            "source_target_missing": 4,
+            "missing_with_peer_target": 0,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 66,
+            "all_five_with_matching_modes": 25,
+            "consensus_calls": 2,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 2,
+            "visible_center_correct": 1,
+            "visible_calls_with_peer": 1,
+            "visible_peer_correct": 0
+          },
+          "shared_assigned_counters": {
+            "counters": 33,
+            "centers": 33,
+            "source_target_present": 32,
+            "source_target_missing": 1,
+            "missing_with_peer_target": 0,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 32,
+            "all_five_with_matching_modes": 17,
+            "consensus_calls": 2,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 2,
+            "visible_center_correct": 1,
+            "visible_calls_with_peer": 1,
+            "visible_peer_correct": 0
+          },
+          "missing_target_with_five_source_inputs": []
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 34,
+            "centers": 34,
+            "source_target_present": 20,
+            "source_target_missing": 14,
+            "missing_with_peer_target": 13,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 19,
+            "all_five_with_matching_modes": 12,
+            "consensus_calls": 1,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 1,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 1,
+            "visible_peer_correct": 0
+          },
+          "shared_assigned_counters": {
+            "counters": 33,
+            "centers": 33,
+            "source_target_present": 19,
+            "source_target_missing": 14,
+            "missing_with_peer_target": 13,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 18,
+            "all_five_with_matching_modes": 12,
+            "consensus_calls": 1,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 1,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 1,
+            "visible_peer_correct": 0
+          },
+          "missing_target_with_five_source_inputs": []
+        }
+      },
+      "inputs": "Use the two published 12:32 one-iteration packet snapshots."
+    },
+    {
+      "capture": "Nov27-2126-excerpts",
+      "left": "Yokohama 3205",
+      "right": "Edogawa 3205",
+      "provenance": "examples/nov27/validation/paired-43900392/README.md",
+      "left_snapshot_sha256": "22ba619e3996b70fc0f21e3644003afd3bcea306a2f5aa7aa9bf50d01ede211e",
+      "right_snapshot_sha256": "db35dae72049d59e83d9ad6f2dc9a386faff0d87f57bf9bec9a8abb233395b5f",
+      "left_complete_dus_sha256": null,
+      "right_complete_dus_sha256": null,
+      "immediate_neighbors": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 6,
+            "centers": 120,
+            "source_target_present": 90,
+            "source_target_missing": 30,
+            "missing_with_peer_target": 17,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 87,
+            "all_five_with_matching_modes": 61,
+            "consensus_calls": 5,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 5,
+            "visible_center_correct": 3,
+            "visible_calls_with_peer": 4,
+            "visible_peer_correct": 2
+          },
+          "shared_assigned_counters": {
+            "counters": 6,
+            "centers": 120,
+            "source_target_present": 90,
+            "source_target_missing": 30,
+            "missing_with_peer_target": 17,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 87,
+            "all_five_with_matching_modes": 61,
+            "consensus_calls": 5,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 5,
+            "visible_center_correct": 3,
+            "visible_calls_with_peer": 4,
+            "visible_peer_correct": 2
+          }
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 14,
+            "centers": 280,
+            "source_target_present": 243,
+            "source_target_missing": 37,
+            "missing_with_peer_target": 7,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 238,
+            "all_five_with_matching_modes": 151,
+            "consensus_calls": 21,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 21,
+            "visible_center_correct": 12,
+            "visible_calls_with_peer": 4,
+            "visible_peer_correct": 2
+          },
+          "shared_assigned_counters": {
+            "counters": 6,
+            "centers": 120,
+            "source_target_present": 100,
+            "source_target_missing": 20,
+            "missing_with_peer_target": 7,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 96,
+            "all_five_with_matching_modes": 68,
+            "consensus_calls": 4,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 4,
+            "visible_center_correct": 2,
+            "visible_calls_with_peer": 4,
+            "visible_peer_correct": 2
+          }
+        }
+      },
+      "same_role_neighbors": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 6,
+            "centers": 108,
+            "source_target_present": 80,
+            "source_target_missing": 28,
+            "missing_with_peer_target": 16,
+            "missing_with_both_neighbor_p5": 2,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 71,
+            "all_five_with_matching_modes": 26,
+            "consensus_calls": 0,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 0,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 0,
+            "visible_peer_correct": 0
+          },
+          "shared_assigned_counters": {
+            "counters": 6,
+            "centers": 108,
+            "source_target_present": 80,
+            "source_target_missing": 28,
+            "missing_with_peer_target": 16,
+            "missing_with_both_neighbor_p5": 2,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 71,
+            "all_five_with_matching_modes": 26,
+            "consensus_calls": 0,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 0,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 0,
+            "visible_peer_correct": 0
+          }
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 14,
+            "centers": 252,
+            "source_target_present": 217,
+            "source_target_missing": 35,
+            "missing_with_peer_target": 7,
+            "missing_with_both_neighbor_p5": 2,
+            "missing_with_all_five_source_fields": 1,
+            "all_five_source_fields": 208,
+            "all_five_with_matching_modes": 80,
+            "consensus_calls": 4,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 4,
+            "visible_center_correct": 1,
+            "visible_calls_with_peer": 0,
+            "visible_peer_correct": 0
+          },
+          "shared_assigned_counters": {
+            "counters": 6,
+            "centers": 108,
+            "source_target_present": 89,
+            "source_target_missing": 19,
+            "missing_with_peer_target": 7,
+            "missing_with_both_neighbor_p5": 2,
+            "missing_with_all_five_source_fields": 1,
+            "all_five_source_fields": 82,
+            "all_five_with_matching_modes": 38,
+            "consensus_calls": 0,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 0,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 0,
+            "visible_peer_correct": 0
+          }
+        }
+      },
+      "same_role_geometry_eligible_only": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 6,
+            "centers": 6,
+            "source_target_present": 4,
+            "source_target_missing": 2,
+            "missing_with_peer_target": 1,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 3,
+            "all_five_with_matching_modes": 2,
+            "consensus_calls": 0,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 0,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 0,
+            "visible_peer_correct": 0
+          },
+          "shared_assigned_counters": {
+            "counters": 6,
+            "centers": 6,
+            "source_target_present": 4,
+            "source_target_missing": 2,
+            "missing_with_peer_target": 1,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 3,
+            "all_five_with_matching_modes": 2,
+            "consensus_calls": 0,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 0,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 0,
+            "visible_peer_correct": 0
+          },
+          "missing_target_with_five_source_inputs": []
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 14,
+            "centers": 14,
+            "source_target_present": 11,
+            "source_target_missing": 3,
+            "missing_with_peer_target": 1,
+            "missing_with_both_neighbor_p5": 1,
+            "missing_with_all_five_source_fields": 1,
+            "all_five_source_fields": 12,
+            "all_five_with_matching_modes": 6,
+            "consensus_calls": 0,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 0,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 0,
+            "visible_peer_correct": 0
+          },
+          "shared_assigned_counters": {
+            "counters": 6,
+            "centers": 6,
+            "source_target_present": 4,
+            "source_target_missing": 2,
+            "missing_with_peer_target": 1,
+            "missing_with_both_neighbor_p5": 1,
+            "missing_with_all_five_source_fields": 1,
+            "all_five_source_fields": 5,
+            "all_five_with_matching_modes": 4,
+            "consensus_calls": 0,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 0,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 0,
+            "visible_peer_correct": 0
+          },
+          "missing_target_with_five_source_inputs": [
+            {
+              "counter": 43900393,
+              "slot": 28,
+              "modes_equal": true,
+              "donor_octets_equal": false,
+              "peer_target_present": true
+            }
+          ]
+        }
+      },
+      "inputs": "Use the one-pass 24-second excerpts from the paired-43900392 replay commands and the two snapshot hashes pinned in packet-comparison.json."
+    },
+    {
+      "capture": "member-vs-Nov28-0002",
+      "left": "Member 3205",
+      "right": "Edogawa 6140",
+      "provenance": "examples/nov28/member-3205-20min/README.md",
+      "left_snapshot_sha256": "e7fa92c1c09dcc145bff3b984181863898628a08495ac541faf43a82e1f5e479",
+      "right_snapshot_sha256": "07706bc0586d08857f7f1408a88752714bf2e724dbeb2e2b8d813881d8560b70",
+      "left_complete_dus_sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+      "right_complete_dus_sha256": null,
+      "immediate_neighbors": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 1121,
+            "centers": 22420,
+            "source_target_present": 22305,
+            "source_target_missing": 115,
+            "missing_with_peer_target": 21,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 22291,
+            "all_five_with_matching_modes": 12107,
+            "consensus_calls": 2743,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 2743,
+            "visible_center_correct": 2055,
+            "visible_calls_with_peer": 78,
+            "visible_peer_correct": 48
+          },
+          "shared_assigned_counters": {
+            "counters": 119,
+            "centers": 2380,
+            "source_target_present": 2357,
+            "source_target_missing": 23,
+            "missing_with_peer_target": 21,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 2353,
+            "all_five_with_matching_modes": 522,
+            "consensus_calls": 89,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 89,
+            "visible_center_correct": 56,
+            "visible_calls_with_peer": 78,
+            "visible_peer_correct": 48
+          }
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 120,
+            "centers": 2400,
+            "source_target_present": 2049,
+            "source_target_missing": 351,
+            "missing_with_peer_target": 348,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 2013,
+            "all_five_with_matching_modes": 441,
+            "consensus_calls": 76,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 76,
+            "visible_center_correct": 46,
+            "visible_calls_with_peer": 76,
+            "visible_peer_correct": 46
+          },
+          "shared_assigned_counters": {
+            "counters": 119,
+            "centers": 2380,
+            "source_target_present": 2030,
+            "source_target_missing": 350,
+            "missing_with_peer_target": 348,
+            "missing_with_both_neighbor_p5": 0,
+            "missing_with_all_five_source_fields": 0,
+            "all_five_source_fields": 1994,
+            "all_five_with_matching_modes": 440,
+            "consensus_calls": 76,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 76,
+            "visible_center_correct": 46,
+            "visible_calls_with_peer": 76,
+            "visible_peer_correct": 46
+          }
+        }
+      },
+      "same_role_neighbors": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 1121,
+            "centers": 20178,
+            "source_target_present": 20073,
+            "source_target_missing": 105,
+            "missing_with_peer_target": 20,
+            "missing_with_both_neighbor_p5": 9,
+            "missing_with_all_five_source_fields": 1,
+            "all_five_source_fields": 20032,
+            "all_five_with_matching_modes": 7921,
+            "consensus_calls": 1245,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 1245,
+            "visible_center_correct": 728,
+            "visible_calls_with_peer": 24,
+            "visible_peer_correct": 12
+          },
+          "shared_assigned_counters": {
+            "counters": 119,
+            "centers": 2142,
+            "source_target_present": 2122,
+            "source_target_missing": 20,
+            "missing_with_peer_target": 20,
+            "missing_with_both_neighbor_p5": 4,
+            "missing_with_all_five_source_fields": 1,
+            "all_five_source_fields": 2109,
+            "all_five_with_matching_modes": 230,
+            "consensus_calls": 27,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 27,
+            "visible_center_correct": 14,
+            "visible_calls_with_peer": 24,
+            "visible_peer_correct": 12
+          }
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 120,
+            "centers": 2160,
+            "source_target_present": 1834,
+            "source_target_missing": 326,
+            "missing_with_peer_target": 326,
+            "missing_with_both_neighbor_p5": 13,
+            "missing_with_all_five_source_fields": 2,
+            "all_five_source_fields": 1746,
+            "all_five_with_matching_modes": 191,
+            "consensus_calls": 23,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 23,
+            "visible_center_correct": 12,
+            "visible_calls_with_peer": 23,
+            "visible_peer_correct": 12
+          },
+          "shared_assigned_counters": {
+            "counters": 119,
+            "centers": 2142,
+            "source_target_present": 1816,
+            "source_target_missing": 326,
+            "missing_with_peer_target": 326,
+            "missing_with_both_neighbor_p5": 13,
+            "missing_with_all_five_source_fields": 2,
+            "all_five_source_fields": 1729,
+            "all_five_with_matching_modes": 191,
+            "consensus_calls": 23,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 23,
+            "visible_center_correct": 12,
+            "visible_calls_with_peer": 23,
+            "visible_peer_correct": 12
+          }
+        }
+      },
+      "same_role_geometry_eligible_only": {
+        "left_to_right": {
+          "all_source_assigned_counters": {
+            "counters": 1121,
+            "centers": 1121,
+            "source_target_present": 1113,
+            "source_target_missing": 8,
+            "missing_with_peer_target": 2,
+            "missing_with_both_neighbor_p5": 1,
+            "missing_with_all_five_source_fields": 1,
+            "all_five_source_fields": 1113,
+            "all_five_with_matching_modes": 444,
+            "consensus_calls": 61,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 61,
+            "visible_center_correct": 32,
+            "visible_calls_with_peer": 1,
+            "visible_peer_correct": 0
+          },
+          "shared_assigned_counters": {
+            "counters": 119,
+            "centers": 119,
+            "source_target_present": 117,
+            "source_target_missing": 2,
+            "missing_with_peer_target": 2,
+            "missing_with_both_neighbor_p5": 1,
+            "missing_with_all_five_source_fields": 1,
+            "all_five_source_fields": 118,
+            "all_five_with_matching_modes": 11,
+            "consensus_calls": 1,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 1,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 1,
+            "visible_peer_correct": 0
+          },
+          "missing_target_with_five_source_inputs": [
+            {
+              "counter": 43908228,
+              "slot": 28,
+              "modes_equal": false,
+              "donor_octets_equal": false,
+              "peer_target_present": true
+            }
+          ]
+        },
+        "right_to_left": {
+          "all_source_assigned_counters": {
+            "counters": 120,
+            "centers": 120,
+            "source_target_present": 93,
+            "source_target_missing": 27,
+            "missing_with_peer_target": 27,
+            "missing_with_both_neighbor_p5": 2,
+            "missing_with_all_five_source_fields": 2,
+            "all_five_source_fields": 93,
+            "all_five_with_matching_modes": 11,
+            "consensus_calls": 1,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 1,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 1,
+            "visible_peer_correct": 0
+          },
+          "shared_assigned_counters": {
+            "counters": 119,
+            "centers": 119,
+            "source_target_present": 92,
+            "source_target_missing": 27,
+            "missing_with_peer_target": 27,
+            "missing_with_both_neighbor_p5": 2,
+            "missing_with_all_five_source_fields": 2,
+            "all_five_source_fields": 92,
+            "all_five_with_matching_modes": 11,
+            "consensus_calls": 1,
+            "natural_gap_calls": 0,
+            "natural_gap_with_peer": 0,
+            "natural_gap_correct": 0,
+            "visible_center_calls": 1,
+            "visible_center_correct": 0,
+            "visible_calls_with_peer": 1,
+            "visible_peer_correct": 0
+          },
+          "missing_target_with_five_source_inputs": [
+            {
+              "counter": 43908239,
+              "slot": 28,
+              "modes_equal": false,
+              "donor_octets_equal": false,
+              "peer_target_present": true
+            },
+            {
+              "counter": 43908258,
+              "slot": 28,
+              "modes_equal": false,
+              "donor_octets_equal": false,
+              "peer_target_present": true
+            }
+          ]
+        }
+      },
+      "inputs": "Left joins member partial-packets.npz and member-dus.npz via --left-complete. Right uses the Nov28 00:02 6140 archived native MSC SHA256 fea03f5d0276dd3f754731d3f05ac6b595ef0aa051672463ba5b08fdfc9179fe from examples/nov27/validation/swb-gsc/replay.sh, via scripts/salvage_msc_packets.py MSC --transport-only --save-packets --out OUT."
+    }
+  ]
+}
