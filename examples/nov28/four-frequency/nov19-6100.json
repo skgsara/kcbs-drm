@@ -1,0 +1,368 @@
+{
+  "source_sha256": "6c32e360831c60cf1db71c6d7aaa2d93cbe9c25d6be0a35d69cc249aea221762",
+  "format": "signed int8 interleaved I,Q; I+jQ; baseband frequency increases with RF",
+  "nominal_center_khz": 6140,
+  "wideband_sections_left_hz_peak_hz_peak_psd_median_psd": {
+    "-450000": [
+      -425832,
+      -102.4,
+      -103.58
+    ],
+    "-400000": [
+      -359996,
+      -77.24,
+      -100.1
+    ],
+    "-350000": [
+      -311292,
+      -86.55,
+      -93.97
+    ],
+    "-300000": [
+      -282500,
+      -65.2,
+      -94.85
+    ],
+    "-250000": [
+      -205000,
+      -67.89,
+      -95.31
+    ],
+    "-200000": [
+      -175000,
+      -54.53,
+      -95.43
+    ],
+    "-150000": [
+      -140008,
+      -44.12,
+      -92.77
+    ],
+    "-100000": [
+      -85000,
+      -47.2,
+      -94.11
+    ],
+    "-50000": [
+      -40088,
+      -49.73,
+      -94.09
+    ],
+    "0": [
+      25000,
+      -37.13,
+      -92.29
+    ],
+    "50000": [
+      90000,
+      -39.74,
+      -93.61
+    ],
+    "100000": [
+      140004,
+      -60.4,
+      -93.23
+    ],
+    "150000": [
+      176048,
+      -57.04,
+      -92.24
+    ],
+    "200000": [
+      229960,
+      -63.05,
+      -91.3
+    ],
+    "250000": [
+      278160,
+      -63.54,
+      -90.29
+    ],
+    "300000": [
+      306160,
+      -65.77,
+      -90.29
+    ],
+    "350000": [
+      376000,
+      -77.11,
+      -93.04
+    ],
+    "400000": [
+      448776,
+      -102.43,
+      -103.58
+    ]
+  },
+  "channels": {
+    "-40000": {
+      "strongest_offset_hz": -40088,
+      "resolution_hz": 4,
+      "peak_psd_dbfs_per_hz": -49.729,
+      "carrier_peak_minus_local_median_db": 43.235,
+      "carrier_integrated_pm12hz_dbfs": -41.712,
+      "flank_avg_dbfs_per_hz": -91.849,
+      "used_seconds": 59.0,
+      "tracked_frequency_offset_from_coarse_hz_p10_p50_p90": [
+        -1.2861,
+        -0.7144,
+        -0.5409
+      ],
+      "carrier_rms_dbfs": -41.673,
+      "band_100_3300Hz_real_over_quadrature_db": 1.063,
+      "two_second_correlation_300_2500Hz_p10_p50_p90": [
+        -0.0356,
+        0.0774,
+        0.2986
+      ],
+      "audio_twenty_ms_power_dbfs_p10_p50_p90": [
+        -59.5363,
+        -57.4395,
+        -55.0542
+      ],
+      "bands": {
+        "100-300": {
+          "inphase_correlation": 0.3488,
+          "mean_coherence": 0.119,
+          "upper_sideband_dbfs": -68.992,
+          "lower_sideband_dbfs": -67.908
+        },
+        "300-2500": {
+          "inphase_correlation": 0.1149,
+          "mean_coherence": 0.0313,
+          "upper_sideband_dbfs": -58.559,
+          "lower_sideband_dbfs": -58.538
+        },
+        "2500-4000": {
+          "inphase_correlation": 0.0281,
+          "mean_coherence": 0.0069,
+          "upper_sideband_dbfs": -62.589,
+          "lower_sideband_dbfs": -62.351
+        },
+        "displaced_7s_300-2500": {
+          "inphase_correlation": 0.0003,
+          "mean_coherence": 0.0045,
+          "upper_sideband_dbfs": -58.559,
+          "lower_sideband_dbfs": -58.538
+        }
+      }
+    },
+    "-50000": {
+      "strongest_offset_hz": -49956,
+      "resolution_hz": 4,
+      "peak_psd_dbfs_per_hz": -93.521,
+      "carrier_peak_minus_local_median_db": 0.93,
+      "carrier_integrated_pm12hz_dbfs": -79.625,
+      "flank_avg_dbfs_per_hz": -94.436,
+      "used_seconds": 59.0,
+      "tracked_frequency_offset_from_coarse_hz_p10_p50_p90": [
+        -3.1242,
+        -0.334,
+        1.8831
+      ],
+      "carrier_rms_dbfs": -80.53,
+      "band_100_3300Hz_real_over_quadrature_db": 0.013,
+      "two_second_correlation_300_2500Hz_p10_p50_p90": [
+        -0.0228,
+        0.0037,
+        0.0146
+      ],
+      "audio_twenty_ms_power_dbfs_p10_p50_p90": [
+        -59.9048,
+        -58.6379,
+        -56.8143
+      ],
+      "bands": {
+        "100-300": {
+          "inphase_correlation": 0.009,
+          "mean_coherence": 0.0047,
+          "upper_sideband_dbfs": -71.207,
+          "lower_sideband_dbfs": -71.426
+        },
+        "300-2500": {
+          "inphase_correlation": 0.0006,
+          "mean_coherence": 0.0043,
+          "upper_sideband_dbfs": -60.804,
+          "lower_sideband_dbfs": -60.828
+        },
+        "2500-4000": {
+          "inphase_correlation": 0.0009,
+          "mean_coherence": 0.0041,
+          "upper_sideband_dbfs": -62.723,
+          "lower_sideband_dbfs": -57.437
+        },
+        "displaced_7s_300-2500": {
+          "inphase_correlation": 0.0025,
+          "mean_coherence": 0.0043,
+          "upper_sideband_dbfs": -60.804,
+          "lower_sideband_dbfs": -60.828
+        }
+      }
+    },
+    "-45000": {
+      "strongest_offset_hz": -45032,
+      "resolution_hz": 4,
+      "peak_psd_dbfs_per_hz": -94.16,
+      "carrier_peak_minus_local_median_db": 0.338,
+      "carrier_integrated_pm12hz_dbfs": -80.246,
+      "flank_avg_dbfs_per_hz": -94.406,
+      "used_seconds": 59.0,
+      "tracked_frequency_offset_from_coarse_hz_p10_p50_p90": [
+        -2.2608,
+        0.3394,
+        2.3391
+      ],
+      "carrier_rms_dbfs": -80.968,
+      "band_100_3300Hz_real_over_quadrature_db": 0.011,
+      "two_second_correlation_300_2500Hz_p10_p50_p90": [
+        -0.0194,
+        0.0009,
+        0.0207
+      ],
+      "audio_twenty_ms_power_dbfs_p10_p50_p90": [
+        -60.5396,
+        -59.5263,
+        -58.6041
+      ],
+      "bands": {
+        "100-300": {
+          "inphase_correlation": 0.0011,
+          "mean_coherence": 0.0043,
+          "upper_sideband_dbfs": -71.686,
+          "lower_sideband_dbfs": -71.706
+        },
+        "300-2500": {
+          "inphase_correlation": -0.0014,
+          "mean_coherence": 0.0045,
+          "upper_sideband_dbfs": -60.798,
+          "lower_sideband_dbfs": -61.121
+        },
+        "2500-4000": {
+          "inphase_correlation": 0.0012,
+          "mean_coherence": 0.0043,
+          "upper_sideband_dbfs": -61.091,
+          "lower_sideband_dbfs": -62.442
+        },
+        "displaced_7s_300-2500": {
+          "inphase_correlation": 0.0022,
+          "mean_coherence": 0.004,
+          "upper_sideband_dbfs": -60.798,
+          "lower_sideband_dbfs": -61.121
+        }
+      }
+    },
+    "40000": {
+      "strongest_offset_hz": 39996,
+      "resolution_hz": 4,
+      "peak_psd_dbfs_per_hz": -93.596,
+      "carrier_peak_minus_local_median_db": 0.744,
+      "carrier_integrated_pm12hz_dbfs": -79.471,
+      "flank_avg_dbfs_per_hz": -94.319,
+      "used_seconds": 59.0,
+      "tracked_frequency_offset_from_coarse_hz_p10_p50_p90": [
+        -2.4928,
+        0.2817,
+        2.4827
+      ],
+      "carrier_rms_dbfs": -80.355,
+      "band_100_3300Hz_real_over_quadrature_db": 0.015,
+      "two_second_correlation_300_2500Hz_p10_p50_p90": [
+        -0.0206,
+        0.0074,
+        0.0181
+      ],
+      "audio_twenty_ms_power_dbfs_p10_p50_p90": [
+        -60.4534,
+        -59.5006,
+        -58.6021
+      ],
+      "bands": {
+        "100-300": {
+          "inphase_correlation": 0.0208,
+          "mean_coherence": 0.005,
+          "upper_sideband_dbfs": -71.223,
+          "lower_sideband_dbfs": -71.337
+        },
+        "300-2500": {
+          "inphase_correlation": 0.0025,
+          "mean_coherence": 0.0044,
+          "upper_sideband_dbfs": -60.708,
+          "lower_sideband_dbfs": -61.075
+        },
+        "2500-4000": {
+          "inphase_correlation": 0.0026,
+          "mean_coherence": 0.0044,
+          "upper_sideband_dbfs": -61.8,
+          "lower_sideband_dbfs": -62.655
+        },
+        "displaced_7s_300-2500": {
+          "inphase_correlation": -0.0053,
+          "mean_coherence": 0.0043,
+          "upper_sideband_dbfs": -60.708,
+          "lower_sideband_dbfs": -61.075
+        }
+      }
+    },
+    "25000": {
+      "strongest_offset_hz": 25000,
+      "resolution_hz": 4,
+      "peak_psd_dbfs_per_hz": -37.129,
+      "carrier_peak_minus_local_median_db": 49.281,
+      "carrier_integrated_pm12hz_dbfs": -29.295,
+      "flank_avg_dbfs_per_hz": -80.572,
+      "used_seconds": 59.0,
+      "tracked_frequency_offset_from_coarse_hz_p10_p50_p90": [
+        -0.4583,
+        -0.0703,
+        0.4517
+      ],
+      "carrier_rms_dbfs": -29.452,
+      "band_100_3300Hz_real_over_quadrature_db": 2.236,
+      "two_second_correlation_300_2500Hz_p10_p50_p90": [
+        -0.1421,
+        0.0992,
+        0.2729
+      ],
+      "audio_twenty_ms_power_dbfs_p10_p50_p90": [
+        -54.2183,
+        -46.9785,
+        -40.943
+      ],
+      "bands": {
+        "100-300": {
+          "inphase_correlation": 0.581,
+          "mean_coherence": 0.3082,
+          "upper_sideband_dbfs": -49.95,
+          "lower_sideband_dbfs": -49.41
+        },
+        "300-2500": {
+          "inphase_correlation": 0.0845,
+          "mean_coherence": 0.025,
+          "upper_sideband_dbfs": -48.649,
+          "lower_sideband_dbfs": -48.597
+        },
+        "2500-4000": {
+          "inphase_correlation": 0.0598,
+          "mean_coherence": 0.0154,
+          "upper_sideband_dbfs": -53.446,
+          "lower_sideband_dbfs": -53.281
+        },
+        "displaced_7s_300-2500": {
+          "inphase_correlation": 0.0001,
+          "mean_coherence": 0.0046,
+          "upper_sideband_dbfs": -48.649,
+          "lower_sideband_dbfs": -48.597
+        }
+      }
+    }
+  },
+  "listen": {
+    "used_slice_seconds_half_open": [
+      260.5,
+      319.5
+    ],
+    "sample_rate_hz": 12000,
+    "linear_gain": 94.69059432576667,
+    "wav_sha256": "82db89e4448fb69d9c82dab2edcb5b005226c5def067fe246d069934620dfa5f"
+  }
+}

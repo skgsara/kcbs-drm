@@ -1,0 +1,71 @@
+{
+  "files": [
+    {
+      "source": "edogawa-6140.wav",
+      "samples": 1080000,
+      "rate": 12000,
+      "packets": 4500,
+      "utc_runs_unix_ns": [
+        [
+          1795826527683056108,
+          1795826617683063987
+        ]
+      ],
+      "sha256_wav": "094819b01e37629cc0512f8adb83eda0e963896f57591caeb770474cb641e64c",
+      "sha256_pcm": "a230dbe05486c2443dfd8e8564aaf57d2094ff1673904fec8774fef53103c36b",
+      "sha256_packet_log": "3d7cec9f7097d1e4e4803bfb77046860a2238c97985a8120f43ec08c330b51c9"
+    },
+    {
+      "source": "edogawa-6100.wav",
+      "samples": 1080000,
+      "rate": 12000,
+      "packets": 4500,
+      "utc_runs_unix_ns": [
+        [
+          1795826528843056108,
+          1795826618843063987
+        ]
+      ],
+      "sha256_wav": "66ddda38ddf66d300049a7f8867a0cf703470d0dea00d652c68500eff9839af1",
+      "sha256_pcm": "a835c13a88e348054a62ad6f41e7261e4e08e8ecbd515ff86cc3a583f23e4048",
+      "sha256_packet_log": "c48fb8dba70a2ec196f0b62836705332bcd5256d7a7e3a67d66ae2c8bc6c0d72"
+    },
+    {
+      "source": "yokohama-3205.wav",
+      "samples": 1080000,
+      "rate": 12000,
+      "packets": 4500,
+      "utc_runs_unix_ns": [
+        [
+          1795826527765038897,
+          1795826617764994343
+        ]
+      ],
+      "sha256_wav": "7198cdfe27c6ada997f42ece81708533ce5a56a40780915bb6658c81714aa0f3",
+      "sha256_pcm": "4a3c7d58962842159dbb84b794ac69c51c47c6be437fc2f5785e16d43c917d12",
+      "sha256_packet_log": "1e909e387bafd8ce501588c2e5cf02a18d9befad6dbdc0bbe9d39e92d66d9bb9"
+    },
+    {
+      "source": "yokohama-3250.wav",
+      "samples": 1080000,
+      "rate": 12000,
+      "packets": 4500,
+      "utc_runs_unix_ns": [
+        [
+          1795826528365038897,
+          1795826618364994343
+        ]
+      ],
+      "sha256_wav": "78c0017f1fce693330432615b24c78be840585e2535d7e963432fa8b91644a20",
+      "sha256_pcm": "7991f81a7ed5518fbff7e2b85660d75599a08b1a5451e2cee03f833b2d50f280",
+      "sha256_packet_log": "d251e47349080d3af3db4e76be40a52ebcac9489a2f84a287d72b0031e22a549"
+    }
+  ],
+  "common_unix_ns": [
+    [
+      1795826528843056108,
+      1795826617683063987
+    ]
+  ],
+  "common_seconds": 88.840007879
+}

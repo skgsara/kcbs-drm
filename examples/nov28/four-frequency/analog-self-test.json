@@ -1,0 +1,48 @@
+{
+  "same_inverted": {
+    "decision": "shared_modulation_supported",
+    "model": {
+      "offset_s": 0.4299652777777786,
+      "drift_ppm": 38.194444444372756,
+      "polarity": -1,
+      "train_starts_s": [
+        7,
+        19,
+        31
+      ]
+    },
+    "fixed_scores": [
+      0.9635149157283588,
+      0.9202088292048777,
+      0.8626449849039312
+    ]
+  },
+  "same_positive": {
+    "decision": "shared_modulation_supported",
+    "model": {
+      "offset_s": 0.4299652777777786,
+      "drift_ppm": 38.194444444372756,
+      "polarity": 1,
+      "train_starts_s": [
+        7,
+        19,
+        31
+      ]
+    },
+    "fixed_scores": [
+      0.9635613426547234,
+      0.9202802842385199,
+      0.8624327627945855
+    ]
+  },
+  "unrelated": {
+    "decision": "inconclusive",
+    "model": null,
+    "fixed_scores": []
+  },
+  "tone": {
+    "decision": "inconclusive",
+    "model": null,
+    "fixed_scores": []
+  }
+}

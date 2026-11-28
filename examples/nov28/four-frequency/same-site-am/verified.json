@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "source": "edogawa-6100.wav",
+      "samples": 1080000,
+      "rate": 12000,
+      "packets": 4500,
+      "utc_runs_unix_ns": [
+        [
+          1795826805603055945,
+          1795826895603051351
+        ]
+      ],
+      "sha256_wav": "ee064bc438fc9a969797155d6ecbfa4ac8ed0410ec91a8549a8e17ec1d647d78",
+      "sha256_pcm": "91cd201800df6cf1e07eba35fd863f2f344925accb92c4cc2064ee74727a087a",
+      "sha256_packet_log": "27a5b564cdacf8e92f99adbd75f12f1b8018e40d861be49d9e05ab5a062b33eb"
+    },
+    {
+      "source": "edogawa-3250.wav",
+      "samples": 1080000,
+      "rate": 12000,
+      "packets": 4500,
+      "utc_runs_unix_ns": [
+        [
+          1795826806643056832,
+          1795826896643051351
+        ]
+      ],
+      "sha256_wav": "f9abb6671485e8d7dc4a32d960049d5d519703b36d9ddc19d2840f162a1c80ab",
+      "sha256_pcm": "cd43b29787a2885d10e6a7e83d8495ec2dc49bed10e8688d80851edae8b172ed",
+      "sha256_packet_log": "bc95e0db3e9a0344c7fc70dc0accf2c25e4ca1c5763e6d05b53c121c0cd11cdc"
+    }
+  ],
+  "common_unix_ns": [
+    [
+      1795826806643056832,
+      1795826895603051351
+    ]
+  ],
+  "common_seconds": 88.959994519
+}

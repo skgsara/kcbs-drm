@@ -1,0 +1,85 @@
+{
+  "decision": "inconclusive",
+  "training": [
+    {
+      "start_s": 7,
+      "measured_lag_s": 1.9795833333333341,
+      "signed_correlation": -0.03079542391234617,
+      "peak_advantage": 0.0030197525781285525,
+      "quality_6100": {
+        "informative": true,
+        "wide_subbands": 4,
+        "strongest_23hz_fraction": 0.04293495129768646,
+        "carrier_over_sideband_bin_db": 39.14945622177287,
+        "audio_rms_over_envelope_mean": 0.1948563298623258
+      },
+      "quality_3250": {
+        "informative": false,
+        "wide_subbands": 4,
+        "strongest_23hz_fraction": 0.02609682043917242,
+        "carrier_over_sideband_bin_db": 1.349858509200711,
+        "audio_rms_over_envelope_mean": 0.32854463736243106
+      },
+      "eligible": false
+    },
+    {
+      "start_s": 19,
+      "measured_lag_s": -0.6963333333333317,
+      "signed_correlation": -0.027901533978561134,
+      "peak_advantage": 0.0014580392652309322,
+      "quality_6100": {
+        "informative": true,
+        "wide_subbands": 4,
+        "strongest_23hz_fraction": 0.08376538311754356,
+        "carrier_over_sideband_bin_db": 39.87954145912027,
+        "audio_rms_over_envelope_mean": 0.18308986847848183
+      },
+      "quality_3250": {
+        "informative": false,
+        "wide_subbands": 4,
+        "strongest_23hz_fraction": 0.024543376510432674,
+        "carrier_over_sideband_bin_db": 1.6996386178084713,
+        "audio_rms_over_envelope_mean": 0.3290477667779878
+      },
+      "eligible": false
+    },
+    {
+      "start_s": 31,
+      "measured_lag_s": 3.368000000000002,
+      "signed_correlation": -0.02777294706886362,
+      "peak_advantage": 0.0018680932630537536,
+      "quality_6100": {
+        "informative": true,
+        "wide_subbands": 4,
+        "strongest_23hz_fraction": 0.05676726118892252,
+        "carrier_over_sideband_bin_db": 39.72236762744081,
+        "audio_rms_over_envelope_mean": 0.2000860975742616
+      },
+      "quality_3250": {
+        "informative": false,
+        "wide_subbands": 4,
+        "strongest_23hz_fraction": 0.02528247325627935,
+        "carrier_over_sideband_bin_db": 1.1479964514729528,
+        "audio_rms_over_envelope_mean": 0.3271815450926075
+      },
+      "eligible": false
+    }
+  ],
+  "model": null,
+  "held_out": [],
+  "reason": "training did not establish a unique repeatable lag and polarity",
+  "inputs": {
+    "6100": {
+      "file": "edogawa-6100.wav",
+      "samples_in_file": 1080000,
+      "sample_rate": 12000,
+      "file_sha256": "66ddda38ddf66d300049a7f8867a0cf703470d0dea00d652c68500eff9839af1"
+    },
+    "3250": {
+      "file": "yokohama-3250.wav",
+      "samples_in_file": 1080000,
+      "sample_rate": 12000,
+      "file_sha256": "78c0017f1fce693330432615b24c78be840585e2535d7e963432fa8b91644a20"
+    }
+  }
+}

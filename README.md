@@ -16,6 +16,12 @@ recordings used below. [KoryoFront’s original decoder](https://github.com/Kory
 
 Planned receiver integrations are listed in the [KiwiSDR, Dream and DecDRM roadmap](docs/roadmap.md).
 
+We compared 3250/6100 kHz AM and 3205/6140 kHz DRM using simultaneous
+four-channel IQ. The November 27 11:05 handoff also supports a shared AM/DRM
+programme on 521 held-out first-position EVS words. The new November 28
+four-channel recording had too little low-frequency signal to repeat that
+comparison. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
+
 The current blind receiver milestone uses raw IQ as its only input and aims
 to recover all 60 EVS words of an unseen, CRC-good counter. The November 15
 test fixes the target. Its protocol covers checks against evidence held

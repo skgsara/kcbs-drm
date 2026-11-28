@@ -1,0 +1,55 @@
+{
+  "receiver_start_utc": "2026-11-27T11:05:17.094951+00:00",
+  "nominal_drm_hz": 3205000,
+  "nominal_am_hz": 3250000,
+  "slots": 11700,
+  "supplied_p1": 1545,
+  "erasures_excluded": 10155,
+  "stock_pcm_sha256": "61149bf53d84dd3eec6d269693bf63e2b33bb30043b926d0fe453a0a47738a21",
+  "same_pcm_as_reference": true,
+  "comparison": {
+    "lag_seconds": -3.12,
+    "drift_ppm": 0,
+    "training_count": 791,
+    "training_in_range": 752,
+    "training_score": 0.5044418609582588,
+    "heldout_count": 521,
+    "heldout_score": 0.4011777043713346,
+    "heldout_half_scores": [
+      0.4483062904706029,
+      0.3585371173555292
+    ],
+    "cyclic_controls": 199,
+    "cyclic_q99": 0.050854996374072814,
+    "cyclic_max": 0.058420861243510966,
+    "cyclic_at_least_observed": 0,
+    "heldout_threshold": 0.28,
+    "supports_shared_programme": true
+  },
+  "calibration_without_target": {
+    "lag_seconds": -3.12,
+    "drift_ppm": 0,
+    "training_count": 776,
+    "training_in_range": 737,
+    "training_score": 0.5019101585381986,
+    "heldout_count": 521,
+    "heldout_score": 0.4011777043713346,
+    "heldout_half_scores": [
+      0.4483062904706029,
+      0.3585371173555292
+    ],
+    "cyclic_controls": 199,
+    "cyclic_q99": 0.050854996374072814,
+    "cyclic_max": 0.058420861243510966,
+    "cyclic_at_least_observed": 0,
+    "heldout_threshold": 0.28,
+    "supports_shared_programme": true
+  },
+  "heldout_target": {
+    "counter": 43869343,
+    "words": 15,
+    "first_g192_slot": 3540,
+    "last_g192_slot": 3596,
+    "score": 0.6528817087110905
+  }
+}

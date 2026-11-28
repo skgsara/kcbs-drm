@@ -1,0 +1,301 @@
+{
+  "protocol": "For each of the two finished digital IQ sources, use one finite Wiener MLC=1 Dream with channel 6, flat release window 90 seconds, zero offset, no padding. Code upstream pcm_v4.py:1053 decodes interleaved I/Q, and capture.py writes the returned little-endian bytes straight to stereo WAV. Dream creceivedata.h:65-66 channel 6 = CS_IQ_POS_ZERO, creceivedata.cpp:313 and :425 left real, right imaginary. Physical CRCs, phase tags, phase-zero counter and packet ordinal establish matches. No searching on signal content.",
+  "dream_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "receiver_window": "One 90-second pass per source, physical EOF on each.",
+  "all_four_station_clock_common_seconds": 88.840007879,
+  "digital": {
+    "3205": {
+      "source": "yokohama-3205.wav",
+      "iq_sha256": "7198cdfe27c6ada997f42ece81708533ce5a56a40780915bb6658c81714aa0f3",
+      "start_utc": "2026-11-28T00:42:07.765038897Z",
+      "end_exclusive_utc": "2026-11-28T00:43:37.764994343Z",
+      "reported_recorder_clock_jumps_gt_one_sample": 0,
+      "control_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "msc_sha256": null,
+      "control_blocks": {
+        "FAC": {
+          "observed": 0,
+          "crc_passed": 0,
+          "crc_failed": 0
+        },
+        "SDC": {
+          "observed": 0,
+          "crc_passed": 0,
+          "crc_failed": 0
+        }
+      },
+      "services": [],
+      "station_labels": [],
+      "physical_msc_callback_lengths": {},
+      "raw_packet_candidates": 0,
+      "crc_good_packet_observations": 0,
+      "crc_good_native_du_observations": 0,
+      "wrong_header_among_crc_good": [],
+      "unique_assigned_packets": 0,
+      "assigned_phases": 0,
+      "complete_dus": 0,
+      "complete_groups": 0,
+      "complete_transported_slots": 0,
+      "partial_transported_slots": 0,
+      "full_transport_slots_from_partially_received_du": 0,
+      "full_transported_slots_by_position": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "direct_phase_zero_anchor_counters": [],
+      "assigned_counter_ranges": [],
+      "assigned_counters": 0,
+      "complete_group_ranges": [],
+      "assigned_tick_ranges": [],
+      "ticks_missing_in_assigned_span": 0,
+      "full_dus_missing_in_assigned_span": 0,
+      "ambiguous_or_unassigned_crc_good_packet_observations": 0,
+      "conflicting_assembled_du_coordinates": [],
+      "reassembly_crc_failures": 0
+    },
+    "6140": {
+      "source": "edogawa-6140.wav",
+      "iq_sha256": "094819b01e37629cc0512f8adb83eda0e963896f57591caeb770474cb641e64c",
+      "start_utc": "2026-11-28T00:42:07.683056108Z",
+      "end_exclusive_utc": "2026-11-28T00:43:37.683063987Z",
+      "reported_recorder_clock_jumps_gt_one_sample": 0,
+      "control_sha256": "47cd8743cd2c8cf86f094d083dd24d993497ed077abfc02f5a03ff2ed29a990c",
+      "msc_sha256": "7e0b0839230d9b5e701598e37b207c495c843695191614c1d1b81b5ad736a991",
+      "control_blocks": {
+        "FAC": {
+          "observed": 221,
+          "crc_passed": 221,
+          "crc_failed": 0
+        },
+        "SDC": {
+          "observed": 75,
+          "crc_passed": 66,
+          "crc_failed": 9
+        }
+      },
+      "services": [
+        {
+          "service_id": "A00002",
+          "short_id": 0,
+          "audio_ca": 0,
+          "language_code": 0,
+          "service": "data",
+          "service_descriptor": 0,
+          "data_ca": 0,
+          "count": 221
+        }
+      ],
+      "station_labels": [
+        "조선중앙제2라지오방송"
+      ],
+      "physical_msc_callback_lengths": {
+        "728": 218
+      },
+      "raw_packet_candidates": 872,
+      "crc_good_packet_observations": 293,
+      "crc_good_native_du_observations": 59,
+      "wrong_header_among_crc_good": [],
+      "unique_assigned_packets": 198,
+      "assigned_phases": 50,
+      "complete_dus": 48,
+      "complete_groups": 13,
+      "complete_transported_slots": 988,
+      "partial_transported_slots": 6,
+      "full_transport_slots_from_partially_received_du": 28,
+      "full_transported_slots_by_position": {
+        "1": 248,
+        "2": 246,
+        "3": 246,
+        "4": 248
+      },
+      "direct_phase_zero_anchor_counters": [
+        43910125,
+        43910137,
+        43910138,
+        43910140,
+        43910141,
+        43910142,
+        43910143,
+        43910144,
+        43910145,
+        43910146,
+        43910147,
+        43910148,
+        43910150,
+        43910151,
+        43910152,
+        43910154,
+        43910158,
+        43910159,
+        43910163,
+        43910180,
+        43910194
+      ],
+      "assigned_counter_ranges": [
+        [
+          43910125,
+          43910125
+        ],
+        [
+          43910137,
+          43910138
+        ],
+        [
+          43910140,
+          43910148
+        ],
+        [
+          43910150,
+          43910152
+        ],
+        [
+          43910154,
+          43910154
+        ],
+        [
+          43910158,
+          43910159
+        ],
+        [
+          43910163,
+          43910163
+        ],
+        [
+          43910180,
+          43910180
+        ],
+        [
+          43910194,
+          43910194
+        ]
+      ],
+      "assigned_counters": 21,
+      "complete_group_ranges": [
+        [
+          43910137,
+          43910137
+        ],
+        [
+          43910140,
+          43910142
+        ],
+        [
+          43910144,
+          43910148
+        ],
+        [
+          43910150,
+          43910152
+        ],
+        [
+          43910194,
+          43910194
+        ]
+      ],
+      "assigned_tick_ranges": [
+        [
+          131730375,
+          131730375
+        ],
+        [
+          131730411,
+          131730414
+        ],
+        [
+          131730420,
+          131730429
+        ],
+        [
+          131730431,
+          131730446
+        ],
+        [
+          131730450,
+          131730458
+        ],
+        [
+          131730462,
+          131730462
+        ],
+        [
+          131730474,
+          131730477
+        ],
+        [
+          131730489,
+          131730489
+        ],
+        [
+          131730540,
+          131730540
+        ],
+        [
+          131730582,
+          131730584
+        ]
+      ],
+      "ticks_missing_in_assigned_span": 160,
+      "full_dus_missing_in_assigned_span": 162,
+      "ambiguous_or_unassigned_crc_good_packet_observations": 95,
+      "conflicting_assembled_du_coordinates": [],
+      "reassembly_crc_failures": 0
+    }
+  },
+  "diversity": {
+    "3205": {
+      "packets": 0,
+      "complete_dus": 0,
+      "complete_groups": 0,
+      "fully_transported_slots": 0
+    },
+    "6140": {
+      "packets": 198,
+      "complete_dus": 48,
+      "complete_groups": 13,
+      "fully_transported_slots": 988
+    },
+    "3205_only": {
+      "packets": 0,
+      "complete_dus": 0,
+      "complete_groups": 0,
+      "fully_transported_slots": 0
+    },
+    "6140_only": {
+      "packets": 198,
+      "complete_dus": 48,
+      "complete_groups": 13,
+      "fully_transported_slots": 988
+    },
+    "overlap": {
+      "packets": 0,
+      "complete_dus": 0,
+      "complete_groups": 0,
+      "fully_transported_slots": 0
+    },
+    "union": {
+      "packets": 198,
+      "complete_dus": 48,
+      "complete_groups": 13,
+      "fully_transported_slots": 988
+    }
+  },
+  "shared_full_packet_bytes_checked": 0,
+  "mismatches": [],
+  "simultaneous_du_comparison": "No pair of assigned packet coordinates; observed digital union exactly equals the 6140 receiver.",
+  "union_gain_above_6140": {
+    "packets": 0,
+    "complete_dus": 0,
+    "complete_groups": 0,
+    "fully_transported_slots": 0
+  },
+  "text_supported_reference_coverage": {
+    "available_counter_archives_scanned_with_crc_supported_field": 90,
+    "counter_range_pairs": 25,
+    "maximum_catalogued_counter": 43877953,
+    "intersecting_supplied_counters": [],
+    "text_supported_original_full_evs_slots": 0,
+    "reference_scope": "Previously supplied local keys.npz files with a counters table and crc_supported field. Only counter indices read."
+  }
+}

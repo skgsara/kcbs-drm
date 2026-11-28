@@ -1,0 +1,341 @@
+{
+  "capture": "2026-11-27 06:17 UTC",
+  "receiver": "Two Airspy HF+ units on the same antenna splitter.",
+  "original_iq_per_frequency": {
+    "seconds": 30,
+    "sample_pairs": 360000,
+    "complex_sample_rate_hz": 12000
+  },
+  "host_start_separation_reported_ms": 1.611,
+  "utc_label_6140_minus_3205_us": 1622,
+  "timing": "Recorder host start labels. No common sample clock or sample-level UTC is established.",
+  "coordinate": "(phase-zero counter, phase 0..2, packet ordinal 0..3). Headers 80/01/02/43 carry ordinals via the continuity index.",
+  "integrity": "Each retained row has four CRC-valid physical packets, matching headers, native DU CRC and a unique whole-DU match after phase/counter assignment. No ambiguous, conflicting or rollover coordinates were accepted.",
+  "coverage": "20 transported EVS slots per complete DU; 3 DUs per full counter group. A slot counts carriage only.",
+  "replay": "Original-only and 12 s preview + untouched original + 12 s repeated tail. Only the middle epoch is counted.",
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "capture_metadata_sha256": "4c48fbb4e6fc28e53b1d61ceb3d7c47abef4b5182862eecf96bd437a6639765b",
+  "published_packets_sha256": "85986684749e84fb33434cccb39c9a994ddeb091ed01f20d62adfb2edc4f35ed",
+  "contributor_msc_sha256": "bb940a777e34f2b96e19ea73294e1e5b0bbe937af269b075c18010077fc0817d",
+  "contributor_packets_agree_on_each_frequency": 264,
+  "receivers": {
+    "3205": {
+      "iq_sha256": "c3a47ab1cbe110e3cb428660273dc3204acad4dd489a1a2d0509b5c49fa7190c",
+      "started_utc": "2026-11-27T06:17:22.258257+00:00",
+      "driver_drops_reported": 0,
+      "clipped_pcm_samples_reported": 0,
+      "ordinary": {
+        "msc_sha256": "e085e1679f1e20b5ff64a518ca803b5fc65dbd351c0bfb4485f2b67d04765fda",
+        "raw_rows": 68,
+        "retained_raw_row_range": [
+          0,
+          67
+        ],
+        "retained_first_last": [
+          [
+            43854887,
+            1
+          ],
+          [
+            43854909,
+            2
+          ]
+        ],
+        "phase_zero_anchors": 22,
+        "counter_rollovers_in_retained_epoch": 0,
+        "excluded_splice_rows": 0,
+        "crc_valid_packets_in_excluded_splice_rows": 0,
+        "excluded_complete_repeated_rows": 0,
+        "splice_barriers": []
+      },
+      "preview_and_drain": {
+        "msc_sha256": "72ef6e28d61f995c29e42ee6c36edc002cd8e7de9c17fa6ffe303783338d63a2",
+        "raw_rows": 128,
+        "retained_raw_row_range": [
+          25,
+          98
+        ],
+        "retained_first_last": [
+          [
+            43854885,
+            2
+          ],
+          [
+            43854910,
+            0
+          ]
+        ],
+        "phase_zero_anchors": 25,
+        "counter_rollovers_in_retained_epoch": 0,
+        "excluded_splice_rows": 2,
+        "crc_valid_packets_in_excluded_splice_rows": 0,
+        "excluded_complete_repeated_rows": 52,
+        "splice_barriers": [
+          {
+            "last_phase_zero_before": [
+              23,
+              43854895
+            ],
+            "first_phase_zero_after": [
+              26,
+              43854886
+            ],
+            "rejected_raw_rows": [
+              24
+            ]
+          },
+          {
+            "last_phase_zero_before": [
+              98,
+              43854910
+            ],
+            "first_phase_zero_after": [
+              101,
+              43854901
+            ],
+            "rejected_raw_rows": [
+              99
+            ]
+          }
+        ]
+      }
+    },
+    "6140": {
+      "iq_sha256": "9f708e4e206605ad934d9dcddeb183b7f0a011f631b7a998674aa74c5662c6ab",
+      "started_utc": "2026-11-27T06:17:22.259879+00:00",
+      "driver_drops_reported": 0,
+      "clipped_pcm_samples_reported": 0,
+      "ordinary": {
+        "msc_sha256": "90ba438415b5f1babaa57f04525cfca472a6528cd5dc14d94edbfb79f99f7f79",
+        "raw_rows": 69,
+        "retained_raw_row_range": [
+          0,
+          68
+        ],
+        "retained_first_last": [
+          [
+            43854887,
+            1
+          ],
+          [
+            43854910,
+            0
+          ]
+        ],
+        "phase_zero_anchors": 23,
+        "counter_rollovers_in_retained_epoch": 0,
+        "excluded_splice_rows": 0,
+        "crc_valid_packets_in_excluded_splice_rows": 0,
+        "excluded_complete_repeated_rows": 0,
+        "splice_barriers": []
+      },
+      "preview_and_drain": {
+        "msc_sha256": "244d62064c360c433e63242f187b979985957ffe57cbc367edcb0688c3120afb",
+        "raw_rows": 129,
+        "retained_raw_row_range": [
+          26,
+          99
+        ],
+        "retained_first_last": [
+          [
+            43854886,
+            0
+          ],
+          [
+            43854910,
+            1
+          ]
+        ],
+        "phase_zero_anchors": 25,
+        "counter_rollovers_in_retained_epoch": 0,
+        "excluded_splice_rows": 2,
+        "crc_valid_packets_in_excluded_splice_rows": 0,
+        "excluded_complete_repeated_rows": 53,
+        "splice_barriers": [
+          {
+            "last_phase_zero_before": [
+              23,
+              43854895
+            ],
+            "first_phase_zero_after": [
+              26,
+              43854886
+            ],
+            "rejected_raw_rows": [
+              25
+            ]
+          },
+          {
+            "last_phase_zero_before": [
+              98,
+              43854910
+            ],
+            "first_phase_zero_after": [
+              101,
+              43854901
+            ],
+            "rejected_raw_rows": [
+              100
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runs": {
+    "ordinary": {
+      "counts": {
+        "3205": {
+          "physical_packets": 272,
+          "complete_dus": 68,
+          "complete_counter_groups": 22,
+          "transported_evs_slots": 1360
+        },
+        "6140": {
+          "physical_packets": 276,
+          "complete_dus": 69,
+          "complete_counter_groups": 22,
+          "transported_evs_slots": 1380
+        },
+        "3205_only": {
+          "physical_packets": 0,
+          "complete_dus": 0,
+          "complete_counter_groups": 0,
+          "transported_evs_slots": 0
+        },
+        "6140_only": {
+          "physical_packets": 4,
+          "complete_dus": 1,
+          "complete_counter_groups": 0,
+          "transported_evs_slots": 20
+        },
+        "both": {
+          "physical_packets": 272,
+          "complete_dus": 68,
+          "complete_counter_groups": 22,
+          "transported_evs_slots": 1360
+        },
+        "union": {
+          "physical_packets": 276,
+          "complete_dus": 69,
+          "complete_counter_groups": 22,
+          "transported_evs_slots": 1380
+        }
+      },
+      "union_gain_over_better_single_frequency": {
+        "physical_packets": 0,
+        "complete_dus": 0,
+        "complete_counter_groups": 0,
+        "transported_evs_slots": 0
+      },
+      "full_packet_bytes_compared_on_overlapping_coordinates": 49504,
+      "union_complete_group_counter_range": [
+        43854888,
+        43854909
+      ],
+      "newly_complete_groups_requiring_both": [],
+      "same_coordinate_full_packet_disagreements": [],
+      "only_3205_du_coordinates": [],
+      "only_6140_du_coordinates": [
+        [
+          43854910,
+          0
+        ]
+      ],
+      "union_gaps_inside_observed_tick_span": [],
+      "published_dus_missing_from_union": [
+        [
+          43854885,
+          2
+        ],
+        [
+          43854886,
+          0
+        ],
+        [
+          43854886,
+          1
+        ],
+        [
+          43854886,
+          2
+        ],
+        [
+          43854887,
+          0
+        ],
+        [
+          43854910,
+          1
+        ]
+      ]
+    },
+    "preview_and_drain": {
+      "counts": {
+        "3205": {
+          "physical_packets": 296,
+          "complete_dus": 74,
+          "complete_counter_groups": 24,
+          "transported_evs_slots": 1480
+        },
+        "6140": {
+          "physical_packets": 296,
+          "complete_dus": 74,
+          "complete_counter_groups": 24,
+          "transported_evs_slots": 1480
+        },
+        "3205_only": {
+          "physical_packets": 4,
+          "complete_dus": 1,
+          "complete_counter_groups": 0,
+          "transported_evs_slots": 20
+        },
+        "6140_only": {
+          "physical_packets": 4,
+          "complete_dus": 1,
+          "complete_counter_groups": 0,
+          "transported_evs_slots": 20
+        },
+        "both": {
+          "physical_packets": 292,
+          "complete_dus": 73,
+          "complete_counter_groups": 24,
+          "transported_evs_slots": 1460
+        },
+        "union": {
+          "physical_packets": 300,
+          "complete_dus": 75,
+          "complete_counter_groups": 24,
+          "transported_evs_slots": 1500
+        }
+      },
+      "union_gain_over_better_single_frequency": {
+        "physical_packets": 4,
+        "complete_dus": 1,
+        "complete_counter_groups": 0,
+        "transported_evs_slots": 20
+      },
+      "full_packet_bytes_compared_on_overlapping_coordinates": 53144,
+      "union_complete_group_counter_range": [
+        43854886,
+        43854909
+      ],
+      "newly_complete_groups_requiring_both": [],
+      "same_coordinate_full_packet_disagreements": [],
+      "only_3205_du_coordinates": [
+        [
+          43854885,
+          2
+        ]
+      ],
+      "only_6140_du_coordinates": [
+        [
+          43854910,
+          1
+        ]
+      ],
+      "union_gaps_inside_observed_tick_span": [],
+      "published_dus_missing_from_union": []
+    }
+  }
+}
