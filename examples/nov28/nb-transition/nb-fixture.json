@@ -1,0 +1,227 @@
+{
+  "format": "evs-13k2-nb-transition-pitch-v1",
+  "rate_bps": 13200,
+  "encoder_flags": [
+    "-q",
+    "-no_delay_cmp",
+    "-max_band",
+    "NB",
+    "13200"
+  ],
+  "encoder_binary_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "row_format": [
+    "source_slot_zero_based",
+    "unmodified_33_byte_hex_including_mode"
+  ],
+  "word_count": 56,
+  "unique_complete_words": 56,
+  "streams": [
+    {
+      "id": "synthetic",
+      "input_rate_khz": 32,
+      "source_pcm16le_sha256": "8947b94fd0a024031a1554fa2f63c637f7bd4bdb8eeefc35c747504e3ac39932",
+      "g192_sha256": "6e136f47cb5bfe9bbcafca8abbd11893b2c7757131c3e2c8b5704cf79231d486",
+      "total_words": 2400,
+      "word_count": 3,
+      "source_kind": "deterministic artificial PCM",
+      "generator": "examples/nov27/validation/late-payload/gsc-control/stimuli.py",
+      "function": "make_pcm",
+      "rows": [
+        [159, "1374789e31451028589f0965477000406c26b5a8010f4a8e3ee0c6183e7683fa80"],
+        [759, "1374789e31451028507a129858e0080056c035a8201fb2c4fea2747883ae6bfa80"],
+        [2151, "1374290adb55580840e0022098600080400000000a1335800a05c0958395103682"]
+      ]
+    },
+    {
+      "id": "music",
+      "input_rate_khz": 32,
+      "source_pcm16le_sha256": "d538d45b558588dbe918e3a82faf5c93671c6a7687d8bb97a2eca1d54b73fb92",
+      "g192_sha256": "af6c1743f195fb6c79c51b1d90396a39e44d7db1a7be7e0d131cb8275d41e38c",
+      "total_words": 2400,
+      "word_count": 5,
+      "source_kind": "natural non-radio audio",
+      "source_name": "Kevin_MacLeod_-_Vibe_Ace.hq.ogg",
+      "source_url": "https://librosa.org/data/audio/Kevin_MacLeod_-_Vibe_Ace.hq.ogg",
+      "source_sha256": "73d6443ef90a7c022f164e5aa90e56c2291585930b39b1656d0765abbc1f1779",
+      "mono_pcm_samples": 1536000,
+      "source_credit": {
+        "title": "Vibe Ace",
+        "attribution": "Kevin MacLeod",
+        "description": "Starts more synthy ends more organic.\nInstruments: Vibres, Bass, Kit, Synths\n\n(https://incompetech.com/music/royalty-free/music.html)\n",
+        "license": "CC-BY-4.0",
+        "url": "https://freemusicarchive.org/music/Kevin_MacLeod/Jazz_Sampler/Vibe_Ace"
+      },
+      "ffmpeg": [
+        "ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-i",
+        "Kevin_MacLeod_-_Vibe_Ace.hq.ogg",
+        "-map",
+        "0:a:0",
+        "-af",
+        "aresample=32000,atrim=end_sample=1536000",
+        "-ac",
+        "1",
+        "-ar",
+        "32000",
+        "-c:a",
+        "pcm_s16le",
+        "-f",
+        "s16le",
+        "-y",
+        "source.s16le"
+      ],
+      "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+      "rows": [
+        [978, "13f89d4ea39f2d0efac0a7415f4626d4aab86a74a7b473e7ce98b70408bec8ef28"],
+        [1324, "13102a0544db04f6e2d73d35560d8e60186c428736e958af61b882e1fa6b6b063c"],
+        [2270, "13e756b6ea6514da4c1784b39928c6db52cbdef700727de291d8040fb4bf8102b2"],
+        [2281, "13ff7f3ce0d714deb25d28871548dc451a501a7f67cf67c1811c52c59fcda197ae"],
+        [2346, "13e747ef217f148961cc66bc59f5ebd2fe67553f213b1115d79bd092d107114046"]
+      ]
+    },
+    {
+      "id": "speech",
+      "input_rate_khz": 32,
+      "source_pcm16le_sha256": "13508d78391e27c163b9b9c7b2936133fbb7f1903f776fa2f971db0093ba1f13",
+      "g192_sha256": "0b1b2e6061b65b74194e6b2882b5d2d7a449b4b40e44a29fbbc813444af6c6c8",
+      "total_words": 742,
+      "word_count": 14,
+      "source_kind": "natural non-radio audio",
+      "source_name": "5703-47212-0000.hq.ogg",
+      "source_url": "https://librosa.org/data/audio/5703-47212-0000.hq.ogg",
+      "source_sha256": "f09254a0daf4b14b292868d46dc2e3c8e158d19fafff739ad4c3931e2ce7b1b0",
+      "mono_pcm_samples": 474880,
+      "source_credit": {
+        "title": "The Ashiel Mystery",
+        "attribution": "Marion Bryce (author), Garth Comira (reader)",
+        "description": "An excerpt from The Ashiel Mystery: A Detective Story, chapter XVI.",
+        "license": "CC-BY-4.0",
+        "corpus": "LibriSpeech SLR12",
+        "url": "https://www.openslr.org/12/"
+      },
+      "ffmpeg": [
+        "ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-i",
+        "5703-47212-0000.hq.ogg",
+        "-map",
+        "0:a:0",
+        "-ac",
+        "1",
+        "-ar",
+        "32000",
+        "-c:a",
+        "pcm_s16le",
+        "-f",
+        "s16le",
+        "source.s16le"
+      ],
+      "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+      "rows": [
+        [26, "13559c0ad8b995033f15f2759f45c20f1c3ac426e78bb99f5cdc57a44dc37d62c6"],
+        [171, "130476fb8d279d23dfedefae70bc12041f114186a9d205a7d5f8e5a2148b1426ce"],
+        [209, "1318f26bc9cb3d279eb668159ef9605834aa913ed5f81b639b89c2866ed15394ce"],
+        [279, "1310a5306058bceeec657ec50558f2810ab4465ecbd047373cd8718e0a47f980ec"],
+        [302, "13047ae738b5a5028f4fb82b6c1b70d82b60855ed1d24b037695c7d5aecb216d3a"],
+        [313, "1317c30edf3514d9ec3996cf765ba91c4e0c40cf5aeb287b397c0029cc6cd00214"],
+        [324, "13ff4c36cedb4ce2eeae2e715be7498abd00d78eca40948798d635df1dab652570"],
+        [446, "1310a943e8bea4e72dc92478bd7bb409c779c4172a87213a817d828d8303e0050a"],
+        [454, "131832919ccbbd238fbdedc1a258c280c19ddece0459eb453cf6416a1f06ffb0f2"],
+        [472, "130f5da69ab710d081f8faee2da62b81ccd1c20d4e92b5124cdc03fc4334210a8c"],
+        [634, "131027098d5bacf2343dbb357049721a597835d6fcf7540d3c7c03494dc4e401a0"],
+        [667, "1303ee0f397700c97241842b8898e86f1ee9c10796a314fe0f99c0a896f74dd250"],
+        [677, "1300d40f6597a500eeab8d580b28eeaf12b8065cdbbdde19b7dc000802c25780b2"],
+        [713, "1318aa6a4ba31507dee3a393c90648177df0f5bf38484f05493200cebba79da3f0"]
+      ]
+    },
+    {
+      "id": "mixed480",
+      "input_rate_khz": 16,
+      "source_pcm16le_sha256": "08c6f87ff3d0c152e97165888a706c161a7b836e888944ade1ff9d1bf7b98a12",
+      "g192_sha256": "0377fe5901d70dcec469464f96893ce102064a990bc823e4f82af2b5567b25f2",
+      "total_words": 24000,
+      "word_count": 34,
+      "source_kind": "deterministic artificial PCM",
+      "generator": "examples/nov27/validation/late-payload/gsc-control/stimuli.py",
+      "function": "synthesize",
+      "rows": [
+        [757, "13dd072adbb179b39e80db069426cf79c27084f2df4e3b9a5ce8731b4d8fb323a4"],
+        [2152, "13deb1b5569759b1be8ebf9e048801f93aa83261a2215de45c4dc4694ebcf1892c"],
+        [2901, "13e86f7533b114ef13da8e4e3849c35161de67d73d89d2e3b47900ef008656174e"],
+        [3259, "1315089ba4756ccb35bb14c5b9c7410d2768024d7dbf3ebee9dc142d0157a0fe70"],
+        [3266, "131f1a4233ad1cfbbeb6f6af1df752050dbc17c414d8389afcdc0080d221c03a1c"],
+        [3685, "13f52f65a465153276b4ad3ab02946bb016ef06783c04ef7d7b0a0814984516cc0"],
+        [4300, "13e879cd67456b39afe84a2f5b05fb4598c87c1f1dd00d0fccf8008790378ddb9c"],
+        [4760, "13dd19acb60f11adaf5c76f6c38905a024e5b60a30e6bb967d4c42775453405ea4"],
+        [4958, "13dd3eb99ef311ab5f0b309f4fff8d82bf411a4320297124d448f037a257da8a24"],
+        [5878, "131d6cc83bf316db9d3b9380b8f7617c76f191bd5f6aa79772b4c1946706a93870"],
+        [6814, "131d574a6a5354fbbe74f4f48ffb70e020c0f754f0ec8a79f9fc0330c1338c3fac"],
+        [7097, "135540dce59de4d315040c3a4cf745006932cf84fafef259d65c00180c62317bca"],
+        [7159, "133c6c59d46711b0ff73e776f2e5068eda5a934bb55c03f6e310e0168061f0f718"],
+        [7627, "13550de7bd09e4db4e0d4aae2fe5c180c42010ecb9af8c57aedc713c156b310370"],
+        [7635, "13556993dbdf54dbadecad3fdbeb5308cd89045fbf1a04beca99032a41d3c2806c"],
+        [8561, "13dea9424b2f11b0773f29edf11a52e94355d9b4c8d888d1c148237d0e7b030bac"],
+        [9357, "13dd422db639c9bb86e5fbed958a6e2a56c38dda7f6b1da4a68c0040c7be885c30"],
+        [11237, "131ec48a7fb954e7cc469baaf4b75204993935bedffc89dfa6dc0081c18b9b5f5c"],
+        [11759, "13dd7d1a4b7f79b4dee34e18596d069b23ec987a9148e536d34ef1bdbb2d85099c"],
+        [11879, "131ef637be51c4dbed1bed4f09fb580e7962241ec8ebd53dcf5c028004494c0222"],
+        [12960, "13dd4fe7a06779a6dd66254dc4c93da6e1eac491ff19409f8709628194005aefa4"],
+        [14681, "131d471f3507c4db1deff4482e7b9a8906aa10c4bee724ffcd3c218405b1a35bf2"],
+        [15029, "13157f7fb1cf74db5e05794646f5c1823cb9137efed94b3f8178e30d06bda80270"],
+        [15756, "13dec0c09f6759a0a4af722d39d0b7efd981f321e998e45378280152a03a805210"],
+        [15881, "135533c3ddb7dcdb9edca74217f74084c2530006dded809e645c90011047cfad5c"],
+        [16059, "13152c77a66de4ff5e1dd3e5eba941012b300013ddaedcbb6b54d7a013a05024e0"],
+        [16761, "13dea5444b2511bee795748e7d6fb04af0e868131ef9242cabcf792c8d1b2a3404"],
+        [17102, "13e8419fc65724ffa5d1a395d31740f1b0582bcfd2f042f30e9cd3fc58c8d81146"],
+        [21683, "131d2d63877fe4db9e1d9782cfe748843cd01896f9efde1f1858d3a05702fbaeec"],
+        [21958, "13dd0d2b733579afbebacd1bf9b91fb4e27394b2cfc4a1a002667f08960e544704"],
+        [22609, "13b3d2b13cb76cfb7ff6e065fdc5f0807f63d396dae8cdfaf39c2090c4b4502b98"],
+        [23158, "13dd390b9efb79a716d76c7aee0f7826fff65a53e59d2139444a723e4eaa452910"],
+        [23556, "13defc0fa01511b317e38d86b834989442e4242a7d7e314e144efacb0260e81436"],
+        [23699, "131d3e9e41fd54db7d57fa7ddb6753794320368ddb783cdefdf8401d52b7b94578"]
+      ]
+    }
+  ],
+  "expected_restrictive_vectors": [
+    {
+      "stimulus": "mixed480",
+      "slot": 16761,
+      "position": 2,
+      "p_7_high_nibble": 14,
+      "p_25_top5": 15,
+      "allowed": [
+        2,
+        3
+      ],
+      "observed_p24_lowpair": 3
+    },
+    {
+      "stimulus": "mixed480",
+      "slot": 21958,
+      "position": 3,
+      "p_7_high_nibble": 11,
+      "p_25_top5": 15,
+      "allowed": [
+        2,
+        3
+      ],
+      "observed_p24_lowpair": 2
+    },
+    {
+      "stimulus": "mixed480",
+      "slot": 23556,
+      "position": 1,
+      "p_7_high_nibble": 1,
+      "p_25_top5": 31,
+      "allowed": [
+        2
+      ],
+      "observed_p24_lowpair": 2
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "complete_words": 56,
+  "unique_complete_words": 56,
+  "streams": {
+    "synthetic": 3,
+    "music": 5,
+    "speech": 14,
+    "mixed480": 34
+  },
+  "visible_fragment_combinations_checked": 512,
+  "restrictive": [
+    {
+      "stimulus": "mixed480",
+      "slot": 16761,
+      "position": 2,
+      "p_7_high_nibble": 14,
+      "p_25_top5": 15,
+      "allowed": [
+        2,
+        3
+      ],
+      "observed_p24_lowpair": 3
+    },
+    {
+      "stimulus": "mixed480",
+      "slot": 21958,
+      "position": 3,
+      "p_7_high_nibble": 11,
+      "p_25_top5": 15,
+      "allowed": [
+        2,
+        3
+      ],
+      "observed_p24_lowpair": 2
+    },
+    {
+      "stimulus": "mixed480",
+      "slot": 23556,
+      "position": 1,
+      "p_7_high_nibble": 1,
+      "p_25_top5": 31,
+      "allowed": [
+        2
+      ],
+      "observed_p24_lowpair": 2
+    }
+  ],
+  "alternatives_excluded": 7,
+  "full_originals_verified": [
+    "synthetic",
+    "mixed480",
+    "music",
+    "speech"
+  ]
+}

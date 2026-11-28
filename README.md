@@ -22,6 +22,14 @@ programme on 521 held-out first-position EVS words. The new November 28
 four-channel recording had too little low-frequency signal to repeat that
 comparison. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
 
+A frozen IQ-only test on a previously unused 22-second interval received all 60
+slots at counter 43288733, with zero complete clear words. Across 16 complete
+groups, the stock EVS HQ mode predicted one hidden bit in 25 words. A separate
+narrowband ACELP rule constrained payload octet 24 in three stock sender words.
+Its required mode appeared in zero of 24,280 archived broadcast slots.
+[IQ holdout and checked bits](examples/nov28/iq-holdout/README.md) ·
+[ACELP control and on-air coverage](examples/nov28/nb-transition/README.md)
+
 The current blind receiver milestone uses raw IQ as its only input and aims
 to recover all 60 EVS words of an unseen, CRC-good counter. The November 15
 test fixes the target. Its protocol covers checks against evidence held

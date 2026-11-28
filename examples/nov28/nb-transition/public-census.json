@@ -1,0 +1,50 @@
+{
+  "scope": "CRC-valid complete DUs in the ten public example archives listed, including isolated DUs; duplicates by (counter,phase) count once.",
+  "sources": {
+    "examples/nov15/validation/field-check-43005013/data_units.npz": {
+      "sha256": "67c05409a942b0b38a67747217c8a2acdec36c727a580f881cd08123ce9ba857",
+      "dus": 3
+    },
+    "examples/nov27/validation/acelp-class-history/edogawa-data-units.npz": {
+      "sha256": "7381e771cc4cb5e85c44c5c26a4075268b198ac143c5c808f923bb454d44b9af",
+      "dus": 200
+    },
+    "examples/nov27/validation/frame-order/nov19-data-units.npz": {
+      "sha256": "ea6fbedb2a0873f7eb877f92fa570aceeef7518d356d1908f9fb5593d13436b2",
+      "dus": 132
+    },
+    "examples/nov27/validation/late-payload/edogawa-data-units.npz": {
+      "sha256": "15a3da86a9feca1fb6465cbeb7de442575363da7ef433c80e459cd77c148f8fb",
+      "dus": 294
+    },
+    "examples/nov27/validation/rf-iterations/3205-added-data-units.npz": {
+      "sha256": "8b0ba6380dc4365a9d84f24e7e6af4d7e1877fe6ae531e4ed286f5e5212761c6",
+      "dus": 6
+    },
+    "examples/nov27/validation/swb-gsc/edogawa-data-units.npz": {
+      "sha256": "99461ed346d48900aed781d6af9eb6ebac891af1a0302a85aecdfcf9a81ff7ac",
+      "dus": 292
+    },
+    "examples/nov27/validation/swb-gsc/nov19/data_units.npz": {
+      "sha256": "047767620d47bba9bc8450de279831f4b19fbe930b3c938cfc025af02c031205",
+      "dus": 120
+    },
+    "examples/nov27/validation/tbe-tail-43900403/data_units.npz": {
+      "sha256": "d7ee115d1eb719ed5bd484cfb4ac8b6de11e8f6fd2a2795c73fef70d03c54a68",
+      "dus": 3
+    },
+    "examples/nov28/gsc-fields/data_units.npz": {
+      "sha256": "4f95576e0ca67a0283b9cd7b0cf0b22a2595912cf0efea1531e222154e6e91b2",
+      "dus": 115
+    },
+    "examples/nov28/iq-holdout/data_units.npz": {
+      "sha256": "d2277e56146fbfac045790c95ff3d43481e686ff32f169b0312f19911902db03",
+      "dus": 49
+    }
+  },
+  "unique_dus": 1214,
+  "slots": 24280,
+  "unique_counters": 479,
+  "mode_13_by_position": {},
+  "eligible_coordinates": []
+}
