@@ -32,6 +32,8 @@ In a separate count, we replaced one eligible field with every other possible va
 
 ## Broadcast controls and remaining uncertainty
 
+In the subsequent blind erasure test, copying the preceding word filled six late bytes exactly in 2 of 3,060 held-out floating-point words and 2 of 3,120 words in a separate speech encode. Neither cohort yielded a complete group by that method. An independent radio replay corrected five directly readable bits in a previously rejected packet and completed counter 43945704. Both stations agreed on all 12 wire packets. Its 60 clear EVS words remain unresolved. [Blind erasure benchmark](erasure-benchmark/README.md) · [Radio comparison](transport-mlc4/README.md)
+
 The group's 11:05 UTC handoff supplied 1,545 previous position-one words over 11,700 chronological slots. A rule restricted the possible field values in 417 of those words. All 417 were compatible. The stream contained 333 SWB INACTIVE examples, and 84 of its 131 SWB transition words had a restrictive predicted pair. Every position-two, three and four slot was marked erased. [Known P1 results](handoff-fields.json) · [Member handoff source and first-slot coordinates](../four-frequency/known-1105/README.md)
 
 In an earlier sample, 306 of 308 restrictive SWB transition cases at position two agreed with the text-derived labels. Both disagreements concern word bit 8 of counter 43877110 at slots 37 and 41. Their direct fields come from different physical packets. Both comparison labels depend on the high byte of the final UTF-16LE period in the same CRC-checked text record. Its CRC and the original packet bytes reproduce, and the cause remains unresolved. [Prior score and both disagreements](../swb-transition/README.md)
