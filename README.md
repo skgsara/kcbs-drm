@@ -23,11 +23,12 @@ four-channel recording had too little low-frequency signal to repeat that
 comparison. A later group listening report describes different AM and DRM programmes.
 The exact interval of that observation is unknown. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
 
-On a separate 120-second IQ holdout the SWB ACELP transition tag gave 228
+On a 120-second interval of the previously reported 12:15 recording, a frozen
+SWB ACELP transition rule gave 228
 conditional hidden-bit predictions across 35 complete groups. A historical
 P2 check agreed on 230 of 231 exact pairs. Replaying the disputed counter from
 its original IQ confirmed both received bytes used by the predictor.
-[Blind reception, scores and counterexamples](examples/nov28/swb-transition/README.md)
+[Frozen receiver, scores and counterexamples](examples/nov28/swb-transition/README.md)
 
 A frozen IQ-only test on a previously unused 22-second interval received all 60
 slots at counter 43288733, with zero complete clear words. Across 16 complete
