@@ -33,6 +33,10 @@ The native MSC dumps retain the packet headers and transmitted CRCs that were st
 
 All 17 shared groups appeared three native output rows later in Yokohama's file. To check the station clocks separately, we compared the received modulation in eight 0.4-second windows spaced ten seconds apart. The strongest matches placed the signal 5.3–5.6 ms earlier on Yokohama's reported clock. In all eight windows the correlation exceeded the control displaced by 1.2 seconds. This measures the combined difference in receiver timing and propagation for these two recordings. [Waveform and counter timing check](verify_timing.py)
 
+## Two-station channel decoding
+
+A later development test combined both sites' equalized signals before DRM error correction. On 73 aligned row pairs, this recovered the two packets missing from the two individual decodes and completed the middle phase of counter 43945691. [Wire results, alignment controls and replay](diversity/README.md)
+
 ## Replay
 
 Each recording preserves 4,320,000 complex samples as two lossless signed 16-bit channels at 48 kHz. The station timestamps show 89.273 seconds in common. Five Yokohama packets and three Edogawa packets lacked a station timestamp. Both files replayed to the original byte-for-byte MSC outputs using receiver revision `41b4e2d`. [Edogawa IQ](iq/edogawa-6140khz-iq48.flac) · [Yokohama IQ](iq/yokohama-6140khz-iq48.flac) · [Station clocks and sample bounds](sealed-sources.json) · [Lossless distribution hashes](iq/verification.json) · [MSC replay hashes](iq/replay.json)

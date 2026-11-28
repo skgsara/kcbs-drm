@@ -1,0 +1,93 @@
+--- a/src/mlc/MLC.cpp
++++ b/src/mlc/MLC.cpp
+@@ -27,6 +27,27 @@
+ \******************************************************************************/
+ 
+ #include "MLC.h"
++#include <cmath>
++#include <cstdint>
++#include <cstdio>
++#include <cstdlib>
++#include <limits>
++#include <stdexcept>
++
++namespace {
++// MSCObs1 uses little-endian int32 and IEEE binary64 values.
++#if __BYTE_ORDER__ != __ORDER_LITTLE_ENDIAN__
++#error The MSC observer requires a little-endian build.
++#endif
++static_assert(sizeof(double) == 8 && std::numeric_limits<double>::is_iec559,
++              "The MSC observer requires IEEE binary64.");
++
++void writeObservation(FILE* file, const void* bytes, size_t size)
++{
++    if (std::fwrite(bytes, 1, size, file) != size)
++        throw std::runtime_error("Failed to write MSC observation");
++}
++}
+ 
+ 
+ /* Implementation *************************************************************/
+@@ -197,8 +218,44 @@
+ /******************************************************************************\
+ * MLC-decoder                                                                  *
+ \******************************************************************************/
+-void CMLCDecoder::ProcessDataInternal(CParameter&)
++void CMLCDecoder::ProcessDataInternal(CParameter& parameters)
+ {
++    static FILE* observations = nullptr;
++    static int32_t blockIndex = 0;
++    const char* path = std::getenv("DREAM_CELL_OBSERVATIONS");
++    const bool observe = eChannelType == CT_MSC && path && *path;
++    if (observe)
++    {
++        if (!observations)
++        {
++            observations = std::fopen(path, "wbx");
++            if (!observations)
++                throw std::runtime_error("Cannot create a new MSC observation file");
++            writeObservation(observations, "MSCObs1\n", 8);
++        }
++        int32_t header[28] = {
++            blockIndex++, iInputBlockSize, iOutputBlockSize,
++            parameters.GetWaveMode(), parameters.GetSpectrumOccup(), eCodingScheme,
++            parameters.MSCPrLe.iPartA, parameters.MSCPrLe.iPartB, parameters.MSCPrLe.iHierarch,
++            parameters.eSymbolInterlMode, parameters.iFrameIDReceiv, iNumIterations, iLevels,
++            iN[0], iN[1], iL[0], iL[1], iL[2]
++        };
++        for (int j = 0; j < 4; ++j)
++        {
++            header[18 + 2*j] = parameters.Stream[j].iLenPartA;
++            header[19 + 2*j] = parameters.Stream[j].iLenPartB;
++        }
++        header[26] = parameters.CellMappingTable.iNumUsefMSCCellsPerFrame;
++        header[27] = static_cast<int32_t>(std::lround(1000.0 * parameters.GetSNR()));
++        writeObservation(observations, header, sizeof(header));
++        for (int j = 0; j < iInputBlockSize; ++j)
++        {
++            const CEquSig& cell = (*pvecInputData)[j];
++            const double values[] = {cell.cSig.real(), cell.cSig.imag(), cell.rChan};
++            writeObservation(observations, values, sizeof(values));
++        }
++    }
++
+     int			i, j, k;
+     int			iElementCounter;
+     bool	bIteration;
+@@ -349,6 +406,16 @@
+     /* Energy dispersal ----------------------------------------------------- */
+     /* VSPP is treated as a separate part for energy dispersal (7.2.2) */
+     EnergyDisp.ProcessData(pvecOutputData);
++    if (observe)
++    {
++        std::vector<unsigned char> hard((iOutputBlockSize + 7) / 8, 0);
++        for (int j = 0; j < iOutputBlockSize; ++j)
++            if ((*pvecOutputData)[j] != 0)
++                hard[j/8] |= 1u << (7 - j%8);
++        writeObservation(observations, hard.data(), hard.size());
++        if (std::fflush(observations) != 0)
++            throw std::runtime_error("Failed to flush MSC observation");
++    }
+ }
+ 
+ void CMLCDecoder::InitInternal(CParameter& Parameters)
