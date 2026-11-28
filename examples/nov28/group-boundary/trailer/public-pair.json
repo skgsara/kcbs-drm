@@ -1,0 +1,995 @@
+{
+  "format": "public-pair-unassigned-trailer-v1",
+  "location_rules_sha256": "a261d1fbcfc6bb797c3c9942df5a4b072a89556ec69e5e7af00a06ac456cbbf4",
+  "source_pair": "../../same-6140-1232 (Edogawa and Yokohama, 6140 kHz, November 28 12:32 UTC)",
+  "sites": {
+    "edogawa": {
+      "hashes": {
+        "msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+        "packet_archive_sha256": "8eb521c769f27344fb0b5b813de2d298e1b53ef03588a41540602daf775ff9be"
+      },
+      "location": {
+        "counts": {
+          "native_rows": 218,
+          "in_scope_valid_q3": 119,
+          "already_assigned_rows": 74,
+          "unassigned_q3_rows": 45,
+          "no_fragment_match": 6,
+          "ambiguous_fragment": 0,
+          "unique_fragment_rows": 39,
+          "different_independent_coordinate": 0,
+          "no_unique_second_packet": 3,
+          "contradictory_phase": 0,
+          "contradictory_existing_packet": 0,
+          "independently_witnessed_rows": 36
+        },
+        "rows": [
+          {
+            "native_row": 6,
+            "counter": 43945654,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              3
+            ]
+          },
+          {
+            "native_row": 12,
+            "counter": 43945656,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              3
+            ]
+          },
+          {
+            "native_row": 24,
+            "counter": 43945660,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 27,
+            "counter": 43945661,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 30,
+            "counter": 43945662,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 31,
+            "counter": 43945662,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 33,
+            "counter": 43945663,
+            "phase": 1,
+            "received_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 34,
+            "counter": 43945663,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 36,
+            "counter": 43945664,
+            "phase": 1,
+            "received_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 37,
+            "counter": 43945664,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 39,
+            "counter": 43945665,
+            "phase": 1,
+            "received_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 40,
+            "counter": 43945665,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 42,
+            "counter": 43945666,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 46,
+            "counter": 43945667,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 69,
+            "counter": 43945675,
+            "phase": 1,
+            "received_ordinals": [
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 72,
+            "counter": 43945676,
+            "phase": 1,
+            "received_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 73,
+            "counter": 43945676,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 75,
+            "counter": 43945677,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 76,
+            "counter": 43945677,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              3
+            ]
+          },
+          {
+            "native_row": 78,
+            "counter": 43945678,
+            "phase": 1,
+            "received_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 90,
+            "counter": 43945682,
+            "phase": 1,
+            "received_ordinals": [
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 91,
+            "counter": 43945682,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 129,
+            "counter": 43945695,
+            "phase": 1,
+            "received_ordinals": [
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 130,
+            "counter": 43945695,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              3
+            ]
+          },
+          {
+            "native_row": 145,
+            "counter": 43945700,
+            "phase": 2,
+            "received_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 147,
+            "counter": 43945701,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 148,
+            "counter": 43945701,
+            "phase": 2,
+            "received_ordinals": [
+              1,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              3
+            ]
+          },
+          {
+            "native_row": 150,
+            "counter": 43945702,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 151,
+            "counter": 43945702,
+            "phase": 2,
+            "received_ordinals": [
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 153,
+            "counter": 43945703,
+            "phase": 1,
+            "received_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 154,
+            "counter": 43945703,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 156,
+            "counter": 43945704,
+            "phase": 1,
+            "received_ordinals": [
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 157,
+            "counter": 43945704,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 192,
+            "counter": 43945716,
+            "phase": 1,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 193,
+            "counter": 43945716,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 196,
+            "counter": 43945717,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              1,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "quarantined_proposals": [],
+      "coverage": {
+        "packet_coordinates": {
+          "before": 288,
+          "after": 402,
+          "gained": 114,
+          "lost": 0
+        },
+        "q3_coordinates": {
+          "before": 74,
+          "after": 110,
+          "gained": 36,
+          "lost": 0
+        },
+        "complete_dus": {
+          "before": 67,
+          "after": 82,
+          "gained": 15,
+          "lost": 0
+        },
+        "complete_three_du_groups": {
+          "before": 17,
+          "after": 17,
+          "gained": 0,
+          "lost": 0
+        },
+        "complete_33_wire_octet_slots": {
+          "before": 1430,
+          "after": 1940,
+          "gained": 510,
+          "lost": 0
+        },
+        "all_22_direct_octets_slots": {
+          "before": 1430,
+          "after": 1940,
+          "gained": 510,
+          "lost": 0
+        }
+      }
+    },
+    "yokohama": {
+      "hashes": {
+        "msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+        "packet_archive_sha256": "ee0eb383de5fcf07121583752894e6226dba58dd5340bd37de983827fa7c39fd"
+      },
+      "location": {
+        "counts": {
+          "native_rows": 220,
+          "in_scope_valid_q3": 219,
+          "already_assigned_rows": 202,
+          "unassigned_q3_rows": 17,
+          "no_fragment_match": 15,
+          "ambiguous_fragment": 0,
+          "unique_fragment_rows": 2,
+          "different_independent_coordinate": 0,
+          "no_unique_second_packet": 0,
+          "contradictory_phase": 0,
+          "contradictory_existing_packet": 0,
+          "independently_witnessed_rows": 2
+        },
+        "rows": [
+          {
+            "native_row": 111,
+            "counter": 43945688,
+            "phase": 1,
+            "received_ordinals": [
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              2,
+              3
+            ]
+          },
+          {
+            "native_row": 112,
+            "counter": 43945688,
+            "phase": 2,
+            "received_ordinals": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "unique_other_packet_ordinals": [
+              0,
+              2
+            ],
+            "ordinals_absent_from_source_baseline": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "quarantined_proposals": [],
+      "coverage": {
+        "packet_coordinates": {
+          "before": 806,
+          "after": 812,
+          "gained": 6,
+          "lost": 0
+        },
+        "q3_coordinates": {
+          "before": 202,
+          "after": 204,
+          "gained": 2,
+          "lost": 0
+        },
+        "complete_dus": {
+          "before": 200,
+          "after": 201,
+          "gained": 1,
+          "lost": 0
+        },
+        "complete_three_du_groups": {
+          "before": 65,
+          "after": 65,
+          "gained": 0,
+          "lost": 0
+        },
+        "complete_33_wire_octet_slots": {
+          "before": 4028,
+          "after": 4055,
+          "gained": 27,
+          "lost": 0
+        },
+        "all_22_direct_octets_slots": {
+          "before": 4028,
+          "after": 4055,
+          "gained": 27,
+          "lost": 0
+        }
+      }
+    }
+  },
+  "union": {
+    "quarantined_before": [],
+    "quarantined_after": [],
+    "coverage": {
+      "packet_coordinates": {
+        "before": 817,
+        "after": 818,
+        "gained": 1,
+        "lost": 0
+      },
+      "q3_coordinates": {
+        "before": 205,
+        "after": 205,
+        "gained": 0,
+        "lost": 0
+      },
+      "complete_dus": {
+        "before": 202,
+        "after": 203,
+        "gained": 1,
+        "lost": 0
+      },
+      "complete_three_du_groups": {
+        "before": 65,
+        "after": 66,
+        "gained": 1,
+        "lost": 0
+      },
+      "complete_33_wire_octet_slots": {
+        "before": 4082,
+        "after": 4088,
+        "gained": 6,
+        "lost": 0
+      },
+      "all_22_direct_octets_slots": {
+        "before": 4082,
+        "after": 4088,
+        "gained": 6,
+        "lost": 0
+      }
+    },
+    "gained_packet": {
+      "packet_coordinate": [
+        43945688,
+        2,
+        1
+      ],
+      "original_site": "yokohama",
+      "original_row": 112,
+      "wire_sha256": "9519cacf335509cc9d251e737800ed443d8413f8d0bd917231884a4cb2af184e",
+      "transmitted_packet_crc": "15eb",
+      "completed_du_sha256": "db339b9cf3ac1a342a2d8eee231cd9cfeaebf6338d6b036018f2af80d7028823",
+      "transmitted_du_crc": "bb3b",
+      "complete_counters_added": [
+        43945688
+      ],
+      "gained_full_wire_slots_counter_and_zero_based_slot": [
+        [
+          43945688,
+          45
+        ],
+        [
+          43945688,
+          46
+        ],
+        [
+          43945688,
+          47
+        ],
+        [
+          43945688,
+          48
+        ],
+        [
+          43945688,
+          49
+        ],
+        [
+          43945688,
+          50
+        ]
+      ],
+      "prior_diversity_alignment": {
+        "receipt_sha256": "31605d50dea3f9a89ef9fef1b351eedfbb882a234b93038473e23331d8e30207",
+        "published_row": {
+          "edogawa_row": 109,
+          "yokohama_row": 112,
+          "delta": 3,
+          "cohort": "evaluation",
+          "known_coordinate": [
+            43945688,
+            2
+          ],
+          "old_ledger_sites": [
+            "edogawa"
+          ],
+          "witness_ordinals": [
+            0,
+            2,
+            3
+          ],
+          "raw_joint": [
+            0,
+            2,
+            3
+          ],
+          "raw_edogawa_only": [],
+          "raw_yokohama_only": [
+            1
+          ],
+          "raw_neither": []
+        }
+      },
+      "among_prior_two_fusion_recovery_rows": false,
+      "prior_edogawa_mlc4": {
+        "msc_sha256": "08ff30e342446c25dd7b47d6009fb0ede1f6424df3888353b30aee2d393a1746",
+        "coordinate_in_assigned_packet_union_of_mlc1_mlc4": false,
+        "accepted_at_aligned_native_row": false
+      },
+      "interpretation": "The original stock-assigned union lacked this packet coordinate. The earlier cross-site alignment ledger already placed this same originally CRC-valid wire at the coordinate."
+    }
+  },
+  "scope": "Both complete, previously published recordings and their original single-site salvage baselines. The trailer proposes a coordinate. A separate unique packet must agree. Complete wire slots count transport coverage."
+}
