@@ -1,0 +1,223 @@
+{
+  "public_freeze": "bc5f95112d100092bbc745d16f42ea3c4aaf3898",
+  "receiver_revision": "530c9588cf192f73256a9b704ffd758397865141",
+  "source_basename": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+  "source_capture_file_bytes": 597076480,
+  "source_format": "signed int8 interleaved I,Q",
+  "rate_complex_per_second": 912000,
+  "source_interval_seconds": [
+    240,
+    260
+  ],
+  "source_byte_interval": [
+    437760000,
+    474240000
+  ],
+  "source_request_utc": "2026-11-28T01:41:33.875564+00:00",
+  "source_interval_sha256": "0c8dcddd933120cf2523cc90770fb68e7792db8d35aa248a728cb8c5ed1edde2",
+  "source_interval_bytes": 36480000,
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "number_of_rf_passes": 1,
+  "reception_profile": "wiener",
+  "mlc_iterations": 1,
+  "offset_hz": 0,
+  "comparison_history_ids": 13103,
+  "history_sha256": "c3b77ffd2cb8bf4843cdd872dbde4976d1bb050e882abdd316aef14b805f56c0",
+  "assigned_counters": [
+    43288806,
+    43288807,
+    43288808,
+    43288809,
+    43288810,
+    43288811,
+    43288812,
+    43288813,
+    43288814,
+    43288815,
+    43288816,
+    43288817,
+    43288818,
+    43288819
+  ],
+  "assigned_packet_coordinates": 152,
+  "packet_only_counters": [],
+  "overlap": [],
+  "checked_dus": 38,
+  "complete_in_physical_order": [
+    43288806,
+    43288807,
+    43288808,
+    43288809,
+    43288810,
+    43288811,
+    43288812,
+    43288814,
+    43288815,
+    43288816,
+    43288817,
+    43288818
+  ],
+  "primary": 43288806,
+  "phase0_msc_start_row": 5,
+  "msc_bytes": 32940,
+  "all_complete_position_checks": {
+    "1": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "2": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "3": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "4": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    }
+  },
+  "primary_full_words": 0,
+  "primary_direct_bits": 10560,
+  "primary_erasures": 60,
+  "primary_fields_by_position": {
+    "1": {
+      "slots": 15,
+      "direct_bits": 2640,
+      "full_clear_words": 0,
+      "hq_neighbor_eligible": 0,
+      "transition_cases": [
+        {
+          "slot": 0,
+          "mode": "61",
+          "p31": "50",
+          "allowed_high_pairs": [
+            0,
+            1
+          ],
+          "fixed_word_bits": {
+            "8": 0
+          }
+        },
+        {
+          "slot": 16,
+          "mode": "60",
+          "p31": "96",
+          "allowed_high_pairs": [
+            0
+          ],
+          "fixed_word_bits": {
+            "8": 0,
+            "9": 0
+          }
+        },
+        {
+          "slot": 24,
+          "mode": "60",
+          "p31": "2A",
+          "allowed_high_pairs": [
+            0
+          ],
+          "fixed_word_bits": {
+            "8": 0,
+            "9": 0
+          }
+        }
+      ]
+    },
+    "2": {
+      "slots": 15,
+      "direct_bits": 2640,
+      "full_clear_words": 0,
+      "hq_neighbor_eligible": 0,
+      "transition_cases": [
+        {
+          "slot": 5,
+          "mode": "60",
+          "p31": "8E",
+          "allowed_high_pairs": [
+            0
+          ],
+          "fixed_word_bits": {
+            "8": 0,
+            "9": 0
+          }
+        },
+        {
+          "slot": 25,
+          "mode": "60",
+          "p31": "98",
+          "allowed_high_pairs": [
+            0,
+            2,
+            3
+          ],
+          "fixed_word_bits": {}
+        }
+      ]
+    },
+    "3": {
+      "slots": 15,
+      "direct_bits": 2640,
+      "full_clear_words": 0,
+      "hq_neighbor_eligible": 0,
+      "transition_cases": [
+        {
+          "slot": 6,
+          "mode": "60",
+          "p31": "58",
+          "allowed_high_pairs": [
+            0,
+            2,
+            3
+          ],
+          "fixed_word_bits": {}
+        },
+        {
+          "slot": 18,
+          "mode": "61",
+          "p31": "14",
+          "allowed_high_pairs": [
+            1
+          ],
+          "fixed_word_bits": {
+            "8": 0,
+            "9": 1
+          }
+        },
+        {
+          "slot": 58,
+          "mode": "61",
+          "p31": "1C",
+          "allowed_high_pairs": [
+            1
+          ],
+          "fixed_word_bits": {
+            "8": 0,
+            "9": 1
+          }
+        }
+      ]
+    },
+    "4": {
+      "slots": 15,
+      "direct_bits": 2640,
+      "full_clear_words": 0,
+      "hq_neighbor_eligible": 0,
+      "transition_cases": []
+    }
+  },
+  "primary_individually_fixed_transition_bits": 11,
+  "files_sha256": {
+    "rf/msc.bin": "3dc5e9fb060ef145f211edd350752892eaa61d0f67b5ec15dce886a8858b0cd7",
+    "transport/data_units.npz": "50df803b43381dc89ef3291f19c810448d5885b62354c0b075513e4f3987059d",
+    "field-results.json": "bf8d871fb0dc025d9892334057609dfb5f906f19d026675ee3ed0fa025fd0bb8",
+    "primary.json": "b8a8e01b763f171e1175bb3575a5ff4cab980eda90d89d4c34c499bd920c0ace"
+  },
+  "scope": "SWB transition constraints are conditional; no independent masked-bit comparison. All received primary slots remain word erasures."
+}

@@ -1,0 +1,63 @@
+{
+  "checked_utc": "2026-11-28T01:43:57.400255+00:00",
+  "method": "Rebuilt original Dream PCM with the frozen 912-to-48 kHz CS8 converter, encoded PCM16 FLAC and compared all decoded sample pairs with that input. One cold Wiener/MLC1 run took only the FLAC as RF input. Both transport invocations used relative path rf/msc.bin to preserve original provenance naming.",
+  "freeze_commit": "bc5f95112d100092bbc745d16f42ea3c4aaf3898",
+  "receiver_revision": "530c9588cf192f73256a9b704ffd758397865141",
+  "source_file": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+  "source_interval_seconds": [
+    240,
+    260
+  ],
+  "source_byte_range_half_open": [
+    437760000,
+    474240000
+  ],
+  "source_cs8_sha256": "0c8dcddd933120cf2523cc90770fb68e7792db8d35aa248a728cb8c5ed1edde2",
+  "converter_sha256": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "flac": "nov19-6140-240-260s-iq48.flac",
+  "flac_bytes": 2444606,
+  "flac_sha256": "6e4f275a13321a66d22e685638b3f87e89a9b0f53a85c1935bb06cf13f94dbed",
+  "decoded_pcm16le_sha256": "39cd702e14b2787a9caf2403265093b3f953aad0faf8a4c526f5784bc45282df",
+  "converter_wav_sha256": "694f49ce7101ee8a03d22ce66699a88cd38b0864807c79d06b6acdd10502f2c6",
+  "verified_stereo_pairs": 960000,
+  "sample_rate": 48000,
+  "nominal_center_hz": 6140000,
+  "byte_comparisons": {
+    "rf/msc.bin": {
+      "byte_identical": true,
+      "sha256": "3dc5e9fb060ef145f211edd350752892eaa61d0f67b5ec15dce886a8858b0cd7"
+    },
+    "transport/data_units.npz": {
+      "byte_identical": true,
+      "sha256": "50df803b43381dc89ef3291f19c810448d5885b62354c0b075513e4f3987059d"
+    },
+    "transport/groups.npz": {
+      "byte_identical": true,
+      "sha256": "caf106bb860659930080c8d8afd97a9a5b49a6fae605194682d87ab94b1878ef"
+    },
+    "transport/provenance.json": {
+      "byte_identical": true,
+      "sha256": "5c2170054b626e3b6da09f4ae418e5ff81bc4cc27a011792e160089a4386c863"
+    },
+    "transport/report.json": {
+      "byte_identical": true,
+      "sha256": "e3bd52f042afe354b5474252dfcf43ba7e4a91ec31574092dcabf2d9a28773b1"
+    },
+    "field-results.json": {
+      "byte_identical": true,
+      "sha256": "bf8d871fb0dc025d9892334057609dfb5f906f19d026675ee3ed0fa025fd0bb8"
+    },
+    "primary.json": {
+      "byte_identical": true,
+      "sha256": "b8a8e01b763f171e1175bb3575a5ff4cab980eda90d89d4c34c499bd920c0ace"
+    }
+  },
+  "assigned_packet_coordinates": 152,
+  "assigned_counters": 14,
+  "accepted_data_units": 38,
+  "complete_groups": 12,
+  "primary": 43288806,
+  "eligible_triples": 0,
+  "direct_word_bits_on_primary": 10560
+}

@@ -20,14 +20,21 @@ We compared 3250/6100 kHz AM and 3205/6140 kHz DRM using simultaneous
 four-channel IQ. The November 27 11:05 handoff also supports a shared AM/DRM
 programme on 521 held-out first-position EVS words. The new November 28
 four-channel recording had too little low-frequency signal to repeat that
-comparison. A later group listening report describes different AM and DRM programmes.
-The exact interval of that observation is unknown. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
+comparison. A group member subsequently heard different AM and DRM programmes,
+then reported a match in nine windows of a three-minute Airspy recording
+starting at 09:19:50 Beijing time. Their joint AM scoring selected the correct
+low two bits of payload bytes 24 and 27 uniquely in 3/15 and 1/15 held-out
+groups, respectively. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
 
 In archived IQ, the next EVS word's transmitted mode ruled out a transient
 in six position-three words and three position-four words, assuming continuous
 stock EVS encoding. A fresh two-minute 6140 kHz recording yielded zero
-CRC-valid packets in the frozen test.
-[Neighboring-word evidence and raw IQ](examples/nov28/hq-neighbors/README.md)
+CRC-valid packets in the frozen test. A separate 20-second Airspy test
+received 12 complete groups. A directly transmitted GSC field matched its
+predicted value in all 241 eligible words. The first complete counter,
+43288806, yielded zero complete clear words.
+[Neighboring-word evidence](examples/nov28/hq-neighbors/README.md) ·
+[Airspy IQ and blind test](examples/nov28/hq-neighbors/airspy-gap/README.md)
 
 On a 120-second interval of the previously reported 12:15 recording, a frozen
 SWB ACELP transition rule gave 228

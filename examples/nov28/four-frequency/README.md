@@ -2,7 +2,17 @@
 
 A group member reported that the two AM waveforms aligned to milliseconds in their recording, and that **311 DRM data units** matched byte for byte at the same counter and phase. In a later listening update they reported **different AM and DRM programmes at the time of listening**, and a period of shared programming the previous day. Their messages give no exact UTC interval for either observation or for the 311 DUs. We cannot place the listening report in the 311-DU interval. The digital count and within-AM alignment describe agreement between carriers of the same modulation.
 
-For programme comparison, qualify AM as a reference for a specific time interval by comparing it to independently supported DRM audio. The November 27 11:05 UTC handoff passes that test. In the newly reported interval the member heard different content, so the AM audio provides no reference for scoring EVS words there. The IQ-only receiver uses the DRM channel throughout.
+For programme comparison, qualify AM as a reference for a specific time interval by comparing it to independently supported DRM audio. The November 27 11:05 UTC handoff passes that test. The IQ-only receiver uses the DRM channel throughout.
+
+## The group's 09:19:50 Beijing recording
+
+In a subsequent report the group observed a shared programme again. Two Airspy HF+ receivers recorded three minutes beginning at **09:19:50 Beijing time** (01:19:50 UTC). They report agreement between AM at 3250/6100 kHz and the first-position DRM audio at 3205/6140 kHz in all nine comparison windows, with a file offset near −5.79 s. The signed lag belongs to their files and convention. Our Edogawa capture began at 01:25:09 UTC, over two minutes after the reported interval ended. We have the group's summary. Its two recordings and per-window comparisons were absent from the shared folder at 01:39 UTC.
+
+On already known first-position words, the group separately hid the low two bits of payload bytes 24 and 27 and offered four candidate values per test. Joint AM scoring put the correct value **uniquely first in 3/15 and 1/15** held-out groups, respectively. The report gives neither ties nor all four scores. Those results support using the reported simulcast for programme timing and leave the byte choices unresolved.
+
+The group's separate EVS field test reports one surviving 13-bit combination in each of two groups at position two. The 15 position-two frames at counter **43912071** were all classified as GSC. Under the group's field assumptions, they report **35 bits still unresolved** in each group. The original bytes and candidate ledger will be needed to reproduce that result. Counter 43912071 is recorded as disclosed for subsequent blind tests.
+
+One reproducible GSC check is already available for comparison if the reported frames use modes `74`–`77`. In a separate Airspy recording the prior mode-based prediction for word bits 40–43 agreed with their directly received value on 241/241 eligible words, including 61 at position two. The member's summary gives the GSC class only, so the number eligible at 43912071 is unknown. [IQ, field and counters](../hq-neighbors/airspy-gap/README.md)
 
 Two sufficiently wide Airspy HF recordings can contain all four channels. The lower pair is 45 kHz apart and the upper pair is 40 kHz apart. When those pairs are recorded on different receivers, retain both start times, sample rates and channel frequencies. Independently tune each RF channel. The two AM outputs can then be aligned by audio content; the two DRM receptions can be aligned by their transmitted packet coordinates. A common computer can start two devices with different sample clocks.
 

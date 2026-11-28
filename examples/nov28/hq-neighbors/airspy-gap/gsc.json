@@ -1,0 +1,40 @@
+{
+  "data_units_sha256": "50df803b43381dc89ef3291f19c810448d5885b62354c0b075513e4f3987059d",
+  "complete_group_slots": 720,
+  "mode_counts": {
+    "50": 30,
+    "51": 40,
+    "52": 49,
+    "53": 72,
+    "58": 64,
+    "59": 40,
+    "5A": 10,
+    "5B": 11,
+    "60": 21,
+    "61": 14,
+    "62": 2,
+    "63": 4,
+    "74": 99,
+    "75": 57,
+    "76": 49,
+    "77": 36,
+    "F8": 70,
+    "FA": 2,
+    "FC": 46,
+    "FE": 1,
+    "FF": 3
+  },
+  "eligible": 241,
+  "distinct_counters": 9,
+  "selected_coordinates_sha256": "c038e929a6f2b54ad161c48238d3f31f1f133852171103c97e94ec4b4a1f408b",
+  "eligible_by_position": {
+    "1": 60,
+    "2": 61,
+    "3": 58,
+    "4": 62
+  },
+  "observed_nibbles": {
+    "1100": 241
+  },
+  "mismatches": []
+}

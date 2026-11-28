@@ -1,0 +1,58 @@
+{
+  "archive_sha256": "50df803b43381dc89ef3291f19c810448d5885b62354c0b075513e4f3987059d",
+  "data_units": 38,
+  "complete_groups": 12,
+  "selection_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "all_positions": {
+    "eligible": 0,
+    "transient_excluded": 0,
+    "inconclusive": 0
+  },
+  "by_position": {
+    "1": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "2": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "3": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "4": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    }
+  },
+  "cases": [],
+  "all_assigned_counters": [
+    43288806,
+    43288807,
+    43288808,
+    43288809,
+    43288810,
+    43288811,
+    43288812,
+    43288813,
+    43288814,
+    43288815,
+    43288816,
+    43288817,
+    43288818,
+    43288819
+  ],
+  "previously_seen": [],
+  "primary": 43288806,
+  "primary_summary": {
+    "eligible": 0,
+    "transient_excluded": 0,
+    "inconclusive": 0
+  },
+  "first_restriction": null
+}

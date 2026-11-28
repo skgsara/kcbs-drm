@@ -4,6 +4,8 @@ On November 28 at 01:25 UTC, the public 7L4IOU receiver in Edogawa recorded 120 
 
 ## Which alternative the signal can reject
 
+A separate frozen 20-second test using a strong November 19 recording received 12 complete groups. No word in that interval had the required preceding `F9` mode. The first complete counter was 43288806. [Four-position result and secondary GSC comparison](airspy-gap/README.md)
+
 The test concerns three consecutive ordinary 13.2 kb/s super-wideband HQ words under continuous stock EVS encoding. Word bits are numbered from zero, most significant bit first. We selected triples using the directly carried mode `F9` in the preceding word, `F8` in the middle word, and the high seven mode bits `1111100` in the following word. We held back the following word's mode bit 7 until scoring. Every triple lies within one complete CRC-checked group.
 
 The middle word's bit 8 distinguishes NORMAL (0) from TRANSIENT (1). The preceding `F9` word signals a nontransient class. A fresh transient in the middle would carry over into the following word. If the held-back bit is 1, the following word is harmonic (`F9`), which excludes a middle transient under the stock rule. If the bit is 0 (`F8`), both middle values remain possible. A gap, encoder reset or change of extension can break the carryover. Exact bit accuracy on the middle P3 and P4 words remains unmeasured.
