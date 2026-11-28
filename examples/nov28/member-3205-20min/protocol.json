@@ -1,0 +1,147 @@
+{
+  "schema": "member-3205-44k1-iq-prereception-v1",
+  "declared_utc": "2026-11-28T02:44:50.535309+00:00",
+  "source": {
+    "basename": "IQ-3205khz-20261128.wav",
+    "source_sha256": "bda3f500aaab2032de0e93c493e87650767be1504b29085679cf7082e4b5b952",
+    "server_sha1": "03621a373ebe5c7a60d3d35d8f5fb52bc944aa96",
+    "source_bytes": 241365696,
+    "sample_frames": 60341413,
+    "duration_seconds": 1368.2860090702948,
+    "header_metadata_sha256": "4bd91e86506faa5db3c1e1e9a1e617cae2ba22db5632874646c24ce502ca83bd",
+    "interpretation": "RIFF/WAVE PCM16LE at 44100 frames/s. Treat left as I and right as Q at a 3205 kHz center and zero offset (member label, no tuning or GPS in WAV). Uncalibrated nominal sample clock.",
+    "start_utc": null
+  },
+  "conversion": {
+    "script": "scripts/extract_iq_channel.py",
+    "arguments": [
+      "--offset-hz",
+      "0"
+    ],
+    "whole_source_frames_included": 60341413,
+    "reduced_rate_ratio": [
+      40,
+      147
+    ],
+    "output_frames_12000": 16419433,
+    "format": "Stereo FLOAT WAV",
+    "passband_hz": 5050,
+    "stopband_hz": 5950,
+    "design_attenuation_db": 85,
+    "clock": "Compensated linear-phase FIR: output k is centered at original time k/12000. All source input frames processed with block support; zero extension only at file ends. Ceil-rounded last output pair.",
+    "demod_input": "The frozen IQ demodulator resamples each 12 kHz window to 48 kHz and supplies stereo PCM16 to Dream."
+  },
+  "receiver_commit": "f1904cf3bf38cc0b3a4aa1b2663f287b3bd4e813",
+  "receiver_code_sha256": {
+    "scripts/extract_iq_channel.py": "d32d8b1f043fcd62b6ef58dc170d2cbc5a737fe366ee6179929438d95ff64f16",
+    "scripts/demod_iq_window.py": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+    "scripts/resample_iq.py": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+    "scripts/salvage_msc_packets.py": "2cd23f6ee257a405beaa223bc9693c1fae27ce1ad65a399c47595c71bad10725",
+    "scripts/received_evs_packets.py": "166bd6978719ea177ae9a55937bb63588e531291f5a26c005bb65441280cb75d",
+    "scripts/project_evs_group.py": "83e0d5c24a47aa9cd3af1611da35735053a968b0d559afe1cfe44f2314d51dcb",
+    "scripts/evs_evidence.py": "8107835aff25964be3b59272e56ffc7fc2d83e14df6e3807552c30ff4c6fcedb"
+  },
+  "dream_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "signalling_inspector_sha256": "4eb63cf7dcf62a911574e93edd216d2d4c212f5aef7f51fbb15ded1cab0f874d",
+  "settings": {
+    "scheduler": "KCBS_DREAM points to the pinned finite-input Dream binary. Set KCBS_SIGNALLING_BITS to the unique raw path for each cold reception. The passive hook emits FAC/SDC after channel decoding, before interpretation.",
+    "mlciter": 1,
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "offset_hz": 0,
+    "arguments": [
+      "--reception-profile",
+      "wiener",
+      "--mlc-iterations",
+      "1"
+    ],
+    "coverage": "One pass per window. The two boundary overlaps contain repeated samples from the same recording.",
+    "salvage": [
+      "--transport-only",
+      "--save-packets"
+    ]
+  },
+  "windows": [
+    {
+      "index": 0,
+      "nominal_seconds_half_open": [
+        0,
+        600
+      ],
+      "source_44100_pairs_half_open": [
+        0,
+        26460000
+      ],
+      "extracted_12000_pairs_half_open": [
+        0,
+        7200000
+      ],
+      "demod_start_argument": "0",
+      "demod_seconds_argument": "600"
+    },
+    {
+      "index": 1,
+      "nominal_seconds_half_open": [
+        588,
+        1188
+      ],
+      "source_44100_pairs_half_open": [
+        25930800,
+        52390800
+      ],
+      "extracted_12000_pairs_half_open": [
+        7056000,
+        14256000
+      ],
+      "demod_start_argument": "588",
+      "demod_seconds_argument": "600"
+    },
+    {
+      "index": 2,
+      "nominal_seconds_half_open": [
+        1176,
+        1368.2860090702948
+      ],
+      "source_44100_pairs_half_open": [
+        51861600,
+        60341413
+      ],
+      "extracted_12000_pairs_half_open": [
+        14112000,
+        16419433
+      ],
+      "demod_start_argument": "1176",
+      "demod_seconds_argument": "192.28608333333332"
+    }
+  ],
+  "selection": {
+    "primary": "First three-phase CRC-complete group by earliest original phase-zero row in baseline window 0. Preserve the selected counter whatever mode or later-window reception yields. No complete group in window 0 gives a null primary.",
+    "coverage": "Report every window individually. For the whole-file union, deduplicate original packets by counter, phase, continuity and compare all shared bytes. Quarantine conflicting alternatives; require all four packet CRCs and the native DU CRC for a complete DU, and all three ordered DUs for a group.",
+    "signalling": "Report complete-window and block CRC counts per pass. Callback counts across the two overlaps include repeated samples; do not convert repeated signalling byte patterns to unique transmission occurrences."
+  },
+  "novelty": {
+    "file": "history.json.gz",
+    "base_registry": "examples/nov28/yokohama-1300/history.json.gz",
+    "base_count": 13483,
+    "base_compressed_sha256": "3d8cd9f71bcdb75eeb78a104348883a84754a0677c7ada11b514d0146bf607b5",
+    "member_6140_inclusive": [
+      43914151,
+      43914398
+    ],
+    "member_added": 248,
+    "nov19_tail_input": "examples/nov28/bit-evidence/tail-reception.json",
+    "nov19_tail_additional": [
+      43288873,
+      43288874,
+      43288875,
+      43288876
+    ],
+    "total": 13735,
+    "decompressed_sha256": "3d6250a63663684883de2ea727c471a4f79d95724afb8226b899e14b66d844d2",
+    "compressed_sha256": "8af38e60adb140848588e40b522d2395c5b0ee7c58373f2a8069f6187c27f655",
+    "primary_check": "Report whether the fixed primary counter already occurs in the frozen registry; when it does, report an overlap and retain its identity without claiming a novel primary. Do not substitute any later counter.",
+    "recording_check": "Separately intersect all physically assigned counter IDs (including packet-only) from all three windows with the same registry, list overlaps, and report whether the entire recorded span passes this observed-coordinate check."
+  },
+  "chronology": "Selection fixed from RIFF/DAV metadata, source checksum and previous transport receipts. No sample interpretation prior to receiver release."
+}
