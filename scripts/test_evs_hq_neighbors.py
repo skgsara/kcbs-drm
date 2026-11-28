@@ -25,3 +25,7 @@ class HQNeighborsTest(unittest.TestCase):
         for invalid in [slot(4, "fa"), slot(4, "f9", count=1), slot(5, "f9"),
                         slot(4, "--", receipt="missing_du")]:
             self.assertEqual(hq_neighbors([slot(2, "f9"), slot(3, "f8"), invalid])["eligible"], 0)
+
+
+if __name__ == "__main__":
+    unittest.main()

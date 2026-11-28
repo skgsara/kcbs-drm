@@ -56,6 +56,22 @@ def run_salvage(*sources):
 
 
 class PacketIntegrity(unittest.TestCase):
+    def test_truncated_tail_fails_by_default_and_is_reported_when_allowed(self):
+        complete = row(0) + row(1) + row(2)
+        for cut in (2, 60):  # inside the length header, inside the payload
+            with self.subTest(cut=cut), tempfile.TemporaryDirectory() as td, redirect_stdout(io.StringIO()):
+                path = Path(td) / 'cut.msc'
+                path.write_bytes(complete + row(0, 101)[:cut])
+                with self.assertRaises(ValueError):
+                    salvage([path], Path(td) / 'strict', transport_only=True)
+                salvage([path], Path(td) / 'lenient', transport_only=True, allow_truncated_tail=True)
+                report = json.loads((Path(td) / 'lenient' / 'report.json').read_text())
+                self.assertEqual(report['crc_good_data_units'], 3)
+                self.assertEqual(report['salvaged_complete_groups'], 1)
+                [tail] = report['truncated_tails_ignored']
+                self.assertEqual((tail['record'], tail['bytes']), (3, cut if cut < 4 else cut - 4))
+                self.assertEqual(tail['kind'], 'header' if cut < 4 else 'payload')
+
     def test_bad_wire_header_or_invalid_complete_du_cannot_poison_a_good_source(self):
         good = row(0) + row(1) + row(2)
         expected, _, _ = run_salvage(good)

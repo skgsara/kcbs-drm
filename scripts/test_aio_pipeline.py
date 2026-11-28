@@ -17,6 +17,8 @@ pfq = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pfq)
 import kcbs_decode_audio as aio
 import demod_iq_window as demod
+import render_continuous as continuous
+from compare_evs_group import read_words
 
 
 class PipelineTests(unittest.TestCase):
@@ -132,6 +134,46 @@ class PipelineTests(unittest.TestCase):
         built, keep = pfq.apply_strategy(frames, 'erase_all', np.random.default_rng(0), frames)
         np.testing.assert_array_equal(built, frames)
         self.assertEqual(int(keep.sum()), 20)
+
+    def test_continuous_p2_fill_preserves_direct_bytes_and_tier_b_donor(self):
+        units = np.arange(2 * 3 * 716, dtype=np.uint16).astype(np.uint8).reshape(2, 3, 716)
+        key = np.full(16, 2, dtype=np.uint8)
+        words = []
+
+        def capture_stream(command, **kwargs):
+            words.extend(read_words(command[-2]))
+            np.zeros(len(words) * 320, dtype='<i2').tofile(command[-1])
+            return SimpleNamespace(returncode=0)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            np.savez(root/'groups.npz', counters=[10, 11], du=units)
+            np.savez(root/'keys.npz', counters=[10], ks=key[None, :],
+                     candidate_mask=np.ones((1, 16), dtype=bool))
+            args = ['render_continuous.py', str(root), str(root/'keys.npz'),
+                    '--out', str(root/'output'), '--rate', '16000']
+            with patch.object(sys, 'argv', args), patch.object(continuous, 'linux', str), \
+                    patch.object(continuous.subprocess, 'run', side_effect=capture_stream), \
+                    patch('builtins.print'):
+                continuous.main()
+
+        self.assertEqual(len(words), 120)
+        donor_modes, donor_payloads = continuous.group_frames(units[0], key)
+        peer_modes, peer_payloads = continuous.group_frames(units[1], None)
+        for slot in range(60):
+            with self.subTest(slot=slot):
+                role = slot % 4
+                expected = donor_payloads[slot].copy()
+                if role == 1:
+                    # p15, p18, ..., p30 come from the immediately preceding P1.
+                    expected[15::3] = donor_payloads[slot - 1, 15::3]
+                keyed_word = bytes([donor_modes[slot]]) + expected.tobytes()
+                self.assertEqual(words[slot], keyed_word if role < 2 else b'')
+
+                # The later group uses the original tier-B donor at the same slot.
+                peer = peer_payloads[slot].copy()
+                peer[::3] = donor_payloads[slot, ::3]
+                self.assertEqual(words[60 + slot], bytes([peer_modes[slot]]) + peer.tobytes())
 
 
     def test_discontinuous_runs_use_their_own_prefix(self):

@@ -62,12 +62,10 @@ def assemble_frames(du, keys, offsets, span):
     supplied = np.zeros(span*60, bool)
     rows0 = np.arange(0, 60, 4)
     rows1 = rows0 + 1
-    # group_frames returns the mode separately, so use payload coordinates here.
-    unknown = rc.KEYED[5:]
     for off, row_du, key in zip(offsets, du, keys):
         base = int(off)*60
         modes, payload = rc.group_frames(row_du, key)
-        payload[np.ix_(rows1, unknown)] = payload[np.ix_(rows0, unknown)]
+        rc.fill_p2_for_playback(payload)
         frames[base:base+60, 0] = modes
         frames[base:base+60, 1:] = payload
         supplied[base + rows0] = supplied[base + rows1] = True

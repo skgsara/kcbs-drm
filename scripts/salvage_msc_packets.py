@@ -20,7 +20,9 @@ from tail_fill_audit import crc, fill_candidates
 PACKET_HEADERS = (0x80, 0x01, 0x02, 0x43)
 
 
-def records(path, *, rejected_records=None):
+def records(path, *, rejected_records=None, truncated_tails=None):
+    """Yield parsed records. A dump that ends mid-record raises ValueError unless
+    ``truncated_tails`` is a list; then the partial tail is recorded there and ignored."""
     with open(path, 'rb') as f:
         index = 0
         while True:
@@ -28,13 +30,20 @@ def records(path, *, rejected_records=None):
             if not h:
                 return
             if len(h) != 4:
-                raise ValueError(f'truncated record header in {path}')
+                if truncated_tails is None:
+                    raise ValueError(f'truncated record header in {path}')
+                truncated_tails.append(dict(file=str(path), record=index, kind='header', bytes=len(h)))
+                return
             n, = struct.unpack('<I', h)
             if not 0 < n <= 1024*1024:
                 raise ValueError(f'bad record length {n} in {path}')
             raw = f.read(n)
             if len(raw) != n:
-                raise ValueError(f'truncated record in {path}')
+                if truncated_tails is None:
+                    raise ValueError(f'truncated record in {path}')
+                truncated_tails.append(dict(file=str(path), record=index, kind='payload',
+                                            declared=n, bytes=len(raw)))
+                return
             if n == 728:
                 p = [raw[q*182+1:q*182+180] for q in range(4)]
                 good = [crc(raw[q*182:q*182+180]) == int.from_bytes(raw[q*182+180:q*182+182], 'big')
@@ -59,14 +68,15 @@ def records(path, *, rejected_records=None):
             index += 1
 
 
-def salvage(paths, out, *, transport_only=False, save_packets=False):
+def salvage(paths, out, *, transport_only=False, save_packets=False, allow_truncated_tail=False):
     payloads = defaultdict(set)
     provenance = defaultdict(list)
     baseline = set()
     assignments = 0
     rejected_records = Counter()
+    truncated_tails = [] if allow_truncated_tail else None
     for path in paths:
-        recs = list(records(path, rejected_records=rejected_records))
+        recs = list(records(path, rejected_records=rejected_records, truncated_tails=truncated_tails))
         assigned = defaultdict(set)
         for i, r in enumerate(recs):
             if r and r['phase'] == 0 and r['packet_ok'][0] and r['packet_ok'][3]:
@@ -153,6 +163,8 @@ def salvage(paths, out, *, transport_only=False, save_packets=False):
                   note='Packet/DU CRCs verify container integrity, not text or codec keys.')
     if rejected_records:
         report['rejected_record_observations'] = dict(rejected_records)
+    if truncated_tails:
+        report['truncated_tails_ignored'] = truncated_tails
     if transport_only:
         report['text_candidates_evaluated'] = False
     out = Path(out)
@@ -182,5 +194,9 @@ if __name__ == '__main__':
     ap.add_argument('--transport-only', action='store_true', help='assemble received data units and skip text candidates')
     ap.add_argument('--save-packets', action='store_true',
                     help='write packets.npz with CRC-good packet bodies and receipt flags for complete and partial phases')
+    ap.add_argument('--allow-truncated-tail', action='store_true',
+                    help='ignore a final partial record (e.g. a receiver stopped mid-write) instead of failing; '
+                         'the ignored bytes are listed in report.json')
     a = ap.parse_args()
-    salvage(a.inputs, a.out, transport_only=a.transport_only, save_packets=a.save_packets)
+    salvage(a.inputs, a.out, transport_only=a.transport_only, save_packets=a.save_packets,
+            allow_truncated_tail=a.allow_truncated_tail)
