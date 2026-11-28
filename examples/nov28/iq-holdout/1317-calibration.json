@@ -1,0 +1,468 @@
+{
+  "predictions_sha256": "9619ed82abf8850954278610f35c5aafd7651a625a135711f31903dd279ca4bf",
+  "complete_groups": 256,
+  "eligible": 117,
+  "by_position": {
+    "1": {
+      "F9": {
+        "eligible": 12,
+        "no_label": 8,
+        "match": 4
+      },
+      "FA": {
+        "eligible": 20,
+        "no_label": 7,
+        "match": 13
+      },
+      "FB": {}
+    },
+    "2": {
+      "F9": {
+        "eligible": 14,
+        "no_label": 9,
+        "match": 5
+      },
+      "FA": {
+        "eligible": 14,
+        "no_label": 6,
+        "match": 8
+      },
+      "FB": {}
+    },
+    "3": {
+      "F9": {
+        "eligible": 12,
+        "no_label": 12
+      },
+      "FA": {
+        "eligible": 18,
+        "no_label": 18
+      },
+      "FB": {}
+    },
+    "4": {
+      "F9": {
+        "eligible": 10,
+        "no_label": 10
+      },
+      "FA": {
+        "eligible": 17,
+        "no_label": 17
+      },
+      "FB": {}
+    }
+  },
+  "scored": [
+    {
+      "counter": 43876022,
+      "slot": 1,
+      "position": 2,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876022,
+      "slot": 37,
+      "position": 2,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876023,
+      "slot": 37,
+      "position": 2,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876033,
+      "slot": 41,
+      "position": 2,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876240,
+      "slot": 8,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876240,
+      "slot": 12,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876248,
+      "slot": 29,
+      "position": 2,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876248,
+      "slot": 32,
+      "position": 1,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876272,
+      "slot": 0,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876273,
+      "slot": 48,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876273,
+      "slot": 52,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876275,
+      "slot": 0,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876275,
+      "slot": 1,
+      "position": 2,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876279,
+      "slot": 1,
+      "position": 2,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876279,
+      "slot": 24,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876280,
+      "slot": 9,
+      "position": 2,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876282,
+      "slot": 13,
+      "position": 2,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876282,
+      "slot": 48,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876283,
+      "slot": 24,
+      "position": 1,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876283,
+      "slot": 41,
+      "position": 2,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876303,
+      "slot": 40,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876305,
+      "slot": 4,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876321,
+      "slot": 36,
+      "position": 1,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876325,
+      "slot": 52,
+      "position": 1,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876346,
+      "slot": 8,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876349,
+      "slot": 44,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876351,
+      "slot": 4,
+      "position": 1,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876352,
+      "slot": 13,
+      "position": 2,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876363,
+      "slot": 33,
+      "position": 2,
+      "mode": "F9",
+      "target": "bit_8",
+      "observed": 0,
+      "allowed": [
+        0,
+        1
+      ],
+      "matched": true
+    },
+    {
+      "counter": 43876368,
+      "slot": 17,
+      "position": 2,
+      "mode": "FA",
+      "target": "pair_8_9",
+      "observed": 0,
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "matched": true
+    }
+  ]
+}

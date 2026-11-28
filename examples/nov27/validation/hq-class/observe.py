@@ -7,17 +7,9 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(ROOT / "scripts"))
+from evs_intra_word import hq_class_restriction as restriction
 from project_evs_group import checked_units
 from render_continuous import MODE_POSITIONS
-
-
-def restriction(mode):
-    """Return the allowed high two bits of payload octet 0, or None for an unrestricted field."""
-    if mode == 0xF9:
-        return (0, 1)
-    if mode in (0xFA, 0xFB):
-        return (0, 1, 2)
-    return None
 
 
 def observe(path, counter=None):

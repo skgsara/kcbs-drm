@@ -105,12 +105,19 @@ def score_intra_words(words):
     for start in range(0, len(words), GROUP_SIZE):
         group = words[start:start + GROUP_SIZE]
         cases = {v: intra_rows(group, start // GROUP_SIZE, v) for v in ("original", "inside", "outside")}
-        expected_slots = {i for i, w in enumerate(group) if w[0] == 0xf9 or w[0] >> 3 in (8, 14)}
+        expected_slots = {i for i, w in enumerate(group) if w[0] in (0xf9, 0xfa, 0xfb) or w[0] >> 3 in (8, 14)}
         if any(rows.keys() != expected_slots for rows in cases.values()):
             raise ValueError("Intra-word check did not return the expected applicable slots")
         for slot in expected_slots:
             word = group[slot]
             row = cases["original"][slot]
+            if word[0] in (0xfa, 0xfb):
+                # Validate the added pair restriction separately. This receipt's
+                # original HQ denominator counts only single-bit F9 predictions.
+                if (row["check"], row["outcome"], row["observed"], row["word_bits"], row["allowed"]) != (
+                        "swb_hq_class", "conditional", None, [8, 10], [0, 2]) or word[1] >> 6 == 3:
+                    raise ValueError("Switched SWB HQ class disagrees with the native word")
+                continue
             counts = totals[row["check"]]
             counts["eligible"] += 1
             if word[0] == 0xf9:

@@ -70,6 +70,9 @@ def main():
     if args.start < 0 or not 0 < args.seconds <= 600:
         ap.error('start must be nonnegative; seconds must be in (0, 600]')
     src = Path(args.input).resolve()
+    if src.suffix.lower() != '.cs8' and (args.offset_hz or args.sample_rate is not None):
+        ap.error('--offset-hz and --sample-rate on this command require raw CS8. '
+                 'Use extract_iq_channel.py to tune a channel from a stereo IQ WAV.')
     try:
         rate, frames = input_info(src, args.sample_rate)
     except (OSError, ValueError) as error:
