@@ -1,0 +1,40 @@
+{
+  "public_freeze": "6da00a1882d3cbbbe31b984b4d74d18fc8bbbe58",
+  "source_flac": "3205kHz-480-540s-iq12.flac",
+  "source_flac_sha256": "31d38a1b0cb94726f6f1a50f8a3b9eeb1c8a3e1181f6dfe562cae16861fe3c63",
+  "original_sample_pairs_half_open": [
+    5760000,
+    6480000
+  ],
+  "excerpt_sample_pairs_half_open": [
+    0,
+    720000
+  ],
+  "excerpt_sample_rate_hz": 12000,
+  "input_json_sha256": "7a28077c5bc40d166d0a5a2538a9a4986dd6b07e3ff5d9eb6959736cf48d5470",
+  "receiver_binary_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "demod_iq_window_py_sha256": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+  "resample_iq_py_sha256": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+  "replay": "KCBS_DREAM=/path/to/dream python scripts/demod_iq_window.py examples/receiver-control/on-air/3205kHz-480-540s-iq12.flac FRESH_OUTPUT --start 0 --seconds 60 --reception-profile wiener --mlc-iterations 1",
+  "reception_profile": "wiener",
+  "receiver_settings": {
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "mlciter": 1
+  },
+  "channel_offset_hz": 0.0,
+  "cold_start": true,
+  "passes": 1,
+  "start_utc": "2026-11-28T15:31:52.630290+00:00",
+  "finish_utc": "2026-11-28T15:31:54.587168+00:00",
+  "returncode": 0,
+  "dream_reached_offline_eof": true,
+  "native_msc": "native.msc.bin",
+  "native_msc_sha256": "5baede8e3dd42873fbf9ebe53fc16dce90a17f512947c1591f6dbf7de3f40af2",
+  "native_msc_bytes": 105408,
+  "native_rows": 144,
+  "row_length_histogram": {
+    "728": 144
+  }
+}
