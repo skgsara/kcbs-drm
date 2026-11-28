@@ -1,0 +1,1399 @@
+{
+  "format": "kcbs-blind-mask-benchmark/1",
+  "registered": "2026-11-28T05:37:45+00:00",
+  "git_head": "9ad95dfb1ea6dfcfacb09e5d57b712ecd8b32415",
+  "builder": {
+    "path": "scripts/build_mask_benchmark.py",
+    "bytes": 60369,
+    "sha256": "93ecb13cfb2459c01be7a5760a48ec71f7c6dea836822657a3b8226412844111"
+  },
+  "evaluator": {
+    "path": "scripts/eval_mask_predictions.py",
+    "bytes": 25499,
+    "sha256": "2ed97232f2a8e3cadb7ff0c32de380a24ea732c039ce20a5bfb0bc0e2af955cb"
+  },
+  "protocol": {
+    "path": "examples/nov28/blind-mask-benchmark/protocol.md",
+    "bytes": 19642,
+    "sha256": "b61ed0c51ad513fe74996ecff09f1613ff4e5c379e03d2a592fef8a808f32187"
+  },
+  "baselines": {
+    "path": "examples/nov28/blind-mask-benchmark/baselines-dev.json",
+    "bytes": 44631,
+    "sha256": "ac407f16cc48695dfdfe8b0ece0ed097c67fec9d8a2d8aa812194c69d13c9c11"
+  },
+  "label_check_rule": "drop a full label when its role-0 frames raise more than 0 decoder flags (bfi or BER_detect) decoded alone; control = role-0 label of another labelled group. Also drop a full text label that a text-carousel copy contradicts: some key byte position disagrees with, and never agrees with, the plaintext of blocks +-[1, 2, 3] carousel periods away decrypted with other groups' keys (0x80 in byte 0 ignored)",
+  "tools": {
+    "stock_decoder": {
+      "path": "work/evs_gcc_independent/EVS_dec",
+      "bytes": 2006640,
+      "sha256": "3e81f98289a5083dbacb93ffb23524519974d5a68083f31d0d823c05ede60872"
+    },
+    "stock_encoder": {
+      "path": "work/evs_gcc_independent/EVS_cod",
+      "bytes": 2122184,
+      "sha256": "7c2b1467b51e44974ca1f04245d3c7ce48d3dba7f08ac802ccf8ca56862a82c0"
+    },
+    "decoder_check_build": {
+      "binary": "work/benchmark/tools/evs_dec_traced/EVS_dec_traced",
+      "sha256": "5bdf681921cb27056c5ba9596d311ea5eaed968e434818ecc1e37c5a9a4d3709",
+      "source": "work/ref/evs/src/c-code",
+      "decoder_c_sha256": "aa7311d66ef3a826e5d7e4aa172740c9e1199c6e268fbd2bb8c586c9678bcfcf",
+      "patch": "one fprintf(stderr, \"TRACE,frame,bfi,BER_detect,core\") before syn_output; all other sources compiled unmodified from work/ref"
+    }
+  },
+  "layout": {
+    "slot": "20*phase + 4*cycle + (position-1)",
+    "role": "slot % 4",
+    "frame": "33 bytes: mode byte + 32 payload bytes, ciphertext as received",
+    "mask_index": "11*role + j -> payload byte 3j (frame byte 1+3j) of the 15 frames of that role",
+    "clear_index": 43,
+    "unknown": -1,
+    "provenance_codes": {
+      "0": "unknown",
+      "1": "text_crc_supported",
+      "2": "idle_tail_crc",
+      "3": "inferred_dev_only",
+      "4": "clear_by_convention",
+      "5": "synthetic_exact"
+    }
+  },
+  "tasks": {
+    "T1": {
+      "visible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        43
+      ],
+      "targets": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "description": "recover role-1 bytes j=0..4 (ks[11..15]); role 0 known, role-1 j=5..10 and roles 2-3 unknown"
+    },
+    "T0": {
+      "visible": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        43
+      ],
+      "targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "description": "recover role-0 bytes (ks[0..10]); role-1 j=0..4 known, everything else unknown (harder control)"
+    },
+    "TH": {
+      "visible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        43
+      ],
+      "targets": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "description": "recover the 27 bytes the text tail never reveals (role-1 j=5..10, role 2, role-3 j=0..9) given ks[0..15]; synthetic and inferred sets only"
+    }
+  },
+  "split_tasks": {
+    "dev": [
+      "T1",
+      "T0"
+    ],
+    "test": [
+      "T1",
+      "T0"
+    ],
+    "transfer": [
+      "T1",
+      "T0"
+    ],
+    "syn-dev": [
+      "T1",
+      "T0",
+      "TH"
+    ],
+    "syn-test": [
+      "T1",
+      "T0",
+      "TH"
+    ],
+    "nov27-dev": [
+      "T1",
+      "T0",
+      "TH"
+    ]
+  },
+  "splits": {
+    "dev": {
+      "kind": "real",
+      "captures": [
+        {
+          "id": "nov25-0448+0457-3205-hik",
+          "inputs": [
+            {
+              "path": "contrib/kcbsdrm/reference/sf_2026-11-25_0448KST_3205_hik.bin",
+              "bytes": 1267824,
+              "sha256": "5d1630fdeb585b343f1d7e6a7134741f39deef3f96ebc714777c348390740be0"
+            },
+            {
+              "path": "contrib/kcbsdrm/reference/sf_2026-11-25_0457KST_3205_hik.bin",
+              "bytes": 2262612,
+              "sha256": "c0ff7cfb023c45e065ec3745d90a3accac35aa873f1fa5244906409da36a811e"
+            }
+          ],
+          "keys": {
+            "path": "contrib/kcbsdrm/keys/keys_2026-11-25.npz",
+            "bytes": 23873,
+            "sha256": "4f09ba2ddf55c9b03a39a5f634bcbbf2d415fcf257e2fcb350724fad38afece8",
+            "content_sha256": "8cec166f740ab877cc8ad2cda986fbcc79bf6b8184d6f550f68863c58c6c5ec0"
+          },
+          "groups": 1357,
+          "labelled": 1104,
+          "strict": 1027,
+          "label_check": {
+            "candidates": 1114,
+            "role0_frames_supplied": 16710,
+            "label_flagged_frames": 29,
+            "control_flagged_frames": 7227,
+            "groups_with_label_flags": 9,
+            "groups_with_control_flags": 1000,
+            "dropped": 10,
+            "dropped_counters": [
+              43679536,
+              43679637,
+              43679845,
+              43679859,
+              43679960,
+              43680283,
+              43680491,
+              43680493,
+              43680505,
+              43680606
+            ],
+            "dropped_label_flags": [
+              0,
+              4,
+              3,
+              2,
+              6,
+              1,
+              3,
+              2,
+              1,
+              7
+            ],
+            "dropped_decoder_flags": 9,
+            "dropped_copy_contradiction": 1,
+            "copy_contradicted_counters": [
+              43679536
+            ],
+            "decoder_dropped_but_copy_confirmed": 9
+          },
+          "output": {
+            "path": "work/benchmark/real/nov25-0448+0457-3205-hik.npz",
+            "bytes": 2674923,
+            "sha256": "675c0e6d7683eea45d86d734e03b4bbe3f259351058d1c67af589ca7ab9e6138",
+            "content_sha256": "feb39f0dece0197940779402bce56a6e97690dbeae828a7c1a6d96f922ac4da8"
+          }
+        },
+        {
+          "id": "nov25-1246-6140-merged",
+          "inputs": [
+            {
+              "path": "contrib/kcbsdrm/reference/sf_2026-11-25_1246KST_6140_merged.bin",
+              "bytes": 1498404,
+              "sha256": "d25689296e129309890bd6e19518a30a5b3d25599d903c0470d9a38862ebd321"
+            }
+          ],
+          "keys": {
+            "path": "contrib/kcbsdrm/keys/keys_2026-11-25_1246KST_merged.npz",
+            "bytes": 12673,
+            "sha256": "719f10b1570a56b4b32f588adade78e0be32d204e17eeea6ecec0e7f29d6cbe6",
+            "content_sha256": "fa6dd54ca73b04cb46215c2ee10d5f25ff0d85f74b57f02e2fcd95b4588c3288"
+          },
+          "groups": 682,
+          "labelled": 582,
+          "strict": 513,
+          "label_check": {
+            "candidates": 586,
+            "role0_frames_supplied": 8790,
+            "label_flagged_frames": 4,
+            "control_flagged_frames": 2883,
+            "groups_with_label_flags": 1,
+            "groups_with_control_flags": 466,
+            "dropped": 4,
+            "dropped_counters": [
+              43703640,
+              43703641,
+              43703741,
+              43703856
+            ],
+            "dropped_label_flags": [
+              4,
+              0,
+              0,
+              0
+            ],
+            "dropped_decoder_flags": 1,
+            "dropped_copy_contradiction": 4,
+            "copy_contradicted_counters": [
+              43703640,
+              43703641,
+              43703741,
+              43703856
+            ],
+            "decoder_dropped_but_copy_confirmed": 0
+          },
+          "output": {
+            "path": "work/benchmark/real/nov25-1246-6140-merged.npz",
+            "bytes": 1371117,
+            "sha256": "e7fed61d64dadbd81186cb84b2d7da4754fe057b1d42b8de1e14da2a44ce89cd",
+            "content_sha256": "d3750ba508514e467c0fb5df8f69474eda91ffb8fb9a4886d897f1a2ac2feca2"
+          }
+        }
+      ],
+      "use": "development"
+    },
+    "test": {
+      "kind": "real",
+      "captures": [
+        {
+          "id": "nov25-2242-3205-hl5ntr",
+          "inputs": [
+            {
+              "path": "contrib/kcbsdrm/reference/sf_2026-11-25_2242KST_3205_hl5ntr.bin",
+              "bytes": 2108160,
+              "sha256": "983cee212789269f9634328d10bd91e2ebe51ae7a27904ce74f4552b75cb0682"
+            }
+          ],
+          "keys": {
+            "path": "contrib/kcbsdrm/keys/keys_2026-11-25_2242KST_3205_hl5ntr.npz",
+            "bytes": 14140,
+            "sha256": "3e17c8488351081f0d3e456d8050047e6da2f0d4c32fa729cde5febce02f9f3e",
+            "content_sha256": "cdec1046e0a0a9ec7412a12d741a948c37efa91f71880bc8926ad6936a79ced7"
+          },
+          "groups": 800,
+          "labelled": 597,
+          "strict": 508,
+          "label_check": {
+            "candidates": 599,
+            "role0_frames_supplied": 8985,
+            "label_flagged_frames": 0,
+            "control_flagged_frames": 3040,
+            "groups_with_label_flags": 0,
+            "groups_with_control_flags": 491,
+            "dropped": 2,
+            "dropped_counters": [
+              43733365,
+              43733675
+            ],
+            "dropped_label_flags": [
+              0,
+              0
+            ],
+            "dropped_decoder_flags": 0,
+            "dropped_copy_contradiction": 2,
+            "copy_contradicted_counters": [
+              43733365,
+              43733675
+            ],
+            "decoder_dropped_but_copy_confirmed": 0
+          },
+          "output": {
+            "path": "work/benchmark/real/nov25-2242-3205-hl5ntr.npz",
+            "bytes": 1587411,
+            "sha256": "9af90d2ed67012d226d909e193e4ce231878c5654eae9b16096655e8a2da5124",
+            "content_sha256": "2a5d70275b31cabe260e5b8c74cf7faf91e5acb8d2d84a9f5f0fcd1043e1ab26"
+          }
+        },
+        {
+          "id": "nov26-0500-3205-hl5ntr",
+          "inputs": [
+            {
+              "path": "contrib/kcbsdrm/reference/sf_2026-11-26_0500KST_3205_hl5ntr.bin",
+              "bytes": 1994700,
+              "sha256": "4eaa8c8e2119dd817cad676273f5b5c2eb1a66067c4447b550c85f6a248ca6a0"
+            }
+          ],
+          "keys": {
+            "path": "contrib/kcbsdrm/keys/keys_2026-11-26_0500KST_3205_hl5ntr.npz",
+            "bytes": 7461,
+            "sha256": "f1d9407e5865696ccd1cc31b6259d6021ab42026e2bf32ed5ebc416018e59da8",
+            "content_sha256": "b8f06dfaa4dd418fec96bedc60bae253025dc1a45e2bb6be6736547ea781fcc7"
+          },
+          "groups": 507,
+          "labelled": 221,
+          "strict": 125,
+          "label_check": {
+            "candidates": 221,
+            "role0_frames_supplied": 3315,
+            "label_flagged_frames": 0,
+            "control_flagged_frames": 1400,
+            "groups_with_label_flags": 0,
+            "groups_with_control_flags": 196,
+            "dropped": 0,
+            "dropped_counters": [],
+            "dropped_label_flags": [],
+            "dropped_decoder_flags": 0,
+            "dropped_copy_contradiction": 0,
+            "copy_contradicted_counters": [],
+            "decoder_dropped_but_copy_confirmed": 0
+          },
+          "output": {
+            "path": "work/benchmark/real/nov26-0500-3205-hl5ntr.npz",
+            "bytes": 898755,
+            "sha256": "84a4fb8ebd0796c5ba6b7dd531a069376b30f5c28d830f0fde2e05f2bd344b57",
+            "content_sha256": "59e55227ef4f14b485a4341626303e6d4e865b629c700b2120e437ae91a89c1f"
+          }
+        },
+        {
+          "id": "nov26-0642-merged",
+          "inputs": [
+            {
+              "path": "contrib/kcbsdrm/reference/sf_2026-11-26_0642KST_merged.bin",
+              "bytes": 1675548,
+              "sha256": "c037c2723e887808cb2167bff876b44869035c47d939123d221858a6acc9cc7a"
+            }
+          ],
+          "keys": {
+            "path": "contrib/kcbsdrm/keys/keys_2026-11-26_0642KST_merged.npz",
+            "bytes": 9876,
+            "sha256": "1b137eefcedd87fc3ce21abfaf985db8c291a0d7cafd6e9bf97cf19a9af59052",
+            "content_sha256": "3e4b0b5209fff245129c69106491541f76b2242ea17ed1dc68b57f10c185795b"
+          },
+          "groups": 575,
+          "labelled": 386,
+          "strict": 294,
+          "label_check": {
+            "candidates": 387,
+            "role0_frames_supplied": 5805,
+            "label_flagged_frames": 0,
+            "control_flagged_frames": 1332,
+            "groups_with_label_flags": 0,
+            "groups_with_control_flags": 253,
+            "dropped": 1,
+            "dropped_counters": [
+              43757756
+            ],
+            "dropped_label_flags": [
+              0
+            ],
+            "dropped_decoder_flags": 0,
+            "dropped_copy_contradiction": 1,
+            "copy_contradicted_counters": [
+              43757756
+            ],
+            "decoder_dropped_but_copy_confirmed": 0
+          },
+          "output": {
+            "path": "work/benchmark/real/nov26-0642-merged.npz",
+            "bytes": 1095654,
+            "sha256": "c1faa64fd8175831309797d7210344fb833f5c5095885783a2d2d81e1e465bb6",
+            "content_sha256": "7be7d73172725d9900253a38ec74f6c3b9117f24eab213ada56012536f7c2fd5"
+          }
+        },
+        {
+          "id": "nov26-1008-merged",
+          "inputs": [
+            {
+              "path": "contrib/kcbsdrm/reference/sf_2026-11-26_1008KST_merged.bin",
+              "bytes": 1686528,
+              "sha256": "203db4bc7a892b499f9dc3f45840b0a62174a900fa42d4aeded6307667871e56"
+            }
+          ],
+          "keys": {
+            "path": "contrib/kcbsdrm/keys/keys_2026-11-26_1008KST_merged.npz",
+            "bytes": 14119,
+            "sha256": "1720a49b23a09e5e9617899fbc569859fd78cdf48a087702f8acad7a3b86c440",
+            "content_sha256": "0bf29228a879bd3094618fd869e0b13c1454d4018aad1e301ff4ed86a34505af"
+          },
+          "groups": 767,
+          "labelled": 599,
+          "strict": 531,
+          "label_check": {
+            "candidates": 610,
+            "role0_frames_supplied": 9150,
+            "label_flagged_frames": 0,
+            "control_flagged_frames": 876,
+            "groups_with_label_flags": 0,
+            "groups_with_control_flags": 292,
+            "dropped": 11,
+            "dropped_counters": [
+              43767550,
+              43767551,
+              43767843,
+              43767855,
+              43767890,
+              43767891,
+              43768118,
+              43768119,
+              43768147,
+              43768148,
+              43768176
+            ],
+            "dropped_label_flags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "dropped_decoder_flags": 0,
+            "dropped_copy_contradiction": 11,
+            "copy_contradicted_counters": [
+              43767550,
+              43767551,
+              43767843,
+              43767855,
+              43767890,
+              43767891,
+              43768118,
+              43768119,
+              43768147,
+              43768148,
+              43768176
+            ],
+            "decoder_dropped_but_copy_confirmed": 0
+          },
+          "output": {
+            "path": "work/benchmark/real/nov26-1008-merged.npz",
+            "bytes": 1541168,
+            "sha256": "a5e4ad806d59feff7918a49f23e29b2d997f1e3a442ac1a772d2fb9c5fc3be39",
+            "content_sha256": "a9fd149c29167c9f91bca2ecfd0cea3596ce4e56e1a08853c50f3e63d899102c"
+          }
+        }
+      ],
+      "use": "sealed: final verification only"
+    },
+    "transfer": {
+      "kind": "real",
+      "captures": [
+        {
+          "id": "mar16-3205-hl5ntr",
+          "inputs": [
+            {
+              "path": "dumps/hl5ntr.ddns.net_2026-03-16T19_49_43Z_3205.000__c000.msc.bin",
+              "bytes": 284016,
+              "sha256": "e3b85c6538c9aaf9084edf3730ed2164e48bfc3f4634db944f693050ae1ce5a9"
+            },
+            {
+              "path": "dumps/hl5ntr.ddns.net_2026-03-16T19_51_14Z_3205.000__c000.msc.bin",
+              "bytes": 334524,
+              "sha256": "425c1366475179195a193a28b8b3bde0eb2cdf43544344000274ff42e96712f5"
+            },
+            {
+              "path": "dumps/hl5ntr.ddns.net_2026-03-16T19_53_42Z_3205.000__c000.msc.bin",
+              "bytes": 731268,
+              "sha256": "f25a3e9fbfb88bde3e80748638236982f8911ea6e1e27075dc263a8aacc0505b"
+            },
+            {
+              "path": "dumps/hl5ntr.ddns.net_2026-03-16T19_53_42Z_3205.000__c001.msc.bin",
+              "bytes": 730536,
+              "sha256": "241d63a6fa5b3b62b6eb6aaafc4b242d12f4db12f089861e74199161da9c778d"
+            },
+            {
+              "path": "dumps/hl5ntr.ddns.net_2026-03-16T19_53_42Z_3205.000__c002.msc.bin",
+              "bytes": 731268,
+              "sha256": "1abe947ad2a5d3db5b0b5cb6015edb0129ce176a9af0c0e78d3aeab8a85d799a"
+            },
+            {
+              "path": "dumps/hl5ntr.ddns.net_2026-03-16T19_53_42Z_3205.000__c003.msc.bin",
+              "bytes": 311832,
+              "sha256": "73add720cfd7d1644a3cfa5d53d0abd208f87a4c5954916049b3ec0e4b34d465"
+            }
+          ],
+          "keys": null,
+          "groups": 902,
+          "labelled": 865,
+          "strict": 865,
+          "label_check": {
+            "candidates": 865,
+            "role0_frames_supplied": 12975,
+            "label_flagged_frames": 0,
+            "control_flagged_frames": 3488,
+            "groups_with_label_flags": 0,
+            "groups_with_control_flags": 610,
+            "dropped": 0,
+            "dropped_counters": [],
+            "dropped_label_flags": [],
+            "dropped_decoder_flags": 0,
+            "dropped_copy_contradiction": 0,
+            "copy_contradicted_counters": [],
+            "decoder_dropped_but_copy_confirmed": 0
+          },
+          "output": {
+            "path": "work/benchmark/real/mar16-3205-hl5ntr.npz",
+            "bytes": 1743893,
+            "sha256": "38636d6510ece06f04365b5f2ddb4e9b23a92ddbcf7777d908d51c2f367425af",
+            "content_sha256": "2d6fb3d95b31af031b370ac2a47fdd924d0a4e56a96da4e06e4472c8c165396f"
+          }
+        }
+      ],
+      "use": "transfer check (different month, idle-tail labels)"
+    },
+    "syn-dev": {
+      "kind": "synthetic",
+      "seed": 202611281,
+      "groups": 557,
+      "output": {
+        "path": "work/benchmark/synthetic/syn-dev.npz",
+        "bytes": 2236556,
+        "sha256": "e57e548c37190fca58b3b1c932359eb2c02ff0d047749231bca49fca9be30eb2",
+        "content_sha256": "0f9d86138bf06443d388d97cae395004ae1eb01957ecfef3af5ece426d236b56"
+      },
+      "sources": [
+        {
+          "name": "nov27-programme",
+          "content": "music (broadcast, decoded at 32 kHz with the stock EVS decoder)",
+          "input": {
+            "path": "examples/nov27/programme.192.gz",
+            "bytes": 53021,
+            "sha256": "e707cb157345d5638920a1ca37c27f4b8b8c6b309864166f70914af15daffbc9"
+          },
+          "start": null,
+          "seconds": null,
+          "groups": 25
+        },
+        {
+          "name": "wangjaesan-02-seashore",
+          "content": "music (DPRK light music)",
+          "input": {
+            "path": "work/benchmark/sources/wangjaesan-02-seashore/02. \ub178\uc744\ube44\ub080 \ubc14\ub2e4\uac00 = The Seashore In The Glow.mp3",
+            "bytes": 6135174,
+            "sha256": "a4428f06910046eebe0a008d75d48055d0db06753f896dce2255e3feb9781c36",
+            "url": "https://archive.org/download/wangjaesangyongumaktan-che1chip/02.%20%EB%85%B8%EC%9D%84%EB%B9%84%EB%82%80%20%EB%B0%94%EB%8B%A4%EA%B0%80%20%3D%20The%20Seashore%20In%20The%20Glow.mp3"
+          },
+          "start": 0,
+          "seconds": 150,
+          "groups": 125
+        },
+        {
+          "name": "librosa-vibeace",
+          "content": "music",
+          "input": {
+            "path": "work/benchmark/sources/librosa-vibeace/Kevin_MacLeod_-_Vibe_Ace.hq.ogg",
+            "bytes": 1452719,
+            "sha256": "73d6443ef90a7c022f164e5aa90e56c2291585930b39b1656d0765abbc1f1779",
+            "url": "https://librosa.org/data/audio/Kevin_MacLeod_-_Vibe_Ace.hq.ogg"
+          },
+          "start": 0,
+          "seconds": 90,
+          "groups": 51
+        },
+        {
+          "name": "librosa-brahms",
+          "content": "music",
+          "input": {
+            "path": "work/benchmark/sources/librosa-brahms/Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra).hq.ogg",
+            "bytes": 595654,
+            "sha256": "8e93ff0182a93168b15346c497b164cb49d2a97bf1e987a1149ea579e914532e",
+            "url": "https://librosa.org/data/audio/Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra).hq.ogg"
+          },
+          "start": 0,
+          "seconds": 90,
+          "groups": 38
+        },
+        {
+          "name": "librosa-fishin",
+          "content": "music with vocals",
+          "input": {
+            "path": "work/benchmark/sources/librosa-fishin/Karissa_Hobbs_-_Lets_Go_Fishin.hq.ogg",
+            "bytes": 1936632,
+            "sha256": "85901bde0bc5f2cad28acb83487ccf99bd6908d7359f1a449fd799d8bebb3319",
+            "url": "https://librosa.org/data/audio/Karissa_Hobbs_-_Lets_Go_Fishin.hq.ogg"
+          },
+          "start": 0,
+          "seconds": 90,
+          "groups": 75
+        },
+        {
+          "name": "librivox-ko-hyun-01",
+          "content": "speech (Korean reading)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-ko-hyun-01/short_stories_01_hyun_128kb.mp3",
+            "bytes": 6448363,
+            "sha256": "ed452141858a7573edca5254cf4ba1150dfb22d32dbb57f688a6ee424aa78c02",
+            "url": "https://archive.org/download/short_stories_hyun_1411_librivox/short_stories_01_hyun_128kb.mp3"
+          },
+          "start": 0,
+          "seconds": 150,
+          "groups": 125
+        },
+        {
+          "name": "librivox-en-spc160-duringmusic",
+          "content": "speech (English poetry)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-en-spc160-duringmusic/spc160_duringmusic_el_128kb.mp3",
+            "bytes": 736115,
+            "sha256": "ff853bd1263f8fed9f727ad78c716c964fa1f2ad8d61c4c6061dec6402500b10",
+            "url": "https://archive.org/download/spc160_1610_librivox/spc160_duringmusic_el_128kb.mp3"
+          },
+          "start": null,
+          "seconds": null,
+          "groups": 38
+        },
+        {
+          "name": "librivox-en-spc160-withaflower",
+          "content": "speech (English poetry)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-en-spc160-withaflower/spc160_withaflower_ljs_128kb.mp3",
+            "bytes": 777075,
+            "sha256": "f76de68d452937db825456a3cfc7f76a248fb73dcb1e6ce441114652a1855e14",
+            "url": "https://archive.org/download/spc160_1610_librivox/spc160_withaflower_ljs_128kb.mp3"
+          },
+          "start": null,
+          "seconds": null,
+          "groups": 40
+        },
+        {
+          "name": "librivox-en-spc160-anticipation",
+          "content": "speech (English poetry)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-en-spc160-anticipation/spc160_anticipation_ss_128kb.mp3",
+            "bytes": 780451,
+            "sha256": "02201621eb172d9969a3d4a735ae7f680520663ddc112963399109d3792b5618",
+            "url": "https://archive.org/download/spc160_1610_librivox/spc160_anticipation_ss_128kb.mp3"
+          },
+          "start": null,
+          "seconds": null,
+          "groups": 40
+        }
+      ],
+      "use": "development"
+    },
+    "syn-test": {
+      "kind": "synthetic",
+      "seed": 202611282,
+      "groups": 595,
+      "output": {
+        "path": "work/benchmark/synthetic/syn-test.npz",
+        "bytes": 2381519,
+        "sha256": "431d2f7574cb7f098e90be97ccc7abed729c850ed6d0e34679cfa392aabccd7a",
+        "content_sha256": "6413ae07403e8ac1d0f5be33c093813b5d9c9317d18947a44e08272115f5dd9e"
+      },
+      "sources": [
+        {
+          "name": "wangjaesan-03-skylark",
+          "content": "music (DPRK light music)",
+          "input": {
+            "path": "work/benchmark/sources/wangjaesan-03-skylark/03. \uc885\ub2e4\ub9ac = Skylark.mp3",
+            "bytes": 5038973,
+            "sha256": "13e422405b0d393e7a22ea9319d7e26812f49ec908a705f1400ba20110bc97d5",
+            "url": "https://archive.org/download/wangjaesangyongumaktan-che1chip/03.%20%EC%A2%85%EB%8B%A4%EB%A6%AC%20%3D%20Skylark.mp3"
+          },
+          "start": 0,
+          "seconds": 150,
+          "groups": 125
+        },
+        {
+          "name": "librosa-nutcracker",
+          "content": "music",
+          "input": {
+            "path": "work/benchmark/sources/librosa-nutcracker/Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy.hq.ogg",
+            "bytes": 1553340,
+            "sha256": "f062221a56a227cdb7c067cf2e6ac0e250a50012f7693ca0c8e31f05f83e49b1",
+            "url": "https://librosa.org/data/audio/Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy.hq.ogg"
+          },
+          "start": 0,
+          "seconds": 90,
+          "groups": 75
+        },
+        {
+          "name": "librosa-pistachio",
+          "content": "music",
+          "input": {
+            "path": "work/benchmark/sources/librosa-pistachio/442789__lena-orsa__happy-music-pistachio-ice-cream-ragtime.hq.ogg",
+            "bytes": 922404,
+            "sha256": "1cc83b775e640a8dd409da9e29f5b5e0124bc5ec9bb4fda975919d31d1d893b8",
+            "url": "https://librosa.org/data/audio/442789__lena-orsa__happy-music-pistachio-ice-cream-ragtime.hq.ogg"
+          },
+          "start": 0,
+          "seconds": 90,
+          "groups": 58
+        },
+        {
+          "name": "librosa-sweetwaltz",
+          "content": "music",
+          "input": {
+            "path": "work/benchmark/sources/librosa-sweetwaltz/147793__setuniman__sweet-waltz-0i-22mi.hq.ogg",
+            "bytes": 640847,
+            "sha256": "248f93b7c729bc0bd6c4cbc107e6b67ec4d60e40c111e313d4d69f77748da26a",
+            "url": "https://librosa.org/data/audio/147793__setuniman__sweet-waltz-0i-22mi.hq.ogg"
+          },
+          "start": 0,
+          "seconds": 90,
+          "groups": 41
+        },
+        {
+          "name": "librivox-ko-na-04",
+          "content": "speech (Korean reading)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-ko-na-04/shortstories_4_na_128kb.mp3",
+            "bytes": 22440318,
+            "sha256": "c60ba6834f6714e55523777b5b0d56705cd68b123cf8054dbeb95b084d55aded",
+            "url": "https://archive.org/download/short_stories_na_1412_librivox/shortstories_4_na_128kb.mp3"
+          },
+          "start": 0,
+          "seconds": 150,
+          "groups": 125
+        },
+        {
+          "name": "librivox-en-spc258-barestory",
+          "content": "speech (English poetry)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-en-spc258-barestory/spc258_barestory_mlm_128kb.mp3",
+            "bytes": 560154,
+            "sha256": "9b8e2a3dab4d621a3013df11e678e88c8f605ef1519fbf1f3854c4aa2cf32ddb",
+            "url": "https://archive.org/download/spc258_2412_librivox/spc258_barestory_mlm_128kb.mp3"
+          },
+          "start": null,
+          "seconds": null,
+          "groups": 28
+        },
+        {
+          "name": "librivox-en-spc258-novembernight",
+          "content": "speech (English poetry)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-en-spc258-novembernight/spc258_novembernight_wt_128kb.mp3",
+            "bytes": 589411,
+            "sha256": "4a22614c74ae9458b167af1dd888d0aabdee3dc8a072b644ddb3561344c3a33b",
+            "url": "https://archive.org/download/spc258_2412_librivox/spc258_novembernight_wt_128kb.mp3"
+          },
+          "start": null,
+          "seconds": null,
+          "groups": 30
+        },
+        {
+          "name": "librivox-en-spc258-end",
+          "content": "speech (English poetry)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-en-spc258-end/spc258_end_ts_128kb.mp3",
+            "bytes": 647090,
+            "sha256": "46ee9b326858c643b2c076c07e56340675482c78e985159a751089996ebd3b4e",
+            "url": "https://archive.org/download/spc258_2412_librivox/spc258_end_ts_128kb.mp3"
+          },
+          "start": null,
+          "seconds": null,
+          "groups": 33
+        },
+        {
+          "name": "librivox-ja-dokoe-12",
+          "content": "speech (Japanese reading)",
+          "input": {
+            "path": "work/benchmark/sources/librivox-ja-dokoe-12/dokoe_12_masamune_128kb.mp3",
+            "bytes": 1546956,
+            "sha256": "161275fdab2794c445445801bf6e998c67f2de5833f43ead4b51260283a0a948",
+            "url": "https://archive.org/download/doko_e_1404_librivox/dokoe_12_masamune_128kb.mp3"
+          },
+          "start": null,
+          "seconds": null,
+          "groups": 80
+        }
+      ],
+      "use": "sealed: final verification only"
+    },
+    "nov27-dev": {
+      "kind": "inferred (development only)",
+      "inputs": [
+        {
+          "path": "examples/nov27/receiver/packets.npz",
+          "bytes": 54271,
+          "sha256": "85986684749e84fb33434cccb39c9a994ddeb091ed01f20d62adfb2edc4f35ed",
+          "content_sha256": "4dbfe95c2ddfecd77e1437592ed1ab8e12f75747665452a1ecbcd5ee1e4d8c67"
+        },
+        {
+          "path": "examples/nov27/receiver/keys.npz",
+          "bytes": 1069,
+          "sha256": "593b5e248cd9d84970dca3d3b08e452df5eae57e80f9fb651d8d825b71b28330",
+          "content_sha256": "20e7d81187e55c30f6e8bf8ad2a05e83c2e9af76584772365626b8c8577e2925"
+        },
+        {
+          "path": "dumps/nov27-measured-masks.json",
+          "bytes": 8712,
+          "sha256": "e7b96f90bcb622f130288f9fb8be69710a30e1e53ca20e111c417c6dfaa376db"
+        }
+      ],
+      "output": {
+        "path": "work/benchmark/nov27/nov27-receiver.npz",
+        "bytes": 54042,
+        "sha256": "ec151b0061e475333671358a081e6d74e466395bce3f1188c3f1a8235e2e3eb4",
+        "content_sha256": "9a031d0075d84f0d5492cba27f639376be261655d3e6a92e8252a0f5c7336c94"
+      },
+      "groups": 26,
+      "warning": "Inferred masks are development labels only (not ground truth).",
+      "use": "development"
+    }
+  },
+  "task_files": {
+    "dev.T1": {
+      "inputs": {
+        "path": "work/benchmark/tasks/dev.T1.inputs.npz",
+        "bytes": 4019402,
+        "sha256": "3a7d57b4526f42cb22472d050c8a05661ad57bbc43f329ecfa6b27dd125175d1",
+        "content_sha256": "65c0c0759a4d8acb238993af35bad0b5ce67e1a4cffcb202b8ae8182a37e2630"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/dev.T1.truth.npz",
+        "bytes": 25522,
+        "sha256": "e574b3444dc3ee0a67be5ea3eec89ce6bc8f178db8880d0ef246bfaa7eea420e",
+        "content_sha256": "1b26ce2f421005e0da58b50b5e0849511deeb779dc702e0dd3534e9096f7a6b9"
+      },
+      "groups": 2039,
+      "target_groups": 1686,
+      "items": 8430,
+      "strict_items": 7700,
+      "items_per_index": {
+        "11": 1686,
+        "12": 1686,
+        "13": 1686,
+        "14": 1686,
+        "15": 1686
+      }
+    },
+    "dev.T0": {
+      "inputs": {
+        "path": "work/benchmark/tasks/dev.T0.inputs.npz",
+        "bytes": 4004610,
+        "sha256": "b21bdec285a47e32078fad91beef450a508680eac76ea8f7dac095b89699b2b7",
+        "content_sha256": "67296fd458c0b22f9cabbfe2f1565e9005c105dd29625fddedd52dd8ac89aa2c"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/dev.T0.truth.npz",
+        "bytes": 40388,
+        "sha256": "92539217b5f150b71cec7ebd136df8bee56febe73aee8d17bccf1f6514db1436",
+        "content_sha256": "ab691b80067c1c318567b12f1534effe97544e96a22a0c878f0e2b1dbebfb10b"
+      },
+      "groups": 2039,
+      "target_groups": 1686,
+      "items": 18546,
+      "strict_items": 16940,
+      "items_per_index": {
+        "0": 1686,
+        "1": 1686,
+        "2": 1686,
+        "3": 1686,
+        "4": 1686,
+        "5": 1686,
+        "6": 1686,
+        "7": 1686,
+        "8": 1686,
+        "9": 1686,
+        "10": 1686
+      }
+    },
+    "test.T1": {
+      "inputs": {
+        "path": "work/benchmark/tasks/test.T1.inputs.npz",
+        "bytes": 5083090,
+        "sha256": "1d3cf1d951e35c1ec2ee1d1bc61df2588f1aad31d9962340a7063387fb35f94c",
+        "content_sha256": "da41fd792ed471787f6f2c596288118f91d1362fc640b7de2b5b89d6180066e2"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/test.T1.truth.npz",
+        "bytes": 29845,
+        "sha256": "49de165cf6a90bf78505f7361569a1b23e753f1363b33ee8630877a35cc5f47e",
+        "content_sha256": "8bfa9e108ae314ddbd893f18d761e45cf650e100f66adda4e15bd32983e2ded3"
+      },
+      "groups": 2649,
+      "target_groups": 1803,
+      "items": 9015,
+      "strict_items": 7290,
+      "items_per_index": {
+        "11": 1803,
+        "12": 1803,
+        "13": 1803,
+        "14": 1803,
+        "15": 1803
+      }
+    },
+    "test.T0": {
+      "inputs": {
+        "path": "work/benchmark/tasks/test.T0.inputs.npz",
+        "bytes": 5067107,
+        "sha256": "554fb6688f8d53a342bd10d27a8fc3122b757ecbb2e6b15bafecc99f390b7e5e",
+        "content_sha256": "df4bd8907c107d067af7acefbfd2fa5f20112b531cdf45a9640b84965f9a45a4"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/test.T0.truth.npz",
+        "bytes": 45896,
+        "sha256": "29b02a8e1c8207fefb39df2a83e4b000c6504d75c39d2c02571474976fc81e06",
+        "content_sha256": "37e28ff42477d3fcb5bb2cecd1db68723e58f567b2020c36fd0e71fec399df02"
+      },
+      "groups": 2649,
+      "target_groups": 1803,
+      "items": 19833,
+      "strict_items": 16038,
+      "items_per_index": {
+        "0": 1803,
+        "1": 1803,
+        "2": 1803,
+        "3": 1803,
+        "4": 1803,
+        "5": 1803,
+        "6": 1803,
+        "7": 1803,
+        "8": 1803,
+        "9": 1803,
+        "10": 1803
+      }
+    },
+    "transfer.T1": {
+      "inputs": {
+        "path": "work/benchmark/tasks/transfer.T1.inputs.npz",
+        "bytes": 1733027,
+        "sha256": "0e7b0d319f332e64331e661455ee3c3f789a7edb4d5e335a3a0743a513e37973",
+        "content_sha256": "27b0f1450be7fc2c734e18f3f42fc17b98fe690634075ec492b34157d1b5daa9"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/transfer.T1.truth.npz",
+        "bytes": 13129,
+        "sha256": "0da9e4ba0501d6198478609e83235ecb12052e91e52edfff23e6d7361786d3e6",
+        "content_sha256": "47cd30bc1a235ffecb38e06f4902386ac11435f6e6c7763cf83b31f7200af4d6"
+      },
+      "groups": 902,
+      "target_groups": 865,
+      "items": 4325,
+      "strict_items": 4325,
+      "items_per_index": {
+        "11": 865,
+        "12": 865,
+        "13": 865,
+        "14": 865,
+        "15": 865
+      }
+    },
+    "transfer.T0": {
+      "inputs": {
+        "path": "work/benchmark/tasks/transfer.T0.inputs.npz",
+        "bytes": 1725536,
+        "sha256": "ef150e050374acf155a2bbb7f4d5ee7c34c9275da4b32cd11c3e5fb91a263e69",
+        "content_sha256": "ad465e0b833c9185e6c9eeaf55acca23be282c14a8cfd4fb3e355191a6ab7264"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/transfer.T0.truth.npz",
+        "bytes": 20641,
+        "sha256": "01156b8d93b3d35772091a372174e831b53fdf599f3bed1d6c96ce79bf009043",
+        "content_sha256": "8f178abafef170dc086a445dd865e9e5b563a7efe81f9f69b634148caaeaca8d"
+      },
+      "groups": 902,
+      "target_groups": 865,
+      "items": 9515,
+      "strict_items": 9515,
+      "items_per_index": {
+        "0": 865,
+        "1": 865,
+        "2": 865,
+        "3": 865,
+        "4": 865,
+        "5": 865,
+        "6": 865,
+        "7": 865,
+        "8": 865,
+        "9": 865,
+        "10": 865
+      }
+    },
+    "syn-dev.T1": {
+      "inputs": {
+        "path": "work/benchmark/tasks/syn-dev.T1.inputs.npz",
+        "bytes": 1116406,
+        "sha256": "08c8daa90686ad8a087be7e7c01a8326c03ef2c16448b50ef3f78b4d39f8d910",
+        "content_sha256": "8b7736395d918d1a33329fdb9637a9586c929a81fa991e840142b4fabfa27217"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/syn-dev.T1.truth.npz",
+        "bytes": 9961,
+        "sha256": "4d7c9ade62181788bb0875504eeaa0391d6c0d57663596ebe7c3af43bb8e45a5",
+        "content_sha256": "38d37e6484699e42e973fe073a0a9c1a7603b897fd18bde63ad051efecf5510f"
+      },
+      "groups": 557,
+      "target_groups": 557,
+      "items": 2785,
+      "strict_items": 2785,
+      "items_per_index": {
+        "11": 557,
+        "12": 557,
+        "13": 557,
+        "14": 557,
+        "15": 557
+      }
+    },
+    "syn-dev.T0": {
+      "inputs": {
+        "path": "work/benchmark/tasks/syn-dev.T0.inputs.npz",
+        "bytes": 1111612,
+        "sha256": "3657d133e9d472610f99e0efa371fea93164e1bb782ffe5c33d7905a586b8b0c",
+        "content_sha256": "a661f7f46691e1304e89d18c540c88c95947272fda874f7538875a055c9c92b1"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/syn-dev.T0.truth.npz",
+        "bytes": 14786,
+        "sha256": "a1f4cb43e53de103f7e19fc5062b0d2beb0556557ae8c1515c476d89e2f00e8c",
+        "content_sha256": "b73c2d5ed08caf2a8c8ff74bf4b0d07feb1642e5b015a0ea3da9810c26c18d3b"
+      },
+      "groups": 557,
+      "target_groups": 557,
+      "items": 6127,
+      "strict_items": 6127,
+      "items_per_index": {
+        "0": 557,
+        "1": 557,
+        "2": 557,
+        "3": 557,
+        "4": 557,
+        "5": 557,
+        "6": 557,
+        "7": 557,
+        "8": 557,
+        "9": 557,
+        "10": 557
+      }
+    },
+    "syn-dev.TH": {
+      "inputs": {
+        "path": "work/benchmark/tasks/syn-dev.TH.inputs.npz",
+        "bytes": 1120208,
+        "sha256": "a248dc1fdfa2d7aa80762f44085a2e3e4913d808dec7180cd0b00ad3cd1896f7",
+        "content_sha256": "8c59adf86500e1f3a8a45e6055a25894bbaec15454075ebfef2ac9280f19b032"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/syn-dev.TH.truth.npz",
+        "bytes": 26620,
+        "sha256": "987e30123064283cd58679a75b7c3a406c60025d3c27617c48413243dfdeb398",
+        "content_sha256": "59130d4775504c2b08f5b6aa1c9e95f9f9f9c7a04aa84124eff81a3969f3d5b7"
+      },
+      "groups": 557,
+      "target_groups": 557,
+      "items": 15039,
+      "strict_items": 15039,
+      "items_per_index": {
+        "16": 557,
+        "17": 557,
+        "18": 557,
+        "19": 557,
+        "20": 557,
+        "21": 557,
+        "22": 557,
+        "23": 557,
+        "24": 557,
+        "25": 557,
+        "26": 557,
+        "27": 557,
+        "28": 557,
+        "29": 557,
+        "30": 557,
+        "31": 557,
+        "32": 557,
+        "33": 557,
+        "34": 557,
+        "35": 557,
+        "36": 557,
+        "37": 557,
+        "38": 557,
+        "39": 557,
+        "40": 557,
+        "41": 557,
+        "42": 557
+      }
+    },
+    "syn-test.T1": {
+      "inputs": {
+        "path": "work/benchmark/tasks/syn-test.T1.inputs.npz",
+        "bytes": 1189364,
+        "sha256": "1029d0ff147056cabb51fcabc77e5f153d54c732704387f1cc28a2182969a7c2",
+        "content_sha256": "f3e2b2012484070ccbf9e6c65b6c920d481f3ef416764140b4f9de2579cb338d"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/syn-test.T1.truth.npz",
+        "bytes": 10471,
+        "sha256": "a85f52642852dd8c743c1401db877510281f6ff1db77889dcea4d2b529734ce3",
+        "content_sha256": "e454003ed1f53b3832d77a84589fe2e7f35607e7ffae002b6c7f6e541b2aa4c9"
+      },
+      "groups": 595,
+      "target_groups": 595,
+      "items": 2975,
+      "strict_items": 2975,
+      "items_per_index": {
+        "11": 595,
+        "12": 595,
+        "13": 595,
+        "14": 595,
+        "15": 595
+      }
+    },
+    "syn-test.T0": {
+      "inputs": {
+        "path": "work/benchmark/tasks/syn-test.T0.inputs.npz",
+        "bytes": 1184251,
+        "sha256": "2b38adf5b34aa6a0dba00c6bf6ad44e49d6edd954b6dbff06c03cd1b11b79b05",
+        "content_sha256": "e653fbd55c5a9bfc92a1bc7bc4e66d79dee576c0700908f3bbd0b5d197e23f87"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/syn-test.T0.truth.npz",
+        "bytes": 15610,
+        "sha256": "91465de0f4751cdc7922e1bb5019fd076d9b17ec0fa0b1961aaf3214f183d2a8",
+        "content_sha256": "3ab86b0a047b64e90849f33173bd037b6f25743c6e9eda15b2b5ca359df448ca"
+      },
+      "groups": 595,
+      "target_groups": 595,
+      "items": 6545,
+      "strict_items": 6545,
+      "items_per_index": {
+        "0": 595,
+        "1": 595,
+        "2": 595,
+        "3": 595,
+        "4": 595,
+        "5": 595,
+        "6": 595,
+        "7": 595,
+        "8": 595,
+        "9": 595,
+        "10": 595
+      }
+    },
+    "syn-test.TH": {
+      "inputs": {
+        "path": "work/benchmark/tasks/syn-test.TH.inputs.npz",
+        "bytes": 1193451,
+        "sha256": "02704e9466dadf7b70e3e76c528b904d3066e98f9cf350d6a2aca33bfdd94ae9",
+        "content_sha256": "86f0a22e244655318cd5b9321fb82d48bea71c8f8e34887ff53f2059f103b0d3"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/syn-test.TH.truth.npz",
+        "bytes": 28243,
+        "sha256": "5fc6dee63107fb71948c5fe74f7c3b3dc4b906d89f3b8c54045973565bc24e65",
+        "content_sha256": "4b2d5eb7c3542388cbd4af3875247ea4eab22d01688d6298c66eaa8cadb4aaf9"
+      },
+      "groups": 595,
+      "target_groups": 595,
+      "items": 16065,
+      "strict_items": 16065,
+      "items_per_index": {
+        "16": 595,
+        "17": 595,
+        "18": 595,
+        "19": 595,
+        "20": 595,
+        "21": 595,
+        "22": 595,
+        "23": 595,
+        "24": 595,
+        "25": 595,
+        "26": 595,
+        "27": 595,
+        "28": 595,
+        "29": 595,
+        "30": 595,
+        "31": 595,
+        "32": 595,
+        "33": 595,
+        "34": 595,
+        "35": 595,
+        "36": 595,
+        "37": 595,
+        "38": 595,
+        "39": 595,
+        "40": 595,
+        "41": 595,
+        "42": 595
+      }
+    },
+    "nov27-dev.T1": {
+      "inputs": {
+        "path": "work/benchmark/tasks/nov27-dev.T1.inputs.npz",
+        "bytes": 52582,
+        "sha256": "6e4344a0a22e51962fdd5ed9dd4e9b7a2b3ba42555effe1abafcbd6978e427a6",
+        "content_sha256": "9c8a339d7a30329ff146cd576f549a2f1cc878a6d53e0f58af8a6333339491de"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/nov27-dev.T1.truth.npz",
+        "bytes": 2261,
+        "sha256": "b38fee549a87a84a0c834c8c17465ce7efea571d725c7f07b3fbcad505c05177",
+        "content_sha256": "c9171c3f5d4c6641cb6f06175483fb98acd7c3bfe721de3b2df7ed2d71c4e404"
+      },
+      "groups": 26,
+      "target_groups": 24,
+      "items": 120,
+      "strict_items": 0,
+      "items_per_index": {
+        "11": 24,
+        "12": 24,
+        "13": 24,
+        "14": 24,
+        "15": 24
+      }
+    },
+    "nov27-dev.T0": {
+      "inputs": {
+        "path": "work/benchmark/tasks/nov27-dev.T0.inputs.npz",
+        "bytes": 52353,
+        "sha256": "a8e3857a9ae29e0c381ba68f60c623d6b61266abb70e85fdc1b895319c9e0eb8",
+        "content_sha256": "4e68696a5d99d315ab89ad11e5470b0b7fb1f200c11cca3f00a310a799220aee"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/nov27-dev.T0.truth.npz",
+        "bytes": 2480,
+        "sha256": "7759e34072ebdf900327bc96e3fdc230b0a114b2afd55898c6572eda9c1ee8a6",
+        "content_sha256": "4d0ec5780df09d2be4494d6800e8fbcfbc7c8ada14c70560ce6fbade14fb6786"
+      },
+      "groups": 26,
+      "target_groups": 24,
+      "items": 264,
+      "strict_items": 0,
+      "items_per_index": {
+        "0": 24,
+        "1": 24,
+        "2": 24,
+        "3": 24,
+        "4": 24,
+        "5": 24,
+        "6": 24,
+        "7": 24,
+        "8": 24,
+        "9": 24,
+        "10": 24
+      }
+    },
+    "nov27-dev.TH": {
+      "inputs": {
+        "path": "work/benchmark/tasks/nov27-dev.TH.inputs.npz",
+        "bytes": 52792,
+        "sha256": "4547ebd0526b764cf564bc4f6dad12b2bd96ff75d914112685ba39dcad3040fa",
+        "content_sha256": "91418913b822a35faadbcd5d17c2d25908d28350a89f77552e380c33fd664051"
+      },
+      "truth": {
+        "path": "work/benchmark/tasks/nov27-dev.TH.truth.npz",
+        "bytes": 2855,
+        "sha256": "5900dd51d495585ca5be7958c89f2cdbda8ee52b0ddf746574eef8fddc0c61b0",
+        "content_sha256": "38689ae5c66099818fa00be9b0ac033d990540909a7fe80bcabc45de31530ff7"
+      },
+      "groups": 26,
+      "target_groups": 22,
+      "items": 468,
+      "strict_items": 0,
+      "items_per_index": {
+        "16": 20,
+        "17": 20,
+        "18": 20,
+        "19": 20,
+        "20": 20,
+        "21": 20,
+        "22": 18,
+        "23": 18,
+        "24": 18,
+        "25": 18,
+        "26": 18,
+        "27": 18,
+        "28": 18,
+        "29": 18,
+        "30": 18,
+        "31": 18,
+        "32": 18,
+        "33": 15,
+        "34": 15,
+        "35": 15,
+        "36": 15,
+        "37": 15,
+        "38": 15,
+        "39": 15,
+        "40": 15,
+        "41": 15,
+        "42": 15
+      }
+    }
+  },
+  "receipts": {
+    "real": {
+      "path": "work/benchmark/real/receipt.json",
+      "bytes": 45865,
+      "sha256": "b227653f894a92a75c4a4832fce615a51958ac203d939d70121a35a47a0b5202"
+    },
+    "synthetic": {
+      "path": "work/benchmark/synthetic/receipt.json",
+      "bytes": 27996,
+      "sha256": "f18636fc53de7aef8afef84bfb4d58b16f12d11d1358254f4dd6c6179fcdb14c"
+    },
+    "nov27": {
+      "path": "work/benchmark/nov27/receipt.json",
+      "bytes": 1552,
+      "sha256": "de22350863fce004e2c4dcc8cb142cb62355cbcbf8e4badc524465e80710df42"
+    },
+    "tasks": {
+      "path": "work/benchmark/tasks/receipt.json",
+      "bytes": 16078,
+      "sha256": "9601f062d82e59c48c9f237d06f5a17b1ab379ba52898dae86ceb5bef4186c6f"
+    }
+  }
+}

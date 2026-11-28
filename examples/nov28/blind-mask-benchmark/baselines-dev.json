@@ -1,0 +1,1723 @@
+{
+  "format": "kcbs-blind-mask-benchmark/1",
+  "created": "2026-11-28T05:33:51+00:00",
+  "evaluator": {
+    "path": "scripts/eval_mask_predictions.py",
+    "bytes": 25499,
+    "sha256": "2ed97232f2a8e3cadb7ff0c32de380a24ea732c039ce20a5bfb0bc0e2af955cb"
+  },
+  "prior_training": [
+    "work/benchmark/real/nov25-0448+0457-3205-hik.npz",
+    "work/benchmark/real/nov25-1246-6140-merged.npz"
+  ],
+  "note": "Uniform and mode-conditioned per-bit prior baselines on development-side sets only. DEV items are scored with their own capture left out of the prior.",
+  "runs": {
+    "dev.T1": {
+      "items": 8430,
+      "groups": 1686,
+      "report": {
+        "path": "work/benchmark/baselines/dev.T1.json",
+        "bytes": 63459,
+        "sha256": "86f958895b717c70c6e461b822c7d080f767322cebbf75886c924cfbc5484d72"
+      },
+      "uniform": {
+        "top1": 0.003906,
+        "topk": {
+          "1": 0.003906,
+          "2": 0.007812,
+          "4": 0.015625,
+          "8": 0.03125,
+          "16": 0.0625
+        },
+        "mean_rank": 128.5,
+        "median_rank": 128.5,
+        "mean_log2_loss": 8.0,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "per_role_j": {
+          "r1j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          }
+        },
+        "strict_subset": {
+          "items": 7700,
+          "top1": 0.003906,
+          "topk": {
+            "1": 0.003906,
+            "2": 0.007812,
+            "4": 0.015625,
+            "8": 0.03125,
+            "16": 0.0625
+          },
+          "mean_rank": 128.5,
+          "median_rank": 128.5,
+          "mean_log2_loss": 8.0,
+          "bits_at_precision": {
+            "0.98": {
+              "called": 0,
+              "precision": null,
+              "threshold": null,
+              "bits_per_group": 0.0
+            },
+            "0.995": {
+              "called": 0,
+              "precision": null,
+              "threshold": null,
+              "bits_per_group": 0.0
+            }
+          },
+          "bits_at_nominal_confidence": {
+            "0.98": {
+              "called": 0,
+              "precision": null,
+              "bits_per_group": 0.0
+            },
+            "0.995": {
+              "called": 0,
+              "precision": null,
+              "bits_per_group": 0.0
+            }
+          }
+        }
+      },
+      "mode_prior": {
+        "top1": 0.032508,
+        "topk": {
+          "1": 0.032508,
+          "2": 0.063533,
+          "4": 0.109747,
+          "8": 0.168841,
+          "16": 0.257137
+        },
+        "mean_rank": 78.447,
+        "median_rank": 51.0,
+        "mean_log2_loss": 8.5993,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 5811,
+            "precision": 0.980038,
+            "threshold": 0.9997933485122723,
+            "bits_per_group": 3.4466
+          },
+          "0.995": {
+            "called": 4058,
+            "precision": 0.995071,
+            "threshold": 0.9999999751285684,
+            "bits_per_group": 2.4069
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 9479,
+            "precision": 0.865598,
+            "bits_per_group": 5.6222
+          },
+          "0.995": {
+            "called": 7970,
+            "precision": 0.914304,
+            "bits_per_group": 4.7272
+          }
+        },
+        "per_role_j": {
+          "r1j0": {
+            "top1": 0.097877,
+            "mean_rank": 16.783,
+            "bits_called_at_98": 4033
+          },
+          "r1j1": {
+            "top1": 0.004745,
+            "mean_rank": 113.255,
+            "bits_called_at_98": 439
+          },
+          "r1j2": {
+            "top1": 0.029063,
+            "mean_rank": 59.5,
+            "bits_called_at_98": 775
+          },
+          "r1j3": {
+            "top1": 0.004751,
+            "mean_rank": 108.48,
+            "bits_called_at_98": 9
+          },
+          "r1j4": {
+            "top1": 0.026103,
+            "mean_rank": 94.217,
+            "bits_called_at_98": 101
+          }
+        },
+        "strict_subset": {
+          "items": 7700,
+          "top1": 0.03247,
+          "topk": {
+            "1": 0.03247,
+            "2": 0.062798,
+            "4": 0.108582,
+            "8": 0.167424,
+            "16": 0.255498
+          },
+          "mean_rank": 78.629,
+          "median_rank": 51.0,
+          "mean_log2_loss": 8.618,
+          "bits_at_precision": {
+            "0.98": {
+              "called": 5331,
+              "precision": 0.980116,
+              "threshold": 0.9997902571191892,
+              "bits_per_group": 3.4617
+            },
+            "0.995": {
+              "called": 3710,
+              "precision": 0.995148,
+              "threshold": 0.9999999798851466,
+              "bits_per_group": 2.4091
+            }
+          },
+          "bits_at_nominal_confidence": {
+            "0.98": {
+              "called": 8675,
+              "precision": 0.864092,
+              "bits_per_group": 5.6331
+            },
+            "0.995": {
+              "called": 7305,
+              "precision": 0.913484,
+              "bits_per_group": 4.7435
+            }
+          }
+        }
+      }
+    },
+    "dev.T0": {
+      "items": 18546,
+      "groups": 1686,
+      "report": {
+        "path": "work/benchmark/baselines/dev.T0.json",
+        "bytes": 115532,
+        "sha256": "de5d79208947c2ad507fc1097446bd44215d27169a71b8e4fe6982279f16a562"
+      },
+      "uniform": {
+        "top1": 0.003906,
+        "topk": {
+          "1": 0.003906,
+          "2": 0.007812,
+          "4": 0.015625,
+          "8": 0.03125,
+          "16": 0.0625
+        },
+        "mean_rank": 128.5,
+        "median_rank": 128.5,
+        "mean_log2_loss": 8.0,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "per_role_j": {
+          "r0j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j5": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j6": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j7": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j8": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j9": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j10": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          }
+        },
+        "strict_subset": {
+          "items": 16940,
+          "top1": 0.003906,
+          "topk": {
+            "1": 0.003906,
+            "2": 0.007812,
+            "4": 0.015625,
+            "8": 0.03125,
+            "16": 0.0625
+          },
+          "mean_rank": 128.5,
+          "median_rank": 128.5,
+          "mean_log2_loss": 8.0,
+          "bits_at_precision": {
+            "0.98": {
+              "called": 0,
+              "precision": null,
+              "threshold": null,
+              "bits_per_group": 0.0
+            },
+            "0.995": {
+              "called": 0,
+              "precision": null,
+              "threshold": null,
+              "bits_per_group": 0.0
+            }
+          },
+          "bits_at_nominal_confidence": {
+            "0.98": {
+              "called": 0,
+              "precision": null,
+              "bits_per_group": 0.0
+            },
+            "0.995": {
+              "called": 0,
+              "precision": null,
+              "bits_per_group": 0.0
+            }
+          }
+        }
+      },
+      "mode_prior": {
+        "top1": 0.025239,
+        "topk": {
+          "1": 0.025239,
+          "2": 0.046434,
+          "4": 0.077393,
+          "8": 0.125723,
+          "16": 0.197527
+        },
+        "mean_rank": 92.421,
+        "median_rank": 73.0,
+        "mean_log2_loss": 8.2553,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 4569,
+            "precision": 0.980083,
+            "threshold": 0.9999999995687375,
+            "bits_per_group": 2.71
+          },
+          "0.995": {
+            "called": 4168,
+            "precision": 0.996401,
+            "threshold": 0.9999999999843712,
+            "bits_per_group": 2.4721
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 12908,
+            "precision": 0.893864,
+            "bits_per_group": 7.656
+          },
+          "0.995": {
+            "called": 10726,
+            "precision": 0.925508,
+            "bits_per_group": 6.3618
+          }
+        },
+        "per_role_j": {
+          "r0j0": {
+            "top1": 0.113885,
+            "mean_rank": 16.948,
+            "bits_called_at_98": 2581
+          },
+          "r0j1": {
+            "top1": 0.004751,
+            "mean_rank": 114.456,
+            "bits_called_at_98": 443
+          },
+          "r0j2": {
+            "top1": 0.032622,
+            "mean_rank": 58.795,
+            "bits_called_at_98": 1211
+          },
+          "r0j3": {
+            "top1": 0.00653,
+            "mean_rank": 111.005,
+            "bits_called_at_98": 5
+          },
+          "r0j4": {
+            "top1": 0.032028,
+            "mean_rank": 96.889,
+            "bits_called_at_98": 50
+          },
+          "r0j5": {
+            "top1": 0.005931,
+            "mean_rank": 122.866,
+            "bits_called_at_98": 3
+          },
+          "r0j6": {
+            "top1": 0.004745,
+            "mean_rank": 110.643,
+            "bits_called_at_98": 426
+          },
+          "r0j7": {
+            "top1": 0.00653,
+            "mean_rank": 114.148,
+            "bits_called_at_98": 228
+          },
+          "r0j8": {
+            "top1": 0.002978,
+            "mean_rank": 123.779,
+            "bits_called_at_98": 0
+          },
+          "r0j9": {
+            "top1": 0.009496,
+            "mean_rank": 107.812,
+            "bits_called_at_98": 204
+          },
+          "r0j10": {
+            "top1": 0.058132,
+            "mean_rank": 39.29,
+            "bits_called_at_98": 2615
+          }
+        },
+        "strict_subset": {
+          "items": 16940,
+          "top1": 0.025209,
+          "topk": {
+            "1": 0.025209,
+            "2": 0.046286,
+            "4": 0.077046,
+            "8": 0.125167,
+            "16": 0.196793
+          },
+          "mean_rank": 92.66,
+          "median_rank": 73.0,
+          "mean_log2_loss": 8.2714,
+          "bits_at_precision": {
+            "0.98": {
+              "called": 4174,
+              "precision": 0.980115,
+              "threshold": 0.999999999635126,
+              "bits_per_group": 2.7104
+            },
+            "0.995": {
+              "called": 3835,
+              "precision": 0.996349,
+              "threshold": 0.9999999999843712,
+              "bits_per_group": 2.4903
+            }
+          },
+          "bits_at_nominal_confidence": {
+            "0.98": {
+              "called": 11810,
+              "precision": 0.893141,
+              "bits_per_group": 7.6688
+            },
+            "0.995": {
+              "called": 9835,
+              "precision": 0.923945,
+              "bits_per_group": 6.3864
+            }
+          }
+        }
+      }
+    },
+    "syn-dev.TH": {
+      "items": 15039,
+      "groups": 557,
+      "report": {
+        "path": "work/benchmark/baselines/syn-dev.TH.json",
+        "bytes": 255151,
+        "sha256": "9ce597aac6166a2ff86f79effb5d363d162bd690c0c70c09526c77dfec18545c"
+      },
+      "uniform": {
+        "top1": 0.003906,
+        "topk": {
+          "1": 0.003906,
+          "2": 0.007812,
+          "4": 0.015625,
+          "8": 0.03125,
+          "16": 0.0625
+        },
+        "mean_rank": 128.5,
+        "median_rank": 128.5,
+        "mean_log2_loss": 8.0,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "per_role_j": {
+          "r1j5": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j6": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j7": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j8": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j9": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j10": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j5": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j6": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j7": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j8": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j9": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j10": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j5": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j6": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j7": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j8": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j9": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          }
+        }
+      },
+      "mode_prior": {
+        "top1": 0.012035,
+        "topk": {
+          "1": 0.012035,
+          "2": 0.023373,
+          "4": 0.047144,
+          "8": 0.087506,
+          "16": 0.162112
+        },
+        "mean_rank": 93.862,
+        "median_rank": 76.0,
+        "mean_log2_loss": 8.5761,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 2532,
+            "precision": 0.980253,
+            "threshold": 0.9999999834836768,
+            "bits_per_group": 4.5458
+          },
+          "0.995": {
+            "called": 2160,
+            "precision": 0.99537,
+            "threshold": 0.9999999999024898,
+            "bits_per_group": 3.8779
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 9140,
+            "precision": 0.850985,
+            "bits_per_group": 16.4093
+          },
+          "0.995": {
+            "called": 7481,
+            "precision": 0.876353,
+            "bits_per_group": 13.4309
+          }
+        },
+        "per_role_j": {
+          "r1j5": {
+            "top1": 0.005386,
+            "mean_rank": 112.773,
+            "bits_called_at_98": 14
+          },
+          "r1j6": {
+            "top1": 0.012567,
+            "mean_rank": 101.69,
+            "bits_called_at_98": 112
+          },
+          "r1j7": {
+            "top1": 0.012567,
+            "mean_rank": 95.333,
+            "bits_called_at_98": 191
+          },
+          "r1j8": {
+            "top1": 0.001795,
+            "mean_rank": 128.401,
+            "bits_called_at_98": 0
+          },
+          "r1j9": {
+            "top1": 0.005386,
+            "mean_rank": 81.672,
+            "bits_called_at_98": 184
+          },
+          "r1j10": {
+            "top1": 0.025135,
+            "mean_rank": 57.304,
+            "bits_called_at_98": 156
+          },
+          "r2j0": {
+            "top1": 0.032316,
+            "mean_rank": 28.219,
+            "bits_called_at_98": 1143
+          },
+          "r2j1": {
+            "top1": 0.001795,
+            "mean_rank": 102.161,
+            "bits_called_at_98": 131
+          },
+          "r2j2": {
+            "top1": 0.012567,
+            "mean_rank": 67.095,
+            "bits_called_at_98": 184
+          },
+          "r2j3": {
+            "top1": 0.008977,
+            "mean_rank": 126.219,
+            "bits_called_at_98": 0
+          },
+          "r2j4": {
+            "top1": 0.005386,
+            "mean_rank": 101.802,
+            "bits_called_at_98": 7
+          },
+          "r2j5": {
+            "top1": 0.003591,
+            "mean_rank": 109.129,
+            "bits_called_at_98": 0
+          },
+          "r2j6": {
+            "top1": 0.008977,
+            "mean_rank": 105.623,
+            "bits_called_at_98": 122
+          },
+          "r2j7": {
+            "top1": 0.008977,
+            "mean_rank": 92.45,
+            "bits_called_at_98": 188
+          },
+          "r2j8": {
+            "top1": 0.001795,
+            "mean_rank": 118.637,
+            "bits_called_at_98": 2
+          },
+          "r2j9": {
+            "top1": 0.019749,
+            "mean_rank": 81.066,
+            "bits_called_at_98": 176
+          },
+          "r2j10": {
+            "top1": 0.021544,
+            "mean_rank": 57.82,
+            "bits_called_at_98": 173
+          },
+          "r3j0": {
+            "top1": 0.043088,
+            "mean_rank": 29.065,
+            "bits_called_at_98": 1123
+          },
+          "r3j1": {
+            "top1": 0.005386,
+            "mean_rank": 111.601,
+            "bits_called_at_98": 132
+          },
+          "r3j2": {
+            "top1": 0.016158,
+            "mean_rank": 70.146,
+            "bits_called_at_98": 185
+          },
+          "r3j3": {
+            "top1": 0.003591,
+            "mean_rank": 126.325,
+            "bits_called_at_98": 0
+          },
+          "r3j4": {
+            "top1": 0.019749,
+            "mean_rank": 96.293,
+            "bits_called_at_98": 7
+          },
+          "r3j5": {
+            "top1": 0.007181,
+            "mean_rank": 116.972,
+            "bits_called_at_98": 3
+          },
+          "r3j6": {
+            "top1": 0.001795,
+            "mean_rank": 104.57,
+            "bits_called_at_98": 118
+          },
+          "r3j7": {
+            "top1": 0.014363,
+            "mean_rank": 100.65,
+            "bits_called_at_98": 209
+          },
+          "r3j8": {
+            "top1": 0.005386,
+            "mean_rank": 126.125,
+            "bits_called_at_98": 4
+          },
+          "r3j9": {
+            "top1": 0.019749,
+            "mean_rank": 85.141,
+            "bits_called_at_98": 176
+          }
+        }
+      }
+    },
+    "syn-dev.T1": {
+      "items": 2785,
+      "groups": 557,
+      "report": {
+        "path": "work/benchmark/baselines/syn-dev.T1.json",
+        "bytes": 64459,
+        "sha256": "a840d1311afb246319b9355816360e6f77f86f92871d278f54b9c4d96e444df9"
+      },
+      "uniform": {
+        "top1": 0.003906,
+        "topk": {
+          "1": 0.003906,
+          "2": 0.007812,
+          "4": 0.015625,
+          "8": 0.03125,
+          "16": 0.0625
+        },
+        "mean_rank": 128.5,
+        "median_rank": 128.5,
+        "mean_log2_loss": 8.0,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "per_role_j": {
+          "r1j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          }
+        }
+      },
+      "mode_prior": {
+        "top1": 0.015081,
+        "topk": {
+          "1": 0.015081,
+          "2": 0.025135,
+          "4": 0.050269,
+          "8": 0.10018,
+          "16": 0.191382
+        },
+        "mean_rank": 84.938,
+        "median_rank": 64.0,
+        "mean_log2_loss": 9.6918,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 1110,
+            "precision": 0.98018,
+            "threshold": 0.9999999875382954,
+            "bits_per_group": 1.9928
+          },
+          "0.995": {
+            "called": 993,
+            "precision": 0.995972,
+            "threshold": 0.9999999998315343,
+            "bits_per_group": 1.7828
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 3175,
+            "precision": 0.808189,
+            "bits_per_group": 5.7002
+          },
+          "0.995": {
+            "called": 2628,
+            "precision": 0.840563,
+            "bits_per_group": 4.7181
+          }
+        },
+        "per_role_j": {
+          "r1j0": {
+            "top1": 0.028725,
+            "mean_rank": 28.781,
+            "bits_called_at_98": 1151
+          },
+          "r1j1": {
+            "top1": 0.012567,
+            "mean_rank": 101.538,
+            "bits_called_at_98": 123
+          },
+          "r1j2": {
+            "top1": 0.012567,
+            "mean_rank": 64.962,
+            "bits_called_at_98": 193
+          },
+          "r1j3": {
+            "top1": 0.003591,
+            "mean_rank": 127.583,
+            "bits_called_at_98": 0
+          },
+          "r1j4": {
+            "top1": 0.017953,
+            "mean_rank": 101.826,
+            "bits_called_at_98": 30
+          }
+        }
+      }
+    },
+    "syn-dev.T0": {
+      "items": 6127,
+      "groups": 557,
+      "report": {
+        "path": "work/benchmark/baselines/syn-dev.T0.json",
+        "bytes": 116389,
+        "sha256": "7ff53ef89c33cf0830bdbc212e7369bff2ec7301c595fe779276938cc912ffee"
+      },
+      "uniform": {
+        "top1": 0.003906,
+        "topk": {
+          "1": 0.003906,
+          "2": 0.007812,
+          "4": 0.015625,
+          "8": 0.03125,
+          "16": 0.0625
+        },
+        "mean_rank": 128.5,
+        "median_rank": 128.5,
+        "mean_log2_loss": 8.0,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "per_role_j": {
+          "r0j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j5": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j6": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j7": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j8": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j9": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r0j10": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          }
+        }
+      },
+      "mode_prior": {
+        "top1": 0.012323,
+        "topk": {
+          "1": 0.012323,
+          "2": 0.02285,
+          "4": 0.043414,
+          "8": 0.086666,
+          "16": 0.16207
+        },
+        "mean_rank": 91.795,
+        "median_rank": 73.0,
+        "mean_log2_loss": 8.7228,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 1256,
+            "precision": 0.980096,
+            "threshold": 0.9999999645507491,
+            "bits_per_group": 2.2549
+          },
+          "0.995": {
+            "called": 1110,
+            "precision": 0.995495,
+            "threshold": 0.9999999995343929,
+            "bits_per_group": 1.9928
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 4277,
+            "precision": 0.844283,
+            "bits_per_group": 7.6786
+          },
+          "0.995": {
+            "called": 3460,
+            "precision": 0.874566,
+            "bits_per_group": 6.2118
+          }
+        },
+        "per_role_j": {
+          "r0j0": {
+            "top1": 0.034111,
+            "mean_rank": 28.11,
+            "bits_called_at_98": 1172
+          },
+          "r0j1": {
+            "top1": 0.010772,
+            "mean_rank": 109.874,
+            "bits_called_at_98": 135
+          },
+          "r0j2": {
+            "top1": 0.01167,
+            "mean_rank": 68.927,
+            "bits_called_at_98": 202
+          },
+          "r0j3": {
+            "top1": 0.0,
+            "mean_rank": 123.327,
+            "bits_called_at_98": 0
+          },
+          "r0j4": {
+            "top1": 0.007181,
+            "mean_rank": 99.425,
+            "bits_called_at_98": 10
+          },
+          "r0j5": {
+            "top1": 0.003591,
+            "mean_rank": 117.685,
+            "bits_called_at_98": 7
+          },
+          "r0j6": {
+            "top1": 0.012567,
+            "mean_rank": 108.649,
+            "bits_called_at_98": 112
+          },
+          "r0j7": {
+            "top1": 0.014363,
+            "mean_rank": 93.232,
+            "bits_called_at_98": 205
+          },
+          "r0j8": {
+            "top1": 0.0,
+            "mean_rank": 125.296,
+            "bits_called_at_98": 0
+          },
+          "r0j9": {
+            "top1": 0.016158,
+            "mean_rank": 78.209,
+            "bits_called_at_98": 179
+          },
+          "r0j10": {
+            "top1": 0.025135,
+            "mean_rank": 57.013,
+            "bits_called_at_98": 151
+          }
+        }
+      }
+    },
+    "nov27-dev.T1": {
+      "items": 120,
+      "groups": 24,
+      "report": {
+        "path": "work/benchmark/baselines/nov27-dev.T1.json",
+        "bytes": 53305,
+        "sha256": "f123e192cd1d965d0ba51f2c7e7020f7f88617e6d68335ddd8052828946bfb6e"
+      },
+      "uniform": {
+        "top1": 0.003906,
+        "topk": {
+          "1": 0.003906,
+          "2": 0.007812,
+          "4": 0.015625,
+          "8": 0.03125,
+          "16": 0.0625
+        },
+        "mean_rank": 128.5,
+        "median_rank": 128.5,
+        "mean_log2_loss": 8.0,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "per_role_j": {
+          "r1j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          }
+        }
+      },
+      "mode_prior": {
+        "top1": 0.033333,
+        "topk": {
+          "1": 0.033333,
+          "2": 0.075,
+          "4": 0.116667,
+          "8": 0.15,
+          "16": 0.283333
+        },
+        "mean_rank": 83.025,
+        "median_rank": 56.0,
+        "mean_log2_loss": 9.4645,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 65,
+            "precision": 0.984615,
+            "threshold": 0.9999949648803671,
+            "bits_per_group": 2.7083
+          },
+          "0.995": {
+            "called": 59,
+            "precision": 1.0,
+            "threshold": 0.9999993908893264,
+            "bits_per_group": 2.4583
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 149,
+            "precision": 0.852349,
+            "bits_per_group": 6.2083
+          },
+          "0.995": {
+            "called": 120,
+            "precision": 0.883333,
+            "bits_per_group": 5.0
+          }
+        },
+        "per_role_j": {
+          "r1j0": {
+            "top1": 0.125,
+            "mean_rank": 10.042,
+            "bits_called_at_98": 59
+          },
+          "r1j1": {
+            "top1": 0.0,
+            "mean_rank": 162.958,
+            "bits_called_at_98": 0
+          },
+          "r1j2": {
+            "top1": 0.0,
+            "mean_rank": 54.667,
+            "bits_called_at_98": 9
+          },
+          "r1j3": {
+            "top1": 0.0,
+            "mean_rank": 101.708,
+            "bits_called_at_98": 3
+          },
+          "r1j4": {
+            "top1": 0.041667,
+            "mean_rank": 85.75,
+            "bits_called_at_98": 7
+          }
+        }
+      }
+    },
+    "nov27-dev.TH": {
+      "items": 468,
+      "groups": 22,
+      "report": {
+        "path": "work/benchmark/baselines/nov27-dev.TH.json",
+        "bytes": 242321,
+        "sha256": "b6d67a159e08c761fd5f50a19fc46aab0a6ad101788bac074593a0801661c464"
+      },
+      "uniform": {
+        "top1": 0.003906,
+        "topk": {
+          "1": 0.003906,
+          "2": 0.007812,
+          "4": 0.015625,
+          "8": 0.03125,
+          "16": 0.0625
+        },
+        "mean_rank": 128.5,
+        "median_rank": 128.5,
+        "mean_log2_loss": 8.0,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "threshold": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          },
+          "0.995": {
+            "called": 0,
+            "precision": null,
+            "bits_per_group": 0.0
+          }
+        },
+        "per_role_j": {
+          "r1j5": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j6": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j7": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j8": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j9": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r1j10": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j5": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j6": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j7": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j8": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j9": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r2j10": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j0": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j1": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j2": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j3": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j4": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j5": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j6": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j7": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j8": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          },
+          "r3j9": {
+            "top1": 0.003906,
+            "mean_rank": 128.5,
+            "bits_called_at_98": 0
+          }
+        }
+      },
+      "mode_prior": {
+        "top1": 0.017094,
+        "topk": {
+          "1": 0.017094,
+          "2": 0.036325,
+          "4": 0.059829,
+          "8": 0.09188,
+          "16": 0.145299
+        },
+        "mean_rank": 101.787,
+        "median_rank": 83.5,
+        "mean_log2_loss": 8.2679,
+        "bits_at_precision": {
+          "0.98": {
+            "called": 108,
+            "precision": 0.981481,
+            "threshold": 0.9999648003636815,
+            "bits_per_group": 4.9091
+          },
+          "0.995": {
+            "called": 98,
+            "precision": 1.0,
+            "threshold": 0.9999951374221653,
+            "bits_per_group": 4.4545
+          }
+        },
+        "bits_at_nominal_confidence": {
+          "0.98": {
+            "called": 215,
+            "precision": 0.865116,
+            "bits_per_group": 9.7727
+          },
+          "0.995": {
+            "called": 172,
+            "precision": 0.889535,
+            "bits_per_group": 7.8182
+          }
+        },
+        "per_role_j": {
+          "r1j5": {
+            "top1": 0.0,
+            "mean_rank": 107.0,
+            "bits_called_at_98": 0
+          },
+          "r1j6": {
+            "top1": 0.05,
+            "mean_rank": 115.35,
+            "bits_called_at_98": 0
+          },
+          "r1j7": {
+            "top1": 0.0,
+            "mean_rank": 100.6,
+            "bits_called_at_98": 0
+          },
+          "r1j8": {
+            "top1": 0.0,
+            "mean_rank": 136.85,
+            "bits_called_at_98": 0
+          },
+          "r1j9": {
+            "top1": 0.0,
+            "mean_rank": 102.85,
+            "bits_called_at_98": 2
+          },
+          "r1j10": {
+            "top1": 0.0,
+            "mean_rank": 76.0,
+            "bits_called_at_98": 12
+          },
+          "r2j0": {
+            "top1": 0.166667,
+            "mean_rank": 8.778,
+            "bits_called_at_98": 66
+          },
+          "r2j1": {
+            "top1": 0.0,
+            "mean_rank": 115.333,
+            "bits_called_at_98": 2
+          },
+          "r2j2": {
+            "top1": 0.0,
+            "mean_rank": 63.333,
+            "bits_called_at_98": 9
+          },
+          "r2j3": {
+            "top1": 0.0,
+            "mean_rank": 145.5,
+            "bits_called_at_98": 0
+          },
+          "r2j4": {
+            "top1": 0.0,
+            "mean_rank": 94.083,
+            "bits_called_at_98": 4
+          },
+          "r2j5": {
+            "top1": 0.0,
+            "mean_rank": 111.111,
+            "bits_called_at_98": 3
+          },
+          "r2j6": {
+            "top1": 0.0,
+            "mean_rank": 125.417,
+            "bits_called_at_98": 2
+          },
+          "r2j7": {
+            "top1": 0.0,
+            "mean_rank": 125.556,
+            "bits_called_at_98": 4
+          },
+          "r2j8": {
+            "top1": 0.0,
+            "mean_rank": 134.583,
+            "bits_called_at_98": 0
+          },
+          "r2j9": {
+            "top1": 0.0,
+            "mean_rank": 107.944,
+            "bits_called_at_98": 1
+          },
+          "r2j10": {
+            "top1": 0.0,
+            "mean_rank": 68.056,
+            "bits_called_at_98": 12
+          },
+          "r3j0": {
+            "top1": 0.133333,
+            "mean_rank": 10.0,
+            "bits_called_at_98": 58
+          },
+          "r3j1": {
+            "top1": 0.0,
+            "mean_rank": 153.333,
+            "bits_called_at_98": 0
+          },
+          "r3j2": {
+            "top1": 0.0,
+            "mean_rank": 57.067,
+            "bits_called_at_98": 4
+          },
+          "r3j3": {
+            "top1": 0.0,
+            "mean_rank": 96.4,
+            "bits_called_at_98": 1
+          },
+          "r3j4": {
+            "top1": 0.066667,
+            "mean_rank": 71.533,
+            "bits_called_at_98": 4
+          },
+          "r3j5": {
+            "top1": 0.0,
+            "mean_rank": 139.267,
+            "bits_called_at_98": 1
+          },
+          "r3j6": {
+            "top1": 0.0,
+            "mean_rank": 105.0,
+            "bits_called_at_98": 3
+          },
+          "r3j7": {
+            "top1": 0.0,
+            "mean_rank": 130.067,
+            "bits_called_at_98": 1
+          },
+          "r3j8": {
+            "top1": 0.0,
+            "mean_rank": 143.0,
+            "bits_called_at_98": 1
+          },
+          "r3j9": {
+            "top1": 0.066667,
+            "mean_rank": 98.933,
+            "bits_called_at_98": 3
+          }
+        }
+      }
+    }
+  }
+}

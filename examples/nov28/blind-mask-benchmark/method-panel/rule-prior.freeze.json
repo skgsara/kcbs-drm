@@ -1,0 +1,162 @@
+{
+ "method": "rule-prior",
+ "frozen": "2026-11-28T11:51:54+00:00",
+ "script": "scripts/mask_method_rule_prior.py",
+ "script_sha256": "e8d2cbf7f19639173e49d25befcaa8e02d7f5a894d40cd0f07769b1726b12802",
+ "test": "scripts/test_mask_method_rule_prior.py",
+ "test_sha256": "da6e468fdbe2fa936c55764f212926286e75852368b7c2bbcee5ef69f9708720",
+ "git_head": "a1e0bfc97e60518ef64c926143120c67e348e7f6",
+ "git_note": "script and test are untracked new files on top of this HEAD (not committed)",
+ "imports_unchanged": [
+  "scripts/evs_evidence.py",
+  "scripts/evs_core_history.py",
+  "scripts/evs_intra_word.py",
+  "scripts/evs_gsc_fields.py",
+  "scripts/evs_hq_neighbors.py",
+  "scripts/evs_transition_tags.py",
+  "scripts/check_evs_origin.py",
+  "scripts/eval_mask_predictions.py (ModePrior, modeprior variants only)"
+ ],
+ "import_sha256": {
+  "scripts/evs_evidence.py": "8107835aff25964be3b59272e56ffc7fc2d83e14df6e3807552c30ff4c6fcedb",
+  "scripts/evs_core_history.py": "6705df52617bda6797ae9f182bdd3ff633302cb7f4017b01e22542ad6c68f403",
+  "scripts/evs_intra_word.py": "6ab28dd7a0f41324500c5d182553755aaa7100732ec6a9522c1e6c12cea8b6e6",
+  "scripts/evs_gsc_fields.py": "204b9b920134255a2507bdc656364283c1587db34a218a6ef5d8d92b54ad84e9",
+  "scripts/evs_hq_neighbors.py": "326dcbb0e8a040d7e849071830d54242f4e5ccafad7ffb0b904da093996786df",
+  "scripts/evs_transition_tags.py": "b0bd70993b25f2ccc74c2e4bf37cd4d4a842e0ff69c7cbf6e25876a682926821",
+  "scripts/eval_mask_predictions.py": "2ed97232f2a8e3cadb7ff0c32de380a24ea732c039ce20a5bfb0bc0e2af955cb"
+ },
+ "parameters": {
+  "alpha_base": [
+   1.0,
+   8.0,
+   16.0,
+   32.0
+  ],
+  "alpha_nb": 32.0,
+  "alpha_pm": 32.0,
+  "alpha_adj": [
+   32.0,
+   32.0
+  ],
+  "trans_weight": 3.0,
+  "eps": 0.02,
+  "tau": [
+   0.5,
+   0.3,
+   0.6,
+   0.5,
+   0.4,
+   0.15,
+   0.2,
+   0.45,
+   0.1,
+   0.35,
+   0.5
+  ],
+  "use_nb": true,
+  "use_pm": true,
+  "use_adj": true,
+  "use_nb2": true,
+  "alpha_nb2": 64.0,
+  "local_window": 0,
+  "local_block": 8,
+  "local_orders": [
+   2,
+   8
+  ],
+  "alpha_local": [
+   16.0,
+   16.0
+  ],
+  "hard_penalty_nats": -40.0
+ },
+ "default_variant": "full",
+ "deterministic": true,
+ "command": "python3 scripts/mask_method_rule_prior.py --inputs work/benchmark/tasks/<split>.<task>.inputs.npz --out <pred>.npz",
+ "fixed_training_corpus": {
+  "files": [
+   "work/benchmark/real/nov25-0448+0457-3205-hik.npz",
+   "work/benchmark/real/nov25-1246-6140-merged.npz"
+  ],
+  "sha256": {
+   "work/benchmark/real/nov25-0448+0457-3205-hik.npz": "675c0e6d7683eea45d86d734e03b4bbe3f259351058d1c67af589ca7ab9e6138",
+   "work/benchmark/real/nov25-1246-6140-merged.npz": "e7fed61d64dadbd81186cb84b2d7da4754fe057b1d42b8de1e14da2a44ce89cd"
+  },
+  "content": "DEV labelled plaintext: role 0 j=0..10 and role 1 j=0..4 (mask_label of labelled groups) plus role-3 j=10 (index 43, clear by convention)",
+  "leave_out": "a corpus capture that also appears among the scored items is left out for those items (as the evaluator ModePrior does)"
+ },
+ "transductive": "plaintext revealed by the inputs file itself (its visible mask bytes, index 43) is pooled with weight trans_weight; no truth is read",
+ "tuned_on": {
+  "model_parameters": "coordinate scans on dev.T1 (200 groups, --groups 200 --seed 1) and syn-dev.TH (120 groups, --groups 120 --seed 1)",
+  "per_j_tau": "log-loss optimum per j on dev.T1 (200 g), dev.T0 (200 g) and syn-dev.TH (120 g) subsets, seed 1, rounded consensus",
+  "thresholds": "DEV metrics JSON (work/methods/rule-prior/final/dev.T1.full.metrics.json) supplies the frozen 98%/99.5% thresholds for a sealed T1 run; syn-dev.TH.full.metrics.json for syn-test TH"
+ },
+ "not_used": [
+  "test",
+  "syn-test",
+  "transfer (neither inputs nor truth)",
+  "any truth file for prediction"
+ ],
+ "frozen_thresholds_from_dev": {
+  "dev.T1.full": {
+   "bit_threshold_98": 0.8169404253971606,
+   "bit_threshold_995": 0.9503956086114297,
+   "byte_threshold_98": 0.8571505452052487,
+   "byte_threshold_995": 0.9638381778614638
+  },
+  "dev.T0.full": {
+   "bit_threshold_98": 0.8715394810371869,
+   "bit_threshold_995": 0.9965447740950585,
+   "byte_threshold_98": 0.843171268451075,
+   "byte_threshold_995": 0.9666487644081379
+  },
+  "syn-dev.TH.full": {
+   "bit_threshold_98": 0.8219177539108793,
+   "bit_threshold_995": 0.9256585091422465,
+   "byte_threshold_98": 0.8990689460712655,
+   "byte_threshold_995": 0.9313671442184215
+  },
+  "syn-dev.T1.full": {
+   "bit_threshold_98": 0.8954546873399333,
+   "bit_threshold_995": 0.9818649065226442,
+   "byte_threshold_98": 0.9999999957367973,
+   "byte_threshold_995": 0.9999999957367973
+  },
+  "nov27-dev.TH.full": {
+   "bit_threshold_98": 0.8400784137837409,
+   "bit_threshold_995": 0.9559014710726065,
+   "byte_threshold_98": 0.8119577384987405,
+   "byte_threshold_995": 0.8119577384987405
+  }
+ },
+ "dev_metrics_files": {
+  "dev.T0.full": "work/methods/rule-prior/final/dev.T0.full.metrics.json",
+  "dev.T0.prior": "work/methods/rule-prior/final/dev.T0.prior.metrics.json",
+  "dev.T0.rules+modeprior": "work/methods/rule-prior/final/dev.T0.rules+modeprior.metrics.json",
+  "dev.T0.wrong": "work/methods/rule-prior/final/dev.T0.wrong.metrics.json",
+  "dev.T1.full.complement": "work/methods/rule-prior/final/dev.T1.full.complement.metrics.json",
+  "dev.T1.full": "work/methods/rule-prior/final/dev.T1.full.metrics.json",
+  "dev.T1.modeprior": "work/methods/rule-prior/final/dev.T1.modeprior.metrics.json",
+  "dev.T1.prior": "work/methods/rule-prior/final/dev.T1.prior.metrics.json",
+  "dev.T1.rules+modeprior": "work/methods/rule-prior/final/dev.T1.rules+modeprior.metrics.json",
+  "dev.T1.rules": "work/methods/rule-prior/final/dev.T1.rules.metrics.json",
+  "dev.T1.wrong": "work/methods/rule-prior/final/dev.T1.wrong.metrics.json",
+  "nov27-dev.TH.full": "work/methods/rule-prior/final/nov27-dev.TH.full.metrics.json",
+  "nov27-dev.TH.prior": "work/methods/rule-prior/final/nov27-dev.TH.prior.metrics.json",
+  "nov27-dev.TH.rules+modeprior": "work/methods/rule-prior/final/nov27-dev.TH.rules+modeprior.metrics.json",
+  "nov27-dev.TH.wrong": "work/methods/rule-prior/final/nov27-dev.TH.wrong.metrics.json",
+  "syn-dev.T1.full": "work/methods/rule-prior/final/syn-dev.T1.full.metrics.json",
+  "syn-dev.T1.prior": "work/methods/rule-prior/final/syn-dev.T1.prior.metrics.json",
+  "syn-dev.T1.rules+modeprior": "work/methods/rule-prior/final/syn-dev.T1.rules+modeprior.metrics.json",
+  "syn-dev.T1.wrong": "work/methods/rule-prior/final/syn-dev.T1.wrong.metrics.json",
+  "syn-dev.TH.full.complement": "work/methods/rule-prior/final/syn-dev.TH.full.complement.metrics.json",
+  "syn-dev.TH.full": "work/methods/rule-prior/final/syn-dev.TH.full.metrics.json",
+  "syn-dev.TH.modeprior": "work/methods/rule-prior/final/syn-dev.TH.modeprior.metrics.json",
+  "syn-dev.TH.prior": "work/methods/rule-prior/final/syn-dev.TH.prior.metrics.json",
+  "syn-dev.TH.rules+modeprior": "work/methods/rule-prior/final/syn-dev.TH.rules+modeprior.metrics.json",
+  "syn-dev.TH.rules": "work/methods/rule-prior/final/syn-dev.TH.rules.metrics.json",
+  "syn-dev.TH.wrong": "work/methods/rule-prior/final/syn-dev.TH.wrong.metrics.json"
+ },
+ "summary": "work/methods/rule-prior/summary.json"
+}

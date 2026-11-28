@@ -1,0 +1,226 @@
+{
+  "method": "params",
+  "created": "2026-11-28T11:11:18Z",
+  "script": "scripts/mask_method_params.py",
+  "script_sha256": "1cb1f7947a14dc69e6d9daace0cf8b7bbfd8b424ffde4068a49a3208a0e65922",
+  "git_head": "a1e0bfc97e60518ef64c926143120c67e348e7f6",
+  "decoder": {
+    "binary": "/home/user/kcbs-drm/work/methods/params/build/evs_param_decoder",
+    "sha256": "c26cb323cceb28d9d0bb1cb51ce3c100e8a34430b9b3f8962f76e68eb7aecb19",
+    "flags": [
+      "-O2",
+      "-std=gnu99",
+      "-fno-strict-aliasing",
+      "-fwrapv",
+      "-ffp-contract=off",
+      "-fno-optimize-sibling-calls",
+      "-fno-pie",
+      "-g"
+    ],
+    "link": [
+      "-no-pie"
+    ],
+    "harness_sha256": "44d98a2de9faf0eeca6ba6ea41e0f5fd0ffeaa89103ff9bd7c57021439d3eda8",
+    "ref_sha256": {
+      "lib_com/bitstream.c": "801448e98e002c31cd6c9a626b73e4eb6e0b9bf929875725ae53a7b90200a6cc",
+      "lib_dec/hq_lr_dec.c": "1bd289bf0d8cc9143207c4de04fb2561ce848a3c9661306b18371dc4d8f1bd35"
+    },
+    "patched_sha256": {
+      "bitstream.c": "0a58bccf74a854aa526daece4007f4d0502964da9900e9535e0e88482463049e",
+      "evs_param_decoder.c": "7a788a48e483f2910b231ee8a79eb558cfe8c54dbf1c113f6f883d675d6d4796",
+      "hq_lr_dec.c": "13cbfd1d9f21d6a70169df9506645ed6bfb523818fded0f112b9d32af9b6c429"
+    },
+    "seconds": 20.6
+  },
+  "model": "/home/user/kcbs-drm/work/methods/params/model.pkl",
+  "model_sha256": "097e61dba99e24644c8bc43f6f43f461ee3cc2a4358930241adb763080a68209",
+  "weights": "/home/user/kcbs-drm/work/methods/params/weights.json",
+  "weights_sha256": "f00d423972b5fffd7f9fdefae09d1017d708c41694c7043b1d53dab7bc33ea5d",
+  "weights_content": {
+    "weights": {
+      "marg_A": 0.3216875490188357,
+      "nb_A": 0.1331888399482525,
+      "unseen_A": 0.0,
+      "flag_A": -0.8563615524720313,
+      "nbp_A": 1.1366115715787606,
+      "lsf_A": 0.12012449163136572,
+      "pitch_A": 0.2371330291444035,
+      "igf_A": 0.0,
+      "hq_A": 0.0,
+      "occ_A": 0.4410378886273565,
+      "marg_T": 0.2445037323399788,
+      "nb_T": 0.12337682939974824,
+      "unseen_T": 0.0,
+      "flag_T": -0.41934953077419485,
+      "nbp_T": 0.8794103214609333,
+      "lsf_T": 0.10276920338992476,
+      "pitch_T": 0.0,
+      "igf_T": 0.02866616421261338,
+      "hq_T": 0.0,
+      "occ_T": -0.0557766394477803,
+      "marg_H": 0.250264037955239,
+      "nb_H": 0.35098286911155485,
+      "unseen_H": 0.0,
+      "flag_H": -1.381788783770243,
+      "nbp_H": -0.01645334571898214,
+      "lsf_H": 0.0,
+      "pitch_H": 0.0,
+      "igf_H": 0.0,
+      "hq_H": 0.05883402274135586,
+      "occ_H": 0.39845994815410374
+    },
+    "l2": 1.0,
+    "items": 1980,
+    "mean_nll_nats": 2.9715805205676817,
+    "fitted_on": [
+      {
+        "features": "work/methods/params/scratch/own.TH.v3g40.feat.npz",
+        "truth": "work/methods/params/own/own.TH.truth.npz"
+      },
+      {
+        "features": "work/methods/params/scratch/dev.T1.v3g120.feat.npz",
+        "truth": "work/benchmark/tasks/dev.T1.truth.npz"
+      },
+      {
+        "features": "work/methods/params/scratch/own.T1.v3g60.feat.npz",
+        "truth": "work/methods/params/own/own.T1.truth.npz"
+      }
+    ]
+  },
+  "parameters": {
+    "rate": 48000,
+    "head_bits": 10,
+    "small_bits": 6,
+    "lags": [
+      1,
+      -1,
+      2,
+      -2,
+      3,
+      -3
+    ],
+    "beta": 8.0,
+    "beta_nb": 4.0,
+    "warm_groups": 2,
+    "jobs_default": 2,
+    "features": [
+      "marg_A",
+      "nb_A",
+      "unseen_A",
+      "flag_A",
+      "nbp_A",
+      "lsf_A",
+      "pitch_A",
+      "igf_A",
+      "hq_A",
+      "occ_A",
+      "marg_T",
+      "nb_T",
+      "unseen_T",
+      "flag_T",
+      "nbp_T",
+      "lsf_T",
+      "pitch_T",
+      "igf_T",
+      "hq_T",
+      "occ_T",
+      "marg_H",
+      "nb_H",
+      "unseen_H",
+      "flag_H",
+      "nbp_H",
+      "lsf_H",
+      "pitch_H",
+      "igf_H",
+      "hq_H",
+      "occ_H"
+    ]
+  },
+  "training_streams": [
+    {
+      "name": "wjs-01-happy-country",
+      "url": "https://archive.org/download/wangjaesangyongumaktan-che1chip/01.%20%ED%96%89%EB%B3%B5%ED%95%9C%20%EB%82%B4%20%EB%82%98%EB%9D%BC%20%3D%20My%20Happy%20Country.mp3",
+      "start": 0,
+      "seconds": 120,
+      "sha256": "e715575d0145ba049accf472dd4b937a926b41174430a3b05d512fa9e4d20715",
+      "frames": 6000
+    },
+    {
+      "name": "wjs-04-merry-laughter",
+      "url": "https://archive.org/download/wangjaesangyongumaktan-che1chip/04.%20%EC%9B%83%EC%9D%8C%EA%BD%83%EC%9D%B4%20%EB%A7%8C%EB%B0%9C%ED%96%88%EB%84%A4%20%3D%20Merry%20Laughter%20Is%20In%20Full%20Bloom.mp3",
+      "start": 0,
+      "seconds": 120,
+      "sha256": "7159d12b8acbbd58cf6cf2ae167dad0f822fafb6d8635d43bc08660b460713ee",
+      "frames": 6000
+    },
+    {
+      "name": "wjs-07-wellside",
+      "url": "https://archive.org/download/wangjaesangyongumaktan-che1chip/07.%20%EC%83%98%EB%AC%BC%ED%84%B0%EC%97%90%EC%84%9C%20%20%3D%20By%20The%20Wellside.mp3",
+      "start": 0,
+      "seconds": 120,
+      "sha256": "db9e2cc7a4afbb651237168eae8c21b5391bdc0adccbb5b5351543c211add770",
+      "frames": 6000
+    },
+    {
+      "name": "wjs-10-return-voyage",
+      "url": "https://archive.org/download/wangjaesangyongumaktan-che1chip/10.%20%EA%B7%80%ED%95%AD%EC%9D%98%20%EB%85%B8%EB%9E%98%20%3D%20Song%20Of%20Return%20Voyage.mp3",
+      "start": 0,
+      "seconds": 120,
+      "sha256": "02bf20952539546a72f4c0f0202e28d81b988e70464f2d2e67b32522e984d357",
+      "frames": 6000
+    },
+    {
+      "name": "wjs-13-cuckoos",
+      "url": "https://archive.org/download/wangjaesangyongumaktan-che1chip/13.%20%EB%BB%90%EA%BE%B9%EC%83%88%20%3D%20Cuckoos.mp3",
+      "start": 0,
+      "seconds": 120,
+      "sha256": "bbf56139ed6f0691926f4c8969862455749e5b5ce0584bde2ed5730399afd637",
+      "frames": 6000
+    },
+    {
+      "name": "librivox-ko-hyun-02",
+      "url": "https://archive.org/download/short_stories_hyun_1411_librivox/short_stories_02_hyun_128kb.mp3",
+      "start": 0,
+      "seconds": 150,
+      "sha256": "68f07d5ca8677317590af0fc1dd5b8634ae0749ba1bbddc3965962f73086f1fc",
+      "frames": 7500
+    },
+    {
+      "name": "librivox-ko-hyun-03",
+      "url": "https://archive.org/download/short_stories_hyun_1411_librivox/short_stories_03_hyun_128kb.mp3",
+      "start": 0,
+      "seconds": 150,
+      "sha256": "e2bc28c7573d130f5a36d9c321a3414fff289eefef0d631544421686fd413aed",
+      "frames": 7500
+    }
+  ],
+  "own_item_streams": [
+    "wjs-13-cuckoos",
+    "librivox-ko-hyun-03"
+  ],
+  "field_model_trained_on": {
+    "marginals": [
+      "work/methods/params/corpus_syn.npz minus OWN_ITEM_STREAMS (5 public streams, 31500 clear frames)",
+      "work/methods/params/corpus_dev_role0.npz (DEV dev.T1 inputs: visible role-0 frames of 1686 labelled groups, 25290 frames)"
+    ],
+    "neighbour_occurrence_value_tables": "consecutive clear frames of the 5 synthetic training streams (+ DEV role-0 for within-frame occurrence pairs)"
+  },
+  "weights_fitted_on": [
+    "own.TH: 40 groups (1080 items) of own synthetic items from OWN_ITEM_STREAMS (truth = own random masks)",
+    "own.T1: 60 groups (300 items), same streams",
+    "dev.T1: 120 groups (600 items) seed 7 subset, DEV labels (these groups are EXCLUDED from the reported dev.T1 run)"
+  ],
+  "weights_fit_group_list": "work/methods/params/scratch/dev.T1.v3g120.npz (group ids)",
+  "sealed_sets_touched": false,
+  "tuning_decisions_on": [
+    "dev.T1 120-group features (feature ablation, global vs per-j weights)",
+    "own.TH 15-group un-erase variant (rejected)"
+  ],
+  "options": {
+    "unerase": false,
+    "unused_features": [
+      "unseen"
+    ],
+    "l2": 1.0
+  }
+}
