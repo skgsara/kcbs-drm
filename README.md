@@ -289,8 +289,17 @@ disconnect leaves the samples received in the WAV and returns a nonzero exit sta
 ```bash
 python scripts/record_ubersdr_iq.py https://ubersdr.jl1edu.freeddns.org \
     --frequency-hz 3205000 --seconds 180 --ubersdr-source ./ka9q_ubersdr \
-    --out jl1edu-3205.wav
+    --out jl1edu-3205.wav --packet-timing
 ```
+
+The optional `--packet-timing` flag writes `jl1edu-3205.wav.timing.csv`.
+Each row identifies the zero-based offset and count of complex sample pairs
+written from one packet, and the station's Unix timestamp in nanoseconds for
+its first pair. A blank timestamp means the station clock is unavailable for
+that packet. To locate a clock jump, compare a timestamp with the previous
+timestamp advanced by the intervening sample count at 48 kHz. Keep a separate
+WAV and CSV on reconnection. The receipt's `started_utc` is the time the client
+started requesting the stream.
 
 The first three minutes identified service `A00002` (**조선중앙제2라지오방송**)
 and yielded one complete data unit with a verified counter. The next 20 minutes
