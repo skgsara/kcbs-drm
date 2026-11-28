@@ -1,0 +1,56 @@
+{
+  "g192_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+  "counts": {
+    "slots": 2400,
+    "transition": 72,
+    "restricted": 43,
+    "individual_bits": 21,
+    "unrestricted": 29
+  },
+  "examples": {
+    "2": {
+      "slot": 0,
+      "sender_word": "614d31caf51a05c002000000000a6fb9cff7b84a3348161f1e163940ae1b959b60",
+      "actual": 1,
+      "mode": "61",
+      "payload31": "60",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0
+      }
+    },
+    "3": {
+      "slot": 1,
+      "sender_word": "609a6395ea3476a139e1efd437060f47492ba0f2c2e785db648b295fe1363a92a0",
+      "actual": 2,
+      "mode": "60",
+      "payload31": "A0",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    "1": {
+      "slot": 644,
+      "sender_word": "600d31caf51a040da64d7e0f04bedc24dd7bdd0f9bd410259b7905ac1e39aaa9a6",
+      "actual": 0,
+      "mode": "60",
+      "payload31": "A6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    }
+  }
+}

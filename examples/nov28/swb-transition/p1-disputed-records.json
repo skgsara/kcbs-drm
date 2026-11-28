@@ -1,0 +1,187 @@
+{
+  "score_sha256": "2f3614e836897c9cb0c0b90e2a6da187bbf63315e1c093767a4efecc32c41b17",
+  "targets": {
+    "43767843": {
+      "transport_inputs": [
+        "2026-11-26_1008KST_merged"
+      ],
+      "phase_sources": {
+        "0": [
+          "2026-11-26_1008KST_merged"
+        ],
+        "1": [
+          "2026-11-26_1008KST_merged"
+        ],
+        "2": [
+          "2026-11-26_1008KST_merged"
+        ]
+      },
+      "individually_valid_native_adjacent_triples": {
+        "2026-11-26_1008KST_merged": [
+          {
+            "counter": 43767842,
+            "first_native_row": 1173,
+            "phases": [
+              0,
+              1,
+              2
+            ],
+            "du_crc_hex": [
+              "803e",
+              "a358",
+              "298d"
+            ]
+          },
+          {
+            "counter": 43767843,
+            "first_native_row": 1176,
+            "phases": [
+              0,
+              1,
+              2
+            ],
+            "du_crc_hex": [
+              "e4aa",
+              "26a1",
+              "0b32"
+            ]
+          },
+          {
+            "counter": 43767844,
+            "first_native_row": 1179,
+            "phases": [
+              0,
+              1,
+              2
+            ],
+            "du_crc_hex": [
+              "da60",
+              "d9dc",
+              "9cd1"
+            ]
+          }
+        ]
+      },
+      "witnesses": [
+        {
+          "tag": "2026-11-26_1008KST_merged",
+          "header": "053c",
+          "transmitted_crc": "E0C8",
+          "body_length": 92,
+          "record_start": [
+            43767842,
+            2
+          ],
+          "column_0_offsets": [
+            16,
+            32,
+            48
+          ],
+          "crc_after_column_flip": {
+            "80": "6ACD",
+            "40": "2DDA",
+            "C0": "A7DF"
+          },
+          "record_data_digest": "5899bd5e7f8254193218829cce0ee325a06f7c4c46be9db08ffe94f7ed0142e2",
+          "ordinary_exact_copies_this_source": [
+            {
+              "counter": 43767842,
+              "phase": 2
+            }
+          ]
+        }
+      ]
+    },
+    "43768148": {
+      "transport_inputs": [
+        "2026-11-26_1008KST_merged"
+      ],
+      "phase_sources": {
+        "0": [
+          "2026-11-26_1008KST_merged"
+        ],
+        "1": [
+          "2026-11-26_1008KST_merged"
+        ],
+        "2": [
+          "2026-11-26_1008KST_merged"
+        ]
+      },
+      "individually_valid_native_adjacent_triples": {
+        "2026-11-26_1008KST_merged": [
+          {
+            "counter": 43768147,
+            "first_native_row": 2088,
+            "phases": [
+              0,
+              1,
+              2
+            ],
+            "du_crc_hex": [
+              "d78e",
+              "87ef",
+              "60cf"
+            ]
+          },
+          {
+            "counter": 43768148,
+            "first_native_row": 2091,
+            "phases": [
+              0,
+              1,
+              2
+            ],
+            "du_crc_hex": [
+              "3dfe",
+              "2e76",
+              "e4bf"
+            ]
+          },
+          {
+            "counter": 43768149,
+            "first_native_row": 2094,
+            "phases": [
+              0,
+              1,
+              2
+            ],
+            "du_crc_hex": [
+              "0211",
+              "595d",
+              "6509"
+            ]
+          }
+        ]
+      },
+      "witnesses": [
+        {
+          "tag": "2026-11-26_1008KST_merged",
+          "header": "058c",
+          "transmitted_crc": "2B2B",
+          "body_length": 92,
+          "record_start": [
+            43768147,
+            0
+          ],
+          "column_0_offsets": [
+            48,
+            64,
+            80
+          ],
+          "crc_after_column_flip": {
+            "80": "D5A0",
+            "40": "DC7E",
+            "C0": "22F5"
+          },
+          "record_data_digest": "56dc96b816e74131160e580b9cf9a6d468fd7cb677c5775606775cf387dc32c3",
+          "ordinary_exact_copies_this_source": [
+            {
+              "counter": 43768147,
+              "phase": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

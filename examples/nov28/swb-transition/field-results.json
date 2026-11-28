@@ -1,0 +1,4555 @@
+{
+  "archive_sha256": "b92941d6409183de05cc71f5662955ef285326846ecb82eb960897ce7f0cb902",
+  "historical_inventory_sha256": "f0512c0fff50202384f730649c0dc86bcdcf00d653af0e8920ab06c126a3350f",
+  "all_assigned_counters": [
+    43872771,
+    43872772,
+    43872773,
+    43872774,
+    43872775,
+    43872776,
+    43872777,
+    43872778,
+    43872780,
+    43872781,
+    43872782,
+    43872783,
+    43872785,
+    43872788,
+    43872789,
+    43872790,
+    43872791,
+    43872792,
+    43872793,
+    43872794,
+    43872795,
+    43872796,
+    43872797,
+    43872798,
+    43872799,
+    43872800,
+    43872806,
+    43872809,
+    43872811,
+    43872812,
+    43872814,
+    43872816,
+    43872817,
+    43872818,
+    43872820,
+    43872823,
+    43872824,
+    43872827,
+    43872828,
+    43872829,
+    43872830,
+    43872831,
+    43872832,
+    43872833,
+    43872835,
+    43872836,
+    43872837,
+    43872838,
+    43872839,
+    43872840,
+    43872841,
+    43872842,
+    43872843,
+    43872844,
+    43872845,
+    43872846,
+    43872847,
+    43872848,
+    43872849,
+    43872852,
+    43872853,
+    43872854,
+    43872856,
+    43872857,
+    43872858,
+    43872859,
+    43872860,
+    43872861,
+    43872862,
+    43872863,
+    43872864,
+    43872865
+  ],
+  "overlap": [],
+  "complete_in_time_order": [
+    43872771,
+    43872775,
+    43872776,
+    43872777,
+    43872780,
+    43872782,
+    43872788,
+    43872790,
+    43872791,
+    43872792,
+    43872796,
+    43872797,
+    43872798,
+    43872812,
+    43872816,
+    43872818,
+    43872823,
+    43872824,
+    43872827,
+    43872828,
+    43872830,
+    43872833,
+    43872837,
+    43872838,
+    43872839,
+    43872840,
+    43872843,
+    43872846,
+    43872848,
+    43872852,
+    43872858,
+    43872862,
+    43872863,
+    43872864,
+    43872865
+  ],
+  "du_count": 148,
+  "complete_slots": 2100,
+  "primary": 43872771,
+  "primary_summary": {
+    "eligible": 3,
+    "restricted": 1,
+    "unrestricted": 2,
+    "contradiction": 0,
+    "fixed_bits": 2,
+    "fixed_b8": 1,
+    "fixed_b9": 1,
+    "pair_only": 0
+  },
+  "first_restriction": {
+    "counter": 43872771,
+    "slot": 54,
+    "position": 3,
+    "mode": "60",
+    "payload31": "D2",
+    "outcome": "restricted",
+    "allowed_high_pairs": [
+      0
+    ],
+    "fixed_word_bits": {
+      "8": 0,
+      "9": 0
+    }
+  },
+  "complete_summary": {
+    "eligible": 205,
+    "restricted": 122,
+    "unrestricted": 83,
+    "contradiction": 0,
+    "fixed_bits": 228,
+    "fixed_b8": 115,
+    "fixed_b9": 113,
+    "pair_only": 7
+  },
+  "complete_by_position": {
+    "1": {
+      "eligible": 50,
+      "restricted": 36,
+      "unrestricted": 14,
+      "contradiction": 0,
+      "fixed_bits": 69,
+      "fixed_b8": 35,
+      "fixed_b9": 34,
+      "pair_only": 1
+    },
+    "2": {
+      "eligible": 51,
+      "restricted": 27,
+      "unrestricted": 24,
+      "contradiction": 0,
+      "fixed_bits": 54,
+      "fixed_b8": 27,
+      "fixed_b9": 27,
+      "pair_only": 0
+    },
+    "3": {
+      "eligible": 48,
+      "restricted": 28,
+      "unrestricted": 20,
+      "contradiction": 0,
+      "fixed_bits": 49,
+      "fixed_b8": 25,
+      "fixed_b9": 24,
+      "pair_only": 3
+    },
+    "4": {
+      "eligible": 56,
+      "restricted": 31,
+      "unrestricted": 25,
+      "contradiction": 0,
+      "fixed_bits": 56,
+      "fixed_b8": 28,
+      "fixed_b9": 28,
+      "pair_only": 3
+    }
+  },
+  "complete_group_cases": [
+    {
+      "counter": 43872771,
+      "slot": 36,
+      "position": 1,
+      "mode": "63",
+      "payload31": "66",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872771,
+      "slot": 54,
+      "position": 3,
+      "mode": "60",
+      "payload31": "D2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872771,
+      "slot": 56,
+      "position": 1,
+      "mode": "62",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872775,
+      "slot": 14,
+      "position": 3,
+      "mode": "60",
+      "payload31": "52",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872775,
+      "slot": 15,
+      "position": 4,
+      "mode": "63",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872775,
+      "slot": 29,
+      "position": 2,
+      "mode": "60",
+      "payload31": "D6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872775,
+      "slot": 30,
+      "position": 3,
+      "mode": "62",
+      "payload31": "C2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872775,
+      "slot": 55,
+      "position": 4,
+      "mode": "63",
+      "payload31": "E2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872775,
+      "slot": 59,
+      "position": 4,
+      "mode": "60",
+      "payload31": "D2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872776,
+      "slot": 5,
+      "position": 2,
+      "mode": "63",
+      "payload31": "E6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872776,
+      "slot": 16,
+      "position": 1,
+      "mode": "62",
+      "payload31": "E6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872776,
+      "slot": 21,
+      "position": 2,
+      "mode": "63",
+      "payload31": "72",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872776,
+      "slot": 35,
+      "position": 4,
+      "mode": "63",
+      "payload31": "D2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872776,
+      "slot": 37,
+      "position": 2,
+      "mode": "60",
+      "payload31": "F2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872776,
+      "slot": 39,
+      "position": 4,
+      "mode": "60",
+      "payload31": "2A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872776,
+      "slot": 43,
+      "position": 4,
+      "mode": "63",
+      "payload31": "29",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872776,
+      "slot": 56,
+      "position": 1,
+      "mode": "60",
+      "payload31": "C1",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872776,
+      "slot": 57,
+      "position": 2,
+      "mode": "62",
+      "payload31": "46",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872777,
+      "slot": 5,
+      "position": 2,
+      "mode": "60",
+      "payload31": "C2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872777,
+      "slot": 6,
+      "position": 3,
+      "mode": "63",
+      "payload31": "62",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872777,
+      "slot": 27,
+      "position": 4,
+      "mode": "61",
+      "payload31": "A4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872777,
+      "slot": 33,
+      "position": 2,
+      "mode": "61",
+      "payload31": "E4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872777,
+      "slot": 38,
+      "position": 3,
+      "mode": "60",
+      "payload31": "2A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872777,
+      "slot": 47,
+      "position": 4,
+      "mode": "61",
+      "payload31": "7C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872777,
+      "slot": 53,
+      "position": 2,
+      "mode": "61",
+      "payload31": "A4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872780,
+      "slot": 20,
+      "position": 1,
+      "mode": "61",
+      "payload31": "4C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872782,
+      "slot": 9,
+      "position": 2,
+      "mode": "62",
+      "payload31": "26",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872782,
+      "slot": 16,
+      "position": 1,
+      "mode": "60",
+      "payload31": "1D",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872782,
+      "slot": 17,
+      "position": 2,
+      "mode": "63",
+      "payload31": "89",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872782,
+      "slot": 28,
+      "position": 1,
+      "mode": "60",
+      "payload31": "32",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872782,
+      "slot": 29,
+      "position": 2,
+      "mode": "60",
+      "payload31": "52",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872782,
+      "slot": 30,
+      "position": 3,
+      "mode": "63",
+      "payload31": "56",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872782,
+      "slot": 41,
+      "position": 2,
+      "mode": "62",
+      "payload31": "B2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872782,
+      "slot": 54,
+      "position": 3,
+      "mode": "62",
+      "payload31": "72",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872782,
+      "slot": 58,
+      "position": 3,
+      "mode": "63",
+      "payload31": "36",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872788,
+      "slot": 5,
+      "position": 2,
+      "mode": "60",
+      "payload31": "E2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872788,
+      "slot": 11,
+      "position": 4,
+      "mode": "63",
+      "payload31": "62",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872788,
+      "slot": 19,
+      "position": 4,
+      "mode": "63",
+      "payload31": "56",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872788,
+      "slot": 42,
+      "position": 3,
+      "mode": "60",
+      "payload31": "36",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872788,
+      "slot": 46,
+      "position": 3,
+      "mode": "62",
+      "payload31": "36",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872788,
+      "slot": 49,
+      "position": 2,
+      "mode": "62",
+      "payload31": "AA",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872790,
+      "slot": 14,
+      "position": 3,
+      "mode": "62",
+      "payload31": "19",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872790,
+      "slot": 43,
+      "position": 4,
+      "mode": "62",
+      "payload31": "25",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872790,
+      "slot": 57,
+      "position": 2,
+      "mode": "63",
+      "payload31": "C6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872791,
+      "slot": 9,
+      "position": 2,
+      "mode": "63",
+      "payload31": "C2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872791,
+      "slot": 29,
+      "position": 2,
+      "mode": "60",
+      "payload31": "C6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872791,
+      "slot": 31,
+      "position": 4,
+      "mode": "63",
+      "payload31": "36",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872791,
+      "slot": 37,
+      "position": 2,
+      "mode": "63",
+      "payload31": "2E",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872791,
+      "slot": 40,
+      "position": 1,
+      "mode": "60",
+      "payload31": "62",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872791,
+      "slot": 41,
+      "position": 2,
+      "mode": "61",
+      "payload31": "3C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872791,
+      "slot": 54,
+      "position": 3,
+      "mode": "60",
+      "payload31": "62",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872791,
+      "slot": 56,
+      "position": 1,
+      "mode": "63",
+      "payload31": "D6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872792,
+      "slot": 3,
+      "position": 4,
+      "mode": "62",
+      "payload31": "E2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872792,
+      "slot": 10,
+      "position": 3,
+      "mode": "60",
+      "payload31": "E6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872792,
+      "slot": 18,
+      "position": 3,
+      "mode": "63",
+      "payload31": "32",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872792,
+      "slot": 24,
+      "position": 1,
+      "mode": "63",
+      "payload31": "26",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872792,
+      "slot": 39,
+      "position": 4,
+      "mode": "61",
+      "payload31": "E4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872792,
+      "slot": 50,
+      "position": 3,
+      "mode": "63",
+      "payload31": "42",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872796,
+      "slot": 34,
+      "position": 3,
+      "mode": "60",
+      "payload31": "5A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872796,
+      "slot": 35,
+      "position": 4,
+      "mode": "60",
+      "payload31": "66",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872796,
+      "slot": 42,
+      "position": 3,
+      "mode": "63",
+      "payload31": "45",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872797,
+      "slot": 10,
+      "position": 3,
+      "mode": "63",
+      "payload31": "25",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872797,
+      "slot": 21,
+      "position": 2,
+      "mode": "62",
+      "payload31": "C6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872797,
+      "slot": 25,
+      "position": 2,
+      "mode": "63",
+      "payload31": "5A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872797,
+      "slot": 33,
+      "position": 2,
+      "mode": "60",
+      "payload31": "56",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872797,
+      "slot": 35,
+      "position": 4,
+      "mode": "60",
+      "payload31": "C6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872797,
+      "slot": 36,
+      "position": 1,
+      "mode": "63",
+      "payload31": "26",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872797,
+      "slot": 51,
+      "position": 4,
+      "mode": "62",
+      "payload31": "35",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872798,
+      "slot": 1,
+      "position": 2,
+      "mode": "63",
+      "payload31": "52",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872798,
+      "slot": 5,
+      "position": 2,
+      "mode": "61",
+      "payload31": "52",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872798,
+      "slot": 14,
+      "position": 3,
+      "mode": "60",
+      "payload31": "66",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872798,
+      "slot": 45,
+      "position": 2,
+      "mode": "62",
+      "payload31": "46",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872798,
+      "slot": 59,
+      "position": 4,
+      "mode": "63",
+      "payload31": "E2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872812,
+      "slot": 5,
+      "position": 2,
+      "mode": "61",
+      "payload31": "AC",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872812,
+      "slot": 26,
+      "position": 3,
+      "mode": "61",
+      "payload31": "4C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872812,
+      "slot": 31,
+      "position": 4,
+      "mode": "61",
+      "payload31": "B4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872812,
+      "slot": 40,
+      "position": 1,
+      "mode": "61",
+      "payload31": "92",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872812,
+      "slot": 41,
+      "position": 2,
+      "mode": "60",
+      "payload31": "B7",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872816,
+      "slot": 0,
+      "position": 1,
+      "mode": "60",
+      "payload31": "BA",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872816,
+      "slot": 2,
+      "position": 3,
+      "mode": "60",
+      "payload31": "58",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872816,
+      "slot": 10,
+      "position": 3,
+      "mode": "60",
+      "payload31": "E6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872816,
+      "slot": 15,
+      "position": 4,
+      "mode": "63",
+      "payload31": "31",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872816,
+      "slot": 24,
+      "position": 1,
+      "mode": "60",
+      "payload31": "C2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872816,
+      "slot": 28,
+      "position": 1,
+      "mode": "61",
+      "payload31": "6C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872816,
+      "slot": 43,
+      "position": 4,
+      "mode": "63",
+      "payload31": "1A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872816,
+      "slot": 47,
+      "position": 4,
+      "mode": "60",
+      "payload31": "B6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872816,
+      "slot": 54,
+      "position": 3,
+      "mode": "63",
+      "payload31": "2A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872818,
+      "slot": 0,
+      "position": 1,
+      "mode": "60",
+      "payload31": "EA",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872818,
+      "slot": 4,
+      "position": 1,
+      "mode": "63",
+      "payload31": "42",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872818,
+      "slot": 18,
+      "position": 3,
+      "mode": "63",
+      "payload31": "6A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872818,
+      "slot": 30,
+      "position": 3,
+      "mode": "62",
+      "payload31": "3A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872818,
+      "slot": 49,
+      "position": 2,
+      "mode": "63",
+      "payload31": "36",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872818,
+      "slot": 58,
+      "position": 3,
+      "mode": "60",
+      "payload31": "AA",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872818,
+      "slot": 59,
+      "position": 4,
+      "mode": "60",
+      "payload31": "62",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872823,
+      "slot": 4,
+      "position": 1,
+      "mode": "62",
+      "payload31": "F2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872823,
+      "slot": 9,
+      "position": 2,
+      "mode": "60",
+      "payload31": "6A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872823,
+      "slot": 14,
+      "position": 3,
+      "mode": "62",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872823,
+      "slot": 30,
+      "position": 3,
+      "mode": "61",
+      "payload31": "10",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0
+      }
+    },
+    {
+      "counter": 43872823,
+      "slot": 33,
+      "position": 2,
+      "mode": "63",
+      "payload31": "F2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872824,
+      "slot": 9,
+      "position": 2,
+      "mode": "63",
+      "payload31": "3E",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872824,
+      "slot": 26,
+      "position": 3,
+      "mode": "63",
+      "payload31": "DA",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872824,
+      "slot": 37,
+      "position": 2,
+      "mode": "60",
+      "payload31": "36",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872824,
+      "slot": 40,
+      "position": 1,
+      "mode": "63",
+      "payload31": "5A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872824,
+      "slot": 49,
+      "position": 2,
+      "mode": "60",
+      "payload31": "AA",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872824,
+      "slot": 51,
+      "position": 4,
+      "mode": "63",
+      "payload31": "C6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872824,
+      "slot": 52,
+      "position": 1,
+      "mode": "60",
+      "payload31": "46",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872824,
+      "slot": 54,
+      "position": 3,
+      "mode": "63",
+      "payload31": "59",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872827,
+      "slot": 19,
+      "position": 4,
+      "mode": "63",
+      "payload31": "56",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872827,
+      "slot": 47,
+      "position": 4,
+      "mode": "63",
+      "payload31": "C2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872828,
+      "slot": 0,
+      "position": 1,
+      "mode": "60",
+      "payload31": "36",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872828,
+      "slot": 2,
+      "position": 3,
+      "mode": "62",
+      "payload31": "DA",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872828,
+      "slot": 15,
+      "position": 4,
+      "mode": "63",
+      "payload31": "36",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872828,
+      "slot": 20,
+      "position": 1,
+      "mode": "60",
+      "payload31": "56",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872828,
+      "slot": 29,
+      "position": 2,
+      "mode": "63",
+      "payload31": "A2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872828,
+      "slot": 33,
+      "position": 2,
+      "mode": "63",
+      "payload31": "C6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872828,
+      "slot": 39,
+      "position": 4,
+      "mode": "62",
+      "payload31": "C6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872828,
+      "slot": 48,
+      "position": 1,
+      "mode": "63",
+      "payload31": "62",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872830,
+      "slot": 5,
+      "position": 2,
+      "mode": "62",
+      "payload31": "52",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872830,
+      "slot": 29,
+      "position": 2,
+      "mode": "60",
+      "payload31": "E2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872830,
+      "slot": 35,
+      "position": 4,
+      "mode": "60",
+      "payload31": "42",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872830,
+      "slot": 36,
+      "position": 1,
+      "mode": "62",
+      "payload31": "32",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872830,
+      "slot": 51,
+      "position": 4,
+      "mode": "63",
+      "payload31": "56",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872833,
+      "slot": 0,
+      "position": 1,
+      "mode": "62",
+      "payload31": "35",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872833,
+      "slot": 4,
+      "position": 1,
+      "mode": "60",
+      "payload31": "BA",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872833,
+      "slot": 9,
+      "position": 2,
+      "mode": "60",
+      "payload31": "26",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872833,
+      "slot": 11,
+      "position": 4,
+      "mode": "63",
+      "payload31": "B1",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872833,
+      "slot": 28,
+      "position": 1,
+      "mode": "61",
+      "payload31": "8C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872833,
+      "slot": 32,
+      "position": 1,
+      "mode": "60",
+      "payload31": "52",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872833,
+      "slot": 35,
+      "position": 4,
+      "mode": "62",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872833,
+      "slot": 39,
+      "position": 4,
+      "mode": "60",
+      "payload31": "D6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872833,
+      "slot": 42,
+      "position": 3,
+      "mode": "61",
+      "payload31": "4A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872837,
+      "slot": 4,
+      "position": 1,
+      "mode": "63",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872837,
+      "slot": 11,
+      "position": 4,
+      "mode": "60",
+      "payload31": "32",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872837,
+      "slot": 21,
+      "position": 2,
+      "mode": "62",
+      "payload31": "56",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872837,
+      "slot": 29,
+      "position": 2,
+      "mode": "60",
+      "payload31": "52",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872837,
+      "slot": 31,
+      "position": 4,
+      "mode": "61",
+      "payload31": "D4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872837,
+      "slot": 43,
+      "position": 4,
+      "mode": "60",
+      "payload31": "46",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872837,
+      "slot": 50,
+      "position": 3,
+      "mode": "60",
+      "payload31": "32",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872837,
+      "slot": 51,
+      "position": 4,
+      "mode": "62",
+      "payload31": "95",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872837,
+      "slot": 58,
+      "position": 3,
+      "mode": "61",
+      "payload31": "AC",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872839,
+      "slot": 7,
+      "position": 4,
+      "mode": "60",
+      "payload31": "42",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872839,
+      "slot": 12,
+      "position": 1,
+      "mode": "61",
+      "payload31": "84",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872839,
+      "slot": 47,
+      "position": 4,
+      "mode": "61",
+      "payload31": "0C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872840,
+      "slot": 8,
+      "position": 1,
+      "mode": "60",
+      "payload31": "16",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872840,
+      "slot": 23,
+      "position": 4,
+      "mode": "60",
+      "payload31": "32",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872840,
+      "slot": 25,
+      "position": 2,
+      "mode": "62",
+      "payload31": "42",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872840,
+      "slot": 56,
+      "position": 1,
+      "mode": "61",
+      "payload31": "24",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872843,
+      "slot": 2,
+      "position": 3,
+      "mode": "63",
+      "payload31": "92",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872843,
+      "slot": 15,
+      "position": 4,
+      "mode": "61",
+      "payload31": "64",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872843,
+      "slot": 34,
+      "position": 3,
+      "mode": "60",
+      "payload31": "82",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872843,
+      "slot": 35,
+      "position": 4,
+      "mode": "61",
+      "payload31": "44",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872843,
+      "slot": 40,
+      "position": 1,
+      "mode": "60",
+      "payload31": "A2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872843,
+      "slot": 41,
+      "position": 2,
+      "mode": "60",
+      "payload31": "26",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872843,
+      "slot": 43,
+      "position": 4,
+      "mode": "60",
+      "payload31": "08",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872846,
+      "slot": 3,
+      "position": 4,
+      "mode": "63",
+      "payload31": "E2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872846,
+      "slot": 9,
+      "position": 2,
+      "mode": "60",
+      "payload31": "D2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872846,
+      "slot": 13,
+      "position": 2,
+      "mode": "62",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872846,
+      "slot": 25,
+      "position": 2,
+      "mode": "63",
+      "payload31": "02",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872848,
+      "slot": 1,
+      "position": 2,
+      "mode": "60",
+      "payload31": "B2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872848,
+      "slot": 2,
+      "position": 3,
+      "mode": "63",
+      "payload31": "B2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872848,
+      "slot": 20,
+      "position": 1,
+      "mode": "60",
+      "payload31": "B2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872848,
+      "slot": 21,
+      "position": 2,
+      "mode": "60",
+      "payload31": "D2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872848,
+      "slot": 22,
+      "position": 3,
+      "mode": "61",
+      "payload31": "C4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872848,
+      "slot": 31,
+      "position": 4,
+      "mode": "63",
+      "payload31": "E6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872852,
+      "slot": 0,
+      "position": 1,
+      "mode": "60",
+      "payload31": "12",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872852,
+      "slot": 3,
+      "position": 4,
+      "mode": "63",
+      "payload31": "26",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872852,
+      "slot": 16,
+      "position": 1,
+      "mode": "61",
+      "payload31": "CC",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872852,
+      "slot": 20,
+      "position": 1,
+      "mode": "60",
+      "payload31": "A5",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872852,
+      "slot": 24,
+      "position": 1,
+      "mode": "61",
+      "payload31": "64",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872852,
+      "slot": 28,
+      "position": 1,
+      "mode": "61",
+      "payload31": "0C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872852,
+      "slot": 42,
+      "position": 3,
+      "mode": "61",
+      "payload31": "04",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872852,
+      "slot": 52,
+      "position": 1,
+      "mode": "63",
+      "payload31": "22",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872858,
+      "slot": 48,
+      "position": 1,
+      "mode": "60",
+      "payload31": "08",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872858,
+      "slot": 55,
+      "position": 4,
+      "mode": "60",
+      "payload31": "A2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872858,
+      "slot": 58,
+      "position": 3,
+      "mode": "61",
+      "payload31": "24",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872862,
+      "slot": 0,
+      "position": 1,
+      "mode": "60",
+      "payload31": "15",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872862,
+      "slot": 1,
+      "position": 2,
+      "mode": "61",
+      "payload31": "64",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872862,
+      "slot": 14,
+      "position": 3,
+      "mode": "60",
+      "payload31": "88",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872862,
+      "slot": 23,
+      "position": 4,
+      "mode": "61",
+      "payload31": "84",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872862,
+      "slot": 34,
+      "position": 3,
+      "mode": "61",
+      "payload31": "04",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872862,
+      "slot": 42,
+      "position": 3,
+      "mode": "61",
+      "payload31": "04",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872863,
+      "slot": 0,
+      "position": 1,
+      "mode": "61",
+      "payload31": "10",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0
+      }
+    },
+    {
+      "counter": 43872863,
+      "slot": 11,
+      "position": 4,
+      "mode": "61",
+      "payload31": "22",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872863,
+      "slot": 13,
+      "position": 2,
+      "mode": "60",
+      "payload31": "22",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872863,
+      "slot": 20,
+      "position": 1,
+      "mode": "61",
+      "payload31": "22",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872863,
+      "slot": 34,
+      "position": 3,
+      "mode": "61",
+      "payload31": "AC",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872863,
+      "slot": 59,
+      "position": 4,
+      "mode": "61",
+      "payload31": "24",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872864,
+      "slot": 7,
+      "position": 4,
+      "mode": "60",
+      "payload31": "A1",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872864,
+      "slot": 8,
+      "position": 1,
+      "mode": "61",
+      "payload31": "2C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872864,
+      "slot": 15,
+      "position": 4,
+      "mode": "60",
+      "payload31": "08",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872864,
+      "slot": 28,
+      "position": 1,
+      "mode": "60",
+      "payload31": "B6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872864,
+      "slot": 43,
+      "position": 4,
+      "mode": "61",
+      "payload31": "44",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872864,
+      "slot": 50,
+      "position": 3,
+      "mode": "61",
+      "payload31": "44",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872864,
+      "slot": 59,
+      "position": 4,
+      "mode": "61",
+      "payload31": "64",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 2,
+      "position": 3,
+      "mode": "60",
+      "payload31": "02",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 4,
+      "position": 1,
+      "mode": "61",
+      "payload31": "44",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 13,
+      "position": 2,
+      "mode": "60",
+      "payload31": "B3",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 14,
+      "position": 3,
+      "mode": "60",
+      "payload31": "48",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872865,
+      "slot": 21,
+      "position": 2,
+      "mode": "60",
+      "payload31": "92",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 27,
+      "position": 4,
+      "mode": "60",
+      "payload31": "98",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872865,
+      "slot": 34,
+      "position": 3,
+      "mode": "61",
+      "payload31": "44",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 44,
+      "position": 1,
+      "mode": "61",
+      "payload31": "86",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 47,
+      "position": 4,
+      "mode": "60",
+      "payload31": "12",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 48,
+      "position": 1,
+      "mode": "61",
+      "payload31": "44",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872865,
+      "slot": 56,
+      "position": 1,
+      "mode": "61",
+      "payload31": "04",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    }
+  ],
+  "partial_group_cases": [
+    {
+      "counter": 43872772,
+      "slot": 24,
+      "position": 1,
+      "mode": "63",
+      "payload31": "28",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872772,
+      "slot": 40,
+      "position": 1,
+      "mode": "63",
+      "payload31": "C2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872773,
+      "slot": 1,
+      "position": 2,
+      "mode": "62",
+      "payload31": "96",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872773,
+      "slot": 8,
+      "position": 1,
+      "mode": "60",
+      "payload31": "D6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872773,
+      "slot": 10,
+      "position": 3,
+      "mode": "63",
+      "payload31": "1A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872773,
+      "slot": 14,
+      "position": 3,
+      "mode": "63",
+      "payload31": "3A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872773,
+      "slot": 17,
+      "position": 2,
+      "mode": "60",
+      "payload31": "52",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872774,
+      "slot": 1,
+      "position": 2,
+      "mode": "63",
+      "payload31": "2A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872774,
+      "slot": 7,
+      "position": 4,
+      "mode": "60",
+      "payload31": "D6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872774,
+      "slot": 9,
+      "position": 2,
+      "mode": "63",
+      "payload31": "2A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872774,
+      "slot": 19,
+      "position": 4,
+      "mode": "63",
+      "payload31": "D6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872778,
+      "slot": 14,
+      "position": 3,
+      "mode": "60",
+      "payload31": "6A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872778,
+      "slot": 19,
+      "position": 4,
+      "mode": "61",
+      "payload31": "6C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872781,
+      "slot": 20,
+      "position": 1,
+      "mode": "61",
+      "payload31": "94",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872781,
+      "slot": 34,
+      "position": 3,
+      "mode": "62",
+      "payload31": "AA",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872783,
+      "slot": 5,
+      "position": 2,
+      "mode": "60",
+      "payload31": "52",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872783,
+      "slot": 6,
+      "position": 3,
+      "mode": "63",
+      "payload31": "42",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872783,
+      "slot": 12,
+      "position": 1,
+      "mode": "60",
+      "payload31": "26",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872783,
+      "slot": 15,
+      "position": 4,
+      "mode": "63",
+      "payload31": "CA",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872785,
+      "slot": 1,
+      "position": 2,
+      "mode": "62",
+      "payload31": "D2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872785,
+      "slot": 12,
+      "position": 1,
+      "mode": "63",
+      "payload31": "C2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872785,
+      "slot": 18,
+      "position": 3,
+      "mode": "60",
+      "payload31": "B6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872789,
+      "slot": 0,
+      "position": 1,
+      "mode": "60",
+      "payload31": "46",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872789,
+      "slot": 2,
+      "position": 3,
+      "mode": "63",
+      "payload31": "52",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872789,
+      "slot": 8,
+      "position": 1,
+      "mode": "60",
+      "payload31": "E2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872789,
+      "slot": 10,
+      "position": 3,
+      "mode": "63",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872789,
+      "slot": 16,
+      "position": 1,
+      "mode": "63",
+      "payload31": "B5",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872789,
+      "slot": 47,
+      "position": 4,
+      "mode": "62",
+      "payload31": "2A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872793,
+      "slot": 13,
+      "position": 2,
+      "mode": "60",
+      "payload31": "E6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872793,
+      "slot": 17,
+      "position": 2,
+      "mode": "63",
+      "payload31": "26",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872799,
+      "slot": 5,
+      "position": 2,
+      "mode": "60",
+      "payload31": "CA",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872799,
+      "slot": 10,
+      "position": 3,
+      "mode": "60",
+      "payload31": "46",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872799,
+      "slot": 14,
+      "position": 3,
+      "mode": "62",
+      "payload31": "B2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872799,
+      "slot": 45,
+      "position": 2,
+      "mode": "63",
+      "payload31": "35",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872799,
+      "slot": 48,
+      "position": 1,
+      "mode": "60",
+      "payload31": "66",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872799,
+      "slot": 50,
+      "position": 3,
+      "mode": "63",
+      "payload31": "D6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872799,
+      "slot": 53,
+      "position": 2,
+      "mode": "61",
+      "payload31": "4C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872800,
+      "slot": 8,
+      "position": 1,
+      "mode": "63",
+      "payload31": "2A",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872806,
+      "slot": 3,
+      "position": 4,
+      "mode": "60",
+      "payload31": "52",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872806,
+      "slot": 7,
+      "position": 4,
+      "mode": "61",
+      "payload31": "4C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872806,
+      "slot": 15,
+      "position": 4,
+      "mode": "63",
+      "payload31": "88",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872809,
+      "slot": 1,
+      "position": 2,
+      "mode": "61",
+      "payload31": "B6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872809,
+      "slot": 13,
+      "position": 2,
+      "mode": "61",
+      "payload31": "6C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872809,
+      "slot": 15,
+      "position": 4,
+      "mode": "60",
+      "payload31": "46",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872811,
+      "slot": 2,
+      "position": 3,
+      "mode": "61",
+      "payload31": "5C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872814,
+      "slot": 2,
+      "position": 3,
+      "mode": "63",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872814,
+      "slot": 17,
+      "position": 2,
+      "mode": "62",
+      "payload31": "AA",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872817,
+      "slot": 9,
+      "position": 2,
+      "mode": "61",
+      "payload31": "A4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872817,
+      "slot": 13,
+      "position": 2,
+      "mode": "60",
+      "payload31": "B6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872817,
+      "slot": 15,
+      "position": 4,
+      "mode": "61",
+      "payload31": "E4",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872820,
+      "slot": 18,
+      "position": 3,
+      "mode": "63",
+      "payload31": "BA",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872829,
+      "slot": 21,
+      "position": 2,
+      "mode": "60",
+      "payload31": "3A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872829,
+      "slot": 22,
+      "position": 3,
+      "mode": "61",
+      "payload31": "8C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872829,
+      "slot": 32,
+      "position": 1,
+      "mode": "60",
+      "payload31": "E6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872829,
+      "slot": 33,
+      "position": 2,
+      "mode": "63",
+      "payload31": "26",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872832,
+      "slot": 1,
+      "position": 2,
+      "mode": "60",
+      "payload31": "C2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872832,
+      "slot": 5,
+      "position": 2,
+      "mode": "61",
+      "payload31": "FC",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872832,
+      "slot": 28,
+      "position": 1,
+      "mode": "60",
+      "payload31": "CA",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872832,
+      "slot": 32,
+      "position": 1,
+      "mode": "63",
+      "payload31": "25",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872832,
+      "slot": 37,
+      "position": 2,
+      "mode": "60",
+      "payload31": "C6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872835,
+      "slot": 29,
+      "position": 2,
+      "mode": "60",
+      "payload31": "D6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872835,
+      "slot": 35,
+      "position": 4,
+      "mode": "60",
+      "payload31": "3A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872835,
+      "slot": 37,
+      "position": 2,
+      "mode": "63",
+      "payload31": "36",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872835,
+      "slot": 48,
+      "position": 1,
+      "mode": "63",
+      "payload31": "E2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872836,
+      "slot": 18,
+      "position": 3,
+      "mode": "60",
+      "payload31": "6A",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872836,
+      "slot": 19,
+      "position": 4,
+      "mode": "62",
+      "payload31": "C2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872841,
+      "slot": 22,
+      "position": 3,
+      "mode": "60",
+      "payload31": "08",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872841,
+      "slot": 36,
+      "position": 1,
+      "mode": "63",
+      "payload31": "82",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872841,
+      "slot": 47,
+      "position": 4,
+      "mode": "61",
+      "payload31": "0C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872842,
+      "slot": 0,
+      "position": 1,
+      "mode": "63",
+      "payload31": "06",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872842,
+      "slot": 15,
+      "position": 4,
+      "mode": "60",
+      "payload31": "A6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872844,
+      "slot": 49,
+      "position": 2,
+      "mode": "63",
+      "payload31": "B6",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872845,
+      "slot": 2,
+      "position": 3,
+      "mode": "63",
+      "payload31": "62",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872845,
+      "slot": 12,
+      "position": 1,
+      "mode": "60",
+      "payload31": "E2",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872845,
+      "slot": 15,
+      "position": 4,
+      "mode": "63",
+      "payload31": "C2",
+      "outcome": "unrestricted",
+      "allowed_high_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872853,
+      "slot": 11,
+      "position": 4,
+      "mode": "61",
+      "payload31": "24",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872853,
+      "slot": 15,
+      "position": 4,
+      "mode": "60",
+      "payload31": "04",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    },
+    {
+      "counter": 43872857,
+      "slot": 6,
+      "position": 3,
+      "mode": "60",
+      "payload31": "B6",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872857,
+      "slot": 7,
+      "position": 4,
+      "mode": "61",
+      "payload31": "12",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872857,
+      "slot": 10,
+      "position": 3,
+      "mode": "60",
+      "payload31": "95",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872857,
+      "slot": 16,
+      "position": 1,
+      "mode": "60",
+      "payload31": "16",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 0
+      }
+    },
+    {
+      "counter": 43872857,
+      "slot": 17,
+      "position": 2,
+      "mode": "61",
+      "payload31": "10",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0
+      }
+    },
+    {
+      "counter": 43872857,
+      "slot": 41,
+      "position": 2,
+      "mode": "61",
+      "payload31": "02",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872857,
+      "slot": 55,
+      "position": 4,
+      "mode": "61",
+      "payload31": "24",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872857,
+      "slot": 58,
+      "position": 3,
+      "mode": "61",
+      "payload31": "0C",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        1
+      ],
+      "fixed_word_bits": {
+        "8": 0,
+        "9": 1
+      }
+    },
+    {
+      "counter": 43872859,
+      "slot": 15,
+      "position": 4,
+      "mode": "60",
+      "payload31": "48",
+      "outcome": "restricted",
+      "allowed_high_pairs": [
+        0,
+        2,
+        3
+      ],
+      "fixed_word_bits": {}
+    }
+  ]
+}

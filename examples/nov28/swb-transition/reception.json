@@ -1,0 +1,41 @@
+{
+  "freeze_commit": "5ba8c7f3e1b2f8556e4b4033e65fa74029943022",
+  "download_started_utc": "2026-11-28T01:13:20Z",
+  "source": "10min-2026-11-27T12_15_02Z_3205.00_iq.wav",
+  "source_bytes": 29360172,
+  "source_sha256": "8ba5576dc9ab560c14a1de3b7def1a176c2f3e95010dfabe890ab002f40bb624",
+  "source_sample_rate": 12000,
+  "source_iq_samples": 7330304,
+  "test_sample_interval": [
+    0,
+    1440000
+  ],
+  "test_int16le_interleaved_sha256": "6696da7bcfe1b506d9b8d628d1fb9550e02429f0d15f24010cc02a0cb81e0917",
+  "dream": [
+    {
+      "name": "first",
+      "binary_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+      "msc_sha256": "438da08f6b12251be405ef42dd8fb5c220106ae51d31ca41cccc84f0edd6e10d"
+    },
+    {
+      "name": "second",
+      "binary_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+      "msc_sha256": "438da08f6b12251be405ef42dd8fb5c220106ae51d31ca41cccc84f0edd6e10d"
+    }
+  ],
+  "independent_replay": {
+    "matching_dus": 148,
+    "differing_dus": 0,
+    "bytes_in_matching_dus": 105968,
+    "left": {
+      "archive_sha256": "b92941d6409183de05cc71f5662955ef285326846ecb82eb960897ce7f0cb902",
+      "complete_dus": 148
+    },
+    "right": {
+      "archive_sha256": "b92941d6409183de05cc71f5662955ef285326846ecb82eb960897ce7f0cb902",
+      "complete_dus": 148
+    }
+  },
+  "primary_counter": 43872771,
+  "prediction_scope": "Digital IQ only. Text records enter the separate historical calibration."
+}

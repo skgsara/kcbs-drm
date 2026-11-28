@@ -1,0 +1,455 @@
+{
+  "format": "evs-P2-transition-43877110-source-v1",
+  "counter": 43877110,
+  "pins": {
+    "packets_sha256": "01222f762a95b5393ec108c65b94b834f89707887e4d3054d1e0e52458a5d478",
+    "packet_provenance_sha256": "21aeaa2f98d345c8c8867fdb820919785c1c7f7586c128c6cbf11d1af7def024",
+    "strict_record_ledger_sha256": "3c8e0a2ebcaf56498d2310830eacff64833acb6e53ab9cc18112a32b2eb15e50",
+    "frozen_predictions_sha256": "aebb199a2d3733981772d2eca5893be8f395dfec88d0f1e21a11e7ebb3361974",
+    "fixture_sha256": "b48ce4524e5bac416e413ce07a9a29afd1142d94175fe46ca8d1b27b2d4a5ad8"
+  },
+  "source_basis": "Four receiver profiles of the same recorded IQ. Every listed native 182-byte packet was checked; ordinals with valid header, CRC and exact matching 179-byte body are reported per source row.",
+  "source_records": {
+    "wiener": {
+      "msc_sha256": "2dcef6f23216a2f4fbf1beff21966429d5738b7a0df53b8ab7c0481e479aa4bc",
+      "source": "work/rf-validation/1317-four/source00_window002_diversity/wiener/msc.bin",
+      "zero_based_row_indices": [
+        851,
+        852,
+        853,
+        854
+      ],
+      "rows": [
+        {
+          "row": 851,
+          "counter": 43877110,
+          "phase": 0,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "0d3c869396be093d2c83c62f06766d66176112070397b4c276a16f30dd42fbb7"
+        },
+        {
+          "row": 852,
+          "counter": 43877110,
+          "phase": 1,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "2c132eb72b1e74361ec7931b165e1ba631e9bfd5d02f91b099c31dd358c2cb98"
+        },
+        {
+          "row": 853,
+          "counter": 43877110,
+          "phase": 2,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "d402eccf4589d50921d4cf60d3d99148ee6bd984fc642db03b57042f2cc6716d"
+        },
+        {
+          "row": 854,
+          "counter": 43877111,
+          "phase": 0,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "749757db8bd84ed4a20b5816beba32ebaaa4d8f0b48c7e229ef9b8e06929b006"
+        }
+      ]
+    },
+    "linear-time": {
+      "msc_sha256": "aa9cf35363ace153716dfd2e36632d7f5610d12d3028d3ff7339df88c0d8d40d",
+      "source": "work/rf-validation/1317-four/source00_window002_diversity/linear-time/msc.bin",
+      "zero_based_row_indices": [
+        851,
+        852,
+        853,
+        854
+      ],
+      "rows": [
+        {
+          "row": 851,
+          "counter": 43877110,
+          "phase": 0,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "0d3c869396be093d2c83c62f06766d66176112070397b4c276a16f30dd42fbb7"
+        },
+        {
+          "row": 852,
+          "counter": 43877110,
+          "phase": 1,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "2c132eb72b1e74361ec7931b165e1ba631e9bfd5d02f91b099c31dd358c2cb98"
+        },
+        {
+          "row": 853,
+          "counter": 43877110,
+          "phase": 2,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "d402eccf4589d50921d4cf60d3d99148ee6bd984fc642db03b57042f2cc6716d"
+        },
+        {
+          "row": 854,
+          "counter": 43877111,
+          "phase": 0,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "749757db8bd84ed4a20b5816beba32ebaaa4d8f0b48c7e229ef9b8e06929b006"
+        }
+      ]
+    },
+    "linear-time-modmetric": {
+      "msc_sha256": "3829cba91c84e253133bc71f0837ea6b0b8411a50725a6840f6a2b73633c3186",
+      "source": "work/rf-validation/1317-four/source00_window002_diversity/linear-time-modmetric/msc.bin",
+      "zero_based_row_indices": [
+        851,
+        852,
+        853,
+        854
+      ],
+      "rows": [
+        {
+          "row": 851,
+          "counter": 43877110,
+          "phase": 0,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "0d3c869396be093d2c83c62f06766d66176112070397b4c276a16f30dd42fbb7"
+        },
+        {
+          "row": 852,
+          "counter": 43877110,
+          "phase": 1,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "2c132eb72b1e74361ec7931b165e1ba631e9bfd5d02f91b099c31dd358c2cb98"
+        },
+        {
+          "row": 853,
+          "counter": 43877110,
+          "phase": 2,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            2
+          ],
+          "raw_row_sha256": "55f1e1cddac0a10a76c6f3e41565f2519735205ed6496f56f96bca70ea897956"
+        },
+        {
+          "row": 854,
+          "counter": 43877111,
+          "phase": 0,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "749757db8bd84ed4a20b5816beba32ebaaa4d8f0b48c7e229ef9b8e06929b006"
+        }
+      ]
+    },
+    "first-peak-four": {
+      "msc_sha256": "6944c8734212efce6d6da08f6ecefac7733d60febd9e3bd357e2eed2201be049",
+      "source": "work/rf-validation/1317-four/source00_window002_diversity/first-peak-four/msc.bin",
+      "zero_based_row_indices": [
+        851,
+        852,
+        853,
+        854
+      ],
+      "rows": [
+        {
+          "row": 851,
+          "counter": 43877110,
+          "phase": 0,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "0d3c869396be093d2c83c62f06766d66176112070397b4c276a16f30dd42fbb7"
+        },
+        {
+          "row": 852,
+          "counter": 43877110,
+          "phase": 1,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "2c132eb72b1e74361ec7931b165e1ba631e9bfd5d02f91b099c31dd358c2cb98"
+        },
+        {
+          "row": 853,
+          "counter": 43877110,
+          "phase": 2,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            2
+          ],
+          "raw_row_sha256": "55f1e1cddac0a10a76c6f3e41565f2519735205ed6496f56f96bca70ea897956"
+        },
+        {
+          "row": 854,
+          "counter": 43877111,
+          "phase": 0,
+          "valid_and_matching_packet_ordinals": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "raw_row_sha256": "749757db8bd84ed4a20b5816beba32ebaaa4d8f0b48c7e229ef9b8e06929b006"
+        }
+      ]
+    }
+  },
+  "transport": {
+    "43877110/0": {
+      "counter": 43877110,
+      "phase": 0,
+      "du_crc16": "956a",
+      "du_sha256": "ae92e9c69a348eb5db602a9461f937a446acd8da61ee5f9704c0220fc2ed9397",
+      "msc_payload_sha256": "0d3c869396be093d2c83c62f06766d66176112070397b4c276a16f30dd42fbb7",
+      "packet_crc16": [
+        "7c80",
+        "4f3d",
+        "4c9d",
+        "bafb"
+      ],
+      "packet_headers_hex": [
+        "80",
+        "01",
+        "02",
+        "43"
+      ],
+      "packet_sha256": [
+        "a3f9d82a735b432a040ca22730d8bcf2fd913b7c57318d2bb97c5a9571bf94eb",
+        "c088e7bd32615f18e98caec4a90f867de14710265f37b710ead90cce2aed0ccb",
+        "5a81774da5b4e7f52fcc03807c26c0b751cb03fb72aa08c1d72a8e74b3bbd4b5",
+        "5528fe64ea563f62e812059284c695253894d581f63e4dd5e9d54c1ab94f0129"
+      ]
+    },
+    "43877110/1": {
+      "counter": 43877110,
+      "phase": 1,
+      "du_crc16": "61a6",
+      "du_sha256": "80d9cd18e17e32e7462b25a727d1f9b65cc883c0583b2db7797370cb9757ce7c",
+      "msc_payload_sha256": "2c132eb72b1e74361ec7931b165e1ba631e9bfd5d02f91b099c31dd358c2cb98",
+      "packet_crc16": [
+        "b3f0",
+        "2a2e",
+        "6def",
+        "acac"
+      ],
+      "packet_headers_hex": [
+        "80",
+        "01",
+        "02",
+        "43"
+      ],
+      "packet_sha256": [
+        "2c6134dd0652e2126754454c73079d4ab14b2e36a8d17d003809340276b86b02",
+        "24f540e2c049452b262eee46400fa670c165dc8f5d147dd4e48e4833efa1f4bb",
+        "c64e31701cadc89b5ac6ca6ae1fa8247931c025579474f9b3f4953c797e2a9e8",
+        "92051b20e7b2f975b04a0a14c4a3e4bce5bd8e1cc9e80b939c3484854a7ae705"
+      ]
+    },
+    "43877110/2": {
+      "counter": 43877110,
+      "phase": 2,
+      "du_crc16": "b74c",
+      "du_sha256": "e35d3aae4192e869875c999e45dbc7712cc422e43929877715c4bf4d4c2d3b8c",
+      "msc_payload_sha256": "d402eccf4589d50921d4cf60d3d99148ee6bd984fc642db03b57042f2cc6716d",
+      "packet_crc16": [
+        "ed32",
+        "edce",
+        "7a0d",
+        "847e"
+      ],
+      "packet_headers_hex": [
+        "80",
+        "01",
+        "02",
+        "43"
+      ],
+      "packet_sha256": [
+        "79b418b8e84b619cce8af5319230cd3d45ad5ae060114dd9101de22b699f06a9",
+        "ae9ab96df0a03afc24edbf340b27d0308163f551e929efa53aed60864407d10e",
+        "8f92d7b9ac1f883c1626354791fe7d938166ff4fed49fc34f123498449d53cc7",
+        "9a2c7d5895c007c4159f5804cf8ea44436a9d4bda21dafe556a5a856a0159dc1"
+      ]
+    },
+    "43877111/0": {
+      "counter": 43877111,
+      "phase": 0,
+      "du_crc16": "8e7d",
+      "du_sha256": "e3304a59afb12d74fe188e08e436c52e3347f842a84981cf403b1b04364db9ec",
+      "msc_payload_sha256": "749757db8bd84ed4a20b5816beba32ebaaa4d8f0b48c7e229ef9b8e06929b006",
+      "packet_crc16": [
+        "28b4",
+        "fe26",
+        "1978",
+        "b4ec"
+      ],
+      "packet_headers_hex": [
+        "80",
+        "01",
+        "02",
+        "43"
+      ],
+      "packet_sha256": [
+        "c63f40f35d6bf2e870f9e8e9d7f283f5e45a02992f8cae1a538b083496675a23",
+        "1edd145eea03f0b6db2c4f5bbd46e7ec63be6ebc4a86da5f613fbc4f175b41e4",
+        "bf6d1da10e54a782edd06fae552d0abbaada6729c7682215b93a5d5543f904f4",
+        "ddc6eb2f21fb8c24a9f788839d6f5d03bc6c34cf327ca178c105f4b6fa668ccd"
+      ]
+    }
+  },
+  "affected_words": [
+    {
+      "slot": 37,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "mode": "61",
+      "direct_p31": "30",
+      "z": 4,
+      "allowed_pairs": [
+        "00",
+        "01"
+      ],
+      "supplied_pair": "10",
+      "source_offsets": {
+        "mode": {
+          "du_offset": 563,
+          "packet_ordinal": 3,
+          "offset_in_179_byte_body": 26
+        },
+        "prior_supplied_label": {
+          "du_offset": 564,
+          "packet_ordinal": 3,
+          "offset_in_179_byte_body": 27
+        },
+        "direct_p31": {
+          "du_offset": 595,
+          "packet_ordinal": 3,
+          "offset_in_179_byte_body": 58
+        }
+      },
+      "witness_record": "43877110/1/11"
+    },
+    {
+      "slot": 41,
+      "phase": 2,
+      "cycle": 0,
+      "position": 2,
+      "mode": "60",
+      "direct_p31": "c6",
+      "z": 1,
+      "allowed_pairs": [
+        "00"
+      ],
+      "supplied_pair": "10",
+      "source_offsets": {
+        "mode": {
+          "du_offset": 39,
+          "packet_ordinal": 0,
+          "offset_in_179_byte_body": 39
+        },
+        "prior_supplied_label": {
+          "du_offset": 40,
+          "packet_ordinal": 0,
+          "offset_in_179_byte_body": 40
+        },
+        "direct_p31": {
+          "du_offset": 71,
+          "packet_ordinal": 0,
+          "offset_in_179_byte_body": 71
+        }
+      },
+      "witness_record": "43877110/1/11"
+    }
+  ],
+  "record": {
+    "counter": 43877110,
+    "phase": 1,
+    "header_hex": "a07a",
+    "text": "견됩니다.",
+    "record_hex": "a07aacac29b4c8b2e4b22e00a2c00000",
+    "full_record_sha256": "858e46da917759f233604d0755b4f2bb41ded9019c4a39e3ae5231203326bd6e",
+    "checked_offsets": [
+      0,
+      12
+    ],
+    "checked_byte_11": "00",
+    "text_du_offset": 709,
+    "text_packet_ordinal": 3,
+    "text_offset_in_179_byte_body": 172,
+    "transmitted_crc16": "a2c0"
+  },
+  "single_byte_controls": {
+    "80": {
+      "altered_byte_11": "80",
+      "recomputed_crc16": "3348",
+      "stored_crc16": "a2c0",
+      "stored_crc_agrees": false
+    },
+    "40": {
+      "altered_byte_11": "40",
+      "recomputed_crc16": "ea04",
+      "stored_crc16": "a2c0",
+      "stored_crc_agrees": false
+    },
+    "c0": {
+      "altered_byte_11": "c0",
+      "recomputed_crc16": "7b8c",
+      "stored_crc16": "a2c0",
+      "stored_crc_agrees": false
+    }
+  },
+  "scope": "Each control edits only byte 11 of the already supplied text, keeps every other byte fixed, and compares to the original checksum. The two frame labels share this one record."
+}

@@ -1,0 +1,144 @@
+{
+  "1317": {
+    "counts": {
+      "known_pairs": 120,
+      "all_four_rf_packets": 119,
+      "nontrivial_constraints": 118,
+      "nontrivial_matches": 116,
+      "exact_pairs": 94,
+      "correct_exact_pairs": 93,
+      "predicted_individual_bits": 198,
+      "correct_individual_bits": 196
+    },
+    "domain_sizes": {
+      "1_allowed_match_True": 93,
+      "3_allowed_match_True": 14,
+      "2_allowed_match_True": 9,
+      "4_allowed_match_True": 2,
+      "2_allowed_match_False": 1,
+      "1_allowed_match_False": 1
+    },
+    "distinct_counters": 91,
+    "disagreements": [
+      {
+        "capture": "1317",
+        "counter": "43877110",
+        "phase": "1",
+        "cycle": "4",
+        "slot": "37",
+        "mode": "61",
+        "p31": "30",
+        "z": "4",
+        "allowed_pairs_decimal": "0|1",
+        "observed_pair_decimal": "2",
+        "record_counter_phase_byte_offsets": "43877110/1/11",
+        "all_four_packets": "1"
+      },
+      {
+        "capture": "1317",
+        "counter": "43877110",
+        "phase": "2",
+        "cycle": "0",
+        "slot": "41",
+        "mode": "60",
+        "p31": "c6",
+        "z": "1",
+        "allowed_pairs_decimal": "0",
+        "observed_pair_decimal": "2",
+        "record_counter_phase_byte_offsets": "43877110/1/11",
+        "all_four_packets": "1"
+      }
+    ]
+  },
+  "1744": {
+    "counts": {
+      "known_pairs": 26,
+      "all_four_rf_packets": 26,
+      "nontrivial_constraints": 26,
+      "nontrivial_matches": 26,
+      "exact_pairs": 17,
+      "correct_exact_pairs": 17,
+      "predicted_individual_bits": 35,
+      "correct_individual_bits": 35
+    },
+    "domain_sizes": {
+      "3_allowed_match_True": 8,
+      "2_allowed_match_True": 1,
+      "1_allowed_match_True": 17
+    },
+    "distinct_counters": 14,
+    "disagreements": []
+  },
+  "1756": {
+    "counts": {
+      "known_pairs": 164,
+      "all_four_rf_packets": 164,
+      "nontrivial_constraints": 164,
+      "nontrivial_matches": 164,
+      "exact_pairs": 120,
+      "correct_exact_pairs": 120,
+      "predicted_individual_bits": 261,
+      "correct_individual_bits": 261
+    },
+    "domain_sizes": {
+      "3_allowed_match_True": 23,
+      "1_allowed_match_True": 120,
+      "2_allowed_match_True": 21
+    },
+    "distinct_counters": 114,
+    "disagreements": []
+  },
+  "combined": {
+    "counts": {
+      "known_pairs": 310,
+      "all_four_rf_packets": 309,
+      "nontrivial_constraints": 308,
+      "nontrivial_matches": 306,
+      "exact_pairs": 231,
+      "correct_exact_pairs": 230,
+      "predicted_individual_bits": 494,
+      "correct_individual_bits": 492
+    },
+    "domain_sizes": {
+      "1_allowed_match_True": 230,
+      "3_allowed_match_True": 45,
+      "2_allowed_match_True": 31,
+      "4_allowed_match_True": 2,
+      "2_allowed_match_False": 1,
+      "1_allowed_match_False": 1
+    },
+    "distinct_counters": 219,
+    "disagreements": [
+      {
+        "capture": "1317",
+        "counter": "43877110",
+        "phase": "1",
+        "cycle": "4",
+        "slot": "37",
+        "mode": "61",
+        "p31": "30",
+        "z": "4",
+        "allowed_pairs_decimal": "0|1",
+        "observed_pair_decimal": "2",
+        "record_counter_phase_byte_offsets": "43877110/1/11",
+        "all_four_packets": "1"
+      },
+      {
+        "capture": "1317",
+        "counter": "43877110",
+        "phase": "2",
+        "cycle": "0",
+        "slot": "41",
+        "mode": "60",
+        "p31": "c6",
+        "z": "1",
+        "allowed_pairs_decimal": "0",
+        "observed_pair_decimal": "2",
+        "record_counter_phase_byte_offsets": "43877110/1/11",
+        "all_four_packets": "1"
+      }
+    ]
+  },
+  "record_witnesses": 144,
+  "fixture_sha256": "b48ce4524e5bac416e413ce07a9a29afd1142d94175fe46ca8d1b27b2d4a5ad8"
+}

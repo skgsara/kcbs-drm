@@ -1,0 +1,577 @@
+{
+  "header_or_body_column": {
+    "allowed_pair_count": {
+      "1": 776,
+      "2": 126,
+      "3": 141,
+      "4": 616
+    },
+    "counts": {
+      "b8_matches": 897,
+      "b8_predicted_0": 902,
+      "b8_predictions": 902,
+      "b9_matches": 771,
+      "b9_predicted_0": 411,
+      "b9_predicted_1": 365,
+      "b9_predictions": 776,
+      "exact_pair_matches": 771,
+      "exact_pair_predictions": 776,
+      "labelled_transitions": 1659,
+      "pair_alternatives_excluded": 2721,
+      "pair_membership_matches": 1038,
+      "pair_only_matches": 141,
+      "pair_only_restrictions": 141,
+      "restrictive_words": 1043
+    },
+    "disagreements": [
+      {
+        "allowed": [
+          0
+        ],
+        "counter": 43767843,
+        "cycle": 3,
+        "mode": "60",
+        "observed_pair": 3,
+        "p31": "D2",
+        "phase": 0,
+        "position": 1,
+        "records": [
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 16,
+            "start_counter": 43767842,
+            "start_phase": 2
+          },
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 32,
+            "start_counter": 43767842,
+            "start_phase": 2
+          },
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 48,
+            "start_counter": 43767842,
+            "start_phase": 2
+          }
+        ]
+      },
+      {
+        "allowed": [
+          1
+        ],
+        "counter": 43767843,
+        "cycle": 4,
+        "mode": "61",
+        "observed_pair": 2,
+        "p31": "4C",
+        "phase": 0,
+        "position": 1,
+        "records": [
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 16,
+            "start_counter": 43767842,
+            "start_phase": 2
+          },
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 32,
+            "start_counter": 43767842,
+            "start_phase": 2
+          },
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 48,
+            "start_counter": 43767842,
+            "start_phase": 2
+          }
+        ]
+      },
+      {
+        "allowed": [
+          0
+        ],
+        "counter": 43768148,
+        "cycle": 1,
+        "mode": "60",
+        "observed_pair": 3,
+        "p31": "C2",
+        "phase": 0,
+        "position": 1,
+        "records": [
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 48,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 64,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 80,
+            "start_counter": 43768147,
+            "start_phase": 0
+          }
+        ]
+      },
+      {
+        "allowed": [
+          1
+        ],
+        "counter": 43768148,
+        "cycle": 2,
+        "mode": "61",
+        "observed_pair": 2,
+        "p31": "8C",
+        "phase": 0,
+        "position": 1,
+        "records": [
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 48,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 64,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 80,
+            "start_counter": 43768147,
+            "start_phase": 0
+          }
+        ]
+      },
+      {
+        "allowed": [
+          1
+        ],
+        "counter": 43768148,
+        "cycle": 0,
+        "mode": "61",
+        "observed_pair": 2,
+        "p31": "94",
+        "phase": 2,
+        "position": 1,
+        "records": [
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 48,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 64,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 80,
+            "start_counter": 43768147,
+            "start_phase": 0
+          }
+        ]
+      }
+    ],
+    "examples": {
+      "b8=0": {
+        "allowed": [
+          0,
+          1
+        ],
+        "counter": 43679978,
+        "cycle": 1,
+        "mode": "61",
+        "observed_pair": 0,
+        "p31": "B0",
+        "phase": 1,
+        "position": 1,
+        "record": {
+          "crc": "20E0",
+          "header": "057c",
+          "record_offset": 48,
+          "start_counter": 43679977,
+          "start_phase": 0
+        }
+      },
+      "b8=0,b9=0": {
+        "allowed": [
+          0
+        ],
+        "counter": 43680005,
+        "cycle": 4,
+        "mode": "60",
+        "observed_pair": 0,
+        "p31": "B6",
+        "phase": 2,
+        "position": 1,
+        "record": {
+          "crc": "9AC4",
+          "header": "856c",
+          "record_offset": 64,
+          "start_counter": 43680003,
+          "start_phase": 2
+        }
+      },
+      "b8=0,b9=1": {
+        "allowed": [
+          1
+        ],
+        "counter": 43680002,
+        "cycle": 0,
+        "mode": "61",
+        "observed_pair": 1,
+        "p31": "8C",
+        "phase": 2,
+        "position": 1,
+        "record": {
+          "crc": "A401",
+          "header": "855c",
+          "record_offset": 32,
+          "start_counter": 43680001,
+          "start_phase": 1
+        }
+      },
+      "pair_only": {
+        "allowed": [
+          0,
+          2,
+          3
+        ],
+        "counter": 43680376,
+        "cycle": 0,
+        "mode": "60",
+        "observed_pair": 3,
+        "p31": "08",
+        "phase": 0,
+        "position": 1,
+        "record": {
+          "crc": "5959",
+          "header": "054c",
+          "record_offset": 48,
+          "start_counter": 43680375,
+          "start_phase": 0
+        }
+      }
+    }
+  },
+  "label_source_sha256": {
+    "2026-11-25": "4f09ba2ddf55c9b03a39a5f634bcbbf2d415fcf257e2fcb350724fad38afece8",
+    "2026-11-25_1246KST_merged": "719f10b1570a56b4b32f588adade78e0be32d204e17eeea6ecec0e7f29d6cbe6",
+    "2026-11-25_2242KST_3205_hl5ntr": "3e17c8488351081f0d3e456d8050047e6da2f0d4c32fa729cde5febce02f9f3e",
+    "2026-11-26_0500KST_3205_hl5ntr": "f1d9407e5865696ccd1cc31b6259d6021ab42026e2bf32ed5ebc416018e59da8",
+    "2026-11-26_0642KST_merged": "1b137eefcedd87fc3ce21abfaf985db8c291a0d7cafd6e9bf97cf19a9af59052",
+    "2026-11-26_1008KST_merged": "1720a49b23a09e5e9617899fbc569859fd78cdf48a087702f8acad7a3b86c440"
+  },
+  "predictions_sha256": "dcbbed55b9c48c05fe8a9663ddcb198fa6e50ba0c69c492f7228a98da40cd017",
+  "reviewed_full_p1": {
+    "allowed_pair_count": {
+      "1": 795,
+      "2": 127,
+      "3": 142,
+      "4": 633
+    },
+    "counts": {
+      "b8_matches": 917,
+      "b8_predicted_0": 922,
+      "b8_predictions": 922,
+      "b9_matches": 790,
+      "b9_predicted_0": 422,
+      "b9_predicted_1": 373,
+      "b9_predictions": 795,
+      "exact_pair_matches": 790,
+      "exact_pair_predictions": 795,
+      "labelled_transitions": 1697,
+      "pair_alternatives_excluded": 2781,
+      "pair_membership_matches": 1059,
+      "pair_only_matches": 142,
+      "pair_only_restrictions": 142,
+      "restrictive_words": 1064
+    },
+    "disagreements": [
+      {
+        "allowed": [
+          0
+        ],
+        "counter": 43767843,
+        "cycle": 3,
+        "mode": "60",
+        "observed_pair": 3,
+        "p31": "D2",
+        "phase": 0,
+        "position": 1,
+        "records": [
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 16,
+            "start_counter": 43767842,
+            "start_phase": 2
+          },
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 32,
+            "start_counter": 43767842,
+            "start_phase": 2
+          },
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 48,
+            "start_counter": 43767842,
+            "start_phase": 2
+          }
+        ]
+      },
+      {
+        "allowed": [
+          1
+        ],
+        "counter": 43767843,
+        "cycle": 4,
+        "mode": "61",
+        "observed_pair": 2,
+        "p31": "4C",
+        "phase": 0,
+        "position": 1,
+        "records": [
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 16,
+            "start_counter": 43767842,
+            "start_phase": 2
+          },
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 32,
+            "start_counter": 43767842,
+            "start_phase": 2
+          },
+          {
+            "crc": "E0C8",
+            "header": "053c",
+            "record_offset": 48,
+            "start_counter": 43767842,
+            "start_phase": 2
+          }
+        ]
+      },
+      {
+        "allowed": [
+          0
+        ],
+        "counter": 43768148,
+        "cycle": 1,
+        "mode": "60",
+        "observed_pair": 3,
+        "p31": "C2",
+        "phase": 0,
+        "position": 1,
+        "records": [
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 48,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 64,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 80,
+            "start_counter": 43768147,
+            "start_phase": 0
+          }
+        ]
+      },
+      {
+        "allowed": [
+          1
+        ],
+        "counter": 43768148,
+        "cycle": 2,
+        "mode": "61",
+        "observed_pair": 2,
+        "p31": "8C",
+        "phase": 0,
+        "position": 1,
+        "records": [
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 48,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 64,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 80,
+            "start_counter": 43768147,
+            "start_phase": 0
+          }
+        ]
+      },
+      {
+        "allowed": [
+          1
+        ],
+        "counter": 43768148,
+        "cycle": 0,
+        "mode": "61",
+        "observed_pair": 2,
+        "p31": "94",
+        "phase": 2,
+        "position": 1,
+        "records": [
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 48,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 64,
+            "start_counter": 43768147,
+            "start_phase": 0
+          },
+          {
+            "crc": "2B2B",
+            "header": "058c",
+            "record_offset": 80,
+            "start_counter": 43768147,
+            "start_phase": 0
+          }
+        ]
+      }
+    ],
+    "examples": {
+      "b8=0": {
+        "allowed": [
+          0,
+          1
+        ],
+        "counter": 43679978,
+        "cycle": 1,
+        "mode": "61",
+        "observed_pair": 0,
+        "p31": "B0",
+        "phase": 1,
+        "position": 1,
+        "record": {
+          "crc": "20E0",
+          "header": "057c",
+          "record_offset": 48,
+          "start_counter": 43679977,
+          "start_phase": 0
+        }
+      },
+      "b8=0,b9=0": {
+        "allowed": [
+          0
+        ],
+        "counter": 43680005,
+        "cycle": 4,
+        "mode": "60",
+        "observed_pair": 0,
+        "p31": "B6",
+        "phase": 2,
+        "position": 1,
+        "record": {
+          "crc": "9AC4",
+          "header": "856c",
+          "record_offset": 64,
+          "start_counter": 43680003,
+          "start_phase": 2
+        }
+      },
+      "b8=0,b9=1": {
+        "allowed": [
+          1
+        ],
+        "counter": 43680002,
+        "cycle": 0,
+        "mode": "61",
+        "observed_pair": 1,
+        "p31": "8C",
+        "phase": 2,
+        "position": 1,
+        "record": {
+          "crc": "A401",
+          "header": "855c",
+          "record_offset": 32,
+          "start_counter": 43680001,
+          "start_phase": 1
+        }
+      },
+      "pair_only": {
+        "allowed": [
+          0,
+          2,
+          3
+        ],
+        "counter": 43680376,
+        "cycle": 0,
+        "mode": "60",
+        "observed_pair": 3,
+        "p31": "08",
+        "phase": 0,
+        "position": 1,
+        "record": {
+          "crc": "5959",
+          "header": "054c",
+          "record_offset": 48,
+          "start_counter": 43680375,
+          "start_phase": 0
+        }
+      }
+    }
+  }
+}

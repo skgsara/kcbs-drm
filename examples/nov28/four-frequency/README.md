@@ -1,6 +1,8 @@
 # Comparing 3250/6100 kHz AM with 3205/6140 kHz DRM
 
-A group member reported that the two AM waveforms aligned to milliseconds in their recording, and that **311 DRM data units** matched byte for byte at the same counter and phase. Their posted update identified comparison of the decoded EVS audio against AM as the remaining test. The recording window and four original files for that result were unavailable in the shared material at the time of this analysis.
+A group member reported that the two AM waveforms aligned to milliseconds in their recording, and that **311 DRM data units** matched byte for byte at the same counter and phase. In a later listening update they reported **different AM and DRM programmes at the time of listening**, and a period of shared programming the previous day. Their messages give no exact UTC interval for either observation or for the 311 DUs. We cannot place the listening report in the 311-DU interval. The digital count and within-AM alignment describe agreement between carriers of the same modulation.
+
+For programme comparison, qualify AM as a reference for a specific time interval by comparing it to independently supported DRM audio. The November 27 11:05 UTC handoff passes that test. In the newly reported interval the member heard different content, so the AM audio provides no reference for scoring EVS words there. The IQ-only receiver uses the DRM channel throughout.
 
 Two sufficiently wide Airspy HF recordings can contain all four channels. The lower pair is 45 kHz apart and the upper pair is 40 kHz apart. When those pairs are recorded on different receivers, retain both start times, sample rates and channel frequencies. Independently tune each RF channel. The two AM outputs can then be aligned by audio content; the two DRM receptions can be aligned by their transmitted packet coordinates. A common computer can start two devices with different sample clocks.
 

@@ -1,0 +1,165 @@
+{
+  "plan_sha256": "52b8fd725254ac0c7385db0b4a83ce3f3e403598d3b13dad63a4831d65e33aca",
+  "source": "30min-2026-11-27T13_17_09Z_3205.00_iq.wav",
+  "source_sha256": "c2c23a6768d836a71a25086ea0a6e4155a3657fab132e4ace0d132e3aa93560e",
+  "source_length_samples": 21400576,
+  "sample_rate_hz": 12000,
+  "source_nominal_search_range_s": {
+    "0": [
+      1480.8,
+      1483.3813333333333
+    ],
+    "1": [
+      1481.2,
+      1483.7813333333334
+    ],
+    "2": [
+      1481.6,
+      1484.1813333333334
+    ]
+  },
+  "input_sample_range": [
+    17496000,
+    18036000
+  ],
+  "demodulation": "Finite Dream, 1 MLC iteration, Wiener, IQ positive zero-IF, one uninterrupted slice",
+  "demodulation_helper_sha256": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+  "independent_build_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "build_log_sha256": "83fd31ae75694437b8009c564d005cae287855678bd9263dcb732aa1db23419e",
+  "previous_base_binary_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "previous_augmented_transport_sha256": "01222f762a95b5393ec108c65b94b834f89707887e4d3054d1e0e52458a5d478",
+  "raw_msc_sha256": "746f52208fff7c7f4c674801f3f8f24b55b8e235cdb3fa30b474347140e9c797",
+  "signal_blocks": {
+    "FAC": {
+      "observed": 106,
+      "crc_passed": 106,
+      "crc_failed": 0
+    },
+    "SDC": {
+      "observed": 38,
+      "crc_passed": 36,
+      "crc_failed": 2
+    }
+  },
+  "service": [
+    {
+      "service_id": "A00002",
+      "short_id": 0,
+      "audio_ca": 0,
+      "language_code": 0,
+      "service": "data",
+      "service_descriptor": 0,
+      "data_ca": 0,
+      "count": 106
+    }
+  ],
+  "fresh_du_evidence": [
+    {
+      "msc_raw_row": 54,
+      "counter": 43877110,
+      "phase": 0,
+      "transmitted_du_crc_hex": "956a",
+      "du_sha256": "ae92e9c69a348eb5db602a9461f937a446acd8da61ee5f9704c0220fc2ed9397",
+      "physical_packet_crc_hex": [
+        "7c80",
+        "4f3d",
+        "4c9d",
+        "bafb"
+      ],
+      "raw_728_sha256": "0d3c869396be093d2c83c62f06766d66176112070397b4c276a16f30dd42fbb7",
+      "all_four_packet_crcs_and_whole_du_crc_valid": true,
+      "identical_prior_whole_du": true
+    },
+    {
+      "msc_raw_row": 55,
+      "counter": 43877110,
+      "phase": 1,
+      "transmitted_du_crc_hex": "61a6",
+      "du_sha256": "80d9cd18e17e32e7462b25a727d1f9b65cc883c0583b2db7797370cb9757ce7c",
+      "physical_packet_crc_hex": [
+        "b3f0",
+        "2a2e",
+        "6def",
+        "acac"
+      ],
+      "raw_728_sha256": "2c132eb72b1e74361ec7931b165e1ba631e9bfd5d02f91b099c31dd358c2cb98",
+      "all_four_packet_crcs_and_whole_du_crc_valid": true,
+      "identical_prior_whole_du": true
+    },
+    {
+      "msc_raw_row": 56,
+      "counter": 43877110,
+      "phase": 2,
+      "transmitted_du_crc_hex": "b74c",
+      "du_sha256": "e35d3aae4192e869875c999e45dbc7712cc422e43929877715c4bf4d4c2d3b8c",
+      "physical_packet_crc_hex": [
+        "ed32",
+        "edce",
+        "7a0d",
+        "847e"
+      ],
+      "raw_728_sha256": "d402eccf4589d50921d4cf60d3d99148ee6bd984fc642db03b57042f2cc6716d",
+      "all_four_packet_crcs_and_whole_du_crc_valid": true,
+      "identical_prior_whole_du": true
+    },
+    {
+      "msc_raw_row": 57,
+      "counter": 43877111,
+      "phase": 0,
+      "transmitted_du_crc_hex": "8e7d",
+      "du_sha256": "e3304a59afb12d74fe188e08e436c52e3347f842a84981cf403b1b04364db9ec",
+      "physical_packet_crc_hex": [
+        "28b4",
+        "fe26",
+        "1978",
+        "b4ec"
+      ],
+      "raw_728_sha256": "749757db8bd84ed4a20b5816beba32ebaaa4d8f0b48c7e229ef9b8e06929b006",
+      "all_four_packet_crcs_and_whole_du_crc_valid": true,
+      "identical_prior_whole_du": true
+    }
+  ],
+  "direct_fields": [
+    {
+      "slot": 37,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "msc_raw_row": 55,
+      "du_offsets_mode_p31": [
+        563,
+        595
+      ],
+      "packet_quarter": 3,
+      "packet_offsets_mode_p31_including_header": [
+        27,
+        59
+      ],
+      "mode_hex": "61",
+      "p31_hex": "30",
+      "physical_packet_sha256": "92051b20e7b2f975b04a0a14c4a3e4bce5bd8e1cc9e80b939c3484854a7ae705",
+      "transmitted_packet_crc_hex": "acac"
+    },
+    {
+      "slot": 41,
+      "phase": 2,
+      "cycle": 0,
+      "position": 2,
+      "msc_raw_row": 56,
+      "du_offsets_mode_p31": [
+        39,
+        71
+      ],
+      "packet_quarter": 0,
+      "packet_offsets_mode_p31_including_header": [
+        40,
+        72
+      ],
+      "mode_hex": "60",
+      "p31_hex": "C6",
+      "physical_packet_sha256": "79b418b8e84b619cce8af5319230cd3d45ad5ae060114dd9101de22b699f06a9",
+      "transmitted_packet_crc_hex": "ed32"
+    }
+  ],
+  "limits": "Same original recording and Dream receiver implementation. This checks the RF bytes and alignment of the two direct fields. It does not independently validate any text-derived comparison or establish original EVS plaintext."
+}

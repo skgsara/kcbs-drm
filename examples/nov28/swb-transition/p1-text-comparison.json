@@ -1,0 +1,169 @@
+{
+  "items_sha256": "992eaef5383d79fe3c2501544cbad6f10846abde72104114371c8e4fc2e3b020",
+  "records": [
+    {
+      "counter": 43767842,
+      "phase": 2,
+      "item_position": 9400,
+      "replaced": true,
+      "confirmed": true,
+      "raw_body_sha256": "e03a61443ecf78974559bdbf1bbc0398488bdba8b369d2580184a1834afbf235",
+      "published_item_body_sha256": "c5d249b4dd27599f29bae5df261d85fc45f8c2600a3378889ac53997fa16cba2",
+      "changed_bytes_in_record_coordinates": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        30,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        62
+      ],
+      "disputed_record_offsets": [
+        16,
+        32,
+        48
+      ],
+      "published_interpretations_differ_at_disputed_offsets": [
+        16,
+        32,
+        48
+      ],
+      "disputed_offsets_where_both_top_bits_differ": [
+        16,
+        32,
+        48
+      ],
+      "comparable_elsewhere": [
+        {
+          "counter": 43767550,
+          "phase": 0,
+          "confirmed": true,
+          "replaced": true,
+          "reviewed_body_matches_item": false,
+          "crc_in_existing_record": "ECC8"
+        },
+        {
+          "counter": 43767842,
+          "phase": 2,
+          "confirmed": true,
+          "replaced": true,
+          "reviewed_body_matches_item": false,
+          "crc_in_existing_record": "E0C8"
+        },
+        {
+          "counter": 43768135,
+          "phase": 1,
+          "confirmed": true,
+          "replaced": false,
+          "reviewed_body_matches_item": true,
+          "crc_in_existing_record": "E0C8"
+        }
+      ],
+      "existing_record_crc": "E0C8",
+      "crc_of_same_header_with_published_item_body": "E0C8"
+    },
+    {
+      "counter": 43768147,
+      "phase": 0,
+      "item_position": 16704,
+      "replaced": true,
+      "confirmed": true,
+      "raw_body_sha256": "9461360c07438ab5bcd5f9fa3d233a576eb9da2ded37e60bc58cde25320d755f",
+      "published_item_body_sha256": "e6e76232c0ab5273de5b68b770864a9b34ddcb920e6975afdba5c6d3eb9d4aa1",
+      "changed_bytes_in_record_coordinates": [
+        4,
+        5,
+        14,
+        15,
+        20,
+        21,
+        30,
+        31,
+        36,
+        37,
+        46,
+        47,
+        48,
+        49,
+        58,
+        59,
+        60,
+        62,
+        63,
+        64,
+        65,
+        74,
+        75,
+        76,
+        78,
+        79,
+        80,
+        81,
+        90,
+        91,
+        92
+      ],
+      "disputed_record_offsets": [
+        48,
+        64,
+        80
+      ],
+      "published_interpretations_differ_at_disputed_offsets": [
+        48,
+        64,
+        80
+      ],
+      "disputed_offsets_where_both_top_bits_differ": [
+        48,
+        64,
+        80
+      ],
+      "comparable_elsewhere": [
+        {
+          "counter": 43767561,
+          "confirmed": true,
+          "replaced": true,
+          "reviewed_body_matches_item": null
+        },
+        {
+          "counter": 43767854,
+          "phase": 1,
+          "confirmed": true,
+          "replaced": false,
+          "reviewed_body_matches_item": true,
+          "crc_in_existing_record": "D6EB"
+        },
+        {
+          "counter": 43768147,
+          "phase": 0,
+          "confirmed": true,
+          "replaced": true,
+          "reviewed_body_matches_item": false,
+          "crc_in_existing_record": "2B2B"
+        }
+      ],
+      "existing_record_crc": "2B2B",
+      "crc_of_same_header_with_published_item_body": "D6EB"
+    }
+  ]
+}

@@ -43,6 +43,6 @@ def transition_tags(slots):
         if token in ("--", "??"):
             continue
         rows.append({k: slot[k] for k in COORDINATES} | field(mode, int(token, 16)))
-    return dict(word_bits=[8, 10], outcome_basis="Conditional on the stock narrow-tag layout for "
-                "13.2 kb/s SWB ACELP TRANSITION. No clear reference required for prediction.",
+    return dict(word_bits=[8, 10], outcome_basis="Conditional on the stock 13.2 kb/s SWB ACELP "
+                "TRANSITION encoder. Some text-supported P1 and P2 labels disagree with the predicted pair.",
                 fixed_bit_count=sum(len(r["fixed_word_bits"]) for r in rows), slots=rows)
