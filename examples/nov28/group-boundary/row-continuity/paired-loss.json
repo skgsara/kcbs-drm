@@ -1,0 +1,76 @@
+{
+  "yokohama_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+  "edogawa_msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "yokohama_phase0_row": 23,
+  "edogawa_phase0_row": 20,
+  "edogawa_following_counter": 43945660,
+  "cases": {
+    "original": {
+      "phase_zero_counter": 43945659,
+      "following_counter": 43945660,
+      "next_counter_is_successor": true,
+      "wire_packets_passing_crc_and_header": 12,
+      "data_units_passing_crc": 3,
+      "slots_matching_peer_on_22_direct_octets_by_phase": [
+        20,
+        20,
+        20
+      ],
+      "slots_matching_peer": 60
+    },
+    "omit_after_phase_0": {
+      "removed_native_rows": [
+        24,
+        25,
+        26
+      ],
+      "phase_zero_counter": 43945659,
+      "following_counter": 43945661,
+      "next_counter_is_successor": false,
+      "wire_packets_passing_crc_and_header": 12,
+      "data_units_passing_crc": 3,
+      "slots_matching_peer_on_22_direct_octets_by_phase": [
+        20,
+        0,
+        0
+      ],
+      "slots_matching_peer": 20
+    },
+    "omit_after_phase_1": {
+      "removed_native_rows": [
+        25,
+        26,
+        27
+      ],
+      "phase_zero_counter": 43945659,
+      "following_counter": 43945661,
+      "next_counter_is_successor": false,
+      "wire_packets_passing_crc_and_header": 12,
+      "data_units_passing_crc": 3,
+      "slots_matching_peer_on_22_direct_octets_by_phase": [
+        20,
+        20,
+        0
+      ],
+      "slots_matching_peer": 40
+    },
+    "omit_after_phase_2": {
+      "removed_native_rows": [
+        26,
+        27,
+        28
+      ],
+      "phase_zero_counter": 43945659,
+      "following_counter": 43945661,
+      "next_counter_is_successor": false,
+      "wire_packets_passing_crc_and_header": 12,
+      "data_units_passing_crc": 3,
+      "slots_matching_peer_on_22_direct_octets_by_phase": [
+        20,
+        20,
+        20
+      ],
+      "slots_matching_peer": 60
+    }
+  }
+}

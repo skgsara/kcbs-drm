@@ -1,0 +1,367 @@
+{
+  "inventory_revision": "682fbb7450c4c22594ccdfd3c564eb1072454069",
+  "scope": "Radio-derived, length-prefixed MSC fixtures tracked under examples/ at the inventory revision. Pure synthetic recordings, coefficient or codec data, and cell-observer traces are excluded. Recording labels group excerpts and repeated demodulations of the same source. Jointly processed outputs have multiple contributors.",
+  "files": [
+    {
+      "path": "examples/jun16/transport/june-3205.msc.bin",
+      "sha256": "a4746e25c7d5b611f680a752afa23ff996aa2a2eb30df601eff7b357fd18c0c9",
+      "kind": "native excerpt",
+      "recordings": [
+        "Jun16 3205"
+      ]
+    },
+    {
+      "path": "examples/jun16/transport/june-6140.msc.bin",
+      "sha256": "891ac46c29d273b0606954eff994affb27b9aea6828839ba016b6f4323f344d9",
+      "kind": "native excerpt",
+      "recordings": [
+        "Jun16 6140"
+      ]
+    },
+    {
+      "path": "examples/nov27/jl1edu-3205-43897717.msc.bin",
+      "sha256": "bd12e292ca9d2cd1a36206faae2388339b69ffc76d59502743ff65146f1a3e7e",
+      "kind": "native excerpt",
+      "recordings": [
+        "Nov27 20:28 JL1EDU 3205"
+      ]
+    },
+    {
+      "path": "examples/nov27/jl1edu-43897469-p0-msc.bin",
+      "sha256": "70d2045a57b508b5b54cbf073b480172e85ae03bbe2b4bb58c7b26c617536ffe",
+      "kind": "native excerpt",
+      "recordings": [
+        "Nov27 20:28 JL1EDU 3205"
+      ]
+    },
+    {
+      "path": "examples/nov27/validation/frame-order/nov19-msc.bin",
+      "sha256": "1560397536e007f73d7c5f3a54d2502d16157e0f894daaf481975b76f7505ae3",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov19 17:31:39 Airspy 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/airspy-150-gap/blanked-msc.bin",
+      "sha256": "67040e48cf5998419179cce3f969a00b5e1111d04df58b3d4a95f8c6b9be713f",
+      "kind": "zeroed IQ control",
+      "recordings": [
+        "Nov19 17:31:39 Airspy 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/airspy-150-gap/full-msc.bin",
+      "sha256": "e6f236a61a15cefa4930cf4ec1df51598f396c5682f82ba42250a049ce1b96fc",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov19 17:31:39 Airspy 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/airspy-150-gap/isolated-msc.bin",
+      "sha256": "b14cdf41ba056f0703a591010d6bbda77467493c66c997fabc420d87eef41073",
+      "kind": "zeroed IQ control",
+      "recordings": [
+        "Nov19 17:31:39 Airspy 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/airspy-150-gap/target-43288730.msc.bin",
+      "sha256": "8de850b8fbfb251d7f7dab938f9f8ad30eeb55b4d6828ebd35544cadb36f220e",
+      "kind": "native excerpt",
+      "recordings": [
+        "Nov19 17:31:39 Airspy 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/bit-evidence/tail-msc.bin",
+      "sha256": "df3552c616b7ef22b538c6bd807ee0754b4be6eb0dd2b80c69bc9a3b76c9405d",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov19 17:31:39 Airspy 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/clear-evs-controls/iq-mlc4/mlc1-msc.bin",
+      "sha256": "67200f39f7a03e580c311910b29124ed4cccb19e6e90ef0af34cd8c9d4a6c2ed",
+      "kind": "same-window demodulation",
+      "recordings": [
+        "Nov27 12:15:02 member 3205"
+      ]
+    },
+    {
+      "path": "examples/nov28/clear-evs-controls/iq-mlc4/mlc4-msc.bin",
+      "sha256": "e3d44c7da7d4c8e4001933aeb613e7aee3b6a98d70cadb311b221a56e064664f",
+      "kind": "same-window demodulation",
+      "recordings": [
+        "Nov27 12:15:02 member 3205"
+      ]
+    },
+    {
+      "path": "examples/nov28/clear-evs-controls/iq/native.msc.bin",
+      "sha256": "000ed3e7333cf04b9b5ea733d8acf25fa567486e3e45a19d9ba70a64edf7cbc6",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 12:15:02 member 3205"
+      ]
+    },
+    {
+      "path": "examples/nov28/clear-evs-controls/transport-mlc4/edogawa-mlc4-msc.bin",
+      "sha256": "08ff30e342446c25dd7b47d6009fb0ede1f6424df3888353b30aee2d393a1746",
+      "kind": "alternate demodulation",
+      "recordings": [
+        "Nov28 12:32 Edogawa 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/dual-diversity-field/result/joint/msc.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "empty fusion output",
+      "recordings": [
+        "Nov28 14:22 Edogawa 6140",
+        "Nov28 14:22 Yokohama 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/dual-diversity-field/result/observations/edogawa/msc.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "empty receiver output",
+      "recordings": [
+        "Nov28 14:22 Edogawa 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/dual-diversity-field/result/observations/yokohama/msc.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "empty receiver output",
+      "recordings": [
+        "Nov28 14:22 Yokohama 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/edogawa-audio-branch/results/edogawa/msc.bin",
+      "sha256": "3d42c8038a506c8ee6aaee4dfb08e3229d166a46671dc1a1ca8f0d31aa28c69f",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov28 13:47 Edogawa 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/edogawa-audio-branch/results/yokohama/msc.bin",
+      "sha256": "aec269eb2a4c3c5a878938ae866b6f44c24bb745d1378321ecc7c3f454c6ffc8",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov28 13:47 Yokohama 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/group-boundary/four-bits/3205-phase0.msc.bin",
+      "sha256": "6b13ab140ec357f717585de45f3a0ce4868c66279ecf47e0c5422dedb34cb71f",
+      "kind": "native excerpt",
+      "recordings": [
+        "Nov28 member 3205"
+      ]
+    },
+    {
+      "path": "examples/nov28/group-boundary/four-bits/6140-phase0.msc.bin",
+      "sha256": "abcbee7e5df39d6847ddd99104d6d8839cc9533cf8d1222038a7d71401fcdd7f",
+      "kind": "native excerpt",
+      "recordings": [
+        "Nov28 00:02 Edogawa 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/group-boundary/msc.bin",
+      "sha256": "0154f431a96e5c6f35971697e0bf2fbd3cd5fcd6880a87f2e0a1eec59763a721",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov28 02:57 Edogawa 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/group-boundary/reciprocal/3205.msc.bin",
+      "sha256": "1834a7db3a70b00616764ea993930fb19b88d579f2438a4afe15f3b564c858af",
+      "kind": "joined native excerpts",
+      "recordings": [
+        "Nov28 member 3205"
+      ],
+      "breaks_before_row": [
+        7
+      ]
+    },
+    {
+      "path": "examples/nov28/group-boundary/reciprocal/6140.msc.bin",
+      "sha256": "e3fb11c3707bbcde2fee02fee7c7e33222c155a2ccf55d1e0318f782ab84d12b",
+      "kind": "joined native excerpts",
+      "recordings": [
+        "Nov28 00:02 Edogawa 6140"
+      ],
+      "breaks_before_row": [
+        7
+      ]
+    },
+    {
+      "path": "examples/nov28/hq-neighbors/airspy-gap/rf/msc.bin",
+      "sha256": "3dc5e9fb060ef145f211edd350752892eaa61d0f67b5ec15dce886a8858b0cd7",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov19 17:31:39 Airspy 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/packet-bit-repair/field/native.msc.bin",
+      "sha256": "e05839ecfa06b44cd7cf5d8ecc293a54e079e76f3a3dcc05677fcae5b68b9b9b",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 12:15:02 member 3205"
+      ]
+    },
+    {
+      "path": "examples/nov28/packet-bit-repair/peer-2126/primary.msc.bin",
+      "sha256": "b1c5bcb0d4c8bbf22841e75c1dea491a93f7ead03a402d04c82698a84ec9b9f9",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 21:26 Yokohama 3205"
+      ]
+    },
+    {
+      "path": "examples/nov28/packet-bit-repair/peer-2126/witness.msc.bin",
+      "sha256": "c36d4f0763a02d87b28d4afb033140fae970666bcc73c8dfb50df1e1a107e7fc",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 21:26 Edogawa 3205"
+      ]
+    },
+    {
+      "path": "examples/nov28/same-6140-1232/diversity/fusion/original-witnesses.msc.bin",
+      "sha256": "fde6bc6852523fc3374ced799b9974bf9a1d68b6be7f1295ebbe4ceb9365971f",
+      "kind": "selected original wires from both sites",
+      "recordings": [
+        "Nov28 12:32 Edogawa 6140",
+        "Nov28 12:32 Yokohama 6140"
+      ],
+      "breaks_before_row": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "examples/nov28/same-6140-1232/diversity/fusion/recovered.msc.bin",
+      "sha256": "fdee4ceac212d4ea1a3ea180ced9ebc89dfe80c75a1ce0c37b0a39582ddc9117",
+      "kind": "selected fusion output",
+      "recordings": [
+        "Nov28 12:32 Edogawa 6140",
+        "Nov28 12:32 Yokohama 6140"
+      ],
+      "breaks_before_row": [
+        1
+      ]
+    },
+    {
+      "path": "examples/nov28/same-6140-1232/edogawa-msc.bin",
+      "sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov28 12:32 Edogawa 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/same-6140-1232/yokohama-msc.bin",
+      "sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov28 12:32 Yokohama 6140"
+      ]
+    },
+    {
+      "path": "examples/nov28/swb-transition/msc.bin",
+      "sha256": "438da08f6b12251be405ef42dd8fb5c220106ae51d31ca41cccc84f0edd6e10d",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 12:15:02 member 3205"
+      ]
+    },
+    {
+      "path": "examples/nov28/yokohama-1300/results/primary/msc.bin",
+      "sha256": "38aa5357ece964443790366fe50fd3b705f5cf18ce033a1033454c3c3e7710de",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov28 13:00 Yokohama 3205"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/agreed-bytes/field/linear4-msc.bin",
+      "sha256": "0eb2a63c7f0fc6482970c8aa3e3c3e140738a13308a9c645eb685b0b2379a87c",
+      "kind": "same-window demodulation",
+      "recordings": [
+        "Nov27 12:11:22 member 3205"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/agreed-bytes/field/wiener1-msc.bin",
+      "sha256": "24da9cfc61dfc4d593ba8f62d036bda3bc419de15f98c7397622a58426344e7b",
+      "kind": "same-window demodulation",
+      "recordings": [
+        "Nov27 12:11:22 member 3205"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/agreed-bytes/field/wiener4-msc.bin",
+      "sha256": "32f3963767428a2c65b86b0f130c97f154a1bbfbd4d5e94135f38288b614e6cf",
+      "kind": "same-window demodulation",
+      "recordings": [
+        "Nov27 12:11:22 member 3205"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/direct-octet/field/native.msc.bin",
+      "sha256": "6cdc6f61239c3bfbad2a0e16da314ab89f8bacc017fc89f74fbb3d599358a879",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 12:15:02 member 3205"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/disagreement/dev/edogawa-linear4-msc.bin",
+      "sha256": "0de1ec4f3718ae0898f4ca4e1c8def67c623c16376c8e3854f6f92b5e1b5ebeb",
+      "kind": "alternate demodulation",
+      "recordings": [
+        "Nov28 12:32 Edogawa 6140"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/known-field-checks/field-1158/receiver/msc.bin",
+      "sha256": "30aceedffc695ebb9d1bcd236d9280ac333aea132a291c1a1f380c077bf24614",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 11:58:16 member 6140"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/on-air/native.msc.bin",
+      "sha256": "5baede8e3dd42873fbf9ebe53fc16dce90a17f512947c1591f6dbf7de3f40af2",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 12:15:02 member 3205"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/phase-anchors/field/native.msc.bin",
+      "sha256": "4cb47a60c4374f8da611917f031ca5958e278957920b59f4f8a2d615feb46c2b",
+      "kind": "native receiver output",
+      "recordings": [
+        "Nov27 12:15:02 member 3205"
+      ]
+    },
+    {
+      "path": "examples/receiver-control/sign-iq/field/odd-msc.bin",
+      "sha256": "623bde0dcfaac7e1e409894e6d60f9947046fcfc22f7d2ddcd33526a7a1977db",
+      "kind": "sample-split IQ control",
+      "recordings": [
+        "Nov19 17:31:39 Airspy 6140"
+      ]
+    }
+  ]
+}

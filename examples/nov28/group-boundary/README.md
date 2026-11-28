@@ -4,6 +4,8 @@ At counter **43908300**, the 3205 kHz receiver could read a frame's mode byte fr
 
 The target is slot 8, phase 0, cycle 2, position 1. Mode `74` supports two different checks on payload octet 4. The empirical high-nibble rule singles out 12 and rejects the other 15 values. The low-nibble rule allows 0 through 10 and rejects 11 through 15. Its observed value of 1 satisfies that range. The first rule determined four bits in one field. The original rejected 3205 packet also happened to carry `C1` at this offset. Its damaged bits were elsewhere. Withholding every byte in that packet left both predictions unchanged. [Packet CRCs, byte differences and controls](four-bits/expected.json)
 
+A separate two-site check measures what happens when three consecutive MSC callbacks are missing. Depending on where the loss occurred, the same counter jump leaves 20, 40 or all 60 slots correctly placed. [Received group boundaries and omission control](row-continuity/README.md)
+
 ## Coverage across the shared counters
 
 The two recordings had 119 assigned counters in common, comprising 7,140 chronological frame slots. At 1,056,088 directly received bit coordinates the receivers agreed exactly. Among those, 56,408 lay outside data units received whole by both stations. The stock and empirical field checks below used predictions from the 3205 recording and scored only where the 6140 receiver had the target. Most of these fields were also received directly on 3205. The four bits described above were the only exact predictions checked using a target packet missing from the accepted 3205 input. [Full denominators, rule outcomes and capture hashes](dual-rf.json)
