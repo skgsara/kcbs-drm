@@ -1,0 +1,231 @@
+{
+  "scope": "Retrospective comparison to this synthetic sender. One-to-one, order-consistent native row pairs require a unique unchanged same-ordinal CRC-good full wire in both dumps.",
+  "source_template_sha256": "cb378996150b65393c4bd84a4ef818fc3ca790ceacf03b1ffe6c91b2f7bc0d47",
+  "transmitted_rows_sha256": "c1e924e45c7d0d32f19de02d005401cf28b40bdd65c8c9e2558980ae4413871c",
+  "native_msc_sha256": "53e043ffbc837c0ef321f8bc3ac02992414e3906ce5021a52227df2c639e3c28",
+  "alignment": {
+    "left": {
+      "native_rows": 120,
+      "unsupported_rows": 0,
+      "valid_packets": 480
+    },
+    "right": {
+      "native_rows": 169,
+      "unsupported_rows": 0,
+      "valid_packets": 654
+    },
+    "shared_distinct_wires": 468,
+    "nonunique_shared_wires": 0,
+    "candidate_pairs": 120,
+    "accepted_pairs": 120,
+    "accepted_witnesses": 468,
+    "rejected_pairs": 0,
+    "rejection_reasons": {},
+    "rejections": []
+  },
+  "matched_sender_rows": 120,
+  "matched_rows_identical_to_transmitted_bytes": 120,
+  "first_last_native_rows": [
+    30,
+    149
+  ],
+  "unmatched_sender_rows": [],
+  "packets": {
+    "planned_good": 468,
+    "planned_bad": 12,
+    "good_in_unresolved_row": 0,
+    "good_native_bad_or_missing": 0,
+    "good_native_crc_valid_different": 0,
+    "good_exact_assigned": 424,
+    "good_exact_unassigned": 44,
+    "good_exact_quarantined": 0,
+    "bad_delivered_as_sent": 12,
+    "bad_native_different": 0,
+    "bad_in_unresolved_row": 0,
+    "bad_assigned": 0
+  },
+  "good_packets_unassigned_by_row": [
+    {
+      "counter": 16909068,
+      "phase": 0,
+      "native_row": 54,
+      "crc_good_unassigned_ordinals": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909068,
+      "phase": 1,
+      "native_row": 55,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909068,
+      "phase": 2,
+      "native_row": 56,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909070,
+      "phase": 1,
+      "native_row": 61,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909070,
+      "phase": 2,
+      "native_row": 62,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909071,
+      "phase": 0,
+      "native_row": 63,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "counter": 16909071,
+      "phase": 1,
+      "native_row": 64,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909071,
+      "phase": 2,
+      "native_row": 65,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909072,
+      "phase": 1,
+      "native_row": 67,
+      "crc_good_unassigned_ordinals": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909072,
+      "phase": 2,
+      "native_row": 68,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909076,
+      "phase": 1,
+      "native_row": 79,
+      "crc_good_unassigned_ordinals": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": 16909076,
+      "phase": 2,
+      "native_row": 80,
+      "crc_good_unassigned_ordinals": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "assignment_gate_context": {
+    "16909068": {
+      "contiguous_witnessed_window": true,
+      "incomplete_rows_in_three_phase_group": [
+        54
+      ],
+      "four_row_bracket_missing_phase_packet_0": [
+        54
+      ],
+      "boundary_rows_missing_counter_packet_3": []
+    },
+    "16909070": {
+      "contiguous_witnessed_window": true,
+      "incomplete_rows_in_three_phase_group": [
+        60
+      ],
+      "four_row_bracket_missing_phase_packet_0": [],
+      "boundary_rows_missing_counter_packet_3": [
+        63
+      ]
+    },
+    "16909071": {
+      "contiguous_witnessed_window": true,
+      "incomplete_rows_in_three_phase_group": [
+        63
+      ],
+      "four_row_bracket_missing_phase_packet_0": [],
+      "boundary_rows_missing_counter_packet_3": [
+        63
+      ]
+    },
+    "16909072": {
+      "contiguous_witnessed_window": true,
+      "incomplete_rows_in_three_phase_group": [
+        67
+      ],
+      "four_row_bracket_missing_phase_packet_0": [
+        67
+      ],
+      "boundary_rows_missing_counter_packet_3": []
+    },
+    "16909076": {
+      "contiguous_witnessed_window": true,
+      "incomplete_rows_in_three_phase_group": [
+        80
+      ],
+      "four_row_bracket_missing_phase_packet_0": [
+        80
+      ],
+      "boundary_rows_missing_counter_packet_3": []
+    }
+  },
+  "good_packets_quarantined": [],
+  "gate_basis": "A phase-zero singleton needs good q0 and q3. Phases 1/2 need a complete 0/1/2 triple or a 0/1/2/0 bracket with good q0 on all four rows and good q3 at both counter anchors. The context lists failed physical requirements."
+}

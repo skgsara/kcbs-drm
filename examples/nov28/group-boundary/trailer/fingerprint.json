@@ -1,0 +1,150 @@
+{
+  "format": "physical-trailer-fingerprint-v1",
+  "member_du_sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+  "peer_packet_archive_sha256": "05a4cc876e3f20c89d01e80eaa3fd3e4fb027f3d5ff920db34e1a9c6d008a90c",
+  "peer_du_sha256": "99461ed346d48900aed781d6af9eb6ebac891af1a0302a85aecdfcf9a81ff7ac",
+  "member_index": {
+    "validated_dus_all_phases": 3335,
+    "all_counter_ids": 1121,
+    "dus_by_phase": [
+      1116,
+      1111,
+      1108
+    ],
+    "indexed_33_byte_coordinates": 2219,
+    "indexed_distinct_fragments": 2219,
+    "keys_with_multiple_coordinates": 0,
+    "coordinates_in_previously_shared_119_counters": 232,
+    "coordinates_outside_previously_shared_119_counters": 1987,
+    "complete_96_byte_blocks": 1102,
+    "distinct_96_byte_blocks": 1102,
+    "consecutive_member_blocks": {
+      "consecutive_counter_pairs": 1081,
+      "whole_blocks_different": 1081,
+      "different_whole_fragments_by_phase": [
+        1081,
+        1081,
+        1081
+      ],
+      "octet_comparisons": 103776,
+      "equal_octets": 395,
+      "different_octets": 103381,
+      "changed_octets_per_pair_histogram": {
+        "92": 1,
+        "93": 3,
+        "94": 46,
+        "95": 290,
+        "96": 741
+      },
+      "changed_octets_per_pair_min_median_max": [
+        92,
+        96,
+        96
+      ]
+    }
+  },
+  "peer_queries": {
+    "scope": "All published q3 records with archived phase 1 or 2 in the independent 6140 wire archive. The archive selection previously required a shared assigned counter. The lookup uses the entire validated 3205 member archive and never receives the peer counter or phase.",
+    "previously_shared_counter_ids": 119,
+    "phase_1_or_2_q3_queries": 187,
+    "from_complete_peer_dus": 179,
+    "from_partial_peer_dus": 8,
+    "physical_du_windows_half_open": [
+      [
+        665,
+        698
+      ],
+      [
+        664,
+        697
+      ]
+    ]
+  },
+  "score": {
+    "total": {
+      "queries": 187,
+      "unique_correct": 183,
+      "unique_wrong": 0,
+      "ambiguous": 0,
+      "absent": 4
+    },
+    "by_true_phase": {
+      "1": {
+        "queries": 92,
+        "unique_correct": 90,
+        "unique_wrong": 0,
+        "ambiguous": 0,
+        "absent": 2
+      },
+      "2": {
+        "queries": 95,
+        "unique_correct": 93,
+        "unique_wrong": 0,
+        "ambiguous": 0,
+        "absent": 2
+      }
+    },
+    "by_true_du_availability": {
+      "in_member_index": {
+        "queries": 183,
+        "unique_correct": 183,
+        "unique_wrong": 0,
+        "ambiguous": 0,
+        "absent": 0
+      },
+      "absent_from_member_index": {
+        "queries": 4,
+        "unique_correct": 0,
+        "unique_wrong": 0,
+        "ambiguous": 0,
+        "absent": 4
+      }
+    },
+    "by_true_counter_completeness": {
+      "all_three_member_dus": {
+        "queries": 179,
+        "unique_correct": 179,
+        "unique_wrong": 0,
+        "ambiguous": 0,
+        "absent": 0
+      },
+      "otherwise": {
+        "queries": 8,
+        "unique_correct": 4,
+        "unique_wrong": 0,
+        "ambiguous": 0,
+        "absent": 4
+      }
+    },
+    "by_peer_du": {
+      "complete": {
+        "queries": 179,
+        "unique_correct": 175,
+        "unique_wrong": 0,
+        "ambiguous": 0,
+        "absent": 4
+      },
+      "partial": {
+        "queries": 8,
+        "unique_correct": 8,
+        "unique_wrong": 0,
+        "ambiguous": 0,
+        "absent": 0
+      }
+    },
+    "candidate_count_histogram": {
+      "0": 4,
+      "1": 183
+    },
+    "phase_selected_single_window_outcomes": {
+      "unique_correct": 183,
+      "unique_wrong": 0,
+      "ambiguous": 0,
+      "absent": 4
+    },
+    "same_candidate_lists_as_phase_selected_single_window": 187,
+    "coordinate_ledger_sha256": "797e6c08e2a2c5fd4bb1d9f4b34c244cbc11bc108db1733dff9cd0f9da069859"
+  },
+  "ledger_format": "SHA-256 of compact ASCII JSON rows [true_counter,true_phase,sorted_candidate_coordinates,outcome] in ascending true-coordinate order.",
+  "scope": "Retrospective exact recording alignment within these archives. An absent true coordinate can still have a different matching coordinate if the bytes repeat elsewhere. Finding a unique match does not by itself establish independent origin."
+}

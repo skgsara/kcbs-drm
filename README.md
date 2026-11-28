@@ -570,6 +570,8 @@ The resulting 96-byte blocks are distinct within each sample, with bit-one
 fractions from 0.4994 to 0.5022. Their function is unknown. Simple mappings tested so
 far did not produce supported recovery of additional mask bytes.
 
+The longer 3205 kHz member recording contained 1,081 pairs of consecutive counters with complete trailers. The whole value changed in every pair. Two independent receivers agreed on all 90 complete trailers they shared. Using the 33-byte fragments alone also located 183 of 187 peer records at the correct counter and phase. [Trailer timing, cross-frequency checks and alignment](examples/nov28/group-boundary/trailer/README.md)
+
 ## Text recovery and validation
 
 **Idle text:** In bundled March groups the phase-0 plaintext tail is sixteen

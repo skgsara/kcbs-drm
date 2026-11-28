@@ -1,0 +1,37 @@
+{
+  "native_msc_sha256": "5baede8e3dd42873fbf9ebe53fc16dce90a17f512947c1591f6dbf7de3f40af2",
+  "counters": [
+    43873173,
+    43873177,
+    43873178,
+    43873179,
+    43873180,
+    43873197,
+    43873200
+  ],
+  "complete_groups": 7,
+  "distinct_trailers": 7,
+  "padding_bytes_checked": 56,
+  "nonzero_padding": 0,
+  "consecutive_pairs": {
+    "consecutive_counter_pairs": 3,
+    "whole_blocks_different": 3,
+    "different_whole_fragments_by_phase": [
+      3,
+      3,
+      3
+    ],
+    "octet_comparisons": 288,
+    "equal_octets": 1,
+    "different_octets": 287,
+    "changed_octets_per_pair_histogram": {
+      "95": 1,
+      "96": 2
+    },
+    "changed_octets_per_pair_min_median_max": [
+      95,
+      96,
+      96
+    ]
+  }
+}

@@ -1,0 +1,5937 @@
+{
+  "schema": "single-receiver-direct-field-score-v1",
+  "msc_sha256": "5baede8e3dd42873fbf9ebe53fc16dce90a17f512947c1591f6dbf7de3f40af2",
+  "packet_archive_sha256": "b058d3cb43db54b014ff383d73aa57bedea77d3f0ea8d579441bbfefb7316715",
+  "forecasts_sha256": "53de32ea561b51e0a678aed216b1ff54f9fd0c6cedc81f96660046e8d9508029",
+  "history_sha256": "42985e72a35104e6590acc6a2f5a6e006b723cbcb3558d9ea99d5f41ffe82587",
+  "history_count": 14958,
+  "historical_overlap": [],
+  "rules": {
+    "audio_noisy": {
+      "word_bits": [
+        40,
+        41
+      ],
+      "basis": "Stock encoder's ordinary AUDIO bandwidth-extension choice.",
+      "excluded_given_prediction": {
+        "0": [
+          1
+        ],
+        "1": [
+          0
+        ]
+      }
+    },
+    "inactive_nibble": {
+      "word_bits": [
+        40,
+        44
+      ],
+      "basis": "Empirical INACTIVE/BWE pattern from the labelled broadcast archive.",
+      "excluded_given_prediction": {
+        "12": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ]
+      }
+    }
+  },
+  "primary": {
+    "counters": 1,
+    "nominal_slots": 60,
+    "received_modes": 60,
+    "total": {
+      "predicted": 9,
+      "checked": 9,
+      "matched": 9,
+      "mismatched": 0,
+      "no_peer": 0
+    },
+    "by_position": {
+      "1": {
+        "predicted": 3,
+        "checked": 3,
+        "matched": 3,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "2": {
+        "predicted": 2,
+        "checked": 2,
+        "matched": 2,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "3": {
+        "predicted": 2,
+        "checked": 2,
+        "matched": 2,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "4": {
+        "predicted": 2,
+        "checked": 2,
+        "matched": 2,
+        "mismatched": 0,
+        "no_peer": 0
+      }
+    },
+    "by_rule": {
+      "audio_noisy": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      },
+      "inactive_nibble": {
+        "predicted": 9,
+        "checked": 9,
+        "matched": 9,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 3,
+            "checked": 3,
+            "matched": 3,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 2,
+            "checked": 2,
+            "matched": 2,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 2,
+            "checked": 2,
+            "matched": 2,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 2,
+            "checked": 2,
+            "matched": 2,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      }
+    },
+    "native_receipt": {
+      "counter": 43873173,
+      "phase0_row": 8,
+      "du_sha256": [
+        "6052061b0972ad8fc837f2d11ec03d461b584cc9a78c79f905a6dca8beb25e55",
+        "780ff4457323655b86b29e76a7875a04757d36f6ab5eb00e5891879c974d554b",
+        "f78c25d5f5d44f66dcbcca931d7cb2d3325aeaad268a0ad4d03ef8b39e732bf8"
+      ]
+    },
+    "cases": [
+      {
+        "counter": 43873173,
+        "slot": 28,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "mode": "76",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      },
+      {
+        "counter": 43873173,
+        "slot": 29,
+        "phase": 1,
+        "cycle": 2,
+        "position": 2,
+        "mode": "76",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      },
+      {
+        "counter": 43873173,
+        "slot": 30,
+        "phase": 1,
+        "cycle": 2,
+        "position": 3,
+        "mode": "74",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      },
+      {
+        "counter": 43873173,
+        "slot": 31,
+        "phase": 1,
+        "cycle": 2,
+        "position": 4,
+        "mode": "77",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      },
+      {
+        "counter": 43873173,
+        "slot": 32,
+        "phase": 1,
+        "cycle": 3,
+        "position": 1,
+        "mode": "74",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      },
+      {
+        "counter": 43873173,
+        "slot": 33,
+        "phase": 1,
+        "cycle": 3,
+        "position": 2,
+        "mode": "74",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      },
+      {
+        "counter": 43873173,
+        "slot": 54,
+        "phase": 2,
+        "cycle": 3,
+        "position": 3,
+        "mode": "74",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      },
+      {
+        "counter": 43873173,
+        "slot": 55,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "mode": "74",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      },
+      {
+        "counter": 43873173,
+        "slot": 56,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "mode": "74",
+        "rule": "inactive_nibble",
+        "expected": 12,
+        "observed": 12
+      }
+    ],
+    "bit_evidence": {
+      "format": "kcbs-evs-bit-evidence-v1",
+      "counter": 43873173,
+      "total": {
+        "direct_bits": 10560,
+        "carried_unknown_bits": 5280,
+        "no_receipt_bits": 0,
+        "slots": 60,
+        "word_erasures": 60,
+        "rule_events": 21,
+        "direct_check_events": 18,
+        "conditional_events": 3,
+        "slots_with_rule_events": 12,
+        "events_by_outcome": {
+          "match": 18,
+          "mismatch": 0,
+          "unavailable": 0,
+          "restricted": 3,
+          "unrestricted": 0,
+          "contradiction": 0
+        },
+        "unique_target_bits": 78,
+        "unique_direct_checked_bits": 72,
+        "unique_conditional_fixed_bits": 5,
+        "unique_conflicting_conditional_bits": 0
+      },
+      "by_position": {
+        "1": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 6,
+          "direct_check_events": 6,
+          "conditional_events": 0,
+          "slots_with_rule_events": 3,
+          "events_by_outcome": {
+            "match": 6,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 24,
+          "unique_direct_checked_bits": 24,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "2": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 4,
+          "conditional_events": 1,
+          "slots_with_rule_events": 3,
+          "events_by_outcome": {
+            "match": 4,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 1,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 18,
+          "unique_direct_checked_bits": 16,
+          "unique_conditional_fixed_bits": 2,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "3": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 4,
+          "conditional_events": 1,
+          "slots_with_rule_events": 3,
+          "events_by_outcome": {
+            "match": 4,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 1,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 18,
+          "unique_direct_checked_bits": 16,
+          "unique_conditional_fixed_bits": 1,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "4": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 4,
+          "conditional_events": 1,
+          "slots_with_rule_events": 3,
+          "events_by_outcome": {
+            "match": 4,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 1,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 18,
+          "unique_direct_checked_bits": 16,
+          "unique_conditional_fixed_bits": 2,
+          "unique_conflicting_conditional_bits": 0
+        }
+      },
+      "slots": [
+        {
+          "slot": 0,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "58 ?? 39 4f ?? f2 d4 ?? b1 93 ?? 3e 49 ?? 44 bf ?? 5f 36 ?? ba 81 ?? c9 89 ?? 73 97 ?? 5c f2 ?? 3a",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "no_adjacent_predecessor"
+        },
+        {
+          "slot": 1,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "5b ?? b4 65 ?? 1c e4 ?? 10 9c ?? 30 43 ?? 2b 00 ?? 9a 49 ?? 64 a3 ?? 3d fd ?? 82 e9 ?? d8 cc ?? 98",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 2,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "58 ?? aa 3a ?? 76 c4 ?? 94 6a ?? 4f 42 ?? 40 b2 ?? 55 47 ?? 6c c5 ?? c2 7b ?? a3 88 ?? 20 ea ?? 39",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 3,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "58 ?? 22 b5 ?? c4 c4 ?? 54 81 ?? 0b 3a ?? 6b 32 ?? 38 b7 ?? 9a 0d ?? ba f5 ?? fb 7f ?? b1 31 ?? 98",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 4,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "53 ?? 29 93 ?? 95 95 ?? d6 a0 ?? 23 0f ?? 44 7e ?? 86 74 ?? e2 c8 ?? 75 d7 ?? 56 59 ?? 21 51 ?? b5",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 5,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "52 ?? d2 9f ?? 86 95 ?? 01 86 ?? 9a 40 ?? 0c a6 ?? 57 68 ?? 96 68 ?? 40 06 ?? ab 04 ?? 4d 8e ?? 25",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 6,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "53 ?? 2c 50 ?? 7a 95 ?? 4c dc ?? be 90 ?? ee 74 ?? e7 f8 ?? c1 12 ?? 3b 7d ?? 1f bf ?? 05 6c ?? 30",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 7,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "58 ?? bf 90 ?? c8 e4 ?? 7f f9 ?? fa 38 ?? 56 b6 ?? df 97 ?? 9a 27 ?? ab c3 ?? 9f 61 ?? 91 0a ?? a4",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 8,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "58 ?? f8 87 ?? ca e4 ?? 18 01 ?? 1a 22 ?? 62 1a ?? 32 2f ?? 96 86 ?? 37 07 ?? 3b 75 ?? 39 29 ?? 44",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 9,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "58 ?? 9e d4 ?? 38 b4 ?? 59 95 ?? 52 3c ?? 14 72 ?? 8d b2 ?? 9a 98 ?? ae 31 ?? 4d 5f ?? d9 31 ?? 48",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 10,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "58 ?? 41 41 ?? e8 a4 ?? 50 1a ?? f5 ba ?? bf 6a ?? 9f 2c ?? 27 0b ?? bd 18 ?? 5d 36 ?? 91 2c ?? b9",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 11,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "58 ?? af f1 ?? 6a a3 ?? a3 79 ?? b9 a4 ?? f9 2d ?? 7e c0 ?? 93 38 ?? 2e 28 ?? ff 2c ?? f9 0c ?? c4",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 12,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "58 ?? 1c 8e ?? 38 c3 ?? 23 92 ?? fa 29 ?? 39 cf ?? 38 22 ?? 6a 18 ?? a8 3d ?? 08 3b ?? ed 0c ?? 5b",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 13,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "58 ?? 1e a0 ?? 22 c3 ?? 57 04 ?? 3a ae ?? fc 52 ?? d8 b4 ?? 8d 8d ?? bf 9c ?? 2e 9e ?? 10 cb ?? 44",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 14,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "58 ?? 77 30 ?? 74 d3 ?? 90 03 ?? 75 42 ?? e6 6b ?? 3a bb ?? 5d bf ?? ba 2e ?? 48 d1 ?? cc ab ?? 44",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 15,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "58 ?? 8d 80 ?? 00 d3 ?? 72 8e ?? b9 3e ?? c6 1d ?? 78 ca ?? 7b a6 ?? 45 92 ?? cb a4 ?? f8 ac ?? 38",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 16,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "58 ?? ce 35 ?? c8 d3 ?? 9a 84 ?? 16 4f ?? b4 f9 ?? 35 55 ?? 3e 3b ?? 5b 96 ?? 39 94 ?? 84 d6 ?? 49",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 17,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "58 ?? fd f3 ?? 28 c3 ?? 38 fd ?? 74 cf ?? 0e 09 ?? b0 5a ?? ce 14 ?? da 92 ?? d8 e5 ?? 99 12 ?? 5b",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 18,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "58 ?? ff 30 ?? 88 c4 ?? ba 44 ?? 95 f0 ?? 01 4f ?? 58 c7 ?? fc bc ?? 72 28 ?? cb 53 ?? 59 16 ?? 67",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 19,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "51 ?? 82 17 ?? 55 99 ?? b0 89 ?? ae 30 ?? 0c 05 ?? 27 5c ?? fa c8 ?? b2 d3 ?? 09 be ?? f9 16 ?? 58",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 20,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "53 ?? 9b 8b ?? 13 95 ?? d3 52 ?? db 15 ?? 23 96 ?? 18 83 ?? 8c 85 ?? 82 00 ?? f7 a6 ?? 41 30 ?? e2",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 21,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "52 ?? cb ba ?? 24 95 ?? b2 cc ?? 35 64 ?? 86 38 ?? 59 76 ?? 86 41 ?? bd be ?? 20 62 ?? 15 4c ?? 62",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 22,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "52 ?? 79 99 ?? 33 15 ?? 14 13 ?? 80 f0 ?? 88 c3 ?? cb f2 ?? 94 13 ?? f0 52 ?? 21 65 ?? d9 87 ?? a4",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 23,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "52 ?? 7a c8 ?? 86 11 ?? 3a 0e ?? 99 88 ?? 84 38 ?? bc 29 ?? 5b df ?? 16 d4 ?? ea 7a ?? 59 a9 ?? a5",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 24,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "52 ?? f7 de ?? a8 12 ?? 1c 38 ?? eb f7 ?? 13 24 ?? a4 d2 ?? f0 10 ?? 01 37 ?? b0 90 ?? 6d ac ?? 35",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 25,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "52 ?? 7a ec ?? c3 0d ?? 45 78 ?? f2 fb ?? c0 11 ?? 59 1a ?? bc f5 ?? 7d 27 ?? 8c 5e ?? 05 ab ?? 36",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 26,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "52 ?? a3 8d ?? 05 10 ?? d1 a7 ?? 29 a1 ?? cd da ?? 24 d9 ?? e6 46 ?? 68 c5 ?? 94 32 ?? 85 cc ?? 32",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 27,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "52 ?? 7f 11 ?? 13 10 ?? d7 17 ?? 31 1f ?? 64 3c ?? cd 11 ?? 94 81 ?? 7d 4c ?? db 51 ?? 5d aa ?? a4",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 28,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "76 ?? af 7e ?? c1 74 ?? dd b2 ?? 08 2c ?? 72 d7 ?? 35 8e ?? ae 65 ?? 7c 06 ?? 8d 89 ?? 5e 77 ?? 77",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 1,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 28,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 28,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 29,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "76 ?? 48 26 ?? c1 35 ?? ed b0 ?? 91 82 ?? 0a be ?? 0b 37 ?? d8 d8 ?? 54 32 ?? 52 cc ?? de 79 ?? 2f",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 1,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 29,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 29,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 30,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "74 ?? 97 61 ?? c0 b5 ?? 03 bb ?? 75 cd ?? fa 4f ?? c0 e1 ?? 73 9c ?? e5 8b ?? c5 d2 ?? 5e ef ?? 2f",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 0,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 30,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 30,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 31,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "77 ?? 0c c6 ?? c0 99 ?? 70 3f ?? c3 25 ?? e9 f4 ?? b8 43 ?? 58 5a ?? 1c 00 ?? b1 e7 ?? 5e a0 ?? 2f",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 0,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 31,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 31,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 32,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "74 ?? c9 b7 ?? c0 9b ?? 0c 35 ?? ea 95 ?? 1d a4 ?? 3c 35 ?? 32 1d ?? 5f ee ?? 3c 57 ?? 90 b4 ?? 0c",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 0,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 32,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 32,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 33,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "74 ?? 1f fc ?? c0 9c ?? 4e 70 ?? 61 1d ?? 16 29 ?? e2 53 ?? 90 ae ?? 39 39 ?? 3d db ?? 5e 24 ?? 09",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 0,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 33,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 33,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 34,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "52 ?? 0e 4d ?? 27 d1 ?? 5c 90 ?? 86 34 ?? 44 99 ?? d7 80 ?? 63 0b ?? 7b da ?? 8d c8 ?? 3d 4c ?? 98",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 35,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "61 ?? 6c 8e ?? 7b 15 ?? 3c ac ?? c2 ba ?? ad 6e ?? e9 cd ?? 77 51 ?? 67 4c ?? 99 e8 ?? ea d5 ?? 4c",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "transition_tags",
+              "check": "transition_tag",
+              "kind": "conditional",
+              "word_bits": [
+                8,
+                10
+              ],
+              "allowed_values": [
+                1
+              ],
+              "excluded_value_count": 3,
+              "observation": "carried_unknown",
+              "observed": null,
+              "outcome": "restricted",
+              "source_outcome": "restricted",
+              "fixed_bits": {
+                "8": 0,
+                "9": 1
+              },
+              "inputs": [
+                {
+                  "slot": 35,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 12,
+                  "role": "condition"
+                },
+                {
+                  "slot": 35,
+                  "word_bits": [
+                    6,
+                    8
+                  ],
+                  "observed": 1,
+                  "role": "condition"
+                },
+                {
+                  "slot": 35,
+                  "word_bits": [
+                    256,
+                    264
+                  ],
+                  "observed": 76,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 36,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "58 ?? fa 76 ?? 08 a4 ?? 6c 5d ?? 7d 3f ?? d0 53 ?? 7a bd ?? 63 91 ?? ba 81 ?? 66 e7 ?? 6d 4a ?? a9",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 37,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "58 ?? 5a 20 ?? 1a b4 ?? 9d ed ?? f8 c4 ?? ef ac ?? fa c2 ?? d8 0e ?? 43 02 ?? d9 d6 ?? 59 47 ?? 2a",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 38,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "58 ?? 3e c3 ?? fc a4 ?? 25 7b ?? f2 41 ?? 07 45 ?? 0f c4 ?? 92 b0 ?? c2 22 ?? 03 41 ?? 99 49 ?? d7",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 39,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "58 ?? b6 97 ?? 4c a4 ?? b2 bb ?? b5 ce ?? 36 40 ?? 34 3f ?? d4 fa ?? b6 9d ?? f1 6a ?? 5d 2d ?? a8",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 40,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "58 ?? 58 33 ?? 14 94 ?? 6b b1 ?? 15 b6 ?? 55 dd ?? 18 c9 ?? 76 63 ?? 3b f3 ?? 55 9f ?? 2d 4b ?? c4",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 41,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "59 ?? 2b f5 ?? 24 74 ?? 02 c5 ?? 2c 59 ?? 6c d6 ?? d8 1c ?? 8a 0a ?? b8 b4 ?? f8 a7 ?? d9 0b ?? b6",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 42,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "59 ?? 87 a2 ?? 6e 74 ?? 95 aa ?? 38 51 ?? 97 5e ?? 75 50 ?? bd ef ?? c5 c7 ?? 8e c9 ?? 75 4a ?? b9",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 43,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "51 ?? 3e 9d ?? 0f 95 ?? 68 10 ?? 7e 50 ?? f8 38 ?? b7 7a ?? 4c 0f ?? 88 c5 ?? 78 68 ?? 6d 4e ?? a7",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 44,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "51 ?? ee 4c ?? b8 95 ?? 8e 76 ?? 15 0d ?? 9d 32 ?? b8 82 ?? d0 2a ?? 93 c6 ?? b0 a8 ?? b9 74 ?? 94",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 45,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "51 ?? 67 d9 ?? 17 95 ?? ea 2e ?? 32 d6 ?? c6 5e ?? 99 3b ?? 0d a3 ?? c2 e7 ?? 9e 17 ?? d9 90 ?? 14",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 46,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "50 ?? 7b 25 ?? 01 95 ?? 22 d6 ?? 4b fe ?? dc 8f ?? ca ad ?? 47 14 ?? c2 ee ?? 70 b0 ?? 49 70 ?? 62",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 47,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "51 ?? a2 1b ?? b8 15 ?? 1e 39 ?? 2b cd ?? 7a 34 ?? 3a b2 ?? 8e 9e ?? 97 92 ?? 74 04 ?? 51 b4 ?? 24",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 48,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "53 ?? 13 6f ?? 07 11 ?? ae bd ?? 4a d6 ?? 93 a2 ?? 9c 0c ?? 24 17 ?? e4 30 ?? 8f 3b ?? 19 ac ?? a5",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 49,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "52 ?? 82 b0 ?? 26 11 ?? 4b 9d ?? 21 15 ?? 35 9d ?? 2c d8 ?? ae 95 ?? 70 e4 ?? d8 3b ?? 79 ac ?? 27",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 50,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "53 ?? 7e 25 ?? bd 11 ?? a6 2a ?? 2a 37 ?? 19 1f ?? f8 00 ?? eb 87 ?? fd d3 ?? ee 5e ?? 79 8e ?? c6",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 51,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "52 ?? f3 ff ?? 50 14 ?? ec fa ?? 01 bf ?? 8b ef ?? 88 e5 ?? df eb ?? cc ac ?? 2b 5b ?? d9 8c ?? 52",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 52,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "53 ?? 8e ef ?? 16 11 ?? 66 4c ?? d8 80 ?? 62 f7 ?? 4b 52 ?? f2 57 ?? f9 3b ?? 60 7a ?? 59 a9 ?? b6",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 53,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "60 ?? 15 1b ?? 84 48 ?? b8 e5 ?? 96 84 ?? 55 bc ?? f5 c9 ?? 67 7e ?? 4a 81 ?? c5 fd ?? f9 ac ?? 37",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "transition_tags",
+              "check": "transition_tag",
+              "kind": "conditional",
+              "word_bits": [
+                8,
+                10
+              ],
+              "allowed_values": [
+                0
+              ],
+              "excluded_value_count": 3,
+              "observation": "carried_unknown",
+              "observed": null,
+              "outcome": "restricted",
+              "source_outcome": "restricted",
+              "fixed_bits": {
+                "8": 0,
+                "9": 0
+              },
+              "inputs": [
+                {
+                  "slot": 53,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 12,
+                  "role": "condition"
+                },
+                {
+                  "slot": 53,
+                  "word_bits": [
+                    6,
+                    8
+                  ],
+                  "observed": 0,
+                  "role": "condition"
+                },
+                {
+                  "slot": 53,
+                  "word_bits": [
+                    256,
+                    264
+                  ],
+                  "observed": 55,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 54,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "74 ?? 2e fa ?? c1 48 ?? ff 9c ?? d0 3a ?? 70 2c ?? 25 1d ?? 34 17 ?? 0f 6b ?? fe fd ?? de d2 ?? 4d",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 1,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 54,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 54,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 55,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "74 ?? 58 fa ?? c1 5b ?? b9 b5 ?? 42 2b ?? af 11 ?? f2 3d ?? a3 2b ?? 37 f0 ?? b9 54 ?? de d2 ?? e6",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 1,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 55,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 55,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 56,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "received_du",
+          "octets": "74 ?? c9 3f ?? c1 5b ?? 2f 9a ?? 77 5c ?? 9c e0 ?? e6 d9 ?? d8 46 ?? 4f f4 ?? 92 18 ?? de 8d ?? b7",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "intra_word",
+              "check": "swb_gsc_inactive",
+              "kind": "direct_check",
+              "word_bits": [
+                44,
+                48
+              ],
+              "allowed_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "excluded_value_count": 5,
+              "observation": "direct",
+              "observed": 1,
+              "outcome": "match",
+              "source_outcome": "pass",
+              "fixed_bits": {},
+              "inputs": [
+                {
+                  "slot": 56,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 14,
+                  "role": "condition"
+                }
+              ]
+            },
+            {
+              "section": "gsc_fields",
+              "check": "inactive_nibble",
+              "kind": "direct_check",
+              "word_bits": [
+                40,
+                44
+              ],
+              "allowed_values": [
+                12
+              ],
+              "excluded_value_count": 15,
+              "observation": "direct",
+              "observed": 12,
+              "outcome": "match",
+              "source_outcome": "match",
+              "fixed_bits": {
+                "40": 1,
+                "41": 1,
+                "42": 0,
+                "43": 0
+              },
+              "inputs": [
+                {
+                  "slot": 56,
+                  "word_bits": [
+                    0,
+                    6
+                  ],
+                  "observed": 29,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 57,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "received_du",
+          "octets": "52 ?? d5 94 ?? d2 d1 ?? 4f c2 ?? a7 ac ?? 17 a7 ?? f8 74 ?? 53 c9 ?? 45 53 ?? 6c 47 ?? 3d 8a ?? 28",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 58,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "received_du",
+          "octets": "61 ?? 03 d7 ?? 2d cd ?? 14 4e ?? 85 92 ?? 75 d6 ?? a1 d9 ?? bc e7 ?? f0 a3 ?? 44 96 ?? b2 99 ?? 10",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [
+            {
+              "section": "transition_tags",
+              "check": "transition_tag",
+              "kind": "conditional",
+              "word_bits": [
+                8,
+                10
+              ],
+              "allowed_values": [
+                0,
+                1
+              ],
+              "excluded_value_count": 2,
+              "observation": "carried_unknown",
+              "observed": null,
+              "outcome": "restricted",
+              "source_outcome": "restricted",
+              "fixed_bits": {
+                "8": 0
+              },
+              "inputs": [
+                {
+                  "slot": 58,
+                  "word_bits": [
+                    0,
+                    5
+                  ],
+                  "observed": 12,
+                  "role": "condition"
+                },
+                {
+                  "slot": 58,
+                  "word_bits": [
+                    6,
+                    8
+                  ],
+                  "observed": 1,
+                  "role": "condition"
+                },
+                {
+                  "slot": 58,
+                  "word_bits": [
+                    256,
+                    264
+                  ],
+                  "observed": 16,
+                  "role": "condition"
+                }
+              ]
+            }
+          ],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        },
+        {
+          "slot": 59,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "received_du",
+          "octets": "59 ?? e3 f7 ?? 42 d4 ?? 31 5e ?? f9 33 ?? ec 25 ?? bf 35 ?? 25 fd ?? c2 46 ?? 51 1c ?? 99 10 ?? 88",
+          "direct_bits": 176,
+          "carried_unknown_bits": 88,
+          "no_receipt_bits": 0,
+          "word_erased": true,
+          "events": [],
+          "core_history_abstention": "current_signalling_index_outside_scope"
+        }
+      ]
+    },
+    "projection": {
+      "format": "kcbs-evs-packet-projection-v1",
+      "counter": 43873173,
+      "received_du_phases": [
+        0,
+        1,
+        2
+      ],
+      "layout": "Each row starts with the mode octet followed by 32 payload octets.",
+      "word_erasure_basis": "The projection cannot supply a full word if any octet is unknown or unavailable.",
+      "markers": {
+        "??": "received octet with unknown clear value",
+        "--": "no packet receipt for this octet"
+      },
+      "direct_word_octet_indices": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        14,
+        15,
+        17,
+        18,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27,
+        29,
+        30,
+        32
+      ],
+      "total_slots": 60,
+      "physically_complete_slots": 60,
+      "missing_du_slots": 0,
+      "confirmed_direct_bits": 10560,
+      "full_clear_words": 0,
+      "word_erasures": 60,
+      "slots": [
+        {
+          "slot": 0,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 39 4f ?? f2 d4 ?? b1 93 ?? 3e 49 ?? 44 bf ?? 5f 36 ?? ba 81 ?? c9 89 ?? 73 97 ?? 5c f2 ?? 3a"
+        },
+        {
+          "slot": 1,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "5b ?? b4 65 ?? 1c e4 ?? 10 9c ?? 30 43 ?? 2b 00 ?? 9a 49 ?? 64 a3 ?? 3d fd ?? 82 e9 ?? d8 cc ?? 98"
+        },
+        {
+          "slot": 2,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? aa 3a ?? 76 c4 ?? 94 6a ?? 4f 42 ?? 40 b2 ?? 55 47 ?? 6c c5 ?? c2 7b ?? a3 88 ?? 20 ea ?? 39"
+        },
+        {
+          "slot": 3,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 22 b5 ?? c4 c4 ?? 54 81 ?? 0b 3a ?? 6b 32 ?? 38 b7 ?? 9a 0d ?? ba f5 ?? fb 7f ?? b1 31 ?? 98"
+        },
+        {
+          "slot": 4,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "53 ?? 29 93 ?? 95 95 ?? d6 a0 ?? 23 0f ?? 44 7e ?? 86 74 ?? e2 c8 ?? 75 d7 ?? 56 59 ?? 21 51 ?? b5"
+        },
+        {
+          "slot": 5,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? d2 9f ?? 86 95 ?? 01 86 ?? 9a 40 ?? 0c a6 ?? 57 68 ?? 96 68 ?? 40 06 ?? ab 04 ?? 4d 8e ?? 25"
+        },
+        {
+          "slot": 6,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "53 ?? 2c 50 ?? 7a 95 ?? 4c dc ?? be 90 ?? ee 74 ?? e7 f8 ?? c1 12 ?? 3b 7d ?? 1f bf ?? 05 6c ?? 30"
+        },
+        {
+          "slot": 7,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? bf 90 ?? c8 e4 ?? 7f f9 ?? fa 38 ?? 56 b6 ?? df 97 ?? 9a 27 ?? ab c3 ?? 9f 61 ?? 91 0a ?? a4"
+        },
+        {
+          "slot": 8,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? f8 87 ?? ca e4 ?? 18 01 ?? 1a 22 ?? 62 1a ?? 32 2f ?? 96 86 ?? 37 07 ?? 3b 75 ?? 39 29 ?? 44"
+        },
+        {
+          "slot": 9,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 9e d4 ?? 38 b4 ?? 59 95 ?? 52 3c ?? 14 72 ?? 8d b2 ?? 9a 98 ?? ae 31 ?? 4d 5f ?? d9 31 ?? 48"
+        },
+        {
+          "slot": 10,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 41 41 ?? e8 a4 ?? 50 1a ?? f5 ba ?? bf 6a ?? 9f 2c ?? 27 0b ?? bd 18 ?? 5d 36 ?? 91 2c ?? b9"
+        },
+        {
+          "slot": 11,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? af f1 ?? 6a a3 ?? a3 79 ?? b9 a4 ?? f9 2d ?? 7e c0 ?? 93 38 ?? 2e 28 ?? ff 2c ?? f9 0c ?? c4"
+        },
+        {
+          "slot": 12,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 1c 8e ?? 38 c3 ?? 23 92 ?? fa 29 ?? 39 cf ?? 38 22 ?? 6a 18 ?? a8 3d ?? 08 3b ?? ed 0c ?? 5b"
+        },
+        {
+          "slot": 13,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 1e a0 ?? 22 c3 ?? 57 04 ?? 3a ae ?? fc 52 ?? d8 b4 ?? 8d 8d ?? bf 9c ?? 2e 9e ?? 10 cb ?? 44"
+        },
+        {
+          "slot": 14,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 77 30 ?? 74 d3 ?? 90 03 ?? 75 42 ?? e6 6b ?? 3a bb ?? 5d bf ?? ba 2e ?? 48 d1 ?? cc ab ?? 44"
+        },
+        {
+          "slot": 15,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 8d 80 ?? 00 d3 ?? 72 8e ?? b9 3e ?? c6 1d ?? 78 ca ?? 7b a6 ?? 45 92 ?? cb a4 ?? f8 ac ?? 38"
+        },
+        {
+          "slot": 16,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? ce 35 ?? c8 d3 ?? 9a 84 ?? 16 4f ?? b4 f9 ?? 35 55 ?? 3e 3b ?? 5b 96 ?? 39 94 ?? 84 d6 ?? 49"
+        },
+        {
+          "slot": 17,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? fd f3 ?? 28 c3 ?? 38 fd ?? 74 cf ?? 0e 09 ?? b0 5a ?? ce 14 ?? da 92 ?? d8 e5 ?? 99 12 ?? 5b"
+        },
+        {
+          "slot": 18,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? ff 30 ?? 88 c4 ?? ba 44 ?? 95 f0 ?? 01 4f ?? 58 c7 ?? fc bc ?? 72 28 ?? cb 53 ?? 59 16 ?? 67"
+        },
+        {
+          "slot": 19,
+          "counter": 43873173,
+          "phase": 0,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "51 ?? 82 17 ?? 55 99 ?? b0 89 ?? ae 30 ?? 0c 05 ?? 27 5c ?? fa c8 ?? b2 d3 ?? 09 be ?? f9 16 ?? 58"
+        },
+        {
+          "slot": 20,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "53 ?? 9b 8b ?? 13 95 ?? d3 52 ?? db 15 ?? 23 96 ?? 18 83 ?? 8c 85 ?? 82 00 ?? f7 a6 ?? 41 30 ?? e2"
+        },
+        {
+          "slot": 21,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? cb ba ?? 24 95 ?? b2 cc ?? 35 64 ?? 86 38 ?? 59 76 ?? 86 41 ?? bd be ?? 20 62 ?? 15 4c ?? 62"
+        },
+        {
+          "slot": 22,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? 79 99 ?? 33 15 ?? 14 13 ?? 80 f0 ?? 88 c3 ?? cb f2 ?? 94 13 ?? f0 52 ?? 21 65 ?? d9 87 ?? a4"
+        },
+        {
+          "slot": 23,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? 7a c8 ?? 86 11 ?? 3a 0e ?? 99 88 ?? 84 38 ?? bc 29 ?? 5b df ?? 16 d4 ?? ea 7a ?? 59 a9 ?? a5"
+        },
+        {
+          "slot": 24,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? f7 de ?? a8 12 ?? 1c 38 ?? eb f7 ?? 13 24 ?? a4 d2 ?? f0 10 ?? 01 37 ?? b0 90 ?? 6d ac ?? 35"
+        },
+        {
+          "slot": 25,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? 7a ec ?? c3 0d ?? 45 78 ?? f2 fb ?? c0 11 ?? 59 1a ?? bc f5 ?? 7d 27 ?? 8c 5e ?? 05 ab ?? 36"
+        },
+        {
+          "slot": 26,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? a3 8d ?? 05 10 ?? d1 a7 ?? 29 a1 ?? cd da ?? 24 d9 ?? e6 46 ?? 68 c5 ?? 94 32 ?? 85 cc ?? 32"
+        },
+        {
+          "slot": 27,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? 7f 11 ?? 13 10 ?? d7 17 ?? 31 1f ?? 64 3c ?? cd 11 ?? 94 81 ?? 7d 4c ?? db 51 ?? 5d aa ?? a4"
+        },
+        {
+          "slot": 28,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "76 ?? af 7e ?? c1 74 ?? dd b2 ?? 08 2c ?? 72 d7 ?? 35 8e ?? ae 65 ?? 7c 06 ?? 8d 89 ?? 5e 77 ?? 77"
+        },
+        {
+          "slot": 29,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "76 ?? 48 26 ?? c1 35 ?? ed b0 ?? 91 82 ?? 0a be ?? 0b 37 ?? d8 d8 ?? 54 32 ?? 52 cc ?? de 79 ?? 2f"
+        },
+        {
+          "slot": 30,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "74 ?? 97 61 ?? c0 b5 ?? 03 bb ?? 75 cd ?? fa 4f ?? c0 e1 ?? 73 9c ?? e5 8b ?? c5 d2 ?? 5e ef ?? 2f"
+        },
+        {
+          "slot": 31,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "77 ?? 0c c6 ?? c0 99 ?? 70 3f ?? c3 25 ?? e9 f4 ?? b8 43 ?? 58 5a ?? 1c 00 ?? b1 e7 ?? 5e a0 ?? 2f"
+        },
+        {
+          "slot": 32,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "74 ?? c9 b7 ?? c0 9b ?? 0c 35 ?? ea 95 ?? 1d a4 ?? 3c 35 ?? 32 1d ?? 5f ee ?? 3c 57 ?? 90 b4 ?? 0c"
+        },
+        {
+          "slot": 33,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "74 ?? 1f fc ?? c0 9c ?? 4e 70 ?? 61 1d ?? 16 29 ?? e2 53 ?? 90 ae ?? 39 39 ?? 3d db ?? 5e 24 ?? 09"
+        },
+        {
+          "slot": 34,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? 0e 4d ?? 27 d1 ?? 5c 90 ?? 86 34 ?? 44 99 ?? d7 80 ?? 63 0b ?? 7b da ?? 8d c8 ?? 3d 4c ?? 98"
+        },
+        {
+          "slot": 35,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "61 ?? 6c 8e ?? 7b 15 ?? 3c ac ?? c2 ba ?? ad 6e ?? e9 cd ?? 77 51 ?? 67 4c ?? 99 e8 ?? ea d5 ?? 4c"
+        },
+        {
+          "slot": 36,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? fa 76 ?? 08 a4 ?? 6c 5d ?? 7d 3f ?? d0 53 ?? 7a bd ?? 63 91 ?? ba 81 ?? 66 e7 ?? 6d 4a ?? a9"
+        },
+        {
+          "slot": 37,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 5a 20 ?? 1a b4 ?? 9d ed ?? f8 c4 ?? ef ac ?? fa c2 ?? d8 0e ?? 43 02 ?? d9 d6 ?? 59 47 ?? 2a"
+        },
+        {
+          "slot": 38,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 3e c3 ?? fc a4 ?? 25 7b ?? f2 41 ?? 07 45 ?? 0f c4 ?? 92 b0 ?? c2 22 ?? 03 41 ?? 99 49 ?? d7"
+        },
+        {
+          "slot": 39,
+          "counter": 43873173,
+          "phase": 1,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? b6 97 ?? 4c a4 ?? b2 bb ?? b5 ce ?? 36 40 ?? 34 3f ?? d4 fa ?? b6 9d ?? f1 6a ?? 5d 2d ?? a8"
+        },
+        {
+          "slot": 40,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 0,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "58 ?? 58 33 ?? 14 94 ?? 6b b1 ?? 15 b6 ?? 55 dd ?? 18 c9 ?? 76 63 ?? 3b f3 ?? 55 9f ?? 2d 4b ?? c4"
+        },
+        {
+          "slot": 41,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 0,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "59 ?? 2b f5 ?? 24 74 ?? 02 c5 ?? 2c 59 ?? 6c d6 ?? d8 1c ?? 8a 0a ?? b8 b4 ?? f8 a7 ?? d9 0b ?? b6"
+        },
+        {
+          "slot": 42,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 0,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "59 ?? 87 a2 ?? 6e 74 ?? 95 aa ?? 38 51 ?? 97 5e ?? 75 50 ?? bd ef ?? c5 c7 ?? 8e c9 ?? 75 4a ?? b9"
+        },
+        {
+          "slot": 43,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 0,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "51 ?? 3e 9d ?? 0f 95 ?? 68 10 ?? 7e 50 ?? f8 38 ?? b7 7a ?? 4c 0f ?? 88 c5 ?? 78 68 ?? 6d 4e ?? a7"
+        },
+        {
+          "slot": 44,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 1,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "51 ?? ee 4c ?? b8 95 ?? 8e 76 ?? 15 0d ?? 9d 32 ?? b8 82 ?? d0 2a ?? 93 c6 ?? b0 a8 ?? b9 74 ?? 94"
+        },
+        {
+          "slot": 45,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 1,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "51 ?? 67 d9 ?? 17 95 ?? ea 2e ?? 32 d6 ?? c6 5e ?? 99 3b ?? 0d a3 ?? c2 e7 ?? 9e 17 ?? d9 90 ?? 14"
+        },
+        {
+          "slot": 46,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 1,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "50 ?? 7b 25 ?? 01 95 ?? 22 d6 ?? 4b fe ?? dc 8f ?? ca ad ?? 47 14 ?? c2 ee ?? 70 b0 ?? 49 70 ?? 62"
+        },
+        {
+          "slot": 47,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 1,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "51 ?? a2 1b ?? b8 15 ?? 1e 39 ?? 2b cd ?? 7a 34 ?? 3a b2 ?? 8e 9e ?? 97 92 ?? 74 04 ?? 51 b4 ?? 24"
+        },
+        {
+          "slot": 48,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 2,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "53 ?? 13 6f ?? 07 11 ?? ae bd ?? 4a d6 ?? 93 a2 ?? 9c 0c ?? 24 17 ?? e4 30 ?? 8f 3b ?? 19 ac ?? a5"
+        },
+        {
+          "slot": 49,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 2,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? 82 b0 ?? 26 11 ?? 4b 9d ?? 21 15 ?? 35 9d ?? 2c d8 ?? ae 95 ?? 70 e4 ?? d8 3b ?? 79 ac ?? 27"
+        },
+        {
+          "slot": 50,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 2,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "53 ?? 7e 25 ?? bd 11 ?? a6 2a ?? 2a 37 ?? 19 1f ?? f8 00 ?? eb 87 ?? fd d3 ?? ee 5e ?? 79 8e ?? c6"
+        },
+        {
+          "slot": 51,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 2,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? f3 ff ?? 50 14 ?? ec fa ?? 01 bf ?? 8b ef ?? 88 e5 ?? df eb ?? cc ac ?? 2b 5b ?? d9 8c ?? 52"
+        },
+        {
+          "slot": 52,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 3,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "53 ?? 8e ef ?? 16 11 ?? 66 4c ?? d8 80 ?? 62 f7 ?? 4b 52 ?? f2 57 ?? f9 3b ?? 60 7a ?? 59 a9 ?? b6"
+        },
+        {
+          "slot": 53,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 3,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "60 ?? 15 1b ?? 84 48 ?? b8 e5 ?? 96 84 ?? 55 bc ?? f5 c9 ?? 67 7e ?? 4a 81 ?? c5 fd ?? f9 ac ?? 37"
+        },
+        {
+          "slot": 54,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 3,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "74 ?? 2e fa ?? c1 48 ?? ff 9c ?? d0 3a ?? 70 2c ?? 25 1d ?? 34 17 ?? 0f 6b ?? fe fd ?? de d2 ?? 4d"
+        },
+        {
+          "slot": 55,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 3,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "74 ?? 58 fa ?? c1 5b ?? b9 b5 ?? 42 2b ?? af 11 ?? f2 3d ?? a3 2b ?? 37 f0 ?? b9 54 ?? de d2 ?? e6"
+        },
+        {
+          "slot": 56,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 4,
+          "position": 1,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "74 ?? c9 3f ?? c1 5b ?? 2f 9a ?? 77 5c ?? 9c e0 ?? e6 d9 ?? d8 46 ?? 4f f4 ?? 92 18 ?? de 8d ?? b7"
+        },
+        {
+          "slot": 57,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 4,
+          "position": 2,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "52 ?? d5 94 ?? d2 d1 ?? 4f c2 ?? a7 ac ?? 17 a7 ?? f8 74 ?? 53 c9 ?? 45 53 ?? 6c 47 ?? 3d 8a ?? 28"
+        },
+        {
+          "slot": 58,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 4,
+          "position": 3,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "61 ?? 03 d7 ?? 2d cd ?? 14 4e ?? 85 92 ?? 75 d6 ?? a1 d9 ?? bc e7 ?? f0 a3 ?? 44 96 ?? b2 99 ?? 10"
+        },
+        {
+          "slot": 59,
+          "counter": 43873173,
+          "phase": 2,
+          "cycle": 4,
+          "position": 4,
+          "receipt": "received_du",
+          "direct_bits": 176,
+          "octets": "59 ?? e3 f7 ?? 42 d4 ?? 31 5e ?? f9 33 ?? ec 25 ?? bf 35 ?? 25 fd ?? c2 46 ?? 51 1c ?? 99 10 ?? 88"
+        }
+      ],
+      "received_packet_ordinals": {
+        "0": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "1": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "physically_partial_slots": 0,
+      "physically_missing_slots": 0,
+      "transition_tags": {
+        "word_bits": [
+          8,
+          10
+        ],
+        "outcome_basis": "Conditional on the stock 13.2 kb/s SWB ACELP TRANSITION encoder. Some text-supported P1 and P2 labels disagree with the predicted pair.",
+        "fixed_bit_count": 5,
+        "slots": [
+          {
+            "slot": 35,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 4,
+            "mode": "61",
+            "payload31": "4C",
+            "outcome": "restricted",
+            "allowed_high_pairs": [
+              1
+            ],
+            "fixed_word_bits": {
+              "8": 0,
+              "9": 1
+            }
+          },
+          {
+            "slot": 53,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 2,
+            "mode": "60",
+            "payload31": "37",
+            "outcome": "restricted",
+            "allowed_high_pairs": [
+              0
+            ],
+            "fixed_word_bits": {
+              "8": 0,
+              "9": 0
+            }
+          },
+          {
+            "slot": 58,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 4,
+            "position": 3,
+            "mode": "61",
+            "payload31": "10",
+            "outcome": "restricted",
+            "allowed_high_pairs": [
+              0,
+              1
+            ],
+            "fixed_word_bits": {
+              "8": 0
+            }
+          }
+        ]
+      },
+      "core_history": {
+        "scope": "For 13.2 kb/s EVS, word bit 0 is the mode MSB. HQ bit 6 is directly received. TCX20 bit 8 is a conditional expectation from the preceding core. Only adjacent received modes within the same group enter the check.",
+        "total": {
+          "slots": 60,
+          "abstain": 60,
+          "hq_match": 0,
+          "hq_mismatch": 0,
+          "tcx_conditional": 0
+        },
+        "by_position": {
+          "1": {
+            "slots": 15,
+            "abstain": 15,
+            "hq_match": 0,
+            "hq_mismatch": 0,
+            "tcx_conditional": 0
+          },
+          "2": {
+            "slots": 15,
+            "abstain": 15,
+            "hq_match": 0,
+            "hq_mismatch": 0,
+            "tcx_conditional": 0
+          },
+          "3": {
+            "slots": 15,
+            "abstain": 15,
+            "hq_match": 0,
+            "hq_mismatch": 0,
+            "tcx_conditional": 0
+          },
+          "4": {
+            "slots": 15,
+            "abstain": 15,
+            "hq_match": 0,
+            "hq_mismatch": 0,
+            "tcx_conditional": 0
+          }
+        },
+        "slots": [
+          {
+            "slot": 0,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 0,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "no_adjacent_predecessor",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 1,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 0,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 2,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 0,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 3,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 0,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 4,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 1,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 5,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 1,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 6,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 1,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 7,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 1,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 8,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 2,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 9,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 2,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 10,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 2,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 11,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 2,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 12,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 3,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 13,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 3,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 14,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 3,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 15,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 3,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 16,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 4,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 17,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 4,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 18,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 4,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 19,
+            "counter": 43873173,
+            "phase": 0,
+            "cycle": 4,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 20,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 0,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 21,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 0,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 22,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 0,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 23,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 0,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 24,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 1,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 25,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 1,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 26,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 1,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 27,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 1,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 28,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 29,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 30,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 31,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 32,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 33,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 34,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 35,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 36,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 4,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 37,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 4,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 38,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 4,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 39,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 4,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 40,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 0,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 41,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 0,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 42,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 0,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 43,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 0,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 44,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 1,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 45,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 1,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 46,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 1,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 47,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 1,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 48,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 2,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 49,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 2,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 50,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 2,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 51,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 2,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 52,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 53,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 54,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 55,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 56,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 4,
+            "position": 1,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 57,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 4,
+            "position": 2,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 58,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 4,
+            "position": 3,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          },
+          {
+            "slot": 59,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 4,
+            "position": 4,
+            "outcome": "abstain",
+            "reason": "current_signalling_index_outside_scope",
+            "target_word_bit": null,
+            "predicted": null,
+            "observed": null
+          }
+        ]
+      },
+      "intra_word": {
+        "scope": "Only applicable slots are listed. Word bits use half-open intervals. The allowed value bounds are inclusive. Conditional bits have no on-air score.",
+        "by_check": {
+          "swb_hq_class": {
+            "conditional": 0,
+            "pass": 0,
+            "reject": 0,
+            "unavailable": 0
+          },
+          "wb_gsc_audio": {
+            "conditional": 0,
+            "pass": 0,
+            "reject": 0,
+            "unavailable": 0
+          },
+          "swb_gsc_inactive": {
+            "conditional": 0,
+            "pass": 9,
+            "reject": 0,
+            "unavailable": 0
+          }
+        },
+        "slots": [
+          {
+            "slot": 28,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 1,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 1,
+            "outcome": "pass"
+          },
+          {
+            "slot": 29,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 2,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 1,
+            "outcome": "pass"
+          },
+          {
+            "slot": 30,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 3,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 0,
+            "outcome": "pass"
+          },
+          {
+            "slot": 31,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 4,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 0,
+            "outcome": "pass"
+          },
+          {
+            "slot": 32,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 1,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 0,
+            "outcome": "pass"
+          },
+          {
+            "slot": 33,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 2,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 0,
+            "outcome": "pass"
+          },
+          {
+            "slot": 54,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 3,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 1,
+            "outcome": "pass"
+          },
+          {
+            "slot": 55,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 4,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 1,
+            "outcome": "pass"
+          },
+          {
+            "slot": 56,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 4,
+            "position": 1,
+            "check": "swb_gsc_inactive",
+            "word_bits": [
+              44,
+              48
+            ],
+            "allowed": [
+              0,
+              10
+            ],
+            "observed": 1,
+            "outcome": "pass"
+          }
+        ]
+      },
+      "gsc_fields": {
+        "scope": "Half-open MSB-first word bit ranges. Each prediction excludes all other field values. Direct observations and received-word erasures are retained even on a mismatch. A slot may support multiple checks. Ineligible slots are omitted.",
+        "fields": {
+          "audio_noisy": {
+            "word_bits": [
+              40,
+              41
+            ],
+            "inputs": [
+              "mode octet"
+            ],
+            "basis": "Stock encoder's ordinary AUDIO bandwidth-extension choice."
+          },
+          "inactive_nibble": {
+            "word_bits": [
+              40,
+              44
+            ],
+            "inputs": [
+              "mode octet"
+            ],
+            "basis": "Empirical INACTIVE/BWE pattern from the labelled broadcast archive."
+          },
+          "noisy_pitch_fill": {
+            "word_bits": [
+              223,
+              224
+            ],
+            "inputs": [
+              "mode octet",
+              "word bits [40,45)"
+            ],
+            "basis": "Stock noisy AUDIO/TBE positive-pitch pulse codebook and range-coder padding."
+          }
+        },
+        "by_check": {
+          "audio_noisy": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0
+          },
+          "inactive_nibble": {
+            "match": 9,
+            "mismatch": 0,
+            "unavailable": 0
+          },
+          "noisy_pitch_fill": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0
+          }
+        },
+        "slots": [
+          {
+            "slot": 28,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 1,
+            "check": "inactive_nibble",
+            "mode": 118,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          },
+          {
+            "slot": 29,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 2,
+            "check": "inactive_nibble",
+            "mode": 118,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          },
+          {
+            "slot": 30,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 3,
+            "check": "inactive_nibble",
+            "mode": 116,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          },
+          {
+            "slot": 31,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 2,
+            "position": 4,
+            "check": "inactive_nibble",
+            "mode": 119,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          },
+          {
+            "slot": 32,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 1,
+            "check": "inactive_nibble",
+            "mode": 116,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          },
+          {
+            "slot": 33,
+            "counter": 43873173,
+            "phase": 1,
+            "cycle": 3,
+            "position": 2,
+            "check": "inactive_nibble",
+            "mode": 116,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          },
+          {
+            "slot": 54,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 3,
+            "check": "inactive_nibble",
+            "mode": 116,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          },
+          {
+            "slot": 55,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 3,
+            "position": 4,
+            "check": "inactive_nibble",
+            "mode": 116,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          },
+          {
+            "slot": 56,
+            "counter": 43873173,
+            "phase": 2,
+            "cycle": 4,
+            "position": 1,
+            "check": "inactive_nibble",
+            "mode": 116,
+            "predicted": 12,
+            "observed": 12,
+            "outcome": "match"
+          }
+        ]
+      },
+      "hq_neighbors": {
+        "eligible": 0,
+        "transient_excluded": 0,
+        "target_word_bit": 8,
+        "withheld_successor_word_bit": 7,
+        "basis": "Continuous ordinary 13.2 kb/s SWB HQ coding across three adjacent words in one group.",
+        "slots": []
+      }
+    }
+  },
+  "all_assigned": {
+    "counters": 21,
+    "nominal_slots": 1260,
+    "received_modes": 786,
+    "total": {
+      "predicted": 167,
+      "checked": 166,
+      "matched": 166,
+      "mismatched": 0,
+      "no_peer": 1
+    },
+    "by_position": {
+      "1": {
+        "predicted": 45,
+        "checked": 44,
+        "matched": 44,
+        "mismatched": 0,
+        "no_peer": 1
+      },
+      "2": {
+        "predicted": 41,
+        "checked": 41,
+        "matched": 41,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "3": {
+        "predicted": 40,
+        "checked": 40,
+        "matched": 40,
+        "mismatched": 0,
+        "no_peer": 0
+      },
+      "4": {
+        "predicted": 41,
+        "checked": 41,
+        "matched": 41,
+        "mismatched": 0,
+        "no_peer": 0
+      }
+    },
+    "by_rule": {
+      "audio_noisy": {
+        "predicted": 0,
+        "checked": 0,
+        "matched": 0,
+        "mismatched": 0,
+        "no_peer": 0,
+        "by_position": {
+          "1": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "2": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 0,
+            "checked": 0,
+            "matched": 0,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      },
+      "inactive_nibble": {
+        "predicted": 167,
+        "checked": 166,
+        "matched": 166,
+        "mismatched": 0,
+        "no_peer": 1,
+        "by_position": {
+          "1": {
+            "predicted": 45,
+            "checked": 44,
+            "matched": 44,
+            "mismatched": 0,
+            "no_peer": 1
+          },
+          "2": {
+            "predicted": 41,
+            "checked": 41,
+            "matched": 41,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "3": {
+            "predicted": 40,
+            "checked": 40,
+            "matched": 40,
+            "mismatched": 0,
+            "no_peer": 0
+          },
+          "4": {
+            "predicted": 41,
+            "checked": 41,
+            "matched": 41,
+            "mismatched": 0,
+            "no_peer": 0
+          }
+        }
+      }
+    }
+  },
+  "native_transport": {
+    "msc_rows": 144,
+    "packet_crc_checks": 576,
+    "physical_packets_crc": 344,
+    "physical_packets_crc_and_header": 344,
+    "native_complete_dus": 59
+  },
+  "observations": [
+    {
+      "counter": 43873171,
+      "slot": 2,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873171,
+      "slot": 3,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873171,
+      "slot": 4,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873171,
+      "slot": 5,
+      "phase": 0,
+      "cycle": 1,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873171,
+      "slot": 6,
+      "phase": 0,
+      "cycle": 1,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873171,
+      "slot": 7,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873171,
+      "slot": 8,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873171,
+      "slot": 9,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "mode": "75",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 28,
+      "phase": 1,
+      "cycle": 2,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 29,
+      "phase": 1,
+      "cycle": 2,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 30,
+      "phase": 1,
+      "cycle": 2,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 31,
+      "phase": 1,
+      "cycle": 2,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 32,
+      "phase": 1,
+      "cycle": 3,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 33,
+      "phase": 1,
+      "cycle": 3,
+      "position": 2,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 54,
+      "phase": 2,
+      "cycle": 3,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 55,
+      "phase": 2,
+      "cycle": 3,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873173,
+      "slot": 56,
+      "phase": 2,
+      "cycle": 4,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873174,
+      "slot": 12,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "mode": "75",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873174,
+      "slot": 13,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873174,
+      "slot": 14,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873174,
+      "slot": 15,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873174,
+      "slot": 16,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873174,
+      "slot": 17,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "mode": "75",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873174,
+      "slot": 18,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873174,
+      "slot": 19,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873176,
+      "slot": 21,
+      "phase": 1,
+      "cycle": 0,
+      "position": 2,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 11,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 12,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 13,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 14,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 15,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 16,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 17,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 18,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 19,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 20,
+      "phase": 1,
+      "cycle": 0,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 21,
+      "phase": 1,
+      "cycle": 0,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 22,
+      "phase": 1,
+      "cycle": 0,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 23,
+      "phase": 1,
+      "cycle": 0,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 24,
+      "phase": 1,
+      "cycle": 1,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 25,
+      "phase": 1,
+      "cycle": 1,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 26,
+      "phase": 1,
+      "cycle": 1,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 27,
+      "phase": 1,
+      "cycle": 1,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 28,
+      "phase": 1,
+      "cycle": 2,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 29,
+      "phase": 1,
+      "cycle": 2,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 30,
+      "phase": 1,
+      "cycle": 2,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 31,
+      "phase": 1,
+      "cycle": 2,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 32,
+      "phase": 1,
+      "cycle": 3,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 33,
+      "phase": 1,
+      "cycle": 3,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 34,
+      "phase": 1,
+      "cycle": 3,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 35,
+      "phase": 1,
+      "cycle": 3,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 36,
+      "phase": 1,
+      "cycle": 4,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873177,
+      "slot": 37,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "mode": "75",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873178,
+      "slot": 28,
+      "phase": 1,
+      "cycle": 2,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 11,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 12,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "mode": "75",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 53,
+      "phase": 2,
+      "cycle": 3,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 54,
+      "phase": 2,
+      "cycle": 3,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 55,
+      "phase": 2,
+      "cycle": 3,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 56,
+      "phase": 2,
+      "cycle": 4,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 57,
+      "phase": 2,
+      "cycle": 4,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 58,
+      "phase": 2,
+      "cycle": 4,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873179,
+      "slot": 59,
+      "phase": 2,
+      "cycle": 4,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 0,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 1,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 2,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 3,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 4,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 5,
+      "phase": 0,
+      "cycle": 1,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 6,
+      "phase": 0,
+      "cycle": 1,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 7,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 8,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 9,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 10,
+      "phase": 0,
+      "cycle": 2,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 11,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 12,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 13,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873180,
+      "slot": 14,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873181,
+      "slot": 16,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": null
+    },
+    {
+      "counter": 43873186,
+      "slot": 0,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873186,
+      "slot": 1,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873186,
+      "slot": 2,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873186,
+      "slot": 15,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873186,
+      "slot": 16,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873186,
+      "slot": 17,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873186,
+      "slot": 18,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873186,
+      "slot": 19,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 0,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 1,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 2,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 3,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 4,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 20,
+      "phase": 1,
+      "cycle": 0,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 21,
+      "phase": 1,
+      "cycle": 0,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 22,
+      "phase": 1,
+      "cycle": 0,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 23,
+      "phase": 1,
+      "cycle": 0,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873188,
+      "slot": 58,
+      "phase": 2,
+      "cycle": 4,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 10,
+      "phase": 0,
+      "cycle": 2,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 11,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 12,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 13,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 14,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 15,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 16,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 17,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 18,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873189,
+      "slot": 19,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 1,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 2,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 3,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 4,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 5,
+      "phase": 0,
+      "cycle": 1,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 6,
+      "phase": 0,
+      "cycle": 1,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 7,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 8,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873192,
+      "slot": 9,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 2,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 3,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 4,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 36,
+      "phase": 1,
+      "cycle": 4,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 37,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 38,
+      "phase": 1,
+      "cycle": 4,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 39,
+      "phase": 1,
+      "cycle": 4,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 40,
+      "phase": 2,
+      "cycle": 0,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873197,
+      "slot": 53,
+      "phase": 2,
+      "cycle": 3,
+      "position": 2,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 7,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 8,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 9,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 10,
+      "phase": 0,
+      "cycle": 2,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 11,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 12,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 13,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 14,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 15,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 16,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 17,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 18,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873200,
+      "slot": 19,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873201,
+      "slot": 16,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873201,
+      "slot": 17,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873201,
+      "slot": 18,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873201,
+      "slot": 19,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873206,
+      "slot": 0,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873206,
+      "slot": 1,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873206,
+      "slot": 2,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873206,
+      "slot": 3,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873206,
+      "slot": 4,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "mode": "76",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 0,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 1,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 2,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 3,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 4,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 5,
+      "phase": 0,
+      "cycle": 1,
+      "position": 2,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 6,
+      "phase": 0,
+      "cycle": 1,
+      "position": 3,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 7,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "mode": "77",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 8,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 9,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 10,
+      "phase": 0,
+      "cycle": 2,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 11,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 12,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 13,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 14,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 15,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 16,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 17,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 18,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    },
+    {
+      "counter": 43873215,
+      "slot": 19,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "mode": "74",
+      "rule": "inactive_nibble",
+      "expected": 12,
+      "observed": 12
+    }
+  ],
+  "observation_basis": "Same-slot directly carried bits in the recorded packet archive. In the published summary schema, no_peer counts missing observed targets."
+}
