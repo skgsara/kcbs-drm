@@ -26,7 +26,7 @@ def inventory(path):
     return accepted, full, groups, ids
 
 
-def selected_projection(path, counter):
+def selected_projection(path, counter, *, evidence_version=1):
     if counter is None:
         return None
     projection = project_group(path, counter, packets=True)
@@ -35,7 +35,8 @@ def selected_projection(path, counter):
     for slot in projection["slots"]:
         n = sum(octet != "--" for octet in slot["octets"].split())
         positions[str(slot["position"])]["complete" if n == 33 else "absent" if n == 0 else "partial"] += 1
-    return dict(physical_slots_by_position=positions, projection=projection, bit_evidence=bit_evidence(projection))
+    return dict(physical_slots_by_position=positions, projection=projection,
+                bit_evidence=bit_evidence(projection, version=evidence_version))
 
 
 def seal(msc, directory):

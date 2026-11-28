@@ -13,10 +13,12 @@ import shlex
 import subprocess
 import time
 
+import numpy as np
 import soundfile as sf
-from scipy.signal import resample_poly
+from scipy.signal import resample_poly, upfirdn
 
 from build_evs_gcc_independent import linux, linux_command
+from extract_iq_channel import BLOCK_FRAMES, PASSBAND_HZ, STOPBAND_HZ, channel_filter
 from resample_iq import cs8_frames, convert_cs8
 
 
@@ -43,15 +45,69 @@ def dream_binary():
     return WSL_LEGACY_DREAM if os.name == 'nt' else linux(root/'build/dream-src/dream')
 
 
-def input_info(src, sample_rate):
+def input_info(src, sample_rate, real_if_hz=None):
     if src.suffix.lower() == '.cs8':
+        if real_if_hz is not None:
+            raise ValueError('--real-if-hz requires a mono PCM WAV')
         if sample_rate is None or sample_rate <= 0:
             raise ValueError('raw CS8 requires a positive --sample-rate (complex samples/s)')
         return sample_rate, cs8_frames(src)
     info = sf.info(src)
+    if real_if_hz is not None:
+        if (info.channels != 1 or info.format not in ('WAV', 'WAVEX', 'RF64') or
+                info.subtype not in ('PCM_U8', 'PCM_16', 'PCM_24', 'PCM_32', 'FLOAT', 'DOUBLE')):
+            raise ValueError('--real-if-hz requires a mono uncompressed PCM WAV')
+        if not math.isfinite(real_if_hz) or not STOPBAND_HZ <= real_if_hz <= info.samplerate / 2 - STOPBAND_HZ:
+            raise ValueError(f'IF center ±{STOPBAND_HZ} Hz must fit between DC and Nyquist')
+        return info.samplerate, info.frames
+    if info.channels == 1:
+        raise ValueError('mono audio requires --real-if-hz and a recorded real IF channel')
     if info.channels != 2 or (abs(info.samplerate - 12000) > 3 and info.samplerate != 48000):
         raise ValueError(f'expected two-channel IQ at approximately 12 kHz or at 48 kHz: {src}')
     return info.samplerate, info.frames
+
+
+def convert_real_if(src, output, center, start, count):
+    """Extract the positive-frequency IF band onto Dream's 48 kHz complex grid."""
+    target_rate = 48000
+    with sf.SoundFile(src) as source, sf.SoundFile(output, mode='w', samplerate=target_rate,
+                                                  channels=2, subtype='PCM_16') as dst:
+        divisor = math.gcd(source.samplerate, target_rate)
+        up, down = target_rate // divisor, source.samplerate // divisor
+        taps, delay = channel_filter(source.samplerate, up, down)
+        # Align overlapping reads to the output grid, using samples only inside the selected window.
+        guard = math.ceil(delay / (up * down)) * down
+        block = max(1, BLOCK_FRAMES // down) * down
+        numerator, denominator = float(center).as_integer_ratio()
+        period = denominator * source.samplerate
+        clipped = 0
+        for first in range(0, count, block):
+            end = min(count, first + block)
+            left, right = max(0, first - guard), min(count, end + guard)
+            source.seek(start + left)
+            x = source.read(right - left, dtype='float64')
+            if len(x) != right - left or not np.isfinite(x).all():
+                raise ValueError('short read or non-finite sample in real IF')
+            phase0 = ((start + left) * numerator % period) / period
+            turns = phase0 + np.arange(len(x)) * (center / source.samplerate)
+            # A cosine of peak A at IF+f gives A*exp(+j2πft) after rejection of its image.
+            mixed = 2 * x * np.exp(-2j * np.pi * turns)
+            filtered = upfirdn(taps, mixed, up=up, down=down)
+            skip = ((first - left) * up + delay) // down
+            n = ((end - first) * up + down - 1) // down
+            samples = filtered[skip:skip + n]
+            pairs = np.column_stack((samples.real, samples.imag))
+            if len(pairs) != n or not np.isfinite(pairs).all():
+                raise ValueError('invalid filtered real IF samples')
+            clipped += int(np.count_nonzero((pairs < -1) | (pairs > 32767/32768)))
+            dst.write(pairs)
+        frames = dst.tell()
+        if frames != (count * up + down - 1) // down:
+            raise ValueError('incorrect real IF output duration')
+    return dict(center_hz=center, fir_passband_hz=PASSBAND_HZ, fir_stopband_hz=STOPBAND_HZ,
+                compensated_delay_output_frames=delay // down, output_rate_hz=target_rate,
+                output_frames=frames, output_frame_zero_source_frame=start, pcm16_out_of_range_components=clipped,
+                amplitude='2x real mixer, peak-A input cosine gives complex amplitude A before PCM16 saturation')
 
 
 def main():
@@ -62,6 +118,8 @@ def main():
     ap.add_argument('--seconds', type=float, default=240)
     ap.add_argument('--sample-rate', type=int, help='raw CS8 complex samples per second')
     ap.add_argument('--offset-hz', type=float, default=0., help='CS8 channel minus center, Hz')
+    ap.add_argument('--real-if-hz', type=float, help='positive carrier frequency in a mono real IF WAV, Hz. '
+                    'Extract ±5050 Hz to I/Q. A cosine of peak A produces complex amplitude A.')
     ap.add_argument('--mlc-iterations', type=int, choices=range(5),
                     help='Dream multi-level channel decoder iterations (0–4); omit to use its configuration')
     ap.add_argument('--reception-profile', choices=RECEPTION_PROFILES,
@@ -74,13 +132,15 @@ def main():
         ap.error('--offset-hz and --sample-rate on this command require raw CS8. '
                  'Use extract_iq_channel.py to tune a channel from a stereo IQ WAV.')
     try:
-        rate, frames = input_info(src, args.sample_rate)
+        rate, frames = input_info(src, args.sample_rate, args.real_if_hz)
     except (OSError, ValueError) as error:
         ap.error(str(error))
     start = round(args.start * rate)
     if start >= frames:
         ap.error('window begins past end of input')
     count = min(round(args.seconds * rate), frames - start)
+    if count == 0:
+        ap.error('window contains zero source samples')
     out = Path(args.outdir).resolve()
     out.mkdir(parents=True, exist_ok=False)  # never reuse an incomplete cache
     meta = dict(source=str(src), source_bytes=src.stat().st_size,
@@ -106,6 +166,8 @@ def main():
     try:
         if src.suffix.lower() == '.cs8':
             convert_cs8(src, wav, rate, 48000, args.offset_hz, start, count)
+        elif args.real_if_hz is not None:
+            meta['real_if'] = convert_real_if(src, wav, args.real_if_hz, start, count)
         else:
             with sf.SoundFile(src) as f:
                 f.seek(start)

@@ -188,7 +188,32 @@ def normalize_event(section, row, report, words):
                 fixed_bits=fixed, inputs=inputs)
 
 
-def summarize(slots):
+def direct_fixed_counts(slots):
+    """Compare uniquely fixed bits of direct checks with the received octets in this projection."""
+    predictions = defaultdict(set)
+    observed = {}
+    for row in slots:
+        octets = row["octets"].split()
+        for event in row["events"]:
+            if event["kind"] != "direct_check":
+                continue
+            for bit_string, value in event["fixed_bits"].items():
+                bit = int(bit_string)
+                coordinate = (row["slot"], bit)
+                predictions[coordinate].add(value)
+                octet = octets[bit // 8]
+                if octet not in ("??", "--"):
+                    observed[coordinate] = (int(octet, 16) >> (7 - bit % 8)) & 1
+    fixed = {coord: next(iter(values)) for coord, values in predictions.items() if len(values) == 1}
+    compared = fixed.keys() & observed.keys()
+    matching = sum(fixed[coord] == observed[coord] for coord in compared)
+    return dict(unique_direct_fixed_bits=len(fixed), unique_direct_fixed_bits_checked=len(compared),
+                unique_direct_fixed_bits_matching=matching, unique_direct_fixed_bits_mismatching=len(compared) - matching,
+                unique_direct_fixed_bits_unavailable=len(fixed) - len(compared),
+                unique_conflicting_direct_bits=len(predictions) - len(fixed))
+
+
+def summarize(slots, *, version=1):
     counts = {name: sum(row[name] for row in slots) for name in BIT_COUNTS}
     counts.update(slots=len(slots), word_erasures=sum(row["word_erased"] for row in slots),
                   rule_events=0, direct_check_events=0, conditional_events=0,
@@ -211,14 +236,18 @@ def summarize(slots):
                 counts["conditional_events"] += 1
                 for bit, value in event["fixed_bits"].items():
                     conditional[slot, int(bit)].add(value)
+    if version == 2:
+        counts.update(direct_fixed_counts(slots))
     return counts | dict(events_by_outcome=dict(outcomes), unique_target_bits=len(targets),
                          unique_direct_checked_bits=len(checked),
                          unique_conditional_fixed_bits=sum(len(v) == 1 for v in conditional.values()),
                          unique_conflicting_conditional_bits=sum(len(v) > 1 for v in conditional.values()))
 
 
-def bit_evidence(projection):
+def bit_evidence(projection, *, version=1):
     """Return a new report. Conditional predictions never change the observed octets."""
+    if type(version) is not int or version not in (1, 2):
+        raise ValueError("unsupported EVS bit-evidence version")
     slots, words = projected_slots(projection)
     for section, expected in field_sections(projection["slots"]).items():
         report = projection.get(section)
@@ -236,13 +265,23 @@ def bit_evidence(projection):
                 slots[s]["core_history_abstention"] = row["reason"]
                 continue
             slots[s]["events"].append(normalize_event(section, row, report, words))
-    return dict(format="kcbs-evs-bit-evidence-v1", counter=projection["counter"], total=summarize(slots),
-                by_position={str(p): summarize(slots[p - 1::4]) for p in range(1, 5)}, slots=slots)
+    result = dict(format=f"kcbs-evs-bit-evidence-v{version}", counter=projection["counter"],
+                  total=summarize(slots, version=version),
+                  by_position={str(p): summarize(slots[p - 1::4], version=version) for p in range(1, 5)}, slots=slots)
+    if version == 2:
+        result["direct_check_count_basis"] = (
+            "unique_direct_checked_bits counts observed bit positions covered by field membership checks. "
+            "unique_direct_fixed_bits counts positions where a direct rule's allowed values all give one "
+            "bit value and all rules fixing that bit agree. Checked fixed bits use the same projection's "
+            "received octets. Independent verification requires a separate source.")
+    return result
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("projection", help="project_evs_group.py --field-checks JSON, or - for stdin")
+    parser.add_argument("--version", choices=(1, 2), type=int, default=1,
+                        help="evidence format, with individual directly fixed bit counts in version 2")
     args = parser.parse_args()
     try:
         if args.projection == "-":
@@ -250,7 +289,7 @@ def main():
         else:
             with Path(args.projection).open(encoding="utf-8") as stream:
                 projection = json.load(stream)
-        result = bit_evidence(projection)
+        result = bit_evidence(projection, version=args.version)
     except (OSError, ValueError, TypeError, KeyError) as error:
         parser.exit(2, f"{parser.prog}: {error}\n")
     print(json.dumps(result, indent=2, allow_nan=False))

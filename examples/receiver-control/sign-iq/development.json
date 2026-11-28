@@ -1,0 +1,150 @@
+{
+  "format": "sign-iq-development-v1",
+  "tests": {
+    "stereo_signed_int16": true,
+    "stereo_float32_signed_zeros": true,
+    "nonfinite_rejected": true
+  },
+  "quantizer_sha256": "0d4dafb8c655b4dd5dab503dcc903cb5f42449add325b01fdad7d6022602243c",
+  "receiver_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "demod_sha256": "3bf09f33654b96b1f186effb61016cff99e8cb8a3ca5d9aff626c476afd95828",
+  "settings": {
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "mlciter": 1,
+    "offset_hz": 0,
+    "start": 0,
+    "finite_input": true
+  },
+  "calibration": {
+    "source": "examples/nov28/iq-holdout/6140.wav",
+    "asset_sha256": "d8c0c3e655399d40b7e53bc86e1f4bccf632ee0f9ab19fbeab57eeeb9c48ed17",
+    "original_seconds_half_open": [
+      154,
+      176
+    ],
+    "sample_rate_hz": 12000,
+    "sample_pairs": 264000,
+    "sign_wav_sha256": "5ba785e2ff392e3803ceff9063c6d1dfc5a6f030d71e55ea6cb4f8741bddbf88",
+    "reference": {
+      "status": "finished",
+      "eof": true,
+      "raw_msc_bytes": 35868,
+      "msc_sha256": "2d266cde9cd7a5be8baf1d5d2e8f52b326a2414de14f20df5760b708acd4e363",
+      "msc_rows": 49,
+      "packet_crc_checks": 196,
+      "physical_packets_crc": 196,
+      "physical_packets_crc_and_header": 196,
+      "native_complete_dus": 49,
+      "consecutive_native_groups": 16,
+      "stock_assigned_crc_good_packets": 196,
+      "stock_complete_dus": 49,
+      "stock_complete_groups": 16
+    },
+    "sign": {
+      "status": "no_msc_output",
+      "eof": true,
+      "raw_msc_bytes": 0,
+      "msc_sha256": null,
+      "msc_rows": 0,
+      "packet_crc_checks": 0,
+      "physical_packets_crc": 0,
+      "physical_packets_crc_and_header": 0,
+      "native_complete_dus": 0,
+      "consecutive_native_groups": 0,
+      "stock_assigned_crc_good_packets": 0,
+      "stock_complete_dus": 0,
+      "stock_complete_groups": 0
+    },
+    "coordinate_agreement": {
+      "stock_packet_bodies": {
+        "shared": 0,
+        "exact": 0,
+        "different": 0,
+        "reference_only": 196,
+        "sign_only": 0
+      },
+      "stock_dus": {
+        "shared": 0,
+        "exact": 0,
+        "different": 0,
+        "reference_only": 49,
+        "sign_only": 0
+      },
+      "direct_native_group_wires": {
+        "shared": 0,
+        "exact": 0,
+        "different": 0,
+        "reference_only": 16,
+        "sign_only": 0
+      }
+    },
+    "published_reference_du_sha256": "d2277e56146fbfac045790c95ff3d43481e686ff32f169b0312f19911902db03"
+  },
+  "secondary_calibration": {
+    "source": "examples/receiver-control/on-air/3205kHz-480-540s-iq12.flac",
+    "asset_sha256": "31d38a1b0cb94726f6f1a50f8a3b9eeb1c8a3e1181f6dfe562cae16861fe3c63",
+    "original_seconds_half_open": [
+      480,
+      540
+    ],
+    "sample_rate_hz": 12000,
+    "sample_pairs": 720000,
+    "sign_wav_sha256": "5f6c4ff7144105c8d00de66cf5c9ba97f998b356506d7d390bc6b36e60eb8253",
+    "reference": {
+      "status": "finished",
+      "eof": true,
+      "raw_msc_bytes": 105408,
+      "msc_sha256": "5baede8e3dd42873fbf9ebe53fc16dce90a17f512947c1591f6dbf7de3f40af2",
+      "msc_rows": 144,
+      "packet_crc_checks": 576,
+      "physical_packets_crc": 344,
+      "physical_packets_crc_and_header": 344,
+      "native_complete_dus": 59,
+      "consecutive_native_groups": 7,
+      "stock_assigned_crc_good_packets": 155,
+      "stock_complete_dus": 35,
+      "stock_complete_groups": 7
+    },
+    "sign": {
+      "status": "no_msc_output",
+      "eof": true,
+      "raw_msc_bytes": 0,
+      "msc_sha256": null,
+      "msc_rows": 0,
+      "packet_crc_checks": 0,
+      "physical_packets_crc": 0,
+      "physical_packets_crc_and_header": 0,
+      "native_complete_dus": 0,
+      "consecutive_native_groups": 0,
+      "stock_assigned_crc_good_packets": 0,
+      "stock_complete_dus": 0,
+      "stock_complete_groups": 0
+    },
+    "coordinate_agreement": {
+      "stock_packet_bodies": {
+        "shared": 0,
+        "exact": 0,
+        "different": 0,
+        "reference_only": 155,
+        "sign_only": 0
+      },
+      "stock_dus": {
+        "shared": 0,
+        "exact": 0,
+        "different": 0,
+        "reference_only": 35,
+        "sign_only": 0
+      },
+      "direct_native_group_wires": {
+        "shared": 0,
+        "exact": 0,
+        "different": 0,
+        "reference_only": 7,
+        "sign_only": 0
+      }
+    },
+    "published_reference_msc_sha256": "5baede8e3dd42873fbf9ebe53fc16dce90a17f512947c1591f6dbf7de3f40af2"
+  }
+}
