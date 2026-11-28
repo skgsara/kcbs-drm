@@ -1,0 +1,152 @@
+{
+  "protocol_sha256": "00c48ca7c68b66250ab3afc8edbfc56347bd6d8e9009b0c15b6c5853ec8c1d6a",
+  "old_mode_packet_archive_sha256": "99ed1273b814f55b9f190f66045d5c479cb1fa9b48e8ee6e72b9bc2d5f30a6b6",
+  "am_sha256": "aba74efd3bf82bd43c52adb866880ff3f9a3600839e9e34688bf79f5e73aabda",
+  "wrong_date_am_sha256": "82db89e4448fb69d9c82dab2edcb5b005226c5def067fe246d069934620dfa5f",
+  "origin_tick": 131607852,
+  "slot_count": 11800,
+  "received_modes": 11700,
+  "train_mode_slots": 4440,
+  "train_exact_codes": 24,
+  "trained_top_five_groups": 5,
+  "train_code_counts": {
+    "50": 352,
+    "51": 343,
+    "52": 350,
+    "53": 523,
+    "58": 458,
+    "59": 540,
+    "5a": 382,
+    "5b": 119,
+    "60": 132,
+    "61": 85,
+    "62": 42,
+    "63": 81,
+    "74": 47,
+    "75": 7,
+    "76": 757,
+    "77": 116,
+    "98": 1,
+    "99": 90,
+    "9a": 1,
+    "9b": 5,
+    "f8": 3,
+    "fa": 1,
+    "fe": 3,
+    "ff": 2
+  },
+  "frozen_templates_sha256": "d5a2d263902dd9aeb98ddabcc517a97b8338faba55c8e32e6b5f16a234c6010e",
+  "known_lag_seconds": -3.12,
+  "training": {
+    "possible_bins": 450,
+    "used_bins": 443,
+    "used_slots": 4429,
+    "coverage_pass": true,
+    "score": 0.5521504371643531,
+    "halves": [
+      0.5149612317101525,
+      0.5898734736337929
+    ],
+    "bins_per_half": [
+      224,
+      219
+    ]
+  },
+  "held_out": {
+    "possible_bins": 450,
+    "used_bins": 450,
+    "used_slots": 4495,
+    "coverage_pass": true,
+    "score": 0.46049363962764406,
+    "halves": [
+      0.5199638296910379,
+      0.4076657152784375
+    ],
+    "bins_per_half": [
+      225,
+      225
+    ],
+    "displacement_count": 361,
+    "displacement_q99": 0.08801376212676866,
+    "displacement_max": 0.11813884224947829,
+    "pass_all": true
+  },
+  "wrong_date_controls": [
+    {
+      "nominal_seconds": [
+        120,
+        145
+      ],
+      "different_date_AM_at_second": 1,
+      "true": {
+        "possible_bins": 125,
+        "used_bins": 125,
+        "used_slots": 1250,
+        "coverage_pass": true,
+        "score": 0.4940958149562829,
+        "halves": [
+          0.5227117680689948,
+          0.4762138811016761
+        ],
+        "bins_per_half": [
+          63,
+          62
+        ]
+      },
+      "wrong_date": {
+        "possible_bins": 125,
+        "used_bins": 125,
+        "used_slots": 1250,
+        "coverage_pass": true,
+        "score": -0.05222055412278308,
+        "halves": [
+          -0.08659377416432282,
+          -0.03029244917118255
+        ],
+        "bins_per_half": [
+          63,
+          62
+        ]
+      }
+    },
+    {
+      "nominal_seconds": [
+        175,
+        200
+      ],
+      "different_date_AM_at_second": 30,
+      "true": {
+        "possible_bins": 125,
+        "used_bins": 125,
+        "used_slots": 1245,
+        "coverage_pass": true,
+        "score": 0.4248842733180429,
+        "halves": [
+          0.5007339708401226,
+          0.28130194707585215
+        ],
+        "bins_per_half": [
+          63,
+          62
+        ]
+      },
+      "wrong_date": {
+        "possible_bins": 125,
+        "used_bins": 125,
+        "used_slots": 1245,
+        "coverage_pass": true,
+        "score": 0.08911550484478344,
+        "halves": [
+          0.16823005206388453,
+          0.08747482023603542
+        ],
+        "bins_per_half": [
+          63,
+          62
+        ]
+      }
+    }
+  ],
+  "mean_true_minus_wrong_date": 0.44104256877616277,
+  "passed": true
+}

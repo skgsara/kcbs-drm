@@ -1,0 +1,119 @@
+{
+  "status": "tested",
+  "origin_tick": 131742453,
+  "template_sha256": "d5a2d263902dd9aeb98ddabcc517a97b8338faba55c8e32e6b5f16a234c6010e",
+  "source_packets_sha256": "47f2ac51621cc748c937b872732273ae832606e1e524057fd0a9de5572d3c28b",
+  "source_am_sha256": "c9215072c875deea703b21b0ea4a9072ccbb3ec09ab720e87a7fda404207049a",
+  "nominal_slot_span_s": 296.8,
+  "received_modes": 14840,
+  "lag_s": -5.26,
+  "candidate_lags": 1201,
+  "training": {
+    "possible_bins": 195,
+    "used_bins": 194,
+    "used_slots": 1938,
+    "coverage_pass": true,
+    "score": 0.45151522067646355,
+    "halves": [
+      0.46684967279529693,
+      0.4375493575629807
+    ],
+    "bins_per_half": [
+      97,
+      97
+    ]
+  },
+  "training_passed": true,
+  "results": [
+    {
+      "nominal_time": [
+        76,
+        114
+      ],
+      "AM_sample_time": [
+        70.74,
+        108.74
+      ],
+      "measured": {
+        "possible_bins": 190,
+        "used_bins": 184,
+        "used_slots": 1810,
+        "coverage_pass": true,
+        "score": 0.2883910959947755,
+        "halves": [
+          0.30755761979900625,
+          0.27393147633640413
+        ],
+        "bins_per_half": [
+          95,
+          89
+        ],
+        "displacement_count": 147,
+        "displacement_q99": 0.10813017218408233,
+        "displacement_max": 0.12469477568586074,
+        "pass_all": true
+      },
+      "supports_alignment": true
+    },
+    {
+      "nominal_time": [
+        138,
+        201
+      ],
+      "AM_sample_time": [
+        132.74,
+        195.74
+      ],
+      "measured": {
+        "possible_bins": 315,
+        "used_bins": 180,
+        "used_slots": 1716,
+        "coverage_pass": false,
+        "score": 0.16121415731669497,
+        "halves": [
+          0.024588825833349506,
+          0.14205136450508007
+        ],
+        "bins_per_half": [
+          67,
+          113
+        ],
+        "displacement_count": 145,
+        "displacement_q99": 0.16745677881239257,
+        "displacement_max": 0.1816277105498362,
+        "pass_all": false
+      },
+      "supports_alignment": false
+    },
+    {
+      "nominal_time": [
+        225,
+        287
+      ],
+      "AM_sample_time": [
+        219.74,
+        281.74
+      ],
+      "measured": {
+        "possible_bins": 310,
+        "used_bins": 270,
+        "used_slots": 2650,
+        "coverage_pass": true,
+        "score": 0.015816068123433794,
+        "halves": [
+          -0.005320883493287682,
+          -0.0012924924811452904
+        ],
+        "bins_per_half": [
+          140,
+          130
+        ],
+        "displacement_count": 217,
+        "displacement_q99": 0.07236522748922303,
+        "displacement_max": 0.0901141059430462,
+        "pass_all": false
+      },
+      "supports_alignment": false
+    }
+  ]
+}

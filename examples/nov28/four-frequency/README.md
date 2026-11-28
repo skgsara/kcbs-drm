@@ -20,6 +20,12 @@ The group recorded another 45 seconds, **09:42:39–09:43:24 Beijing time (01:42
 
 This check began 19 minutes 49 seconds after the earlier three-minute recording ended. The report gives no correlation scores, lag search or acceptance threshold for the later window. It leaves open whether the programmes differed or the comparison lacked enough usable audio. Keep the earlier −5.79 s file offset with the earlier recording.
 
+## The group's 10:02:39 Beijing recording
+
+The group subsequently shared five-minute 6100 and 6140 kHz IQ files. They report a programme match in the first 126 seconds, through **10:04:45 Beijing (02:04:45 UTC)**. Our independent check compared the directly received EVS mode bytes with the frequency content of the AM audio. One held-out 38-second window inside that interval passed. Two windows after 126 seconds did not pass. [Source hashes, separate interval replays and programme scores](member-100239/README.md)
+
+## Comparing wideband recordings
+
 Two sufficiently wide Airspy HF recordings can contain all four channels. The lower pair is 45 kHz apart and the upper pair is 40 kHz apart. When those pairs are recorded on different receivers, retain both start times, sample rates and channel frequencies. Independently tune each RF channel. The two AM outputs can then be aligned by audio content; the two DRM receptions can be aligned by their transmitted packet coordinates. A common computer can start two devices with different sample clocks.
 
 ## What we could verify

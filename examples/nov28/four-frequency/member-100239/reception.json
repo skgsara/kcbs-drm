@@ -1,0 +1,142 @@
+{
+  "reported_capture_start_utc": "2026-11-28T02:02:39Z",
+  "nominal_complex_sample_rate_hz": 12000,
+  "format": "Headerless little-endian float32 I,Q; the UTC acquisition time is member-reported.",
+  "samples_per_source": 3600000,
+  "source_files": [
+    {
+      "name": "6140-12k.cf32",
+      "bytes": 28800000,
+      "sha256": "0972ce82793b2559d6c21299f555b4db0776f7b8e349da3e6dabf1426537a7a0",
+      "sha1": "fc3374bb9bb8ad5a0272a22ba3b54ed3b57d6f40"
+    },
+    {
+      "name": "6100-12k.cf32",
+      "bytes": 28800000,
+      "sha256": "1ac44532df79af572e19fc87a6fb1a1b5b6410bedd13832d519ab7665d9c4ada",
+      "sha1": "cd6928e13badf797ccbe1ccf22b069476850cc6b"
+    }
+  ],
+  "receiver_revision": "c7fab06936a3db08b36249c50b06b9ec4f5208c4",
+  "public_replay_dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "drm_splits": [
+    {
+      "source_start_sample": 0,
+      "source_end_sample_exclusive": 3600000,
+      "assigned_complete_data_units": 742,
+      "first_assigned_coordinate": [
+        43914151,
+        0
+      ],
+      "last_assigned_coordinate": [
+        43914398,
+        0
+      ],
+      "complete_counter_count": 247,
+      "complete_counter_bounds": [
+        43914151,
+        43914397
+      ],
+      "assigned_dus_matching_full_file": 742,
+      "msc_sha256": "52553b8c36ba1471219d417da39d0eb7d360c534216f1d6e105c39d6eba98a93",
+      "du_archive_sha256": "758b8180907806d47bdac165a59c11ab52be455c57178bd2db91042646370a6e"
+    },
+    {
+      "source_start_sample": 0,
+      "source_end_sample_exclusive": 1512000,
+      "assigned_complete_data_units": 307,
+      "first_assigned_coordinate": [
+        43914151,
+        0
+      ],
+      "last_assigned_coordinate": [
+        43914253,
+        0
+      ],
+      "complete_counter_count": 102,
+      "complete_counter_bounds": [
+        43914151,
+        43914252
+      ],
+      "assigned_dus_matching_full_file": 307,
+      "msc_sha256": "10d11ad60e345448e5d83b4e448300d1a64db83b86e82a193d75150091763cbc",
+      "du_archive_sha256": "1473806323c2461d6041bedfc42a4c36f288ef86fee74b6cad0f0c50e4723caa"
+    },
+    {
+      "source_start_sample": 1512000,
+      "source_end_sample_exclusive": 3600000,
+      "assigned_complete_data_units": 427,
+      "first_assigned_coordinate": [
+        43914256,
+        0
+      ],
+      "last_assigned_coordinate": [
+        43914398,
+        0
+      ],
+      "complete_counter_count": 142,
+      "complete_counter_bounds": [
+        43914256,
+        43914397
+      ],
+      "assigned_dus_matching_full_file": 427,
+      "msc_sha256": "cd1ccecec6f1363165d4b9db1e4e25cb046c1781a3d68413732723fb351e0b5a",
+      "du_archive_sha256": "90edf65a751abb9731b3bdf58c75d312362dcdff4ebcbfb2d5941d3841e80a24"
+    }
+  ],
+  "service": {
+    "id": "A00002",
+    "label": "조선중앙제2라지오방송",
+    "checks": {
+      "FAC": {
+        "observed": 747,
+        "crc_passed": 747,
+        "crc_failed": 0
+      },
+      "SDC": {
+        "observed": 250,
+        "crc_passed": 249,
+        "crc_failed": 1
+      }
+    }
+  },
+  "am": {
+    "source": "6100-12k.cf32",
+    "source_sha256": "1ac44532df79af572e19fc87a6fb1a1b5b6410bedd13832d519ab7665d9c4ada",
+    "nominal_rate_hz": 12000,
+    "complex_samples": 3600000,
+    "wav_sha256": "c9215072c875deea703b21b0ea4a9072ccbb3ec09ab720e87a7fda404207049a",
+    "audio_samples": 3600000,
+    "intervals": [
+      {
+        "start_s": 0,
+        "end_s": 126,
+        "six_second_windows": 21,
+        "informative_windows": 16,
+        "seconds_with_global_peak_near_center": 126,
+        "median_carrier_offset_hz": -54.0,
+        "median_carrier_over_sideband_bin_db": 42.71301148836397,
+        "exact_zero_iq": 0
+      },
+      {
+        "start_s": 126,
+        "end_s": 300,
+        "six_second_windows": 29,
+        "informative_windows": 18,
+        "seconds_with_global_peak_near_center": 174,
+        "median_carrier_offset_hz": -54.0,
+        "median_carrier_over_sideband_bin_db": 45.115532593601706,
+        "exact_zero_iq": 0
+      }
+    ]
+  },
+  "first_complete_group": {
+    "counter": 43914151,
+    "physically_complete_slots": 60,
+    "confirmed_direct_bits": 10560,
+    "full_clear_words": 0,
+    "word_erasures": 60
+  },
+  "received_position_one_slots": 3710,
+  "intersecting_counters_in_archived_text_supported_p1_ledgers": 0
+}

@@ -26,7 +26,11 @@ starting at 09:19:50 Beijing time. Their joint AM scoring selected the correct
 low two bits of payload bytes 24 and 27 uniquely in 3/15 and 1/15 held-out
 groups, respectively. A separate 45-second comparison at 09:42:39 Beijing
 time used 420 text-supported DRM first-position frames and left the AM/DRM
-programme match unresolved. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
+programme match unresolved. The group later shared the five-minute 10:02:39
+Beijing capture and reported alignment in its first 126 seconds. Our replay
+received 247 consecutive complete DRM groups. An independent comparison
+of DRM mode bytes with AM audio supported shared programme timing in one
+38-second window inside the reported interval. [Frequency pairs and programme comparisons](examples/nov28/four-frequency/README.md) · [Five-minute IQ replay](examples/nov28/four-frequency/member-100239/README.md)
 
 In archived IQ, the next EVS word's transmitted mode ruled out a transient
 in six position-three words and three position-four words, assuming continuous
