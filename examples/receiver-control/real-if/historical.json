@@ -1,0 +1,26 @@
+{
+  "control": "historical",
+  "source_sha256": "5cc0b4df2094a1347c0b3e0ae616e1f5305e176fdf460f3afd766fb261da9590",
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "results": {
+    "source_frames_examined": [
+      0,
+      4320000
+    ],
+    "cut_s16le_sha256": "f63cbc288a7e0492da73e3510a098e89fadef26c1c6fe5096d46b5939cc4b0a3",
+    "native_rows": 218,
+    "raw_msc_sha256": [
+      "6eea474c38f4db7aa95492998db4c96aaaea5fcb6e40d23f77eff69f2675068f",
+      "ad130fc44baad838fe0f295a130f1afc2219d0571aeb4f8778d315d3b670aeb7"
+    ],
+    "differing_rows": 2,
+    "differing_physical_packets": 8,
+    "differing_packets_with_either_crc_valid": 0,
+    "identical_assigned_packet_bodies": 816,
+    "identical_assigned_data_units": 201,
+    "sorted_counter_phase_du_sha256": "38959f438af22a8ebcbd64ea15503ab7c939ce0b8e463350bfb54892018b9809",
+    "first_counter": 43859816,
+    "last_counter": 43859888,
+    "all_three_phase_groups": 63
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "counter": 43288750,
+  "selection": "first_unregistered",
+  "seal_sha256": "b079ce56f627aead14cd511bbcc624349fe5cb0a36ee330392bd2715149e7c6f",
+  "witness_msc_sha256": "623bde0dcfaac7e1e409894e6d60f9947046fcfc22f7d2ddcd33526a7a1977db",
+  "witness_phase0_rows": [
+    45
+  ],
+  "witness_du_sha256": [
+    "a8eb35798fd4d8a65c620940181aed26f0ec9e50b89f877b827cae980e0e18e1",
+    "dde4ecd41d957589bf0be22348a2ef2b3e8e9c254af0ad33de1a1a38772bb9d8",
+    "a8d64f27dce0cad313949487ce05adcc0c56e93d4af4b6a29a946e434ae2bdf0"
+  ],
+  "whole_units_equal_to_seal": true,
+  "direct_matches": 7,
+  "direct_mismatches": 0,
+  "direct": [
+    {
+      "slot": 35,
+      "phase": 1,
+      "cycle": 3,
+      "position": 4,
+      "word_bit": 6,
+      "du_offset": 498,
+      "packet_ordinal": 2,
+      "checks": [
+        "hq_previous_core"
+      ],
+      "predicted": 0,
+      "observed": 0,
+      "excluded": 1,
+      "outcome": "match"
+    },
+    {
+      "slot": 36,
+      "phase": 1,
+      "cycle": 4,
+      "position": 1,
+      "word_bit": 6,
+      "du_offset": 6,
+      "packet_ordinal": 0,
+      "checks": [
+        "hq_previous_core"
+      ],
+      "predicted": 0,
+      "observed": 0,
+      "excluded": 1,
+      "outcome": "match"
+    },
+    {
+      "slot": 37,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "word_bit": 6,
+      "du_offset": 563,
+      "packet_ordinal": 3,
+      "checks": [
+        "hq_previous_core"
+      ],
+      "predicted": 0,
+      "observed": 0,
+      "excluded": 1,
+      "outcome": "match"
+    },
+    {
+      "slot": 38,
+      "phase": 1,
+      "cycle": 4,
+      "position": 3,
+      "word_bit": 6,
+      "du_offset": 596,
+      "packet_ordinal": 3,
+      "checks": [
+        "hq_previous_core"
+      ],
+      "predicted": 0,
+      "observed": 0,
+      "excluded": 1,
+      "outcome": "match"
+    },
+    {
+      "slot": 39,
+      "phase": 1,
+      "cycle": 4,
+      "position": 4,
+      "word_bit": 6,
+      "du_offset": 629,
+      "packet_ordinal": 3,
+      "checks": [
+        "hq_previous_core"
+      ],
+      "predicted": 0,
+      "observed": 0,
+      "excluded": 1,
+      "outcome": "match"
+    },
+    {
+      "slot": 40,
+      "phase": 2,
+      "cycle": 0,
+      "position": 1,
+      "word_bit": 6,
+      "du_offset": 2,
+      "packet_ordinal": 0,
+      "checks": [
+        "hq_previous_core"
+      ],
+      "predicted": 0,
+      "observed": 0,
+      "excluded": 1,
+      "outcome": "match"
+    },
+    {
+      "slot": 41,
+      "phase": 2,
+      "cycle": 0,
+      "position": 2,
+      "word_bit": 6,
+      "du_offset": 39,
+      "packet_ordinal": 0,
+      "checks": [
+        "hq_previous_core"
+      ],
+      "predicted": 0,
+      "observed": 0,
+      "excluded": 1,
+      "outcome": "match"
+    }
+  ],
+  "conditional": [
+    {
+      "check": "tcx_previous_core",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed_values": [
+        1
+      ],
+      "observation": "carried_unknown",
+      "fixed_bits_per_event": 1,
+      "events": 44
+    },
+    {
+      "check": "transition_tag",
+      "word_bits": [
+        8,
+        10
+      ],
+      "allowed_values": [
+        1
+      ],
+      "observation": "carried_unknown",
+      "fixed_bits_per_event": 2,
+      "events": 2
+    }
+  ],
+  "unique_conditional_fixed_bits": 48,
+  "conditional_bits_scored_against_clear_labels": 0,
+  "carried_unknown_bits": 5280,
+  "word_erasures": 60,
+  "scope": "The held-back MSC tests the directly carried bit at the same coordinate. The two inputs use disjoint samples of one RF recording. Conditional fields lack independent plaintext labels. Repeated predictions may share a mode or history."
+}

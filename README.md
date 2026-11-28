@@ -67,6 +67,13 @@ test fixes the target. Its protocol covers checks against evidence held
 back from the same broadcast and an optional comparison with a clear export.
 [Four-position milestone and target receipt](examples/nov15/validation/README.md)
 
+At counter **43288750**, two disjoint sets of recorded IQ samples each recovered all 60
+physical slots. Both receptions agreed on the 10,560 directly carried bits. The 5,280
+opaque bits per group still lack clear labels. The same receiver can now read the group's
+mono 6140 kHz recording directly using its 6 kHz intermediate frequency.
+[Disjoint-sample test and per-slot results](examples/receiver-control/sign-iq/README.md) ·
+[Mono real-IF controls](examples/receiver-control/real-if/README.md)
+
 A member's **22m48s recording at 3205 kHz** yielded 1,102 complete groups in
 the frozen receiver. A second pass recovered one additional group from the
 same IQ. Across 3205 kHz and an independent Tokyo recording at 6140 kHz,

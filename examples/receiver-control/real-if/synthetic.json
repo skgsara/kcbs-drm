@@ -1,0 +1,17 @@
+{
+  "control": "synthetic",
+  "source_sha256": "ae12fed7ed9aab2c583b6ad1aefdbd32cecc52b20adebd16a4939c9aa48931c6",
+  "dream_sha256": "ab62ff02da57356f27bfe4f64ae9ed62a3c48a129378d49438008f0272e29467",
+  "results": {
+    "source_pairs": 3340800,
+    "mono_gain": 0.5,
+    "mono_wav_sha256": "bfee389c98b3673e8454b2f524f89e9c47fc27c2c377027aeb44b5ce3f6de66f",
+    "identical_native_msc_sha256": "53e043ffbc837c0ef321f8bc3ac02992414e3906ce5021a52227df2c639e3c28",
+    "records": 33,
+    "scored_phases": 120,
+    "complete_scored_data_units": 100,
+    "packet_bodies_equal_to_sender": 424,
+    "supplied_words_equal_to_sender": 2113,
+    "missing_or_partial_words": 287
+  }
+}

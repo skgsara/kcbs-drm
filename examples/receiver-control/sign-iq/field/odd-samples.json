@@ -1,0 +1,23 @@
+{
+  "source": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+  "source_rate_hz": 912000,
+  "file_start_sample": 0,
+  "absolute_input_range": [
+    142272000,
+    164160000
+  ],
+  "read_byte_range_in_file": [
+    284544000,
+    328320000
+  ],
+  "source_window_sha256": "1bf85cdabfc42c1b66e6e93e126acf6908930711c4ac278596c95671a6feffa3",
+  "parity": "odd",
+  "selected_stride_pairs": 2,
+  "output": "odd.cs8",
+  "output_rate_hz": 456000,
+  "output_sample_pairs": 10944000,
+  "first_absolute_pair": 142272001,
+  "last_absolute_pair": 164159999,
+  "output_sha256": "0585a6d7bc3eae57507ecdaa64f8d9a014eaa5ae0dd88b6155dc24ca573989eb",
+  "sampling": "literal alternate signed I,Q pairs; no anti-alias filter"
+}
