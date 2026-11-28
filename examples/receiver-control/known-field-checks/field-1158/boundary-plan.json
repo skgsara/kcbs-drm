@@ -1,0 +1,119 @@
+{
+  "abstentions": {
+    "current_mode_is_not_hq": 36,
+    "previous_group_missing_or_repeated": 17
+  },
+  "consecutive_native_edges": 43,
+  "forecast_count": 7,
+  "forecasts": [
+    {
+      "always_zero": 0,
+      "counter": 43871936,
+      "current_p1_top6": 62,
+      "phase0_rows": [
+        8,
+        11
+      ],
+      "predicted": 0,
+      "previous_p4_top5": 31,
+      "shifted_abstention": "previous_group_missing_or_repeated",
+      "shifted_c_minus_2": null,
+      "shifted_previous_p4_top5": null
+    },
+    {
+      "always_zero": 0,
+      "counter": 43871947,
+      "current_p1_top6": 62,
+      "phase0_rows": [
+        41,
+        44
+      ],
+      "predicted": 0,
+      "previous_p4_top5": 31,
+      "shifted_abstention": "previous_group_missing_or_repeated",
+      "shifted_c_minus_2": null,
+      "shifted_previous_p4_top5": null
+    },
+    {
+      "always_zero": 0,
+      "counter": 43871948,
+      "current_p1_top6": 62,
+      "phase0_rows": [
+        44,
+        47
+      ],
+      "predicted": 0,
+      "previous_p4_top5": 31,
+      "shifted_abstention": null,
+      "shifted_c_minus_2": 0,
+      "shifted_previous_p4_top5": 31
+    },
+    {
+      "always_zero": 0,
+      "counter": 43871984,
+      "current_p1_top6": 62,
+      "phase0_rows": [
+        152,
+        155
+      ],
+      "predicted": 0,
+      "previous_p4_top5": 31,
+      "shifted_abstention": null,
+      "shifted_c_minus_2": 0,
+      "shifted_previous_p4_top5": 31
+    },
+    {
+      "always_zero": 0,
+      "counter": 43871987,
+      "current_p1_top6": 62,
+      "phase0_rows": [
+        161,
+        164
+      ],
+      "predicted": 0,
+      "previous_p4_top5": 31,
+      "shifted_abstention": "previous_group_missing_or_repeated",
+      "shifted_c_minus_2": null,
+      "shifted_previous_p4_top5": null
+    },
+    {
+      "always_zero": 0,
+      "counter": 43872020,
+      "current_p1_top6": 62,
+      "phase0_rows": [
+        260,
+        263
+      ],
+      "predicted": 0,
+      "previous_p4_top5": 31,
+      "shifted_abstention": null,
+      "shifted_c_minus_2": 1,
+      "shifted_previous_p4_top5": 14
+    },
+    {
+      "always_zero": 0,
+      "counter": 43872025,
+      "current_p1_top6": 62,
+      "phase0_rows": [
+        275,
+        278
+      ],
+      "predicted": 0,
+      "previous_p4_top5": 31,
+      "shifted_abstention": null,
+      "shifted_c_minus_2": 0,
+      "shifted_previous_p4_top5": 31
+    }
+  ],
+  "format": "kcbs-native-hq-boundary-plan-v1",
+  "source": {
+    "first_intact_counter": 43871935,
+    "intact_group_occurrences": 60,
+    "last_intact_counter": 43872031,
+    "msc_sha256": "30aceedffc695ebb9d1bcd236d9280ac333aea132a291c1a1f380c077bf24614",
+    "native_rows": 299,
+    "repeated_anchor_rows": {},
+    "unique_intact_groups": 60
+  },
+  "target_word_bit": 6
+}
