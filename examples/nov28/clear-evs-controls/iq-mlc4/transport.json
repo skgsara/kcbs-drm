@@ -1,0 +1,457 @@
+{
+  "format": "drm-3205-360-420-transport-v1",
+  "comparison_basis": "Both receiver runs use the same station recording.",
+  "msc_sha256": {
+    "mlc1": "67200f39f7a03e580c311910b29124ed4cccb19e6e90ef0af34cd8c9d4a6c2ed",
+    "mlc4": "e3d44c7da7d4c8e4001933aeb613e7aee3b6a98d70cadb311b221a56e064664f"
+  },
+  "primary_predictions_sha256": "7de2fbe6418376526be48c23834ea7278fe706a19db4dc45f94ed5e9c8e0102e",
+  "mlc1": {
+    "assigned_record_observations": 50,
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "native_rows": 144,
+    "physical_good_packet_occurrences": 378,
+    "accepted_packets": 189,
+    "accepted_dus": 41,
+    "quarantined_phases": [],
+    "native_stats": {
+      "msc_rows": 144,
+      "packet_crc_checks": 576,
+      "physical_packets_crc": 378,
+      "physical_packets_crc_and_header": 378,
+      "native_complete_dus": 66
+    },
+    "complete_native_groups": 6,
+    "first_chronological_native_group": 43873081
+  },
+  "mlc4": {
+    "assigned_record_observations": 55,
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "native_rows": 144,
+    "physical_good_packet_occurrences": 381,
+    "accepted_packets": 209,
+    "accepted_dus": 46,
+    "quarantined_phases": [],
+    "native_stats": {
+      "msc_rows": 144,
+      "packet_crc_checks": 576,
+      "physical_packets_crc": 381,
+      "physical_packets_crc_and_header": 381,
+      "native_complete_dus": 68
+    },
+    "complete_native_groups": 8,
+    "first_chronological_native_group": 43873081
+  },
+  "assigned_counters": {
+    "mlc1": 28,
+    "mlc4": 29,
+    "shared": 28,
+    "gained": [
+      43873094
+    ],
+    "lost": []
+  },
+  "assigned_complete_groups": {
+    "mlc1": 6,
+    "mlc4": 8,
+    "shared": 6,
+    "gained": [
+      43873090,
+      43873094
+    ],
+    "lost": []
+  },
+  "native_complete_groups": {
+    "mlc1": 6,
+    "mlc4": 8,
+    "shared": 6,
+    "gained": [
+      43873090,
+      43873094
+    ],
+    "lost": []
+  },
+  "packets": {
+    "mlc1": 189,
+    "mlc4": 209,
+    "counts": {
+      "equal": 189,
+      "added": 20,
+      "lost": 0,
+      "conflicting": 0
+    },
+    "changes": [
+      {
+        "coordinate": [
+          43873090,
+          1,
+          0
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "95f4691542d68c36d1aae1f933c46e82fb9a9f89e26e42775cc2535111b45324",
+        "mlc4_transmitted_crc": "ee50",
+        "mlc4_native_rows": [
+          60
+        ],
+        "same_valid_wire_anywhere_in_mlc1": false
+      },
+      {
+        "coordinate": [
+          43873090,
+          1,
+          1
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "4c57bbe154432096bc8299355ef3f0efe83d853930be5e157bc8edbaa55a9ed8",
+        "mlc4_transmitted_crc": "e01d",
+        "mlc4_native_rows": [
+          60
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873090,
+          1,
+          2
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "ad9b53444d91535e828af7d5bb197b4f7691718fdf8672124fd429d09ef8b3ce",
+        "mlc4_transmitted_crc": "7ac6",
+        "mlc4_native_rows": [
+          60
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873090,
+          1,
+          3
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "5560644f492dc4c0ef393b3cb8db99256281af2651910efa3806938462426835",
+        "mlc4_transmitted_crc": "b9bf",
+        "mlc4_native_rows": [
+          60
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873090,
+          2,
+          0
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "45938c075ce1c21de319acaf89c68a96f4ed3df237aa1fa634344b216ba7b2f5",
+        "mlc4_transmitted_crc": "b753",
+        "mlc4_native_rows": [
+          61
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873090,
+          2,
+          1
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "b0b912700aac9e93b12e9263ae27d0d80d426c9311796990b79384f8eee3dee6",
+        "mlc4_transmitted_crc": "34f3",
+        "mlc4_native_rows": [
+          61
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873090,
+          2,
+          2
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "8ccfe61ea0a5b083abea21f347642f4cad6f47a3fe216471208120fae7916781",
+        "mlc4_transmitted_crc": "b9fd",
+        "mlc4_native_rows": [
+          61
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873090,
+          2,
+          3
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "2a48efd6c5c3ce48099f55cee5711539b6fc95ee31644f13f81e06586d959552",
+        "mlc4_transmitted_crc": "4ce1",
+        "mlc4_native_rows": [
+          61
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          0,
+          0
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "eb0f1821831be7e96784fac90821bbbac5d6bca59dab9a8dba192fbfd5e36bcd",
+        "mlc4_transmitted_crc": "1acb",
+        "mlc4_native_rows": [
+          71
+        ],
+        "same_valid_wire_anywhere_in_mlc1": false
+      },
+      {
+        "coordinate": [
+          43873094,
+          0,
+          1
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "262cfbe8cd90d9a3e746a7edbcd38b90a7dd0736fecc4d639b75cb7e0bcffb10",
+        "mlc4_transmitted_crc": "cf60",
+        "mlc4_native_rows": [
+          71
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          0,
+          2
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "60f197b88219966a89cb48f409c857296676c7d2960d53be976e0aa62f8c34a1",
+        "mlc4_transmitted_crc": "cfbe",
+        "mlc4_native_rows": [
+          71
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          0,
+          3
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "cbaa6b06ed9ac6e88bc5140084fd6d9012632d3b0d4cf2bd85d3875e03d58477",
+        "mlc4_transmitted_crc": "9322",
+        "mlc4_native_rows": [
+          71
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          1,
+          0
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "3a8a26f7ab5220fcca872722953fd71c6361895ee7b8301f11659f99a1382bbd",
+        "mlc4_transmitted_crc": "8b6a",
+        "mlc4_native_rows": [
+          72
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          1,
+          1
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "396e4b2229cc9c0298f18ca23be0b797c21bda52ea25c19f9ec5a288bce776e0",
+        "mlc4_transmitted_crc": "7a22",
+        "mlc4_native_rows": [
+          72
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          1,
+          2
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "6625a29ac1a58aa85c945ce45c5ab568d51487623f168d06bf9f1bd00ed0aa7d",
+        "mlc4_transmitted_crc": "add4",
+        "mlc4_native_rows": [
+          72
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          1,
+          3
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "39c08f47c19ebe3087ff935367a6c1bfeef15906742f9c697173f8e172328b3c",
+        "mlc4_transmitted_crc": "4be7",
+        "mlc4_native_rows": [
+          72
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          2,
+          0
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "2fa8105a03a9a8a89fc9a1118fff8474448477f88251ae4d9bdd952e7cc89ff4",
+        "mlc4_transmitted_crc": "e10b",
+        "mlc4_native_rows": [
+          73
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          2,
+          1
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "fc37482458f3b530d028b3dd01c6cc19421792fec7c204d7b8c00c06d67a1703",
+        "mlc4_transmitted_crc": "4e62",
+        "mlc4_native_rows": [
+          73
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          2,
+          2
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "fe2b1ec53872752155403b77f33546e4dc35ea3e838dd3680a638183112d5083",
+        "mlc4_transmitted_crc": "9d9a",
+        "mlc4_native_rows": [
+          73
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      },
+      {
+        "coordinate": [
+          43873094,
+          2,
+          3
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "9082e4a5f55954ae9c221206b16860d0097552e9830a2b8af0229439737a960c",
+        "mlc4_transmitted_crc": "bbf2",
+        "mlc4_native_rows": [
+          73
+        ],
+        "same_valid_wire_anywhere_in_mlc1": true
+      }
+    ]
+  },
+  "units": {
+    "mlc1": 41,
+    "mlc4": 46,
+    "counts": {
+      "equal": 41,
+      "added": 5,
+      "lost": 0,
+      "conflicting": 0
+    },
+    "changes": [
+      {
+        "coordinate": [
+          43873090,
+          1
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "93834ce352cac1a4f663a41d0c085d9df761957085f23bfc4b616f1aeccede57",
+        "mlc4_transmitted_crc": "a290"
+      },
+      {
+        "coordinate": [
+          43873090,
+          2
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "8d006b7a8a71baa9a558298b7d6ac13b77f9e4cb32531d5ad9d426eddb24c3f5",
+        "mlc4_transmitted_crc": "6da8"
+      },
+      {
+        "coordinate": [
+          43873094,
+          0
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "c273dea0cf5a01dc389e47d523723bc36c926d29475c5913707d63acd5d9865a",
+        "mlc4_transmitted_crc": "b42e"
+      },
+      {
+        "coordinate": [
+          43873094,
+          1
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "6d3f89370f9b9d8e7d548f2e3d636c9b163590054752f09e8d05328a0d752be4",
+        "mlc4_transmitted_crc": "f303"
+      },
+      {
+        "coordinate": [
+          43873094,
+          2
+        ],
+        "status": "added",
+        "mlc1_sha256": null,
+        "mlc4_sha256": "1ab594dc85de1ed2ce2279a5029a9da588b3cb8661f68491c389b9a1c8ba6a0f",
+        "mlc4_transmitted_crc": "9ac0"
+      }
+    ]
+  },
+  "exposure": {
+    "frozen_history_gzip_sha256": "42985e72a35104e6590acc6a2f5a6e006b723cbcb3558d9ea99d5f41ffe82587",
+    "previous_forecasts_sha256": "f4b7fcafab4a050ee236c69029533e0f4a793140c0aaed0554a4da811bd59017",
+    "union_count": 15021,
+    "mlc1_overlap": [],
+    "mlc4_overlap": []
+  }
+}
