@@ -1,0 +1,286 @@
+{
+  "forecast_sha256": "fe1ea5918d5a302ca09bddaeef0e20fbc1a8e3b0fe98befd128e7e5592539b2b",
+  "format": "kcbs-native-hq-boundary-score-v1",
+  "methods": {
+    "always_zero": {
+      "match": 7,
+      "mismatch": 0,
+      "unavailable": 0
+    },
+    "predicted": {
+      "match": 7,
+      "mismatch": 0,
+      "unavailable": 0
+    },
+    "shifted_c_minus_2": {
+      "match": 3,
+      "mismatch": 1,
+      "unavailable": 3
+    }
+  },
+  "reference": {
+    "first_intact_counter": 43871935,
+    "intact_group_occurrences": 60,
+    "last_intact_counter": 43872031,
+    "msc_sha256": "30aceedffc695ebb9d1bcd236d9280ac333aea132a291c1a1f380c077bf24614",
+    "native_rows": 299,
+    "repeated_anchor_rows": {},
+    "unique_intact_groups": 60
+  },
+  "reference_mode": "sealed_source",
+  "rows": [
+    {
+      "counter": 43871936,
+      "native_witnesses": [
+        {
+          "counter": 43871935,
+          "du_crc": "232e",
+          "mode_du_offset": 629,
+          "packet_crc": "8e98",
+          "packet_ordinal": 3,
+          "phase": 2,
+          "row": 10
+        },
+        {
+          "counter": 43871936,
+          "du_crc": "97ef",
+          "mode_du_offset": 2,
+          "packet_crc": "bdfb",
+          "packet_ordinal": 0,
+          "phase": 0,
+          "row": 11
+        }
+      ],
+      "observed": 0,
+      "outcomes": {
+        "always_zero": "match",
+        "predicted": "match",
+        "shifted_c_minus_2": "unavailable"
+      },
+      "predicted": 0,
+      "raw_target_b6": 0,
+      "reference_abstention": null,
+      "source_phase0_rows": [
+        8,
+        11
+      ]
+    },
+    {
+      "counter": 43871947,
+      "native_witnesses": [
+        {
+          "counter": 43871946,
+          "du_crc": "a25c",
+          "mode_du_offset": 629,
+          "packet_crc": "eace",
+          "packet_ordinal": 3,
+          "phase": 2,
+          "row": 43
+        },
+        {
+          "counter": 43871947,
+          "du_crc": "bb45",
+          "mode_du_offset": 2,
+          "packet_crc": "c26d",
+          "packet_ordinal": 0,
+          "phase": 0,
+          "row": 44
+        }
+      ],
+      "observed": 0,
+      "outcomes": {
+        "always_zero": "match",
+        "predicted": "match",
+        "shifted_c_minus_2": "unavailable"
+      },
+      "predicted": 0,
+      "raw_target_b6": 0,
+      "reference_abstention": null,
+      "source_phase0_rows": [
+        41,
+        44
+      ]
+    },
+    {
+      "counter": 43871948,
+      "native_witnesses": [
+        {
+          "counter": 43871947,
+          "du_crc": "688c",
+          "mode_du_offset": 629,
+          "packet_crc": "e6c2",
+          "packet_ordinal": 3,
+          "phase": 2,
+          "row": 46
+        },
+        {
+          "counter": 43871948,
+          "du_crc": "36ed",
+          "mode_du_offset": 2,
+          "packet_crc": "2c83",
+          "packet_ordinal": 0,
+          "phase": 0,
+          "row": 47
+        }
+      ],
+      "observed": 0,
+      "outcomes": {
+        "always_zero": "match",
+        "predicted": "match",
+        "shifted_c_minus_2": "match"
+      },
+      "predicted": 0,
+      "raw_target_b6": 0,
+      "reference_abstention": null,
+      "source_phase0_rows": [
+        44,
+        47
+      ]
+    },
+    {
+      "counter": 43871984,
+      "native_witnesses": [
+        {
+          "counter": 43871983,
+          "du_crc": "2f56",
+          "mode_du_offset": 629,
+          "packet_crc": "cfd1",
+          "packet_ordinal": 3,
+          "phase": 2,
+          "row": 154
+        },
+        {
+          "counter": 43871984,
+          "du_crc": "6031",
+          "mode_du_offset": 2,
+          "packet_crc": "3d7c",
+          "packet_ordinal": 0,
+          "phase": 0,
+          "row": 155
+        }
+      ],
+      "observed": 0,
+      "outcomes": {
+        "always_zero": "match",
+        "predicted": "match",
+        "shifted_c_minus_2": "match"
+      },
+      "predicted": 0,
+      "raw_target_b6": 0,
+      "reference_abstention": null,
+      "source_phase0_rows": [
+        152,
+        155
+      ]
+    },
+    {
+      "counter": 43871987,
+      "native_witnesses": [
+        {
+          "counter": 43871986,
+          "du_crc": "c199",
+          "mode_du_offset": 629,
+          "packet_crc": "e54e",
+          "packet_ordinal": 3,
+          "phase": 2,
+          "row": 163
+        },
+        {
+          "counter": 43871987,
+          "du_crc": "bb7b",
+          "mode_du_offset": 2,
+          "packet_crc": "b6e5",
+          "packet_ordinal": 0,
+          "phase": 0,
+          "row": 164
+        }
+      ],
+      "observed": 0,
+      "outcomes": {
+        "always_zero": "match",
+        "predicted": "match",
+        "shifted_c_minus_2": "unavailable"
+      },
+      "predicted": 0,
+      "raw_target_b6": 0,
+      "reference_abstention": null,
+      "source_phase0_rows": [
+        161,
+        164
+      ]
+    },
+    {
+      "counter": 43872020,
+      "native_witnesses": [
+        {
+          "counter": 43872019,
+          "du_crc": "3124",
+          "mode_du_offset": 629,
+          "packet_crc": "8b53",
+          "packet_ordinal": 3,
+          "phase": 2,
+          "row": 262
+        },
+        {
+          "counter": 43872020,
+          "du_crc": "a3b8",
+          "mode_du_offset": 2,
+          "packet_crc": "7001",
+          "packet_ordinal": 0,
+          "phase": 0,
+          "row": 263
+        }
+      ],
+      "observed": 0,
+      "outcomes": {
+        "always_zero": "match",
+        "predicted": "match",
+        "shifted_c_minus_2": "mismatch"
+      },
+      "predicted": 0,
+      "raw_target_b6": 0,
+      "reference_abstention": null,
+      "source_phase0_rows": [
+        260,
+        263
+      ]
+    },
+    {
+      "counter": 43872025,
+      "native_witnesses": [
+        {
+          "counter": 43872024,
+          "du_crc": "b4b3",
+          "mode_du_offset": 629,
+          "packet_crc": "19cf",
+          "packet_ordinal": 3,
+          "phase": 2,
+          "row": 277
+        },
+        {
+          "counter": 43872025,
+          "du_crc": "4219",
+          "mode_du_offset": 2,
+          "packet_crc": "4c16",
+          "packet_ordinal": 0,
+          "phase": 0,
+          "row": 278
+        }
+      ],
+      "observed": 0,
+      "outcomes": {
+        "always_zero": "match",
+        "predicted": "match",
+        "shifted_c_minus_2": "match"
+      },
+      "predicted": 0,
+      "raw_target_b6": 0,
+      "reference_abstention": null,
+      "source_phase0_rows": [
+        275,
+        278
+      ]
+    }
+  ],
+  "source_msc_sha256": "30aceedffc695ebb9d1bcd236d9280ac333aea132a291c1a1f380c077bf24614"
+}

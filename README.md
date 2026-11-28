@@ -74,6 +74,11 @@ mono 6140 kHz recording directly using its 6 kHz intermediate frequency.
 [Disjoint-sample test and per-slot results](examples/receiver-control/sign-iq/README.md) ·
 [Mono real-IF controls](examples/receiver-control/real-if/README.md)
 
+The TCX previous-core rule matched 252/252 bits on a clear radio test and 778/778
+on clean official discontinuous-transmission vectors. Always predicting one scored
+244 and 772 on those same slots. Broadcast counter 43288750 still lacks clear labels
+for its 48 conditional bits. [Known-sender checks and a new 6140 kHz field test](examples/receiver-control/known-field-checks/README.md)
+
 A member's **22m48s recording at 3205 kHz** yielded 1,102 complete groups in
 the frozen receiver. A second pass recovered one additional group from the
 same IQ. Across 3205 kHz and an independent Tokyo recording at 6140 kHz,

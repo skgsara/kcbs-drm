@@ -1,0 +1,15 @@
+{
+  "source_sha256": "5bdd069ccf70ac8551ac7fa054983db0dda03fbc7140e6938079b88f27951809",
+  "source_bytes": 5898284,
+  "source_rate_hz": 12000,
+  "sample_range": [
+    0,
+    1464832
+  ],
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "native_file": "receiver/msc.bin",
+  "dream_emitted_native": true,
+  "msc_sha256": "30aceedffc695ebb9d1bcd236d9280ac333aea132a291c1a1f380c077bf24614",
+  "group_sha256": "59653339a709e0bbbe5400c4550b0c0bd1a52bea4a25c716393ad8f7aa5c0852",
+  "boundary_sha256": "fe1ea5918d5a302ca09bddaeef0e20fbc1a8e3b0fe98befd128e7e5592539b2b"
+}
