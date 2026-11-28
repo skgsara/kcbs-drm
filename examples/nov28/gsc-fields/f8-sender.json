@@ -1,0 +1,652 @@
+{
+  "all": {
+    "all_f8_triples": {
+      "000": 11712,
+      "110": 210,
+      "100": 211,
+      "001": 232,
+      "011": 183,
+      "101": 1,
+      "111": 14
+    },
+    "long_run_b8b9": {
+      "01": 5907,
+      "00": 1266,
+      "11": 131,
+      "10": 104
+    },
+    "f8_b8b9": {
+      "01": 10507,
+      "00": 2655,
+      "11": 270,
+      "10": 252
+    },
+    "forced_from_known_classes": {
+      "inside_two_zeros": 11712,
+      "after_01": 183
+    },
+    "final_bit_wire_fields": {
+      "1:IND_HQ2_SUBBAND_GAIN:0": 50,
+      "0:IND_LAGINDICES:1": 1115,
+      "0:IND_LAGINDICES:0": 296,
+      "1:IND_HQ2_SUBBAND_GAIN:1": 13
+    },
+    "frames": 54802,
+    "f8": 13684,
+    "disjoint_60_blocks_within_runs": 100,
+    "length_60_b8_patterns_admitted_by_hangover_alone": 572360547759276
+  },
+  "cohorts": {
+    "moving_noise_floor": {
+      "sender_file": "work/reference-acceptance/swb-gsc-sender-study/moving_noise_floor/original.192",
+      "g192_sha256": "475e3450660a1316e367d01634952b681aae8981e466ddecfb39a43803210af1",
+      "frames": 6000,
+      "f8": 13,
+      "f8_b8b9": {
+        "01": 10,
+        "00": 3
+      },
+      "all_f8_triples": {
+        "000": 11
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 11
+      },
+      "long_runs": [],
+      "long_run_b8b9": {},
+      "disjoint_60_blocks_within_runs": 0,
+      "example": null
+    },
+    "tone_to_noise": {
+      "sender_file": "work/reference-acceptance/swb-gsc-sender-study/tone_to_noise/original.192",
+      "g192_sha256": "e9760e234b3c814fa52b63abeecc7dd2fe9ed165ab96a013c293fc7616e2ae23",
+      "frames": 6000,
+      "f8": 391,
+      "f8_b8b9": {
+        "11": 1,
+        "10": 3,
+        "01": 356,
+        "00": 31
+      },
+      "all_f8_triples": {
+        "110": 1,
+        "100": 1,
+        "000": 296,
+        "001": 1
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 296
+      },
+      "long_runs": [],
+      "long_run_b8b9": {},
+      "disjoint_60_blocks_within_runs": 0,
+      "example": null
+    },
+    "fricative_pitch": {
+      "sender_file": "work/reference-acceptance/swb-gsc-sender-study/fricative_pitch/original.192",
+      "g192_sha256": "9645d7d67d82a96186e721f2059d2fd87667a4c6aca4576a95fcc3775df5f9c0",
+      "frames": 6000,
+      "f8": 2303,
+      "f8_b8b9": {
+        "01": 1670,
+        "00": 621,
+        "10": 7,
+        "11": 5
+      },
+      "all_f8_triples": {
+        "000": 2054,
+        "001": 7,
+        "011": 5,
+        "110": 5,
+        "100": 5
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 2054,
+        "after_01": 5
+      },
+      "long_runs": [
+        [
+          605,
+          730
+        ],
+        [
+          865,
+          949
+        ],
+        [
+          1436,
+          1551
+        ],
+        [
+          1647,
+          1715
+        ],
+        [
+          2693,
+          2767
+        ],
+        [
+          3195,
+          3366
+        ],
+        [
+          3608,
+          3671
+        ],
+        [
+          3722,
+          3860
+        ],
+        [
+          4454,
+          4520
+        ],
+        [
+          4536,
+          4603
+        ],
+        [
+          5177,
+          5254
+        ],
+        [
+          5552,
+          5617
+        ]
+      ],
+      "long_run_b8b9": {
+        "01": 784,
+        "00": 320,
+        "11": 4,
+        "10": 5
+      },
+      "disjoint_60_blocks_within_runs": 15,
+      "example": {
+        "start": 3792,
+        "end": 3852,
+        "word_sha256": "f326269eecfcb531389ea5a8f0ed92b66c997257ef74d5dc30d54559eadc1416",
+        "choices": {
+          "00": {
+            "slot": 3795,
+            "bytes": "f82bf5badf5b1017f979e9043aafff5bd31ca1526c29eea0646775a525b604112a"
+          },
+          "01": {
+            "slot": 3792,
+            "bytes": "f85d771103659a16f229ab2b00d47789e0505d0f28e75c9c2caa279b8ba44869ea"
+          },
+          "10": {
+            "slot": 3851,
+            "bytes": "f8809b8307c3b83070d75a88db718159e341fa4693f8be17e9bbbeb5514d310e22"
+          },
+          "11": {
+            "slot": 3850,
+            "bytes": "f8efc83be0cb00b8e3b0058314bc468bd13f5832a197187f54c49215d2126e3c01"
+          }
+        },
+        "b8": "000000000000000000000000000000000000000000000000000000000011",
+        "b9": "111011110110001111111111110110111110111111100100001000000010"
+      }
+    },
+    "transient_bands": {
+      "sender_file": "work/reference-acceptance/swb-gsc-sender-study/transient_bands/original.192",
+      "g192_sha256": "160386c2f92f0ebadf1ca7e0de6b1ca19c19dbc281f82bbd9b357e667a648c48",
+      "frames": 6000,
+      "f8": 13,
+      "f8_b8b9": {
+        "10": 4,
+        "11": 5,
+        "01": 4
+      },
+      "all_f8_triples": {
+        "011": 2,
+        "110": 1,
+        "101": 1
+      },
+      "forced_from_known_classes": {
+        "after_01": 2
+      },
+      "long_runs": [],
+      "long_run_b8b9": {},
+      "disjoint_60_blocks_within_runs": 0,
+      "example": null
+    },
+    "comb_and_hiss": {
+      "sender_file": "work/reference-acceptance/swb-gsc-sender-study/comb_and_hiss/original.192",
+      "g192_sha256": "24dc936ab510b9d7d6f9dd65f2ba683738319933981761df7346b738a53f4b4f",
+      "frames": 6000,
+      "f8": 4096,
+      "f8_b8b9": {
+        "10": 7,
+        "01": 3802,
+        "00": 275,
+        "11": 12
+      },
+      "all_f8_triples": {
+        "000": 3935,
+        "001": 9,
+        "011": 9,
+        "110": 8,
+        "100": 8
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 3935,
+        "after_01": 9
+      },
+      "long_runs": [
+        [
+          9,
+          100
+        ],
+        [
+          158,
+          365
+        ],
+        [
+          404,
+          1107
+        ],
+        [
+          1256,
+          1533
+        ],
+        [
+          1859,
+          2204
+        ],
+        [
+          2309,
+          2515
+        ],
+        [
+          2630,
+          2959
+        ],
+        [
+          3066,
+          3151
+        ],
+        [
+          3454,
+          3549
+        ],
+        [
+          4050,
+          4151
+        ],
+        [
+          4735,
+          4902
+        ],
+        [
+          4917,
+          4992
+        ],
+        [
+          5194,
+          5266
+        ],
+        [
+          5409,
+          5719
+        ],
+        [
+          5724,
+          5804
+        ],
+        [
+          5856,
+          6000
+        ]
+      ],
+      "long_run_b8b9": {
+        "01": 3043,
+        "00": 228,
+        "11": 10,
+        "10": 6
+      },
+      "disjoint_60_blocks_within_runs": 47,
+      "example": null
+    },
+    "switch_bandwidth": {
+      "sender_file": "work/reference-acceptance/swb-gsc-sender-study/switch_bandwidth/original.192",
+      "g192_sha256": "8edd5c522bedad95f722974fbecdab7757f4666b7b63e043165bdfaafb290d08",
+      "frames": 6000,
+      "f8": 2624,
+      "f8_b8b9": {
+        "01": 1678,
+        "00": 938,
+        "10": 8
+      },
+      "all_f8_triples": {
+        "000": 2437,
+        "001": 3,
+        "011": 4,
+        "110": 4,
+        "100": 3
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 2437,
+        "after_01": 4
+      },
+      "long_runs": [
+        [
+          100,
+          210
+        ],
+        [
+          412,
+          504
+        ],
+        [
+          691,
+          752
+        ],
+        [
+          1308,
+          1504
+        ],
+        [
+          1616,
+          1700
+        ],
+        [
+          1908,
+          2002
+        ],
+        [
+          2127,
+          2198
+        ],
+        [
+          2392,
+          2463
+        ],
+        [
+          2600,
+          2710
+        ],
+        [
+          2861,
+          2924
+        ],
+        [
+          3158,
+          3252
+        ],
+        [
+          3350,
+          3502
+        ],
+        [
+          3600,
+          3752
+        ],
+        [
+          3800,
+          3953
+        ],
+        [
+          4100,
+          4222
+        ],
+        [
+          4850,
+          4943
+        ],
+        [
+          5635,
+          5703
+        ]
+      ],
+      "long_run_b8b9": {
+        "00": 654,
+        "01": 1126,
+        "10": 6
+      },
+      "disjoint_60_blocks_within_runs": 23,
+      "example": null
+    },
+    "gated_room": {
+      "sender_file": "work/reference-acceptance/swb-gsc-sender-study/gated_room/original.192",
+      "g192_sha256": "83ed5dd69a4899ee99b3aa2ec63177ca4b285b67ea2c16a326a752d42005ffe6",
+      "frames": 6000,
+      "f8": 0,
+      "f8_b8b9": {},
+      "all_f8_triples": {},
+      "forced_from_known_classes": {},
+      "long_runs": [],
+      "long_run_b8b9": {},
+      "disjoint_60_blocks_within_runs": 0,
+      "example": null
+    },
+    "instrument_decay": {
+      "sender_file": "work/reference-acceptance/swb-gsc-sender-study/instrument_decay/original.192",
+      "g192_sha256": "340331ad001a4f6111fee3def849c3522bf5eb4d0ff5c173a674e6a54b2e8a44",
+      "frames": 6000,
+      "f8": 2664,
+      "f8_b8b9": {
+        "01": 2120,
+        "11": 226,
+        "10": 173,
+        "00": 145
+      },
+      "all_f8_triples": {
+        "000": 1727,
+        "001": 209,
+        "011": 160,
+        "110": 163,
+        "100": 164,
+        "111": 7
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 1727,
+        "after_01": 160
+      },
+      "long_runs": [
+        [
+          419,
+          510
+        ],
+        [
+          707,
+          768
+        ],
+        [
+          819,
+          905
+        ],
+        [
+          1651,
+          1751
+        ],
+        [
+          1998,
+          2112
+        ],
+        [
+          2154,
+          2256
+        ],
+        [
+          2798,
+          2869
+        ],
+        [
+          3046,
+          3113
+        ],
+        [
+          3609,
+          3725
+        ],
+        [
+          4397,
+          4459
+        ],
+        [
+          5255,
+          5384
+        ],
+        [
+          5400,
+          5524
+        ],
+        [
+          5758,
+          5857
+        ]
+      ],
+      "long_run_b8b9": {
+        "01": 954,
+        "00": 64,
+        "10": 87,
+        "11": 117
+      },
+      "disjoint_60_blocks_within_runs": 15,
+      "example": {
+        "start": 419,
+        "end": 479,
+        "word_sha256": "4df13505056baeae0c179344fd9890085cb3179ad62ca7461f46a2736ad50cbb",
+        "choices": {
+          "00": {
+            "slot": 420,
+            "bytes": "f800ee2085ac680825170335f69c704a84a00ca9c616f6379adab861e8cacb392b"
+          },
+          "01": {
+            "slot": 419,
+            "bytes": "f856504b2bb81bc803a37fa83c364563be4ef0e9a63b9c962f866e90dccabc603f"
+          },
+          "10": {
+            "slot": 433,
+            "bytes": "f880fc3efe0c3801821d312316c7cec931a566aa414c4607d845793f04f83a6f00"
+          },
+          "11": {
+            "slot": 450,
+            "bytes": "f8eeb2e33b8c8e362471cd7cd1a1546f2379fde3942d6c599779dd4aa4656683c3"
+          }
+        },
+        "b8": "000000000000001100000000000000011000000110000000110000000011",
+        "b9": "101110111111110001110011111111111111111001111111001111111100"
+      }
+    },
+    "synthetic": {
+      "sender_file": "work/cross-codec-evidence/swb-control/full.192",
+      "g192_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+      "frames": 2400,
+      "f8": 1100,
+      "f8_b8b9": {
+        "10": 36,
+        "00": 559,
+        "01": 499,
+        "11": 6
+      },
+      "all_f8_triples": {
+        "100": 18,
+        "000": 952,
+        "111": 7,
+        "110": 16,
+        "001": 2,
+        "011": 2
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 952,
+        "after_01": 2
+      },
+      "long_runs": [],
+      "long_run_b8b9": {},
+      "disjoint_60_blocks_within_runs": 0,
+      "example": null,
+      "native_writer_trace_sha256": "2e7a60cc6f84784dca0be457f9c59a62d1fb03efd2e46033ce1d5b087289d1a4",
+      "final_bit_wire_fields": {
+        "1:IND_HQ2_SUBBAND_GAIN:0": 34,
+        "0:IND_LAGINDICES:1": 806,
+        "0:IND_LAGINDICES:0": 252,
+        "1:IND_HQ2_SUBBAND_GAIN:1": 8
+      },
+      "nonempty_tcq_zero_suffix_end_exclusive": {
+        "1:260": 42,
+        "0:254": 1057,
+        "0:255": 1
+      }
+    },
+    "music": {
+      "sender_file": "work/reference-acceptance/mode-blind-new/music/clear.192",
+      "g192_sha256": "302a44f00ee12d2110315f9dd6c404c276df734790572089e7283e6f5220df5b",
+      "frames": 2400,
+      "f8": 374,
+      "f8_b8b9": {
+        "01": 346,
+        "00": 7,
+        "11": 11,
+        "10": 10
+      },
+      "all_f8_triples": {
+        "000": 222,
+        "001": 1,
+        "011": 1,
+        "110": 8,
+        "100": 8
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 222,
+        "after_01": 1
+      },
+      "long_runs": [],
+      "long_run_b8b9": {},
+      "disjoint_60_blocks_within_runs": 0,
+      "example": null,
+      "native_writer_trace_sha256": "5e1bb7da53d3a5a964202da7f90628d856dc4dc36246b029b30ade6547fb3fe5",
+      "final_bit_wire_fields": {
+        "0:IND_LAGINDICES:1": 309,
+        "0:IND_LAGINDICES:0": 44,
+        "1:IND_HQ2_SUBBAND_GAIN:0": 16,
+        "1:IND_HQ2_SUBBAND_GAIN:1": 5
+      },
+      "nonempty_tcq_zero_suffix_end_exclusive": {
+        "0:254": 345,
+        "0:255": 4,
+        "0:256": 4,
+        "1:260": 21
+      }
+    },
+    "speech": {
+      "sender_file": "work/reference-acceptance/mode-blind-new/speech/clear.192",
+      "g192_sha256": "fb188fe607646bc31774b428ec5652fa210a0b4ecca7bbfd47f2bfd4cc1a1b3d",
+      "frames": 742,
+      "f8": 1,
+      "f8_b8b9": {
+        "01": 1
+      },
+      "all_f8_triples": {},
+      "forced_from_known_classes": {},
+      "long_runs": [],
+      "long_run_b8b9": {},
+      "disjoint_60_blocks_within_runs": 0,
+      "example": null
+    },
+    "mixed": {
+      "sender_file": "work/reference-acceptance/clear-loopback/current/encoder.192",
+      "g192_sha256": "e1edbc8a0239c402785cd7ac6525ef0da84fd6961d0d341549c6c3af544ccccc",
+      "frames": 1260,
+      "f8": 105,
+      "f8_b8b9": {
+        "01": 21,
+        "00": 76,
+        "11": 4,
+        "10": 4
+      },
+      "all_f8_triples": {
+        "000": 78,
+        "110": 4,
+        "100": 4
+      },
+      "forced_from_known_classes": {
+        "inside_two_zeros": 78
+      },
+      "long_runs": [],
+      "long_run_b8b9": {},
+      "disjoint_60_blocks_within_runs": 0,
+      "example": null
+    }
+  }
+}

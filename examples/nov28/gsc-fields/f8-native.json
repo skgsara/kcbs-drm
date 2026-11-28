@@ -1,0 +1,83 @@
+{
+  "source_sha256": "515d72a6e6378758e6347a7bb77af2ced79370c6640cd8e2775567221993be17",
+  "results": {
+    "fricative_pitch": {
+      "pcm_source_sha256": "4f78feaf5dfc55f1c0bba7311089e5ebb42bd305f4b4b8d8cf4ca04a8ad7d3a3",
+      "identical_original_sender_g192_sha256": "9645d7d67d82a96186e721f2059d2fd87667a4c6aca4576a95fcc3775df5f9c0",
+      "f8_events": 2303,
+      "all_f8_native_transitions": {
+        "0000": 2291,
+        "1011": 7,
+        "0110": 5
+      },
+      "data_around_fixed_60_word_control": {
+        "3846": [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          3
+        ],
+        "3847": [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          3
+        ],
+        "3848": [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          3
+        ],
+        "3849": [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          3
+        ],
+        "3850": [
+          1,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          3
+        ],
+        "3851": [
+          0,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          3
+        ]
+      }
+    },
+    "instrument_decay": {
+      "pcm_source_sha256": "74615be1a296a4879283b46ab6de3cba32d1e9f751e26958985336b507d6ab59",
+      "identical_original_sender_g192_sha256": "340331ad001a4f6111fee3def849c3522bf5eb4d0ff5c173a674e6a54b2e8a44",
+      "f8_events": 2664,
+      "all_f8_native_transitions": {
+        "0000": 2265,
+        "1011": 221,
+        "0110": 171,
+        "1111": 7
+      },
+      "data_around_fixed_60_word_control": {}
+    }
+  }
+}

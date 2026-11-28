@@ -1,0 +1,237 @@
+{
+  "format": "evs-gsc-direct-fields-v1",
+  "data_units_sha256": "4f95576e0ca67a0283b9cd7b0cf0b22a2595912cf0efea1531e222154e6e91b2",
+  "received_dus": 115,
+  "complete_groups": 32,
+  "incomplete_counters_excluded": 17,
+  "primary_counter": 43909460,
+  "complete_group_slots": 1920,
+  "unique_word_coordinates_with_a_prediction": 8,
+  "unique_word_coordinates_with_a_correct_prediction": 8,
+  "primary_unique_word_coordinates_with_a_prediction": 0,
+  "primary_unique_word_coordinates_with_a_correct_prediction": 0,
+  "mode_decisions_before_p4": {
+    "decisions": 8,
+    "sha256": "7a5756cf25956c9cd7f0aa367e8c0df50c4edbd555d95ca7e5407d78a8c55b82"
+  },
+  "mode_and_p4_decisions_before_p26": {
+    "decisions": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "fields": {
+    "audio_noisy": {
+      "eligible": 0,
+      "correct": 0,
+      "disagreements": 0,
+      "word_bits": [
+        40,
+        41
+      ],
+      "inputs": [
+        "mode octet"
+      ],
+      "basis": "Stock encoder's ordinary AUDIO bandwidth-extension choice.",
+      "by_position": {
+        "1": {
+          "eligible": 0,
+          "correct": 0,
+          "disagreements": 0
+        },
+        "2": {
+          "eligible": 0,
+          "correct": 0,
+          "disagreements": 0
+        },
+        "3": {
+          "eligible": 0,
+          "correct": 0,
+          "disagreements": 0
+        },
+        "4": {
+          "eligible": 0,
+          "correct": 0,
+          "disagreements": 0
+        }
+      },
+      "expected_values": {},
+      "untested_possible_predictions": [
+        0,
+        1
+      ],
+      "observed_values": {},
+      "counters_with_15_of_15_correct": {},
+      "primary": {
+        "eligible": 0,
+        "correct": 0,
+        "disagreements": 0,
+        "by_position": {
+          "1": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "2": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "3": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "4": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          }
+        },
+        "cases": []
+      },
+      "discrepancies": []
+    },
+    "inactive_nibble": {
+      "eligible": 8,
+      "correct": 8,
+      "disagreements": 0,
+      "word_bits": [
+        40,
+        44
+      ],
+      "inputs": [
+        "mode octet"
+      ],
+      "basis": "Empirical INACTIVE/BWE pattern from the labelled broadcast archive.",
+      "by_position": {
+        "1": {
+          "eligible": 2,
+          "correct": 2,
+          "disagreements": 0
+        },
+        "2": {
+          "eligible": 2,
+          "correct": 2,
+          "disagreements": 0
+        },
+        "3": {
+          "eligible": 2,
+          "correct": 2,
+          "disagreements": 0
+        },
+        "4": {
+          "eligible": 2,
+          "correct": 2,
+          "disagreements": 0
+        }
+      },
+      "expected_values": {
+        "12": 8
+      },
+      "untested_possible_predictions": [],
+      "observed_values": {
+        "12": 8
+      },
+      "counters_with_15_of_15_correct": {},
+      "primary": {
+        "eligible": 0,
+        "correct": 0,
+        "disagreements": 0,
+        "by_position": {
+          "1": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "2": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "3": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "4": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          }
+        },
+        "cases": []
+      },
+      "discrepancies": []
+    },
+    "noisy_pitch_fill": {
+      "eligible": 0,
+      "correct": 0,
+      "disagreements": 0,
+      "word_bits": [
+        223,
+        224
+      ],
+      "inputs": [
+        "mode octet",
+        "word bits [40,45)"
+      ],
+      "basis": "Stock noisy AUDIO/TBE positive-pitch pulse codebook and range-coder padding.",
+      "by_position": {
+        "1": {
+          "eligible": 0,
+          "correct": 0,
+          "disagreements": 0
+        },
+        "2": {
+          "eligible": 0,
+          "correct": 0,
+          "disagreements": 0
+        },
+        "3": {
+          "eligible": 0,
+          "correct": 0,
+          "disagreements": 0
+        },
+        "4": {
+          "eligible": 0,
+          "correct": 0,
+          "disagreements": 0
+        }
+      },
+      "expected_values": {},
+      "untested_possible_predictions": [
+        0
+      ],
+      "observed_values": {},
+      "counters_with_15_of_15_correct": {},
+      "primary": {
+        "eligible": 0,
+        "correct": 0,
+        "disagreements": 0,
+        "by_position": {
+          "1": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "2": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "3": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          },
+          "4": {
+            "eligible": 0,
+            "correct": 0,
+            "disagreements": 0
+          }
+        },
+        "cases": []
+      },
+      "discrepancies": []
+    }
+  }
+}

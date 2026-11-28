@@ -1,0 +1,43 @@
+{
+  "project_revision": "59c3aec4ea5e38a0adb92ee04e1cdd9b59b2a8f8",
+  "source_flac": "7l4iou-6140-20261128T0028Z-iq48.flac",
+  "source_flac_sha256": "65f33eb23aac9c00eb7400cf766b143fe5a37a19f90624919a39b7b7a829808b",
+  "source_pcm_sha256": "8400f2fbb6961b0e9d4c6b479162a00b255e3eef693e3c95ab9d7f7570d0eaa7",
+  "flac_decoded_pcm_matches_wav_sample_pairs": 8640000,
+  "first_build_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "second_build_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "same_project_Dream_builds": true,
+  "reproduction_commands_sha256": "ade21b338c0dfb82c4c283533137044792fb1f70973f6ae1fa87076d5fe426fa",
+  "comparison": {
+    "receiver/msc.bin": {
+      "sha256": "e3fed698bc6700c76c7ebc352fdf2d825590220c0fe7ae254c99db2921fa9d38",
+      "bytes": 325008,
+      "byte_identical": true
+    },
+    "transport/groups.npz": {
+      "sha256": "3d61cd756f8edf3b7317c33dd5e6b6e4e8f6d802b9f6bc4dd4864fe7f43dc0c8",
+      "bytes": 71546,
+      "byte_identical": true
+    },
+    "transport/data_units.npz": {
+      "sha256": "4f95576e0ca67a0283b9cd7b0cf0b22a2595912cf0efea1531e222154e6e91b2",
+      "bytes": 82750,
+      "byte_identical": true
+    },
+    "field-result.json": {
+      "sha256": "6c2372c4372bf53da5a5c79e92bcb9a2dbf69ad23586525084e82c701f55843e",
+      "bytes": 5484,
+      "byte_identical": true
+    },
+    "primary-projection.json": {
+      "sha256": "095123bbadec03c8b14ece2be95d54403dd7f71e8dacd61bda483081e966fb21",
+      "bytes": 18230,
+      "byte_identical": true
+    },
+    "primary-field-checks.json": {
+      "sha256": "89531dbff657aeafba18147ab40e5e75a643fba28cffbc13cae59d971d8c78f6",
+      "bytes": 36848,
+      "byte_identical": true
+    }
+  }
+}

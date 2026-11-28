@@ -1,0 +1,74 @@
+[
+  {
+    "counter": 43909511,
+    "phase": 1,
+    "cycle": 3,
+    "position": 1,
+    "mode": "74",
+    "observed_nibble": 12,
+    "DU_CRC16": "b67c"
+  },
+  {
+    "counter": 43909511,
+    "phase": 1,
+    "cycle": 3,
+    "position": 2,
+    "mode": "76",
+    "observed_nibble": 12,
+    "DU_CRC16": "b67c"
+  },
+  {
+    "counter": 43909511,
+    "phase": 1,
+    "cycle": 3,
+    "position": 3,
+    "mode": "74",
+    "observed_nibble": 12,
+    "DU_CRC16": "b67c"
+  },
+  {
+    "counter": 43909511,
+    "phase": 1,
+    "cycle": 3,
+    "position": 4,
+    "mode": "75",
+    "observed_nibble": 12,
+    "DU_CRC16": "b67c"
+  },
+  {
+    "counter": 43909511,
+    "phase": 1,
+    "cycle": 4,
+    "position": 1,
+    "mode": "76",
+    "observed_nibble": 12,
+    "DU_CRC16": "b67c"
+  },
+  {
+    "counter": 43909511,
+    "phase": 1,
+    "cycle": 4,
+    "position": 2,
+    "mode": "76",
+    "observed_nibble": 12,
+    "DU_CRC16": "b67c"
+  },
+  {
+    "counter": 43909511,
+    "phase": 1,
+    "cycle": 4,
+    "position": 3,
+    "mode": "75",
+    "observed_nibble": 12,
+    "DU_CRC16": "b67c"
+  },
+  {
+    "counter": 43909511,
+    "phase": 1,
+    "cycle": 4,
+    "position": 4,
+    "mode": "76",
+    "observed_nibble": 12,
+    "DU_CRC16": "b67c"
+  }
+]

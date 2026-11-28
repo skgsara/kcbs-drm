@@ -1,0 +1,104 @@
+{
+  "source_sha256": {
+    "lib_com/bitstream.c": "801448e98e002c31cd6c9a626b73e4eb6e0b9bf929875725ae53a7b90200a6cc",
+    "lib_com/pvq_com.c": "ec71a7c1cfe4ea44cb21796808eacd3659b4cc4c4f790035fd1d3934fc709608",
+    "lib_com/range_com.c": "ec46d6c3f2a26874668cfc99c505bed894e1ff3f670ac7e3602d5c30696584e5",
+    "lib_com/tools.c": "b20cd52fe6f850352bcdbf66b528df5e35e6807a98cce21829cdd0c47229ec03",
+    "lib_enc/range_enc.c": "b82a4cf45976dbb83150e8c017cfed6ceaaed68653b0296248011e4d884e5062"
+  },
+  "geometry": {
+    "steps": [
+      {
+        "total": 256,
+        "unit": 16777215,
+        "shift_bits": 8,
+        "width": 4294967040
+      },
+      {
+        "total": 256,
+        "unit": 16777214,
+        "shift_bits": 8,
+        "width": 4294966784
+      },
+      {
+        "total": 256,
+        "unit": 16777213,
+        "shift_bits": 8,
+        "width": 4294966528
+      },
+      {
+        "total": 256,
+        "unit": 16777212,
+        "shift_bits": 8,
+        "width": 4294966272
+      },
+      {
+        "total": 172,
+        "unit": 24970734,
+        "shift_bits": 0,
+        "width": 24970734
+      }
+    ],
+    "renormalization_bits": 32,
+    "backward_raw_bits": 9,
+    "termination_bits": [
+      8,
+      9
+    ],
+    "zero_fill_bits": [
+      1,
+      2
+    ],
+    "guaranteed_zero_bit": 223
+  },
+  "native": {
+    "trials": [
+      {
+        "zero_fill_bits": 1,
+        "b222": 0,
+        "b223": 0,
+        "trials": 28
+      },
+      {
+        "zero_fill_bits": 1,
+        "b222": 1,
+        "b223": 0,
+        "trials": 1011
+      },
+      {
+        "zero_fill_bits": 2,
+        "b222": 0,
+        "b223": 0,
+        "trials": 961
+      },
+      {
+        "zero_fill_bits": 2,
+        "b222": 1,
+        "b223": 0,
+        "trials": 0
+      }
+    ],
+    "b222_one_witness": [
+      {
+        "index": 191,
+        "leading_sign": 0
+      },
+      {
+        "index": 136,
+        "leading_sign": 1
+      },
+      {
+        "index": 122,
+        "leading_sign": 0
+      },
+      {
+        "index": 124,
+        "leading_sign": 0
+      },
+      {
+        "index": 2424,
+        "leading_sign": 1
+      }
+    ]
+  }
+}

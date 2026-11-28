@@ -1,0 +1,369 @@
+{
+  "recording": "7L4IOU, Edogawa, 6140 kHz, November 28 00:02 UTC",
+  "duration_s": 180,
+  "public_iq_flac_sha256": "e04f6ff1cd41eb3cfe84046f04de425ee129268494667ce4e76246365445f9df",
+  "receiver": "One complete finite-file Dream pass, Wiener with MLC iterations=1, observation-only FAC/SDC dump",
+  "observer_binary_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "standard": "ETSI ES 201 980 V4.3.1 sections 6.3, 6.4 (channels and SDC data entities); packet header layout independently checked against Dream src/datadecoding/DataDecoder.cpp",
+  "expected_standard_audio_services": 0,
+  "expected_standard_data_services": 1,
+  "signalling": {
+    "block_counts": {
+      "FAC": {
+        "observed": 446,
+        "crc_passed": 446,
+        "crc_failed": 0
+      },
+      "SDC": {
+        "observed": 151,
+        "crc_passed": 145,
+        "crc_failed": 6
+      }
+    },
+    "unique_valid_full_fac_words": 3,
+    "unique_valid_full_sdc_blocks": 4,
+    "unique_valid_fac_hex_counts": {
+      "47c20a0000201000f0": 149,
+      "67c20a0000201000df": 149,
+      "27c20a000020100081": 148
+    },
+    "valid_block_bit_lengths": {
+      "FAC_72": 446,
+      "SDC_628": 145
+    },
+    "valid_sdc_entity_sequences": [
+      {
+        "entity_types": [
+          0,
+          5,
+          12,
+          1
+        ],
+        "count": 142
+      },
+      {
+        "entity_types": [
+          0,
+          5,
+          12,
+          1,
+          8
+        ],
+        "count": 3
+      }
+    ],
+    "complete_valid_entity_headers": [
+      {
+        "type": 0,
+        "version": 0,
+        "payload_bytes": 3,
+        "count": 145
+      },
+      {
+        "type": 1,
+        "version": 0,
+        "payload_bytes": 31,
+        "count": 145
+      },
+      {
+        "type": 5,
+        "version": 0,
+        "payload_bytes": 4,
+        "count": 145
+      },
+      {
+        "type": 8,
+        "version": 0,
+        "payload_bytes": 3,
+        "count": 3
+      },
+      {
+        "type": 12,
+        "version": 0,
+        "payload_bytes": 5,
+        "count": 145
+      }
+    ],
+    "reconfiguration_index_counts": {
+      "0": 446
+    },
+    "sdc_afs_index_counts": {
+      "1": 145
+    },
+    "fac_services": [
+      {
+        "service_id": "A00002",
+        "short_id": 0,
+        "audio_ca": 0,
+        "language_code": 0,
+        "service": "data",
+        "service_descriptor": 0,
+        "data_ca": 0,
+        "count": 446
+      }
+    ],
+    "fac_channel_parameters": [
+      {
+        "base_enhancement": 0,
+        "rm_flag": 0,
+        "spectrum_occupancy": 3,
+        "interleaver_depth_flag": 1,
+        "msc_mode": 3,
+        "sdc_mode": 0,
+        "number_of_services_code": 1,
+        "count": 446
+      }
+    ],
+    "fac_identities": {
+      "1": 148,
+      "2": 149,
+      "3": 149
+    },
+    "sdc_entity_counts": {
+      "0": 145,
+      "1": 145,
+      "5": 145,
+      "8": 3,
+      "12": 145
+    },
+    "sdc_entities": [
+      {
+        "type": 0,
+        "version_flag": 0,
+        "raw_hex": "06010002d8",
+        "count": 145,
+        "protection_level_a": 0,
+        "protection_level_b": 1,
+        "streams": [
+          {
+            "stream_id": 0,
+            "part_a_bytes": 0,
+            "part_b_bytes": 728
+          }
+        ]
+      },
+      {
+        "type": 8,
+        "version_flag": 0,
+        "raw_hex": "06877de242",
+        "count": 1,
+        "mjd": 61372,
+        "signalled_utc_minute": "2026-11-28T09:02Z",
+        "local_offset_minutes": null
+      },
+      {
+        "type": 8,
+        "version_flag": 0,
+        "raw_hex": "06877de243",
+        "count": 1,
+        "mjd": 61372,
+        "signalled_utc_minute": "2026-11-28T09:03Z",
+        "local_offset_minutes": null
+      },
+      {
+        "type": 8,
+        "version_flag": 0,
+        "raw_hex": "06877de244",
+        "count": 1,
+        "mjd": 61372,
+        "signalled_utc_minute": "2026-11-28T09:04Z",
+        "local_offset_minutes": null
+      },
+      {
+        "type": 5,
+        "version_flag": 0,
+        "raw_hex": "0850c1b30000",
+        "count": 145,
+        "short_id": 0,
+        "stream_id": 0,
+        "packet_mode": true,
+        "enhancement_flag": 0,
+        "application_domain": 1,
+        "data_unit_indicator": 1,
+        "packet_id": 0,
+        "packet_data_bytes": 179,
+        "dab_user_application_type": 0
+      },
+      {
+        "type": 12,
+        "version_flag": 0,
+        "raw_hex": "0ac02d2d2d6b70",
+        "count": 145,
+        "short_id": 0,
+        "language": "---",
+        "country": "kp"
+      },
+      {
+        "type": 1,
+        "version_flag": 0,
+        "raw_hex": "3e10eca1b0ec84a0eca491ec9599eca09c32eb9dbceca780ec98a4ebb0a9ec86a1",
+        "count": 145,
+        "short_id": 0,
+        "label": "조선중앙제2라지오방송"
+      }
+    ],
+    "raw_source_sha256": "251c5224cc3a5083a83d86a2b23c27c267bb90069336f279e692fc19cbc8d514"
+  },
+  "packets": {
+    "stream_row_byte_counts": {
+      "728": 444
+    },
+    "all_nominal_packet_positions": 1776,
+    "packet_crc_good": 1444,
+    "packet_crc_failed": 332,
+    "all_crc_good_header_values": [
+      {
+        "header_hex": "01",
+        "count": 353,
+        "first": 0,
+        "last": 0,
+        "packet_id": 0,
+        "padding_indicator": 0,
+        "continuity_index": 1
+      },
+      {
+        "header_hex": "02",
+        "count": 372,
+        "first": 0,
+        "last": 0,
+        "packet_id": 0,
+        "padding_indicator": 0,
+        "continuity_index": 2
+      },
+      {
+        "header_hex": "43",
+        "count": 367,
+        "first": 0,
+        "last": 1,
+        "packet_id": 0,
+        "padding_indicator": 0,
+        "continuity_index": 3
+      },
+      {
+        "header_hex": "80",
+        "count": 352,
+        "first": 1,
+        "last": 0,
+        "packet_id": 0,
+        "padding_indicator": 0,
+        "continuity_index": 0
+      }
+    ],
+    "header_counts_by_q": {
+      "0": {
+        "80": 352
+      },
+      "1": {
+        "01": 353
+      },
+      "2": {
+        "02": 372
+      },
+      "3": {
+        "43": 367
+      }
+    },
+    "unique_observed_valid_packet_ids": [
+      0
+    ],
+    "all_four_packets_crc_good_with_expected_ordinal_headers": 320,
+    "complete_native_du_crc_rows": 320,
+    "msc_sha256": "fea03f5d0276dd3f754731d3f05ac6b595ef0aa051672463ba5b08fdfc9179fe"
+  },
+  "raw_msc_equal_to_published_replay": true,
+  "comparison": {
+    "1317": {
+      "blocks": {
+        "FAC": {
+          "observed": 4451,
+          "crc_passed": 4451,
+          "crc_failed": 0
+        },
+        "SDC": {
+          "observed": 1486,
+          "crc_passed": 1481,
+          "crc_failed": 5
+        }
+      },
+      "sdc_type_counts": {
+        "0": 1481,
+        "1": 1481,
+        "5": 1481,
+        "8": 30,
+        "12": 1481
+      },
+      "all_non_time_entities_identical": true,
+      "prior_signalling_sha256": "a6b842d939b86e0d9ad7cd4b842f3ad3ce7c9a08b83a2f1737005b0f8f128e97"
+    },
+    "2227": {
+      "blocks": {
+        "FAC": {
+          "observed": 447,
+          "crc_passed": 444,
+          "crc_failed": 3
+        },
+        "SDC": {
+          "observed": 150,
+          "crc_passed": 148,
+          "crc_failed": 2
+        }
+      },
+      "sdc_type_counts": {
+        "0": 148,
+        "1": 148,
+        "5": 148,
+        "8": 2,
+        "12": 148
+      },
+      "all_non_time_entities_identical": true,
+      "prior_signalling_sha256": "0b4bccafcf6a8f88e24acd2d1b57af1ca357e9b677410f47c2423c328bd0a2ae"
+    },
+    "2258": {
+      "blocks": {
+        "FAC": {
+          "observed": 446,
+          "crc_passed": 435,
+          "crc_failed": 11
+        },
+        "SDC": {
+          "observed": 150,
+          "crc_passed": 116,
+          "crc_failed": 34
+        }
+      },
+      "sdc_type_counts": {
+        "0": 116,
+        "1": 116,
+        "5": 116,
+        "8": 3,
+        "12": 116
+      },
+      "all_non_time_entities_identical": true,
+      "prior_signalling_sha256": "ffcb83602a547d5cfe91e4368aa56bb14c4536103f9678fcd7d09e9373512098"
+    },
+    "2318": {
+      "blocks": {
+        "FAC": {
+          "observed": 598,
+          "crc_passed": 597,
+          "crc_failed": 1
+        },
+        "SDC": {
+          "observed": 200,
+          "crc_passed": 197,
+          "crc_failed": 3
+        }
+      },
+      "sdc_type_counts": {
+        "0": 197,
+        "1": 197,
+        "5": 197,
+        "8": 4,
+        "12": 197
+      },
+      "all_non_time_entities_identical": true,
+      "prior_signalling_sha256": "0048c4037472553ceec55d708735e94520b1501c43800beed664166adda5e00c"
+    }
+  },
+  "scope": "Service signalling and standard packet headers. CRCs establish reception of these fields. No application payload is interpreted. The packet trace cannot characterize another station, time, or an undocumented inner stream."
+}

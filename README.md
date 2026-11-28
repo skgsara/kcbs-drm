@@ -34,6 +34,12 @@ transmitted bits agreed in all **1,871** eligible SWB GSC INACTIVE slots.
 The data include one counter with 15 observations at each of the four positions.
 [IQ recording, field checks, stock encoder examples and replay](examples/nov27/validation/swb-gsc/README.md)
 
+The group projector can also check one required zero bit in a particular
+SWB GSC pulse-codebook layout. The bit matched in 274 eligible development
+words. A fresh 00:28 UTC recording yielded 32 complete groups with zero
+eligible padding checks and eight matches on the four-bit INACTIVE field.
+[Per-slot field report, new IQ and reproducible controls](examples/nov28/gsc-fields/README.md)
+
 Stock ACELP examples reproduce the exact one-bit ambiguities at payload
 bytes 24 and 27. In a narrower wideband GSC case, the first 128 bits
 correctly predicted two bits of byte 27 in nine stock words. Neither

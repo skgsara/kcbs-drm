@@ -1,0 +1,47 @@
+{
+  "gated_room": {
+    "total_words": 6000,
+    "eligible_changed": 2058,
+    "changed_g192_sha256": "44e904ff19a6d18485ac11327b944a4e167ac9f81697ab6a52bfddf832019b43",
+    "pcm_samples": 1920000,
+    "original_and_joint_pcm_sha256": "abae27586cb328a41b70f0f2629d466070af2c6c95825456573c36a0583ea0cf",
+    "all_slot_status_fields_equal": true,
+    "all_GSC_range_symbols_equal": true,
+    "all_GSC_recoded_blocks_equal": true,
+    "before_mismatch_counts_zero": 2058,
+    "flipped_mismatch_exactly_b223": 2058,
+    "status_count": {
+      "either_native_flag": 0
+    }
+  },
+  "moving_noise_floor": {
+    "total_words": 6000,
+    "eligible_changed": 2921,
+    "changed_g192_sha256": "39c9ad13eefb072c3946f144867c8d8a825f6c48c639a6d686058dc2e38b913c",
+    "pcm_samples": 1920000,
+    "original_and_joint_pcm_sha256": "8825b385d8517a1a463d801fb2ce723148cd01c69925c141d85be5ee6e34a2ea",
+    "all_slot_status_fields_equal": true,
+    "all_GSC_range_symbols_equal": true,
+    "all_GSC_recoded_blocks_equal": true,
+    "before_mismatch_counts_zero": 2921,
+    "flipped_mismatch_exactly_b223": 2921,
+    "status_count": {
+      "either_native_flag": 0
+    }
+  },
+  "transient_bands": {
+    "total_words": 6000,
+    "eligible_changed": 308,
+    "changed_g192_sha256": "9013a32f5adf9076ec72b3ef28f42de96cd48a43157e909f2278321fc30f168c",
+    "pcm_samples": 1920000,
+    "original_and_joint_pcm_sha256": "4fbc8a64361a5423535997d8c46cd258ca7dfc2e3920e3c079e19a48c4b1a220",
+    "all_slot_status_fields_equal": true,
+    "all_GSC_range_symbols_equal": true,
+    "all_GSC_recoded_blocks_equal": true,
+    "before_mismatch_counts_zero": 308,
+    "flipped_mismatch_exactly_b223": 308,
+    "status_count": {
+      "either_native_flag": 0
+    }
+  }
+}

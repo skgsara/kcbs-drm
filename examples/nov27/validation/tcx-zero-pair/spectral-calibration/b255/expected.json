@@ -1,0 +1,178 @@
+{
+  "counter": 43865914,
+  "position": 1,
+  "original_g192_sha256": "195b1f058143763a7478c0723d67747ad827cf94ba4d573dd333d72d7d3bb10e",
+  "operation_counts": {
+    "coefficient_sign": 8,
+    "refine_nonzero": 7
+  },
+  "same_address_after_flip": 15,
+  "same_address_operand_and_ranges_from_cold": 15,
+  "rows": [
+    {
+      "cycle": 0,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "coefficient_sign",
+      "coefficient_bin": 105,
+      "residual_index": null,
+      "original_operand": -1,
+      "flipped_operand": 1,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 1,
+      "mode": "FE",
+      "original_b255": 1,
+      "operation": "coefficient_sign",
+      "coefficient_bin": 88,
+      "residual_index": null,
+      "original_operand": -1,
+      "flipped_operand": 1,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 2,
+      "mode": "FE",
+      "original_b255": 1,
+      "operation": "coefficient_sign",
+      "coefficient_bin": 87,
+      "residual_index": null,
+      "original_operand": -1,
+      "flipped_operand": 1,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 3,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "refine_nonzero",
+      "coefficient_bin": 18,
+      "residual_index": 6,
+      "original_operand": 1,
+      "flipped_operand": 0,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 4,
+      "mode": "FF",
+      "original_b255": 0,
+      "operation": "refine_nonzero",
+      "coefficient_bin": 12,
+      "residual_index": 4,
+      "original_operand": 0,
+      "flipped_operand": 1,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 5,
+      "mode": "FE",
+      "original_b255": 1,
+      "operation": "refine_nonzero",
+      "coefficient_bin": 15,
+      "residual_index": 4,
+      "original_operand": 1,
+      "flipped_operand": 0,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 6,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "coefficient_sign",
+      "coefficient_bin": 120,
+      "residual_index": null,
+      "original_operand": -1,
+      "flipped_operand": 1,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 7,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "coefficient_sign",
+      "coefficient_bin": 58,
+      "residual_index": null,
+      "original_operand": -2,
+      "flipped_operand": 2,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 8,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "refine_nonzero",
+      "coefficient_bin": 23,
+      "residual_index": 4,
+      "original_operand": 1,
+      "flipped_operand": 0,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 9,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "refine_nonzero",
+      "coefficient_bin": 15,
+      "residual_index": 4,
+      "original_operand": 1,
+      "flipped_operand": 0,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 10,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "coefficient_sign",
+      "coefficient_bin": 89,
+      "residual_index": null,
+      "original_operand": -2,
+      "flipped_operand": 2,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 11,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "coefficient_sign",
+      "coefficient_bin": 105,
+      "residual_index": null,
+      "original_operand": -1,
+      "flipped_operand": 1,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 12,
+      "mode": "FF",
+      "original_b255": 1,
+      "operation": "refine_nonzero",
+      "coefficient_bin": 14,
+      "residual_index": 4,
+      "original_operand": 1,
+      "flipped_operand": 0,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 13,
+      "mode": "FE",
+      "original_b255": 1,
+      "operation": "refine_nonzero",
+      "coefficient_bin": 22,
+      "residual_index": 4,
+      "original_operand": 1,
+      "flipped_operand": 0,
+      "pcm_changed": true
+    },
+    {
+      "cycle": 14,
+      "mode": "FE",
+      "original_b255": 0,
+      "operation": "coefficient_sign",
+      "coefficient_bin": 118,
+      "residual_index": null,
+      "original_operand": 1,
+      "flipped_operand": -1,
+      "pcm_changed": true
+    }
+  ]
+}
