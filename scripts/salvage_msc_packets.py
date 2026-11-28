@@ -4,11 +4,12 @@ Counter assignment requires either a complete CRC-good 0/1/2 group, or a
 0/1/2/0 sequence with CRC-good first packets and CRC-good counter-containing
 packets at both ends whose counters differ by one. Standalone phase-0 records
 may contribute when their first and counter packets pass CRC. Packet alternatives
-are never guessed: conflicting payloads are quarantined. Reassembled DUs must
-pass their own CRC. Missing frames are never replaced with synthetic content.
+are never guessed: conflicting payloads are quarantined. A CRC-good packet with
+an unexpected header or an intact four-packet record with a bad DU CRC breaks
+the coordinate sequence. Reassembled DUs must pass their own CRC.
 """
 import argparse
-from collections import defaultdict
+from collections import Counter, defaultdict
 import json
 from pathlib import Path
 import struct
@@ -16,8 +17,10 @@ import struct
 import numpy as np
 from tail_fill_audit import crc, fill_candidates
 
+PACKET_HEADERS = (0x80, 0x01, 0x02, 0x43)
 
-def records(path):
+
+def records(path, *, rejected_records=None):
     with open(path, 'rb') as f:
         index = 0
         while True:
@@ -37,9 +40,20 @@ def records(path):
                 good = [crc(raw[q*182:q*182+180]) == int.from_bytes(raw[q*182+180:q*182+182], 'big')
                         for q in range(4)]
                 du = b''.join(p)
-                yield dict(index=index, payload=p, packet_ok=good, du=du,
-                           phase=du[1] >> 4, counter=int.from_bytes(du[664:668], 'big'),
-                           complete=all(good) and crc(du[:714]) == int.from_bytes(du[714:], 'big'))
+                complete = all(good)
+                reason = None
+                if any(ok and raw[q*182] != PACKET_HEADERS[q] for q, ok in enumerate(good)):
+                    reason = 'unexpected_packet_header'
+                elif complete and crc(du[:714]) != int.from_bytes(du[714:], 'big'):
+                    reason = 'complete_du_crc'
+                if reason is not None:
+                    if rejected_records is not None:
+                        rejected_records[reason] += 1
+                    yield None
+                else:
+                    yield dict(index=index, payload=p, packet_ok=good, du=du,
+                               phase=du[1] >> 4, counter=int.from_bytes(du[664:668], 'big'),
+                               complete=complete)
             else:
                 yield None  # preserve barriers between unexpected records
             index += 1
@@ -50,8 +64,9 @@ def salvage(paths, out, *, transport_only=False):
     provenance = defaultdict(list)
     baseline = set()
     assignments = 0
+    rejected_records = Counter()
     for path in paths:
-        recs = list(records(path))
+        recs = list(records(path, rejected_records=rejected_records))
         assigned = defaultdict(set)
         for i, r in enumerate(recs):
             if r and r['phase'] == 0 and r['packet_ok'][0] and r['packet_ok'][3]:
@@ -126,6 +141,8 @@ def salvage(paths, out, *, transport_only=False):
                   candidate_key_groups=int(mask.all(axis=1).sum()),
                   verified_text_key_groups=0,
                   note='Packet/DU CRCs verify container integrity, not text or codec keys.')
+    if rejected_records:
+        report['rejected_record_observations'] = dict(rejected_records)
     if transport_only:
         report['text_candidates_evaluated'] = False
     out = Path(out)

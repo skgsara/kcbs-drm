@@ -1,0 +1,73 @@
+{
+  "sources": {
+    "3205": {
+      "source_sha256": "f8e4c472edf6d42ea93ecfc98746a5999b28cad519a2dd0f5d52bd895f02a1c8",
+      "rows": 3328,
+      "original_packet_crc_passes": 11465,
+      "assigned_unique_packet_coordinates": 5319,
+      "complete_native_dus": 1260,
+      "complete_groups": 360
+    },
+    "6140": {
+      "source_sha256": "32f613781d8a661a17392a33289bb33c6c1310671921eded41c4c75ec1ecd899",
+      "rows": 1778,
+      "original_packet_crc_passes": 2946,
+      "assigned_unique_packet_coordinates": 2183,
+      "complete_native_dus": 521,
+      "complete_groups": 154
+    }
+  },
+  "coordinate": "counter,phase,q; zero-based packet continuity q",
+  "common_identical_182_byte_packets": 1711,
+  "packet_disagreements": 0,
+  "union_packet_coordinates": 5791,
+  "common_native_dus": 387,
+  "union_of_single_site_native_dus": 1394,
+  "pooled_native_dus": 1395,
+  "required_both_carriers_to_form_du": [
+    [
+      32088106,
+      0
+    ]
+  ],
+  "common_groups": 102,
+  "union_of_single_site_groups": 412,
+  "groups_from_union_of_single_site_native_dus": 414,
+  "groups_from_packet_union": 415,
+  "additional_groups": {
+    "32087806": {
+      "0": [
+        6140
+      ],
+      "1": [
+        3205
+      ],
+      "2": [
+        3205
+      ]
+    },
+    "32088021": {
+      "0": [
+        3205
+      ],
+      "1": [
+        6140
+      ],
+      "2": [
+        3205,
+        6140
+      ]
+    },
+    "32088106": {
+      "0": [],
+      "1": [
+        6140
+      ],
+      "2": [
+        6140
+      ]
+    }
+  },
+  "pooled_reassembly_crc_failures": 0,
+  "source": "Per-frequency originals and default transport-only salvage. Deduplicated coordinates throughout and checked every exported complete DU byte for byte against the directly assembled packets."
+}

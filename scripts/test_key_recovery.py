@@ -18,8 +18,8 @@ def record(du):
     du = bytearray(du)
     du[714:716] = crc(du[:714]).to_bytes(2, 'big')
     result = b''
-    for q in range(4):
-        packet = bytes([q]) + du[q*179:(q+1)*179]
+    for q, header in enumerate((0x80, 0x01, 0x02, 0x43)):
+        packet = bytes([header]) + du[q*179:(q+1)*179]
         result += packet + crc(packet).to_bytes(2, 'big')
     return struct.pack('<I', len(result)) + result
 

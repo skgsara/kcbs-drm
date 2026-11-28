@@ -14,6 +14,12 @@ The group's separate EVS field test reports one surviving 13-bit combination in 
 
 One reproducible GSC check is already available for comparison if the reported frames use modes `74`–`77`. In a separate Airspy recording the prior mode-based prediction for word bits 40–43 agreed with their directly received value on 241/241 eligible words, including 61 at position two. The member's summary gives the GSC class only, so the number eligible at 43912071 is unknown. [IQ, field and counters](../hq-neighbors/airspy-gap/README.md)
 
+## The group's 09:42:39 Beijing recording
+
+The group recorded another 45 seconds, **09:42:39–09:43:24 Beijing time (01:42:39–01:43:24 UTC)**. They report that 3250 and 6100 kHz AM still carried the same programme and that 3205 and 6140 kHz DRM still carried the same data stream. They compared 3250 AM to 3205 DRM using 420 text-CRC-supported first-position frames. Those frames span 8.4 seconds of encoded audio distributed through the 45-second window. Their cross-programme comparison was inconclusive and they did not start the proposed five-minute follow-up.
+
+This check began 19 minutes 49 seconds after the earlier three-minute recording ended. The report gives no correlation scores, lag search or acceptance threshold for the later window. It leaves open whether the programmes differed or the comparison lacked enough usable audio. Keep the earlier −5.79 s file offset with the earlier recording.
+
 Two sufficiently wide Airspy HF recordings can contain all four channels. The lower pair is 45 kHz apart and the upper pair is 40 kHz apart. When those pairs are recorded on different receivers, retain both start times, sample rates and channel frequencies. Independently tune each RF channel. The two AM outputs can then be aligned by audio content; the two DRM receptions can be aligned by their transmitted packet coordinates. A common computer can start two devices with different sample clocks.
 
 ## What we could verify

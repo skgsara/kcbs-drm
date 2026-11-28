@@ -24,7 +24,9 @@ comparison. A group member subsequently heard different AM and DRM programmes,
 then reported a match in nine windows of a three-minute Airspy recording
 starting at 09:19:50 Beijing time. Their joint AM scoring selected the correct
 low two bits of payload bytes 24 and 27 uniquely in 3/15 and 1/15 held-out
-groups, respectively. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
+groups, respectively. A separate 45-second comparison at 09:42:39 Beijing
+time used 420 text-supported DRM first-position frames and left the AM/DRM
+programme match unresolved. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
 
 In archived IQ, the next EVS word's transmitted mode ruled out a transient
 in six position-three words and three position-four words, assuming continuous
@@ -370,15 +372,23 @@ python scripts/salvage_msc_packets.py receiver-a.msc.bin receiver-b.msc.bin \
     --out work/msc_salvage
 ```
 
-Salvage merges packet-CRC-good payloads at the same counter and phase, rejects
-conflicting copies, and requires the reassembled data unit to pass its CRC.
+Salvage merges CRC-checked packets at matching counter, phase and packet
+position. For KCBS-2 the four physical packet headers are `80 01 02 43`.
+A row with a CRC-valid packet in an inconsistent header position, or four
+CRC-valid packets with a failing data-unit CRC, breaks the sequence used
+to assign counters. A second receiver can still supply that data unit.
+Conflicting valid copies remain quarantined. Every assembled unit must pass
+its own CRC. [Transport regression tests](scripts/test_salvage_msc_packets.py)
 The March fast path instead uses complete CRC-good groups in the cached dumps.
 On the longest bundled March capture, both paths independently return the same
 708 counters and data units; salvage adds zero, so it does not explain the
 reported 702 count. Martyn’s 702 groups are a byte-identical subset of those
-708; his dump lacks the other six. For June, combining CRC-good packets across the two
-frequencies yields **410 complete groups instead of 408**.
-The two added groups are not additional verified text prefixes.
+708; his dump lacks the other six. In the two full June 16 MSC dumps, the
+union of groups complete on either frequency contains **412 counters**.
+Combining CRC-valid packets yields **415**. Two additional groups combine
+complete data units from different frequencies. At counter 32088106,
+complementary packets from the two frequencies complete a single data unit.
+[Original received packets and replay](examples/jun16/transport/README.md)
 
 ## Render the contributed November recording
 

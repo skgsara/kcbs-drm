@@ -1,0 +1,201 @@
+{
+  "target_counter": 32088106,
+  "description": "Contiguous original length-prefixed MSC rows, copied byte for byte.",
+  "packet_header_bytes_hex": [
+    "80",
+    "01",
+    "02",
+    "43"
+  ],
+  "bytes_per_source_record": 732,
+  "crc": "CRC-16 polynomial 0x1021, initial and final XOR 0xffff, transmitted big-endian",
+  "collections": "https://github.com/martynw/KCBSDRM/blob/0b3e75fcb642d17d79c72f8f628cb4424273c06c/CROSSTX_FINDINGS_2026-07-07.md",
+  "sources": {
+    "3205": {
+      "upstream": "https://github.com/martynw/KCBSDRM/blob/0b3e75fcb642d17d79c72f8f628cb4424273c06c/reference/sf_3205.bin",
+      "source_name": "sf_3205.bin",
+      "source_sha256": "f8e4c472edf6d42ea93ecfc98746a5999b28cad519a2dd0f5d52bd895f02a1c8",
+      "source_bytes": 2436096,
+      "original_rows_half_open": [
+        1707,
+        1708
+      ],
+      "original_bytes_half_open": [
+        1249524,
+        1250256
+      ],
+      "excerpt": "june-3205.msc.bin",
+      "excerpt_sha256": "a4746e25c7d5b611f680a752afa23ff996aa2a2eb30df601eff7b357fd18c0c9",
+      "excerpt_bytes": 732,
+      "rows": [
+        {
+          "original_index": 1707,
+          "excerpt_index": 0,
+          "phase": 0,
+          "crc_good_packets": [
+            0,
+            1,
+            3
+          ],
+          "transmitted_packet_crc16": {
+            "0": "184d",
+            "1": "c467",
+            "3": "b25e"
+          },
+          "direct_counter": 32088106
+        }
+      ]
+    },
+    "6140": {
+      "upstream": "https://github.com/martynw/KCBSDRM/blob/0b3e75fcb642d17d79c72f8f628cb4424273c06c/reference/sf_6140.bin",
+      "source_name": "sf_6140.bin",
+      "source_sha256": "32f613781d8a661a17392a33289bb33c6c1310671921eded41c4c75ec1ecd899",
+      "source_bytes": 1301496,
+      "original_rows_half_open": [
+        1616,
+        1620
+      ],
+      "original_bytes_half_open": [
+        1182912,
+        1185840
+      ],
+      "excerpt": "june-6140.msc.bin",
+      "excerpt_sha256": "891ac46c29d273b0606954eff994affb27b9aea6828839ba016b6f4323f344d9",
+      "excerpt_bytes": 2928,
+      "rows": [
+        {
+          "original_index": 1616,
+          "excerpt_index": 0,
+          "phase": 0,
+          "crc_good_packets": [
+            0,
+            2,
+            3
+          ],
+          "transmitted_packet_crc16": {
+            "0": "184d",
+            "2": "2e6d",
+            "3": "b25e"
+          },
+          "direct_counter": 32088106
+        },
+        {
+          "original_index": 1617,
+          "excerpt_index": 1,
+          "phase": 1,
+          "crc_good_packets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "transmitted_packet_crc16": {
+            "0": "8b59",
+            "1": "e8a3",
+            "2": "0eb2",
+            "3": "c076"
+          }
+        },
+        {
+          "original_index": 1618,
+          "excerpt_index": 2,
+          "phase": 2,
+          "crc_good_packets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "transmitted_packet_crc16": {
+            "0": "0157",
+            "1": "0d74",
+            "2": "6f93",
+            "3": "5cab"
+          }
+        },
+        {
+          "original_index": 1619,
+          "excerpt_index": 3,
+          "phase": 0,
+          "crc_good_packets": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "transmitted_packet_crc16": {
+            "0": "7d97",
+            "1": "f8ea",
+            "2": "7d94",
+            "3": "4392"
+          },
+          "direct_counter": 32088107
+        }
+      ]
+    }
+  },
+  "target_phases": {
+    "0": {
+      "du_bytes": 716,
+      "sha256": "a77da702acceef073da15644ee2bf82e68694fef008c7ffa4ec897bec06d25b0",
+      "du_crc16": "76ca",
+      "good_packets_3205": [
+        0,
+        1,
+        3
+      ],
+      "good_packets_6140": [
+        0,
+        2,
+        3
+      ]
+    },
+    "1": {
+      "du_bytes": 716,
+      "sha256": "40147ae25c125abc6501af916f6747928ed4cd1c19726abe459e01d021c64c4f",
+      "du_crc16": "cdfe",
+      "good_packets_3205": [],
+      "good_packets_6140": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "2": {
+      "du_bytes": 716,
+      "sha256": "d0f135ede29bbe08cab775d09762f5e5089680956693f7a56bcf66aa426f1bd5",
+      "du_crc16": "ed04",
+      "good_packets_3205": [],
+      "good_packets_6140": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "identical_physical_packet_sha256_at_phase0": {
+    "0": "e9d6a80bcd92b08bdf6478a52eb00446dbc3cbf17dd8529b9f97d9d6f6162db9",
+    "3": "850b39d87758a3d960adefeedec99adf3554afa22cf0ff1ba2e671e6163e181a"
+  },
+  "target_complete_du_phases": {
+    "3205": [],
+    "6140": [
+      1,
+      2
+    ],
+    "pooled": [
+      0,
+      1,
+      2
+    ]
+  },
+  "extra_boundary_anchor": {
+    "counter": 32088107,
+    "phase": 0,
+    "carrier_khz": 6140
+  },
+  "coordinate_rule": "Each phase 0 has CRC-valid q0 carrying the phase and q3 carrying the counter. The four 6140 rows carry phases 0,1,2,0 with consecutive phase-0 counters; the interior rows carry their own CRC-valid phase tags.",
+  "target_concatenated_phase_order_sha256": "279bb31a3030e466939869998f2b809c8fcfdbcba19aa5ce11a7be6116b41430"
+}

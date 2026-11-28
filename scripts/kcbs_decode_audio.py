@@ -118,7 +118,8 @@ def file_digest(path):
 def prepare_aggregate(out, dumps, args):
     """Only trust completed salvage/key results from this exact set of dumps."""
     keys = 'keys-phrases' if args.phrase_keys else 'keys'
-    signature = dict(version=1, inputs=[str(Path(p).resolve()) for p in args.inputs],
+    # Version 2 requires the physical packet headers and the enclosing DU CRC.
+    signature = dict(version=2, inputs=[str(Path(p).resolve()) for p in args.inputs],
                      dumps=[dict(path=str(p.relative_to(out)), sha256=file_digest(p)) for p in dumps],
                      options={k: v for k, v in vars(args).items() if k not in ('inputs', 'out')})
     if args.phrase_keys:
