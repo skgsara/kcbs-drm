@@ -1,0 +1,32 @@
+{
+  "profile": "Declared-clear synthetic EF0201 / DRM IQ TEST",
+  "input": {
+    "source_format": "WAV",
+    "sample_pairs": 1670400,
+    "sample_rate_hz": 48000,
+    "interleaved_pcm16le_sha256": "6d8e4b51de8280b53db679dd2bea1c2eeabb515bf0e0693c6ae307119615973e"
+  },
+  "signalling_crc": {
+    "FAC": {
+      "observed": 84,
+      "crc_passed": 84,
+      "crc_failed": 0
+    },
+    "SDC": {
+      "observed": 30,
+      "crc_passed": 28,
+      "crc_failed": 2
+    }
+  },
+  "catalogue": "groups/catalog.json",
+  "sha256": {
+    "source_iq": "95d09e17ada5275cce172b61723e508c43314c73a1c30f16e310485288490f2f",
+    "demod_input_wav": "95d09e17ada5275cce172b61723e508c43314c73a1c30f16e310485288490f2f",
+    "dream": "ab62ff02da57356f27bfe4f64ae9ed62a3c48a129378d49438008f0272e29467",
+    "msc": "c77225d8f5a7d0ee451adf0aa511aa63169a28485b12f3712901323e48fb69f9",
+    "catalogue": "2d2700f10a1b94bc39eb341729ae289efd54d77f9ef6bca6a019ee23d2bc5c78"
+  },
+  "receiver_revision": "8c8eddb05aa1c876a5cbc4eb223ee385e4b24a26",
+  "sender_commitment_sha256": "dccb8e7960e6a014b82ac815aebd0104a211d7cbf7faab6089adfcd2d3fd023f",
+  "catalog_gzip_sha256": "71baf54346d74ea975e3389b445d3a7b62810ada602c409e4e63f697c35c960f"
+}
