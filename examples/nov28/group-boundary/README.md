@@ -8,6 +8,8 @@ The target is slot 8, phase 0, cycle 2, position 1. Mode `74` supports two diffe
 
 The two recordings had 119 assigned counters in common, comprising 7,140 chronological frame slots. At 1,056,088 directly received bit coordinates the receivers agreed exactly. Among those, 56,408 lay outside data units received whole by both stations. The stock and empirical field checks below used predictions from the 3205 recording and scored only where the 6140 receiver had the target. Most of these fields were also received directly on 3205. The four bits described above were the only exact predictions checked using a target packet missing from the accepted 3205 input. [Full denominators, rule outcomes and capture hashes](dual-rf.json)
 
+In the reciprocal check, five first-position words had an accepted 6140 mode and a rejected 6140 target packet. All five high nibbles predicted from the modes matched the independent 3205 reception. At counter 43908181, slot 32, the failed packet actually contained `27`. The intact packet on 3205 carried `C3`, confirming all four high bits even though three differed in the failed reception. The low-nibble rule allowed both 7 and 3. [Five checks and both native packet excerpts](reciprocal/README.md)
+
 | Frame position | Direct bits received at both stations | Individually predicted and checked against 6140 | Conditional hidden-bit predictions with no reference |
 | --- | ---: | ---: | ---: |
 | 1 | 265,432 | 1,723 | 211 |

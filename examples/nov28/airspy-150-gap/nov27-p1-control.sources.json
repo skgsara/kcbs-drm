@@ -1,0 +1,77 @@
+{
+  "protocol_sha256": "d4666afe07bd6031564a53b64ca326afeabeef30dc00b24b372194a14f26ef97",
+  "local_prelabel_prediction_file_sha256": "c84aaa4fddce5a5a11e313b977bcb0641aaa05699546b43d046b880cbf0f109a",
+  "inputs": {
+    "0617": {
+      "source": "Public examples/nov27/receiver/packets.npz, text-supported.192.gz and validation/evidence.json.",
+      "packets_sha256": "85986684749e84fb33434cccb39c9a994ddeb091ed01f20d62adfb2edc4f35ed",
+      "record_ledger_sha256": "6c658a4b92f0361a43f4f361fb234b271fd6b313b830b64394c95b8feab692ef",
+      "all_supplied_p1": 355,
+      "first_tick": 131564657,
+      "previously_aggregate_scored_capture": true,
+      "slots": 1500,
+      "stream_sha256": "cdf3249dface379d6790e10701735a62dbd0f177f0847c5e28efd582804c713f"
+    },
+    "0944": {
+      "source": "Receiver supplement kcbs2-3205-1744-1756-receiver-supplement-20261127.zip, directory 1744, packets.npz and text-crc-records.json. Frozen 1744.192 follows the supplied first-position recipe.",
+      "packets_sha256": "4403df9fca927b9d9df25e009145d7a2504b1123bd4f3897544c252b8e505bd8",
+      "record_ledger_sha256": "0421fec859cfe9224b9bdf822367a69a4e2eafe9634e49024b03a6338fcafbcc",
+      "all_supplied_p1": 2100,
+      "first_tick": 131595807,
+      "previously_aggregate_scored_capture": false,
+      "slots": 17640,
+      "stream_sha256": "4f69f80fe5c8fbf5ca3abcfc20aed2084b3b0bf689ce71135a6232894c2973a7"
+    },
+    "0956": {
+      "source": "Same receiver supplement, directory 1756, packets.npz and text-crc-records.json. Frozen 1756.192 follows the supplied first-position recipe.",
+      "packets_sha256": "5eae8b5fbb93550e8bc046b44418282854f355c4d09171057e681dd186122765",
+      "record_ledger_sha256": "ed9950638ca7b7d4d684e8f2c7ef3edcc9fbec0220caa37e2b7d1b8c73587826",
+      "all_supplied_p1": 4005,
+      "first_tick": 131597562,
+      "previously_aggregate_scored_capture": true,
+      "slots": 70560,
+      "stream_sha256": "cfd265ef422d86e633e18dc776d978ecd60b7592785f6f9ddc77254ba64ebec3"
+    },
+    "1105": {
+      "source": "kcbs2-3205-3250-handoff-20261127.zip, receiver/packets.npz, replay/known-first-position.192.gz and reports/text-crc-records.json.",
+      "packets_sha256": "99ed1273b814f55b9f190f66045d5c479cb1fa9b48e8ee6e72b9bc2d5f30a6b6",
+      "record_ledger_sha256": "7612021bcba2813b6e819b44366c33169ccfd365c7b51683853cbfbb57d1174c",
+      "all_supplied_p1": 1545,
+      "first_tick": 131607852,
+      "previously_aggregate_scored_capture": true,
+      "slots": 11700,
+      "stream_sha256": "e35b777d0ef1183bb0455a33f7c24fd54ea465a10d426847c645736a724e1647"
+    },
+    "1209": {
+      "source": "2026-11-27T12_09_09Z_3205.00_iq.wav, archived packet-anchored receiver output, strict ordinary records and first-position export.",
+      "packets_sha256": "464a0d33abdd50de88310c5475e801ac0b3f75a104db41b12cc7cf7a8821a789",
+      "record_ledger_sha256": "32dabde32942b9625ca613b17bfa632e54edff64f886725a84a7ff9a14319bf9",
+      "all_supplied_p1": 135,
+      "first_tick": 131617437,
+      "previously_aggregate_scored_capture": false,
+      "slots": 6080,
+      "stream_sha256": "f76d6a5ad625f6b7d3b4b25e781f0c0e7af1835daf0d511593f1384f82391e9c"
+    },
+    "1317": {
+      "source": "30min-2026-11-27T13_17_09Z_3205.00_iq.wav, archived packet-joined receiver output, strict ordinary records and 1317.192.",
+      "packets_sha256": "62778106441d09f78373cd49c83a03dcf1f6fcc6e106078c01954053b310ee4f",
+      "record_ledger_sha256": "3c8e0a2ebcaf56498d2310830eacff64833acb6e53ab9cc18112a32b2eb15e50",
+      "all_supplied_p1": 6561,
+      "first_tick": 131627637,
+      "previously_aggregate_scored_capture": true,
+      "slots": 88880,
+      "stream_sha256": "33f2576f613ab8d88ea95570220f033f2212c9445af624ddd1239c6f0081e0f8"
+    },
+    "1358": {
+      "source": "58-02_2026-11-27T13_58_03Z_3205.00_iq.wav, archived receiver output, packet-augmented text review and first-position export.",
+      "packets_sha256": "6804861dcb343a2d5903f229be17bfe7d95bb03636c748509320bc398c1f8eb3",
+      "record_ledger_sha256": "fbc7266e017562f2920ae77d843aa59a3add253594fc8e913f7e33bcc222fa58",
+      "all_supplied_p1": 148,
+      "first_tick": 131633766,
+      "previously_aggregate_scored_capture": false,
+      "slots": 1880,
+      "stream_sha256": "6d7809276d301264624b5a72420d19aca319702b2f49f7566baab2565d8063dd"
+    }
+  },
+  "public_tsv_sha256": "7bf1de39df20779eadc7eca7ef193088f48b834f06ad0aab7f89e2509f14634d"
+}

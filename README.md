@@ -255,6 +255,8 @@ Japanese receivers are also useful for simultaneous captures. Current reported D
 hours are **05:00–23:00 KST** (20:00 UTC the previous day to 14:00 UTC), confirmed
 on 2026-11-26. A failed lock does not prove the transmitter was off-air.
 
+The DS3PIC Web-888 in South Korea also lists both frequencies within its 0–30 MHz range. On November 28 at 03:31 UTC its status page reported 11 of 13 channels occupied. Our connection ended before tuning and returned zero IQ samples, so reception at this site remains unmeasured. [DS3PIC receiver](http://sdr.ds3pic.kr/) · [Operator's live status](http://sdr.ds3pic.kr/status)
+
 ```bash
 python kiwirecorder.py -s hl5ntr.ddns.net -p 8074 -f 3205 -m iq \
     --tlimit=1800 --station=drm -d ./captures

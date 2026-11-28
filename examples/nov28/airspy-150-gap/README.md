@@ -44,6 +44,21 @@ The two rows with 132/133 refer to the same 133 historical frames. Their excepti
 
 In a separate check of 12 previously archived stock encoder streams, one 33-byte word had slot 53's exact combination `60 3A`. Its second octet was `15`, whose top two bits are `00`. Re-encoding the original two-minute synthetic input reproduced the entire 6,000-word stream byte for byte. This establishes one possible standard EVS word for those two octets. The two on-air bits at slot 53 still have no independent label. [All four pairs, the sender words and a reproducible input](stock-controls/README.md)
 
+### The same mode and final octet in older first-position frames
+
+The seven November 25–26 receiver dumps also let us check these four predictions at P1. The mode, last octet and predictions had been fixed in an earlier archive score. Here we selected the exact octet pairs for the four target slots and compared them with previously supplied P1 labels. The label was eligible only if the relevant text column lay in a CRC-checked record header or body. The archive had previously been scored in aggregate. [Original scoring protocol and results](../swb-transition/README.md#where-the-on-air-labels-disagree)
+
+| Target P2 slot | Mode and p31 | P1 frames with both octets | Labelled P1 frames matching the prediction |
+| ---: | --- | ---: | ---: |
+| 17 | `61 6C` | 46 | 27/27 for `01` |
+| 29 | `60 B6` | 31 | 23/23 for `00` |
+| 53 | `60 3A` | 5 | 4/4 for `00` |
+| 57 | `61 4C` | 30 | 20/21 for `01` |
+
+The four `60 3A` labels came from four counters and four text records. For example, counter 43752388, slot 20, draws on a record starting at 43752386, phase 2, with CRC `FC42`. The `61 4C` disagreement at counter 43767843, slot 16, is one of the five previously reported P1 discrepancies. Its archived label reads `10`. The contributor also published a revised body with both disputed bits changed. Both bodies give CRC `E0C8` with the same header. The CRC cannot choose between them. Run `python examples/nov28/airspy-150-gap/p1_support.py` to reproduce the table and the example coordinates. [Scorer](p1_support.py) · [Two text interpretations](../swb-transition/p1-text-comparison.json)
+
+Seven November 27 captures supplied two further P1 labels for `60 3A`. Counter 43867026, slot 44, and counter 43869411, slot 40, both gave `00`, supported by different bulletin records with CRCs `BF11` and `BB4C`. Across the two archives there are six such first-position comparisons. All six concern earlier counters. [November 27 comparisons, including erasures](nov27-p1-control.md)
+
 ## Reproduce the result
 
 The compact [isolated IQ file](isolated-iq48.flac) contains the losslessly stored 48 kHz stereo PCM input to Dream after conversion. It includes the zero flanks. A fresh replay of this file with the pinned receiver produced the exact 11,712-byte native stream from the isolated run. The [IQ and dump hashes](iq-replay.json) cover this distribution copy.
