@@ -46,6 +46,8 @@ The member's report of 208 joint values at offsets 15 and 18 of counter 43917329
 
 ## Reproduction
 
+In the following held-out IQ minute, a mode-only forecast of a whole directly carried byte matched 11 of 30 eligible slots. The previously predicted high nibble matched 30/30. [Sealed whole-byte predictions and field score](../packet-bit-repair/README.md)
+
 The downloader requests just the selected members of the official ZIP and verifies each member digest. An already extracted copy of the official testvec tree works as well. Running the field checks requires Python and NumPy. To repeat the PCM comparison, extract the inner ANSI C source ZIP from the ETSI TS 26.442 attachment and build its stock decoder. Three serial local runs of the nine complete decode-and-compare cases took a median 6.79 seconds. Each run had the original input words and expected PCM. The timings cover only those operations. [Timing receipt](decoder-timing.json)
 
 The source release used here has attachment SHA-256 `17a167277c41d4d5267f4d2d0e4e20f847cb092c577491c04056b1116d3086d5` and inner ZIP SHA-256 `c2621dbd02969e6d2cbe20c8c34068d83604f5bc7bccf691110b58d198987e9f`. The decoder receipt records the actual local executable digest, which can differ across builds. [Fixed-point reference source](https://www.etsi.org/deliver/etsi_ts/126400_126499/126442/19.00.00_60/ts_126442v190000p0.zip)

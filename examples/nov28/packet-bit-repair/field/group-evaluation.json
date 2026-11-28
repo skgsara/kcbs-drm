@@ -1,0 +1,970 @@
+{
+  "format": "paired-msc-field-evaluation-v1",
+  "local_dependencies_sha256": {
+    "examples/nov28/clear-evs-controls/iq/check.py": "725e435d6a9ac3bafa179dd0112c9fa038d35069dea0aa04325c5c148ab904a1",
+    "examples/nov28/clear-evs-controls/iq/forecasts.json": "f4b7fcafab4a050ee236c69029533e0f4a793140c0aaed0554a4da811bd59017",
+    "examples/nov28/clear-evs-controls/iq-mlc4/forecasts.json": "7de2fbe6418376526be48c23834ea7278fe706a19db4dc45f94ed5e9c8e0102e",
+    "examples/nov28/dual-diversity-field/history.json.gz": "42985e72a35104e6590acc6a2f5a6e006b723cbcb3558d9ea99d5f41ffe82587",
+    "examples/nov28/dual-iq-1228/score_fields.py": "ac81cbe45d82fecba0e9ca434faf8b392b1e37e1229c3f7578460b996e89acf7",
+    "examples/nov28/packet-bit-repair/score_field.py": "3f5f78bdbb1e818fb58a3a0a4e27a71329042396bccaf5b138cd2eaea78c2c07",
+    "examples/nov28/same-6140-1232/native_groups.py": "5d49f5b6477c0e1768e0f63b1e8008be52f395e167688e9a27166272deba6f0f",
+    "scripts/build_evs_gcc_independent.py": "d69cf9e3b5eaa514bac5edb3925227502d7b17a3ab59b940635fef781281d308",
+    "scripts/check_evs_origin.py": "9c62f1e7fce30215e2ada9b0a52f5c0f2e983546d52e8e9fdf5a95c0898dc556",
+    "scripts/compare_evs_group.py": "632c8153c19db8b6051e0f2ee71484468536b28833e1e00259cb4ee90a8505c3",
+    "scripts/drm_row_alignment.py": "251f0677cf761b3db22ae6fad3695ca0c673478870b70b925ab5d1b7fb4dbf0a",
+    "scripts/evs_core_history.py": "6705df52617bda6797ae9f182bdd3ff633302cb7f4017b01e22542ad6c68f403",
+    "scripts/evs_evidence.py": "8107835aff25964be3b59272e56ffc7fc2d83e14df6e3807552c30ff4c6fcedb",
+    "scripts/evs_gsc_fields.py": "204b9b920134255a2507bdc656364283c1587db34a218a6ef5d8d92b54ad84e9",
+    "scripts/evs_hq_neighbors.py": "326dcbb0e8a040d7e849071830d54242f4e5ccafad7ffb0b904da093996786df",
+    "scripts/evs_intra_word.py": "6ab28dd7a0f41324500c5d182553755aaa7100732ec6a9522c1e6c12cea8b6e6",
+    "scripts/evs_transition_tags.py": "b0bd70993b25f2ccc74c2e4bf37cd4d4a842e0ff69c7cbf6e25876a682926821",
+    "scripts/project_evs_group.py": "83e0d5c24a47aa9cd3af1611da35735053a968b0d559afe1cfe44f2314d51dcb",
+    "scripts/received_evs_packets.py": "166bd6978719ea177ae9a55937bb63588e531291f5a26c005bb65441280cb75d",
+    "scripts/render_continuous.py": "803978808649436ab494c4e6b0b5d4986a64c47161d74fdd37008313ffd71e10",
+    "scripts/salvage_msc_packets.py": "de976480dc1ba2fa6fc10352c1b8bd40a9a3cf7c9fb8a362f05dfa61754bf77e",
+    "scripts/tail_fill_audit.py": "e488d2448c484e082c2ee1a06d6a1a79cd7aa38abac3db7ee45da9ebf7b09123"
+  },
+  "wire_comparison": {
+    "msc_rows": 144,
+    "changed_rows": 1,
+    "changed_packets": 1,
+    "changed_packets_passing_header_and_crc": 1
+  },
+  "inventory_size": 15021,
+  "subsequent_mlc4_counter_count": 29,
+  "combined_inventory_size": 15050,
+  "combined_exposure": {
+    "assigned_counters": [
+      43873123,
+      43873125,
+      43873126,
+      43873129,
+      43873131,
+      43873132,
+      43873133,
+      43873135,
+      43873136,
+      43873137,
+      43873138,
+      43873142,
+      43873150,
+      43873152,
+      43873153,
+      43873154,
+      43873155,
+      43873157,
+      43873158,
+      43873162,
+      43873163,
+      43873164,
+      43873165,
+      43873168
+    ],
+    "overlap_with_15021": [],
+    "overlap_with_later_mlc4": [],
+    "absent_from_both": [
+      43873123,
+      43873125,
+      43873126,
+      43873129,
+      43873131,
+      43873132,
+      43873133,
+      43873135,
+      43873136,
+      43873137,
+      43873138,
+      43873142,
+      43873150,
+      43873152,
+      43873153,
+      43873154,
+      43873155,
+      43873157,
+      43873158,
+      43873162,
+      43873163,
+      43873164,
+      43873165,
+      43873168
+    ]
+  },
+  "selection": "First consecutive complete native phase 0/1/2 triple in each input's MSC row order. Historical overlap is disclosed without changing either selection.",
+  "field_basis": "Direct observations in the repaired arm depend on the input corrections. Both arms use one physical recording. Conditional EVS checks have no independent clear-word labels here. Each score.json lists all 60 slots when a primary exists.",
+  "original": {
+    "msc_sha256": "e05839ecfa06b44cd7cf5d8ecc293a54e079e76f3a3dcc05677fcae5b68b9b9b",
+    "forecasts_sha256": "6f4c7461ddaa36a2a81ef0c2b95bf85e668d0ad81e1254368e2f314bca24ff7a",
+    "packets_sha256": "c752b7d9ca95dae9b22d4b128244829c444fc557d443693f87286e22de25a4fe",
+    "data_units_sha256": "cb53335bbfb01debaf876c1cabda363d4c0e3d78e84e467ac6a0b3fb0cbae39a",
+    "score_sha256": "6042a940db0cb911f29ea1f40068307264ce7f62104eb53a586f7f4fab839b38",
+    "native_transport": {
+      "msc_rows": 144,
+      "packet_crc_checks": 576,
+      "physical_packets_crc": 381,
+      "physical_packets_crc_and_header": 381,
+      "native_complete_dus": 61
+    },
+    "accepted_packet_coordinates": 182,
+    "accepted_complete_dus": 39,
+    "primary": {
+      "counter": 43873129,
+      "phase0_row": 26,
+      "du_sha256": [
+        "8fe0eedada3112c4fbe9cb6b513dfc3c5ca3ee7532be75991c4fe2ee4de342e6",
+        "e1a1d65d050a99c5c0b2340aace53a46a90f6d513de2d6e7ded3ef46528fa2fb",
+        "fa89ac90441cc3d05f196485d8c0535694a06811eb44861756cdf3de4e7baf3a"
+      ],
+      "total": {
+        "direct_bits": 10560,
+        "carried_unknown_bits": 5280,
+        "no_receipt_bits": 0,
+        "slots": 60,
+        "word_erasures": 60,
+        "rule_events": 31,
+        "direct_check_events": 28,
+        "conditional_events": 3,
+        "slots_with_rule_events": 17,
+        "events_by_outcome": {
+          "match": 28,
+          "mismatch": 0,
+          "unavailable": 0,
+          "restricted": 0,
+          "unrestricted": 3,
+          "contradiction": 0
+        },
+        "unique_target_bits": 118,
+        "unique_direct_checked_bits": 112,
+        "unique_conditional_fixed_bits": 0,
+        "unique_conflicting_conditional_bits": 0
+      },
+      "by_position": {
+        "1": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 6,
+          "direct_check_events": 6,
+          "conditional_events": 0,
+          "slots_with_rule_events": 3,
+          "events_by_outcome": {
+            "match": 6,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 24,
+          "unique_direct_checked_bits": 24,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "2": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 7,
+          "direct_check_events": 6,
+          "conditional_events": 1,
+          "slots_with_rule_events": 4,
+          "events_by_outcome": {
+            "match": 6,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 1,
+            "contradiction": 0
+          },
+          "unique_target_bits": 26,
+          "unique_direct_checked_bits": 24,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "3": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 8,
+          "direct_check_events": 8,
+          "conditional_events": 0,
+          "slots_with_rule_events": 4,
+          "events_by_outcome": {
+            "match": 8,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 32,
+          "unique_direct_checked_bits": 32,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "4": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 10,
+          "direct_check_events": 8,
+          "conditional_events": 2,
+          "slots_with_rule_events": 6,
+          "events_by_outcome": {
+            "match": 8,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 2,
+            "contradiction": 0
+          },
+          "unique_target_bits": 36,
+          "unique_direct_checked_bits": 32,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        }
+      }
+    },
+    "first_partial": {
+      "counter": 43873125,
+      "first_assigned_msc_row": 14,
+      "total": {
+        "direct_bits": 9608,
+        "carried_unknown_bits": 4800,
+        "no_receipt_bits": 1432,
+        "slots": 60,
+        "word_erasures": 60,
+        "rule_events": 38,
+        "direct_check_events": 36,
+        "conditional_events": 2,
+        "slots_with_rule_events": 20,
+        "events_by_outcome": {
+          "match": 34,
+          "mismatch": 0,
+          "unavailable": 2,
+          "restricted": 1,
+          "unrestricted": 1,
+          "contradiction": 0
+        },
+        "unique_target_bits": 148,
+        "unique_direct_checked_bits": 136,
+        "unique_conditional_fixed_bits": 2,
+        "unique_conflicting_conditional_bits": 0
+      },
+      "by_position": {
+        "1": {
+          "direct_bits": 2472,
+          "carried_unknown_bits": 1232,
+          "no_receipt_bits": 256,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 12,
+          "direct_check_events": 12,
+          "conditional_events": 0,
+          "slots_with_rule_events": 6,
+          "events_by_outcome": {
+            "match": 10,
+            "mismatch": 0,
+            "unavailable": 2,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 48,
+          "unique_direct_checked_bits": 40,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "2": {
+          "direct_bits": 2336,
+          "carried_unknown_bits": 1168,
+          "no_receipt_bits": 456,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 9,
+          "direct_check_events": 8,
+          "conditional_events": 1,
+          "slots_with_rule_events": 5,
+          "events_by_outcome": {
+            "match": 8,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 1,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 34,
+          "unique_direct_checked_bits": 32,
+          "unique_conditional_fixed_bits": 2,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "3": {
+          "direct_bits": 2336,
+          "carried_unknown_bits": 1168,
+          "no_receipt_bits": 456,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 6,
+          "direct_check_events": 6,
+          "conditional_events": 0,
+          "slots_with_rule_events": 3,
+          "events_by_outcome": {
+            "match": 6,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 24,
+          "unique_direct_checked_bits": 24,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "4": {
+          "direct_bits": 2464,
+          "carried_unknown_bits": 1232,
+          "no_receipt_bits": 264,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 11,
+          "direct_check_events": 10,
+          "conditional_events": 1,
+          "slots_with_rule_events": 6,
+          "events_by_outcome": {
+            "match": 10,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 1,
+            "contradiction": 0
+          },
+          "unique_target_bits": 42,
+          "unique_direct_checked_bits": 40,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        }
+      },
+      "report_sha256": "931bf66887c474996c6d1be9045fcbb0f7f508c9d29f16b6d00651bd471fe208"
+    },
+    "all_assigned_direct_field_scores": {
+      "counters": 24,
+      "nominal_slots": 1440,
+      "received_modes": 921,
+      "total": {
+        "predicted": 181,
+        "checked": 180,
+        "matched": 180,
+        "mismatched": 0,
+        "no_peer": 1
+      },
+      "by_position": {
+        "1": {
+          "predicted": 45,
+          "checked": 44,
+          "matched": 44,
+          "mismatched": 0,
+          "no_peer": 1
+        },
+        "2": {
+          "predicted": 49,
+          "checked": 49,
+          "matched": 49,
+          "mismatched": 0,
+          "no_peer": 0
+        },
+        "3": {
+          "predicted": 45,
+          "checked": 45,
+          "matched": 45,
+          "mismatched": 0,
+          "no_peer": 0
+        },
+        "4": {
+          "predicted": 42,
+          "checked": 42,
+          "matched": 42,
+          "mismatched": 0,
+          "no_peer": 0
+        }
+      },
+      "by_rule": {
+        "audio_noisy": {
+          "predicted": 0,
+          "checked": 0,
+          "matched": 0,
+          "mismatched": 0,
+          "no_peer": 0,
+          "by_position": {
+            "1": {
+              "predicted": 0,
+              "checked": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "2": {
+              "predicted": 0,
+              "checked": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "3": {
+              "predicted": 0,
+              "checked": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "4": {
+              "predicted": 0,
+              "checked": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "no_peer": 0
+            }
+          }
+        },
+        "inactive_nibble": {
+          "predicted": 181,
+          "checked": 180,
+          "matched": 180,
+          "mismatched": 0,
+          "no_peer": 1,
+          "by_position": {
+            "1": {
+              "predicted": 45,
+              "checked": 44,
+              "matched": 44,
+              "mismatched": 0,
+              "no_peer": 1
+            },
+            "2": {
+              "predicted": 49,
+              "checked": 49,
+              "matched": 49,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "3": {
+              "predicted": 45,
+              "checked": 45,
+              "matched": 45,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "4": {
+              "predicted": 42,
+              "checked": 42,
+              "matched": 42,
+              "mismatched": 0,
+              "no_peer": 0
+            }
+          }
+        }
+      }
+    },
+    "exposure": {
+      "assigned_counters": [
+        43873123,
+        43873125,
+        43873126,
+        43873129,
+        43873131,
+        43873132,
+        43873133,
+        43873135,
+        43873136,
+        43873137,
+        43873138,
+        43873142,
+        43873150,
+        43873152,
+        43873153,
+        43873154,
+        43873155,
+        43873157,
+        43873158,
+        43873162,
+        43873163,
+        43873164,
+        43873165,
+        43873168
+      ],
+      "overlap_with_15021": [],
+      "overlap_with_later_mlc4": [],
+      "absent_from_both": [
+        43873123,
+        43873125,
+        43873126,
+        43873129,
+        43873131,
+        43873132,
+        43873133,
+        43873135,
+        43873136,
+        43873137,
+        43873138,
+        43873142,
+        43873150,
+        43873152,
+        43873153,
+        43873154,
+        43873155,
+        43873157,
+        43873158,
+        43873162,
+        43873163,
+        43873164,
+        43873165,
+        43873168
+      ]
+    }
+  },
+  "repaired": {
+    "msc_sha256": "662a303b40f38c5a12d863fee929a0c2cec61f8b3860015c9bf0c8d3fe110f07",
+    "forecasts_sha256": "4d7440345f43c90bb7fea9b0ba3ae4b4cf7bee6aeacc2bb5ba5764220b2da074",
+    "packets_sha256": "c752b7d9ca95dae9b22d4b128244829c444fc557d443693f87286e22de25a4fe",
+    "data_units_sha256": "cb53335bbfb01debaf876c1cabda363d4c0e3d78e84e467ac6a0b3fb0cbae39a",
+    "score_sha256": "7d7ff11da23872533ca4a886506cb92fd2ca4b29fae4e2491564bd509324fa6d",
+    "native_transport": {
+      "msc_rows": 144,
+      "packet_crc_checks": 576,
+      "physical_packets_crc": 382,
+      "physical_packets_crc_and_header": 382,
+      "native_complete_dus": 62
+    },
+    "accepted_packet_coordinates": 182,
+    "accepted_complete_dus": 39,
+    "primary": {
+      "counter": 43873129,
+      "phase0_row": 26,
+      "du_sha256": [
+        "8fe0eedada3112c4fbe9cb6b513dfc3c5ca3ee7532be75991c4fe2ee4de342e6",
+        "e1a1d65d050a99c5c0b2340aace53a46a90f6d513de2d6e7ded3ef46528fa2fb",
+        "fa89ac90441cc3d05f196485d8c0535694a06811eb44861756cdf3de4e7baf3a"
+      ],
+      "total": {
+        "direct_bits": 10560,
+        "carried_unknown_bits": 5280,
+        "no_receipt_bits": 0,
+        "slots": 60,
+        "word_erasures": 60,
+        "rule_events": 31,
+        "direct_check_events": 28,
+        "conditional_events": 3,
+        "slots_with_rule_events": 17,
+        "events_by_outcome": {
+          "match": 28,
+          "mismatch": 0,
+          "unavailable": 0,
+          "restricted": 0,
+          "unrestricted": 3,
+          "contradiction": 0
+        },
+        "unique_target_bits": 118,
+        "unique_direct_checked_bits": 112,
+        "unique_conditional_fixed_bits": 0,
+        "unique_conflicting_conditional_bits": 0
+      },
+      "by_position": {
+        "1": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 6,
+          "direct_check_events": 6,
+          "conditional_events": 0,
+          "slots_with_rule_events": 3,
+          "events_by_outcome": {
+            "match": 6,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 24,
+          "unique_direct_checked_bits": 24,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "2": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 7,
+          "direct_check_events": 6,
+          "conditional_events": 1,
+          "slots_with_rule_events": 4,
+          "events_by_outcome": {
+            "match": 6,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 1,
+            "contradiction": 0
+          },
+          "unique_target_bits": 26,
+          "unique_direct_checked_bits": 24,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "3": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 8,
+          "direct_check_events": 8,
+          "conditional_events": 0,
+          "slots_with_rule_events": 4,
+          "events_by_outcome": {
+            "match": 8,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 32,
+          "unique_direct_checked_bits": 32,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "4": {
+          "direct_bits": 2640,
+          "carried_unknown_bits": 1320,
+          "no_receipt_bits": 0,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 10,
+          "direct_check_events": 8,
+          "conditional_events": 2,
+          "slots_with_rule_events": 6,
+          "events_by_outcome": {
+            "match": 8,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 2,
+            "contradiction": 0
+          },
+          "unique_target_bits": 36,
+          "unique_direct_checked_bits": 32,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        }
+      }
+    },
+    "first_partial": {
+      "counter": 43873125,
+      "first_assigned_msc_row": 14,
+      "total": {
+        "direct_bits": 9608,
+        "carried_unknown_bits": 4800,
+        "no_receipt_bits": 1432,
+        "slots": 60,
+        "word_erasures": 60,
+        "rule_events": 38,
+        "direct_check_events": 36,
+        "conditional_events": 2,
+        "slots_with_rule_events": 20,
+        "events_by_outcome": {
+          "match": 34,
+          "mismatch": 0,
+          "unavailable": 2,
+          "restricted": 1,
+          "unrestricted": 1,
+          "contradiction": 0
+        },
+        "unique_target_bits": 148,
+        "unique_direct_checked_bits": 136,
+        "unique_conditional_fixed_bits": 2,
+        "unique_conflicting_conditional_bits": 0
+      },
+      "by_position": {
+        "1": {
+          "direct_bits": 2472,
+          "carried_unknown_bits": 1232,
+          "no_receipt_bits": 256,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 12,
+          "direct_check_events": 12,
+          "conditional_events": 0,
+          "slots_with_rule_events": 6,
+          "events_by_outcome": {
+            "match": 10,
+            "mismatch": 0,
+            "unavailable": 2,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 48,
+          "unique_direct_checked_bits": 40,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "2": {
+          "direct_bits": 2336,
+          "carried_unknown_bits": 1168,
+          "no_receipt_bits": 456,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 9,
+          "direct_check_events": 8,
+          "conditional_events": 1,
+          "slots_with_rule_events": 5,
+          "events_by_outcome": {
+            "match": 8,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 1,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 34,
+          "unique_direct_checked_bits": 32,
+          "unique_conditional_fixed_bits": 2,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "3": {
+          "direct_bits": 2336,
+          "carried_unknown_bits": 1168,
+          "no_receipt_bits": 456,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 6,
+          "direct_check_events": 6,
+          "conditional_events": 0,
+          "slots_with_rule_events": 3,
+          "events_by_outcome": {
+            "match": 6,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 24,
+          "unique_direct_checked_bits": 24,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "4": {
+          "direct_bits": 2464,
+          "carried_unknown_bits": 1232,
+          "no_receipt_bits": 264,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 11,
+          "direct_check_events": 10,
+          "conditional_events": 1,
+          "slots_with_rule_events": 6,
+          "events_by_outcome": {
+            "match": 10,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 1,
+            "contradiction": 0
+          },
+          "unique_target_bits": 42,
+          "unique_direct_checked_bits": 40,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        }
+      },
+      "report_sha256": "931bf66887c474996c6d1be9045fcbb0f7f508c9d29f16b6d00651bd471fe208"
+    },
+    "all_assigned_direct_field_scores": {
+      "counters": 24,
+      "nominal_slots": 1440,
+      "received_modes": 921,
+      "total": {
+        "predicted": 181,
+        "checked": 180,
+        "matched": 180,
+        "mismatched": 0,
+        "no_peer": 1
+      },
+      "by_position": {
+        "1": {
+          "predicted": 45,
+          "checked": 44,
+          "matched": 44,
+          "mismatched": 0,
+          "no_peer": 1
+        },
+        "2": {
+          "predicted": 49,
+          "checked": 49,
+          "matched": 49,
+          "mismatched": 0,
+          "no_peer": 0
+        },
+        "3": {
+          "predicted": 45,
+          "checked": 45,
+          "matched": 45,
+          "mismatched": 0,
+          "no_peer": 0
+        },
+        "4": {
+          "predicted": 42,
+          "checked": 42,
+          "matched": 42,
+          "mismatched": 0,
+          "no_peer": 0
+        }
+      },
+      "by_rule": {
+        "audio_noisy": {
+          "predicted": 0,
+          "checked": 0,
+          "matched": 0,
+          "mismatched": 0,
+          "no_peer": 0,
+          "by_position": {
+            "1": {
+              "predicted": 0,
+              "checked": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "2": {
+              "predicted": 0,
+              "checked": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "3": {
+              "predicted": 0,
+              "checked": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "4": {
+              "predicted": 0,
+              "checked": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "no_peer": 0
+            }
+          }
+        },
+        "inactive_nibble": {
+          "predicted": 181,
+          "checked": 180,
+          "matched": 180,
+          "mismatched": 0,
+          "no_peer": 1,
+          "by_position": {
+            "1": {
+              "predicted": 45,
+              "checked": 44,
+              "matched": 44,
+              "mismatched": 0,
+              "no_peer": 1
+            },
+            "2": {
+              "predicted": 49,
+              "checked": 49,
+              "matched": 49,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "3": {
+              "predicted": 45,
+              "checked": 45,
+              "matched": 45,
+              "mismatched": 0,
+              "no_peer": 0
+            },
+            "4": {
+              "predicted": 42,
+              "checked": 42,
+              "matched": 42,
+              "mismatched": 0,
+              "no_peer": 0
+            }
+          }
+        }
+      }
+    },
+    "exposure": {
+      "assigned_counters": [
+        43873123,
+        43873125,
+        43873126,
+        43873129,
+        43873131,
+        43873132,
+        43873133,
+        43873135,
+        43873136,
+        43873137,
+        43873138,
+        43873142,
+        43873150,
+        43873152,
+        43873153,
+        43873154,
+        43873155,
+        43873157,
+        43873158,
+        43873162,
+        43873163,
+        43873164,
+        43873165,
+        43873168
+      ],
+      "overlap_with_15021": [],
+      "overlap_with_later_mlc4": [],
+      "absent_from_both": [
+        43873123,
+        43873125,
+        43873126,
+        43873129,
+        43873131,
+        43873132,
+        43873133,
+        43873135,
+        43873136,
+        43873137,
+        43873138,
+        43873142,
+        43873150,
+        43873152,
+        43873153,
+        43873154,
+        43873155,
+        43873157,
+        43873158,
+        43873162,
+        43873163,
+        43873164,
+        43873165,
+        43873168
+      ]
+    }
+  }
+}

@@ -1,4 +1,4 @@
-"""Check every changed Edogawa physical packet against the independent, original 12:32 Yokohama wire."""
+"""Check every changed physical packet against an independently received, unmodified wire."""
 import argparse
 from collections import Counter
 from hashlib import sha256
@@ -13,6 +13,11 @@ from project_evs_group import MODE_POSITIONS, PACKET_STARTS, PROJECTED_OCTETS
 from salvage_msc_packets import crc
 
 CASE = HERE.parent / "same-6140-1232"
+sys.path.insert(0, str(CASE))
+from native_groups import native_groups
+
+PRIMARY_2126 = "b1c5bcb0d4c8bbf22841e75c1dea491a93f7ead03a402d04c82698a84ec9b9f9"
+PEER_2126 = "c36d4f0763a02d87b28d4afb033140fae970666bcc73c8dfb50df1e1a107e7fc"
 ROW_MAP = CASE / "diversity/alignment/row-pairs.json"
 SOURCE_SHA = "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172"
 PEER_SHA = "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64"
@@ -139,9 +144,52 @@ def score(source, corrected, peer, anchors):
                 changed_bits_by_field=fields, packets=changes)
 
 
+def native_coordinates(raw):
+    _, receipts, _, _ = native_groups(raw)
+    return {record["phase0_row"] + phase: [record["counter"], phase]
+            for record in receipts for phase in range(3)}
+
+
+def unique_anchors(source, peer, source_raw, peer_raw, pairs):
+    source_coords = native_coordinates(source_raw)
+    peer_coords = native_coordinates(peer_raw)
+    counts = [Counter(key for row in rows for key in valid_packets(row).items()) for rows in (source, peer)]
+    anchors = {}
+    conflicts = []
+    for left, right in pairs:
+        source_coord, peer_coord = source_coords.get(left), peer_coords.get(right)
+        if source_coord is not None and peer_coord is not None and source_coord != peer_coord:
+            conflicts.append([left, right])
+            continue
+        source_ok, peer_ok = valid_packets(source[left]), valid_packets(peer[right])
+        ordinals = [q for q, wire in source_ok.items() if peer_ok.get(q) == wire
+                    and all(count[q, wire] == 1 for count in counts)]
+        if not ordinals:
+            raise ValueError("alignment lacks a unique shared original wire")
+        anchors[left] = dict(yokohama_row=right, known_coordinate=source_coord or peer_coord,
+                             witness_ordinals=ordinals)
+    return anchors, conflicts
+
+
 def verify(source_path, corrected_path, peer_path):
     source_raw = source_path.read_bytes()
     peer_raw = peer_path.read_bytes()
+    if (digest(source_raw), digest(peer_raw)) == (PRIMARY_2126, PEER_2126):
+        source, peer = parse_msc(source_raw), parse_msc(peer_raw)
+        pairs, alignment = witnessed_pairs(source, peer)
+        anchors, conflicts = unique_anchors(source, peer, source_raw, peer_raw, pairs)
+        corrected_raw = corrected_path.read_bytes()
+        result = score(source, parse_msc(corrected_raw), peer, anchors)
+        for packet in result["packets"]:
+            packet["primary_row"] = packet.pop("edogawa_row")
+            packet["witness_row"] = packet.pop("yokohama_row")
+            if packet["ordinal"] in packet["witness_ordinals"]:
+                raise ValueError("target quarter was used as an alignment witness")
+        return dict(format="packet-repair-peer-v1", case="21:26 3205 kHz",
+                    primary_receiver="Yokohama", witness_receiver="Edogawa",
+                    original_sha256=PRIMARY_2126, corrected_sha256=digest(corrected_raw), peer_sha256=PEER_2126,
+                    paired_rows=len(anchors), unique_full_wire_witnesses=alignment["accepted_witnesses"],
+                    rejected_pairs=alignment["rejections"], counter_phase_conflicts=conflicts, **result)
     map_raw = ROW_MAP.read_bytes()
     if (digest(source_raw), digest(peer_raw), digest(map_raw)) != (SOURCE_SHA, PEER_SHA, MAP_SHA):
         raise ValueError("source, peer or alignment map differs from the public 12:32 case")
