@@ -1,0 +1,148 @@
+{
+  "encoder": "3GPP TS 26.443 floating point, 4 November 2021",
+  "stock_encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "sample_rate": 32000,
+  "options": [
+    "-q",
+    "-no_delay_cmp",
+    "-max_band",
+    "SWB",
+    "13200",
+    "32"
+  ],
+  "earlier_harmonic_manifest_gzip_sha256": "312b7ecab9694b8f306d014f2803d37e69f7d57307cf4c295c5ffec0e1f134a7",
+  "earlier_shape34_aggregate_sha256": "43a136fa6c16c7391e92178b13aff8a6aa92286b03c972366fcfbf6669a2eeaa",
+  "cases": [
+    {
+      "payload_offset": 15,
+      "mode": "FE",
+      "slot_zero_based": 2,
+      "quartet_position": 3,
+      "frames_per_input": 84,
+      "generator": "shape34",
+      "differing_word_bits": [
+        132,
+        134
+      ],
+      "equal_adjacent_words": [
+        false,
+        false
+      ],
+      "inputs": [
+        {
+          "arguments": [
+            0
+          ],
+          "pcm_sha256": "e7a1a841eda4142f34ca7ea21476ebc1a7fcdfb70deb43e0f4facfb8342a5f9e",
+          "g192_sha256": "22f9aa335f6f0abefa2523e6f0be742a17d99ecfef80a9203b3df6b357380218",
+          "word_hex": "fe1796a7d96b04a8b01e5b2002ae37c5f728ffcaa50f423c45fab25da03b8bc3de"
+        },
+        {
+          "arguments": [
+            -32
+          ],
+          "pcm_sha256": "1bb87b397b2f3e9095c8acda04b1a8797eeba0543f0543a495c9e8182fa3fe62",
+          "g192_sha256": "bb1b450527e2e36f99451cfa72848dfd071080f843639e4204e18606739d35b3",
+          "word_hex": "fe1796a7d96b04a8b01e5b2002ae37c5fd28ffcaa50f423c45fab25da03b8bc3de"
+        }
+      ],
+      "group0_direct_agreement": {
+        "direct_word_octets": 22,
+        "matching_slots": 6,
+        "group_slots": 60,
+        "matching_target_position_slots": 1,
+        "target_position_slots": 15
+      }
+    },
+    {
+      "payload_offset": 18,
+      "mode": "5A",
+      "slot_zero_based": 1,
+      "quartet_position": 2,
+      "frames_per_input": 3,
+      "generator": "voiced",
+      "differing_word_bits": [
+        152,
+        153,
+        155
+      ],
+      "equal_adjacent_words": [
+        true,
+        false
+      ],
+      "inputs": [
+        {
+          "arguments": [
+            124,
+            5,
+            4,
+            640,
+            96,
+            -24
+          ],
+          "pcm_sha256": "d861712323646200149d243f5a8f834b7e8c170efbebc63f2f4c70f612fc8661",
+          "g192_sha256": "d41cd5cb51867a343e97c7b4029022f2e7d6eff463492ae07813cb24f3ed1118",
+          "word_hex": "5a89f2bb093a958eccea350c435aedc43b18bebf3bc4f83682331a7c12cd693894"
+        },
+        {
+          "arguments": [
+            124,
+            5,
+            4,
+            880,
+            40,
+            96
+          ],
+          "pcm_sha256": "d4ea7ab5b9f1d303ee3f84086d3a81bfeef1c9ff958534b3086539392a2ba54c",
+          "g192_sha256": "b88827a938c39cdddef9933992ba312444c1955c0f5a020e40c099b9a996813b",
+          "word_hex": "5a89f2bb093a958eccea350c435aedc43b18be6f3bc4f83682331a7c12cd693894"
+        }
+      ]
+    },
+    {
+      "payload_offset": 21,
+      "mode": "5A",
+      "slot_zero_based": 1,
+      "quartet_position": 2,
+      "frames_per_input": 3,
+      "generator": "voiced",
+      "differing_word_bits": [
+        180,
+        181,
+        182
+      ],
+      "equal_adjacent_words": [
+        true,
+        false
+      ],
+      "inputs": [
+        {
+          "arguments": [
+            124,
+            5,
+            64,
+            480,
+            96,
+            4
+          ],
+          "pcm_sha256": "ec62cf3229a40274a0dab902b082b4c97ba97a19ddcec90c6203327e1561eb15",
+          "g192_sha256": "9218f1b893d9f4ee63fbb3b0f72ddcacb6dba23a2518c7ca6bb0100cc0819467",
+          "word_hex": "5a89f2bb0934159808facb342f6404b63e96bb22b99639bc26670a2c1e798b1894"
+        },
+        {
+          "arguments": [
+            124,
+            5,
+            64,
+            480,
+            96,
+            6
+          ],
+          "pcm_sha256": "81837755369e1678f7740e3d158bcbf61e21b40d3552b3a9b215e77444c06f9a",
+          "g192_sha256": "c764046bfc961e924607766203dcb12807ef6ecbf90436c74064ee5ce88e51e4",
+          "word_hex": "5a89f2bb0934159808facb342f6404b63e96bb22b99637bc26670a2c1e798b1894"
+        }
+      ]
+    }
+  ]
+}

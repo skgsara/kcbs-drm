@@ -36,6 +36,12 @@ We compared the original 16-byte text tails at every available pair of starts se
 
 The receiver selected the first complete group, **43907925**, according to the published protocol. Its 60 received frame slots contain 10,560 directly readable bits and 5,280 bits whose clear values remain unresolved. The receiver produced **0/60 complete clear EVS words**. Thirteen checks on directly received codec fields agreed. Seventeen other bit coordinates had conditional predictions with no independent clear labels. Of the 1,121 counters in the full recording, 119 occurred in our earlier transport inventory, all in the Edogawa recording. The remaining 1,002 include the primary. The historical reference tables supplied no labelled first-position words or second-position bits for these counters. [Primary group evidence](primary.json) · [Prior counter inventory](history.json.gz)
 
+The 3,335 accepted DUs also give a way to test whether three published EVS checks for payload octets 24 and 27 apply to this recording. The checks require a narrowband transition with mode `13`, wideband GSC AUDIO, or one of the specified super-wideband ACELP modes with the BWE selector. All three counts were zero among the 16,675 received mode octets at each of P1, P2, P3 and P4. The counters with all three phases accounted for 16,530 slots per position. No late bit was scored by those checks. [Mode requirements and stock examples](../../nov27/validation/late-payload/README.md) · [Narrowband p24 rule](../nb-transition/README.md)
+
+```sh
+python examples/nov27/validation/late-payload/count_modes.py examples/nov28/member-3205-20min/member-dus.npz
+```
+
 ## Using the group data
 
 The [3205 kHz data archive](member-dus.npz) contains all 3,335 complete data units from the frozen pass. The [eight further data units](extra-dus.npz) are disjoint and use the same format. Each archive holds three aligned NumPy arrays, `counters`, `phases` and `du`. The last array contains 716 received bytes per row. Retain the coordinates when joining or comparing data. Gaps in the counter and phase sequence identify missing transmissions.
