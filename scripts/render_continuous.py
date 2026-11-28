@@ -99,7 +99,9 @@ def main():
             # of eleven bytes unknown they tested worse than an honest erasure.
             modes, flat = plains[g]
             rows1 = np.flatnonzero(np.arange(60) % 4 == 1)
-            flat[np.ix_(rows1, ROLE1_UNKNOWN)] = dflat[np.ix_(rows1, ROLE1_UNKNOWN)]
+            # ROLE1_UNKNOWN counts the mode byte as frame byte 0; flat holds payload bytes only.
+            unknown_payload = ROLE1_UNKNOWN - 1
+            flat[np.ix_(rows1, unknown_payload)] = dflat[np.ix_(rows1, unknown_payload)]
             tier[g-first] = 1
             supplied[base:base+60] = np.arange(60) % 4 < 2
         elif a.no_fill:

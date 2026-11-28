@@ -31,3 +31,7 @@ class TransitionTest(unittest.TestCase):
             self.assertEqual(check(first, "04"), a)
         self.assertEqual(a["slots"][0]["fixed_word_bits"], {"8": 0, "9": 1})
         self.assertEqual(check("??", "--")["slots"], [])
+
+
+if __name__ == "__main__":
+    unittest.main()
