@@ -1,0 +1,177 @@
+{
+  "format": "kcbs-evs-independent-rf-hq-boundary-v1",
+  "scope": "Retrospective test with a 3205 kHz member recording and a separate 180 s Edogawa 6140 kHz reception starting around 00:02 UTC on 2026-11-28. Counter and phase identify the common transmission.",
+  "inputs": {
+    "predictor_3205": {
+      "path": "examples/nov28/member-3205-20min/member-dus.npz",
+      "sha256": "5be01db5e77f42b5b6ddd05fec8d0dee146f48356cdc7d89dd98edc8a04bae5f",
+      "complete_dus": 3335,
+      "source_name": "IQ-3205khz-20261128.wav",
+      "source_sha256": "bda3f500aaab2032de0e93c493e87650767be1504b29085679cf7082e4b5b952"
+    },
+    "reference_6140": {
+      "path": "examples/nov27/validation/swb-gsc/edogawa-data-units.npz",
+      "sha256": "99461ed346d48900aed781d6af9eb6ebac891af1a0302a85aecdfcf9a81ff7ac",
+      "complete_dus": 292,
+      "received_phase0": 112,
+      "iq_path": "examples/nov27/validation/swb-gsc/7l4iou-6140-20261128T0002Z-iq48.flac",
+      "iq_sha256": "e04f6ff1cd41eb3cfe84046f04de425ee129268494667ce4e76246365445f9df",
+      "native_msc_sha256": "fea03f5d0276dd3f754731d3f05ac6b595ef0aa051672463ba5b08fdfc9179fe",
+      "raw_replay_script": "examples/nov27/validation/swb-gsc/replay.sh"
+    }
+  },
+  "geometry": {
+    "coordinates": [
+      "counter",
+      "phase",
+      "cycle",
+      "position"
+    ],
+    "previous": [
+      "c-1",
+      2,
+      4,
+      4
+    ],
+    "current": [
+      "c",
+      0,
+      0,
+      1
+    ],
+    "bit_numbering": "Mode MSB is word bit 0. HQ predecessor flag b6 has octet mask 0x02.",
+    "prediction": "The preceding mode determines the core. The current mode's first six bits select the HQ branch. Predict b6=1 after ordinary ACELP, b6=0 after MDCT. Score on the direct 6140 phase-0 bit at the same counter. The 6140 predecessor may be missing."
+  },
+  "selection": {
+    "inclusive_counter_span": [
+      43907925,
+      43909062
+    ],
+    "counter_span_size": 1138,
+    "represented_counters": 1121,
+    "member_phase0s": 1116,
+    "member_phase2s": 1108,
+    "member_complete_boundaries": 1100,
+    "disposition_over_whole_span": {
+      "missing_current_phase0": 22,
+      "current_present_missing_previous_phase2": 16,
+      "current_non_hq": 815,
+      "eligible_hq": 285
+    },
+    "public_cli_selection_sha256": "8a25572dc869ea4f787270937afa175161197d1469d9f7d8deade89e86cc003f",
+    "selection_hash_basis": "SHA-256 of compact JSON [[counter,prediction],...] in counter order for the public CLI's 285 selected rows, excluding observations."
+  },
+  "overlap": {
+    "both_frequencies_have_current_phase0": 109,
+    "both_have_current_and_member_has_predecessor": 108,
+    "of_these_current_non_hq": 105
+  },
+  "score": {
+    "eligible": 285,
+    "independent_labels": 3,
+    "missing_independent_labels": 282,
+    "matches": 3,
+    "mismatches": 0,
+    "by_previous_3205_family": {
+      "HQ": {
+        "eligible": 269,
+        "missing_labels": 266,
+        "scored": 3,
+        "matches": 3
+      },
+      "TCX20": {
+        "eligible": 15,
+        "missing_labels": 15,
+        "scored": 0,
+        "matches": 0
+      },
+      "ACELP": {
+        "eligible": 1,
+        "missing_labels": 1,
+        "scored": 0,
+        "matches": 0
+      }
+    }
+  },
+  "controls": {
+    "same_eligible_counters": true,
+    "invert_6140_target": {
+      "matches": 0,
+      "scored": 3
+    },
+    "previous_mode_from_c_minus_2": {
+      "matches": 1,
+      "scored": 3,
+      "changed_predictions": 2
+    },
+    "always_zero": {
+      "matches": 3,
+      "scored": 3
+    }
+  },
+  "scored_rows": [
+    {
+      "counter": 43908220,
+      "previous_3205_mode_hex": "F8",
+      "predicted_bit6": 0,
+      "independent_6140_mode_hex": "F8",
+      "observed_bit6": 0,
+      "shifted_prediction": 1,
+      "native_6140_msc_row_zero_based": 194,
+      "packet_crcs_hex": [
+        "F8CA",
+        "9073",
+        "CEFC",
+        "33BC"
+      ],
+      "transmitted_du_crc16_hex": "0763",
+      "reference_du_sha256": "09fd083fbf696eb67c3e7abf9357a7ce2181e341a4ce21ce4a97b86aff1b360c"
+    },
+    {
+      "counter": 43908221,
+      "previous_3205_mode_hex": "F8",
+      "predicted_bit6": 0,
+      "independent_6140_mode_hex": "F8",
+      "observed_bit6": 0,
+      "shifted_prediction": 0,
+      "native_6140_msc_row_zero_based": 197,
+      "packet_crcs_hex": [
+        "8A86",
+        "10EC",
+        "51B8",
+        "9244"
+      ],
+      "transmitted_du_crc16_hex": "2BA2",
+      "reference_du_sha256": "edf0add7a856342262b6c136f7e9e64f6c4976f5784edf7c237713d3dae2c845"
+    },
+    {
+      "counter": 43908275,
+      "previous_3205_mode_hex": "F8",
+      "predicted_bit6": 0,
+      "independent_6140_mode_hex": "F8",
+      "observed_bit6": 0,
+      "shifted_prediction": 1,
+      "native_6140_msc_row_zero_based": 359,
+      "packet_crcs_hex": [
+        "996B",
+        "8543",
+        "0C49",
+        "E111"
+      ],
+      "transmitted_du_crc16_hex": "42D0",
+      "reference_du_sha256": "f6b30bb48812ac12b6806b90f13b6a6266e02d5df586df720567bb6dbd4ec975"
+    }
+  ],
+  "limits": "All three independent labels are zero after HQ predecessors. The only prediction of one (counter 43908499) has no complete 6140 phase 0. This sample cannot distinguish the rule from always predicting zero. The flag is directly transmitted and tests no protected audio bits.",
+  "replay": {
+    "from": "Public checkout root, using Python 3.10+ and NumPy. The commands below read the two published DU archives. Only the predicted value and the visible top six bits from the 3205 boundary report are used for scoring.",
+    "run": "jq -r '.replay.shell' examples/nov28/group-boundary/paired-hq.json | sh",
+    "scored_columns": [
+      "counter",
+      "predicted_b6",
+      "observed_6140_b6",
+      "shifted_predecessor_prediction"
+    ],
+    "shell": "set -eu\nmember=examples/nov28/member-3205-20min/member-dus.npz\nreference=examples/nov27/validation/swb-gsc/edogawa-data-units.npz\ncandidate=$(mktemp)\ntrap 'rm -f \"$candidate\"' EXIT\npython3 -B scripts/check_evs_group_boundary.py \"$member\" > \"$candidate\"\nPYTHONPATH=scripts python3 -B - \"$candidate\" \"$member\" \"$reference\" <<'PY'\nimport json\nfrom collections import Counter\nfrom pathlib import Path\nfrom sys import argv\nfrom check_evs_group_boundary import ENDPOINTS, predict\nfrom project_evs_group import checked_units\n\ncandidate, member_file, reference_file = argv[1:]\nreport = json.loads(Path(candidate).read_text())\neligible = {r['counter']: r for r in report['rows'] if r['predicted'] is not None}\nprevious = {c: du[ENDPOINTS[2]] for c, p, du in checked_units(member_file) if p == 2}\nreference = {c: du[ENDPOINTS[0]] for c, p, du in checked_units(reference_file) if p == 0}\nabsent = Counter()\nscored = []\nfor c, row in eligible.items():\n    if c not in reference:\n        mode = previous[c-1]\n        family = 'ACELP' if mode >> 3 <= 20 else ('TCX20' if mode & 4 else 'HQ')\n        absent[family] += 1\n        continue\n    if row['current_mode_top_six'] != reference[c] >> 2:\n        raise ValueError(f'Conflicting visible mode prefix at counter {c}')\n    actual = (reference[c] >> 1) & 1\n    shifted, _ = predict(previous.get(c-2), row['current_mode_top_six'])\n    scored.append((c, row['predicted'], actual, shifted))\nprint(json.dumps(dict(selection_sha256=report['selection_sha256'], eligible=len(eligible),\n    missing_labels_by_previous_family=absent, scored=scored,\n    matches=sum(p == a for c,p,a,s in scored), flipped_matches=sum(p == 1-a for c,p,a,s in scored),\n    shifted_matches=sum(s == a for c,p,a,s in scored), constant_zero_matches=sum(a == 0 for c,p,a,s in scored)), indent=2))\nPY"
+  }
+}

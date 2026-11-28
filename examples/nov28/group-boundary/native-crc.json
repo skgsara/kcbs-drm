@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "all_four_packet_header_crc_pass": 14,
+    "standalone_du_crc_pass_ignoring_packet_integrity": 14,
+    "valid_crc_before_header_gate": 96,
+    "valid_header": 268,
+    "valid_header_and_crc": 96
+  },
+  "chronology_file": "native-chronology.csv",
+  "chronology_sha256": "30548da59b78b3d1b9991180d791f23b3d8677f62970f38af6402f11cb60b27a",
+  "complex_samples": 4320000,
+  "coordinate_accepted_dus": 2,
+  "coordinate_accepted_packets": 11,
+  "count": 4320000,
+  "dump_sha256": "0154f431a96e5c6f35971697e0bf2fbd3cd5fcd6880a87f2e0a1eec59763a721",
+  "first_sample": 0,
+  "native_eof": true,
+  "native_return_code": 0,
+  "nominal_seconds": 90.0,
+  "physically_consecutive_complete_group_pairs": [],
+  "primary": null,
+  "raw_du_denominator": 206,
+  "raw_native_packet_denominator": 824,
+  "raw_records_by_size": {
+    "728": 206
+  },
+  "source_bytes": 17280044,
+  "station_utc_interval": [
+    "2026-11-28T02:57:56.621605503Z",
+    "2026-11-28T02:59:26.621599253Z"
+  ],
+  "whole_native_du_phases": {
+    "0": 2,
+    "1": 7,
+    "2": 5
+  },
+  "whole_native_du_rows": [
+    3,
+    20,
+    21,
+    39,
+    54,
+    55,
+    63,
+    64,
+    88,
+    163,
+    165,
+    166,
+    171,
+    173
+  ]
+}

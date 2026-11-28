@@ -70,6 +70,12 @@ all 1,201 shared packets agreed and 1,106 complete groups were available.
 The first complete group, 43907925, yielded zero complete clear EVS words.
 [Received data, overlap checks and five intervals for comparing bulletin text](examples/nov28/member-3205-20min/README.md)
 
+At counter 43908300 the 3205 kHz receiver used a valid mode byte to predict
+four bits in a packet it had rejected. An independent 6140 kHz reception
+confirmed the predicted high nibble `C`. A separate 90-second prospective
+capture at 6140 kHz yielded three previously unseen counters, all partial.
+[Two-receiver bit comparison and prospective reception](examples/nov28/group-boundary/README.md)
+
 The November 28 field test fixes the first ten recorded minutes from the
 13:00–13:20 UTC Yokohama window and selects the first complete group in
 reception order. Its receiver also reports what survived in the first group

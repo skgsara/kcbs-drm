@@ -1,0 +1,211 @@
+{
+  "by_position": {
+    "1": {
+      "common_direct_bits": 265432,
+      "common_direct_bits_outside_paired_complete_dus": 15512,
+      "conditional_conflicting_bits": 0,
+      "conditional_fixed_hidden_bits": 211,
+      "differing_direct_bits": 0,
+      "exact_bits_checked": 1723,
+      "exact_bits_checked_outside_paired_complete_dus": 84,
+      "exact_bits_eligible": 1992,
+      "exact_bits_wrong": 0,
+      "field_bits_checked": 3395,
+      "field_bits_eligible": 3928,
+      "member_only_direct_bits": 45856,
+      "neither_direct_bits": 272,
+      "peer_only_direct_bits": 2600,
+      "peer_only_exact_bits": 4,
+      "peer_only_field_bits": 8,
+      "slots": 1785
+    },
+    "2": {
+      "common_direct_bits": 263744,
+      "common_direct_bits_outside_paired_complete_dus": 13824,
+      "conditional_conflicting_bits": 0,
+      "conditional_fixed_hidden_bits": 202,
+      "differing_direct_bits": 0,
+      "exact_bits_checked": 1678,
+      "exact_bits_checked_outside_paired_complete_dus": 71,
+      "exact_bits_eligible": 1935,
+      "exact_bits_wrong": 0,
+      "field_bits_checked": 3306,
+      "field_bits_eligible": 3815,
+      "member_only_direct_bits": 47040,
+      "neither_direct_bits": 352,
+      "peer_only_direct_bits": 3024,
+      "peer_only_exact_bits": 0,
+      "peer_only_field_bits": 0,
+      "slots": 1785
+    },
+    "3": {
+      "common_direct_bits": 263264,
+      "common_direct_bits_outside_paired_complete_dus": 13344,
+      "conditional_conflicting_bits": 0,
+      "conditional_fixed_hidden_bits": 243,
+      "differing_direct_bits": 0,
+      "exact_bits_checked": 1688,
+      "exact_bits_checked_outside_paired_complete_dus": 58,
+      "exact_bits_eligible": 1962,
+      "exact_bits_wrong": 0,
+      "field_bits_checked": 3328,
+      "field_bits_eligible": 3870,
+      "member_only_direct_bits": 47472,
+      "neither_direct_bits": 352,
+      "peer_only_direct_bits": 3072,
+      "peer_only_exact_bits": 0,
+      "peer_only_field_bits": 0,
+      "slots": 1785
+    },
+    "4": {
+      "common_direct_bits": 263648,
+      "common_direct_bits_outside_paired_complete_dus": 13728,
+      "conditional_conflicting_bits": 0,
+      "conditional_fixed_hidden_bits": 232,
+      "differing_direct_bits": 0,
+      "exact_bits_checked": 1666,
+      "exact_bits_checked_outside_paired_complete_dus": 57,
+      "exact_bits_eligible": 1940,
+      "exact_bits_wrong": 0,
+      "field_bits_checked": 3278,
+      "field_bits_eligible": 3820,
+      "member_only_direct_bits": 47344,
+      "neither_direct_bits": 352,
+      "peer_only_direct_bits": 2816,
+      "peer_only_exact_bits": 0,
+      "peer_only_field_bits": 0,
+      "slots": 1785
+    }
+  },
+  "by_rule": {
+    "hq_previous_core": {
+      "applicable": 225,
+      "peer_matches": 203,
+      "peer_mismatches": 0,
+      "peer_unavailable": 22
+    },
+    "inactive_nibble": {
+      "applicable": 1901,
+      "peer_matches": 1638,
+      "peer_mismatches": 0,
+      "peer_unavailable": 263
+    },
+    "swb_gsc_inactive": {
+      "applicable": 1901,
+      "peer_matches": 1638,
+      "peer_mismatches": 0,
+      "peer_unavailable": 263
+    },
+    "swb_hq_class": {
+      "conditional_events": 13
+    },
+    "tcx_previous_core": {
+      "conditional_events": 418
+    },
+    "transition_tag": {
+      "conditional_events": 464
+    }
+  },
+  "common_complete_dus": 284,
+  "coordinate_basis": "Previously assigned counter/phase/ordinal. Complete DUs match the published CRC-checked archives. Partial-packet assignments retain their receiver provenance; header and CRC alone do not encode every coordinate.",
+  "counter_list_source": "../member-3205-20min/cross-frequency.json#historical_exposure.member_historical_counter_ids",
+  "edogawa_wire_packets": 1214,
+  "independent_hidden_labels": {
+    "coordinates_sha256": "56a86840ba453921076754e7f350ba368623b6eee10af34166414d8d01cea355",
+    "labelled_bits": 0,
+    "source": "../member-3205-20min/cross-frequency.json#historical_labels"
+  },
+  "inputs_sha256": {
+    "edogawa_iq": "e04f6ff1cd41eb3cfe84046f04de425ee129268494667ce4e76246365445f9df",
+    "edogawa_native_msc": "fea03f5d0276dd3f754731d3f05ac6b595ef0aa051672463ba5b08fdfc9179fe",
+    "edogawa_packet_archive": "05a4cc876e3f20c89d01e80eaa3fd3e4fb027f3d5ff920db34e1a9c6d008a90c",
+    "member_iq": "bda3f500aaab2032de0e93c493e87650767be1504b29085679cf7082e4b5b952",
+    "member_packet_archive": "7824c1146312aef97628da57d97e947036ce3b5312691c5376bbcff7e223293f",
+    "member_window0_native_msc": "963c60f81ba65d2149e856e9d26e8684bd7bdf527b014d4223027c2ac0ad3477"
+  },
+  "member_projection_sha256": "92b817a0757a580041f3329a81e7fbe021331faeb87203704f57c06d54f1404b",
+  "member_wire_packets": 1413,
+  "nominal_direct_bits_per_position": 314160,
+  "only_peer_crc_accepted_targets": [
+    {
+      "allowed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "check": "swb_gsc_inactive",
+      "counter": 43908300,
+      "cycle": 2,
+      "member_mode": "74",
+      "member_mode_native_row": 1120,
+      "member_mode_q": 0,
+      "observed": 1,
+      "peer_du_offset": 273,
+      "peer_native_row": 434,
+      "peer_octet": "c1",
+      "peer_q": 1,
+      "phase": 0,
+      "position": 1,
+      "slot": 8,
+      "word_bits": [
+        44,
+        48
+      ]
+    },
+    {
+      "allowed": [
+        12
+      ],
+      "check": "inactive_nibble",
+      "counter": 43908300,
+      "cycle": 2,
+      "member_mode": "74",
+      "member_mode_native_row": 1120,
+      "member_mode_q": 0,
+      "observed": 12,
+      "peer_du_offset": 273,
+      "peer_native_row": 434,
+      "peer_octet": "c1",
+      "peer_q": 1,
+      "phase": 0,
+      "position": 1,
+      "slot": 8,
+      "word_bits": [
+        40,
+        44
+      ]
+    }
+  ],
+  "projection_source_commit": "30a3b2fee0f0f1822329a2455814adb958c4f40c",
+  "rule_basis": "Exact bits are individually fixed. Field-bit totals also include bits checked only for membership in a set. The INACTIVE upper-nibble rule is empirical.",
+  "scope": "Retrospective within-group rules over all mutually assigned counter IDs. The two receivers capture the same transmitted frames.",
+  "shared_counters": 119,
+  "total": {
+    "common_direct_bits": 1056088,
+    "common_direct_bits_outside_paired_complete_dus": 56408,
+    "conditional_conflicting_bits": 0,
+    "conditional_fixed_hidden_bits": 888,
+    "differing_direct_bits": 0,
+    "exact_bits_checked": 6755,
+    "exact_bits_checked_outside_paired_complete_dus": 270,
+    "exact_bits_eligible": 7829,
+    "exact_bits_wrong": 0,
+    "field_bits_checked": 13307,
+    "field_bits_eligible": 15433,
+    "member_only_direct_bits": 187712,
+    "neither_direct_bits": 1328,
+    "peer_only_direct_bits": 11512,
+    "peer_only_exact_bits": 4,
+    "peer_only_field_bits": 8,
+    "slots": 7140
+  },
+  "unavailable_targets": "A missing packet is missing from the CRC-accepted input. It can still have a failed-CRC native row. At counter 43908300 the rejected member q1 also contained C1 at DU byte 273; no byte from it entered the rule."
+}

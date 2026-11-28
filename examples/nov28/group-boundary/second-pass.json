@@ -1,0 +1,196 @@
+{
+  "label": "retrospective receiver sensitivity on the same sealed source",
+  "official_primary": null,
+  "primary": null,
+  "source": {
+    "sealed_utc": "2026-11-28T03:00:14.231713+00:00",
+    "protocol_sha256": "b39147e4c01530aa6f1ab282276d0d5e95ade672e7d49fb349f5e6ce1abfbf07",
+    "wav_sha256": "cd3d0bb2f0134d19530e8373582a3197610b274ae15cfdeb2794a8571055bd34",
+    "pcm_sha256": "43e308ed8b9cf56326abbac0e92110fa7008f43bd28327b7be8eb47305df087b",
+    "source_name": "sealed.wav",
+    "source_bytes": 17280044,
+    "sample_pairs": 4320000,
+    "sample_rate": 48000,
+    "seconds": 90.0,
+    "station_clock_range_utc_half_open": [
+      "2026-11-28T02:57:56.621605503Z",
+      "2026-11-28T02:59:26.621599253Z"
+    ],
+    "station_timestamps": 13500,
+    "timestamp_discontinuities_over_one_sample": 0,
+    "native_max_timestamp_error_ns": 9229,
+    "complete": true,
+    "error": null,
+    "receiver": "https://7l4iou.tunnel.ubersdr.org",
+    "frequency_hz": 6140000,
+    "capture_receipt_sha256": "c63e56b3d4842bddf21c9dc53d8339fa1769b7bf1ec07d4a3391497d863542dd"
+  },
+  "msc_sha256": "5a46eafede2ecbd0f4a8439b3f5ec1f0c4a1d99460be7885ad98c9b8fd40d138",
+  "chronology_basis": "CRC-good physical packets in each raw callback; independent counter or validated adjacent phases required for coordinate assignment",
+  "official_rows": [
+    {
+      "counter": 43916921,
+      "phase": 0,
+      "native_row": 20,
+      "accepted_q": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "du_sha256": "663dd92ef29511b415aabbfcc3dc1e51b9754c80f87b28930192e3b6da2a63f2"
+    },
+    {
+      "counter": 43916933,
+      "phase": 0,
+      "native_row": 56,
+      "accepted_q": [
+        0,
+        2,
+        3
+      ],
+      "du_sha256": null
+    },
+    {
+      "counter": 43916972,
+      "phase": 0,
+      "native_row": 173,
+      "accepted_q": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "du_sha256": "ef2aa86455d50951f843a5f6f491b2c3e3f85b9cf10166064c35b2b4e4cdf3b5"
+    }
+  ],
+  "retrospective_rows": [
+    {
+      "counter": 43916921,
+      "phase": 0,
+      "native_row": 20,
+      "accepted_q": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "du_sha256": "663dd92ef29511b415aabbfcc3dc1e51b9754c80f87b28930192e3b6da2a63f2"
+    },
+    {
+      "counter": 43916927,
+      "phase": 0,
+      "native_row": 38,
+      "accepted_q": [
+        0,
+        2,
+        3
+      ],
+      "du_sha256": null
+    },
+    {
+      "counter": 43916933,
+      "phase": 0,
+      "native_row": 56,
+      "accepted_q": [
+        0,
+        2,
+        3
+      ],
+      "du_sha256": null
+    },
+    {
+      "counter": 43916972,
+      "phase": 0,
+      "native_row": 173,
+      "accepted_q": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "du_sha256": "ef2aa86455d50951f843a5f6f491b2c3e3f85b9cf10166064c35b2b4e4cdf3b5"
+    },
+    {
+      "counter": 43916987,
+      "phase": 0,
+      "native_row": 205,
+      "accepted_q": [
+        0,
+        2,
+        3
+      ],
+      "du_sha256": null
+    }
+  ],
+  "complete_groups": [],
+  "chronological_complete_groups": [],
+  "accepted_packets": 17,
+  "accepted_complete_dus": 2,
+  "baseline_assigned_counters": [
+    43916921,
+    43916933,
+    43916972
+  ],
+  "retrospective_assigned_counters": [
+    43916921,
+    43916927,
+    43916933,
+    43916972,
+    43916987
+  ],
+  "additional_assigned_counter_ids": [
+    43916927,
+    43916987
+  ],
+  "retrospective_vs_prior_14737": [],
+  "packets": {
+    "baseline": 11,
+    "sensitivity": 17,
+    "both": 11,
+    "byte_identical": 11,
+    "byte_conflicts": [],
+    "baseline_only": [],
+    "sensitivity_only": [
+      [
+        43916927,
+        0,
+        0
+      ],
+      [
+        43916927,
+        0,
+        2
+      ],
+      [
+        43916927,
+        0,
+        3
+      ],
+      [
+        43916987,
+        0,
+        0
+      ],
+      [
+        43916987,
+        0,
+        2
+      ],
+      [
+        43916987,
+        0,
+        3
+      ]
+    ]
+  },
+  "full_data_units": {
+    "baseline": 2,
+    "sensitivity": 2,
+    "both": 2,
+    "byte_identical": 2,
+    "byte_conflicts": [],
+    "baseline_only": [],
+    "sensitivity_only": []
+  }
+}

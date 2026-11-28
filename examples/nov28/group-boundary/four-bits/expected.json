@@ -1,0 +1,167 @@
+{
+  "counter": 43908300,
+  "slot": 8,
+  "phase": 0,
+  "cycle": 2,
+  "position": 1,
+  "source_target_word_erased": true,
+  "peer_target_word_erased": true,
+  "source_3205": {
+    "source_record": 1120,
+    "source_msc_sha256": "963c60f81ba65d2149e856e9d26e8684bd7bdf527b014d4223027c2ac0ad3477",
+    "excerpt_sha256": "6b13ab140ec357f717585de45f3a0ce4868c66279ecf47e0c5422dedb34cb71f",
+    "packets": [
+      {
+        "ordinal": 0,
+        "header_hex": "80",
+        "sent_crc": "c101",
+        "calculated_crc": "c101",
+        "received": true
+      },
+      {
+        "ordinal": 1,
+        "header_hex": "01",
+        "sent_crc": "30e0",
+        "calculated_crc": "f872",
+        "received": false
+      },
+      {
+        "ordinal": 2,
+        "header_hex": "02",
+        "sent_crc": "dba9",
+        "calculated_crc": "dba9",
+        "received": true
+      },
+      {
+        "ordinal": 3,
+        "header_hex": "43",
+        "sent_crc": "fb1d",
+        "calculated_crc": "fb1d",
+        "received": true
+      }
+    ],
+    "sent_du_crc": "1eef",
+    "calculated_du_crc": "6200"
+  },
+  "peer_6140": {
+    "source_record": 434,
+    "source_msc_sha256": "fea03f5d0276dd3f754731d3f05ac6b595ef0aa051672463ba5b08fdfc9179fe",
+    "excerpt_sha256": "abcbee7e5df39d6847ddd99104d6d8839cc9533cf8d1222038a7d71401fcdd7f",
+    "packets": [
+      {
+        "ordinal": 0,
+        "header_hex": "80",
+        "sent_crc": "c101",
+        "calculated_crc": "c101",
+        "received": true
+      },
+      {
+        "ordinal": 1,
+        "header_hex": "01",
+        "sent_crc": "30e0",
+        "calculated_crc": "30e0",
+        "received": true
+      },
+      {
+        "ordinal": 2,
+        "header_hex": "02",
+        "sent_crc": "dba9",
+        "calculated_crc": "dba9",
+        "received": true
+      },
+      {
+        "ordinal": 3,
+        "header_hex": "43",
+        "sent_crc": "fb1d",
+        "calculated_crc": "fb1d",
+        "received": true
+      }
+    ],
+    "sent_du_crc": "1eef",
+    "calculated_du_crc": "1eef"
+  },
+  "domain_sha256": "188c4b116b105bdfacfef25b9957b3ba165b19d65ec1227915115f61eec43937",
+  "source_mode": {
+    "du_byte": 4,
+    "packet": 0,
+    "hex": "74"
+  },
+  "peer_target": {
+    "payload_octet": 4,
+    "du_byte": 273,
+    "packet": 1,
+    "packet_body_offset": 94,
+    "hex": "c1"
+  },
+  "rules": {
+    "swb_gsc_inactive": {
+      "word_bits": [
+        44,
+        48
+      ],
+      "inputs": [
+        {
+          "slot": 8,
+          "word_bits": [
+            0,
+            5
+          ],
+          "observed": 14,
+          "role": "condition"
+        }
+      ],
+      "allowed_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "fixed_bits": {},
+      "peer_value": 1,
+      "peer_outcome": "match"
+    },
+    "inactive_nibble": {
+      "word_bits": [
+        40,
+        44
+      ],
+      "inputs": [
+        {
+          "slot": 8,
+          "word_bits": [
+            0,
+            6
+          ],
+          "observed": 29,
+          "role": "condition"
+        }
+      ],
+      "allowed_values": [
+        12
+      ],
+      "fixed_bits": {
+        "40": 1,
+        "41": 1,
+        "42": 0,
+        "43": 0
+      },
+      "peer_value": 12,
+      "peer_outcome": "match"
+    }
+  },
+  "absent_packet_zero_vs_ff_same": true,
+  "peer_target_packet_withheld_same": true,
+  "missing_source_packet_abstains": true,
+  "raw_unaccepted_3205_target_happens_to_equal_peer": true,
+  "native_du_differing_octets": [
+    211
+  ],
+  "native_du_differing_bits": 4
+}

@@ -1,0 +1,496 @@
+{
+  "scope": "Secondary descriptive receiver outputs for every packet-assigned counter. The frozen primary requires a complete contiguous group.",
+  "packets_sha256": "6a0bc1910860de98cd87f583f70dd0e28bfe95088df7344d74705e6713642840",
+  "counters": [
+    {
+      "counter": 43916921,
+      "packet_ordinals": {
+        "0": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "complete_slots": 20,
+      "partial_slots": 0,
+      "missing_slots": 40,
+      "full_clear_words": 0,
+      "bit_evidence": {
+        "direct_bits": 3520,
+        "carried_unknown_bits": 1760,
+        "no_receipt_bits": 10560,
+        "slots": 60,
+        "word_erasures": 60,
+        "rule_events": 19,
+        "direct_check_events": 0,
+        "conditional_events": 19,
+        "slots_with_rule_events": 19,
+        "events_by_outcome": {
+          "match": 0,
+          "mismatch": 0,
+          "unavailable": 0,
+          "restricted": 19,
+          "unrestricted": 0,
+          "contradiction": 0
+        },
+        "unique_target_bits": 19,
+        "unique_direct_checked_bits": 0,
+        "unique_conditional_fixed_bits": 19,
+        "unique_conflicting_conditional_bits": 0
+      },
+      "by_position": {
+        "1": {
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 4,
+          "direct_check_events": 0,
+          "conditional_events": 4,
+          "slots_with_rule_events": 4,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 4,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 4,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 4,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "2": {
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 0,
+          "conditional_events": 5,
+          "slots_with_rule_events": 5,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 5,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 5,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 5,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "3": {
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 0,
+          "conditional_events": 5,
+          "slots_with_rule_events": 5,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 5,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 5,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 5,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "4": {
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 0,
+          "conditional_events": 5,
+          "slots_with_rule_events": 5,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 5,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 5,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 5,
+          "unique_conflicting_conditional_bits": 0
+        }
+      }
+    },
+    {
+      "counter": 43916933,
+      "packet_ordinals": {
+        "0": [
+          0,
+          2,
+          3
+        ]
+      },
+      "complete_slots": 14,
+      "partial_slots": 3,
+      "missing_slots": 43,
+      "full_clear_words": 0,
+      "bit_evidence": {
+        "direct_bits": 2568,
+        "carried_unknown_bits": 1280,
+        "no_receipt_bits": 11992,
+        "slots": 60,
+        "word_erasures": 60,
+        "rule_events": 4,
+        "direct_check_events": 2,
+        "conditional_events": 2,
+        "slots_with_rule_events": 3,
+        "events_by_outcome": {
+          "match": 2,
+          "mismatch": 0,
+          "unavailable": 0,
+          "restricted": 0,
+          "unrestricted": 2,
+          "contradiction": 0
+        },
+        "unique_target_bits": 12,
+        "unique_direct_checked_bits": 8,
+        "unique_conditional_fixed_bits": 0,
+        "unique_conflicting_conditional_bits": 0
+      },
+      "by_position": {
+        "1": {
+          "direct_bits": 712,
+          "carried_unknown_bits": 352,
+          "no_receipt_bits": 2896,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 0,
+          "direct_check_events": 0,
+          "conditional_events": 0,
+          "slots_with_rule_events": 0,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 0,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "2": {
+          "direct_bits": 576,
+          "carried_unknown_bits": 288,
+          "no_receipt_bits": 3096,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 3,
+          "direct_check_events": 2,
+          "conditional_events": 1,
+          "slots_with_rule_events": 2,
+          "events_by_outcome": {
+            "match": 2,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 1,
+            "contradiction": 0
+          },
+          "unique_target_bits": 10,
+          "unique_direct_checked_bits": 8,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "3": {
+          "direct_bits": 576,
+          "carried_unknown_bits": 288,
+          "no_receipt_bits": 3096,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 0,
+          "direct_check_events": 0,
+          "conditional_events": 0,
+          "slots_with_rule_events": 0,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 0,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "4": {
+          "direct_bits": 704,
+          "carried_unknown_bits": 352,
+          "no_receipt_bits": 2904,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 1,
+          "direct_check_events": 0,
+          "conditional_events": 1,
+          "slots_with_rule_events": 1,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 0,
+            "unrestricted": 1,
+            "contradiction": 0
+          },
+          "unique_target_bits": 2,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 0,
+          "unique_conflicting_conditional_bits": 0
+        }
+      }
+    },
+    {
+      "counter": 43916972,
+      "packet_ordinals": {
+        "0": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "complete_slots": 20,
+      "partial_slots": 0,
+      "missing_slots": 40,
+      "full_clear_words": 0,
+      "bit_evidence": {
+        "direct_bits": 3520,
+        "carried_unknown_bits": 1760,
+        "no_receipt_bits": 10560,
+        "slots": 60,
+        "word_erasures": 60,
+        "rule_events": 19,
+        "direct_check_events": 0,
+        "conditional_events": 19,
+        "slots_with_rule_events": 19,
+        "events_by_outcome": {
+          "match": 0,
+          "mismatch": 0,
+          "unavailable": 0,
+          "restricted": 19,
+          "unrestricted": 0,
+          "contradiction": 0
+        },
+        "unique_target_bits": 19,
+        "unique_direct_checked_bits": 0,
+        "unique_conditional_fixed_bits": 19,
+        "unique_conflicting_conditional_bits": 0
+      },
+      "by_position": {
+        "1": {
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 4,
+          "direct_check_events": 0,
+          "conditional_events": 4,
+          "slots_with_rule_events": 4,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 4,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 4,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 4,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "2": {
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 0,
+          "conditional_events": 5,
+          "slots_with_rule_events": 5,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 5,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 5,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 5,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "3": {
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 0,
+          "conditional_events": 5,
+          "slots_with_rule_events": 5,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 5,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 5,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 5,
+          "unique_conflicting_conditional_bits": 0
+        },
+        "4": {
+          "direct_bits": 880,
+          "carried_unknown_bits": 440,
+          "no_receipt_bits": 2640,
+          "slots": 15,
+          "word_erasures": 15,
+          "rule_events": 5,
+          "direct_check_events": 0,
+          "conditional_events": 5,
+          "slots_with_rule_events": 5,
+          "events_by_outcome": {
+            "match": 0,
+            "mismatch": 0,
+            "unavailable": 0,
+            "restricted": 5,
+            "unrestricted": 0,
+            "contradiction": 0
+          },
+          "unique_target_bits": 5,
+          "unique_direct_checked_bits": 0,
+          "unique_conditional_fixed_bits": 5,
+          "unique_conflicting_conditional_bits": 0
+        }
+      }
+    }
+  ],
+  "hq_group_boundary": {
+    "format": "kcbs-evs-hq-group-boundary-v1",
+    "input_sha256": "6a0bc1910860de98cd87f583f70dd0e28bfe95088df7344d74705e6713642840",
+    "input_kind": "packet_receipts",
+    "coordinates": [
+      "counter",
+      "phase",
+      "cycle",
+      "position"
+    ],
+    "target_word_bit": 6,
+    "selection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "targets": 3,
+    "eligible": 0,
+    "counts": {
+      "match": 0,
+      "mismatch": 0,
+      "abstain": 3
+    },
+    "abstention_reasons": {
+      "previous_mode_unavailable": 3
+    },
+    "rows": [
+      {
+        "counter": 43916921,
+        "left": [
+          43916920,
+          2,
+          4,
+          4
+        ],
+        "right": [
+          43916921,
+          0,
+          0,
+          1
+        ],
+        "previous_mode_top_five": null,
+        "current_mode_top_six": 63,
+        "predicted": null,
+        "reason": "previous_mode_unavailable",
+        "allowed_values": null,
+        "rejected_values": null,
+        "observed": null,
+        "outcome": "abstain"
+      },
+      {
+        "counter": 43916933,
+        "left": [
+          43916932,
+          2,
+          4,
+          4
+        ],
+        "right": [
+          43916933,
+          0,
+          0,
+          1
+        ],
+        "previous_mode_top_five": null,
+        "current_mode_top_six": 20,
+        "predicted": null,
+        "reason": "previous_mode_unavailable",
+        "allowed_values": null,
+        "rejected_values": null,
+        "observed": null,
+        "outcome": "abstain"
+      },
+      {
+        "counter": 43916972,
+        "left": [
+          43916971,
+          2,
+          4,
+          4
+        ],
+        "right": [
+          43916972,
+          0,
+          0,
+          1
+        ],
+        "previous_mode_top_five": null,
+        "current_mode_top_six": 63,
+        "predicted": null,
+        "reason": "previous_mode_unavailable",
+        "allowed_values": null,
+        "rejected_values": null,
+        "observed": null,
+        "outcome": "abstain"
+      }
+    ],
+    "basis": "Stock 13.2 kb/s HQ coding with continuous encoder history across adjacent groups. Each right endpoint is P1 slot 0. Its predecessor is P4 slot 59 at counter minus one. Both mode octets must have receipts in the supplied archive. Physical source continuity depends on the archive provenance. Selection withholds current bits 6 and 7."
+  }
+}
