@@ -101,9 +101,11 @@ def main():
         result = project_group(args.data_units, args.counter)
         if args.field_checks:
             from evs_core_history import core_history
+            from evs_gsc_fields import gsc_fields
             from evs_intra_word import intra_word
             result["core_history"] = core_history(result["slots"])
             result["intra_word"] = intra_word(result["slots"])
+            result["gsc_fields"] = gsc_fields(result["slots"])
     except (OSError, ValueError, EOFError, BadZipFile) as error:
         parser.exit(2, f"{parser.prog}: {error}\n")
     if args.format == "json":
