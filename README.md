@@ -668,6 +668,8 @@ selection and held-out slices separate.
 
 ## Can this run live?
 
+Two prospective November 28 recordings show what the transport receiver can certify on live RF. At 12:28 UTC Yokohama supplied zero CRC-valid packets on 3205 kHz. At 12:32 UTC two independent receivers tuned to 6140 kHz received the same 60 slots for counter 43945659. All 10,560 directly observable bits agreed. The frozen receiver verified zero complete clear EVS words for that counter. Both examples include lossless IQ for replay. [12:28 UTC recording](examples/nov28/dual-iq-1228/) · [12:32 UTC recording](examples/nov28/same-6140-1232/)
+
 The audio stage is fast enough to prototype. On one desktop, a 17:40.8 render
 with the prefixes already on disk took about 30 seconds. An offline 16-group
 check took a median **0.15 s** to decode each **1.2 s** group, but opening WSL for

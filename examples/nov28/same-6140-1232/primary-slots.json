@@ -1,0 +1,3383 @@
+{
+  "format": "kcbs-evs-bit-evidence-v1",
+  "counter": 43945659,
+  "total": {
+    "direct_bits": 10560,
+    "carried_unknown_bits": 5280,
+    "no_receipt_bits": 0,
+    "slots": 60,
+    "word_erasures": 60,
+    "rule_events": 59,
+    "direct_check_events": 48,
+    "conditional_events": 11,
+    "slots_with_rule_events": 59,
+    "events_by_outcome": {
+      "match": 48,
+      "mismatch": 0,
+      "unavailable": 0,
+      "restricted": 11,
+      "unrestricted": 0,
+      "contradiction": 0
+    },
+    "unique_target_bits": 59,
+    "unique_direct_checked_bits": 48,
+    "unique_conditional_fixed_bits": 11,
+    "unique_conflicting_conditional_bits": 0
+  },
+  "by_position": {
+    "1": {
+      "direct_bits": 2640,
+      "carried_unknown_bits": 1320,
+      "no_receipt_bits": 0,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 14,
+      "direct_check_events": 11,
+      "conditional_events": 3,
+      "slots_with_rule_events": 14,
+      "events_by_outcome": {
+        "match": 11,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 3,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 14,
+      "unique_direct_checked_bits": 11,
+      "unique_conditional_fixed_bits": 3,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "2": {
+      "direct_bits": 2640,
+      "carried_unknown_bits": 1320,
+      "no_receipt_bits": 0,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 15,
+      "direct_check_events": 12,
+      "conditional_events": 3,
+      "slots_with_rule_events": 15,
+      "events_by_outcome": {
+        "match": 12,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 3,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 15,
+      "unique_direct_checked_bits": 12,
+      "unique_conditional_fixed_bits": 3,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "3": {
+      "direct_bits": 2640,
+      "carried_unknown_bits": 1320,
+      "no_receipt_bits": 0,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 15,
+      "direct_check_events": 13,
+      "conditional_events": 2,
+      "slots_with_rule_events": 15,
+      "events_by_outcome": {
+        "match": 13,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 2,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 15,
+      "unique_direct_checked_bits": 13,
+      "unique_conditional_fixed_bits": 2,
+      "unique_conflicting_conditional_bits": 0
+    },
+    "4": {
+      "direct_bits": 2640,
+      "carried_unknown_bits": 1320,
+      "no_receipt_bits": 0,
+      "slots": 15,
+      "word_erasures": 15,
+      "rule_events": 15,
+      "direct_check_events": 12,
+      "conditional_events": 3,
+      "slots_with_rule_events": 15,
+      "events_by_outcome": {
+        "match": 12,
+        "mismatch": 0,
+        "unavailable": 0,
+        "restricted": 3,
+        "unrestricted": 0,
+        "contradiction": 0
+      },
+      "unique_target_bits": 15,
+      "unique_direct_checked_bits": 12,
+      "unique_conditional_fixed_bits": 3,
+      "unique_conflicting_conditional_bits": 0
+    }
+  },
+  "slots": [
+    {
+      "slot": 0,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? f5 42 ?? 46 68 ?? 86 73 ?? e1 30 ?? cb 62 ?? c4 92 ?? 9a 28 ?? ec 77 ?? 2b 41 ?? c4 e3 ?? 3f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [],
+      "core_history_abstention": "no_adjacent_predecessor"
+    },
+    {
+      "slot": 1,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 69 6f ?? bb ef ?? ce 1c ?? 60 87 ?? 70 db ?? 1c d0 ?? a1 d8 ?? ab fd ?? 27 a4 ?? 93 1b ?? bd",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 0,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 1,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 82 7b ?? 90 7b ?? 05 b9 ?? 90 40 ?? 5d 82 ?? b7 c8 ?? 04 72 ?? 64 52 ?? 06 90 ?? c6 1e ?? a7",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 1,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 2,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 85 9c ?? f2 4d ?? 77 00 ?? 1f 20 ?? 2e 98 ?? 98 4b ?? 66 de ?? a0 3b ?? f0 8f ?? 0a 7b ?? 93",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 2,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 3,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 90 9c ?? d8 f8 ?? 41 9b ?? f5 85 ?? 00 fe ?? d4 7a ?? 3e 99 ?? b7 73 ?? cc 74 ?? e5 f1 ?? 03",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 3,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 4,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? d7 37 ?? 0d 41 ?? 1c cb ?? c1 0b ?? 77 60 ?? 33 3a ?? a3 3c ?? f0 a9 ?? 45 35 ?? 84 0d ?? 23",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 4,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 5,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? db c5 ?? 4d b0 ?? 0f 27 ?? b2 0b ?? d5 94 ?? 4a c8 ?? 84 2c ?? fe 67 ?? dd b8 ?? 99 e7 ?? 37",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 5,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 6,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 02 c2 ?? a0 0a ?? 60 b9 ?? 09 71 ?? d0 9e ?? a1 5a ?? 53 d4 ?? ae 6f ?? a9 ae ?? 38 eb ?? 31",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 6,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 7,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 46 39 ?? 9d 28 ?? 06 40 ?? c0 96 ?? 0d fa ?? 3e 9f ?? 84 30 ?? 7b f7 ?? 90 be ?? 77 81 ?? 4d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 7,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 8,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 50 40 ?? f0 fb ?? 06 e7 ?? 08 2a ?? b4 2d ?? 46 2c ?? 53 dc ?? af dd ?? aa 83 ?? d5 a0 ?? bf",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 8,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 9,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 23 64 ?? 4d 05 ?? 25 31 ?? 80 fe ?? a3 af ?? 8d 88 ?? 9a 8c ?? 5b 9d ?? d3 77 ?? 2d 40 ?? ff",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 9,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 10,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 08 32 ?? 9d 6e ?? 6d 95 ?? 05 f1 ?? 0f e9 ?? b7 32 ?? cb 3d ?? ad d9 ?? 85 c0 ?? a6 aa ?? 3d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 10,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 11,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 35 4e ?? 11 11 ?? 33 3f ?? 70 2e ?? dd 2a ?? b8 9e ?? f5 ce ?? 1a 1d ?? b2 2f ?? 1d 87 ?? 31",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 11,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 12,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 88 cb ?? be b3 ?? 31 43 ?? 84 0a ?? 34 5f ?? d1 33 ?? 53 91 ?? cc 65 ?? d1 df ?? 3e 68 ?? 83",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 12,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 13,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 8a a3 ?? 52 8d ?? 82 ce ?? de 22 ?? 29 60 ?? 01 ac ?? 97 b7 ?? 54 54 ?? c0 f2 ?? 06 0e ?? 83",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 13,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 14,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 68 09 ?? 87 61 ?? 50 0b ?? bd 58 ?? 5e 2a ?? f8 8b ?? 33 05 ?? 3f 5e ?? 14 6e ?? 3f 3f ?? b5",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 14,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 15,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 6d 38 ?? af f7 ?? 20 f5 ?? 1c 01 ?? df 0f ?? fa 7c ?? 72 74 ?? bd 5d ?? 36 04 ?? ca a4 ?? 83",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 15,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 16,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 17,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 69 3a ?? a5 62 ?? b1 47 ?? a0 23 ?? 08 52 ?? 49 27 ?? 6c ad ?? 04 5f ?? 50 45 ?? 9d 0c ?? 97",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 16,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 17,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 18,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? ec 69 ?? 2a 45 ?? 3e 64 ?? 82 0d ?? f0 6b ?? 30 8c ?? c8 84 ?? 15 3e ?? 67 07 ?? 46 f3 ?? 24",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 17,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 18,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 19,
+      "counter": 43945659,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 1c d8 ?? 0d 80 ?? 19 bd ?? f8 0f ?? 5c 1f ?? 43 02 ?? 35 c6 ?? 90 df ?? 22 d3 ?? 2e c1 ?? 77",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 18,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 19,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 20,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 03 b0 ?? c6 c1 ?? 11 89 ?? 80 3c ?? 13 ae ?? 9b 46 ?? b9 d9 ?? 18 ae ?? 24 66 ?? b0 fc ?? 8e",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 19,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 20,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 21,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 19 71 ?? 26 94 ?? 0c 6c ?? f8 19 ?? 0f 48 ?? ab 78 ?? 7e 89 ?? a5 bc ?? ae 24 ?? 91 18 ?? f3",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 20,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 21,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 22,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 4c ec ?? b8 5c ?? a3 19 ?? 37 42 ?? e1 d7 ?? 40 1b ?? 2c f5 ?? 99 2a ?? f4 e9 ?? bd 13 ?? 4b",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 21,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 22,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 23,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 28 ac ?? cf 8b ?? c2 21 ?? f0 41 ?? 8f 5e ?? 27 90 ?? 2b cb ?? e2 22 ?? 71 ff ?? fc 06 ?? 0f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 22,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 23,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 24,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "ff ?? 9f ff ?? d8 5e ?? 33 74 ?? 84 9e ?? e8 bb ?? 31 6b ?? 23 fa ?? 39 e2 ?? ad 42 ?? 9a d6 ?? 81",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 23,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 24,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 25,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "ff ?? f9 0d ?? d6 77 ?? 33 47 ?? 5c 8e ?? af d2 ?? 8f 54 ?? ed 4e ?? f6 b1 ?? 56 d9 ?? e4 ad ?? a4",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 24,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 25,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 26,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "ff ?? 42 43 ?? d4 62 ?? d6 75 ?? 64 f6 ?? 13 0d ?? f6 27 ?? 1b 8a ?? 78 6f ?? 28 f5 ?? 16 e3 ?? c4",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 25,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 26,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 27,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "ff ?? bb e8 ?? 55 7e ?? 33 4e ?? 39 30 ?? 26 ea ?? d7 ea ?? 22 0f ?? eb 01 ?? cf fe ?? 4b 94 ?? 1d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 26,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 27,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 28,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "ff ?? 7f 8e ?? d4 61 ?? 8c cf ?? f0 2a ?? 93 24 ?? 8e be ?? e7 3a ?? eb 08 ?? fa 77 ?? a4 5f ?? d9",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 27,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 28,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 29,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "ff ?? 21 0a ?? 5a 41 ?? d3 79 ?? 49 6c ?? 31 ef ?? 65 83 ?? a4 ea ?? 01 92 ?? ee a3 ?? e6 e3 ?? 42",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 28,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 29,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 30,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? a7 00 ?? 58 31 ?? e1 6b ?? a0 05 ?? 46 2b ?? 15 0b ?? 7c ae ?? 0e b8 ?? 8f 28 ?? 72 85 ?? 05",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 29,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 30,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 31,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? ca 1d ?? 83 77 ?? 1f 45 ?? 05 ff ?? c7 b2 ?? 7c d6 ?? d2 bd ?? f1 6d ?? 3a cf ?? 1d 02 ?? bf",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 30,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 31,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 32,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 72 63 ?? 21 aa ?? 40 58 ?? 6e 5a ?? 60 f7 ?? 9f 5e ?? 33 c4 ?? 70 de ?? f8 24 ?? 20 df ?? 3f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 31,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 32,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 33,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 20 14 ?? b2 88 ?? 58 b0 ?? 01 27 ?? cc cb ?? 97 aa ?? 72 66 ?? 23 8a ?? cc 00 ?? 5d 91 ?? bd",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 32,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 33,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 34,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 02 0c ?? 11 18 ?? 0f e6 ?? 11 af ?? 34 cb ?? 85 f0 ?? 5b f4 ?? 7e 69 ?? a0 a2 ?? 8c 62 ?? 4f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 33,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 34,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 35,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 45 4d ?? 79 a5 ?? 64 dd ?? 14 6d ?? 2f 59 ?? 13 42 ?? 53 57 ?? a0 b5 ?? 69 f5 ?? 36 47 ?? 3d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 34,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 35,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 36,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 49 72 ?? 29 41 ?? 63 ad ?? 80 d7 ?? a4 74 ?? 5a 67 ?? e4 ba ?? 16 8d ?? 31 dd ?? 2d e6 ?? 3d",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 35,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 36,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 37,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? bc 82 ?? 50 55 ?? e5 26 ?? 1d b4 ?? b2 e3 ?? d7 9f ?? ab aa ?? f3 d0 ?? 40 9c ?? d8 cd ?? 0f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 36,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 37,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 38,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 53 65 ?? d4 51 ?? 99 d1 ?? 01 6a ?? 99 70 ?? 89 56 ?? d9 96 ?? ac 87 ?? 96 96 ?? 26 e5 ?? 81",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 37,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 38,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 39,
+      "counter": 43945659,
+      "phase": 1,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? d2 d9 ?? 1d b1 ?? 49 3c ?? 7e 41 ?? f4 fc ?? 49 6c ?? d8 9f ?? 50 27 ?? 29 5d ?? 14 7c ?? 1b",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 38,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 39,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 40,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? b1 ff ?? 35 75 ?? 12 21 ?? 0f 4c ?? 4a 1d ?? 55 c4 ?? f7 61 ?? e7 f6 ?? 0f 99 ?? bf ae ?? ff",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 39,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 40,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 41,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? de 9f ?? de f1 ?? a2 a9 ?? 02 9d ?? 3f 4c ?? f0 4e ?? b9 d2 ?? cb 6d ?? fd c8 ?? 3b c3 ?? 37",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 40,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 41,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 42,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? e6 6c ?? f2 1e ?? 96 11 ?? 38 b4 ?? b9 f8 ?? 4e f1 ?? 9f d5 ?? 59 ac ?? 44 91 ?? c9 e7 ?? 7f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 41,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 42,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 43,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 17 8b ?? 0f 72 ?? 54 84 ?? e8 04 ?? a1 9d ?? 26 b4 ?? 70 78 ?? 54 2b ?? b0 5b ?? 62 5e ?? ab",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 42,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 43,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 44,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 07 91 ?? 03 eb ?? 52 0f ?? f1 41 ?? d1 23 ?? 27 83 ?? 51 d0 ?? c6 3d ?? 1c 28 ?? f7 13 ?? 7e",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 43,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 44,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 45,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 61 8c ?? 73 dd ?? 96 04 ?? e6 2d ?? e4 79 ?? 84 a3 ?? 2a 98 ?? df 26 ?? 2c 6b ?? 25 d9 ?? 3f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 44,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 45,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 46,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 48 39 ?? 4f b3 ?? 28 e1 ?? f4 cd ?? fe 03 ?? 48 69 ?? d9 f3 ?? 74 b2 ?? 6a a3 ?? f3 cc ?? bf",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 45,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 46,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 47,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 58 0e ?? ed cd ?? 93 30 ?? da 70 ?? 55 48 ?? 95 2b ?? b8 42 ?? 1a fd ?? fd 28 ?? b7 6b ?? 3f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 46,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 47,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 48,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 12 0f ?? db 9b ?? c3 32 ?? 56 a8 ?? ea f3 ?? 8b c3 ?? 6a bc ?? 60 39 ?? f9 ac ?? 31 c3 ?? bf",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 47,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 48,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 49,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 1b c9 ?? cc 9f ?? 72 a4 ?? 01 54 ?? 1c f1 ?? 5c 68 ?? 27 37 ?? 94 d1 ?? 51 01 ?? e0 72 ?? 29",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 48,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 49,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 50,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 12 0d ?? fa 4e ?? d8 64 ?? 4c 10 ?? e1 09 ?? af dc ?? 72 f9 ?? 9b 65 ?? 6d 97 ?? 54 16 ?? 3e",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 49,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 50,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 51,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "f8 ?? 17 23 ?? c3 e9 ?? 6b 24 ?? b6 11 ?? 4b 88 ?? fb 8f ?? a1 01 ?? a0 97 ?? 2f 69 ?? ea 2f ?? bf",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 50,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 51,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 52,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "f8 ?? 4b 83 ?? f5 ce ?? 12 49 ?? 84 22 ?? 23 5c ?? 0b 18 ?? 6e a7 ?? c5 5e ?? c7 21 ?? 72 26 ?? bf",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 51,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 52,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 53,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "f8 ?? 96 41 ?? 4c f6 ?? 34 21 ?? b9 9d ?? 0f ba ?? 39 63 ?? 51 81 ?? 66 21 ?? 82 a3 ?? 77 62 ?? 7f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 52,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 53,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 54,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "f8 ?? 39 e7 ?? 68 c8 ?? ca e1 ?? 9b f3 ?? 11 b5 ?? 6b eb ?? a6 84 ?? 03 72 ?? 62 ec ?? 62 e3 ?? 1f",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "hq_previous_core",
+          "kind": "direct_check",
+          "word_bits": [
+            6,
+            7
+          ],
+          "allowed_values": [
+            0
+          ],
+          "excluded_value_count": 1,
+          "observation": "direct",
+          "observed": 0,
+          "outcome": "match",
+          "source_outcome": "hq_match",
+          "fixed_bits": {
+            "6": 0
+          },
+          "inputs": [
+            {
+              "slot": 53,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 54,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 62,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 55,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "ff ?? e6 a1 ?? 60 5e ?? 1d bb ?? 48 c9 ?? 24 25 ?? 86 63 ?? 2f 7f ?? f4 56 ?? 11 79 ?? ae 43 ?? 70",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 54,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 55,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 56,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_du",
+      "octets": "ff ?? 5c 8e ?? 5e 5e ?? 28 8f ?? 4f f2 ?? 51 9c ?? bf 71 ?? 23 05 ?? aa 3a ?? 07 8a ?? 97 ee ?? 93",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 55,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 56,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 57,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_du",
+      "octets": "ff ?? b6 c1 ?? dd 5e ?? 2d 9a ?? c9 76 ?? ee 12 ?? 65 9b ?? b1 7e ?? 8f 87 ?? aa 97 ?? 4c 6f ?? 70",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 56,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 57,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 58,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_du",
+      "octets": "ff ?? ec 21 ?? dd 5e ?? 32 e4 ?? 7c 97 ?? 25 16 ?? 4e 2e ?? 82 10 ?? a0 67 ?? ba 8c ?? d3 3a ?? 70",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 57,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 58,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slot": 59,
+      "counter": 43945659,
+      "phase": 2,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_du",
+      "octets": "fe ?? 5e a5 ?? dc 5e ?? 28 9c ?? ad 92 ?? c1 e2 ?? 90 03 ?? 0c f8 ?? f2 df ?? fc a0 ?? d1 14 ?? 76",
+      "direct_bits": 176,
+      "carried_unknown_bits": 88,
+      "no_receipt_bits": 0,
+      "word_erased": true,
+      "events": [
+        {
+          "section": "core_history",
+          "check": "tcx_previous_core",
+          "kind": "conditional",
+          "word_bits": [
+            8,
+            9
+          ],
+          "allowed_values": [
+            1
+          ],
+          "excluded_value_count": 1,
+          "observation": "carried_unknown",
+          "observed": null,
+          "outcome": "restricted",
+          "source_outcome": "tcx_conditional",
+          "fixed_bits": {
+            "8": 1
+          },
+          "inputs": [
+            {
+              "slot": 58,
+              "word_bits": [
+                0,
+                5
+              ],
+              "observed": 31,
+              "role": "condition"
+            },
+            {
+              "slot": 59,
+              "word_bits": [
+                0,
+                6
+              ],
+              "observed": 63,
+              "role": "condition"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

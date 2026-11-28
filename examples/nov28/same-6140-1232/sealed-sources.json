@@ -1,0 +1,69 @@
+{
+  "sealed_utc": "2026-11-28T12:34:20.292192+00:00",
+  "protocol_sha256": "5bd0d537920b46282b558beae50809b4f30590ece06aa9bd48466c180477607c",
+  "sources": {
+    "yokohama": {
+      "station": "yokohama",
+      "wav": "original.wav",
+      "wav_sha256": "d36b9047e0e58bdd0c3f2e43d504b6c455e7d8e651f1979ae0f0304b81df7491",
+      "bytes": 17280044,
+      "timing_csv_sha256": "7396b49eb2568f040369c61b12848ce228ac9f27f8d4a593a8f8052043ea343e",
+      "recorder_receipt_sha256": "6a6b7019eae40e850dcc17b8b407a3baaa12c39fb353281ef33fa3bcb94c96ea",
+      "rate": 48000,
+      "frequency_hz": 6140000,
+      "started_utc": "2026-11-28T12:32:40.709895+00:00",
+      "error": null,
+      "pcm_sha256": "07de4096900b5a55d61963e44439afdad1b5664c89b1c489e06c1144cd8bc622",
+      "frames": 4320000,
+      "duration": 90.0,
+      "complete": true,
+      "packets": 13500,
+      "first_and_last_station_utc": [
+        "2026-11-28T12:32:42.199638115Z",
+        "2026-11-28T12:34:12.199622211Z"
+      ],
+      "utc_bounds_ns": [
+        1795869162199638115,
+        1795869252199622211
+      ],
+      "anchor_count": 13495,
+      "missing_timestamps": 5,
+      "station_clock_jumps": [],
+      "maximum_abs_station_clock_difference_ns": 11484
+    },
+    "edogawa": {
+      "station": "edogawa",
+      "wav": "original.wav",
+      "wav_sha256": "bd06acbbddd07e7a24bbdc72af833fc3c0ab91fa1e194298a3d37f65705ab84c",
+      "bytes": 17280044,
+      "timing_csv_sha256": "012a939ebfc7efb72e288247294a56833cba1e959cc86ed0bc5643e2fb0c8a74",
+      "recorder_receipt_sha256": "57335a0860c20e57e1f9869fcec03be23e05adae922b68c7e8b000885fcbea53",
+      "rate": 48000,
+      "frequency_hz": 6140000,
+      "started_utc": "2026-11-28T12:32:40.684477+00:00",
+      "error": null,
+      "pcm_sha256": "a216707b869ac1cfa81b01b07987429277bec89e7cd895834d0cdb5cac01927e",
+      "frames": 4320000,
+      "duration": 90.0,
+      "complete": true,
+      "packets": 13500,
+      "first_and_last_station_utc": [
+        "2026-11-28T12:32:42.926192143Z",
+        "2026-11-28T12:34:12.926210312Z"
+      ],
+      "utc_bounds_ns": [
+        1795869162926192143,
+        1795869252926210312
+      ],
+      "anchor_count": 13497,
+      "missing_timestamps": 3,
+      "station_clock_jumps": [],
+      "maximum_abs_station_clock_difference_ns": 9913
+    }
+  },
+  "common_uncut_station_clock_bounds": [
+    "2026-11-28T12:32:42.926192143Z",
+    "2026-11-28T12:34:12.199622211Z"
+  ],
+  "common_seconds": 89.273430068
+}

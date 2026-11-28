@@ -1,0 +1,45 @@
+{
+  "sealed_sources_sha256": "77db7e78ceadb25d6a878959fd7c2580d793690be0caf4cfac3f2ed3776517ed",
+  "format": "48,000 complex samples/s, stereo signed PCM16 little-endian I/Q",
+  "verification": "Original WAV and PCM hashes matched the existing seal. FFmpeg FLAC encoding used -map_metadata -1 -map_chapters -1 and bitexact flags. ffprobe showed no format or stream tags. All decoded PCM bytes were compared with WAV data in original channel order through exact EOF and independently hashed.",
+  "timing_csv_schema": [
+    "sample_offset",
+    "sample_pairs",
+    "receiver_unix_ns"
+  ],
+  "timing_csv_validation": "Separate copies match sealed timing hashes. Every row contains exactly two unsigned-integer position/length fields and a decimal UTC nanosecond timestamp or the original blank. Sample offsets/lengths span each file without gaps. Rows contain no names, network identifiers, or tokens.",
+  "stations": {
+    "yokohama": {
+      "source_wav": "yokohama/original.wav",
+      "frequency_hz": 6140000,
+      "raw_wav_bytes": 17280044,
+      "raw_wav_sha256": "d36b9047e0e58bdd0c3f2e43d504b6c455e7d8e651f1979ae0f0304b81df7491",
+      "flac": "yokohama-6140khz-iq48.flac",
+      "flac_bytes": 13542774,
+      "flac_sha256": "5e46662e030c068868843ead74451f7c03d2a9bd5d54ed1a79a98c942d5dafd0",
+      "pcm_bytes": 17280000,
+      "source_and_decoded_pcm_sha256": "07de4096900b5a55d61963e44439afdad1b5664c89b1c489e06c1144cd8bc622",
+      "sample_pairs": 4320000,
+      "timing_csv": "yokohama-6140khz-iq48.timing.csv",
+      "timing_csv_sha256": "7396b49eb2568f040369c61b12848ce228ac9f27f8d4a593a8f8052043ea343e",
+      "timing_rows_checked": 13500,
+      "missing_station_timestamps_preserved": 5
+    },
+    "edogawa": {
+      "source_wav": "edogawa/original.wav",
+      "frequency_hz": 6140000,
+      "raw_wav_bytes": 17280044,
+      "raw_wav_sha256": "bd06acbbddd07e7a24bbdc72af833fc3c0ab91fa1e194298a3d37f65705ab84c",
+      "flac": "edogawa-6140khz-iq48.flac",
+      "flac_bytes": 12805862,
+      "flac_sha256": "780aef117a8f3445a6879b79e34ecdf2f063047d0aa3d67a1e8f71249889c294",
+      "pcm_bytes": 17280000,
+      "source_and_decoded_pcm_sha256": "a216707b869ac1cfa81b01b07987429277bec89e7cd895834d0cdb5cac01927e",
+      "sample_pairs": 4320000,
+      "timing_csv": "edogawa-6140khz-iq48.timing.csv",
+      "timing_csv_sha256": "012a939ebfc7efb72e288247294a56833cba1e959cc86ed0bc5643e2fb0c8a74",
+      "timing_rows_checked": 13500,
+      "missing_station_timestamps_preserved": 3
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+  "msc_rows": 218,
+  "rows_728": 218,
+  "packet_crc_checks": 872,
+  "physical_packets_crc": 451,
+  "physical_packets_crc_and_header": 451,
+  "native_complete_dus": 82,
+  "coord_packets": 288,
+  "coord_dus": 67,
+  "assigned_counters": [
+    43945656,
+    43945658,
+    43945659,
+    43945660,
+    43945662,
+    43945664,
+    43945665,
+    43945668,
+    43945669,
+    43945670,
+    43945671,
+    43945672,
+    43945683,
+    43945684,
+    43945688,
+    43945689,
+    43945692,
+    43945693,
+    43945694,
+    43945695,
+    43945701,
+    43945702,
+    43945703,
+    43945704,
+    43945705,
+    43945706,
+    43945707,
+    43945708,
+    43945709,
+    43945710,
+    43945711,
+    43945712,
+    43945713,
+    43945717
+  ],
+  "direct_complete_groups": [
+    {
+      "counter": 43945659,
+      "phase0_row": 20,
+      "du_sha256": [
+        "f6d1705cb831b4aec629ec9c3157428d71cc71110d7054845c642251f4ba80fc",
+        "833c29f9705f5b90f2a62e8a97013ee2684a66dc2c8854e1a01295fcf245fc61",
+        "7413149299fcba949fa2d853499e8aa2c85f2f5015e50a134cd8686b0b827742"
+      ]
+    },
+    {
+      "counter": 43945668,
+      "phase0_row": 47,
+      "du_sha256": [
+        "28e15dd2432c3155fc7d407c765153ed79ed98dae2a60fd6b7dd196da8c33366",
+        "7ab740686c1fa885c54f18ed6d4b065608d19fdf5fcd4e2e87f40717200bf3c6",
+        "75470aef600f4d3b2aba11fb9a257c8c0c63ba34b64857f0a9e3a7aab0207d62"
+      ]
+    },
+    {
+      "counter": 43945669,
+      "phase0_row": 50,
+      "du_sha256": [
+        "8674f98d78635d9f9377101a6e9d7cd7df6d8e5557637e96076747cfc1ce840b",
+        "c64e5e9f5e2af38dee177db0aa562306ddd73ea6c12c304f0c66be710b263710",
+        "ecf9d0374673052a3ab365ab52edabb2ecc40c20a56f9611240f9f12c19004ef"
+      ]
+    },
+    {
+      "counter": 43945670,
+      "phase0_row": 53,
+      "du_sha256": [
+        "419e3c2870d700021d6c1239a5746c5bcbb33404333f2d33bf670d3bbd020a62",
+        "cdf863f6f413ac80abee368c5e7bdea93fe167dc72be9481628c1cc8f160f88b",
+        "fb7438110ccf32f9ab5c6f301bfffc607777cf0cdcd9c2237cc458bc76ae945d"
+      ]
+    },
+    {
+      "counter": 43945683,
+      "phase0_row": 92,
+      "du_sha256": [
+        "fbd3134074880080bbfcefc897aba76e7769945ff93b338bde0a124796718e53",
+        "21683edb8da74da245ff644b39a32f7d093122d90abcdea0e7eccf8b35ee0b3e",
+        "a6be30cd8a0ffcd5c0cddf999ab8a90f20122cc3ed5a4d70c03bb3fc5ee154c1"
+      ]
+    },
+    {
+      "counter": 43945692,
+      "phase0_row": 119,
+      "du_sha256": [
+        "0bfab58e78c6b0cb6618a20d6f0d250622372df13927936b5a91ae46897d713f",
+        "1dd56168a412eb1fdc0a1c570dc4670dc97b7f0e792df7ee6fdd3afa7b087fe8",
+        "b5233afae1fd14240f88628ce478ee5f29e7ddeb302d3b7a4d6cd0a784ce41d9"
+      ]
+    },
+    {
+      "counter": 43945693,
+      "phase0_row": 122,
+      "du_sha256": [
+        "27e12eba7287983d128deb9f048742fa45f45f5411874bd603b9562570cd536d",
+        "13cc567b75400d6ea4568154edbbd05f2a0e9efc251079eb3b082e531a6fe41e",
+        "f801c37a5060c98647a6eb59fb9df80f5f457f4cefaeb942c5a2aa9a9f584e51"
+      ]
+    },
+    {
+      "counter": 43945694,
+      "phase0_row": 125,
+      "du_sha256": [
+        "ca6f0d0c223b665bbbd8d29b2e3be7c394b1ff2ee72f20440191c0abfd917d02",
+        "4acf3714d143d13c930de25ee333c647530b0f309b863f8400c69f6161b6861d",
+        "d4c71c866a62e3097e08998c12349f41034c572c7f3727c84f79c9295c650717"
+      ]
+    },
+    {
+      "counter": 43945705,
+      "phase0_row": 158,
+      "du_sha256": [
+        "257213dfe897efd1bb311ebc8600270913feea86f161fe90a3370b837262be05",
+        "c3182699adb965120db3214dfa0e533e0bda9923afe93e51198363063af0bfb5",
+        "9a55a0be59c0790c3d1a9511e8bcb4161b4bbc2b8264a6bda9cd7f649d43b070"
+      ]
+    },
+    {
+      "counter": 43945706,
+      "phase0_row": 161,
+      "du_sha256": [
+        "a0b6667d175e30bc90513a7e5f148977624b4b00274df2cd826de8fd5e0adcfe",
+        "816459858db5671745c49858b2d3eb81b7443823ffd894a7b6f8375e8095052a",
+        "30cad92423fca93fad2228937c0ea3399f5bb43a967c36e99cbd70802afcdd6a"
+      ]
+    },
+    {
+      "counter": 43945707,
+      "phase0_row": 164,
+      "du_sha256": [
+        "6cbfada5630e8d0236f4a8dcc023e27b37379fabc97ab186e89b18cf8ac888c3",
+        "c07952eaa1d8e2bb672f987631381eed6af32fe1a6db3e91437c654627ac0c06",
+        "730ad3b0d6f603c0fc5c87dce36f5a8b52dffa2b21e71d69daadb70160338c6c"
+      ]
+    },
+    {
+      "counter": 43945708,
+      "phase0_row": 167,
+      "du_sha256": [
+        "0d91195f06f54050cd00171e359c6c57056204d69af6e25b921d801e282f8797",
+        "c3eed9c027cf93a0f0845b8f42a4789cc3b166375d37f77c6070b2c90b3c3ca9",
+        "c332f34d0b0db56220a731c6e299384425a7e6dca12999bb860c1476c9bbdc07"
+      ]
+    },
+    {
+      "counter": 43945709,
+      "phase0_row": 170,
+      "du_sha256": [
+        "1f9fab9441d301c0b0ae297d17d3acb748e61600d4676bdecd1e0fd26dcdc332",
+        "a669f2b6ceb20addde489b57e148bdfa4b37ae63af01ed6ef9bd0d4529b3329c",
+        "57cdfdcdf803b39ae407824a7438937bc9e409a2ee3902399f67a3487e22b3bf"
+      ]
+    },
+    {
+      "counter": 43945710,
+      "phase0_row": 173,
+      "du_sha256": [
+        "f4cafd65a51152d9a74c5303dcf4498c82cdf0bd1632bac8cf989867ef1986a6",
+        "6ce4ac8f06ccab04741147ab7b646cf2958302826f7719c2d6fdf2c36088fd7f",
+        "47ec51b58c04da22077dc3ddc055628dfc78066bfd4285e0c5bf96371ce1a617"
+      ]
+    },
+    {
+      "counter": 43945711,
+      "phase0_row": 176,
+      "du_sha256": [
+        "8176a5d112d6f81d31d9b30fd25ebd9d76558ae4ebdca1c1b8780665d8e3a97b",
+        "e7b1f403d941d6176f875d68285a70435bfdc09ed0a036b240ab062a533e638f",
+        "9ddb55ebd0c335c7d20fb6b3931a8e7a80b04d59574e056b9f60d9572f8f7366"
+      ]
+    },
+    {
+      "counter": 43945712,
+      "phase0_row": 179,
+      "du_sha256": [
+        "5a78d1cd57c07960f6ea189df1da3138ca0aafbccf5c97023d97fdf7ab2dedde",
+        "639ae883ca47c061532fab2d81891ad718e69e04cbd303236939c223f4b51413",
+        "daeecf58086c6701b0fd5bed089ebbb796588dcaeb739184558a84be620452e9"
+      ]
+    },
+    {
+      "counter": 43945713,
+      "phase0_row": 182,
+      "du_sha256": [
+        "e189cdd139d5db45939c51889f143ec793e2153e1930b105fc0242f9551954db",
+        "8f5fa608fc8b2372a0c207bf7eb8bd10afc6e6735351fdde6b107f253ce52e69",
+        "7a10105246e3494b374cd3ecdf62c28df8375235fd38700c68d79e7e20671b90"
+      ]
+    }
+  ],
+  "archived_complete_groups": [
+    43945659,
+    43945668,
+    43945669,
+    43945670,
+    43945683,
+    43945692,
+    43945693,
+    43945694,
+    43945705,
+    43945706,
+    43945707,
+    43945708,
+    43945709,
+    43945710,
+    43945711,
+    43945712,
+    43945713
+  ],
+  "missing_counter_ids_within_span": [
+    43945657,
+    43945661,
+    43945663,
+    43945666,
+    43945667,
+    43945673,
+    43945674,
+    43945675,
+    43945676,
+    43945677,
+    43945678,
+    43945679,
+    43945680,
+    43945681,
+    43945682,
+    43945685,
+    43945686,
+    43945687,
+    43945690,
+    43945691,
+    43945696,
+    43945697,
+    43945698,
+    43945699,
+    43945700,
+    43945714,
+    43945715,
+    43945716
+  ],
+  "archive_sha256": {
+    "packets.npz": "8eb521c769f27344fb0b5b813de2d298e1b53ef03588a41540602daf775ff9be",
+    "data_units.npz": "86247d9e5fbc2eb79efc655f6dc9f93349a4483c4bcd728f8c1e528eb2c792e2",
+    "report.json": "a826aea3911d83c10c6c1ab61df40c270f74464ff641d4dd7c2962450c7e76a4",
+    "provenance.json": "f9f7db9cdef435f550f8fcdd8485377278b28adac7eeab96c4668dad243e0e78"
+  },
+  "manifest": {
+    "source": "/workspace/shared/same6140-20261128-123x/edogawa/original.wav",
+    "source_bytes": 17280044,
+    "source_sample_rate": 48000,
+    "source_frames": 4320000,
+    "start_sample": 0,
+    "sample_count": 4320000,
+    "start_seconds": 0.0,
+    "duration_seconds": 90.0,
+    "channel_offset_hz": 0.0,
+    "timing_note": "Nominal sample rate used; physical clock calibration unknown. Dump record index is NOT a source timestamp.",
+    "status": "finished",
+    "mlc_iterations": 1,
+    "reception_profile": "wiener",
+    "receiver_settings": {
+      "freqint": 2,
+      "timeint": 1,
+      "modmetric": 0,
+      "mlciter": 1
+    },
+    "wall_seconds": 1.2258193100133212,
+    "returncode": 0,
+    "dump_bytes": 159576
+  },
+  "reported_transport": {
+    "files": 1,
+    "assigned_record_observations": 74,
+    "original_complete_groups": 17,
+    "salvaged_complete_groups": 17,
+    "extra_groups": 0,
+    "missing_baseline_groups": [],
+    "crc_good_data_units": 67,
+    "conflicting_data_units": [],
+    "reassembly_crc_failures": 0,
+    "candidate_key_groups": 0,
+    "verified_text_key_groups": 0,
+    "note": "Packet/DU CRCs verify container integrity, not text or codec keys.",
+    "text_candidates_evaluated": false
+  }
+}

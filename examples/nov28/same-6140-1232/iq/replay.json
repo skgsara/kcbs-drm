@@ -1,0 +1,36 @@
+[
+  {
+    "trial": "1232",
+    "site": "yokohama",
+    "frequency_hz": 6140000,
+    "protocol_revision": "41b4e2d0ebdedb5e8e8f452b19154dd302cc7f4b",
+    "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+    "flac_sha256": "5e46662e030c068868843ead74451f7c03d2a9bd5d54ed1a79a98c942d5dafd0",
+    "pcm_sha256": "07de4096900b5a55d61963e44439afdad1b5664c89b1c489e06c1144cd8bc622",
+    "sample_pairs": 4320000,
+    "msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+    "msc_bytes": 161040,
+    "msc_matches_original": true,
+    "original_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+    "receipt_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+    "native_records": 220,
+    "native_dus": 206
+  },
+  {
+    "trial": "1232",
+    "site": "edogawa",
+    "frequency_hz": 6140000,
+    "protocol_revision": "41b4e2d0ebdedb5e8e8f452b19154dd302cc7f4b",
+    "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+    "flac_sha256": "780aef117a8f3445a6879b79e34ecdf2f063047d0aa3d67a1e8f71249889c294",
+    "pcm_sha256": "a216707b869ac1cfa81b01b07987429277bec89e7cd895834d0cdb5cac01927e",
+    "sample_pairs": 4320000,
+    "msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+    "msc_bytes": 159576,
+    "msc_matches_original": true,
+    "original_msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+    "receipt_msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+    "native_records": 218,
+    "native_dus": 82
+  }
+]
