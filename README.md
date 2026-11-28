@@ -454,6 +454,12 @@ speech or music. Role 2 is concealed; role 3 can replay the next fully unmasked
 frame. The copy measures **−26.7 LUFS**, with a **−2.6 dBTP** true peak and
 11 silent gaps of their original durations. The March release is unchanged.
 
+KoryoFront's November 28 update reports first-position audio in **817/884**
+groups on this timeline. A cross-check of the original MSC found a complete
+data unit inside the reported 7.2-second silent stretch. On a separate 6140 kHz
+recording, a second receiver confirmed 15 additional data units assigned by
+their revised transport code. [Upstream review and reproducible packet checks](examples/nov28/koryofront-review/README.md)
+
 [Martyn’s contribution](contrib/kcbsdrm/README.md) supplies six matching groups of
 dumps, prefix archives, record reports and Korean text. All **3,517** exported full prefixes matched complete received groups by
 counter; the six captures contain **4,421** complete groups in total. Rechecking header/body CRC, padding, fill, and matching records
