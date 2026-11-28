@@ -1,0 +1,42 @@
+{
+  "source": "examples/nov28/same-6140-1232/iq/yokohama-6140khz-iq48.flac",
+  "source_sha256": "5e46662e030c068868843ead74451f7c03d2a9bd5d54ed1a79a98c942d5dafd0",
+  "dream_sha256": "ab62ff02da57356f27bfe4f64ae9ed62a3c48a129378d49438008f0272e29467",
+  "code_sha256": {
+    "receive.py": "879c29e4d94527d8615b719d4ab5beda1d3ed8342e3becd45c4821385dafbf5d",
+    "discover.py": "d1ac6fff6f00f0fe4b0eeeb81705d2c4852665685416ba0c87182f75b78b98f7"
+  },
+  "exitcode": 1,
+  "observer_blocks": {
+    "FAC": {
+      "observed": 222,
+      "crc_passed": 222,
+      "crc_failed": 0
+    },
+    "SDC": {
+      "observed": 76,
+      "crc_passed": 74,
+      "crc_failed": 2
+    }
+  },
+  "FAC_service": [
+    {
+      "service_id": "A00002",
+      "short_id": 0,
+      "audio_ca": 0,
+      "language_code": 0,
+      "service": "data",
+      "service_descriptor": 0,
+      "data_ca": 0,
+      "count": 222
+    }
+  ],
+  "SDC_labels": [
+    "\uc870\uc120\uc911\uc559\uc81c2\ub77c\uc9c0\uc624\ubc29\uc1a1"
+  ],
+  "error": "FAC did not identify the clear data service EF0201",
+  "groups_written": 0,
+  "g192_files": 0,
+  "raw_signalling_sha256": "6e6eb33659c97752d38fc4c93c63966b9271169b7cb516c74e80dfe80a8dbb88",
+  "raw_msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64"
+}

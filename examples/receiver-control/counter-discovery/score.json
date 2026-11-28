@@ -1,0 +1,126 @@
+{
+  "sender_truth_sha256": "dccb8e7960e6a014b82ac815aebd0104a211d7cbf7faab6089adfcd2d3fd023f",
+  "receiver_catalog_sha256": "2d2700f10a1b94bc39eb341729ae289efd54d77f9ef6bca6a019ee23d2bc5c78",
+  "chronological_sender_counters": [
+    4294967289,
+    4294967290,
+    4294967291,
+    4294967292,
+    4294967293,
+    4294967294,
+    4294967295,
+    0,
+    1,
+    4294967292,
+    2
+  ],
+  "damaged_counters": [
+    1
+  ],
+  "expected_valid_occurrences": 10,
+  "declared_clear_occurrences": 10,
+  "ordered_matching_occurrences": 10,
+  "other_groups": {
+    "guard": 15
+  },
+  "receiver_occurrences": [
+    {
+      "counter": 4294967289,
+      "occurrence": 0,
+      "native_row": 30,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 4294967290,
+      "occurrence": 0,
+      "native_row": 33,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 4294967291,
+      "occurrence": 0,
+      "native_row": 36,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 4294967292,
+      "occurrence": 0,
+      "native_row": 39,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 4294967293,
+      "occurrence": 0,
+      "native_row": 42,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 4294967294,
+      "occurrence": 0,
+      "native_row": 45,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 4294967295,
+      "occurrence": 0,
+      "native_row": 48,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 0,
+      "occurrence": 0,
+      "native_row": 51,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 4294967292,
+      "occurrence": 1,
+      "native_row": 57,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    },
+    {
+      "counter": 2,
+      "occurrence": 0,
+      "native_row": 60,
+      "matches_expected_occurrence": true,
+      "differing_bits": 0
+    }
+  ],
+  "missing_valid_occurrences": [],
+  "unexpected_supplied_occurrences": [],
+  "supplied_damage_slots": 0,
+  "guard_groups_with_words": [],
+  "by_position": {
+    "1": {
+      "original_words_matching": 150,
+      "original_words_differing": 0,
+      "differing_bits": 0
+    },
+    "2": {
+      "original_words_matching": 150,
+      "original_words_differing": 0,
+      "differing_bits": 0
+    },
+    "3": {
+      "original_words_matching": 150,
+      "original_words_differing": 0,
+      "differing_bits": 0
+    },
+    "4": {
+      "original_words_matching": 150,
+      "original_words_differing": 0,
+      "differing_bits": 0
+    }
+  },
+  "exact_valid_chronology": true,
+  "passed": true
+}

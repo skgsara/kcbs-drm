@@ -2,6 +2,8 @@
 
 In a 40-group, file-only test transmission with a known sender, the receiver emitted **2,113 exact EVS words**, emitted zero wrong words, and marked 287 slots as erasures. The programmed packet failures accounted for 78 necessary erasures. Another 209 arose because the receiver could not assign some intact packets to a counter and phase. The original receiver output and input were published before comparison with the sender. [Frozen test and settings](protocol.md) · [Sealed receiver output](result/receiver.json) · [Independent per-word comparison](result/verification.json)
 
+The receiver can also discover complete clear test groups from native row order with no starting counter or group count. On a new IQ holdout it recovered all 10 intact occurrences, including a counter rollover and a repeated group. [Recording, receiver command and independent word comparison](counter-discovery/README.md)
+
 | Position | Complete words allowed by packet geometry | Emitted and exact | Additional erasures |
 | --- | ---: | ---: | ---: |
 | 1 | 573 | 529 | 44 |
