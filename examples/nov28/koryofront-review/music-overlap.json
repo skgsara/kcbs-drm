@@ -1,0 +1,234 @@
+{
+  "companion_msc_sha256": "bb940a777e34f2b96e19ea73294e1e5b0bbe937af269b075c18010077fc0817d",
+  "programme_gzip_sha256": "e707cb157345d5638920a1ca37c27f4b8b8c6b309864166f70914af15daffbc9",
+  "text_supported_gzip_sha256": "cdf3249dface379d6790e10701735a62dbd0f177f0847c5e28efd582804c713f",
+  "frames_csv_sha256": "fef5176e472eb830ed9c1686476a7ec5b0bc47d578ff83e33bfe35c574209e5a",
+  "companion_groups": 22,
+  "fully_supplied_groups": 12,
+  "labels_in_overlap": {
+    "erasure": 330,
+    "inferred": 660,
+    "text-supported": 330
+  },
+  "labels_by_position": {
+    "1": {
+      "text-supported": 330
+    },
+    "2": {
+      "erasure": 90,
+      "inferred": 240
+    },
+    "3": {
+      "erasure": 105,
+      "inferred": 225
+    },
+    "4": {
+      "erasure": 135,
+      "inferred": 195
+    }
+  },
+  "direct_bits_compared": 174240,
+  "direct_bit_disagreements": 0,
+  "independent_clear_reference_words": 0,
+  "whole_word_accuracy": null,
+  "groups": [
+    {
+      "counter": 43854888,
+      "supplied": 15,
+      "text_supported": 15,
+      "inferred": 0,
+      "erasures": 45,
+      "direct_bits_compared": 2640,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854889,
+      "supplied": 45,
+      "text_supported": 15,
+      "inferred": 30,
+      "erasures": 15,
+      "direct_bits_compared": 7920,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854890,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854891,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854892,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854893,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854894,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854895,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854896,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854897,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854898,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854899,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854900,
+      "supplied": 30,
+      "text_supported": 15,
+      "inferred": 15,
+      "erasures": 30,
+      "direct_bits_compared": 5280,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854901,
+      "supplied": 30,
+      "text_supported": 15,
+      "inferred": 15,
+      "erasures": 30,
+      "direct_bits_compared": 5280,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854902,
+      "supplied": 15,
+      "text_supported": 15,
+      "inferred": 0,
+      "erasures": 45,
+      "direct_bits_compared": 2640,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854903,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854904,
+      "supplied": 15,
+      "text_supported": 15,
+      "inferred": 0,
+      "erasures": 45,
+      "direct_bits_compared": 2640,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854905,
+      "supplied": 15,
+      "text_supported": 15,
+      "inferred": 0,
+      "erasures": 45,
+      "direct_bits_compared": 2640,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854906,
+      "supplied": 30,
+      "text_supported": 15,
+      "inferred": 15,
+      "erasures": 30,
+      "direct_bits_compared": 5280,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854907,
+      "supplied": 45,
+      "text_supported": 15,
+      "inferred": 30,
+      "erasures": 15,
+      "direct_bits_compared": 7920,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854908,
+      "supplied": 60,
+      "text_supported": 15,
+      "inferred": 45,
+      "erasures": 0,
+      "direct_bits_compared": 10560,
+      "direct_bit_disagreements": 0
+    },
+    {
+      "counter": 43854909,
+      "supplied": 30,
+      "text_supported": 15,
+      "inferred": 15,
+      "erasures": 30,
+      "direct_bits_compared": 5280,
+      "direct_bit_disagreements": 0
+    }
+  ]
+}

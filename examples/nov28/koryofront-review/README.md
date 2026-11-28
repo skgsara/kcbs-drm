@@ -34,3 +34,42 @@ The November 26 10:08 KST text archive provides a control for comparing record s
 | 878 | 178 | 178 |
 
 One example runs from counter **43767451, phase 2** to **43767744, phase 1**. The start distance is `3 × (43767744 − 43767451) + (1 − 2) = 878` data units. The 178 matching pairs cover all three phase transitions, with 58 from 0 to 2, 57 from 1 to 0 and 63 from 2 to 1. A 797-unit interval would produce the same phase transitions. A separate November 27 recording has a measured 798-unit interval and preserves phase. Each comparison applies to its own recording. [November 27 record comparison](../../nov27/validation/tcx-zero-pair/43865914-review.md#two-observations-available-directly-from-the-signal)
+
+## Which music-demo words can the paired recordings verify?
+
+The 06:17 UTC packet companion covers **22 complete on-air groups**, counters 43854888–43854909. Both Airspy recordings reproduced the same 264 physical packets in these groups. The released music reconstruction supplies words in 990 of the 1,320 slots. Every supplied word agrees with its packet at the mode octet and the 21 directly transmitted payload octets, for **174,240 matching bits and zero disagreements**. The remaining 330 slots are erasures in the reconstruction. [Dual-frequency IQ replay](../four-frequency/nov27-digital.json) · [Group-by-group comparison](music-overlap.json)
+
+| Frame position | Words supplied in the reconstruction | Erasures | Directly transmitted bits checked |
+|---|---:|---:|---:|
+| 1 | 330 text-supported | 0 | 58,080 |
+| 2 | 240 inferred | 90 | 42,240 |
+| 3 | 225 inferred | 105 | 39,600 |
+| 4 | 195 inferred | 135 | 34,320 |
+
+Twelve of the 22 overlapping groups have all 60 words supplied. The earliest, **43854890**, starts at 5.20 seconds in the released stream and is the opening group of the 12-second music excerpt. All 10,560 directly carried bits agree. The comparison would detect a change to any one of those bits. The other 5,280 bit coordinates fall outside this check. The slot ledger credits 15 first-position words to text evidence and the other 45 to audio-assisted inference. Neither recording provides independent clear labels for those 45 words. This is a historical playback comparison. [Slot ledger](../../nov27/frames.csv) · [Published excerpt and stream hashes](../../nov27/replay.json)
+
+To reproduce the comparison from the repository root, extract the [06:17 UTC capture companions](https://github.com/skgsara/kcbs-drm/releases/download/samples-2026-11-28/KCBS2_20261127T061722Z_companions.zip) and run the following commands, substituting the path of the extracted packet file.
+
+```sh
+d=examples/nov28/koryofront-review
+python "$d/music_overlap.py" /path/to/KCBS2_CRC_verified.msc.bin > /tmp/music-overlap.json
+cmp /tmp/music-overlap.json "$d/music-overlap.json"
+```
+
+### Does identical EVS input reproduce identical audio for an isolated group?
+
+We fed the stock 16 kHz EVS decoder the exact same target words three ways. First we decoded from the start of the published stream to establish the reference PCM. Then we started at the target counter, or 60 slots earlier. The reference replay reproduced the published SHA-256 for all 480,000 PCM samples. All three trials used the same target G.192 bytes, including their original order. [Decoder build and release](../../../docs/november-2026.md) · [Replay script](music_state.py)
+
+| Start of playback | Groups with any differing sample | Differing PCM samples out of 230,400 | Affected 20 ms slots out of 720 |
+|---|---:|---:|---:|
+| At the first target word | 12 of 12 | 31,653 | 592 |
+| One group earlier | 9 of 12 | 10,420 | 415 |
+
+For counter 43854890, starting at the first word changed 2,083 of 19,200 samples. Including the preceding group reproduced this target exactly. In the nine groups that still differed after one preceding group, every remaining sample difference was at most five signed 16-bit PCM counts. No listening test was performed. For a bit-exact playback comparison, start both decoders from the same state and feed them the same preceding slots, including erasures. A sample mismatch with different decoder histories can occur even with identical target words. [First group](music-state.json) · [All 12 groups](music-state-overlap.json)
+
+```sh
+d=examples/nov28/koryofront-review
+python "$d/music_state.py" --decoder work/evs_gcc_independent/EVS_dec --overlap "$d/music-overlap.json" > /tmp/music-state-overlap.json
+```
+
+The report includes the executable digest. When comparing builds, check that digest and the full-stream PCM digest before comparing the sample counts.

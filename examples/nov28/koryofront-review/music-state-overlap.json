@@ -1,0 +1,295 @@
+{
+  "scope": "PCM from fully supplied counters in the published programme and companion RF overlap",
+  "selection_sha256": "dbd04b4689018111f5d2d2b8635692efc300af0ff5e6cf3db0e39d039643041e",
+  "decoder_sha256": "e07384175dad995379fb738a79e949cd2d25b002f65ad0fa6bda6b8f7a1f0184",
+  "release_g192_sha256": "2ae4c7d6f186558db6f96cfc9c4c613e4d9702175f3980c855784fb3b4b32738",
+  "release_pcm_sha256": "fd777a6aab598bbeedcb226078a551e46a2b065ecdb4f290a5a79455a9e96194",
+  "selected_groups": 12,
+  "compared_slots": 720,
+  "compared_samples": 230400,
+  "trials": {
+    "cold_group_start": {
+      "groups_differing": 12,
+      "differing_samples": 31653,
+      "differing_samples_per_group_range": [
+        1518,
+        4241
+      ],
+      "differing_20ms_slots": 592,
+      "differing_20ms_slots_per_group_range": [
+        16,
+        60
+      ]
+    },
+    "one_prior_group": {
+      "groups_differing": 9,
+      "differing_samples": 10420,
+      "differing_samples_per_group_range": [
+        0,
+        2113
+      ],
+      "differing_20ms_slots": 415,
+      "differing_20ms_slots_per_group_range": [
+        0,
+        60
+      ]
+    }
+  },
+  "groups": [
+    {
+      "counter": 43854890,
+      "release_first_slot": 260,
+      "cold_group_start": {
+        "differing_samples": 2083,
+        "differing_20ms_slots": 49,
+        "first_last_differing_sample_in_group": [
+          1,
+          15645
+        ],
+        "maximum_absolute_difference_pcm_counts": 1920
+      },
+      "one_prior_group": {
+        "differing_samples": 0,
+        "differing_20ms_slots": 0,
+        "first_last_differing_sample_in_group": null,
+        "maximum_absolute_difference_pcm_counts": 0
+      }
+    },
+    {
+      "counter": 43854891,
+      "release_first_slot": 320,
+      "cold_group_start": {
+        "differing_samples": 2486,
+        "differing_20ms_slots": 60,
+        "first_last_differing_sample_in_group": [
+          0,
+          19157
+        ],
+        "maximum_absolute_difference_pcm_counts": 1758
+      },
+      "one_prior_group": {
+        "differing_samples": 0,
+        "differing_20ms_slots": 0,
+        "first_last_differing_sample_in_group": null,
+        "maximum_absolute_difference_pcm_counts": 0
+      }
+    },
+    {
+      "counter": 43854892,
+      "release_first_slot": 380,
+      "cold_group_start": {
+        "differing_samples": 3372,
+        "differing_20ms_slots": 60,
+        "first_last_differing_sample_in_group": [
+          0,
+          19197
+        ],
+        "maximum_absolute_difference_pcm_counts": 2164
+      },
+      "one_prior_group": {
+        "differing_samples": 2113,
+        "differing_20ms_slots": 60,
+        "first_last_differing_sample_in_group": [
+          5,
+          19197
+        ],
+        "maximum_absolute_difference_pcm_counts": 4
+      }
+    },
+    {
+      "counter": 43854893,
+      "release_first_slot": 440,
+      "cold_group_start": {
+        "differing_samples": 3674,
+        "differing_20ms_slots": 60,
+        "first_last_differing_sample_in_group": [
+          0,
+          19198
+        ],
+        "maximum_absolute_difference_pcm_counts": 3779
+      },
+      "one_prior_group": {
+        "differing_samples": 1697,
+        "differing_20ms_slots": 60,
+        "first_last_differing_sample_in_group": [
+          5,
+          19168
+        ],
+        "maximum_absolute_difference_pcm_counts": 1
+      }
+    },
+    {
+      "counter": 43854894,
+      "release_first_slot": 500,
+      "cold_group_start": {
+        "differing_samples": 1518,
+        "differing_20ms_slots": 16,
+        "first_last_differing_sample_in_group": [
+          0,
+          4899
+        ],
+        "maximum_absolute_difference_pcm_counts": 4387
+      },
+      "one_prior_group": {
+        "differing_samples": 409,
+        "differing_20ms_slots": 16,
+        "first_last_differing_sample_in_group": [
+          0,
+          4899
+        ],
+        "maximum_absolute_difference_pcm_counts": 1
+      }
+    },
+    {
+      "counter": 43854895,
+      "release_first_slot": 560,
+      "cold_group_start": {
+        "differing_samples": 2857,
+        "differing_20ms_slots": 43,
+        "first_last_differing_sample_in_group": [
+          0,
+          13507
+        ],
+        "maximum_absolute_difference_pcm_counts": 1924
+      },
+      "one_prior_group": {
+        "differing_samples": 1498,
+        "differing_20ms_slots": 46,
+        "first_last_differing_sample_in_group": [
+          4533,
+          19189
+        ],
+        "maximum_absolute_difference_pcm_counts": 5
+      }
+    },
+    {
+      "counter": 43854896,
+      "release_first_slot": 620,
+      "cold_group_start": {
+        "differing_samples": 2942,
+        "differing_20ms_slots": 51,
+        "first_last_differing_sample_in_group": [
+          0,
+          16004
+        ],
+        "maximum_absolute_difference_pcm_counts": 1649
+      },
+      "one_prior_group": {
+        "differing_samples": 1003,
+        "differing_20ms_slots": 22,
+        "first_last_differing_sample_in_group": [
+          12273,
+          19183
+        ],
+        "maximum_absolute_difference_pcm_counts": 1
+      }
+    },
+    {
+      "counter": 43854897,
+      "release_first_slot": 680,
+      "cold_group_start": {
+        "differing_samples": 2611,
+        "differing_20ms_slots": 21,
+        "first_last_differing_sample_in_group": [
+          0,
+          6681
+        ],
+        "maximum_absolute_difference_pcm_counts": 2108
+      },
+      "one_prior_group": {
+        "differing_samples": 0,
+        "differing_20ms_slots": 0,
+        "first_last_differing_sample_in_group": null,
+        "maximum_absolute_difference_pcm_counts": 0
+      }
+    },
+    {
+      "counter": 43854898,
+      "release_first_slot": 740,
+      "cold_group_start": {
+        "differing_samples": 2141,
+        "differing_20ms_slots": 54,
+        "first_last_differing_sample_in_group": [
+          0,
+          19198
+        ],
+        "maximum_absolute_difference_pcm_counts": 874
+      },
+      "one_prior_group": {
+        "differing_samples": 642,
+        "differing_20ms_slots": 38,
+        "first_last_differing_sample_in_group": [
+          4778,
+          16489
+        ],
+        "maximum_absolute_difference_pcm_counts": 1
+      }
+    },
+    {
+      "counter": 43854899,
+      "release_first_slot": 800,
+      "cold_group_start": {
+        "differing_samples": 1966,
+        "differing_20ms_slots": 59,
+        "first_last_differing_sample_in_group": [
+          0,
+          19192
+        ],
+        "maximum_absolute_difference_pcm_counts": 1295
+      },
+      "one_prior_group": {
+        "differing_samples": 631,
+        "differing_20ms_slots": 53,
+        "first_last_differing_sample_in_group": [
+          0,
+          16877
+        ],
+        "maximum_absolute_difference_pcm_counts": 1
+      }
+    },
+    {
+      "counter": 43854903,
+      "release_first_slot": 1040,
+      "cold_group_start": {
+        "differing_samples": 1762,
+        "differing_20ms_slots": 59,
+        "first_last_differing_sample_in_group": [
+          0,
+          19185
+        ],
+        "maximum_absolute_difference_pcm_counts": 1450
+      },
+      "one_prior_group": {
+        "differing_samples": 953,
+        "differing_20ms_slots": 60,
+        "first_last_differing_sample_in_group": [
+          38,
+          19125
+        ],
+        "maximum_absolute_difference_pcm_counts": 1
+      }
+    },
+    {
+      "counter": 43854908,
+      "release_first_slot": 1340,
+      "cold_group_start": {
+        "differing_samples": 4241,
+        "differing_20ms_slots": 60,
+        "first_last_differing_sample_in_group": [
+          0,
+          19017
+        ],
+        "maximum_absolute_difference_pcm_counts": 1439
+      },
+      "one_prior_group": {
+        "differing_samples": 1474,
+        "differing_20ms_slots": 60,
+        "first_last_differing_sample_in_group": [
+          0,
+          19186
+        ],
+        "maximum_absolute_difference_pcm_counts": 3
+      }
+    }
+  ]
+}
