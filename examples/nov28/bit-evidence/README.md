@@ -40,3 +40,26 @@ For a new handoff, a G.192 with explicit erasures preserves the timeline. Record
 python scripts/project_evs_group.py --packets "$handoff/receiver/packets.npz" --counter 43869343 --field-checks > "$out/1105.json"
 python scripts/compare_evs_evidence.py "$out/1105.json" "$handoff/replay/known-first-position.192.gz" --start 43869284 0 0 1
 ```
+
+## Comparing individual bits at counter 43877110
+
+The November 27 13:17 recording has two P2 words whose published text-supported labels disagree with the stock SWB transition rule. The CSV identifies the field by counter, phase, cycle, one-based position and zero-based `first_bit` measured from the mode MSB. Its binary `bits` string preserves leading zeros. The three received DUs have CRCs `956A`, `61A6` and `B74C`. Two receiver runs on the same IQ reproduced all three DUs byte for byte. [Two-slot CSV](43877110-labels.csv) · [Three received DUs](43877110-data-units.npz) · [IQ replay and phase digests](../swb-transition/p2/43877110-iq-replay.json)
+
+| Slot | Phase / cycle | Received mode / p31 | Allowed b8–b9 | Published b8–b9 |
+| ---: | --- | --- | --- | --- |
+| 37 | 1 / 4 | `61` / `30` | `00`, `01` | `10` |
+| 41 | 2 / 0 | `60` / `C6` | `00` | `10` |
+
+Both `ordinary-text` rows share one record beginning at 43877110, phase 1. Byte 11 lies in its CRC-covered body. The stored CRC is `A2C0`. The four `direct-RF` rows repeat the received mode and p31 to check that the labelled slots line up. All 32 of those bits agree. Both two-bit labels fall outside their allowed sets. Of the three individually fixed bits, b8 disagrees twice and b9 agrees once. All 60 receiver words remain erasures. The shared text record supports both labels. Their disagreement with the stock encoder remains unresolved. [Published label rows](../swb-transition/p2/fixture.csv#L101) · [Text record and CRC checks](../swb-transition/p2/43877110-source.json)
+
+Run from the repository root with Python and NumPy. The `total` object in `comparison.json` reports `direct_match_bits=32`, `field_mismatches=2`, `fixed_bit_matches=1` and `fixed_bit_mismatches=2`.
+
+```sh
+case_dir=examples/nov28/bit-evidence
+out=work/p2-partial-43877110
+mkdir -p "$out"
+python scripts/project_evs_group.py "$case_dir/43877110-data-units.npz" --counter 43877110 --field-checks > "$out/projection.json"
+python scripts/compare_evs_evidence.py "$out/projection.json" "$case_dir/43877110-labels.csv" --bit-labels > "$out/comparison.json"
+```
+
+Across the full published fixture, 310 P2 words in 219 counters supplied 620 labelled bits tied to 144 distinct text-record occurrences. The comparator reproduced 306/308 agreements on fields that excluded at least one pair and 492/494 on individually fixed bits. The two discrepancies are the rows above. Omitting b9 from those two rows leaves two b8 disagreements and zero complete-field comparisons. Applying the full label list to counter 43288873 selects zero rows. [Published archive scores](../swb-transition/p2/summary.json) · [Record occurrences](../swb-transition/p2/witnesses.json)

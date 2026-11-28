@@ -1,0 +1,7 @@
+counter,phase,cycle,position,first_bit,bits,witness
+43877110,1,4,2,0,01100001,direct-RF-phase1-DU-61A6-mode
+43877110,1,4,2,8,10,ordinary-text-1317-43877110-phase1-byte11-crc-A2C0
+43877110,1,4,2,256,00110000,direct-RF-phase1-DU-61A6-p31
+43877110,2,0,2,0,01100000,direct-RF-phase2-DU-B74C-mode
+43877110,2,0,2,8,10,ordinary-text-1317-43877110-phase1-byte11-crc-A2C0
+43877110,2,0,2,256,11000110,direct-RF-phase2-DU-B74C-p31

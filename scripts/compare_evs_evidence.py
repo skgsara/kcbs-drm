@@ -1,4 +1,4 @@
-"""Compare a saved --field-checks projection with a slot-addressed EVS reference."""
+"""Compare a saved --field-checks projection with reference words or individually labelled bits."""
 import argparse
 from hashlib import sha256
 import json
@@ -135,13 +135,19 @@ def compare_evidence(projection_path, reference_path, *, start):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("projection", type=Path, help="saved JSON from project_evs_group.py --field-checks")
-    parser.add_argument("reference", type=Path, help="G.192 or mono EVS storage file, optionally gzipped")
-    parser.add_argument("--start", required=True, type=int, nargs=4,
-                        metavar=("COUNTER", "PHASE", "CYCLE", "POSITION"),
-                        help="receiver coordinates of the first slot in the reference")
+    parser.add_argument("reference", type=Path, help="EVS export or a CSV of individually labelled bits")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--start", type=int, nargs=4, metavar=("COUNTER", "PHASE", "CYCLE", "POSITION"),
+                      help="first slot of a G.192 or mono EVS storage file, optionally gzipped")
+    mode.add_argument("--bit-labels", action="store_true",
+                      help="read absolute frame coordinates and MSB-first bit observations from the CSV")
     args = parser.parse_args()
     try:
-        result = compare_evidence(args.projection, args.reference, start=args.start)
+        if args.bit_labels:
+            from evs_bit_labels import compare_bit_labels
+            result = compare_bit_labels(args.projection, args.reference)
+        else:
+            result = compare_evidence(args.projection, args.reference, start=args.start)
     except (OSError, ValueError, KeyError, TypeError, IndexError) as error:
         parser.exit(2, f"{parser.prog}: {error}\n")
     print(json.dumps(result, indent=2))
