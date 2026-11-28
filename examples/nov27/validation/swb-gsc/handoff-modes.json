@@ -1,0 +1,242 @@
+{
+  "format": "kcbs-member-p2-swb-inactive-nibble-v1",
+  "rule": "P2 only; mode >> 3 == 14 and mode & 4 != 0; predict b40..43 (high four bits of p4) = 1100. Abstain otherwise.",
+  "numbering": "Slots 0..59 = 20*phase+4*cycle+position-1. Word bits are MSB-first including mode at b0. Payload offsets exclude the mode.",
+  "prefix_support": "Member flags for all five P2 columns 11..15 cover payload offsets 0,3,6,9,12. The other ten early payload octets and the mode are direct; together they give a supported first 128 bits.",
+  "direct_observation": "p4 is offset 4 of the payload, outside the every-third-byte positions. Only its high nibble is scored. There is no nibble prediction for a SWB TCX20 header.",
+  "frozen_selection_utc": "2026-11-28T00:18:45.173826+00:00",
+  "frozen_selection_sha256": "b3517327e4d03639b21310098cfcd6399950586f68948a5947618c1aeb7cd79b",
+  "mode_ledger_sha256": "851e82c72c588f4beb2289aafc10909677788559b5d02e9cbe186c2eba884d14",
+  "groups": [
+    {
+      "counter": 43869343,
+      "capture": "kcbs2-3205-3250-handoff",
+      "receiver_time_utc": "2026-11-27T11:05:17.094951Z",
+      "time_field": "receiver_first_callback",
+      "drm_center_hz": 3205000,
+      "source_sha256": {
+        "receiver/data_units.npz": "db6d76162b95e0e4cc1382ee194d17bf0390201965bc1fefeb9a052d7be9d9ad",
+        "receiver/keys.npz": "b587c5445e1ef35d433fba134c1d4cc059b2d0e221d0c3484375ed0df77840ab",
+        "receiver/received.msc.bin": "84844fae8476156255a3ff7acdb7a663e633c823587368a0c3620ce22c9c08e8"
+      },
+      "phase_du_sha256": [
+        "20a18c2a1359070d95e5ea4ab7e07c1ecc6b6c4fefa47f9f2d95ef2d3a355108",
+        "0a7b47651ca9d89293ff80193be0d8c0588dde81177431103a53d762b98729b4",
+        "6799664f68526c018ede6d15817e64e2bd1e17afc7199a3b2fc5c8e2d3622e30"
+      ],
+      "msc_record_indices": [
+        174,
+        175,
+        176
+      ],
+      "p2_headers_phase_cycle_order": [
+        "76",
+        "76",
+        "76",
+        "76",
+        "77",
+        "76",
+        "76",
+        "74",
+        "52",
+        "5B",
+        "53",
+        "5A",
+        "52",
+        "51",
+        "5A"
+      ],
+      "mode_histogram": {
+        "51": 1,
+        "52": 2,
+        "53": 1,
+        "5A": 2,
+        "5B": 1,
+        "74": 1,
+        "76": 6,
+        "77": 1
+      },
+      "signalling_classes": {
+        "SWB INACTIVE GSC + BWE": 8,
+        "SWB GENERIC ACELP + TBE": 4,
+        "SWB VOICED ACELP + TBE": 3
+      },
+      "p2_word_count": 15,
+      "p2_first_128_bits_supported": 15,
+      "swb_audio_bwe_6c_to_6f": 0,
+      "registered": 8,
+      "matches": 8,
+      "mismatches": [],
+      "first_registered": {
+        "slot": 1,
+        "phase": 0,
+        "cycle": 0,
+        "mode": "76",
+        "predicted": "1100",
+        "observed": "1100",
+        "match": true
+      },
+      "observed_histogram": {
+        "0000": 0,
+        "0001": 0,
+        "0010": 0,
+        "0011": 0,
+        "0100": 0,
+        "0101": 0,
+        "0110": 0,
+        "0111": 0,
+        "1000": 0,
+        "1001": 0,
+        "1010": 0,
+        "1011": 0,
+        "1100": 8,
+        "1101": 0,
+        "1110": 0,
+        "1111": 0
+      },
+      "checks": [
+        {
+          "slot": 1,
+          "phase": 0,
+          "cycle": 0,
+          "mode": "76",
+          "predicted": "1100",
+          "observed": "1100",
+          "match": true
+        },
+        {
+          "slot": 5,
+          "phase": 0,
+          "cycle": 1,
+          "mode": "76",
+          "predicted": "1100",
+          "observed": "1100",
+          "match": true
+        },
+        {
+          "slot": 9,
+          "phase": 0,
+          "cycle": 2,
+          "mode": "76",
+          "predicted": "1100",
+          "observed": "1100",
+          "match": true
+        },
+        {
+          "slot": 13,
+          "phase": 0,
+          "cycle": 3,
+          "mode": "76",
+          "predicted": "1100",
+          "observed": "1100",
+          "match": true
+        },
+        {
+          "slot": 17,
+          "phase": 0,
+          "cycle": 4,
+          "mode": "77",
+          "predicted": "1100",
+          "observed": "1100",
+          "match": true
+        },
+        {
+          "slot": 21,
+          "phase": 1,
+          "cycle": 0,
+          "mode": "76",
+          "predicted": "1100",
+          "observed": "1100",
+          "match": true
+        },
+        {
+          "slot": 25,
+          "phase": 1,
+          "cycle": 1,
+          "mode": "76",
+          "predicted": "1100",
+          "observed": "1100",
+          "match": true
+        },
+        {
+          "slot": 29,
+          "phase": 1,
+          "cycle": 2,
+          "mode": "74",
+          "predicted": "1100",
+          "observed": "1100",
+          "match": true
+        }
+      ]
+    },
+    {
+      "counter": 43865914,
+      "capture": "kcbs2-3205-1744-1756-receiver-supplement-20261127",
+      "receiver_time_utc": "2026-11-27T09:56:41.739687Z",
+      "time_field": "capture_start",
+      "drm_center_hz": 3205000,
+      "source_sha256": {
+        "1756/data_units.npz": "56609749653511d9548fc13cef77de25509c8541ea0ddf07c75a90756290a775",
+        "1756/keys.npz": "8c555305ec672a64166d1364e17cffd9e2998dc6ebfff4e024f9567505037d2e"
+      },
+      "phase_du_sha256": [
+        "207a45784e06aa8c66b095fce7130c67b5c2f19ddfcd6015d7efda6a4d715a05",
+        "4eb9f6d0817bd5a388a6ade920204ec70239849efa51f4ae4188cfad992a1e7e",
+        "ea08a8c4220a2c60a3dec99fc4ee678ca359865d76c967785261c707741fca48"
+      ],
+      "msc_record_indices": null,
+      "p2_headers_phase_cycle_order": [
+        "FF",
+        "FE",
+        "FE",
+        "FE",
+        "FF",
+        "FE",
+        "FF",
+        "FF",
+        "FF",
+        "FF",
+        "FF",
+        "FF",
+        "FE",
+        "FF",
+        "FE"
+      ],
+      "mode_histogram": {
+        "FE": 6,
+        "FF": 9
+      },
+      "signalling_classes": {
+        "SWB TCX20, voiced coder type": 6,
+        "SWB TCX20, generic coder type": 9
+      },
+      "p2_word_count": 15,
+      "p2_first_128_bits_supported": 15,
+      "swb_audio_bwe_6c_to_6f": 0,
+      "registered": 0,
+      "matches": 0,
+      "mismatches": [],
+      "first_registered": null,
+      "observed_histogram": {
+        "0000": 0,
+        "0001": 0,
+        "0010": 0,
+        "0011": 0,
+        "0100": 0,
+        "0101": 0,
+        "0110": 0,
+        "0111": 0,
+        "1000": 0,
+        "1001": 0,
+        "1010": 0,
+        "1011": 0,
+        "1100": 0,
+        "1101": 0,
+        "1110": 0,
+        "1111": 0
+      },
+      "checks": []
+    }
+  ],
+  "study_status": "Retrospective repeat on a known member group. Earlier floating- and fixed-point EVS prefix traces for the same eight P2 slots had already reported noise index 6 and two subframes. The registration preceded this direct packet read only; these eight words are not a new held-out test."
+}

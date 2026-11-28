@@ -1,0 +1,39 @@
+{
+  "declared_utc": "2026-11-28T00:12:57.409013+00:00",
+  "source": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+  "source_size_bytes": 597076480,
+  "center_hz": 6140000,
+  "sample_rate_complex_hz": 912000,
+  "format": "CS8",
+  "interval_seconds_half_open": [
+    260,
+    320
+  ],
+  "sample_interval_half_open": [
+    237120000,
+    291840000
+  ],
+  "byte_interval_half_open": [
+    474240000,
+    583680000
+  ],
+  "received_range_opened_before_declaration": false,
+  "selection": "Single predeclared unused interval from this file; retain overlap or reception failure and do not select a different window.",
+  "receiver": "One Wiener pass at nominal centre, one MLC iteration, original samples resampled to 48 kHz, EOF. Reassemble with public transport-only packet, DU CRC and counter/phase rules.",
+  "novelty": "Before reading modes or b40, collect every counter ID assigned at packet or DU level. Require zero overlap with the frozen counter inventory and one complete group. Otherwise report an empty blind target.",
+  "primary": "First chronological complete three-phase counter independent of mode; report all complete groups, isolated entries per position, both bit directions, and abstention. No substitute primary.",
+  "field": "Ordinary 13.2 kb/s SWB GSC AUDIO signalling index 13; predict bit 40 (the MSB of directly carried payload octet 4) as 0 when mode & 4 else 1. Use the fixed scorer, hash predictions from mode alone before seeing b40. Index 14 abstains.",
+  "frozen_rule_commit": "5886518975dfb7ad2c23c5d4c416aaee9b5a374f",
+  "direct_scorer_sha256": "680ed5cd9f5a6d67a613c061a56d78753382d56e4503595d4fbf38a5c2446673",
+  "demod_script_sha256": "34e424af40907f63bc1791fd2d5effa7431cce3237fea13a0bb04bf0e61d4e98",
+  "salvage_script_sha256": "a9f86d51294a2b61064f8886993881df523eee3a807854a48a511d39f54bc8d4",
+  "dream_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "older_counter_inventory_sha256": "58d517663bf98a7ca251bba041d297fa7f01c8de62186c7699d73ef7dd282a1d",
+  "older_counter_count": 12771,
+  "nov28_0002_prior_assigned_count": 120,
+  "nov28_0002_prior_assigned_receipt_sha256": "2984b123e06c748493c1ebfe4dcb211579a0fa846abdce594d7e95f86386351b",
+  "nov19_180s_prior_assigned_count": 46,
+  "nov19_180s_prior_additional": 0,
+  "excluded_unique_count": 12891,
+  "excluded_counter_ids_sha256": "0f90d3d10916511a216bd566390d804a67e7943fb985c01b02cc20c7cd50685d"
+}

@@ -1,0 +1,155 @@
+{
+  "tested_position": 1,
+  "word_count_per_group": 15,
+  "checker": "Re-serialize decoded quantized TCX spectral coefficients and residual bits with the reference arithmetic encoder; compare [start,start+budget).",
+  "timeline": "Frozen text-supported first-position words, all other positions erased. Each trial replays the same prior slots from reset.",
+  "fixed_perturbation": "Invert exactly one named payload LSB in every one of the 15 complete P1 words. No other input bit changes.",
+  "native_flags": "Any BFI or BER observed at read, update or output (including BER before clear). Probe PCM matched that of the spectral-check binary in every replay.",
+  "checker_binary_sha256": "da15b85fc8482b2ca757e1741d3f57a1a053d6bf8f65490692634153acd29f6e",
+  "native_checker_source_sha256": "7888f5f9246b15a2041b1e2cfc9157b30c3dffa1e8e56bceac2ad8f8099376db",
+  "decoder_flags_probe_sha256": "a19ee9239a9ffc1ff5f5816875d05de9134c1dd18d77e262e3a5d20c659b2cbc",
+  "frozen_p1_input_sha256": {
+    "1756": "cfd265ef422d86e633e18dc776d978ecd60b7592785f6f9ddc77254ba64ebec3",
+    "1744": "4f69f80fe5c8fbf5ca3abcfc20aed2084b3b0bf689ce71135a6232894c2973a7"
+  },
+  "groups": {
+    "43865914": {
+      "original": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 0
+      },
+      "flip_p30_lsb": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 15
+      },
+      "flip_p24_lsb": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 1,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 15
+      },
+      "flip_p27_lsb": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 9,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 15
+      }
+    },
+    "43865270": {
+      "original": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 0
+      },
+      "flip_p30_lsb": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 15
+      }
+    },
+    "43865288": {
+      "original": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 0
+      },
+      "flip_p30_lsb": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 15
+      }
+    },
+    "43865322": {
+      "original": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 0
+      },
+      "flip_p30_lsb": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 15
+      }
+    },
+    "43865487": {
+      "original": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 0
+      },
+      "flip_p30_lsb": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 15
+      }
+    },
+    "43865488": {
+      "original": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 0
+      },
+      "flip_p30_lsb": {
+        "compared": 15,
+        "traced": 15,
+        "exact": 15,
+        "p30_bit_in_interval": 15,
+        "bfi": 0,
+        "ber": 0,
+        "target_slots_with_changed_pcm": 15
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-11-28T00:15:17.599305+00:00",
+  "files": {
+    "protocol.json": "75366c7b1d25061eeb3616b770bcbfc9ff34f0c9d1371254ece17a79e70dfe9b",
+    "check_inactive.py": "035022615ff6bf4faddea6a1042ffff7d04f816942ef1b7d6cd62ba44507bd2e",
+    "nov19-decisions.json": "a316025467835b1b983a5dfc002b8360c453357c715943e275935a3b7ea32f15",
+    "nov28-decisions.json": "56cf87b539d5818882a896e01367eaeb91e8ae581705ca4c882537197199dcc1"
+  }
+}

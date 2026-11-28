@@ -1,0 +1,83 @@
+{
+  "march": {
+    "counts": {
+      "available_counters": 702,
+      "eligible_words": 2945,
+      "eligible_counters": 240,
+      "b39_0": 2945,
+      "b40_to_b43_1100": 2945,
+      "b39_1": 0
+    },
+    "b39_one_observations": []
+  },
+  "ordinary": {
+    "counts": {
+      "available_counters": 2153,
+      "eligible_words": 3771,
+      "eligible_counters": 737,
+      "b39_0": 3769,
+      "b40_to_b43_1100": 3771,
+      "b39_1": 2
+    },
+    "b39_one_observations": [
+      {
+        "counter": 43679845,
+        "phase": 0,
+        "cycle": 1,
+        "slot": 4,
+        "position": 1,
+        "mode": "76",
+        "text": {
+          "record_start": [
+            43679844,
+            1
+          ],
+          "crc16": "73e3",
+          "repeated_starts": [
+            [
+              43680490,
+              1
+            ]
+          ],
+          "record_sha256": "d600b4ea371461759def6be4aa12ed9fe58f7d3f13d5cbb2f23d4b730cdf1a42",
+          "protected_column_1_offsets": [
+            33,
+            49,
+            65
+          ],
+          "stored_crc_column_1_offsets": [],
+          "fixed_checksum_column_1_rank": 8
+        }
+      },
+      {
+        "counter": 43679859,
+        "phase": 2,
+        "cycle": 1,
+        "slot": 44,
+        "position": 1,
+        "mode": "76",
+        "text": {
+          "record_start": [
+            43679858,
+            1
+          ],
+          "crc16": "91f4",
+          "repeated_starts": [
+            [
+              43680504,
+              1
+            ]
+          ],
+          "record_sha256": "7a5ecd986d065fcc4cbf912a83a11a08a0f4d259b37805a7ce6d167db03d0a3b",
+          "protected_column_1_offsets": [
+            33,
+            49,
+            65
+          ],
+          "stored_crc_column_1_offsets": [],
+          "fixed_checksum_column_1_rank": 8
+        }
+      }
+    ]
+  }
+}

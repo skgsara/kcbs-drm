@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-11-28T00:14:14.833489+00:00",
+  "training": "Previously documented 6,716 distinct P1 superwideband GSC INACTIVE 128-bit prefixes from March idle and November 25\u201326 repeated-text cohorts, all with b40..43=1100 (reported to reviewer); expected historical prefix fixture sha256 0d0863dc7ac2086c8b1e9a66a9c5e624263ea6ee024314312fc9759933c79ae9.",
+  "tests": [
+    {
+      "name": "nov19",
+      "source": "November 19 17:31:39 archive, prespecified [260,320) seconds, one fixed demod and transport novelty gate as performed by independent receiver agent."
+    },
+    {
+      "name": "nov28",
+      "source": "November 28 00:02:45.823 Edogawa, known raw SHA 60f39ebd3d0cf66c7e52d3c1da9737f14495a2f5b4850cd4608c1f10ff77e3ee and previously demodulated DU archive SHA 99461ed346d48900aed781d6af9eb6ebac891af1a0302a85aecdfcf9a81ff7ac. In previous work the test executor knew 1,409 INACTIVE modes and 23 at the primary; earlier full-byte archives and direct projections existed, but this reviewer had not examined the b40..43 nibble values. Earlier AUDIO scorer abstained on all words."
+    }
+  ],
+  "eligibility": "Every P1, P2, P3, P4 slot of every three-phase CRC-valid group, sorted counter then phase/cycle/position. Include if mode>>3 equals 14, all lower mode bits accepted. First complete chronological group is primary regardless of eligibility; retain no-reception/zero-eligibility result. Treat any transport novelty failure as separately identified, without replacement.",
+  "prediction": "Predict nibble 12 (binary 1100) for physical 264-bit word bits 40..43 counting MSB-first from mode; this rules out the other 15 nibble values if the empirical predicate holds. All other modes abstain. Do not change the prediction or split criterion after scoring.",
+  "verification": "Save all eligible decisions from mode octet only and external SHA-256 before reading any target value on its capture. Then read the upper four bits of directly transmitted payload octet 4 at each fixed slot. Report per-position and aggregate number correct, wrong, abstained, histogram of actual observed values, first complete-group results, and case coordinates/mismatches. One eligible non-C counts as a counterexample. No key or masked-byte inference."
+}

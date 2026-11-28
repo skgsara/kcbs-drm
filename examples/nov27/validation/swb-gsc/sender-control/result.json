@@ -1,0 +1,218 @@
+{
+  "single_word_replay": {
+    "sender": {
+      "pcm_sha256": "f91d847d3fb1ee0a208d27d4011a03c60e0c21e12926cb06b33f7dce51d49961",
+      "g192_sha256": "aefe48d266f8c0a4fb1bef3717d5bc9ef18b30bc77ec0c8b5c6db232be4b7010",
+      "words": 5103,
+      "input_sample_rate_hz": 32000,
+      "input_samples": 3265920,
+      "stateful_observer_pcm_sha256": "8c1f686af030fb43432911b7265c09df8f22b33b103a9f9ff72d2f795d5ecd8b"
+    },
+    "word": {
+      "zero_based_slot": 5102,
+      "ordinal_in_four_slot_group": 3,
+      "mode_hex": "6c",
+      "sender_word_hex": "6c984ee41c68af119027c751dd275f51426f85452a38fadb44830de95656b706a3",
+      "prefix_128bit_sha256": "989688191c2dd49c33ab7e99e80d97a450b1644cc2a7dc14056225fc71cd12aa",
+      "full_word_copies_in_replay": 1,
+      "same_prefixes_in_replay": 1
+    },
+    "prefix_prediction": {
+      "available_physical_bits": [
+        0,
+        128
+      ],
+      "pre_pvq_read_highwater": 89,
+      "history_conditions": [
+        "complete sender timeline",
+        "cold one-word reset"
+      ],
+      "cold_same_prediction_for_uniform_suffixes": [
+        "zero",
+        "one"
+      ],
+      "target_payload_offset": 24,
+      "target_physical_interval": [
+        200,
+        208
+      ],
+      "mpvq_dimension": 16,
+      "pulses": 5,
+      "codebook_size": 142544,
+      "upper_symbol": 139,
+      "residual_interval": [
+        204,
+        214
+      ],
+      "residual_limit_exclusive": 208,
+      "forced_zero_physical_bits": [
+        204,
+        205
+      ],
+      "allowed_low_nibbles": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "remaining_octets": 64
+    },
+    "sender_comparison": {
+      "original_payload24_hex": "83",
+      "actual_residual": 195,
+      "actual_index": 142531,
+      "reset_controls": [
+        {
+          "low_nibble": 0,
+          "stock_index": 142339,
+          "native_range_error": false
+        },
+        {
+          "low_nibble": 1,
+          "stock_index": 142403,
+          "native_range_error": false
+        },
+        {
+          "low_nibble": 2,
+          "stock_index": 142467,
+          "native_range_error": false
+        },
+        {
+          "low_nibble": 3,
+          "stock_index": 142531,
+          "native_range_error": false
+        },
+        {
+          "low_nibble": 4,
+          "stock_index": 142595,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 5,
+          "stock_index": 142659,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 6,
+          "stock_index": 142723,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 7,
+          "stock_index": 142787,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 8,
+          "stock_index": 142851,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 9,
+          "stock_index": 142915,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 10,
+          "stock_index": 142979,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 11,
+          "stock_index": 143043,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 12,
+          "stock_index": 143107,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 13,
+          "stock_index": 143171,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 14,
+          "stock_index": 143235,
+          "native_range_error": true
+        },
+        {
+          "low_nibble": 15,
+          "stock_index": 143299,
+          "native_range_error": true
+        }
+      ]
+    }
+  },
+  "exploratory_context": {
+    "scope": "Separate recorded discovery counts. The compact command regenerates only the selected pristine 5,103-word sender timeline. The follow-up cohorts share two original synthetic onsets. The extended cohort excludes the first 3,072 previously processed trajectories per onset.",
+    "primary_waveforms": {
+      "streams": 8,
+      "seconds_each": 120,
+      "words": 48000,
+      "signalled_swb_gsc": 10217,
+      "same_128bit_prefix": 0,
+      "identical_full_words": 0,
+      "streams_with_identical_word": 0,
+      "swb_audio_bwe": 2332,
+      "swb_audio_tbe": 5287,
+      "swb_inactive_bwe": 2598,
+      "p24_eligible_index_occurrences": 4,
+      "prefix_certified_p24_restrictions": 0,
+      "prefix_certified_p27_restrictions": 0
+    },
+    "selected_onset_experiments": [
+      {
+        "study": "first_branches",
+        "three_word_trajectories": 6144,
+        "first_trial_inclusive": 0,
+        "last_trial_exclusive": 3072,
+        "words": 18432,
+        "signalled_swb_gsc": 7623,
+        "same_128bit_prefix": 0,
+        "identical_full_words": 0,
+        "streams_with_identical_word": 0,
+        "p24_eligible_index_occurrences": 6826,
+        "p27_eligible_index_occurrences": 0,
+        "prefix_certified_p24_restrictions": 0,
+        "prefix_certified_p27_restrictions": 0
+      },
+      {
+        "study": "extended_new_only",
+        "three_word_trajectories": 43008,
+        "first_trial_inclusive": 3072,
+        "last_trial_exclusive": 24576,
+        "words": 129024,
+        "signalled_swb_gsc": 53733,
+        "same_128bit_prefix": 0,
+        "identical_full_words": 0,
+        "streams_with_identical_word": 0,
+        "p24_eligible_index_occurrences": 48251,
+        "p27_eligible_index_occurrences": 0,
+        "prefix_certified_p24_restrictions": 0,
+        "prefix_certified_p27_restrictions": 0
+      },
+      {
+        "study": "directed_tones",
+        "three_word_trajectories": 8192,
+        "first_trial_inclusive": 0,
+        "last_trial_exclusive": 4096,
+        "words": 24576,
+        "signalled_swb_gsc": 6731,
+        "same_128bit_prefix": 1,
+        "identical_full_words": 1,
+        "streams_with_identical_word": 1,
+        "p24_eligible_index_occurrences": 6013,
+        "p27_eligible_index_occurrences": 0,
+        "prefix_certified_p24_restrictions": 1,
+        "prefix_certified_p27_restrictions": 0
+      }
+    ],
+    "selected_trajectory": {
+      "original_seed_anchor": 5100,
+      "trial": 2959,
+      "ordinal_in_three_word_trajectory": 3
+    }
+  }
+}

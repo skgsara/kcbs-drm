@@ -1,0 +1,20 @@
+{
+  "source": "onair_drm_6.140MHz_0.912Msps_20261119-173139.cs8",
+  "sample_rate_complex_hz": 912000,
+  "format": "CS8",
+  "source_total_bytes": 597076480,
+  "source_bytes_half_open": [
+    474240000,
+    583680000
+  ],
+  "seconds_half_open": [
+    260,
+    320
+  ],
+  "input_range_bytes": 109440000,
+  "source_range_sha256": "6c32e360831c60cf1db71c6d7aaa2d93cbe9c25d6be0a35d69cc249aea221762",
+  "range_requested_utc": "2026-11-28T00:13:25.473126+00:00",
+  "range_status": 206,
+  "returned_content_range": "bytes 474240000-583679999/597076480",
+  "declaration_sha256": "1f81b0438bd7d6ea2a7f703f2be57aeab2ea331d31afe49dd504bdc53557c95b"
+}

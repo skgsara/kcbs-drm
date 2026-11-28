@@ -1,0 +1,139 @@
+{
+  "encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "stock_options": [
+    "-q",
+    "-no_delay_cmp",
+    "-max_band",
+    "SWB",
+    "13200",
+    "32"
+  ],
+  "synthetic_source_sha256": "eaa590b0e84baea39bcb8d7c886657b8227defb86460f6b1da6d8ba0bd866ddd",
+  "frame_count_per_encode": 240,
+  "input_format": "32 kHz mono signed little-endian 16-bit PCM",
+  "omitted_payload_offsets": [
+    15,
+    18,
+    21,
+    24,
+    27,
+    30
+  ],
+  "matching_projection_octets": 27,
+  "p24": {
+    "source_start_frame": 3,
+    "slot_zero_based": 205,
+    "position": 2,
+    "signalling_octet_hex": "6C",
+    "family": "SWB GSC AUDIO / SWB_BWE",
+    "payload_offset": 24,
+    "differing_physical_bit_msb_first": 203,
+    "differing_octets_hex": [
+      "67",
+      "77"
+    ],
+    "complete_words_hex": [
+      "6cf5862ea064ad1284a4ac30488253e798f596ed4a35de75f867ca060259d9df44",
+      "6cf5862ea064ad1284a4ac30488253e798f596ed4a35de75f877ca060259d9df44"
+    ],
+    "matching_visible_octets_hex": "6cf5862ea064ad1284a4ac30488253e7f5964a3575f8ca0659d944",
+    "differing_encoded_slots": [
+      205
+    ],
+    "consecutive_matching_predecessors": 205,
+    "consecutive_matching_successors": 34,
+    "neighboring_word_sha256": {
+      "slot_204": [
+        "4924a3164fbcb57b85823a2c4c8633538ba906065d3800bf4f580ec225ae5e13",
+        "4924a3164fbcb57b85823a2c4c8633538ba906065d3800bf4f580ec225ae5e13"
+      ],
+      "slot_206": [
+        "bab50c0d8707eb961138d9d808ce1daa2c5d64357c4f40d2c97e1cb677397d1f",
+        "bab50c0d8707eb961138d9d808ce1daa2c5d64357c4f40d2c97e1cb677397d1f"
+      ]
+    },
+    "pcm_burst": {
+      "offset_in_frame": 80,
+      "length_samples": 288,
+      "frequency_hz": 5150,
+      "levels": [
+        -84,
+        104
+      ]
+    },
+    "changed_pcm_samples": 267,
+    "first_changed_sample": 131287,
+    "last_changed_sample": 131560,
+    "sender_streams": [
+      {
+        "input_pcm_sha256": "dcf1ea59dc56b7adc1f81727c59dd1865eb5203b3f6568f54737dc3da28f865d",
+        "g192_sha256": "a4ab9e28e487ce496f7493e0e0f0230879784d045ac95cf7c99da4da30c8565e",
+        "mime_sha256": "8b7793e75e22a222b71296b028c4c56e07c12a1d0acb1f80310ebf9ea224f493"
+      },
+      {
+        "input_pcm_sha256": "adea223484603abb7ab862fa181c541d79f29ed8909e4ab6981afe7b5290643d",
+        "g192_sha256": "21f1ec581e455f1a4467208df4bda8b46ce341cf23f5105ee9bfd9279c89e062",
+        "mime_sha256": "6ce882680fcc2224cfde1c3403a80e2b04f2ff9dbfb95ddcca257c1c3572bc58"
+      }
+    ]
+  },
+  "p27": {
+    "source_start_frame": 1,
+    "slot_zero_based": 205,
+    "position": 2,
+    "signalling_octet_hex": "6F",
+    "family": "SWB GSC AUDIO / SWB_BWE",
+    "payload_offset": 27,
+    "differing_physical_bit_msb_first": 225,
+    "differing_octets_hex": [
+      "CB",
+      "8B"
+    ],
+    "complete_words_hex": [
+      "6f3afb2ea464ad566d0caeb45523941c3b5495a9ec4ecbbf6c82a2c3cbd9f60044",
+      "6f3afb2ea464ad566d0caeb45523941c3b5495a9ec4ecbbf6c82a2c38bd9f60044"
+    ],
+    "matching_visible_octets_hex": "6f3afb2ea464ad566d0caeb45523941c5495ec4ebf6ca2c3d9f644",
+    "differing_encoded_slots": [
+      205,
+      206,
+      207
+    ],
+    "consecutive_matching_predecessors": 205,
+    "consecutive_matching_successors": 0,
+    "neighboring_word_sha256": {
+      "slot_204": [
+        "222c00fc28c24001031fadc5b53e6bf26f44b65852a7c938e6871ca80b11c11d",
+        "222c00fc28c24001031fadc5b53e6bf26f44b65852a7c938e6871ca80b11c11d"
+      ],
+      "slot_206": [
+        "acf06a5e1b27cfc65eefd21957438b620a453c8d1543331f37ee02732bc1b751",
+        "05bbcad09d7be4d61a576bfd44f437794dd8d3bf71c0958997418ccfa489f8fd"
+      ]
+    },
+    "pcm_burst": {
+      "offset_in_frame": 0,
+      "length_samples": 256,
+      "frequency_hz": 1830,
+      "levels": [
+        120,
+        140
+      ]
+    },
+    "changed_pcm_samples": 220,
+    "first_changed_sample": 131207,
+    "last_changed_sample": 131450,
+    "sender_streams": [
+      {
+        "input_pcm_sha256": "ba5eff21db713facc5bf361b580aad5243275dda817be803b52da56a9c59a590",
+        "g192_sha256": "7d88bbb9124f7df1a5237cf325c016fe27932187dd77eba30e943f400dedf5c0",
+        "mime_sha256": "784bae1c58129bfafabb9ec7c4a6031f5538602cf4810b79ae9c7784639b5b94"
+      },
+      {
+        "input_pcm_sha256": "1f05cb68cf998837d2323efbb91aa3bed7f53d277f54fd6d7ba2775c7a76c1af",
+        "g192_sha256": "8b8d272ba8fd29d8220679dbfeea1cf1c91901eb1719ed02466754ab301ee681",
+        "mime_sha256": "1d6c3b599575b168d518ba040d7d55d3917ab899ae39de320c7fa011d3a25e95"
+      }
+    ]
+  }
+}

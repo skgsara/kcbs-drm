@@ -22,6 +22,18 @@ test fixes the target. Its protocol covers checks against evidence held
 back from the same broadcast and an optional comparison with a clear export.
 [Four-position milestone and target receipt](examples/nov15/validation/README.md)
 
+For **43865914**, the handoff's TCX spectrum check accepts all 15 known
+first-position words even after the low bit of payload byte 30 is changed
+in every word. The second position remains unresolved.
+[November 28 search update and same-counter controls](examples/nov27/validation/tcx-zero-pair/43865914-review.md)
+
+On November 28, three minutes of **6140 kHz** IQ yielded 85 complete groups.
+The first complete counter, **43908156**, had all 60 slots and zero complete
+clear EVS words. Across two recordings, a prediction of four directly
+transmitted bits agreed in all **1,871** eligible SWB GSC INACTIVE slots.
+The data include one counter with 15 observations at each of the four positions.
+[IQ recording, field checks, stock encoder examples and replay](examples/nov27/validation/swb-gsc/README.md)
+
 Stock ACELP examples reproduce the exact one-bit ambiguities at payload
 bytes 24 and 27. In a narrower wideband GSC case, the first 128 bits
 correctly predicted two bits of byte 27 in nine stock words. Neither

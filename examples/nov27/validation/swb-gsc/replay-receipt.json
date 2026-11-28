@@ -1,0 +1,44 @@
+{
+  "public_project_commit": "5886518975dfb7ad2c23c5d4c416aaee9b5a374f",
+  "input_iq_flac_sha256": "e04f6ff1cd41eb3cfe84046f04de425ee129268494667ce4e76246365445f9df",
+  "input_flac_bytes": 25581923,
+  "original_wav_sha256": "60f39ebd3d0cf66c7e52d3c1da9737f14495a2f5b4850cd4608c1f10ff77e3ee",
+  "verified_decoded_pcm_sha256": "9b6ebf3ac6e8596ff9780ebbd76df574d528324221ae1d4f1a2c2031b051ea05",
+  "stereo_IQ_pairs_compared": 8640000,
+  "original_wav_Dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "FLAC_replay_Dream_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "receiver_profile": "one full-file Wiener pass, nominal tuning, one MLC iteration; CRC-only salvage",
+  "commands_sha256": "a5765dd100bd18d4211e31e6fb4ea59e6600649377dd81513257da9f363ce30e",
+  "files": {
+    "receiver/msc.bin": {
+      "sha256": "fea03f5d0276dd3f754731d3f05ac6b595ef0aa051672463ba5b08fdfc9179fe",
+      "byte_count": 325008,
+      "byte_identical": true
+    },
+    "transport/data_units.npz": {
+      "sha256": "99461ed346d48900aed781d6af9eb6ebac891af1a0302a85aecdfcf9a81ff7ac",
+      "byte_count": 209880,
+      "byte_identical": true
+    },
+    "transport/groups.npz": {
+      "sha256": "1da92612d0e0c2035f5da15761f33796533bf2a5fc6ff63b45361a9a0de621cc",
+      "byte_count": 188261,
+      "byte_identical": true
+    },
+    "field-score.json": {
+      "sha256": "7ec14753a70951f82d6442d4f332277a0b216f20f719b4c920983bf8dbe45cff",
+      "byte_count": 5799,
+      "byte_identical": true
+    }
+  },
+  "same_packet_rows_at_all_assigned_coordinates": true,
+  "assigned_counters": 120,
+  "accepted_DUs": 292,
+  "complete_groups": 85,
+  "first_complete": 43908156,
+  "counter_overlap_with_frozen_history": [],
+  "complete_slots": 5100,
+  "eligible": 0,
+  "disagreements": 0,
+  "decision_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

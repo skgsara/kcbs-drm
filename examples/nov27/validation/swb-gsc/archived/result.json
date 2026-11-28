@@ -1,0 +1,22 @@
+{
+  "prefix_sha256": "0d0863dc7ac2086c8b1e9a66a9c5e624263ea6ee024314312fc9759933c79ae9",
+  "summaries": {
+    "march": {
+      "words": 2945,
+      "entered_prefix_walk": 2945,
+      "index_intersections_p24": 2577,
+      "words_with_located_p24": 2577,
+      "index_intersections_p27": 5522,
+      "words_with_located_p27": 2945
+    },
+    "ordinary": {
+      "words": 3771,
+      "entered_prefix_walk": 3771,
+      "index_intersections_p24": 223,
+      "words_with_located_p24": 223,
+      "index_intersections_p27": 3994,
+      "words_with_located_p27": 3771
+    }
+  },
+  "decisions": []
+}
