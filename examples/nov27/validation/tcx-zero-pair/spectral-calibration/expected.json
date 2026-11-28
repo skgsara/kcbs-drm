@@ -1,0 +1,111 @@
+{
+  "fixture": {
+    "source_archive_name": "kcbs2-3205-1744-1756-receiver-supplement-20261127.zip",
+    "source_archive_sha256": "f462b84209de0f73a304cea70f21b8dbb21347069cf20d4daa72fff083fb231e",
+    "source_capture_directory": "1756",
+    "first_counter": 43865854,
+    "last_counter_inclusive": 43865914,
+    "complete_timeline_slots": 3660,
+    "supplied_first_position_words": 705,
+    "erasure_slots": 2955,
+    "packed_fixture_sha256": "d65fadf3e7a9ffd69cc33033d46b06231100759a2a7f3e18cb9a140f82ff9fb2",
+    "original_g192_slice_sha256": "195b1f058143763a7478c0723d67747ad827cf94ba4d573dd333d72d7d3bb10e",
+    "full_p1_archive_g192_sha256": "cfd265ef422d86e633e18dc776d978ecd60b7592785f6f9ddc77254ba64ebec3",
+    "native_observer_source_sha256": "7888f5f9246b15a2041b1e2cfc9157b30c3dffa1e8e56bceac2ad8f8099376db",
+    "tested_decoder_sha256": "da15b85fc8482b2ca757e1741d3f57a1a053d6bf8f65490692634153acd29f6e"
+  },
+  "trials": {
+    "original": {
+      "target_t_records": 15,
+      "exact_spectral_slices": 15,
+      "differences_by_cycle": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "slices_covering_p30_lsb": 15,
+      "target_pcm_slots_changed": 0
+    },
+    "p24_lsb": {
+      "target_t_records": 15,
+      "exact_spectral_slices": 1,
+      "differences_by_cycle": [
+        23,
+        19,
+        17,
+        2,
+        25,
+        5,
+        29,
+        18,
+        25,
+        12,
+        18,
+        20,
+        0,
+        2,
+        18
+      ],
+      "slices_covering_p30_lsb": 15,
+      "target_pcm_slots_changed": 15
+    },
+    "p27_lsb": {
+      "target_t_records": 15,
+      "exact_spectral_slices": 9,
+      "differences_by_cycle": [
+        0,
+        26,
+        15,
+        0,
+        1,
+        0,
+        0,
+        28,
+        0,
+        0,
+        18,
+        0,
+        0,
+        0,
+        1
+      ],
+      "slices_covering_p30_lsb": 15,
+      "target_pcm_slots_changed": 15
+    },
+    "p30_lsb": {
+      "target_t_records": 15,
+      "exact_spectral_slices": 15,
+      "differences_by_cycle": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "slices_covering_p30_lsb": 15,
+      "target_pcm_slots_changed": 15
+    }
+  }
+}

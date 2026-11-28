@@ -1,0 +1,155 @@
+{
+  "scope": "Stock floating-point EVS 13.2 kbit/s SWB TCX20 on complete synthetic clear word sequences. Physical bit 0 is the mode MSB; all intervals are half open.",
+  "codec_source": "TS 26.443 c-code dated Nov 4 2021",
+  "native_codec_files_sha256": {
+    "lib_dec/ACcontextMapping_dec.c": "cbe06ad7b27179344c69a15306d94794e6fe245e5e6134ac6703a10c13eae524",
+    "lib_dec/dec_prm.c": "3639e20bbd5bbcd56431364a56535c2a170871d713ab1b7553381e30f164ab88",
+    "lib_enc/ACcontextMapping_enc.c": "6ddf34456b095ebd5dadcb0dcee26c831b91a8609ac770cb70b2ffbef8766cf8",
+    "lib_enc/ari_enc.c": "152b95665b2178773e0d5ead390f3029b584b1b05bc4ac9d6579a027ddc5ad0e",
+    "lib_com/bitstream.c": "801448e98e002c31cd6c9a626b73e4eb6e0b9bf929875725ae53a7b90200a6cc"
+  },
+  "stock_encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "spectrum_test": "Decode with ACcontextMapping_decode2_no_mem_s17_LC. Re-encode the signed quantized coefficients and decoded residual bits using ACcontextMapping_encode2_no_mem_s17_LC, the signalled tuple count, the saved original harmonic context, spectrum length and bit budget. Pass indices_to_serial and compare bit-for-bit from the native tuple-count start to bit 264. The unmodified stock encoder produced the original words.",
+  "consecutive_positive_control": {
+    "generator": "examples/nov27/validation/check_p2_codec_bits.py:synthetic_pcm",
+    "generator_file_sha256": "3a3b3fc1a39e1275e3e25dee3238f4d9f4bd11251b788de1c4edf78af988e4cd",
+    "input_s16le_sha256": "8947b94fd0a024031a1554fa2f63c637f7bd4bdb8eeefc35c747504e3ac39932",
+    "sample_rate_hz": 32000,
+    "input_duration_s": 48,
+    "g192_sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f",
+    "word_interval_zero_based": [
+      444,
+      459
+    ],
+    "nominal_time_milliseconds": [
+      8880,
+      9180
+    ],
+    "word_duration_ms": 20,
+    "selection": "First 15 consecutive TCX20 words in the 48 s original with mode FE or FF in every slot. Native decode starts at slot 0.",
+    "original_modes": [
+      "FE",
+      "FE",
+      "FE",
+      "FE",
+      "FE",
+      "FE",
+      "FF",
+      "FF",
+      "FF",
+      "FF",
+      "FF",
+      "FF",
+      "FF",
+      "FF",
+      "FF"
+    ],
+    "spectral_start_bits": [
+      81,
+      85,
+      84,
+      85,
+      85,
+      88,
+      77,
+      79,
+      80,
+      80,
+      80,
+      80,
+      77,
+      82,
+      78
+    ],
+    "spectral_end_exclusive_all": 264,
+    "spectral_tuple_counts": [
+      44,
+      105,
+      102,
+      102,
+      102,
+      102,
+      54,
+      45,
+      56,
+      45,
+      40,
+      48,
+      56,
+      46,
+      50
+    ],
+    "harmonic_mapping_on_slots": [
+      445,
+      446,
+      447,
+      448,
+      449
+    ],
+    "residual_count_range": [
+      0,
+      15
+    ],
+    "exact_spectral_ranges": 15,
+    "compared_bits": 2739,
+    "differing_bits": 0
+  },
+  "distinct_clear_completions": {
+    "generator": "examples/nov27/validation/check_native_word_pair.py",
+    "generator_file_sha256": "59dbbfa3102cc100cb29464a1778ca48d180351d1aea5c565240e00df5210e55",
+    "reference": "examples/nov27/validation/native-tcx-neighbors.json",
+    "reference_sha256": "e7d4571ec717a7b23b5780e090483bf81a309f74c2c30baeb2e2f5eb52960371",
+    "generated_pcm_sha256": [
+      "702b529671318ba3a6cd3c48479458793c93977f48211c0f27659c85a1263060",
+      "2713205cd90510cda88e05f9a2833a294a2810080dc3ebf38d4b6c1bc334e209"
+    ],
+    "generated_g192_sha256": [
+      "989cfeda8911d47f2b355d9f28cf94ea992b4fa62e2746a13f2026e85e2082cb",
+      "29338ed532854faa82608a62d7b2fa1e34b2cbb2ad9a990d86ed4e9fcb7f3102"
+    ],
+    "native_word_sha256": [
+      "9847803e1f8d37f7b0e1b59f5b14a1f2bf695ac5d13f123cd005231b2df3ac2a",
+      "3097d1b6f371eabba8ec73e26df5fcf1c688866349421af6f346167a5ba90a79"
+    ],
+    "frame": 97,
+    "nominal_time_milliseconds": [
+      1940,
+      1960
+    ],
+    "mode": "FE",
+    "position": 2,
+    "neighboring_slots_equal": [
+      96,
+      98
+    ],
+    "first_128_bits_equal": true,
+    "differing_word_bits": [
+      255
+    ],
+    "zero_based_payload_offset": 30,
+    "distinct_emitted_octets_hex": [
+      "1C",
+      "1D"
+    ],
+    "spectrum_ranges": [
+      [
+        99,
+        264
+      ],
+      [
+        99,
+        264
+      ]
+    ],
+    "tuple_counts": [
+      25,
+      25
+    ],
+    "recoded_errors": [
+      0,
+      0
+    ],
+    "matching_replays": 2
+  },
+  "interpretation": "Two native-generated FE words shared all other 263 bits and both adjacent full words. Both passed the identical main-spectrum reserialization check at their distinct late bit. The synthetic controls do not select a transmitted completion on counter 43865914."
+}

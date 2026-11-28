@@ -1,0 +1,37 @@
+{
+  "full": {
+    "counts": {
+      "exact": 279
+    },
+    "exceptions": [],
+    "sha256": "18257ec9536cb2d2c88ee240f54bd866e2cbe90166605501b169cd40d22fef1f"
+  },
+  "P1": {
+    "counts": {
+      "exact": 60
+    },
+    "exceptions": [],
+    "sha256": "c6655ba8ff46e4e6d9daeadc7c6311379a64153b9213d1120ce66123c04afb47"
+  },
+  "P2": {
+    "counts": {
+      "exact": 75
+    },
+    "exceptions": [],
+    "sha256": "8a61b927f78fcea6fb25a163a311abbf58e08a21527ef7d79b4b26af58dbf494"
+  },
+  "P3": {
+    "counts": {
+      "exact": 77
+    },
+    "exceptions": [],
+    "sha256": "14b28592a4b3dd3404e7052ec24c3d6d7e78f37947a58e472c795576ed7d78d4"
+  },
+  "P4": {
+    "counts": {
+      "exact": 67
+    },
+    "exceptions": [],
+    "sha256": "20180ea6f467e0c586b16793f8df43612bab3950113b9b3c3e79c4913ebbb683"
+  }
+}
