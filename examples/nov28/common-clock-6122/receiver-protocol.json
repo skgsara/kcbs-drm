@@ -1,0 +1,12 @@
+{
+  "sealed_utc": "2026-11-28T17:03:24.605091+00:00",
+  "revision": "3250f175b96ad3c373e466b09bc2f082bdc044a1",
+  "origin": "https://7l4iou.tunnel.ubersdr.org",
+  "input": "one new iq48 acquisition centered at 6122000 Hz and 180 recorded seconds or available input, no other receive data",
+  "channels": {
+    "digital_offset_hz": 18000,
+    "analog_offset_hz": -22000
+  },
+  "digital": "scripts/extract_iq_channel.py +18000 Hz, full 12 kHz output from sample zero. Finite Dream binary SHA 1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26, Wiener and one MLC iteration, nominal channel, once. phase-anchors/score_air.py seal and agreed-bytes/field_groups.py as in 16:57. Seal results before audio comparison.",
+  "programme_check": "Compare common timing only if digital modes exist. First native phase-zero anchor and native row timing as in 16:57. Shared input sample time both channels; never cross sizeable gaps. Use the existing frozen 9-band mode templates and \u00b112 s residual lag grid. Fit [20,50) and validate [90,120) seconds from the digital mode origin, at least 12 s after start/before end inclusive of lag and valid support. Original 100239 coverage, halves, minimum fit and held-out score and circular displacement gates. Report incomplete where input is insufficient."
+}
