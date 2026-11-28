@@ -1,0 +1,37 @@
+{
+  "protocol_commit": "a3c36130047cc7add1b3026291955f5a3daa2a09",
+  "base_receiver_commit": "217cdd6b75f59748b25a9080aec1321b356b8f8f",
+  "field_input_sha256": "62d0b104b6f74497f0a6ed434b4afdc3b3d76605ba61b314366f4ef6b0f7a4c8",
+  "source_flac_sha256": "b0984c3b2205575ab8fd27905da36055646d4b5207d9676797d5c7cde4af381b",
+  "source_pcm_sha256": "7e643023c19f13d1bc40c8884d16de138ce8865153babb72c67f002b83f13dda",
+  "source_sample_range": [
+    5040000,
+    5760000
+  ],
+  "excerpt_sample_range": [
+    0,
+    720000
+  ],
+  "excerpt_rate_hz": 12000,
+  "channel_offset_hz": 0.0,
+  "settings": {
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "mlciter": 1
+  },
+  "profile": "wiener",
+  "passes": 1,
+  "cold_start": true,
+  "start_utc": "2026-11-28T15:19:29.137958+00:00",
+  "end_utc": "2026-11-28T15:19:30.811711+00:00",
+  "receiver_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "demodulator_sha256": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+  "returncode": 0,
+  "reached_offline_eof": true,
+  "msc": "native.msc.bin",
+  "msc_bytes": 105408,
+  "native_rows": 144,
+  "msc_sha256": "e05839ecfa06b44cd7cf5d8ecc293a54e079e76f3a3dcc05677fcae5b68b9b9b",
+  "command": "KCBS_DREAM=/path/to/dream python scripts/demod_iq_window.py examples/nov28/packet-bit-repair/field-3205-iq12.flac FRESH_OUTPUT --start 0 --seconds 60 --reception-profile wiener --mlc-iterations 1"
+}
