@@ -46,6 +46,26 @@ The export report retains the zero-based input slot, its outcome and all candida
 
 The packet supplement contains the 14 ticks of the frozen 3205 kHz packet archive with one to three accepted packet ordinals. We preserved the ticks, packet order and receipt flags, and zeroed storage for rejected packets. All 41 included packet bodies match their original receiver rows, whose packet headers and CRCs passed. The parent archive's SHA-256 is recorded in `union.archive_sha256`. [Frozen receiver receipt](reception.json)
 
+## Checking the contributor's November 28 handoff
+
+The contributor supplied six purported EVS words for counter 43907925 and three clear text records from the same IQ recording. The six 33-byte rows concatenate to **exactly the first 198 bytes of the phase-zero data unit**, whose transmitted CRC is `0612`. They start at DU offsets 0, 33, 66, 99, 132 and 165. The first two bytes, `40 00`, are the DU header. Its five first-position mode bytes at offsets 2–6 read `52 51 58 51 51`; the corresponding 32-byte payloads start at offsets 7, 138, 269, 400 and 531. Each submitted row had zero matches on its 22 directly observable EVS octets in the 66,894-slot index. This identifies a framing error in the six-row sample. Only the actual decoder input can show whether the playback pipeline shared that error. [Member data units](member-dus.npz) · [DU layout](../../../scripts/render_continuous.py)
+
+| First text block | Counter / phase | Recomputed and submitted CRC | Physically received blocks |
+|---|---|---|---:|
+| 131723777 | 43907925 / 2 | `730B` | 7/7 |
+| 131723805 | 43907935 / 0 | `7BE3` | 7/7 |
+| 131723812 | 43907937 / 1 | `2612` | 7/7 |
+
+Each literal contains a two-byte header, 92 bytes of UTF-16LE weather text, the transmitted record CRC and 16 fill bytes. The submitted candidate for counter 43907925 reproduces the first literal's opening 16 bytes from the received tail. We also compared the changes between already supplied text blocks to the changes in the on-air tails at adjacent phases of the same counter. All **13/13 pairs** agreed on all 16 bytes, including the join between the second and third records. Shifting the radio coordinates one counter earlier or later gave 0/13 complete agreements in either direction. The independent Edogawa reception started at 43908156, after these examples. The handoff contains three of the reported 286 literals and six of the reported 45 example words. [Text parser](../../../scripts/parse_text_records.py) · [Reproduce these checks](check_member_handoff.py)
+
+All 30 named counter examples have three complete DUs in the member IQ. The last observed counter is 43909062. The full counter lists and pre-decoder export were absent from the note. If 397 counts all fill candidates and 101 counts fill-only candidates, 296 overlap the 686 phrase candidates, giving 787 distinct candidates. The reported 5,955 words equal 397 × 15. Establishing which words reached the decoder requires the input stream or a per-slot receipt.
+
+With the original contributor note, run the following from the repository root.
+
+```sh
+python examples/nov28/member-3205-20min/check_member_handoff.py skgsara-crosscheck-20261128.md
+```
+
 ## Five places to test the text carousel
 
 A different recording had shown a bulletin period of 798 data units (319.2 seconds). Applying that spacing to this capture gives **five intervals of 33.6 seconds** with all 84 successive data units present in each interval. The first four also have an uninterrupted 48.4-second stretch. These counts describe which data arrived. Confirming a text repeat requires checking the bulletin contents and their own record CRCs. [Exact coverage, denominators and gaps](carousel-coverage.json)
