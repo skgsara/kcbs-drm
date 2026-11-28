@@ -1,0 +1,258 @@
+{
+  "schema": "scheduled-later-reception-v1",
+  "status": "remaining_samples_processed",
+  "computed_utc": "2026-11-28T13:20:27.707081+00:00",
+  "eligibility": "Use declared physical file order and final in-window bounds from segment/ledger.json, subtract the sealed first-earliest-file segment. No primary replacement or additional attempt on primary samples.",
+  "receiver_revision": "c7fab06936a3db08b36249c50b06b9ec4f5208c4",
+  "receiver_binary_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "frozen_files": {
+    "scripts/demod_iq_window.py": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+    "scripts/salvage_msc_packets.py": "2cd23f6ee257a405beaa223bc9693c1fae27ce1ad65a399c47595c71bad10725",
+    "examples/nov28/yokohama-1300/score.py": "a7190c0e488e5d0dc29e5133c93c327735b03c3933ec31183bcffd66c46ca0dd",
+    "examples/nov28/yokohama-1300/history.json.gz": "3d8cd9f71bcdb75eeb78a104348883a84754a0677c7ada11b514d0146bf607b5"
+  },
+  "receiver_settings": {
+    "profile": "wiener",
+    "mlc_iterations": 1,
+    "channel_offset_hz": 0,
+    "maximum_pairs_per_pass": 28800000
+  },
+  "source_ledger_sha256": "b1f6afb5362930693b69fb598dd7db60fe4541d633d1ab766af4a2e8ead266c0",
+  "primary_seal_sha256": "5923b7bc7b4ba6641714964c45d3bb5b1662cc41da1cb3563f545972285a3c64",
+  "primary_status": "sealed_frozen_score",
+  "excluded_primary": {
+    "file": "primary-window.wav",
+    "source_file": "segment-001.wav",
+    "source_wav_sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401",
+    "source_full_pcm_sha256": "0f9e7ad6e7781be6598a6434cf9f5c0213e410c126195d71dcf0d777c28f3005",
+    "source_indices": [
+      0,
+      28800000
+    ],
+    "sample_pairs": 28800000,
+    "segment_wav_sha256": "c7c6d89051d18ebce3477781518894fe05100947e105d2aea3c6e38c6f90df7c",
+    "segment_pcm_sha256": "8724c561aaf7f319be28078454f0baf1015d0a274663a0cc8e921e8167f55ce1"
+  },
+  "checked_original_file_count": 2,
+  "withheld_ambiguous_ranges": [],
+  "processed_chunks": [
+    {
+      "chunk": "chunk-000",
+      "source": "segment-001.wav",
+      "source_file_sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401",
+      "source_pcm_sha256": "0f9e7ad6e7781be6598a6434cf9f5c0213e410c126195d71dcf0d777c28f3005",
+      "source_pairs": 54720000,
+      "source_indices": [
+        28800000,
+        54720000
+      ],
+      "in_window_blank_intersections": [],
+      "clock_steps_in_this_chunk": [],
+      "chunk_pcm_sha256": "b7b8c640faec4c9686fe029cfb2c10a99fbdb24cf951fb9f613d25488ed278a2",
+      "manifest_sha256": "332a9ef812a493638ff47be2e899903109e35282790ea64f071d2f3e64ec2ee6",
+      "native_dump": "rf/msc.bin",
+      "native_dump_sha256": "e53926ea1abb4ea62e0d6f4d82cf8a1914e2d085dd8bb04fc125ca18beb31e38",
+      "native_transport": {
+        "msc_callbacks": 1077,
+        "record_lengths": {
+          "728": 1077
+        },
+        "native_packet_crc_checks": 4308,
+        "packets_passing_crc": 22,
+        "packets_with_expected_header": 714,
+        "packets_passing_crc_and_header": 22,
+        "native_du_crc_checks": 1077,
+        "dus_passing_own_crc": 4,
+        "rows_passing_all_packet_checks": 4,
+        "crc_good_whole_native_dus": 4,
+        "crc_good_whole_native_dus_by_phase": {
+          "1": 2,
+          "0": 1,
+          "2": 1
+        }
+      },
+      "accepted_packet_count": 12,
+      "accepted_complete_du_count": 3,
+      "complete_du_ticks_sorted": [
+        131842959,
+        131842960,
+        131842961
+      ],
+      "assigned_counter_ids": [
+        43947653
+      ],
+      "assigned_counter_inclusive_ranges": [
+        [
+          43947653,
+          43947653
+        ]
+      ],
+      "archived_complete_counters": [
+        43947653
+      ],
+      "archived_complete_counter_inclusive_ranges": [
+        [
+          43947653,
+          43947653
+        ]
+      ],
+      "directly_received_complete_groups": [
+        {
+          "counter": 43947653,
+          "native_rows": [
+            135,
+            136,
+            137
+          ]
+        }
+      ],
+      "direct_complete_counter_inclusive_ranges": [
+        [
+          43947653,
+          43947653
+        ]
+      ],
+      "salvage": {
+        "files": 1,
+        "assigned_record_observations": 3,
+        "original_complete_groups": 1,
+        "salvaged_complete_groups": 1,
+        "extra_groups": 0,
+        "missing_baseline_groups": [],
+        "crc_good_data_units": 3,
+        "conflicting_data_units": [],
+        "reassembly_crc_failures": 0,
+        "candidate_key_groups": 0,
+        "verified_text_key_groups": 0,
+        "note": "Packet/DU CRCs verify container integrity, not text or codec keys.",
+        "text_candidates_evaluated": false
+      },
+      "archives_sha256": {
+        "data_units.npz": "081bcd751de458dd5ecdefaa25f0d2893338c2d6953408e0890b2ab6f852b4b7",
+        "groups.npz": "958013b51be7c3f22f7e6e5079524386f8a6214ec337ebb00a3e9cdb98fca3d5",
+        "packets.npz": "6f622585de2af527978e1d4f89b608e6ffd21227aea7243a1634006b6c132a6f",
+        "provenance.json": "5fa8c147da086301a97c2987949c2a92d08b5a3d1642e68f5b7f3c8182446184",
+        "report.json": "6e621e79a4884ba453cf487e5d4ecad9adbd663d7ad973794122aa5612e40297"
+      }
+    },
+    {
+      "chunk": "chunk-001",
+      "source": "segment-002.wav",
+      "source_file_sha256": "1d80f3c0d0caee3ba98513961dae58d95d38e663cd3d11793d7df9362767cec3",
+      "source_pcm_sha256": "8f83cdd0b4c4756061cdcd27819e22ad560ecf6fc9106c3e78d0f8a6a3a51f24",
+      "source_pairs": 2625600,
+      "source_indices": [
+        0,
+        2625600
+      ],
+      "in_window_blank_intersections": [
+        [
+          0,
+          2880
+        ]
+      ],
+      "clock_steps_in_this_chunk": [],
+      "chunk_pcm_sha256": "8f83cdd0b4c4756061cdcd27819e22ad560ecf6fc9106c3e78d0f8a6a3a51f24",
+      "manifest_sha256": "e9a31a0769328a5f6cdc7fcb91c79c9a1d574ed664140b9fbf49bd5650bdb05f",
+      "native_dump": "rf/msc.bin",
+      "native_dump_sha256": "6dc66e44ce505885af50a2c5117dfed0d21c45d787bab897cfb70d5fa59c90eb",
+      "native_transport": {
+        "msc_callbacks": 131,
+        "record_lengths": {
+          "728": 131
+        },
+        "native_packet_crc_checks": 524,
+        "packets_passing_crc": 0,
+        "packets_with_expected_header": 111,
+        "packets_passing_crc_and_header": 0,
+        "native_du_crc_checks": 131,
+        "dus_passing_own_crc": 0,
+        "rows_passing_all_packet_checks": 0,
+        "crc_good_whole_native_dus": 0,
+        "crc_good_whole_native_dus_by_phase": {}
+      },
+      "accepted_packet_count": 0,
+      "accepted_complete_du_count": 0,
+      "complete_du_ticks_sorted": [],
+      "assigned_counter_ids": [],
+      "assigned_counter_inclusive_ranges": [],
+      "archived_complete_counters": [],
+      "archived_complete_counter_inclusive_ranges": [],
+      "directly_received_complete_groups": [],
+      "direct_complete_counter_inclusive_ranges": [],
+      "salvage": {
+        "files": 1,
+        "assigned_record_observations": 0,
+        "original_complete_groups": 0,
+        "salvaged_complete_groups": 0,
+        "extra_groups": 0,
+        "missing_baseline_groups": [],
+        "crc_good_data_units": 0,
+        "conflicting_data_units": [],
+        "reassembly_crc_failures": 0,
+        "candidate_key_groups": 0,
+        "verified_text_key_groups": 0,
+        "note": "Packet/DU CRCs verify container integrity, not text or codec keys.",
+        "text_candidates_evaluated": false
+      },
+      "archives_sha256": {
+        "data_units.npz": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+        "groups.npz": "8ef8ac0eb064f4ad7689a4b8529716667cb3811493627d81072836b2e072c545",
+        "packets.npz": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+        "provenance.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "report.json": "2ffcd029bad6ef140556e57cab7276d02e23e8fddfcdd8d85eac9c1fa0bea365"
+      }
+    }
+  ],
+  "processed_samples": 28545600,
+  "total_raw_physical_counts": {
+    "msc_callbacks": 1208,
+    "native_packet_crc_checks": 4832,
+    "packets_passing_crc": 22,
+    "packets_with_expected_header": 825,
+    "packets_passing_crc_and_header": 22,
+    "native_du_crc_checks": 1208,
+    "dus_passing_own_crc": 4,
+    "rows_passing_all_packet_checks": 4,
+    "crc_good_whole_native_dus": 4
+  },
+  "aggregate_basis": "Raw counts sum original processed MSC callbacks. Unique coordinate totals below count a coordinate once across independently demodulated chunks, quarantine byte disagreements, and never reassemble across chunks.",
+  "unique_crc_good_assigned_packets": 12,
+  "conflicting_packet_coordinates": [],
+  "unique_complete_du_count": 3,
+  "complete_du_ticks": [
+    131842959,
+    131842960,
+    131842961
+  ],
+  "conflicting_complete_dus": [],
+  "complete_du_tick_definition": "3*counter + phase (phase 0,1,2)",
+  "assigned_counter_ids": [
+    43947653
+  ],
+  "assigned_counter_inclusive_ranges": [
+    [
+      43947653,
+      43947653
+    ]
+  ],
+  "unique_complete_counters": [
+    43947653
+  ],
+  "complete_counter_inclusive_ranges": [
+    [
+      43947653,
+      43947653
+    ]
+  ],
+  "direct_native_complete_counters": [
+    43947653
+  ],
+  "direct_native_counter_inclusive_ranges": [
+    [
+      43947653,
+      43947653
+    ]
+  ],
+  "limitation": "Independent cold starts at each <=600 s chunk or disjoint source interval can lose framing and channel acquisition at boundaries. CRC results cover the delivered source samples only."
+}

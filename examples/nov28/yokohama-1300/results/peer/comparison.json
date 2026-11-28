@@ -1,0 +1,228 @@
+{
+  "score_sha256": "b1a69b61f1e23ec744eba198540c027557a8541891c5c96a363739259a9e6bc9",
+  "scheduled_packets_sha256": "c773b0916a13ff294d5cccf5b6500460e4e8c926a6d98b818c786b839127582d",
+  "peer_packets_sha256": "425139fcbf46a0f79f3bfba8c4419492eddd4fe8d762d521adbbf2722c13348f",
+  "coordinate_ranges": "Inclusive. DU = 3*counter + phase. Packet = 4*DU + ordinal. Group = counter.",
+  "scope": "Each side covers its own recording. A one-sided coordinate can be outside the other recording. Archive receipt flags identify accepted 179-byte bodies; complete 716-byte DUs also pass their wire CRC. Signatures contain the mode and 21 directly transmitted payload octets; the other 88 clear bits per received slot remain unresolved.",
+  "all_window": {
+    "packets": {
+      "scheduled": 0,
+      "peer": 810,
+      "shared": 0,
+      "equal": 0,
+      "conflicting": 0,
+      "scheduled_only": 0,
+      "peer_only": 810,
+      "conflicting_ranges": [],
+      "scheduled_only_ranges": [],
+      "peer_only_ranges": [
+        [
+          527364228,
+          527364292
+        ],
+        [
+          527364294,
+          527364324
+        ],
+        [
+          527364326,
+          527364334
+        ],
+        [
+          527364336,
+          527364428
+        ],
+        [
+          527364430,
+          527364556
+        ],
+        [
+          527364558,
+          527364569
+        ],
+        [
+          527364572,
+          527364585
+        ],
+        [
+          527364587,
+          527364591
+        ],
+        [
+          527364600,
+          527364601
+        ],
+        [
+          527364603,
+          527364603
+        ],
+        [
+          527364612,
+          527364615
+        ],
+        [
+          527364852,
+          527364942
+        ],
+        [
+          527364944,
+          527364959
+        ],
+        [
+          527365056,
+          527365395
+        ]
+      ]
+    },
+    "complete_dus": {
+      "scheduled": 0,
+      "peer": 196,
+      "shared": 0,
+      "equal": 0,
+      "conflicting": 0,
+      "scheduled_only": 0,
+      "peer_only": 196,
+      "conflicting_ranges": [],
+      "scheduled_only_ranges": [],
+      "peer_only_ranges": [
+        [
+          131841057,
+          131841072
+        ],
+        [
+          131841074,
+          131841080
+        ],
+        [
+          131841082,
+          131841082
+        ],
+        [
+          131841084,
+          131841106
+        ],
+        [
+          131841108,
+          131841138
+        ],
+        [
+          131841140,
+          131841141
+        ],
+        [
+          131841143,
+          131841145
+        ],
+        [
+          131841147,
+          131841147
+        ],
+        [
+          131841153,
+          131841153
+        ],
+        [
+          131841213,
+          131841234
+        ],
+        [
+          131841236,
+          131841239
+        ],
+        [
+          131841264,
+          131841348
+        ]
+      ]
+    },
+    "complete_groups": {
+      "scheduled": 0,
+      "peer": 60,
+      "shared": 0,
+      "equal": 0,
+      "conflicting": 0,
+      "scheduled_only": 0,
+      "peer_only": 60,
+      "conflicting_ranges": [],
+      "scheduled_only_ranges": [],
+      "peer_only_ranges": [
+        [
+          43947019,
+          43947023
+        ],
+        [
+          43947025,
+          43947026
+        ],
+        [
+          43947028,
+          43947034
+        ],
+        [
+          43947036,
+          43947045
+        ],
+        [
+          43947071,
+          43947077
+        ],
+        [
+          43947079,
+          43947079
+        ],
+        [
+          43947088,
+          43947115
+        ]
+      ]
+    },
+    "complete_signatures_by_position": {
+      "1": {
+        "scheduled": 0,
+        "peer": 1013,
+        "shared": 0,
+        "equal": 0,
+        "conflicting": 0,
+        "scheduled_only": 0,
+        "peer_only": 1013
+      },
+      "2": {
+        "scheduled": 0,
+        "peer": 1011,
+        "shared": 0,
+        "equal": 0,
+        "conflicting": 0,
+        "scheduled_only": 0,
+        "peer_only": 1011
+      },
+      "3": {
+        "scheduled": 0,
+        "peer": 1008,
+        "shared": 0,
+        "equal": 0,
+        "conflicting": 0,
+        "scheduled_only": 0,
+        "peer_only": 1008
+      },
+      "4": {
+        "scheduled": 0,
+        "peer": 1012,
+        "shared": 0,
+        "equal": 0,
+        "conflicting": 0,
+        "scheduled_only": 0,
+        "peer_only": 1012
+      }
+    }
+  },
+  "primary": {
+    "counter": null,
+    "status": "no_eligible_group",
+    "comparison": null
+  },
+  "first_partial": {
+    "counter": null,
+    "status": "no_eligible_group",
+    "comparison": null
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "start_utc": "2026-11-28T13:00:00Z",
+  "end_utc": "2026-11-28T13:20:00Z",
+  "requested_unix_ns": [
+    1795870800000000000,
+    1795872000000000000
+  ],
+  "rate": 48000,
+  "bounds_helper_sha256": "16fe042c6a6f0945c09d65579a3fdf6e3a5e5f3481ed6869b3c6f852a641ed45",
+  "extraction_limit_pairs": 28800000,
+  "input_files_in_recording_order": [
+    "segment-001.wav",
+    "segment-002.wav"
+  ],
+  "order_basis": "natural relative filename order, checked against first station anchors",
+  "files": [
+    {
+      "file": "segment-001.wav",
+      "wav_bytes": 218880044,
+      "wav_sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401",
+      "source_pcm_sha256": "0f9e7ad6e7781be6598a6434cf9f5c0213e410c126195d71dcf0d777c28f3005",
+      "timing_csv_filename": "segment-001.wav.timing.csv",
+      "timing_csv_sha256": "7172706bac526b499fead615dc351619137fbcd286a8c513dbec554e9b1eee38",
+      "sample_pairs": 54720000,
+      "recorder_geometry": "stereo signed PCM16LE at 48000 complex pairs/s",
+      "verified_packet_ranges": 171000,
+      "stamped_packets": 171000,
+      "boundary_evidence": {
+        "start": {
+          "unix_ns": 1795870800000000000,
+          "in_packets": [],
+          "nearest_preceding_packet": null,
+          "nearest_following_packet": {
+            "sample_offset": 0,
+            "sample_pairs": 360,
+            "receiver_unix_ns": 1795870801639512209,
+            "clock_run": 0
+          }
+        },
+        "end_exclusive": {
+          "unix_ns": 1795872000000000000,
+          "in_packets": [],
+          "nearest_preceding_packet": {
+            "sample_offset": 54719760,
+            "sample_pairs": 240,
+            "receiver_unix_ns": 1795871941634396111,
+            "clock_run": 0
+          },
+          "nearest_following_packet": null
+        }
+      },
+      "directly_timed_ranges": [
+        {
+          "samples": [
+            0,
+            54720000
+          ],
+          "clock_run": 0,
+          "first_packet": {
+            "sample_offset": 0,
+            "sample_pairs": 360,
+            "receiver_unix_ns": 1795870801639512209,
+            "clock_run": 0
+          },
+          "last_packet": {
+            "sample_offset": 54719760,
+            "sample_pairs": 240,
+            "receiver_unix_ns": 1795871941634396111,
+            "clock_run": 0
+          }
+        }
+      ],
+      "clock_steps": [],
+      "station_clock_runs": [
+        {
+          "first_anchor": {
+            "sample_offset": 0,
+            "receiver_unix_ns": 1795870801639512209
+          },
+          "last_anchor": {
+            "sample_offset": 54719760,
+            "receiver_unix_ns": 1795871941634396111
+          },
+          "source_pairs": [
+            0,
+            54720000
+          ],
+          "nominal_station_unix_ns": [
+            1795870801639512209,
+            1795871941639396111
+          ],
+          "leading_extrapolated_pairs": 0,
+          "trailing_extrapolated_pairs": 0
+        }
+      ],
+      "blank_regions": [],
+      "undated_pairs": 0,
+      "in_window_physical_ranges": [
+        [
+          0,
+          54720000
+        ]
+      ],
+      "membership_requires_review": false,
+      "manual_decision": null
+    },
+    {
+      "file": "segment-002.wav",
+      "wav_bytes": 10502444,
+      "wav_sha256": "1d80f3c0d0caee3ba98513961dae58d95d38e663cd3d11793d7df9362767cec3",
+      "source_pcm_sha256": "8f83cdd0b4c4756061cdcd27819e22ad560ecf6fc9106c3e78d0f8a6a3a51f24",
+      "timing_csv_filename": "segment-002.wav.timing.csv",
+      "timing_csv_sha256": "16a159c00ced299d5eb29c59ad6aceceb4468e91f6440800190352e36d8c2176",
+      "sample_pairs": 2625600,
+      "recorder_geometry": "stereo signed PCM16LE at 48000 complex pairs/s",
+      "verified_packet_ranges": 8205,
+      "stamped_packets": 8196,
+      "boundary_evidence": {
+        "start": {
+          "unix_ns": 1795870800000000000,
+          "in_packets": [],
+          "nearest_preceding_packet": null,
+          "nearest_following_packet": {
+            "sample_offset": 2880,
+            "sample_pairs": 360,
+            "receiver_unix_ns": 1795871945259396760,
+            "clock_run": 0
+          }
+        },
+        "end_exclusive": {
+          "unix_ns": 1795872000000000000,
+          "in_packets": [],
+          "nearest_preceding_packet": {
+            "sample_offset": 2625360,
+            "sample_pairs": 240,
+            "receiver_unix_ns": 1795871999894391207,
+            "clock_run": 0
+          },
+          "nearest_following_packet": null
+        }
+      },
+      "directly_timed_ranges": [
+        {
+          "samples": [
+            2880,
+            2625600
+          ],
+          "clock_run": 0,
+          "first_packet": {
+            "sample_offset": 2880,
+            "sample_pairs": 360,
+            "receiver_unix_ns": 1795871945259396760,
+            "clock_run": 0
+          },
+          "last_packet": {
+            "sample_offset": 2625360,
+            "sample_pairs": 240,
+            "receiver_unix_ns": 1795871999894391207,
+            "clock_run": 0
+          }
+        }
+      ],
+      "clock_steps": [],
+      "station_clock_runs": [
+        {
+          "first_anchor": {
+            "sample_offset": 2880,
+            "receiver_unix_ns": 1795871945259396760
+          },
+          "last_anchor": {
+            "sample_offset": 2625360,
+            "receiver_unix_ns": 1795871999894391207
+          },
+          "source_pairs": [
+            0,
+            2625600
+          ],
+          "nominal_station_unix_ns": [
+            1795871945199396760,
+            1795871999899391207
+          ],
+          "leading_extrapolated_pairs": 2880,
+          "trailing_extrapolated_pairs": 0
+        }
+      ],
+      "blank_regions": [
+        {
+          "samples": [
+            0,
+            2880
+          ],
+          "preceding_anchor": null,
+          "following_anchor": {
+            "sample_offset": 2880,
+            "sample_pairs": 360,
+            "receiver_unix_ns": 1795871945259396760,
+            "clock_run": 0
+          },
+          "treatment": "leading blank extrapolated at 48 kHz",
+          "included_source_pairs": [
+            0,
+            2880
+          ]
+        }
+      ],
+      "undated_pairs": 2880,
+      "in_window_physical_ranges": [
+        [
+          0,
+          2625600
+        ]
+      ],
+      "membership_requires_review": false,
+      "manual_decision": null
+    }
+  ],
+  "station_coverage": {
+    "basis": "Envelopes of packet-clock runs at nominal rate, including explicitly marked blank intervals. All-untimed files cannot establish station coverage. Signed end-to-start values use file order.",
+    "nominal_covered_utc_ranges_ns": [
+      [
+        1795870801639512209,
+        1795871941639396111
+      ],
+      [
+        1795871945199396760,
+        1795871999899391207
+      ]
+    ],
+    "nominal_covered_ns": 1194699878349,
+    "utc_ranges_without_clock_coverage_ns": [
+      [
+        1795870800000000000,
+        1795870801639512209
+      ],
+      [
+        1795871941639396111,
+        1795871945199396760
+      ],
+      [
+        1795871999899391207,
+        1795872000000000000
+      ]
+    ],
+    "adjacent_file_clock_gaps": [
+      {
+        "previous_file": "segment-001.wav",
+        "next_file": "segment-002.wav",
+        "signed_end_to_start_ns": 3560000649
+      }
+    ]
+  },
+  "selection_reason": "earliest file in recording order with one physically contiguous in-window range",
+  "segment": {
+    "file": "primary-window.wav",
+    "source_file": "segment-001.wav",
+    "source_wav_sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401",
+    "source_full_pcm_sha256": "0f9e7ad6e7781be6598a6434cf9f5c0213e410c126195d71dcf0d777c28f3005",
+    "source_indices": [
+      0,
+      28800000
+    ],
+    "sample_pairs": 28800000,
+    "segment_wav_sha256": "c7c6d89051d18ebce3477781518894fe05100947e105d2aea3c6e38c6f90df7c",
+    "segment_pcm_sha256": "8724c561aaf7f319be28078454f0baf1015d0a274663a0cc8e921e8167f55ce1"
+  }
+}

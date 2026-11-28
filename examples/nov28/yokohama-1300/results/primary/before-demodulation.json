@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-11-28T13:20:06.002995+00:00",
+  "frozen_revision": "c7fab06936a3db08b36249c50b06b9ec4f5208c4",
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "capture_receipt_sha256": "37e4460531dfeb90fb7ae0118a224dbb4a007fb29e17555d371f471cf3a92654",
+  "ledger_sha256": "b1f6afb5362930693b69fb598dd7db60fe4541d633d1ab766af4a2e8ead266c0",
+  "segment": {
+    "file": "primary-window.wav",
+    "source_file": "segment-001.wav",
+    "source_wav_sha256": "f0629bddfc1d5e74fe89f32f582bc53f12d6c5cd18f2b3f462cc192004fb6401",
+    "source_full_pcm_sha256": "0f9e7ad6e7781be6598a6434cf9f5c0213e410c126195d71dcf0d777c28f3005",
+    "source_indices": [
+      0,
+      28800000
+    ],
+    "sample_pairs": 28800000,
+    "segment_wav_sha256": "c7c6d89051d18ebce3477781518894fe05100947e105d2aea3c6e38c6f90df7c",
+    "segment_pcm_sha256": "8724c561aaf7f319be28078454f0baf1015d0a274663a0cc8e921e8167f55ce1"
+  },
+  "frequency_hz": 3205000,
+  "demodulation_settings": {
+    "start_sample": 0,
+    "max_seconds": 600,
+    "reception_profile": "wiener",
+    "mlc_iterations": 1
+  }
+}

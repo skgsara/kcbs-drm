@@ -1,0 +1,9 @@
+{
+  "started_after_capture_closed": true,
+  "before_demodulation_sha256": "46a8e7bda43b7909c440f04b865e8ee7e2c17f1aebc71f997e7aa606c148f410",
+  "demodulation_sha256": "2193c2384bd5fc5ff3f38798a90ecf11d5b59039db7a22ec0a872188fddc4010",
+  "native_msc_sha256": "38aa5357ece964443790366fe50fd3b705f5cf18ce033a1033454c3c3e7710de",
+  "score_sha256": "b1a69b61f1e23ec744eba198540c027557a8541891c5c96a363739259a9e6bc9",
+  "status": "sealed_frozen_score",
+  "sealed_utc": "2026-11-28T13:20:14.978293+00:00"
+}

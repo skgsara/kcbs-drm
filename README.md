@@ -668,6 +668,8 @@ selection and held-out slices separate.
 
 ## Can this run live?
 
+The November 28 13:00 UTC Yokohama recording captured 1,194.7 seconds on 3205 kHz. It identified service `A00002` and its Korean label. The first ten minutes yielded zero CRC-valid MSC packets. The remainder supplied one complete 60-slot transport group, counter `43947653`. The simultaneous two-minute Edogawa reference on 6140 kHz supplied 60 complete groups. [Recordings, counters and frozen test result](examples/nov28/yokohama-1300/)
+
 Two prospective November 28 recordings show what the transport receiver can certify on live RF. At 12:28 UTC Yokohama supplied zero CRC-valid packets on 3205 kHz. At 12:32 UTC two independent receivers tuned to 6140 kHz received the same 60 slots for counter 43945659. All 10,560 directly observable bits agreed. The frozen receiver verified zero complete clear EVS words for that counter. Both examples include lossless IQ for replay. [12:28 UTC recording](examples/nov28/dual-iq-1228/) · [12:32 UTC recording](examples/nov28/same-6140-1232/)
 
 The audio stage is fast enough to prototype. On one desktop, a 17:40.8 render

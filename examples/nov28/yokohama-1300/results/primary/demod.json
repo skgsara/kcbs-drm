@@ -1,0 +1,24 @@
+{
+  "source": "/workspace/shared/20261128-1300-results/segment/primary-window.wav",
+  "source_bytes": 115200044,
+  "source_sample_rate": 48000,
+  "source_frames": 28800000,
+  "start_sample": 0,
+  "sample_count": 28800000,
+  "start_seconds": 0.0,
+  "duration_seconds": 600.0,
+  "channel_offset_hz": 0.0,
+  "timing_note": "Nominal sample rate used; physical clock calibration unknown. Dump record index is NOT a source timestamp.",
+  "status": "finished",
+  "mlc_iterations": 1,
+  "reception_profile": "wiener",
+  "receiver_settings": {
+    "freqint": 2,
+    "timeint": 1,
+    "modmetric": 0,
+    "mlciter": 1
+  },
+  "wall_seconds": 6.990532905998407,
+  "returncode": 0,
+  "dump_bytes": 549000
+}
