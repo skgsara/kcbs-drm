@@ -1,0 +1,887 @@
+{
+  "source": "Public hq-class/native.py:tonal_bank (32 kHz, 36 seconds), one direct encode, 1800 complete words",
+  "generator_sha256": "98af844ac2273f5d057c1bab5211a8ab8b7aa09358b30ce88b1c1c19d64666b4",
+  "pcm_sha256": "39f64b23520a3627e8ef5573360ce5a813c711efc6203fc98323aa380f7ae0cb",
+  "g192_sha256": "9b57f161b64acdcb86bc3061fdcb803c6b576c03189fec0fb455ae520103c345",
+  "reencoded_equal_to_preexisting_public_digest": true,
+  "observer_equal_to_pristine_stock": true,
+  "modified_detector_original_source_sha256": "515d72a6e6378758e6347a7bb77af2ced79370c6640cd8e2775567221993be17",
+  "pristine_encoder_sha256": "3e266c30e60fb953a05e1ab66d814f725e750df136da65ce398ff55a0b4123f7",
+  "coordinate": "Zero-based, MSB-first physical word bits. b7 is the LSB of the mode, b8 the MSB of byte 1.",
+  "triples": [
+    {
+      "center_zero_based_slot": 6,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185b52460c336088d117326feb92ebfd599a872edff02a9b4614840dc10f7a13",
+        "f8185ad3288344c60850d1102714d105cfb72b33eaa759bbb6b9e4dddf9feec9a6",
+        "f818585846286453687d11058e8023240738ee5e6ff5a2f3c604ddb724a220b0ab"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 11,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185c50460c334188d08f774b491b829ba7492e21564092cde11e54c4b7bf842f",
+        "f8185c50488344cb061c10592941f14f07cdd453686dcb50856020ec6c752849b6",
+        "f951e711111dddff634f5d28e00e49075316360c6511a09d67fbbff7854ca32af7"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 16,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185b52460c336088d117326feb92ebfd599a872edff02a9b4614840dc10f7a17",
+        "f8185ad3288344c60850d1102714d105cfb72b33eaa759bbb6b9e4dddf9feec9a6",
+        "f818585846286453687d11058e8023240738ee5e6ff5a2f3c604ddb724a220b0ab"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 21,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185c50460c334188d08f774b491b829ba7492e21564092cde11e54c4b7bf842f",
+        "f8185c50488344cb061c10592941f14f07cdd453686dcb50856020ec6c752849b6",
+        "f951e711111dddff634f5d28e00e49075316360c6511a09d67fbbff7854ca32af7"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 28,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f918585846286453687d118f57e1577221bd553c5237980f26c3b3215a59d76aa7",
+        "f8185ad328282068311a0004c7cca8f390e411acef183ecbcacbf560058b6ec9ba",
+        "f95394860638fde3b10de65425f17262cdaa63e3af7d548b10fc20acd2247cb4ef"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 406,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f91853d42311435f0d0be153a41557586c5676ac4ff1d6b62cd3ab71e6d4b4740f",
+        "f81852d4288344cb0f04105cc964ea0aeb42eed677db8b4554ae8b234f338fc9ba",
+        "f847964444777ff7f0bcc68163a008c9237d79aec42f24bd6622614514ce73182b"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 411,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f91853d0462186686161be2eb2de7a8a327224f34578d5fb45e42db15fc47d967f",
+        "f81853d048a1a19a1820820b1f9a1871147302a585dc9c359c74771596cf833136",
+        "f91852d28b14462b3438309dad48fb2a966b8184878615b010e7b416821798bcaf"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 417,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185253288344cd0f041b88759722f06f6be46d229bfbb665ff8536a7c6b8be7b",
+        "f846964444777ff7f8bcc68163a008c9237d8a4991a9483f423f1c05e4ef5df83b",
+        "f849661d77777dd9afe7e8068441f2e6f907ca4da841251d2cf726c49fc72c89ae"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 421,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f91853d04621866860e1bb8d90fed6c694f2315354fc4efa3224066c151dabe87f",
+        "f81853d0488344cd062382050e6059e640df5178f166262bcd88bf718762dde1b7",
+        "f9496644447777f7f4bcf6ae88c198717002e6233e8d04f7075ca3e326c6245caf"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 425,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 1,
+      "full_words": [
+        "f94966044477f78eceef094694680ed066b171b44c2427dd617171b16e1a1628df",
+        "f883de27c10bffe13b5693546e55f338a6730b2895e2085c271b532ef483485c22",
+        "f8803fff83783e1e43e96b76fa268e87177af5e95d5b855279246cc3da5d591e00"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 1,
+          "incoming": 0,
+          "returned": 1,
+          "outgoing": 1,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 1,
+          "returned": 1,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 606,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185b51462286be0e1170b51336d49ac7d93b48d2de59724779ef620f5d53a217",
+        "f81859d428a16899a1820820ba73b29106578de728a72b777597d68a65e422a166",
+        "f81856da8b144629034383082c740119246fb14932352907e8416f29310b02382b"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 611,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185bd046218668616124b98b86ac68d8a68310f6a44ebff5366ffcecc9afa83f",
+        "f8185bd048a170cd0c10420b1f9a18711451b4820fb058b3c8ca4ab08f8844592a",
+        "f9185ad28b14489aa1c186e38980492a9f0e8c1ffed39575a19b5f3535d9bc4ea7"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 616,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185ad2462286be0e1170b51336d49ac7d93b48d2de59724779ef620f5d53a217",
+        "f851e706067bbfeeead067e0ba73b29106422253d54eb3776d97568d4de422a166",
+        "f81857d88b144629034383082c740119246fb14932352907e8416f29310b02382b"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 621,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185bd046218668616124b98b86ac68d8a68310f6a44ebff5366ffcecc9afa83f",
+        "f8185bd048a170cd0c10420b1f9a18711451b4820fb058b3c8ca4ab08f8844592a",
+        "f9185ad28b14489aa1c186e38980492a9f0e8c1ffed39575a19b5f3535d9bc4ea7"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 626,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f90864a56869144003082d6e98cd8596b4b9cdffd5fa05bcf543ad354c07b1246b",
+        "f856903031d7fff7db9caf0257b71020b5446a3dcf0e9a24d6ec91bd9b5eb2e8b7",
+        "f8185d4d8b14462b3e1e100e74b240294962ae00ff1d6f9b7474aa7843b94a002f"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 631,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185bd046218668616124b98b86ac68d8a68310f6a44ebff5366ffcecc9afa83f",
+        "f85294860ff777ddda90ffc0987bb8ac0cb4c92887da1148b660dfb541dd0c112a",
+        "f9185a538b14489aa1c186e389805b8fc73c461ab1e149a2f3f6360ac3446beea7"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 636,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F8"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185ad2462286be0e1170b51336d49ac7d93b48d2de59724779ef620f5d53a217",
+        "f851e706067bbfeeead067e0ba73b29106422253d54eb3776d97568d4de422a166",
+        "f81857d88b144629034383082c740119246fb14932352907e8416f29310b02382b"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 641,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f9185bd046218668616124b98b86ac68d8a68310f6a44ebff5366ffcecc9afa83f",
+        "f8185bd048a170cd0c10420b1f9a18711451b4820fb058b3c8ca4ab08f8844592a",
+        "f9185ad28b14489aa1c186e38980492a9f0e8c1ffed39575a19b5f3535d9bc4ea7"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    },
+    {
+      "center_zero_based_slot": 648,
+      "mode_hex": [
+        "F9",
+        "F8",
+        "F9"
+      ],
+      "center_b8": 0,
+      "full_words": [
+        "f91857d88b14462903438309da2e08472f9bff39bba2c6c39d477f7a0c7f0d9887",
+        "f8185a532885040d0c10420b99d1b272169c4f2e79d0051d2cda50b2c0225c212e",
+        "f9185bd0488322b34189610741113a6613363f8527e467ed73fd89c9616a7da42f"
+      ],
+      "native": [
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        },
+        {
+          "attack": 0,
+          "incoming": 0,
+          "returned": 0,
+          "outgoing": 0,
+          "input_frame_samples": 640,
+          "previous_extension": -1,
+          "extension": -1,
+          "previous_core": 3
+        }
+      ]
+    }
+  ]
+}

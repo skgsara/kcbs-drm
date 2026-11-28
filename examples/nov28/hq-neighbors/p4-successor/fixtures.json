@@ -1,0 +1,354 @@
+{
+  "included_du_fixture": {
+    "file": "received-du.bin",
+    "sha256": "97a3b4ace0115c4588582ea21f4fdba0e3b97e4257f288a61286ef0a5548ec80",
+    "bytes": 6444,
+    "layout": "clean_counters order, phase 0,1,2 per counter, 716 bytes per DU"
+  },
+  "format": "evs-swb-hq-shortening-v1",
+  "capture": {
+    "start_utc": "2026-11-27T13:17:09Z",
+    "frequency_kHz": 3205
+  },
+  "input_sha256": {
+    "original_iq_wav": "c2c23a6768d836a71a25086ea0a6e4155a3657fab132e4ace0d132e3aa93560e",
+    "joined_packet_archive": "62778106441d09f78373cd49c83a03dcf1f6fcc6e106078c01954053b310ee4f",
+    "strict_record_list": "3c8e0a2ebcaf56498d2310830eacff64833acb6e53ab9cc18112a32b2eb15e50",
+    "strict_support_table": "68c74b98454ce83d9d1c89f8611ab595745c28ae1d4e16e4ab01034e06a7f07f",
+    "supplied_text_records": "5a6ec69d896443cd658bd9b07554dfdc218a9638080904bd7134cfcda4108526",
+    "ordinary_g192": "33f2576f613ab8d88ea95570220f033f2212c9445af624ddd1239c6f0081e0f8",
+    "slot_ledger_gzip": "101301bceea7888f0fbb1f4145ae084cbb7e4823872257bec85539583d414e18"
+  },
+  "unfiltered_eligible_pair_audit": {
+    "all_supplied_P1": 6561,
+    "supplied_F8_P1": 1837,
+    "adjacent_received_F8_P4_followed_by_supplied_F8_P1": 1737,
+    "identical_isolated_vs_chronology_fields": 1737,
+    "successor_SPT_flags_present": 510,
+    "successors_with_SPT_fields": 437,
+    "positive_successors": 15,
+    "positive_successor_flags": 19
+  },
+  "stages": {
+    "01_supplied_P1": {
+      "P1_slots": 6561,
+      "P1_counters": 439
+    },
+    "02_F8_P1": {
+      "P1_slots": 1837,
+      "P1_counters": 253
+    },
+    "03_preceding_P4_mode_received_F8": {
+      "P1_slots": 1737,
+      "P1_counters": 246,
+      "positive_slots": 15,
+      "positive_P1_counters": 6,
+      "positive_flags": 19
+    },
+    "04_entire_P1_counter_15_supported_no_observed_flags": {
+      "P1_slots": 1671,
+      "P1_counters": 237,
+      "positive_slots": 6,
+      "positive_P1_counters": 4,
+      "positive_flags": 6
+    },
+    "05_both_coordinates_inside_same_counter": {
+      "P1_slots": 1554,
+      "P1_counters": 232,
+      "positive_slots": 5,
+      "positive_P1_counters": 3,
+      "positive_flags": 5
+    },
+    "06_whole_counter_three_complete_DUs": {
+      "P1_slots": 1554,
+      "P1_counters": 232,
+      "positive_slots": 5,
+      "positive_P1_counters": 3,
+      "positive_flags": 5
+    },
+    "07_direct_SPT_among_eligible_positive": {
+      "P1_slots_with_a_direct_one": 3,
+      "positive_flags": 3,
+      "distinct_P1_counters": 3
+    }
+  },
+  "clean_counters": [
+    {
+      "counter": 43876415,
+      "data_units": [
+        {
+          "phase": 0,
+          "sha256": "fd8bab939e9405a638706e36963d24cddd235d4c3000719848ca68010a14c454",
+          "crc16": "BFD3"
+        },
+        {
+          "phase": 1,
+          "sha256": "016d4b985db41cb947d9653ed9db2529912c03a85442bef6c3cb2d6caf4567a8",
+          "crc16": "BAF5"
+        },
+        {
+          "phase": 2,
+          "sha256": "4f62969d55af5ec77c9e692a7918297b5cefa98fbed627dc6a3700a265dd2563",
+          "crc16": "08AA"
+        }
+      ],
+      "all_15_P1_text_supported": true,
+      "P1_bfi_or_ber_over_15": 0,
+      "supporting_text": [
+        {
+          "counter": 43876414,
+          "phase": 0,
+          "body_length": 92,
+          "header_body_crc_hex": "05bc74d5c1c0d0c51cc194b2200081bdd9b38dd474c7200037007e0031003000a7335cb8200088bde0ac20003cbbb0ac40c7200030002e0035007e0032006d005cb820007cc7a0acb5c2c8b2e4b22e0020000d000a0070c820c11cc174d56b00",
+          "crc16": "6B00",
+          "source_tag": "prior_phrases",
+          "header_body_crc_key_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "counter": 43876822,
+      "data_units": [
+        {
+          "phase": 0,
+          "sha256": "f265a33cf78ba36b2b93641ff85eaf081b2fca704b4fc07447e1e1ba1374970f",
+          "crc16": "0C32"
+        },
+        {
+          "phase": 1,
+          "sha256": "8d5affccee28ed5dfaa2297b41d48266e7203f49fc631ec9b46722b0b6567189",
+          "crc16": "FC8A"
+        },
+        {
+          "phase": 2,
+          "sha256": "e9581296209aa7ca92340d763565ed41b429f309f70cf8cee80f3b257ac710e6",
+          "crc16": "79A5"
+        }
+      ],
+      "all_15_P1_text_supported": true,
+      "P1_bfi_or_ber_over_15": 0,
+      "supporting_text": [
+        {
+          "counter": 43876820,
+          "phase": 2,
+          "body_length": 92,
+          "header_body_crc_hex": "058c24c6c4d64caec0c9200000b3b4cc5cb8200050d738b8e4b200ac2000fcc85cb820001cac74c7a0ac3cc770ba200098b77cc740c72000fcc85cb820001cac74c7a0ac3cc798b0200024c6c4d620005cd54cb5200050d7acb9a0acb5c22091",
+          "crc16": "2091",
+          "source_tag": "prior_phrases",
+          "header_body_crc_key_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "counter": 43876848,
+      "data_units": [
+        {
+          "phase": 0,
+          "sha256": "4d217dbc3b1351bbeb78aa03d04f375cf067dfb754ff864cd9fa7bf16f36902c",
+          "crc16": "8437"
+        },
+        {
+          "phase": 1,
+          "sha256": "91f8db4303434a338693b7c05735229ebe737461a3fad3e9903949cd841284e5",
+          "crc16": "7CBB"
+        },
+        {
+          "phase": 2,
+          "sha256": "2437f9600cc7fa4873e4ab082e8e634ff6abd87e6646b18d663524159f8b159c",
+          "crc16": "207D"
+        }
+      ],
+      "all_15_P1_text_supported": true,
+      "P1_bfi_or_ber_over_15": 0,
+      "supporting_text": [
+        {
+          "counter": 43876847,
+          "phase": 0,
+          "body_length": 92,
+          "header_body_crc_hex": "051cfcc85cb820001cac74c7a0ac3cc798b0200024c6c4d620005cd54cb5200050d7acb9a0ac3cc770ba2000e0c258c7fcc82c002000acc0acb9d0c62c002000d0c6b0c02c00200068d565d72c002000adccc4c92c002000a8b0ecd32c00a2e8",
+          "crc16": "A2E8",
+          "source_tag": "prior_phrases",
+          "header_body_crc_key_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "preceding_p4": {
+        "slot": 32183,
+        "counter": 43876415,
+        "phase": 1,
+        "cycle": 0,
+        "position": 4,
+        "mode": "F8",
+        "observed": "mode_only"
+      },
+      "supplied_p1": {
+        "slot": 32184,
+        "counter": 43876415,
+        "phase": 1,
+        "cycle": 1,
+        "position": 1,
+        "word_hex": "f8702c93ecd371ee236cc185f649ae947c19a465ff370a6b733d12a4a3a176e848",
+        "word_sha256": "c14c54581f166f3dbc9031a029e9521c7d0e5d89ad1ff0b0890c87b2f1e8447c",
+        "raw_direct_projection_hex": "f82c93d371236c85f6ae9419a4ff376b7312a4a17648"
+      },
+      "shortening_flags_one": [
+        {
+          "relative_high_band": 1,
+          "physical_bit": 111,
+          "direct_payload_lane": false
+        }
+      ]
+    },
+    {
+      "preceding_p4": {
+        "slot": 32187,
+        "counter": 43876415,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "mode": "F8",
+        "observed": "mode_only"
+      },
+      "supplied_p1": {
+        "slot": 32188,
+        "counter": 43876415,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "word_hex": "f8500a5d1f85e91fea40690c04cb0a0a03ff6e6b584df452cb5bd9bf72b0653f6f",
+        "word_sha256": "9cc5064a83219418e7c3e2f528c74d8dea8ec890dc269a91cc2b73b5d31b1801",
+        "raw_direct_projection_hex": "f80a5d85e9ea400c040a0aff6e584d52cbd9bfb0656f"
+      },
+      "shortening_flags_one": [
+        {
+          "relative_high_band": 2,
+          "physical_bit": 108,
+          "direct_payload_lane": false
+        }
+      ]
+    },
+    {
+      "preceding_p4": {
+        "slot": 32199,
+        "counter": 43876415,
+        "phase": 1,
+        "cycle": 4,
+        "position": 4,
+        "mode": "F8",
+        "observed": "mode_only"
+      },
+      "supplied_p1": {
+        "slot": 32200,
+        "counter": 43876415,
+        "phase": 2,
+        "cycle": 0,
+        "position": 1,
+        "word_hex": "f86f424f60ee3a22d30747b1331c400c4afd167b8ed17e79cb82134ce9ab11c13c",
+        "word_sha256": "2f724de9226ea49e167939c072b08328720c3c56285b418de79545b4e00b62da",
+        "raw_direct_projection_hex": "f8424fee3ad307b133400cfd168ed179cb134cab113c"
+      },
+      "shortening_flags_one": [
+        {
+          "relative_high_band": 2,
+          "physical_bit": 102,
+          "direct_payload_lane": true
+        }
+      ]
+    },
+    {
+      "preceding_p4": {
+        "slot": 56607,
+        "counter": 43876822,
+        "phase": 1,
+        "cycle": 1,
+        "position": 4,
+        "mode": "F8",
+        "observed": "mode_only"
+      },
+      "supplied_p1": {
+        "slot": 56608,
+        "counter": 43876822,
+        "phase": 1,
+        "cycle": 2,
+        "position": 1,
+        "word_hex": "f82cb3f3bbf72ec72b35a13911990c957e303ae517d0f93d36b622317edde1505f",
+        "word_sha256": "5b34fe06a111ec3a7e8fdaf471e1a32d4b72810ae30946d11a8144a26b4ce059",
+        "raw_direct_projection_hex": "f8b3f3f72e2b3539110c95303a17d03d362231dde15f"
+      },
+      "shortening_flags_one": [
+        {
+          "relative_high_band": 3,
+          "physical_bit": 117,
+          "direct_payload_lane": true
+        }
+      ]
+    },
+    {
+      "preceding_p4": {
+        "slot": 58195,
+        "counter": 43876848,
+        "phase": 2,
+        "cycle": 3,
+        "position": 4,
+        "mode": "F8",
+        "observed": "mode_only"
+      },
+      "supplied_p1": {
+        "slot": 58196,
+        "counter": 43876848,
+        "phase": 2,
+        "cycle": 4,
+        "position": 1,
+        "word_hex": "f85369336ce20ff1be6d8ad28798b75935e3b050417a435832563c9b59d774d163",
+        "word_sha256": "45c817af8b0e46bafda6c724c32e1f9f15835555750ed30ca9dfed81fe1fd7ca",
+        "raw_direct_projection_hex": "f86933e20fbe6dd287b759e3b0417a58323c9bd77463"
+      },
+      "shortening_flags_one": [
+        {
+          "relative_high_band": 3,
+          "physical_bit": 102,
+          "direct_payload_lane": true
+        }
+      ]
+    }
+  ]
+}

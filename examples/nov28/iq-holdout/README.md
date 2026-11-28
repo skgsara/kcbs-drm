@@ -1,5 +1,7 @@
 # A blind receiver test on the November 19 wideband recording
 
+The group had already used this source recording to identify a performance. The selected interval, seconds 154 through 176 exclusive, falls outside the three previously documented test windows. The original author's 66 published counter IDs end at 43288699. The first counter received here was 43288733. [Original report](https://github.com/skgsara/kcbs-drm/blob/d47857a52414478656063c6ac7a1c96e2433b247/README.md#L53-L69)
+
 From the same 22 seconds of recorded IQ, we extracted 6140 kHz DRM and a carrier near 6100 kHz. Two offline Dream builds produced the same 49 CRC-valid DRM data units. All 17 assigned counters were new relative to the frozen inventory, including the final partially received counter. Sixteen groups were complete. [Protocol committed before fetching the input](https://github.com/skgsara/kcbs-drm/commit/0d65f6055ffc6f861f65a6fba08aade47866ad97) · [Channel hashes, counters and per-slot fields](receipt.json) · [Byte comparison](replay-comparison.json)
 
 **The first complete counter was 43288733.** All four positions had 15 received words each. At each position 2,640 bits were visible and 1,320 bits had unknown clear values. None of its slots used modes F9, FA or FB. The receiver returned 60 word erasures and zero complete clear EVS words. [All primary slots](primary.json)

@@ -23,6 +23,12 @@ four-channel recording had too little low-frequency signal to repeat that
 comparison. A later group listening report describes different AM and DRM programmes.
 The exact interval of that observation is unknown. [Frequency pairs, IQ files and replay tests](examples/nov28/four-frequency/README.md)
 
+In archived IQ, the next EVS word's transmitted mode ruled out a transient
+in six position-three words and three position-four words, assuming continuous
+stock EVS encoding. A fresh two-minute 6140 kHz recording yielded zero
+CRC-valid packets in the frozen test.
+[Neighboring-word evidence and raw IQ](examples/nov28/hq-neighbors/README.md)
+
 On a 120-second interval of the previously reported 12:15 recording, a frozen
 SWB ACELP transition rule gave 228
 conditional hidden-bit predictions across 35 complete groups. A historical
@@ -30,7 +36,7 @@ P2 check agreed on 230 of 231 exact pairs. Replaying the disputed counter from
 its original IQ confirmed both received bytes used by the predictor.
 [Frozen receiver, scores and counterexamples](examples/nov28/swb-transition/README.md)
 
-A frozen IQ-only test on a previously unused 22-second interval received all 60
+A frozen IQ-only test on a 22-second interval outside the documented November 19 test windows received all 60
 slots at counter 43288733, with zero complete clear words. Across 16 complete
 groups, the stock EVS HQ mode predicted one hidden bit in 25 words. A separate
 narrowband ACELP rule constrained payload octet 24 in three stock sender words.

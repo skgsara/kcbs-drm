@@ -1,0 +1,341 @@
+{
+  "Nov19_170940_IQ": {
+    "data_units_sha256": "e8ec5a79f22cb3ad5876400603fab5589738193678abc165994024a38de382e7",
+    "counts": {
+      "complete_groups": 46,
+      "P4_eligible": 1,
+      "P4_excluded_if_transient": 1
+    },
+    "cases": [
+      {
+        "counter": 43287515,
+        "slot": 3,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      }
+    ]
+  },
+  "Nov19_173139_0_150_IQ": {
+    "data_units_sha256": "c6a5fddd6136bfef3eb5ff143b4b90f4d4ffccf72f59ce1bf1827a806f0c4642",
+    "counts": {
+      "complete_groups": 105
+    },
+    "cases": []
+  },
+  "Nov19_173139_180_240_IQ": {
+    "data_units_sha256": "ea6fbedb2a0873f7eb877f92fa570aceeef7518d356d1908f9fb5593d13436b2",
+    "counts": {
+      "complete_groups": 42
+    },
+    "cases": []
+  },
+  "Nov27_1317_IQ": {
+    "data_units_sha256": "7e5a5700eeb3b5189a7f2441bfdee5ea4f24ca1473cf6ee8babe556f8168938e",
+    "counts": {
+      "complete_groups": 1039,
+      "P3_eligible": 15,
+      "P3_excluded_if_transient": 6,
+      "P4_eligible": 13,
+      "P4_excluded_if_transient": 2
+    },
+    "cases": [
+      {
+        "counter": 43876033,
+        "slot": 42,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876108,
+        "slot": 54,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876123,
+        "slot": 39,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876124,
+        "slot": 2,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876150,
+        "slot": 11,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876163,
+        "slot": 39,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43876248,
+        "slot": 30,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43876323,
+        "slot": 2,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43876330,
+        "slot": 39,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43876363,
+        "slot": 34,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876369,
+        "slot": 11,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876395,
+        "slot": 22,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43876476,
+        "slot": 19,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876476,
+        "slot": 22,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43876483,
+        "slot": 11,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876514,
+        "slot": 35,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876519,
+        "slot": 51,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876521,
+        "slot": 11,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876521,
+        "slot": 18,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876521,
+        "slot": 22,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43876521,
+        "slot": 47,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876521,
+        "slot": 50,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876540,
+        "slot": 34,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43876546,
+        "slot": 50,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876876,
+        "slot": 55,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876878,
+        "slot": 34,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43876953,
+        "slot": 50,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43877036,
+        "slot": 3,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      }
+    ]
+  },
+  "Nov27_2227_IQ": {
+    "data_units_sha256": "7381e771cc4cb5e85c44c5c26a4075268b198ac143c5c808f923bb454d44b9af",
+    "counts": {
+      "complete_groups": 52,
+      "P4_eligible": 1,
+      "P4_excluded_if_transient": 0,
+      "P3_eligible": 1,
+      "P3_excluded_if_transient": 0
+    },
+    "cases": [
+      {
+        "counter": 43903437,
+        "slot": 39,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      },
+      {
+        "counter": 43903482,
+        "slot": 34,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      }
+    ]
+  },
+  "Nov27_1744_contributed_DUs": {
+    "data_units_sha256": "b7ffeea6b21b24236d012c9bae8b14924a98d855bd0e1eb58b319a310edb6181",
+    "counts": {
+      "complete_groups": 295,
+      "P4_eligible": 2,
+      "P4_excluded_if_transient": 2,
+      "P3_eligible": 1,
+      "P3_excluded_if_transient": 0
+    },
+    "cases": [
+      {
+        "counter": 43865269,
+        "slot": 31,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43865298,
+        "slot": 23,
+        "position": 4,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 1,
+        "rejected_if_transient": true
+      },
+      {
+        "counter": 43865420,
+        "slot": 50,
+        "position": 3,
+        "predicted_successor_b7_if_central_b8_is_one": 0,
+        "observed_successor_b7": 0,
+        "rejected_if_transient": false
+      }
+    ]
+  },
+  "Nov27_1756_contributed_DUs": {
+    "data_units_sha256": "56609749653511d9548fc13cef77de25509c8541ea0ddf07c75a90756290a775",
+    "counts": {
+      "complete_groups": 644
+    },
+    "cases": []
+  }
+}

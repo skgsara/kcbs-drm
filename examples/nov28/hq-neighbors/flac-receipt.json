@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-28T01:28:08.299066+00:00",
+  "name": "7l4iou-6140-20261128T0125Z-iq48.flac",
+  "flac_sha256": "1c1b00fbb25e639cd013092f94f318e91bd78ea24877d8fa5c4611449ac83aab",
+  "bytes": 16846165,
+  "pcm_sha256": "12bebe96d8649841512fdc0e01030ef355ddb224222bd9a8d1db6d09493c95ad",
+  "wav_sha256": "55a937bbfa66173141822d1fa578451e8da9ef3ff2da5c37f6e083bb2fc87b3c",
+  "compared_sample_pairs": 5760000,
+  "comparison": "All stereo PCM16 sample pairs decoded from the FLAC compared byte by byte against the source WAV",
+  "sample_rate": 48000,
+  "channels": 2
+}

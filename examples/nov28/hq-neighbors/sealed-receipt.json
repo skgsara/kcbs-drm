@@ -1,0 +1,18 @@
+{
+  "sealed_utc": "2026-11-28T01:27:10.713931+00:00",
+  "plan_sha256": "86b1c13551ed1fa4366a9dcbafb7911cbd65bcd234856f29b8098a5d4fec9429",
+  "wav_sha256": "55a937bbfa66173141822d1fa578451e8da9ef3ff2da5c37f6e083bb2fc87b3c",
+  "pcm_sha256": "12bebe96d8649841512fdc0e01030ef355ddb224222bd9a8d1db6d09493c95ad",
+  "wav_bytes": 23040044,
+  "complex_samples": 5760000,
+  "duration_seconds": 120.0,
+  "target_reached": true,
+  "recorder_receipt_sha256": "3cc2c362ce5488e1c682bee0491c34146c08c94259c840d550202d4988265ab6",
+  "packet_times_sha256": "cefe1053ebee3be79f59fa9a3a031705ce45228d9a516903efe793306fe4776b",
+  "station_clock_start_utc": "2026-11-28T01:25:09.403003541Z",
+  "station_clock_end_exclusive_utc": "2026-11-28T01:27:09.402482948Z",
+  "timestamped_packets": 18000,
+  "packets": 18000,
+  "jumps_over_one_sample": 0,
+  "maximum_abs_step_error_ns": 17780
+}

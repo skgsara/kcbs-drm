@@ -1,0 +1,14 @@
+{
+  "opening_utc": "2026-11-28T01:27:54.536131+00:00",
+  "public_prospective_commit": "67e3dbff0e9aa85b3fc73da9ce5ff4d5bd008eb7",
+  "public_files_sha256": {
+    "examples/nov28/hq-neighbors/check.py": "e1c995566606d6fd04bafcf6a84ef713785da1f80d966a17cb8cefdd0d3cd524",
+    "examples/nov28/hq-neighbors/protocol.md": "536f818c90696a9ae5b7ed51c138da8863bbfcdc020ff5167bb6d1f4f8d07f32",
+    "scripts/evs_hq_neighbors.py": "326dcbb0e8a040d7e849071830d54242f4e5ccafad7ffb0b904da093996786df",
+    "scripts/project_evs_group.py": "fd79acd924856892600c4c24179ea799d329353e0b1da76d701954697af307fc"
+  },
+  "sealed_receipt_sha256": "10d0a7cb33ca95a3541168f504ec42140c05ff73a1e2ea42ee86f954f7cd1bc8",
+  "source": "55a937bbfa66173141822d1fa578451e8da9ef3ff2da5c37f6e083bb2fc87b3c",
+  "history_file_sha256": "2673b0cf0834cb4e759243678282fa1e7717b255593a92197a319825bce58f30",
+  "plan_sha256": "86b1c13551ed1fa4366a9dcbafb7911cbd65bcd234856f29b8098a5d4fec9429"
+}

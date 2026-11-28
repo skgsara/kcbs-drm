@@ -1,0 +1,10 @@
+{
+  "tonal_bank_g192_sha256": "9b57f161b64acdcb86bc3061fdcb803c6b576c03189fec0fb455ae520103c345",
+  "matched_full_stream": true,
+  "checked_triples": 19,
+  "counts": {
+    "F9_F8_F8__center_0__successor_0": 8,
+    "F9_F8_F9__center_0__successor_0": 10,
+    "F9_F8_F8__center_1__successor_1": 1
+  }
+}

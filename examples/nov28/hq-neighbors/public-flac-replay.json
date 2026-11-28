@@ -1,0 +1,28 @@
+{
+  "method": "Public FLAC decoded to canonical stereo PCM16 WAV; one fresh cold 120 s Dream Wiener/MLC1 nominal-centre run and transport-only salvage. Complete MSC and all transport products compared byte-for-byte with original WAV run.",
+  "utc": "2026-11-28T01:32:50.462503+00:00",
+  "public_flac": "7l4iou-6140-20261128T0125Z-iq48.flac",
+  "source_flac_sha256": "1c1b00fbb25e639cd013092f94f318e91bd78ea24877d8fa5c4611449ac83aab",
+  "decoded_wav_sha256": "55a937bbfa66173141822d1fa578451e8da9ef3ff2da5c37f6e083bb2fc87b3c",
+  "decoded_pcm_sha256": "12bebe96d8649841512fdc0e01030ef355ddb224222bd9a8d1db6d09493c95ad",
+  "sample_pairs": 5760000,
+  "dream_sha256": "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+  "msc_bytes": 195444,
+  "standard_728_byte_records": 267,
+  "good_packets_by_index": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "accepted_data_units": 0,
+  "assigned_counters": 0,
+  "complete_groups": 0,
+  "byte_identical_outputs_sha256": {
+    "msc.bin": "80f38075146480ed944df945987af0d4216b9d941a50e1de5ea7af8ba35d17c7",
+    "data_units.npz": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+    "groups.npz": "8ef8ac0eb064f4ad7689a4b8529716667cb3811493627d81072836b2e072c545",
+    "provenance.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "report.json": "2ffcd029bad6ef140556e57cab7276d02e23e8fddfcdd8d85eac9c1fa0bea365"
+  }
+}

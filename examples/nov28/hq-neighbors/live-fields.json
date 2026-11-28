@@ -1,0 +1,43 @@
+{
+  "archive_sha256": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+  "data_units": 0,
+  "complete_groups": 0,
+  "selection_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "all_positions": {
+    "eligible": 0,
+    "transient_excluded": 0,
+    "inconclusive": 0
+  },
+  "by_position": {
+    "1": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "2": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "3": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "4": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    }
+  },
+  "cases": [],
+  "all_assigned_counters": [],
+  "previously_seen": [],
+  "primary": null,
+  "primary_summary": {
+    "eligible": 0,
+    "transient_excluded": 0,
+    "inconclusive": 0
+  },
+  "first_restriction": null
+}

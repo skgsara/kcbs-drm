@@ -1,0 +1,103 @@
+{
+  "closed_utc": "2026-11-28T01:29:22.887038+00:00",
+  "application_commit": "67e3dbff0e9aa85b3fc73da9ce5ff4d5bd008eb7",
+  "receiver_runs": 1,
+  "frozen_profile": "wiener, mlc=1, nominal tuning, whole 120 seconds",
+  "raw_record_crc_summary": {
+    "all_records": 267,
+    "records_728": 267,
+    "raw_complete_crc_accepted_DU": 0,
+    "crc_good_packets_by_physical_index": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "transport": {
+    "utc": "2026-11-28T01:28:26.593721+00:00",
+    "all_assigned_counters": [],
+    "accepted_du_rows": 0,
+    "packet_only_counters": [],
+    "assigned_packet_coordinates": 0,
+    "historical_overlap": [],
+    "chronological_complete": [],
+    "primary": null,
+    "earliest_complete_phase0_source_record": null,
+    "du_archive_sha256": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+    "provenance_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "history_file_sha256": "2673b0cf0834cb4e759243678282fa1e7717b255593a92197a319825bce58f30",
+    "msc_sha256": "80f38075146480ed944df945987af0d4216b9d941a50e1de5ea7af8ba35d17c7",
+    "msc_bytes": 195444
+  },
+  "application": {
+    "archive_sha256": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+    "data_units": 0,
+    "complete_groups": 0,
+    "selection_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "all_positions": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "by_position": {
+      "1": {
+        "eligible": 0,
+        "transient_excluded": 0,
+        "inconclusive": 0
+      },
+      "2": {
+        "eligible": 0,
+        "transient_excluded": 0,
+        "inconclusive": 0
+      },
+      "3": {
+        "eligible": 0,
+        "transient_excluded": 0,
+        "inconclusive": 0
+      },
+      "4": {
+        "eligible": 0,
+        "transient_excluded": 0,
+        "inconclusive": 0
+      }
+    },
+    "cases": [],
+    "all_assigned_counters": [],
+    "previously_seen": [],
+    "primary": null,
+    "primary_summary": {
+      "eligible": 0,
+      "transient_excluded": 0,
+      "inconclusive": 0
+    },
+    "first_restriction": null
+  },
+  "hashes": {
+    "opening.json": "e8f4051565e526b8014acc27592d98f70ea7cc0da7a2330241ad5728898658bb",
+    "plan.json": "86b1c13551ed1fa4366a9dcbafb7911cbd65bcd234856f29b8098a5d4fec9429",
+    "sealed-receipt.json": "10d0a7cb33ca95a3541168f504ec42140c05ff73a1e2ea42ee86f954f7cd1bc8",
+    "historical-counter-ids.json": "2673b0cf0834cb4e759243678282fa1e7717b255593a92197a319825bce58f30",
+    "flac-receipt.json": "241ff6443a2537c8e92917e4981a9f94eb9a8684f403b1e77f55a38da174a543",
+    "novelty-before-scoring.json": "2bda534052d2a0a33cf5eb07a404d502df1c61006f380e9f2d0ba37976a5be82",
+    "field-results.json": "ce1bbee6ce126939e1e8145902f0d44717c60bc6204f319798b03faeae72d6d4",
+    "replay/rf/manifest.json": "434cb444391aad23dd173a56687f6d0da2071be48c186f151bb1a85463b68300",
+    "replay/du/report.json": "2ffcd029bad6ef140556e57cab7276d02e23e8fddfcdd8d85eac9c1fa0bea365",
+    "replay/rf/msc.bin": "80f38075146480ed944df945987af0d4216b9d941a50e1de5ea7af8ba35d17c7",
+    "replay/du/data_units.npz": "f2f478c0dcdef3c2b40c8824bc5b94e5b361205880e79c1f15369a0b034c4481",
+    "replay/du/provenance.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "lossless_copy": {
+    "utc": "2026-11-28T01:28:08.299066+00:00",
+    "name": "7l4iou-6140-20261128T0125Z-iq48.flac",
+    "flac_sha256": "1c1b00fbb25e639cd013092f94f318e91bd78ea24877d8fa5c4611449ac83aab",
+    "bytes": 16846165,
+    "pcm_sha256": "12bebe96d8649841512fdc0e01030ef355ddb224222bd9a8d1db6d09493c95ad",
+    "wav_sha256": "55a937bbfa66173141822d1fa578451e8da9ef3ff2da5c37f6e083bb2fc87b3c",
+    "compared_sample_pairs": 5760000,
+    "comparison": "All stereo PCM16 sample pairs decoded from the FLAC compared byte by byte against the source WAV",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "interpretation": "No assigned packet coordinates, complete counter, or eligible received triple. The conditional rule was not exercised on this recording."
+}
