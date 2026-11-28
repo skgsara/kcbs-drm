@@ -1,6 +1,6 @@
 # Does daily programme repetition produce identical EVS frames?
 
-We found repeat audio in two consecutive days of public KCBS-2 programme archives. On the November 19 file clock, the ten seconds at 05:01:40 matched a passage 9.32 seconds earlier on the November 20 file clock, with a waveform correlation of 0.987. The opening contains a recurring passage, so more than one time offset can align parts of it. The two archives carry AAC audio. A separate pair of 3205 kHz DRM recordings from November 25 and 26 lets us test whether any directly readable first-position frame bytes repeated. The two studies cover different dates. [Archive audio and controls](archive-audio.md)
+We found repeat audio in two consecutive days of public KCBS-2 programme archives. On the November 19 file clock, the ten seconds at 05:01:40 matched a passage 9.32 seconds earlier on the November 20 file clock, with a waveform correlation of 0.987. The opening contains a recurring passage, so more than one time offset can align parts of it. The two archives carry AAC audio. Separate 3205 kHz DRM recordings from November 25 and 26 let us test whether the directly transmitted bytes of an EVS frame repeated at any position on the other day. [Archive audio and controls](archive-audio.md)
 
 ## First-position frames from two mornings of 3205 kHz DRM
 
@@ -9,6 +9,14 @@ The 3205 kHz archive already contains two mornings whose recorded **time of day 
 We compared the first-position frame's mode and 21 directly readable payload bytes in every completely received, CRC-checked data unit in the three source files. This included extra time outside the clock overlap and allowed any relative playback delay. The first day yielded 20,190 distinct 22-byte values and the second day 7,185. **Zero values occurred on both days.** The count covers P1-to-P1 comparisons only. Two independent sites receiving the same 6140 kHz transmission provided a positive control with 400 distinct matching P1 values and 80 matching sequences of five successive first positions. [Inputs, denominators and controls](daily-p1.json) · [Reproduction script](daily_p1.py)
 
 This rules out an identical complete P1 word in the two observed P1 sets: at least one directly transmitted octet differs in every comparison. The same piece of music can still produce different bytes. The public first-day listening example includes concealment and inferred material. We did not locate a corresponding continuous listening export for the second day's 05:00 recording that would establish whether the programme in these particular files matched acoustically. [First-day listening release](https://github.com/KoryoFront/kcbs2-drm-decode/releases/tag/november-quiet-review)
+
+## Could the same word appear at a different position the next day?
+
+We compared each of the four positions on November 25 with all four positions on November 26, allowing any playback delay. The 94,600 observed frames on the first day gave 80,760 distinct 22-byte values. The 33,480 on the second day gave 28,740. **Every pair of values from opposite days differed in at least six of the 22 directly observable bytes.** This rules out an identical complete EVS word anywhere in the two sets of received frames, including a first-position word recurring at the second position. The missing frames and the rest of each day's broadcast remain untested. [Per-position counts, source hashes and distance check](role-comparison.json)
+
+To check the six-byte lower bound across 2,321,042,400 possible pairs, we split each 22-byte value into six disjoint sets of offsets. If two frames differ at five or fewer offsets, at least one set must agree in full. Only 462 cross-day pairs shared even one complete set. We compared all 22 bytes in each of those pairs and found at least six differences every time. [Distance counts and constructed controls](role-comparison.json)
+
+Two stations receiving the same transmission recovered 1,600 distinct exact matches, 400 at each corresponding position. The longest match continued through 500 consecutive frames, or 10 seconds. To reproduce both comparisons from the repository root, run `python examples/receiver-control/repeated-programme/role_comparison.py --check`. [Comparison script](role_comparison.py)
 
 ## Same music under controlled encoding
 
