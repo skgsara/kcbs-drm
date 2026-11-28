@@ -1,0 +1,58 @@
+{
+  "synthetic_sender_row_sha256": "cb5d6e619ceeb67ff5c4ffaa5135b61e5f23ea8c9da1ab028c22ba82613ae6d9",
+  "clean_unchanged": true,
+  "single_bit_trials_per_packet": 1456,
+  "single_bit_exact_by_packet": [
+    1456,
+    1456,
+    1456,
+    1456
+  ],
+  "single_bit_trials": 5824,
+  "single_bit_matching_sender": 5824,
+  "one_payload_bit_error": {
+    "packet_ordinal": 1,
+    "damaged_wire_bits_msb0": [
+      64
+    ],
+    "proposed_wire_bit_msb0": 64,
+    "input_checks": {
+      "packet_crcs_pass": 3,
+      "data_unit_crc_pass": false
+    },
+    "output_checks": {
+      "packet_crcs_pass": 4,
+      "data_unit_crc_pass": true
+    },
+    "proposed_matches_sender": true
+  },
+  "two_damaged_packets": {
+    "outcome": "multiple_failed_packet_crcs",
+    "input_checks": {
+      "packet_crcs_pass": 2,
+      "data_unit_crc_pass": false
+    },
+    "unchanged": true,
+    "proposal": null
+  },
+  "three_payload_bit_errors": {
+    "packet_ordinal": 1,
+    "damaged_wire_bits_msb0": [
+      48,
+      52,
+      59
+    ],
+    "proposed_wire_bit_msb0": 64,
+    "outcome": "single_bit_proposed",
+    "input_checks": {
+      "packet_crcs_pass": 3,
+      "data_unit_crc_pass": false
+    },
+    "output_checks": {
+      "packet_crcs_pass": 4,
+      "data_unit_crc_pass": true
+    },
+    "proposed_matches_sender": false,
+    "proposed_row_sha256": "bed4c0aee2b48d4445350442596559ef1281674f02c842cd324f6b1b5f18b9a4"
+  }
+}
