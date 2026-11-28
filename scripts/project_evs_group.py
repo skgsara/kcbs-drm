@@ -103,6 +103,8 @@ def main():
             from evs_core_history import core_history
             from evs_gsc_fields import gsc_fields
             from evs_intra_word import intra_word
+            from evs_transition_tags import transition_tags
+            result["transition_tags"] = transition_tags(result["slots"])
             result["core_history"] = core_history(result["slots"])
             result["intra_word"] = intra_word(result["slots"])
             result["gsc_fields"] = gsc_fields(result["slots"])
