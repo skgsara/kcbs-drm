@@ -73,3 +73,30 @@ same clock.
 
 The 13:00-style null outcome is possible: zero CRC-valid groups at a receiver
 or carrier will be reported as such.
+
+## Amendment registered 2026-11-28 ~19:40 UTC, before session M began
+
+A second label class is added. It is reported separately and never merged
+with the fill-crib class.
+
+- **Class B, carousel-recovered.** The tool is
+  `scripts/recover_carousel_keys.py` exactly as committed at `996bbe4`, run
+  with default settings: strict two-displacement linking, the
+  ambiguous-source filter, mandatory P±1..3 controls and the default phrase
+  corpus. It is seeded only from this acquisition's own class-A (fill-crib)
+  keys.
+- **Run timing.** The tool runs once per receiver and carrier, after salvage,
+  and its `keys.npz` content hash is committed before any method reads the
+  set.
+- **Excluded groups.**
+  - Any group whose class-B key disagrees with its class-A key is excluded
+    from both classes and counted.
+  - If a capture's controls link at a wrong period, that capture's class-B
+    keys are discarded.
+- **What each class labels.**
+  - Role 0 is checked with the EVS decoder-flag gate.
+  - The check cannot see ks[11..15]. Class-B T1 labels therefore rest on
+    record CRC and recurrence, or on two-displacement agreement.
+
+On DEV, leave-one-capture-out runs of this tool agreed with the frozen labels
+in 623/623 and 365/365 overlapping groups, with no wrong key.
