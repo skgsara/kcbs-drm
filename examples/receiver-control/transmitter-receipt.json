@@ -1,0 +1,150 @@
+{
+  "service_id": "EF0201",
+  "label": "DRM IQ TEST",
+  "first_counter": 16909060,
+  "groups": 40,
+  "duration_seconds": 69.6,
+  "scored_seconds": 48,
+  "guard_rows_before": 30,
+  "scored_rows": 120,
+  "guard_rows_after": 24,
+  "encoding": "48 kHz stereo PCM16 IQ",
+  "sample_pairs": 3340800,
+  "sample_sha256": "a5f6130219fb38c1286bfab8df36777a897ca84706e580de0a09f739fcc40aaf",
+  "template_sha256": "cb378996150b65393c4bd84a4ef818fc3ca790ceacf03b1ffe6c91b2f7bc0d47",
+  "modified_rows_sha256": "c1e924e45c7d0d32f19de02d005401cf28b40bdd65c8c9e2558980ae4413871c",
+  "modification": "Flip the MSB of the stored CRC high octet at offset 180 of each selected 182-byte packet.",
+  "changes": [
+    {
+      "group_index": 8,
+      "counter": 16909068,
+      "phase": 0,
+      "quarter": 0,
+      "scored_row": 24,
+      "row_byte": 180,
+      "original_crc": "9804",
+      "transmitted_crc": "1804"
+    },
+    {
+      "group_index": 9,
+      "counter": 16909069,
+      "phase": 0,
+      "quarter": 1,
+      "scored_row": 27,
+      "row_byte": 362,
+      "original_crc": "1919",
+      "transmitted_crc": "9919"
+    },
+    {
+      "group_index": 10,
+      "counter": 16909070,
+      "phase": 0,
+      "quarter": 2,
+      "scored_row": 30,
+      "row_byte": 544,
+      "original_crc": "7f47",
+      "transmitted_crc": "ff47"
+    },
+    {
+      "group_index": 11,
+      "counter": 16909071,
+      "phase": 0,
+      "quarter": 3,
+      "scored_row": 33,
+      "row_byte": 726,
+      "original_crc": "a5ae",
+      "transmitted_crc": "25ae"
+    },
+    {
+      "group_index": 12,
+      "counter": 16909072,
+      "phase": 1,
+      "quarter": 0,
+      "scored_row": 37,
+      "row_byte": 180,
+      "original_crc": "304d",
+      "transmitted_crc": "b04d"
+    },
+    {
+      "group_index": 13,
+      "counter": 16909073,
+      "phase": 1,
+      "quarter": 1,
+      "scored_row": 40,
+      "row_byte": 362,
+      "original_crc": "4f7f",
+      "transmitted_crc": "cf7f"
+    },
+    {
+      "group_index": 14,
+      "counter": 16909074,
+      "phase": 1,
+      "quarter": 2,
+      "scored_row": 43,
+      "row_byte": 544,
+      "original_crc": "7d77",
+      "transmitted_crc": "fd77"
+    },
+    {
+      "group_index": 15,
+      "counter": 16909075,
+      "phase": 1,
+      "quarter": 3,
+      "scored_row": 46,
+      "row_byte": 726,
+      "original_crc": "47c2",
+      "transmitted_crc": "c7c2"
+    },
+    {
+      "group_index": 16,
+      "counter": 16909076,
+      "phase": 2,
+      "quarter": 0,
+      "scored_row": 50,
+      "row_byte": 180,
+      "original_crc": "f72a",
+      "transmitted_crc": "772a"
+    },
+    {
+      "group_index": 17,
+      "counter": 16909077,
+      "phase": 2,
+      "quarter": 1,
+      "scored_row": 53,
+      "row_byte": 362,
+      "original_crc": "d8c6",
+      "transmitted_crc": "58c6"
+    },
+    {
+      "group_index": 18,
+      "counter": 16909078,
+      "phase": 2,
+      "quarter": 2,
+      "scored_row": 56,
+      "row_byte": 544,
+      "original_crc": "a751",
+      "transmitted_crc": "2751"
+    },
+    {
+      "group_index": 19,
+      "counter": 16909079,
+      "phase": 2,
+      "quarter": 3,
+      "scored_row": 59,
+      "row_byte": 726,
+      "original_crc": "3264",
+      "transmitted_crc": "b264"
+    }
+  ],
+  "sender_packets": 480,
+  "sender_packets_with_intact_crc": 468,
+  "sender_du_payloads_with_intact_crc": 120,
+  "modulator_sha256": "e4190850772241d9c4bef86160de910bbbda4fbbac48636bc82d31cc12bc40a2",
+  "modulator_source_sha256": "b593f6d6f28958af58c1b9e4ccbecefd4b1d70a0eb3355b0bbbef31122aaaeb8",
+  "generated_wav_sha256": "4aa73383ec14daa086abf42260f3a3ba6c8bb147734dee56ee5b70b1454f8f8d",
+  "flac": "challenge-iq48.flac",
+  "flac_bytes": 7812617,
+  "flac_sha256": "ae12fed7ed9aab2c583b6ad1aefdbd32cecc52b20adebd16a4939c9aa48931c6",
+  "lossless_round_trip": true,
+  "libsndfile_version": "1.2.2"
+}
