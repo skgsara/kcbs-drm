@@ -24,6 +24,26 @@ def make_record(body, *, sequence=0, toggle=0, final=False):
     return with_crc + bytes(-len(with_crc) % 16) + (b"" if final else b"\xbb" * 16)
 
 
+def make_opening(title, *, category="기상정보", number="1", toggle=0, per_copy=b"\x00" * 6):
+    """Item-opening record (header 0x45 0xFC) with its fixed metadata frame and a fill block."""
+    body = bytearray(92)
+    body[0:2] = per_copy[0:2]
+    body[2:4] = b"\x08\x00"
+    body[4:6] = per_copy[2:4]
+    body[6:8] = b"\xab\x7e"
+    body[8:12] = per_copy[4:6] + b"\x00\x00"
+    body[12:14] = b"\x51\x00"
+    body[15] = 0xAB
+    body[16:18] = b"\x7e\x00"
+    body[18:20] = number.encode("utf-16le")
+    body[20:22] = b"\x2e\x00"
+    body[22:30] = category.encode("utf-16le")
+    encoded = title.encode("utf-16le")
+    body[36:36 + len(encoded)] = encoded
+    payload = bytes([0x45 | (0x80 if toggle else 0), 0xFC]) + bytes(body)
+    return payload + reference_crc(payload).to_bytes(2, "big") + b"\xbb" * 16
+
+
 def flip(data, index):
     result = bytearray(data)
     result[index] ^= 1
@@ -133,6 +153,61 @@ class TextRecordsTest(unittest.TestCase):
         row = make_record(b"A\0", final=True)
         self.assertEqual(parse_record(row + b"\xbb" * 16,
                                       known_bytes=b"\x01" * len(row) + bytes(16)).size, len(row))
+
+    def test_extended_accepts_ideographic_indent_only_when_enabled(self):
+        text = "\u3000평양의 날씨"
+        row = make_record(text.encode("utf-16le"))
+        with self.assertRaisesRegex(RecordError, "charset gate"):
+            parse_record(row)
+        self.assertEqual(parse_record(row, extended=True).text, text)
+        for bad in ("A\x00", "A\x1b", "A\u202e", "\u3000" * 3, ""):
+            with self.subTest(text=bad):
+                with self.assertRaisesRegex(RecordError, "charset gate"):
+                    parse_record(make_record(bad.encode("utf-16le")), extended=True)
+
+    def test_extended_final_consumes_known_fill_but_never_requires_it(self):
+        row = make_record(b"A\0", final=True)
+        self.assertEqual(parse_record(row + b"\xbb" * 16, extended=True).size, len(row) + 16)
+        self.assertEqual(parse_record(row, extended=True).size, len(row))
+        self.assertEqual(parse_record(row + bytes(16), extended=True).size, len(row))
+        unknown_fill = b"\x01" * len(row) + bytes(16)
+        self.assertEqual(parse_record(row + b"\xbb" * 16, known_bytes=unknown_fill,
+                                      extended=True).size, len(row))
+        # The scanner skips the consumed fill block and finds the next record.
+        nxt = make_record(b"B\0", sequence=3)
+        self.assertEqual([(r.offset, r.text) for r in scan_records(row + b"\xbb" * 16 + nxt,
+                                                                    extended=True)],
+                         [(0, "A"), (len(row) + 16, "B")])
+
+    def test_extended_opening_record_requires_fixed_metadata_frame(self):
+        row = make_opening("11월 26일 날씨", per_copy=b"\x12\x34\x56\x78\x9a\xbc")
+        record = parse_record(row, extended=True)
+        self.assertEqual(record.text, "~1.기상정보\n11월 26일 날씨")
+        self.assertEqual((record.size, record.body_length, record.sequence, record.final),
+                         (len(row), 92, 15, False))
+        self.assertEqual(parse_record(make_opening("제목", toggle=1), extended=True).item_toggle, 1)
+        with self.assertRaisesRegex(RecordError, "charset gate"):
+            parse_record(row)                      # default grammar: control bytes in the frame
+        for index in (4, 5, 8, 9, 14, 15, 17, 18, 19, 22, 23, 32, 37):
+            with self.subTest(index=index):
+                bad = bytearray(row)
+                bad[index] ^= 0x01
+                payload = bytes(bad[:94])
+                bad[94:96] = reference_crc(payload).to_bytes(2, "big")
+                with self.assertRaisesRegex(RecordError, "metadata header"):
+                    parse_record(bytes(bad), extended=True)
+        with self.assertRaisesRegex(RecordError, "category failed"):
+            parse_record(make_opening("제목", category="ABCD"), extended=True)
+        with self.assertRaisesRegex(RecordError, "embedded NUL"):
+            parse_record(make_opening("제\x00목"), extended=True)
+        with self.assertRaisesRegex(RecordError, "CRC mismatch"):
+            parse_record(flip(row, 50), extended=True)
+
+    def test_extended_scan_matches_default_on_default_grammar_streams(self):
+        first = make_record(b"X\0", final=True, toggle=1, sequence=15)
+        last = make_record("평양".encode("utf-16le"), sequence=2)
+        wire = bytes(16) + first + flip(make_record(b"Y\0"), 4) + last
+        self.assertEqual(list(scan_records(wire)), list(scan_records(wire, extended=True)))
 
     def test_replay_ignores_input_flags_and_requires_exact_window(self):
         row = make_record(b"A\0")
