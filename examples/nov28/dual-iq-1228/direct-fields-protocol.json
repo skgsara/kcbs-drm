@@ -1,0 +1,8 @@
+{
+  "frozen_utc": "2026-11-28T12:28:25.586303+00:00",
+  "primary_protocol_sha256": "8c28550ba7f0517837badd90f6ce8abc74ac5a172a1fe2a771d63ad008cf39a1",
+  "receiver": "41b4e2d0ebdedb5e8e8f452b19154dd302cc7f4b",
+  "predictor": "scripts/evs_gsc_fields.py:mode_predictions",
+  "predictor_sha256": "204b9b920134255a2507bdc656364283c1587db34a218a6ef5d8d92b54ad84e9",
+  "scope": "Secondary field verification; use only the CRC-accepted 3205 mode byte as predictor and the 6140 physical packet containing payload octet 4 as independent target. Withhold the 3205 target. Use the two existing mode_predictions fields without fitting. Score the primary counter separately and all assigned 3205 counters as secondary, including those without peer evidence. Report eligible, checked, matched, wrong and missing peer fields by rule and position. No hidden labels, method reruns or best-counter substitution. Empty captures and absent peers yield zero comparisons."
+}
