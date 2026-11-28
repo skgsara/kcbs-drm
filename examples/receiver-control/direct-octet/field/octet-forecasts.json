@@ -1,0 +1,87 @@
+{
+  "native_sha256": "6cdc6f61239c3bfbad2a0e16da314ab89f8bacc017fc89f74fbb3d599358a879",
+  "transport": {
+    "msc_rows": 294,
+    "packet_crc_checks": 1176,
+    "physical_packets_crc": 886,
+    "physical_packets_crc_and_header": 886,
+    "native_complete_dus": 156
+  },
+  "counters": [
+    43872873,
+    43872874,
+    43872882,
+    43872887,
+    43872888,
+    43872889,
+    43872895,
+    43872896,
+    43872897,
+    43872903,
+    43872906,
+    43872907,
+    43872908,
+    43872917,
+    43872919,
+    43872920,
+    43872926,
+    43872927,
+    43872934,
+    43872936,
+    43872941,
+    43872945,
+    43872950,
+    43872959,
+    43872962
+  ],
+  "primary": {
+    "counter": 43872873,
+    "phase0_row": 8,
+    "du_sha256": [
+      "1748062a6eb9a6effff686aec5f77e6ef4db9cc886e133f60300ba57eb115bbc",
+      "3b10a0cccf099d82c13410219ed0995435fcd29f9cb1da0593783a88de53652b",
+      "dc5fcaec29a17e2bc12b821fe3a4c27ab437522d1d0711c2adf4db056586e75c"
+    ]
+  },
+  "physical_slots": 1500,
+  "reserved_centers": 500,
+  "same_mode_centers": 75,
+  "context_sha256": "f28cc6af1bf21e66ceee2f4f69af30949f370595a92538ea63ccf9ca3e803226",
+  "prediction_columns": [
+    "counter",
+    "zero_based_slot",
+    "mode",
+    "neighbor_byte",
+    "mode_baseline_byte"
+  ],
+  "predictions": [
+    [
+      43872903,
+      22,
+      82,
+      29,
+      13
+    ],
+    [
+      43872934,
+      13,
+      80,
+      32,
+      18
+    ],
+    [
+      43872934,
+      40,
+      83,
+      40,
+      157
+    ],
+    [
+      43872962,
+      16,
+      118,
+      20,
+      19
+    ]
+  ]
+}
