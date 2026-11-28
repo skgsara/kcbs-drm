@@ -1,0 +1,83 @@
+{
+  "1232": {
+    "original_case": "same-6140-1232",
+    "sites": {
+      "left": {
+        "msc_sha256": "ffd62e982e8dbd4d415d0c1d51a81b10bb380244bc2fcab8248ce48a5ec86172",
+        "cells_sha256": "7d710f3e3cdf85a8e7b9ae4bc9879e1a247fffa52356498795fef0f1d97c84a0",
+        "native_rows": 218,
+        "observer_blocks": 218,
+        "accepted_native_packets": 451
+      },
+      "right": {
+        "msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+        "cells_sha256": "2270682388f651c717dbaf309901d4b9c82080c00f71e8849b720aafe953333c",
+        "native_rows": 220,
+        "observer_blocks": 220,
+        "accepted_native_packets": 859
+      }
+    },
+    "status": "soft_comparison",
+    "coverage": {
+      "witnessed_pairs": 135,
+      "soft_decoded_rows": 135,
+      "changed_rows": 53,
+      "peer_added_packets": 88,
+      "soft_added_packets": 2,
+      "new_complete_dus_from_hard_pool": 51,
+      "new_complete_dus_from_soft": 2,
+      "preserved_left_packets": 451,
+      "output_accepted_packets": 541,
+      "output_complete_dus": 135
+    },
+    "combined_msc_sha256": "f6f13a187c60c3756f6347fb7a49e9cd804dece6b3cad8a3288dc5e31fa1300f",
+    "native_complete_groups": {
+      "left": 17,
+      "right": 65,
+      "combined": 38
+    },
+    "selected_counter": 43945654,
+    "first_partial_counter": null
+  },
+  "1347": {
+    "original_case": "edogawa-audio-branch",
+    "sites": {
+      "left": {
+        "msc_sha256": "3d42c8038a506c8ee6aaee4dfb08e3229d166a46671dc1a1ca8f0d31aa28c69f",
+        "cells_sha256": "17547b4f734144559fefdddd2a491424dbedddff426c6c93ec766bf734609bf3",
+        "native_rows": 111,
+        "observer_blocks": 201,
+        "accepted_native_packets": 26
+      },
+      "right": {
+        "msc_sha256": "aec269eb2a4c3c5a878938ae866b6f44c24bb745d1378321ecc7c3f454c6ffc8",
+        "cells_sha256": "00f932e0fa6bfaa3b056957d22a5e2ade43250fff7e7ee5ab6ef2b4fec2669c6",
+        "native_rows": 108,
+        "observer_blocks": 272,
+        "accepted_native_packets": 0
+      }
+    },
+    "status": "no_witnessed_pairs",
+    "coverage": {
+      "witnessed_pairs": 0,
+      "soft_decoded_rows": 0,
+      "changed_rows": 0,
+      "peer_added_packets": 0,
+      "soft_added_packets": 0,
+      "new_complete_dus_from_hard_pool": 0,
+      "new_complete_dus_from_soft": 0,
+      "preserved_left_packets": 26,
+      "output_accepted_packets": 26,
+      "output_complete_dus": 4
+    },
+    "combined_msc_sha256": "3d42c8038a506c8ee6aaee4dfb08e3229d166a46671dc1a1ca8f0d31aa28c69f",
+    "native_complete_groups": {
+      "left": 0,
+      "right": 0,
+      "combined": 0
+    },
+    "selected_counter": null,
+    "first_partial_counter": 43949404
+  },
+  "scope": "The two retrospective development recordings are part of the prior-exposure inventory. The 12:32 counts cover all witnessed pairs. The earlier split evaluation used the final 73 witnessed pairs."
+}

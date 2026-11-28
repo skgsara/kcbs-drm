@@ -1,25 +1,25 @@
 """Replay the frozen 12:32 development comparison using deinterleaved MSC cells and a native decoder."""
 import argparse
 from collections import Counter, defaultdict
-from dataclasses import dataclass
 from hashlib import sha256
 import json
 from pathlib import Path
 import struct
 import subprocess
 
-import numpy as np
+import sys
 
 from proof import CASES, accepted, data_unit, receipts, wire_rows
 
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parents[4] / "scripts"))
+from drm_msc_cells import combine, decode, read_blocks
 ALIGNMENT_SHA = "31605d50dea3f9a89ef9fef1b351eedfbb882a234b93038473e23331d8e30207"
 PROTOCOL_SHA = "a5c3c01b4331ad40672d6c9d95f2dd9fb6192cec421200c8697c26c85d964870"
 SITES = ("edogawa", "yokohama")
 SHIFTS = {"aligned": (0, 0), "cell_minus1": (0, -1), "cell_plus1": (0, 1),
           "block_minus1": (-1, 0), "block_plus1": (1, 0)}
 COHORTS = ("calibration", "guard", "evaluation")
-HEADER = struct.Struct("<28i")
 METRICS = ("rows", "edogawa_packets", "yokohama_packets", "union_packets", "combined_packets", "matching_packets",
            "added_packets", "lost_packets", "conflicting_packets", "edogawa_dus", "yokohama_dus", "union_dus",
            "combined_dus", "matching_dus", "added_dus", "lost_dus", "conflicting_dus")
@@ -30,60 +30,6 @@ def checked_file(path, digest):
     if sha256(raw).hexdigest() != digest:
         raise ValueError(f"{path.name} differs from its published checksum")
     return raw
-
-
-@dataclass
-class Block:
-    header: tuple
-    cells: np.ndarray
-    hard: bytes
-
-    def geometry(self):
-        # Disregard callback ordinal, current receiver frame ID and SNR.
-        return self.header[1:10] + self.header[11:27]
-
-
-def read_blocks(raw):
-    if raw[:8] != b"MSCObs1\n":
-        raise ValueError("unsupported MSC observer format")
-    offset = 8
-    blocks = []
-    while offset < len(raw):
-        h = HEADER.unpack_from(raw, offset)
-        offset += HEADER.size
-        count, bits = h[1:3]
-        if h[0] != len(blocks) or not 0 < count < 100000 or not 0 < bits < 1000000:
-            raise ValueError("invalid observer block index or dimensions")
-        cells = np.frombuffer(raw, dtype="<f8", count=count * 3, offset=offset).reshape(count, 3)
-        offset += count * 24
-        size = (bits + 7) // 8
-        hard = raw[offset:offset + size]
-        if len(hard) != size:
-            raise ValueError("truncated observer hard decisions")
-        offset += size
-        blocks.append(Block(h, cells, hard))
-    return blocks
-
-
-def decode(executable, items):
-    payload = bytearray()
-    for block, cells in items:
-        h = block.header
-        if h[5] != 1:
-            raise ValueError("expected the standard 16-QAM mapping")
-        params = (h[1], h[2], h[3], h[4], h[6], h[7], h[11], *h[18:26])
-        payload.extend(struct.pack("<15i", *params))
-        payload.extend(np.ascontiguousarray(cells, dtype="<f8").tobytes())
-    raw = subprocess.run([str(executable)], input=payload, stdout=subprocess.PIPE, check=True).stdout
-    offset = 0
-    result = []
-    for block, _ in items:
-        finish = offset + len(block.hard)
-        result.append(raw[offset:finish])
-        offset = finish
-    if offset != len(raw):
-        raise ValueError("native decoder output length differs from the declared block sizes")
-    return result
 
 
 def load_site(observer, site, decoder):
@@ -110,35 +56,6 @@ def load_site(observer, site, decoder):
     summary = dict(native_rows=len(wire), standalone_exact=len(reproduced), msc_sha256=receipt["msc_sha256"],
                    soft_sha256=sha256(raw).hexdigest())
     return wire, rows, summary
-
-
-def weighted_cells(block):
-    cells = block.cells
-    usable = np.isfinite(cells).all(axis=1) & (cells[:, 2] > 0) & (cells[:, 2] < 1e30)
-    power = np.zeros(len(cells))
-    xy = np.zeros_like(cells[:, :2])
-    if np.any(usable):
-        gains = cells[usable, 2] ** 2
-        # The observer stores Dream's block SNR in millidecibels.
-        power[usable] = 10**(block.header[27] / 10000.0) * gains / gains.mean()
-        xy[usable] = cells[usable, :2]
-    return power, xy
-
-
-def combine(edogawa, yokohama, cell_shift):
-    left_weights, left = weighted_cells(edogawa)
-    right_weights, right = weighted_cells(yokohama)
-    if cell_shift:
-        right_weights = np.roll(right_weights, -cell_shift, axis=0)
-        right = np.roll(right, -cell_shift, axis=0)
-    weights = left_weights + right_weights
-    usable = weights > 0
-    result = np.zeros((len(weights), 3), dtype="<f8")
-    numerator = left_weights[:, None] * left + right_weights[:, None] * right
-    result[usable, :2] = numerator[usable] / weights[usable, None]
-    result[:, 2] = 3.4e38  # Dream's ERASURE_TAG_VALUE when neither receiver supplies a usable cell.
-    result[usable, 2] = np.sqrt(weights[usable])
-    return result
 
 
 def grade(left, right, candidate):
