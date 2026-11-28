@@ -1,0 +1,98 @@
+{
+  "scope": "Five retrospective frozen passes on public FLAC excerpts. Each starts cold at sample zero of its FLAC and takes the entire file, once, at nominal tuning with Wiener frequency/time interpolation 2/1 and modulation metric 0. All intervals are half-open complex sample indices. A failure or empty control channel remains in the report.",
+  "observer_sha256": "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82",
+  "observer_patch_sha256": "f41861a9d948c2bccd1026493208272a07feb8c2caf5e150f916c9d1b6c5b593",
+  "source_tools": {
+    "scripts/demod_iq_window.py": "fb3cc1cee294e995ee80220f55c8bd8931f53fece482c2b92f92754892eba662",
+    "scripts/resample_iq.py": "2da34edc3e8349639d1f50dbab13ebbc3ca59050d1e8f51f6fcaf6c28cc6e366",
+    "scripts/inspect_drm_signalling.py": "93d4d411dec8888f48c1289eed301034460069b98d26220f120e46db7fc6056e"
+  },
+  "acceptance": "Require FLAC and little-endian PCM SHA-256, full channel/sample geometry and receiver EOF, each original native MSC SHA-256, and original timing SHA-256 wherever supplied. Inspect all observed FAC and SDC callbacks, including CRC failures in the denominators. Report CRC-valid service and channel states, all SDC entity types and exact same-version allocations/descriptor envelopes, repeated peer evidence and isolated anomalous CRC passes. Interpret no component from a failed/malformed block and make no claim about payload decoding or callback UTC.",
+  "cases": [
+    {
+      "id": "1228-yokohama",
+      "iq": "examples/nov28/dual-iq-1228/iq/yokohama-3205khz-iq48.flac",
+      "flac_sha256": "b09928f6a61be8a9599727630b8ebf26e492533a332adc5bb509a38230be15e6",
+      "pcm_sha256": "35b10ff4fc4f8bea69bdc814c1bf5ae555e2b47790a51884e32ce1d2719a2b29",
+      "rate_hz": 48000,
+      "sample_pairs": 5760000,
+      "source_sample_range": [
+        0,
+        5760000
+      ],
+      "frequency_hz": 3205000,
+      "iterations": 1,
+      "msc_sha256": "cca14f30c076e44e6f4639945abe68e0a58f18a78a70dbf501390a5b15208d4c",
+      "timing": "examples/nov28/dual-iq-1228/iq/yokohama-3205khz-iq48.timing.csv",
+      "timing_sha256": "9ca503895701834cc867a8a15508e9eda7aedfb8503ca92362e0e04701dc94ad"
+    },
+    {
+      "id": "1228-edogawa",
+      "iq": "examples/nov28/dual-iq-1228/iq/edogawa-6140khz-iq48.flac",
+      "flac_sha256": "d75cb9a7a17a4b44c394a88f643f52c3f3fbf72581f6425e60c069f1d2df4c86",
+      "pcm_sha256": "67322421dc1362c756820cd647b732009436c31f43644b6e5dcafdcc9d3b750e",
+      "rate_hz": 48000,
+      "sample_pairs": 5760000,
+      "source_sample_range": [
+        0,
+        5760000
+      ],
+      "frequency_hz": 6140000,
+      "iterations": 1,
+      "msc_sha256": "6ec15e2dfecf80ee9d946a81cff5c9ed35e2ec45109ae9bf414deddbaf9d888a",
+      "timing": "examples/nov28/dual-iq-1228/iq/edogawa-6140khz-iq48.timing.csv",
+      "timing_sha256": "271aea0b9e11e3fbe8f083a08e3a9379bd76e76cfe4f2d966d94446ba7c992d6"
+    },
+    {
+      "id": "1232-yokohama",
+      "iq": "examples/nov28/same-6140-1232/iq/yokohama-6140khz-iq48.flac",
+      "flac_sha256": "5e46662e030c068868843ead74451f7c03d2a9bd5d54ed1a79a98c942d5dafd0",
+      "pcm_sha256": "07de4096900b5a55d61963e44439afdad1b5664c89b1c489e06c1144cd8bc622",
+      "rate_hz": 48000,
+      "sample_pairs": 4320000,
+      "source_sample_range": [
+        0,
+        4320000
+      ],
+      "frequency_hz": 6140000,
+      "iterations": 1,
+      "msc_sha256": "267261e04afc6f48ef05a547f7784feb4cc9cf39401bf518697992153bdb0c64",
+      "timing": "examples/nov28/same-6140-1232/iq/yokohama-6140khz-iq48.timing.csv",
+      "timing_sha256": "7396b49eb2568f040369c61b12848ce228ac9f27f8d4a593a8f8052043ea343e"
+    },
+    {
+      "id": "1232-edogawa",
+      "iq": "examples/nov28/same-6140-1232/iq/edogawa-6140khz-iq48.flac",
+      "flac_sha256": "780aef117a8f3445a6879b79e34ecdf2f063047d0aa3d67a1e8f71249889c294",
+      "pcm_sha256": "a216707b869ac1cfa81b01b07987429277bec89e7cd895834d0cdb5cac01927e",
+      "rate_hz": 48000,
+      "sample_pairs": 4320000,
+      "source_sample_range": [
+        0,
+        4320000
+      ],
+      "frequency_hz": 6140000,
+      "iterations": 4,
+      "msc_sha256": "08ff30e342446c25dd7b47d6009fb0ede1f6424df3888353b30aee2d393a1746",
+      "timing": "examples/nov28/same-6140-1232/iq/edogawa-6140khz-iq48.timing.csv",
+      "timing_sha256": "012a939ebfc7efb72e288247294a56833cba1e959cc86ed0bc5643e2fb0c8a74"
+    },
+    {
+      "id": "nov27-3205-360-420",
+      "iq": "examples/nov28/clear-evs-controls/iq-mlc4/3205kHz-360-420s-iq12.flac",
+      "flac_sha256": "e2c0ad1d6a214f8da14c5c9c4da2159e32b5a035fc6d2f61d3fb8bfdbe0c586d",
+      "pcm_sha256": "ec5869c354d8b7782e75308fee467620b997366ab931a2f68f4c611c43d5e65a",
+      "rate_hz": 12000,
+      "sample_pairs": 720000,
+      "source_sample_range": [
+        4320000,
+        5040000
+      ],
+      "frequency_hz": 3205000,
+      "iterations": 4,
+      "msc_sha256": "e3d44c7da7d4c8e4001933aeb613e7aee3b6a98d70cadb311b221a56e064664f",
+      "timing": null,
+      "timing_basis": "Filename-relative UTC only, with no receiver clock supplied."
+    }
+  ]
+}
