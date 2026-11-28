@@ -1,0 +1,640 @@
+{
+  "archive_sources": {
+    "19": {
+      "source": {
+        "metadata": "https://archive.org/metadata/kcbs2.2026-11-19",
+        "media": "https://archive.org/download/kcbs2.2026-11-19/kcbs2.2026-11-19.04_17_21.m4a",
+        "clock_in_filename": "04_17_21",
+        "full_size": 541700594,
+        "archive_listed_full_sha1": "4d8dc603db2708d0837af24624702aeff22770c6",
+        "range_sha256": [
+          "e5e99132b3ea10683a201453460560ca0db42874878afce3c56fcb96f78a1f35",
+          "48495af3dce3a4debb7ecf7db999b2f9d53a4240331b30aef9e34599cd3f126f",
+          "9c7a44539829b9e885a2a18d01c3946f5460cd18319bfacd5637793ebe190b9a"
+        ]
+      },
+      "decoded": {
+        "origin_seconds": 2547,
+        "decoded_seconds": 414,
+        "mono_s16le_sha256": "482671006928f4ff437cebf152e35d563c2f6b585b183124922fbbbdfe976f8f",
+        "aac_packets_checked": 9797,
+        "aac_byte_extent": [
+          26463355,
+          29771234
+        ]
+      },
+      "spectral_input_pcm_sha256": "b6a4e3293edd29f12a781174051cae64a089d88f1c78006040421e5009c8222a"
+    },
+    "20": {
+      "source": {
+        "metadata": "https://archive.org/metadata/kcbs2.2026-11-20",
+        "media": "https://archive.org/download/kcbs2.2026-11-20/kcbs2.2026-11-20.04_17_32.m4a",
+        "clock_in_filename": "04_17_32",
+        "full_size": 593347432,
+        "archive_listed_full_sha1": "2fd9c25de703d03f4b40675ebc5ea29f9d945295",
+        "range_sha256": [
+          "849cd6f04c8b6a3648f3624bdf919fe704df03fbac0c9002b02616d35799d68c",
+          "2740367d7688312651c5670c4707424d60550dabeee8f79ad7029fb463763c53",
+          "7d5c7da8aa732a688674a2a9202d895a95a330d8b23a100fd9c9fb9993a5d1b5"
+        ]
+      },
+      "decoded": {
+        "origin_seconds": 2536,
+        "decoded_seconds": 414,
+        "mono_s16le_sha256": "dc4f3dce1963a67656cfd121728de26386d1f4cb827e6f61527e068e8991b8a6",
+        "aac_packets_checked": 9797,
+        "aac_byte_extent": [
+          27003313,
+          30311468
+        ]
+      },
+      "spectral_input_pcm_sha256": "31410f3d121e6ab1ba51f79e3152caababf823b393a55a1a77cc2daa046a05b7"
+    }
+  },
+  "release": {
+    "name": "KCBS2_NOV25_UNVERIFIED_QUIET_17m40_32k.wav",
+    "sha256": "641bc91cc896440fca731883361d41b6419c962077abde22adb99f86e4f4f97d",
+    "bytes": 67891244,
+    "rate": 32000,
+    "channels": 1,
+    "sample_bits": 16,
+    "samples": 33945600,
+    "mono_8k_pcm_sha256": "0a517235129b6eefaae8341459c5f1f8922e2f13f60f3c054da8c8cb5c747f0a",
+    "url": "https://github.com/KoryoFront/kcbs2-drm-decode/releases/download/november-quiet-review/KCBS2_NOV25_UNVERIFIED_QUIET_17m40_32k.wav"
+  },
+  "analysis_rate_hz": 8000,
+  "band_hz": [
+    300,
+    3000
+  ],
+  "query_duration_s": 10,
+  "query_nov19_filename_clock": "05:01:40",
+  "min_window_rms_dbfs": -55,
+  "nov20_fixed_lag_s": -9.317375,
+  "nov20_fixed_alignment": [
+    {
+      "nov19_s": 60,
+      "target_sample": 405461,
+      "r": 0.849593
+    },
+    {
+      "nov19_s": 90,
+      "target_sample": 645461,
+      "r": 0.965736
+    },
+    {
+      "nov19_s": 100,
+      "target_sample": 725461,
+      "r": 0.987406
+    }
+  ],
+  "nov20_free_search": {
+    "best_start_sample": 384240,
+    "best_start_s": 48.03,
+    "r": 0.998945,
+    "highest_signed_r": 0.998945,
+    "lowest_signed_r": -0.889527,
+    "possible_starts": 2320001,
+    "eligible_starts": 2074417
+  },
+  "nov25_whole_release": {
+    "best_start_sample": 680448,
+    "best_start_s": 85.056,
+    "r": -0.086559,
+    "highest_signed_r": 0.082387,
+    "lowest_signed_r": -0.086559,
+    "possible_starts": 8406401,
+    "eligible_starts": 7703979
+  },
+  "nov25_other_windows_at_selected_alignment": [
+    {
+      "nov19_s": 60,
+      "target_sample": 360448,
+      "r": 0.000499
+    },
+    {
+      "nov19_s": 90,
+      "target_sample": 600448,
+      "r": 0.000272
+    }
+  ],
+  "nov25_reversed_query_free_search": {
+    "best_start_sample": 4939597,
+    "best_start_s": 617.449625,
+    "r": -0.082205,
+    "highest_signed_r": 0.081768,
+    "lowest_signed_r": -0.082205,
+    "possible_starts": 8406401,
+    "eligible_starts": 7703979
+  },
+  "spectral_comparisons": {
+    "scope": "18-band energy changes. Search the five-minute Nov20 excerpt or the entire Nov25 release. Time zero is 05:00 on the earlier archive filename clocks and the file start on Nov25. The 10 s fit can select a separate instance of the recurring motif. The 60 s fit uses the same minute as the original two-day spectral check. Out-of-fit ten-second bins are compared at the selected lag with fixed wrong-time offsets.",
+    "wrong_time_offsets_s": [
+      -30,
+      -10,
+      -2,
+      2,
+      10,
+      30
+    ],
+    "targets": {
+      "20": [
+        {
+          "fit_nov19_seconds": [
+            90,
+            100
+          ],
+          "evaluated_lags": 4999,
+          "best_score": 0.6985,
+          "target_minus_query_s": -51.95,
+          "separate_windows": [
+            {
+              "nov19_s": 30,
+              "score": null,
+              "wrong_time": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 40,
+              "score": null,
+              "wrong_time": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 50,
+              "score": null,
+              "wrong_time": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 60,
+              "score": null,
+              "wrong_time": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                0.0912
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 70,
+              "score": null,
+              "wrong_time": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                -0.0403
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 80,
+              "score": null,
+              "wrong_time": [
+                null,
+                null,
+                null,
+                null,
+                -0.1105,
+                -0.0133
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 100,
+              "score": 0.7101,
+              "wrong_time": [
+                null,
+                0.2196,
+                -0.121,
+                -0.0943,
+                -0.111,
+                -0.0965
+              ],
+              "passes": true
+            },
+            {
+              "nov19_s": 110,
+              "score": -0.0276,
+              "wrong_time": [
+                null,
+                0.0576,
+                -0.0242,
+                0.012,
+                0.0151,
+                0.0145
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 120,
+              "score": -0.0634,
+              "wrong_time": [
+                0.0941,
+                -0.07,
+                -0.0421,
+                0.06,
+                -0.0484,
+                -0.0512
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 130,
+              "score": null,
+              "wrong_time": [
+                0.0442,
+                0.033,
+                null,
+                null,
+                0.1127,
+                0.0079
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 140,
+              "score": -0.0442,
+              "wrong_time": [
+                0.045,
+                0.0553,
+                -0.1245,
+                -0.0008,
+                -0.0841,
+                null
+              ],
+              "passes": false
+            }
+          ]
+        },
+        {
+          "fit_nov19_seconds": [
+            60,
+            120
+          ],
+          "evaluated_lags": 4801,
+          "best_score": 0.7616,
+          "target_minus_query_s": 10.45,
+          "separate_windows": [
+            {
+              "nov19_s": 30,
+              "score": 0.6857,
+              "wrong_time": [
+                null,
+                null,
+                -0.1122,
+                -0.0612,
+                0.1344,
+                -0.0803
+              ],
+              "passes": true
+            },
+            {
+              "nov19_s": 40,
+              "score": 0.6838,
+              "wrong_time": [
+                null,
+                0.2205,
+                -0.1232,
+                -0.0878,
+                -0.1015,
+                -0.0577
+              ],
+              "passes": true
+            },
+            {
+              "nov19_s": 50,
+              "score": 0.7063,
+              "wrong_time": [
+                null,
+                -0.0934,
+                -0.1083,
+                -0.053,
+                0.0942,
+                -0.0294
+              ],
+              "passes": true
+            },
+            {
+              "nov19_s": 120,
+              "score": 0.6616,
+              "wrong_time": [
+                0.1041,
+                0.1556,
+                -0.0887,
+                -0.0601,
+                0.0079,
+                0.0035
+              ],
+              "passes": true
+            },
+            {
+              "nov19_s": 130,
+              "score": 0.4604,
+              "wrong_time": [
+                0.0372,
+                0.1539,
+                -0.0856,
+                null,
+                null,
+                -0.0146
+              ],
+              "passes": true
+            },
+            {
+              "nov19_s": 140,
+              "score": 0.4531,
+              "wrong_time": [
+                0.0916,
+                null,
+                null,
+                0.0509,
+                -0.0228,
+                0.0255
+              ],
+              "passes": true
+            }
+          ]
+        }
+      ],
+      "25": [
+        {
+          "fit_nov19_seconds": [
+            90,
+            100
+          ],
+          "evaluated_lags": 17444,
+          "best_score": 0.4062,
+          "target_minus_query_s": 243.65,
+          "separate_windows": [
+            {
+              "nov19_s": 30,
+              "score": 0.1062,
+              "wrong_time": [
+                -0.0307,
+                null,
+                0.0345,
+                0.0616,
+                -0.0416,
+                -0.0971
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 40,
+              "score": -0.0175,
+              "wrong_time": [
+                0.0195,
+                0.1447,
+                0.011,
+                -0.0368,
+                -0.1151,
+                -0.0172
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 50,
+              "score": 0.0553,
+              "wrong_time": [
+                null,
+                -0.0203,
+                -0.1551,
+                -0.0242,
+                0.1032,
+                null
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 60,
+              "score": -0.0362,
+              "wrong_time": [
+                -0.1469,
+                0.0896,
+                0.1027,
+                -0.0341,
+                -0.0229,
+                0.2875
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 70,
+              "score": -0.1276,
+              "wrong_time": [
+                0.0531,
+                -0.0181,
+                -0.0343,
+                0.0348,
+                null,
+                null
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 80,
+              "score": null,
+              "wrong_time": [
+                -0.0419,
+                -0.0362,
+                null,
+                null,
+                -0.0698,
+                0.0382
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 100,
+              "score": 0.0283,
+              "wrong_time": [
+                0.0234,
+                0.3133,
+                -0.0264,
+                null,
+                -0.019,
+                -0.0397
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 110,
+              "score": -0.0261,
+              "wrong_time": [
+                null,
+                null,
+                0.0053,
+                0.0451,
+                0.0086,
+                0.0651
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 120,
+              "score": 0.0002,
+              "wrong_time": [
+                0.1959,
+                -0.114,
+                -0.0136,
+                -0.0085,
+                -0.0608,
+                -0.0398
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 130,
+              "score": 0.0165,
+              "wrong_time": [
+                0.1518,
+                0.0239,
+                0.0462,
+                0.1504,
+                null,
+                null
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 140,
+              "score": 0.008,
+              "wrong_time": [
+                -0.0911,
+                0.0682,
+                null,
+                -0.0534,
+                -0.0556,
+                0.0298
+              ],
+              "passes": false
+            }
+          ]
+        },
+        {
+          "fit_nov19_seconds": [
+            60,
+            120
+          ],
+          "evaluated_lags": 19551,
+          "best_score": 0.1138,
+          "target_minus_query_s": 392.6,
+          "separate_windows": [
+            {
+              "nov19_s": 30,
+              "score": 0.0322,
+              "wrong_time": [
+                -0.015,
+                -0.0097,
+                0.0004,
+                0.0017,
+                -0.0915,
+                -0.0767
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 40,
+              "score": -0.0716,
+              "wrong_time": [
+                0.0534,
+                0.0623,
+                -0.0179,
+                0.0877,
+                0.1635,
+                0.0329
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 50,
+              "score": -0.0299,
+              "wrong_time": [
+                0.0167,
+                0.02,
+                0.1585,
+                -0.0504,
+                -0.0022,
+                -0.053
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 120,
+              "score": null,
+              "wrong_time": [
+                null,
+                null,
+                null,
+                0.0743,
+                -0.0442,
+                -0.0909
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 130,
+              "score": -0.0702,
+              "wrong_time": [
+                null,
+                null,
+                0.0444,
+                null,
+                0.0656,
+                -0.0942
+              ],
+              "passes": false
+            },
+            {
+              "nov19_s": 140,
+              "score": null,
+              "wrong_time": [
+                null,
+                -0.0471,
+                0.0875,
+                null,
+                null,
+                0.0218
+              ],
+              "passes": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "descriptive_test": {
+    "min_query_abs_r": 0.3,
+    "min_same_sign_r_other_windows": 0.15,
+    "other_windows": 2,
+    "other_windows_passing": 0,
+    "passed": false
+  }
+}
