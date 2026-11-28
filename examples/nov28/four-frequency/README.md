@@ -39,3 +39,22 @@ python "$case_dir/analog.py" "$case_dir/edogawa-6100.wav" "$case_dir/yokohama-32
 python scripts/demod_iq_window.py "$case_dir/edogawa-6140.wav" /tmp/kcbs-four-6140 --seconds 90 --reception-profile wiener --mlc-iterations 1
 python scripts/salvage_msc_packets.py /tmp/kcbs-four-6140/msc.bin --transport-only --out /tmp/kcbs-four-6140-du
 ```
+
+## Replaying two wideband Airspy files
+
+Two stereo I/Q WAV files suffice if one contains both lower channels and one contains both upper channels for the same interval. Keep the original center frequency, nominal sample rate and start time for each. Derive signed offsets from the actual centers. For example, for centers **3227.5 kHz** and **6120 kHz**, use the following commands.
+
+```sh
+python scripts/extract_iq_channel.py lower.wav 3205.wav --offset-hz -22500
+python scripts/extract_iq_channel.py lower.wav 3250.wav --offset-hz 22500
+python scripts/extract_iq_channel.py upper.wav 6140.wav --offset-hz 20000
+python scripts/extract_iq_channel.py upper.wav 6100.wav --offset-hz -20000
+```
+
+Run Dream and transport-only salvage separately on each digital file. Compare the resulting complete CRC-checked DUs by transmitted counter and phase.
+
+```sh
+python scripts/compare_dus.py left/data_units.npz right/data_units.npz --out comparison.json
+```
+
+The report lists one-sided coordinates, exact matches and each differing byte offset. If 311 distinct 716-byte DUs all match, the report will show **222,676 matching bytes** representing 124.4 seconds of transported slots. A 30-second capture cannot supply that many distinct DUs. The two per-frequency DU archives suffice to check the digital count. Testing the cross-programme claim also needs the corresponding AM interval and independently supported EVS slots. A comparison of two builds on a single file checks repeatability. Two RF receptions additionally test carrier-to-carrier agreement. [Wideband example on a previously unused source interval](../iq-holdout/README.md)

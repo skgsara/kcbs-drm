@@ -1,0 +1,539 @@
+{
+  "source_cs8_sha256": "c1bbf2b3551abc5379c9c7b24e7a8766ecbc6b027dcea174023e80c0c9d26404",
+  "source_byte_range": [
+    280896000,
+    321024000
+  ],
+  "digital_iq_sha256": "d8c0c3e655399d40b7e53bc86e1f4bccf632ee0f9ab19fbeab57eeeb9c48ed17",
+  "am_iq_sha256": "4399ee0b65daa7c237f8420a015e0d579e175f6208265511454a85b08cf698b3",
+  "digital_float32_iq_sha256": "024a43085b36a1a30fb1d2fac2c9e99c621a9c78e34480eb2b52b0e97f127b28",
+  "am_float32_iq_sha256": "f3fe728ffa9757fc14e6e8e580182c2e530b47dd80baa02f68bf229b1df5aaec",
+  "digital_iq_frames": 264000,
+  "am_iq_frames": 264000,
+  "inventory_sha256": "e427fc185468a067f6cfe477ab3cee8d600d699685efb69c3cafb9d35c53411d",
+  "assigned_counters": [
+    43288733,
+    43288734,
+    43288735,
+    43288736,
+    43288737,
+    43288738,
+    43288739,
+    43288740,
+    43288741,
+    43288742,
+    43288743,
+    43288744,
+    43288745,
+    43288746,
+    43288747,
+    43288748,
+    43288749
+  ],
+  "previously_seen": [],
+  "checked_du_count": 49,
+  "complete_in_time_order": [
+    43288733,
+    43288734,
+    43288735,
+    43288736,
+    43288737,
+    43288738,
+    43288739,
+    43288740,
+    43288741,
+    43288742,
+    43288743,
+    43288744,
+    43288745,
+    43288746,
+    43288747,
+    43288748
+  ],
+  "primary": 43288733,
+  "class_by_position": {
+    "1": {
+      "F9": 6
+    },
+    "2": {
+      "FA": 1,
+      "F9": 5
+    },
+    "3": {
+      "F9": 5
+    },
+    "4": {
+      "F9": 9
+    }
+  },
+  "class_cases": [
+    {
+      "counter": 43288734,
+      "slot": 23,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288734,
+      "slot": 24,
+      "position": 1,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288738,
+      "slot": 15,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288738,
+      "slot": 19,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 5,
+      "position": 2,
+      "mode": "FA",
+      "word_bits": [
+        8,
+        10
+      ],
+      "allowed": [
+        0,
+        2
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 39,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 40,
+      "position": 1,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 41,
+      "position": 2,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 42,
+      "position": 3,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 43,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 44,
+      "position": 1,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 45,
+      "position": 2,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 46,
+      "position": 3,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 47,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 48,
+      "position": 1,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 49,
+      "position": 2,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 50,
+      "position": 3,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 51,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 52,
+      "position": 1,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 53,
+      "position": 2,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 54,
+      "position": 3,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 55,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 56,
+      "position": 1,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 57,
+      "position": 2,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 58,
+      "position": 3,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    },
+    {
+      "counter": 43288748,
+      "slot": 59,
+      "position": 4,
+      "mode": "F9",
+      "word_bits": [
+        8,
+        9
+      ],
+      "allowed": [
+        0,
+        0
+      ]
+    }
+  ],
+  "am_interior_seconds": [
+    {
+      "second": 1,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 43.662
+    },
+    {
+      "second": 2,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 45.843
+    },
+    {
+      "second": 3,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 52.741
+    },
+    {
+      "second": 4,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 54.58
+    },
+    {
+      "second": 5,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 50.93
+    },
+    {
+      "second": 6,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 44.519
+    },
+    {
+      "second": 7,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 49.454
+    },
+    {
+      "second": 8,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 53.189
+    },
+    {
+      "second": 9,
+      "offset_hz": -90.0,
+      "carrier_db_over_background": 43.754
+    },
+    {
+      "second": 10,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 53.906
+    },
+    {
+      "second": 11,
+      "offset_hz": -88.0,
+      "carrier_db_over_background": 45.207
+    },
+    {
+      "second": 12,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 54.802
+    },
+    {
+      "second": 13,
+      "offset_hz": -88.0,
+      "carrier_db_over_background": 53.593
+    },
+    {
+      "second": 14,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 59.611
+    },
+    {
+      "second": 15,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 58.013
+    },
+    {
+      "second": 16,
+      "offset_hz": -88.0,
+      "carrier_db_over_background": 51.135
+    },
+    {
+      "second": 17,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 55.643
+    },
+    {
+      "second": 18,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 56.94
+    },
+    {
+      "second": 19,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 55.25
+    },
+    {
+      "second": 20,
+      "offset_hz": -89.0,
+      "carrier_db_over_background": 55.32
+    }
+  ],
+  "digital_msc_sha256": "2d266cde9cd7a5be8baf1d5d2e8f52b326a2414de14f20df5760b708acd4e363",
+  "archive_sha256": "d2277e56146fbfac045790c95ff3d43481e686ff32f169b0312f19911902db03"
+}

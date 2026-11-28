@@ -1,0 +1,647 @@
+{
+  "format": "kcbs-evs-projection-v1",
+  "counter": 43288733,
+  "received_du_phases": [
+    0,
+    1,
+    2
+  ],
+  "layout": "Each row starts with the mode octet followed by 32 payload octets.",
+  "word_erasure_basis": "The projection cannot supply a full word if any octet is unknown or unavailable.",
+  "markers": {
+    "??": "received octet with unknown clear value",
+    "--": "no CRC-checked data unit for this phase in the supplied archive"
+  },
+  "direct_word_octet_indices": [
+    0,
+    2,
+    3,
+    5,
+    6,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    17,
+    18,
+    20,
+    21,
+    23,
+    24,
+    26,
+    27,
+    29,
+    30,
+    32
+  ],
+  "total_slots": 60,
+  "physically_complete_slots": 60,
+  "missing_du_slots": 0,
+  "confirmed_direct_bits": 10560,
+  "full_clear_words": 0,
+  "word_erasures": 60,
+  "slots": [
+    {
+      "slot": 0,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 65 04 ?? d9 42 ?? ed 6d ?? 2e 29 ?? 43 95 ?? 4d 1f ?? 03 96 ?? 32 17 ?? 7b 30 ?? 51 a3 ?? f8"
+    },
+    {
+      "slot": 1,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 31 44 ?? dc 3f ?? 4a 5d ?? bc 91 ?? a2 67 ?? 76 87 ?? eb c7 ?? 4b 3b ?? 71 61 ?? 42 de ?? 23"
+    },
+    {
+      "slot": 2,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? ac 52 ?? d9 3c ?? ad 4e ?? c6 44 ?? fb 50 ?? 6b 10 ?? 04 3e ?? dd c8 ?? 65 51 ?? ee da ?? 8d"
+    },
+    {
+      "slot": 3,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 35 8b ?? 59 34 ?? 54 a1 ?? d2 92 ?? 6f de ?? 3a a9 ?? 48 6b ?? 6a 33 ?? 90 2e ?? 79 f9 ?? c0"
+    },
+    {
+      "slot": 4,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? be 27 ?? 5a 54 ?? 54 a0 ?? c5 49 ?? 7c 9d ?? 08 30 ?? c1 7c ?? 1b aa ?? 37 30 ?? e4 de ?? e0"
+    },
+    {
+      "slot": 5,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 5f 54 ?? d5 42 ?? 59 d9 ?? 14 e2 ?? 3b e1 ?? 91 da ?? ee df ?? 5f 50 ?? eb cc ?? 6c e5 ?? 30"
+    },
+    {
+      "slot": 6,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 2b 52 ?? 57 54 ?? 54 e8 ?? ce 47 ?? 59 02 ?? 0d d8 ?? 69 31 ?? a5 7e ?? 95 cc ?? cd 93 ?? 98"
+    },
+    {
+      "slot": 7,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 2b 60 ?? d6 57 ?? 4a 45 ?? c4 91 ?? 69 73 ?? 08 ba ?? 7e 6f ?? 81 8c ?? 90 52 ?? 86 f5 ?? d9"
+    },
+    {
+      "slot": 8,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "f8 ?? c7 1b ?? f9 7b ?? 3d 5a ?? 38 01 ?? dc 4c ?? a9 1a ?? 5a 58 ?? 94 1f ?? 6d c9 ?? cf 74 ?? 3f"
+    },
+    {
+      "slot": 9,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "f8 ?? 99 a5 ?? 85 29 ?? 04 cd ?? f7 41 ?? 47 41 ?? 9a b1 ?? ee 36 ?? 8c 9d ?? aa 3e ?? ce 90 ?? 73"
+    },
+    {
+      "slot": 10,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "f8 ?? 7c 95 ?? 78 76 ?? 2e 28 ?? aa e4 ?? 77 59 ?? 18 ad ?? 9a e7 ?? 9f cf ?? a1 d4 ?? 9d ca ?? 3b"
+    },
+    {
+      "slot": 11,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 24 10 ?? 55 4d ?? a9 94 ?? 4a 21 ?? cc e6 ?? 09 28 ?? 3f 65 ?? 07 30 ?? d0 e7 ?? 31 1b ?? 58"
+    },
+    {
+      "slot": 12,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 9b d7 ?? 56 5e ?? 44 93 ?? 64 ec ?? c9 ce ?? 15 9d ?? c7 93 ?? 4f c0 ?? 77 01 ?? d9 35 ?? 98"
+    },
+    {
+      "slot": 13,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 7f 14 ?? d7 5e ?? 3a 98 ?? ba 92 ?? 7a 29 ?? 99 e1 ?? 4e d4 ?? 2b ef ?? 59 a3 ?? 3b 4e ?? d5"
+    },
+    {
+      "slot": 14,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 8b 80 ?? d8 3e ?? 4a 45 ?? ac 94 ?? 46 73 ?? 65 92 ?? f8 99 ?? ad b5 ?? ed 02 ?? 7a 4f ?? 25"
+    },
+    {
+      "slot": 15,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? b2 51 ?? 56 3e ?? 4a 5c ?? d7 92 ?? 41 6f ?? 2d d1 ?? d9 7c ?? c0 83 ?? 7f 30 ?? e6 87 ?? 5a"
+    },
+    {
+      "slot": 16,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 4f fa ?? 57 4d ?? 76 04 ?? 92 e4 ?? d2 06 ?? bf 36 ?? e4 83 ?? 1f a6 ?? 7f 06 ?? 5e 8b ?? f5"
+    },
+    {
+      "slot": 17,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 84 78 ?? db 4d ?? 50 f4 ?? c9 1a ?? 48 a9 ?? dc d6 ?? 30 3b ?? 5a 0f ?? f2 fc ?? 56 06 ?? e1"
+    },
+    {
+      "slot": 18,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? be 68 ?? d7 41 ?? 7c 3a ?? 48 8f ?? 62 51 ?? 04 83 ?? 1c 38 ?? 19 11 ?? 1a 0f ?? 50 42 ?? a4"
+    },
+    {
+      "slot": 19,
+      "counter": 43288733,
+      "phase": 0,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? d8 70 ?? 57 5c ?? ad 30 ?? 57 24 ?? 12 64 ?? ee 8a ?? c0 74 ?? 42 ae ?? 91 58 ?? 9b a1 ?? b7"
+    },
+    {
+      "slot": 20,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? bd ca ?? 55 5c ?? 3d c7 ?? 69 1c ?? 42 26 ?? df 20 ?? bb a9 ?? 9d 01 ?? a5 4d ?? 65 be ?? 24"
+    },
+    {
+      "slot": 21,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? cc a5 ?? da 3c ?? 32 24 ?? 37 ad ?? 48 08 ?? ad 1c ?? 8d f7 ?? ab fe ?? 83 f3 ?? a5 37 ?? c9"
+    },
+    {
+      "slot": 22,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? b4 49 ?? d7 5c ?? 49 70 ?? e4 a2 ?? 6c aa ?? 98 3f ?? fc 9e ?? ea 16 ?? 42 fb ?? 90 a6 ?? 82"
+    },
+    {
+      "slot": 23,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 21 e1 ?? 54 5c ?? 5b b8 ?? 24 be ?? 1f ee ?? ae 88 ?? a1 5b ?? 3a ad ?? f8 79 ?? 24 60 ?? 6a"
+    },
+    {
+      "slot": 24,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? d8 cc ?? 57 3c ?? 53 4d ?? e4 e8 ?? e5 43 ?? 4c b9 ?? 32 2b ?? 70 5b ?? 61 b1 ?? 84 5a ?? 40"
+    },
+    {
+      "slot": 25,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 56 1d ?? 56 3c ?? 32 77 ?? a5 c8 ?? 23 18 ?? b7 4c ?? 97 c0 ?? 87 04 ?? 99 d1 ?? 3b 2b ?? 32"
+    },
+    {
+      "slot": 26,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 00 10 ?? 5a 3c ?? 52 d1 ?? 24 a3 ?? e4 32 ?? f3 cd ?? 13 95 ?? 7d 83 ?? 50 4f ?? c4 d2 ?? b1"
+    },
+    {
+      "slot": 27,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 79 aa ?? 57 3c ?? 4a 78 ?? ca 92 ?? 8f e5 ?? cb fe ?? c8 f3 ?? 94 57 ?? 4a 47 ?? 3c ef ?? ad"
+    },
+    {
+      "slot": 28,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? c5 99 ?? d7 3c ?? 32 98 ?? 06 4a ?? 18 e0 ?? 76 c4 ?? 0d cc ?? df 12 ?? fd e3 ?? eb f7 ?? 5e"
+    },
+    {
+      "slot": 29,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? f8 20 ?? 58 7c ?? 1c 8a ?? 92 90 ?? 99 93 ?? 69 47 ?? 83 30 ?? 13 29 ?? ef ef ?? 4d 99 ?? f3"
+    },
+    {
+      "slot": 30,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 2d 87 ?? 58 5c ?? 31 6a ?? 34 8e ?? fb 85 ?? 60 2c ?? 65 d7 ?? 90 e6 ?? 01 72 ?? 66 d8 ?? 20"
+    },
+    {
+      "slot": 31,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 87 de ?? 57 3c ?? 32 16 ?? f6 99 ?? 7f ce ?? 84 ce ?? 42 a6 ?? 7d 87 ?? 35 fd ?? 18 71 ?? 40"
+    },
+    {
+      "slot": 32,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? e5 94 ?? 56 5c ?? 32 1f ?? 35 69 ?? 14 2e ?? f4 6b ?? 00 a7 ?? 9c 64 ?? 6c 88 ?? 05 96 ?? a4"
+    },
+    {
+      "slot": 33,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 2d e8 ?? 55 3c ?? 51 6d ?? c9 aa ?? 29 e3 ?? cb 7a ?? 5b 06 ?? a7 77 ?? a7 8f ?? c8 e0 ?? 87"
+    },
+    {
+      "slot": 34,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 4a d7 ?? 57 3c ?? 32 23 ?? b6 4e ?? 2c 9d ?? f7 29 ?? ba a4 ?? 71 4b ?? 29 2a ?? 41 cd ?? 0d"
+    },
+    {
+      "slot": 35,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 94 05 ?? 56 3c ?? 44 a7 ?? fc 9d ?? df c4 ?? 52 c1 ?? f1 5f ?? e6 7f ?? 0a e7 ?? d1 d3 ?? 23"
+    },
+    {
+      "slot": 36,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? fb 8c ?? 59 3c ?? 32 4e ?? c7 27 ?? 4e 0f ?? 35 8c ?? f2 17 ?? 61 72 ?? 4d 17 ?? 87 f6 ?? 5d"
+    },
+    {
+      "slot": 37,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? e0 b8 ?? 59 3c ?? 44 a6 ?? 3c 97 ?? 38 52 ?? 9d d2 ?? 9e 86 ?? 98 a8 ?? d8 66 ?? 27 a8 ?? 86"
+    },
+    {
+      "slot": 38,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 71 0c ?? d7 3c ?? 32 26 ?? 22 ec ?? 89 0f ?? fd af ?? da 02 ?? 76 38 ?? 21 8a ?? 4b fb ?? 30"
+    },
+    {
+      "slot": 39,
+      "counter": 43288733,
+      "phase": 1,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 3e 31 ?? 58 3c ?? 31 11 ?? c2 47 ?? f1 f0 ?? 73 a1 ?? 40 57 ?? f9 8f ?? 78 10 ?? c5 33 ?? 0a"
+    },
+    {
+      "slot": 40,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 0,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? ad 61 ?? d9 7c ?? ac 11 ?? f2 49 ?? 1d f7 ?? 69 05 ?? 6a da ?? ed 26 ?? 26 d7 ?? 64 03 ?? c1"
+    },
+    {
+      "slot": 41,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 0,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 68 88 ?? 59 2d ?? 96 a9 ?? 47 48 ?? b0 97 ?? 21 58 ?? 5e 0d ?? d9 c9 ?? 3f 58 ?? e3 de ?? 00"
+    },
+    {
+      "slot": 42,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 0,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 86 6e ?? 57 3c ?? 39 19 ?? c9 4a ?? e2 06 ?? 42 1c ?? 62 7d ?? e7 e7 ?? 5d f6 ?? 96 79 ?? 01"
+    },
+    {
+      "slot": 43,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 0,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 58 29 ?? 58 3c ?? 4e 0a ?? 24 d5 ?? df 08 ?? a3 5f ?? bf d0 ?? 59 03 ?? f6 09 ?? 5a 89 ?? ac"
+    },
+    {
+      "slot": 44,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 1,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 10 0c ?? 58 3c ?? 32 45 ?? 44 97 ?? bc 3a ?? 88 b4 ?? 27 03 ?? a3 30 ?? 6c fa ?? 9c 8b ?? d3"
+    },
+    {
+      "slot": 45,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 1,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 33 66 ?? d6 3c ?? 32 9b ?? ed 24 ?? 69 3a ?? fa fb ?? 57 b0 ?? 84 6d ?? 3c 84 ?? f2 1d ?? 72"
+    },
+    {
+      "slot": 46,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 1,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 18 62 ?? 54 3c ?? 32 9b ?? 3d b2 ?? 25 35 ?? 36 49 ?? 12 a9 ?? 64 cb ?? c7 0a ?? c7 92 ?? d3"
+    },
+    {
+      "slot": 47,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 1,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? f4 94 ?? 53 3c ?? 32 e1 ?? 77 92 ?? f0 06 ?? 79 fe ?? 82 fa ?? 84 c4 ?? 87 aa ?? 49 93 ?? c1"
+    },
+    {
+      "slot": 48,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 2,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? ce dc ?? d4 3c ?? 53 55 ?? 52 52 ?? ff 41 ?? 41 c9 ?? 5b 43 ?? 76 33 ?? 13 56 ?? b0 67 ?? 83"
+    },
+    {
+      "slot": 49,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 2,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 6e 8d ?? da 21 ?? 20 ef ?? 97 91 ?? c2 86 ?? 02 70 ?? a7 5f ?? f3 d5 ?? 95 17 ?? b0 09 ?? f0"
+    },
+    {
+      "slot": 50,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 2,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "f8 ?? d7 07 ?? b0 a0 ?? 90 d3 ?? 80 69 ?? 63 0e ?? 39 bb ?? 5f b1 ?? 58 47 ?? e6 93 ?? 12 b8 ?? 9d"
+    },
+    {
+      "slot": 51,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 2,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "f8 ?? 85 cb ?? 68 a9 ?? 98 fb ?? b8 2c ?? 9d fb ?? 44 3b ?? 05 53 ?? 5c 01 ?? 9b cd ?? 9e 88 ?? ff"
+    },
+    {
+      "slot": 52,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 3,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "f8 ?? 30 ad ?? bd 2d ?? 04 cf ?? 35 41 ?? c8 1a ?? e5 e6 ?? c3 4b ?? 77 59 ?? 81 b9 ?? 99 79 ?? 3f"
+    },
+    {
+      "slot": 53,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 3,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "f8 ?? b6 04 ?? 84 d5 ?? bb a4 ?? 8e d9 ?? 73 e6 ?? cb d3 ?? e7 44 ?? a7 3f ?? c6 00 ?? 45 80 ?? bf"
+    },
+    {
+      "slot": 54,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 3,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "f8 ?? 42 f5 ?? c5 64 ?? 21 46 ?? 60 89 ?? 03 57 ?? c3 0f ?? c0 b0 ?? 4e d8 ?? a9 2d ?? 5c 17 ?? bb"
+    },
+    {
+      "slot": 55,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 3,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 70 0e ?? d8 5c ?? 52 0c ?? a2 92 ?? 22 9d ?? e4 3b ?? 26 c4 ?? 34 ec ?? 33 2b ?? 60 37 ?? b1"
+    },
+    {
+      "slot": 56,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 4,
+      "position": 1,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fe ?? 77 2a ?? d9 5c ?? 51 c4 ?? fd e9 ?? a3 6b ?? 67 86 ?? 3e 38 ?? 30 dd ?? 88 e9 ?? 46 fb ?? 4a"
+    },
+    {
+      "slot": 57,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 4,
+      "position": 2,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "fd ?? c9 99 ?? dc 3c ?? 41 c6 ?? 32 6f ?? 4a 05 ?? 67 47 ?? 29 e5 ?? 88 7e ?? cc 47 ?? c0 12 ?? 60"
+    },
+    {
+      "slot": 58,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 4,
+      "position": 3,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? d5 c6 ?? dd 3b ?? 4b e6 ?? 99 92 ?? 7b 2c ?? d8 5e ?? 69 a6 ?? 35 e0 ?? 09 7e ?? e6 4d ?? 00"
+    },
+    {
+      "slot": 59,
+      "counter": 43288733,
+      "phase": 2,
+      "cycle": 4,
+      "position": 4,
+      "receipt": "received_du",
+      "direct_bits": 176,
+      "octets": "ff ?? 40 bd ?? dc 3a ?? 31 25 ?? 14 92 ?? af 11 ?? 1b c5 ?? a4 3b ?? e4 73 ?? 7b 43 ?? b6 8e ?? 5a"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "frozen_revision": "0d65f6055ffc6f861f65a6fba08aade47866ad97",
+  "range_fetch_started_utc": "2026-11-28T01:01:10.545792+00:00",
+  "range_status": 206,
+  "dream_sha256": [
+    "1e398433affbe71e3bdbc30171e9c770ddd3a622c0fe1577b3f3837c3fa07a26",
+    "3f24768b2a3075ad8cd4be6ada18dadaf695f69ffbb90b6fd38a175459471a82"
+  ],
+  "separately_extracted_channels": [
+    {
+      "digital_float32": "024a43085b36a1a30fb1d2fac2c9e99c621a9c78e34480eb2b52b0e97f127b28",
+      "analog_float32": "f3fe728ffa9757fc14e6e8e580182c2e530b47dd80baa02f68bf229b1df5aaec",
+      "msc": "2d266cde9cd7a5be8baf1d5d2e8f52b326a2414de14f20df5760b708acd4e363",
+      "du": "d2277e56146fbfac045790c95ff3d43481e686ff32f169b0312f19911902db03"
+    },
+    {
+      "digital_float32": "024a43085b36a1a30fb1d2fac2c9e99c621a9c78e34480eb2b52b0e97f127b28",
+      "analog_float32": "f3fe728ffa9757fc14e6e8e580182c2e530b47dd80baa02f68bf229b1df5aaec",
+      "msc": "2d266cde9cd7a5be8baf1d5d2e8f52b326a2414de14f20df5760b708acd4e363",
+      "du": "d2277e56146fbfac045790c95ff3d43481e686ff32f169b0312f19911902db03"
+    }
+  ],
+  "whole_wav_file_hash_differs_due_to_header": true,
+  "primary_projection_sha256": "7e59eafdd96ad84ca05011dbbd095a9d6aa9163156a544e32b6963f17bb0bf99",
+  "complete_word_count": 0
+}
