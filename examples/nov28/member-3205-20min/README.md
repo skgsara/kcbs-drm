@@ -14,6 +14,8 @@ The frozen pass received 13,381 distinct CRC-good packets across 1,121 counters.
 
 The independent 6140 kHz reception shared 1,201 original packets with the 3205 kHz baseline. All 182 bytes agreed in every shared packet, including the transmitted CRC. All 284 common complete data units agreed. Compared with the frozen 3205 kHz pass, Edogawa supplied eight further complete data units and filled groups 43908227, 43908228, 43908298 and 43908300. Two of those eight data units were also recovered in the second 3205 kHz pass. Each of the four groups was received whole on 6140 kHz. [Comparison and provenance of the eight additions](cross-frequency.json) · [Earlier 6140 kHz reception](../../nov27/validation/swb-gsc/README.md)
 
+The FAC in this recording signals short interleaving and 16-QAM for both MSC and SDC. SDC assigns 728 bytes per 400 ms to stream 0, or 14.56 kbit/s including packet overhead. The four 182-byte packets each carry 179 data bytes. Their bodies form a 716-byte DU including its final two CRC bytes. [Received FAC and SDC fields](reception.json) · [Dream's FAC field mapping](../../../patches/dream/FAC.cpp) · [Packet and DU checks](../../../scripts/salvage_msc_packets.py)
+
 Using the Edogawa receiver's timestamps and the shared counter sequence places the start of the member file at about **23:58 UTC on November 27** (07:58 Beijing time on November 28). This is a minute-level estimate assuming the transmitters carried the same data with negligible relative delay at that precision. [Clock evidence and assumptions](timing.json)
 
 ## Five places to test the text carousel
@@ -37,6 +39,10 @@ The receiver selected the first complete group, **43907925**, according to the p
 ## Using the group data
 
 The [3205 kHz data archive](member-dus.npz) contains all 3,335 complete data units from the frozen pass. The [eight further data units](extra-dus.npz) are disjoint and use the same format. Each archive holds three aligned NumPy arrays, `counters`, `phases` and `du`. The last array contains 716 received bytes per row. Retain the coordinates when joining or comparing data. Gaps in the counter and phase sequence identify missing transmissions.
+
+The three DU headers in the baseline archive were `40 00` (1,116 units), `40 10` (1,111) and `40 20` (1,108). Each DU carries five successive cycles of positions P1, P2, P3 and P4. A complete counter therefore contains 15 slots of each position, spread across its three DUs. For zero-based slot numbers the row is `slot = 20 * phase + 4 * cycle + (position - 1)`. This lets two receivers compare the same slot even if they dropped different packets. [EVS slot projector](../../../scripts/project_evs_group.py)
+
+When comparing audio results, count the distinct `(counter, slot)` coordinates with a supported 33-byte word, the words actually supplied to EVS, and the slots for which the decoder used concealment. Each supplied word represents 20 ms. The output WAV duration includes concealment. For a text comparison, a start counter and phase locate the record in this archive. Its full header, UTF-16LE body, transmitted text CRC and following padding allow a separate record check. [Text-record checker](../../../scripts/parse_text_records.py)
 
 To replay the first complete group from the small [three-unit excerpt](data_units.npz), run from the repository root with NumPy installed.
 

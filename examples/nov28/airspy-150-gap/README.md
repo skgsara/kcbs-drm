@@ -42,6 +42,8 @@ The published November 27 data contain 231 second-position frames for which this
 
 The two rows with 132/133 refer to the same 133 historical frames. Their exception was counter 43877110, slot 41. Like slots 29 and 53, it had mode `60` and one trailing zero, but the text-supported label was `10`. The historical frequencies leave all four target labels open. To reproduce the historical counts, run `python examples/nov28/airspy-150-gap/p2_support.py`. [Support script](p2_support.py) · [Disputed record and replay](../swb-transition/p2/43877110-source.json)
 
+In a separate check of 12 previously archived stock encoder streams, one 33-byte word had slot 53's exact combination `60 3A`. Its second octet was `15`, whose top two bits are `00`. Re-encoding the original two-minute synthetic input reproduced the entire 6,000-word stream byte for byte. This establishes one possible standard EVS word for those two octets. The two on-air bits at slot 53 still have no independent label. [All four pairs, the sender words and a reproducible input](stock-controls/README.md)
+
 ## Reproduce the result
 
 The compact [isolated IQ file](isolated-iq48.flac) contains the losslessly stored 48 kHz stereo PCM input to Dream after conversion. It includes the zero flanks. A fresh replay of this file with the pinned receiver produced the exact 11,712-byte native stream from the isolated run. The [IQ and dump hashes](iq-replay.json) cover this distribution copy.
