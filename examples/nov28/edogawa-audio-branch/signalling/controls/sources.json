@@ -1,0 +1,83 @@
+{
+  "audio": {
+    "iq_sha256": "d038d408532dbd10cc5c64e3b63719ca8bc2be0f3c3b8505e2eca42bd7e4a634",
+    "full_callback_file_sha256": "e1ed600e2fcf6c7bdc304ba173216402504be029067006390ab3c3bf49ecc25c",
+    "full_trace_crc_counts": {
+      "FAC": {
+        "observed": 83,
+        "crc_passed": 83,
+        "crc_failed": 0
+      },
+      "SDC": {
+        "observed": 30,
+        "crc_passed": 28,
+        "crc_failed": 2
+      }
+    },
+    "selected_callbacks": {
+      "FAC": {
+        "callback_line_one_based": 3,
+        "hex": "46080ef02010a7809b"
+      },
+      "SDC": {
+        "callback_line_one_based": 4,
+        "hex": "0106010002d8049003001c1044524d20415544494f2054455354000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a62b"
+      }
+    },
+    "selected_callback_file_sha256": "ccedf7085fc80df5cb1ca2ea420d2bbc7cfe9776a68587718add72e29536ff84"
+  },
+  "contradictory": {
+    "iq_sha256": "4412acf44680b257f869121f9fad44e2b4e55c87fafcdee0659ff6263e70fd42",
+    "full_callback_file_sha256": "c796f3385ac885cf3d5a6a88f48f926a27e029bfc30e66ea8dcab6f412df7d4e",
+    "full_trace_crc_counts": {
+      "FAC": {
+        "observed": 83,
+        "crc_passed": 83,
+        "crc_failed": 0
+      },
+      "SDC": {
+        "observed": 30,
+        "crc_passed": 28,
+        "crc_failed": 2
+      }
+    },
+    "selected_callbacks": {
+      "FAC": {
+        "callback_line_one_based": 3,
+        "hex": "46020ef02010a0002c"
+      },
+      "SDC": {
+        "callback_line_one_based": 4,
+        "hex": "0106010002d80850c1b30002161044524d204951205445535400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b273"
+      }
+    },
+    "selected_callback_file_sha256": "69359e3e482532b62c29ffd4f8ecafd9ddf8f1b16c56440091a5b1f014966a64"
+  },
+  "data": {
+    "iq_sha256": "28323d2d00d24b8a531a3bccb546e48fa91604284dcb9a11a2ffa6d2eff9a55e",
+    "full_callback_file_sha256": "3408087728e2d695b53fbcb37cd7c366d7a490e0af73d797a673676958ef838a",
+    "full_trace_crc_counts": {
+      "FAC": {
+        "observed": 83,
+        "crc_passed": 83,
+        "crc_failed": 0
+      },
+      "SDC": {
+        "observed": 30,
+        "crc_passed": 28,
+        "crc_failed": 2
+      }
+    },
+    "selected_callbacks": {
+      "FAC": {
+        "callback_line_one_based": 3,
+        "hex": "46020ef02010b00098"
+      },
+      "SDC": {
+        "callback_line_one_based": 4,
+        "hex": "0106010002d80850c1b30002161044524d204951205445535400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b273"
+      }
+    },
+    "selected_callback_file_sha256": "b27a30babfcea44a47c6b9b8dd7c24b8d4eb9bfd8c167a761cda804ea1cebd18"
+  }
+}

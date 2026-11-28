@@ -9,6 +9,23 @@ The Edogawa receiver had **no complete group to select**. It located three CRC-v
 
 The primary connection closed 32.365 seconds short of its sample target. Its station timestamps cover 13:47:32.226972–13:48:59.861984 UTC with all packet times present. The peer's estimated interval is 13:47:31.499306–13:49:31.499289 UTC. The first 1,920 peer samples (40 ms) precede its first timestamp. We sealed the primary results at 13:49:51.137723 UTC and started peer demodulation at 13:50:12.547949 UTC. [Primary clock and error receipt](results/edogawa/source-seal.json) · [Peer clock receipt](results/yokohama/sealed.json) · [Peer receiver result](results/yokohama/peer-transport.json)
 
+## Which service did both stations receive?
+
+Both receivers independently identified **`A00002`, 조선중앙제2라지오방송**. The FAC passed CRC in 141 of 207 callbacks at Edogawa and 173 of 283 at Yokohama. Every passing FAC described one data service, zero standard audio services and a zero reconfiguration index. Edogawa had seven valid SDC blocks out of 71 and Yokohama had three out of 97. Each of the ten blocks contained the current stream allocation and its packet-data descriptor together. Stream 0 had 728 bytes, with 179 data bytes per packet and packet ID 0. None contained a type-9 audio descriptor. These observations identify the packet-data service as the only service advertised in these blocks. The signalling gives no clear EVS payload labels.
+
+We repeated each original IQ pass with a receiver that saves the control bits before CRC filtering. The MSC matched the frozen output byte for byte at each site, including Yokohama's CRC failures. [Edogawa raw callbacks](signalling/edogawa.bits) · [Yokohama raw callbacks](signalling/yokohama.bits) · [Edogawa replay receipt](signalling/edogawa-replay.json) · [Yokohama replay receipt](signalling/yokohama-replay.json) · [Observer build instructions](../yokohama-1300/README.md#control-channels-and-payload)
+
+The inspector's `--components` option preserves which service class and service count appeared in the same FAC word. It links an SDC descriptor to a stream allocation only when both appear in the same SDC block with the same configuration version. Other blocks can legitimately carry additional descriptors. In a synthetic ordinary audio service, the inspector found one advertised audio service and a current type-9 AAC descriptor on stream 0. A second control marked the FAC service as audio while declaring zero audio services and describing a packet-data component in the SDC. The report flags the contradictory FAC fields. These controls exercise service discovery, without a playable AAC payload. [Audio control](signalling/controls/audio-pair.bits) · [Data control](signalling/controls/data-pair.bits) · [Contradictory control](signalling/controls/contradictory-pair.bits) · [Fixture hashes and original callback coordinates](signalling/controls/sources.json) · [ETSI ES 201 980, FAC and SDC](https://www.etsi.org/deliver/etsi_es/201900_201999/201980/04.03.01_60/es_201980v040301p.pdf#page=50)
+
+An earlier 13:00 recording illustrates why the fields need to stay together. Under the current DRM layout, its single CRC-valid FAC word reporting `7DD19C` describes a data service but simultaneously declares four audio services and zero data services. The DRM30 toggle and reserved channel bit are both set in this word. The nearest valid FAC words on either side identify `A00002`, and the last valid SDC in this file precedes the outlier. The other singleton, `A67BAF`, has consistent class and count fields and also lacks corroboration. [Original 13:00 callback at line 1828](../yokohama-1300/results/primary/signalling.bits#L1828) · [13:00 reception](../yokohama-1300/README.md)
+
+```sh
+p=examples/nov28/edogawa-audio-branch/signalling
+python scripts/inspect_drm_signalling.py --components "$p/edogawa.bits"
+python scripts/inspect_drm_signalling.py --components "$p/yokohama.bits"
+python scripts/inspect_drm_signalling.py --components "$p/controls/audio-pair.bits"
+```
+
 ## What the three packets establish
 
 Edogawa MSC row 27 supplied phase-zero packets 0, 1 and 3 for counter 43949404. The counter was absent from the 14,955-ID inventory. The following supplementary projection accounts for all 15 slots at each position. Its directly carried bits come from a single receiver. The independent station supplied zero bits at these coordinates.
